@@ -1,0 +1,69 @@
+---
+layout: page
+title: Papers
+permalink: /papers/
+---
+
+{% assign conference_papers = (site.papers | where: 'kind', 'conference'       | sort: 'publication_date') %}
+{% assign journal_papers =    (site.papers | where: 'kind', 'journal'          | sort: 'publication_date') %}
+{% assign workshop_papers =   (site.papers | where: 'kind', 'workshop'         | sort: 'publication_date') %}
+{% assign theses =            (site.papers | where: 'kind', 'thesis'           | sort: 'publication_date') %}
+{% assign technical_reports = (site.papers | where: 'kind', 'technical_report' | sort: 'publication_date') %}
+
+
+<h3>Conference Papers</h3>
+<ul id="conference-papers-list">
+  {% for paper in conference_papers reversed %}
+  <li>
+    <a href="{{ paper.url }}">
+      {{ paper.title }}
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+
+
+<h3>Journal Papers</h3>
+<ul id="journal-papers-list">
+  {% for paper in journal_papers reversed %}
+  <li>
+    <a href="{{ paper.url }}">
+      {{ paper.title }}
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+
+
+<h3>Workshop Papers</h3>
+<ul id="workshop-papers-list">
+  {% for paper in workshop_papers reversed %}
+  <li>
+    <a href="{{ paper.url }}">
+      {{ paper.title }}
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+
+<h3>PhD and MS Theses</h3>
+<ul id="theses-list">
+  {% for paper in theses reversed %}
+  <li>
+    <a href="{{ paper.url }}">
+      {{ paper.title }}
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+
+<h3>Technical Reports</h3>
+<ul id="technical-reports-list">
+  {% for paper in technical_reports reversed %}
+  <li>
+    <a href="{{ paper.url }}">
+      {{ paper.title }}
+    </a>
+  </li>
+  {% endfor %}
+</ul>
