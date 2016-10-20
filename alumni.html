@@ -1,0 +1,16 @@
+---
+layout: page
+title: Lab Alumni
+permalink: /alumni/
+---
+
+<ul id="lab-alumni-list">
+{% for alumni in site.data.alumni %}
+  <li>
+    {{ alumni.name }}
+    {% if alumni.status %}
+      [{{ alumni.status }}]
+    {% endif %}
+</li>
+{% endfor %}
+</ul>
