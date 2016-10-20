@@ -1,17 +1,20 @@
 ---
-layout: default
+layout: page
 ---
 
-<div class="container">
-<h2>{{ page.title }}</h2>
-<h3>Abstract</h3>
+{% if page.download_link %}
+<a href="{{ page.download_link }}">Download</a>
+{% endif %}
+
+{% if page.abstract %}
 <p>
 {{ page.abstract | escape }}
 </p>
+{% endif %}
 
-
+{% if page.bib %}
 <h3>Bibliographic Information</h3>
 <pre><code>
 {{ page.bib | escape }}
 </code></pre>
-</div>
+{% endif %}
