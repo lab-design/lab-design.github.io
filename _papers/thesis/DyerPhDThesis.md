@@ -1,5 +1,5 @@
 ---
-permalink: /papers/thesis/dyer/
+permalink: /papers/thesis/DyerPhDThesis.html
 title: Bringing ultra-large-scale software repository mining to the masses with Boa
 abstract: >
   Mining software repositories provides developers and researchers a chance to

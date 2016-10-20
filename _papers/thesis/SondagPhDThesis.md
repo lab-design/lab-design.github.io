@@ -1,5 +1,5 @@
 ---
-permalink: /papers/thesis/sondag/
+permalink: /papers/thesis/SondagPhDThesis.html
 title: "Phase-based tuning: better utilized performance asymmetric multicores"
 abstract: >
   The latest trend towards performance asymmetry among cores on a single chip of
