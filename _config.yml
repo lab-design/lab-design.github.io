@@ -27,18 +27,15 @@ exclude:
   - Gemfile.lock
 
 collections:
-  # Declare the `papers` collection, and output a page for every item in it:
-  papers:
+  papers:  # Declare the `papers` collection, and output a page for every item.
     output: true
-  members:
-    output: false
-  alumni:
-    output: false
 
 defaults:
-  # Let items in the `papers` collection to use the `paper` layout by default:
-  - scope:
+  - scope:  # Make `papers` use the the `paper` layout by default.
       type: papers
       path: ""
     values:
       layout: paper
+
+static_files:
+  extname: pdf

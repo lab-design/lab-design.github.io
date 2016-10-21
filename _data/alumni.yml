@@ -1,0 +1,80 @@
+# PhD Graduates:
+
+- name: Dr. Yuheng Long
+  status: PhD Fall'16, MS Spring'10
+  netid: csgzlong
+
+- name: Dr. Mehdi Bagherzadeh
+  status: PhD Summer'16, MS Fall'10
+  description: >
+    Mehdi Bagherzadeh is a graduate student in the Department of Computer
+    Science at Iowa State University, where he works with Dr. Hridesh Rajan. His
+    research interests are in software specification and verification and in
+    programming language design and implementation. Mehdi is currently working
+    on the notion of translucid contracts in the context of the Ptolemy
+    programming language. He also contributes to the Tisa project. He can be
+    reached at mbagherz@iastate.edu
+  netid: mbagherz
+
+- name: Dr. Robert Dyer
+  status: PhD Fall'13, MS Fall'08
+  site: http://www.cs.bgsu.edu/rdyer/
+  email: rdyer@bgsu.edu
+
+- name: Dr. Tyler Sondag
+  status: PhD Fall'11, MS Fall'09
+  netid: sondag
+
+
+# M.S. Graduates:
+
+- name: Sean L. Mooney
+  status: MS Summer'15
+  site: http://web.cs.iastate.edu/~smooney/
+
+- name: Harish Narayanappa
+  status: MS Spring'10
+  site: http://web.cs.iastate.edu/~harish/
+  netid: harish
+
+- name: Rakesh Setty
+  status: MS Fall'08
+  netid: rsetty
+
+- name: Mahantesh Hosamani
+  status: MS Fall'07
+  netid: mahantes
+
+
+# B.S. Graduates
+
+- name: Sambhav P. Srirama
+  status: B.S. Spring'16
+  netid: ssrirama
+
+- name: Cody Hanika
+  status: B.S. Spring'16
+  netid: chanika
+
+- name: Dalton Mills
+  status: B.S. Fall'15
+  netid: dmills
+
+- name: Joseph Baker
+  status: B.S. Fall'15
+  netid: josephb
+
+- name: Trey Erenberger
+  status: B.S. Fall'15
+
+- name: Shang Liu
+  status: B.S. Spring'15
+  netid: shangliu
+
+- name: Bryan Shrader
+  status: B.S. Spring'14
+  netid: shrader
+
+- name: Rex Fernando
+  status: B.S. Spring'13
+  email: rex@cs.wisc.edu

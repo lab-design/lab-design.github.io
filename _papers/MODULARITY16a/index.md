@@ -1,4 +1,5 @@
 ---
+permalink: /papers/MODULARITY16a/
 title: On Ordering Problems in Message Passing Software
 abstract: >
   The need for concurrency in modern software is increasingly fulfilled by
@@ -29,5 +30,7 @@ bib: |
     month = {March},
     year = {2016},
   }
-permalink: /papers/MODULARITY16a/
+kind: conference
+download_link: ordering-quantification.pdf
+publication_date: 2016-03
 ---
