@@ -4,11 +4,11 @@ title: Papers
 permalink: /papers/
 ---
 
-{% assign conference_papers = (site.papers | where: 'kind', 'conference'       | sort: 'publication_date') %}
-{% assign journal_papers =    (site.papers | where: 'kind', 'journal'          | sort: 'publication_date') %}
-{% assign workshop_papers =   (site.papers | where: 'kind', 'workshop'         | sort: 'publication_date') %}
-{% assign theses =            (site.papers | where: 'kind', 'thesis'           | sort: 'publication_date') %}
-{% assign technical_reports = (site.papers | where: 'kind', 'technical_report' | sort: 'publication_date') %}
+{% assign conference_papers = (site.papers | where: 'kind', 'conference'       | sort: 'publication_year') %}
+{% assign journal_papers =    (site.papers | where: 'kind', 'journal'          | sort: 'publication_year') %}
+{% assign workshop_papers =   (site.papers | where: 'kind', 'workshop'         | sort: 'publication_year') %}
+{% assign theses =            (site.papers | where: 'kind', 'thesis'           | sort: 'publication_year') %}
+{% assign technical_reports = (site.papers | where: 'kind', 'technical_report' | sort: 'publication_year') %}
 
 
 <h3>Conference Papers</h3>
@@ -16,7 +16,7 @@ permalink: /papers/
   {% for paper in conference_papers reversed %}
   <li>
     <a href="{{ paper.url }}">
-      {{ paper.title }}
+      {{ paper.key }}
     </a>
   </li>
   {% endfor %}
@@ -28,7 +28,7 @@ permalink: /papers/
   {% for paper in journal_papers reversed %}
   <li>
     <a href="{{ paper.url }}">
-      {{ paper.title }}
+      {{ paper.key }}
     </a>
   </li>
   {% endfor %}
@@ -40,7 +40,7 @@ permalink: /papers/
   {% for paper in workshop_papers reversed %}
   <li>
     <a href="{{ paper.url }}">
-      {{ paper.title }}
+      {{ paper.key }}
     </a>
   </li>
   {% endfor %}
@@ -51,7 +51,7 @@ permalink: /papers/
   {% for paper in theses reversed %}
   <li>
     <a href="{{ paper.url }}">
-      {{ paper.title }}
+      {{ paper.key }}
     </a>
   </li>
   {% endfor %}
@@ -62,7 +62,7 @@ permalink: /papers/
   {% for paper in technical_reports reversed %}
   <li>
     <a href="{{ paper.url }}">
-      {{ paper.title }}
+      {{ paper.key }}
     </a>
   </li>
   {% endfor %}

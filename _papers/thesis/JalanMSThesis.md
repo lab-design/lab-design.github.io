@@ -1,4 +1,5 @@
 ---
+key: JalanMSThesis
 permalink: /papers/thesis/JalanMSThesis.html
 title: Feature selection, statistical modeling and its applications to universal JPEG steganalyzer
 abstract: >
@@ -30,8 +31,8 @@ abstract: >
   software package with a Graphical User Interface that has been developed to
   make this research accessible to local state forensic departments.
 
-bib: |
+bib:
 kind: thesis
 download_link: http://lib.dr.iastate.edu/etd/11012/
-publication_date: 2009
+publication_year: 2009
 ---

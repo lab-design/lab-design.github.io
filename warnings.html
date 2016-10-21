@@ -1,0 +1,24 @@
+---
+title: Internal Site Warnings
+permalink: /warnings/
+layout: page
+---
+
+{% assign expected_properties = "key|permalink|abstract|bib|kind|publication_year" | split: "|" %}
+
+<ul>
+  {% for property in expected_properties %}
+    {% for paper in site.papers %}
+      {% if paper[property] == nil %}
+        <li><a href="{{ paper.url }}">{{ paper.key | default: "Paper" }}</a> needs <code>{{ property }}</code></li>
+      {% endif %}
+    {% endfor %}
+    {% for paper in site.papers %}
+      {% if paper.title == "Index" %}
+        <li><a href="{{ paper.url }}">{{ paper.key | default: "Paper" }}</a> needs <code>title</code></li>
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+</ul>
+
+<!-- TODO: Expect either a `download_link` or a `download_links`. -->

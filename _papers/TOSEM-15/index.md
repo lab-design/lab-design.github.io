@@ -1,4 +1,5 @@
 ---
+key: TOSEM-15
 permalink: /papers/TOSEM-15/
 title: "Boa: Ultra-Large-Scale Software Repository and Source-Code Mining"
 abstract: >
@@ -24,5 +25,5 @@ abstract: >
 bib:
 kind: journal
 download_link: http://lib.dr.iastate.edu/cs_techreports/374/
-publication_date: 2015-12
+publication_year: 2015
 ---

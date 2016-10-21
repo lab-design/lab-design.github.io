@@ -1,4 +1,5 @@
 ---
+key: OOPSLA16
 permalink: /papers/OOPSLA16/
 title: First-Class Effect Reflection for Effect-Guided Programming
 authors: Yuheng Long and Yu David Liu and Hridesh Rajan
@@ -29,5 +30,5 @@ bib: |
   }
 kind: conference
 download_link: TR.pdf
-publication_date: 2016-11
+publication_year: 2016
 ---

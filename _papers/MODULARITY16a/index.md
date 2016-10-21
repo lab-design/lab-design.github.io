@@ -1,4 +1,5 @@
 ---
+key: MODULARITY16a
 permalink: /papers/MODULARITY16a/
 title: On Ordering Problems in Message Passing Software
 abstract: >
@@ -32,5 +33,5 @@ bib: |
   }
 kind: conference
 download_link: ordering-quantification.pdf
-publication_date: 2016-03
+publication_year: 2016
 ---

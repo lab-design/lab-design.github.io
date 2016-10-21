@@ -1,4 +1,5 @@
 ---
+key: MODULARITY-15b
 permalink: /papers/MODULARITY-15b/
 title: Modular Reasoning in the Presence of Event Subtyping
 abstract: >
@@ -27,5 +28,5 @@ bib: |
   }
 kind: conference
 download_link: event-subtyping-reasoning.pdf
-publication_date: 2015-03
+publication_year: 2015
 ---

@@ -1,4 +1,5 @@
 ---
+key: LongMSThesis
 permalink: /papers/thesis/LongMSThesis.html
 title: Implicit Invocation Meets Safe, Implicit Concurrency
 abstract: >
@@ -22,8 +23,8 @@ abstract: >
   easier compared to standard concurrent object-oriented programs, but also
   performance of Panini programs is comparable to their equivalent hand-tuned
   versions written using Java's fork-join framework.
-bib: |
+bib:
 kind: thesis
 download_link: http://lib.dr.iastate.edu/etd/11853/
-publication_date: 2010
+publication_year: 2010
 ---

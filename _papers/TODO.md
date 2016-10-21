@@ -1,0 +1,6 @@
+- [TR #414: "Nu: Towards an Aspect-Oriented Invocation Mechanism"](http://web.cs.iastate.edu/~nu/papers/towardsInvocation.pdf)
+- [TR #201](http://lib.dr.iastate.edu/cs_techreports/201/)
+- Everything!
+- Scan through the whole list on the old site to see what I've missed.
+- FIgure out why old site's SPLAT-06 says that it builds on TR-405 (which
+- doesn't appear to exist) instead of TR-214.

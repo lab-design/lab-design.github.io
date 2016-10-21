@@ -1,4 +1,5 @@
 ---
+key: ECOOP-15
 permalink: /papers/ECOOP-15/
 title: Intensional Effect Polymorphism
 abstract: >
@@ -28,5 +29,5 @@ bib: |
   }
 kind: conference
 download_link: main.pdf
-publication_date: 2015-07
+publication_year: 2015
 ---

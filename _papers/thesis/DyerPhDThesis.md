@@ -1,4 +1,5 @@
 ---
+key: DyerPhDThesis
 permalink: /papers/thesis/DyerPhDThesis.html
 title: Bringing ultra-large-scale software repository mining to the masses with Boa
 abstract: >
@@ -28,8 +29,8 @@ abstract: >
   to be a shared, community resource. Finally, we show the potential benefit of
   Boa to the community by reproducing a previously published case study and
   performing a new case study on the adoption of Java language features.
-bib: |
+bib:
 kind: thesis
 download_link: http://lib.dr.iastate.edu/etd/13553/
-publication_date: 2013
+publication_year: 2013
 ---

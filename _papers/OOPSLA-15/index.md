@@ -1,4 +1,5 @@
 ---
+key: OOPSLA-15
 permalink: /papers/OOPSLA-15/
 title: Effectively Mapping Linguistic Abstractions for Message-passing Concurrency to Threads on the Java Virtual Machine
 abstract: >
@@ -30,5 +31,5 @@ bib: |
   }
 kind: conference
 download_link: http://lib.dr.iastate.edu/cs_techreports/377/
-publication_date: 2015-08
+publication_year: 2015
 ---

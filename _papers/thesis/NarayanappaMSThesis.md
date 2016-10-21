@@ -1,4 +1,5 @@
 ---
+key: NarayanappaMSThesis
 permalink: papers/thesis/NarayanappaMSThesis.html
 title: Monitoring software using property-aware program sampling
 abstract: >
@@ -16,8 +17,8 @@ abstract: >
   relevant to the property of interest, (ii) to decompose large program slices
   into logically related slice fragments, and (iii) to apply statistical
   sampling on the set of slice fragments.
-bib: |
+bib:
 kind: thesis
 download_link: http://lib.dr.iastate.edu/etd/11410/
-publication_date: 2010
+publication_year: 2010
 ---

@@ -1,4 +1,5 @@
 ---
+key: BagherzadehPhDThesis
 permalink: /papers/thesis/BagherzadehPhDThesis.html
 title: Toward a Concurrent Programming Model with Modular Reasoning
 abstract: >
@@ -41,8 +42,8 @@ abstract: >
   These three ideas have the potential to ease software engineering of
   concurrent systems by improv- ing a developer’s ability to design, implement,
   test and evolve their software one module at a time.
-bib: |
+bib:
 kind: thesis
 download_link: /papers/thesis/BagherzadehPhDThesis.pdf
-publication_date: 2016
+publication_year: 2016
 ---

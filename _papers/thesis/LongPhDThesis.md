@@ -1,4 +1,5 @@
 ---
+key: LongPhDThesis
 permalink: /papers/thesis/LongPhDThesis.html
 title: Formal Foundations for Hybrid Effect Analysis
 abstract: >
@@ -42,8 +43,8 @@ abstract: >
   pre- compute the effects and a dynamic analysis that uses the precomputed
   effects to improve concurrency. Our design simplifies modular concurrency
   reasoning and avoids concurrency hazards.
-bib: |
+bib:
 kind: thesis
 download_link: /papers/thesis/LongPhDThesis.pdf
-publication_date: 2016
+publication_year: 2016
 ---

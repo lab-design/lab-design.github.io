@@ -1,4 +1,5 @@
 ---
+key: ICSE-15a
 permalink: /papers/ICSE-15a/
 title: Capsule-Oriented Programming
 abstract: >
@@ -29,5 +30,5 @@ bib: |
   }
 kind: conference
 download_link: Rajan-Capsule-Oriented.pdf
-publication_date: 2015-05
+publication_year: 2015
 ---

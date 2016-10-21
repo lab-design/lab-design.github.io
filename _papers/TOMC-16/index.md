@@ -1,4 +1,5 @@
 ---
+key: TOMC-16
 permalink: /papers/TOMC-16/
 title: Modular Reasoning in the Presence of Event Subtyping
 abstract: >
@@ -19,5 +20,5 @@ abstract: >
 bib:
 kind: journal
 download_link: event-subtyping-reasoning-TOMC.pdf
-publication_date: 2016-03
+publication_year: 2016
 ---

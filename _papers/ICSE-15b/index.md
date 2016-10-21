@@ -1,4 +1,5 @@
 ---
+key: ICSE-15b
 permalink: /papers/ICSE-15b/
 title: Inferring Behavioral Specifications from Large-scale Repositories by Leveraging Collective Intelligence
 abstract: >
@@ -32,5 +33,5 @@ bib: |
   }
 kind: conference
 download_link: Rajan-ETAL.pdf
-publication_date: 2015-05
+publication_year: 2015
 ---

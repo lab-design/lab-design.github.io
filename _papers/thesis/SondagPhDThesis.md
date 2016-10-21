@@ -1,4 +1,5 @@
 ---
+key: SondagPhDThesis
 permalink: /papers/thesis/SondagPhDThesis.html
 title: "Phase-based tuning: better utilized performance asymmetric multicores"
 abstract: >
@@ -34,8 +35,8 @@ abstract: >
   system is known) group assignment. The accuracy of lazy grouping for a wide
   range of machines is shown to be more than 90% for nearly all target machines
   and asymmetric multicores.
-bib: |
+bib:
 kind: thesis
 download_link: http://lib.dr.iastate.edu/etd/10416/
-publication_date: 2011
+publication_year: 2011
 ---

@@ -1,4 +1,5 @@
 ---
+key: BagherzadehMSThesis
 permalink: /papers/thesis/BagherzadehMSThesis.html
 title: "Translucid contracts: Expressive specification and modular verification of aspect oriented interfaces"
 abstract: >
@@ -17,8 +18,8 @@ abstract: >
   translucid contracts support sound modular verification of typical interaction
   patterns used in AO code. We also show that translucid contracts allow
   interesting control effects to be specified and enforced.
-bib: |
+bib:
 kind: thesis
 download_link: http://lib.dr.iastate.edu/etd/10400/
-publication_date: 2011
+publication_year: 2011
 ---

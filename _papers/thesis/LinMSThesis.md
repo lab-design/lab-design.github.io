@@ -1,4 +1,5 @@
 ---
+key: LinMSThesis
 permalink: /papers/thesis/LinMSThesis.html
 title: "PaniniJ: Adding the capsule programming abstraction to Java to provide linguistic support for modular reasoning in concurrent program design"
 abstract: >
@@ -34,8 +35,8 @@ abstract: >
   the strategy used to retain meta- information about capsules after
   compilation, so that capsule-oriented programs enjoy the property of separate
   compilation.
-bib: |
+bib:
 kind: thesis
 download_link: /papers/thesis/LinMSThesis.pdf
-publication_date: 2016
+publication_year: 2016
 ---

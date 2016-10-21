@@ -1,4 +1,5 @@
 ---
+key: UpadhayayaMSThesis
 permalink: /papers/thesis/UpadhayayaMSThesis.html
 title: Abstraction and performance, together at last; Auto-tuning message-passing concurrency on the Java Virtual Machine
 abstract: >
@@ -22,8 +23,8 @@ abstract: >
   evaluation on wide range of benchmark programs shows that our mapping
   technique can improve the performance by 30%-60% over default mapping
   techniques.
-bib: |
+bib:
 kind: thesis
 download_link: /papers/thesis/UpadhyayaMSThesis.pdf
-publication_date: 2015
+publication_year: 2015
 ---

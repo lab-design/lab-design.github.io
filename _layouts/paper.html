@@ -4,17 +4,35 @@ layout: page
 
 {% if page.download_link %}
 <a href="{{ page.download_link }}">Download</a>
+<br />
+<br />
 {% endif %}
 
+{% if page.download_links %}
+{% for download_link in page.download_links %}
+<a href="{{ download_link }}">Download</a>
+<br />
+{% endfor %}
+<br />
+{% endif %}
+
+
 {% if page.abstract %}
+<h3>Abstract</h3>
 <p>
 {{ page.abstract | escape }}
 </p>
 {% endif %}
 
 {% if page.bib %}
-<h3>Bibliographic Information</h3>
+<h3>Bib Info</h3>
 <pre><code>
 {{ page.bib | escape }}
 </code></pre>
+{% endif %}
+
+{% assign maybe_content = content | strip_newlines %}
+{% if maybe_content != "" %}
+<h3>Other Info</h3>
+{{ content }}
 {% endif %}
