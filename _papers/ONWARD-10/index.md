@@ -1,6 +1,7 @@
 ---
 key: ONWARD-10
 permalink: /papers/ONWARD-10/
+short_name: Onward! '10
 title: "Concurrency by Modularity: Design Patterns, a Case in Point"
 abstract: >
   General purpose object-oriented programs typically aren't embarrassingly
@@ -33,4 +34,6 @@ bib: |
 kind: conference
 download_link: paper.pdf
 publication_year: 2010
+tags:
+  - panini
 ---

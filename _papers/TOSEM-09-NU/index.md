@@ -1,6 +1,7 @@
 ---
 key: TOSEM-09-NU
 permalink: /papers/TOSEM-09-NU/
+short_name: TOSEM '09
 title: Supporting Dynamic Aspect-oriented Features
 abstract: >
   Dynamic aspect-oriented (AO) features have important software engineering
@@ -38,4 +39,6 @@ bib: |
 kind: journal
 download_link: nu-journal.pdf
 publication_year: 2010
+tags:
+  - nu
 ---

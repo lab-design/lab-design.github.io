@@ -1,6 +1,7 @@
 ---
 key: ICFEM-10
 permalink: /papers/ICFEM-10/
+short_name: ICFEM '10
 title: Automating Cut-off for Multi-parameterized Systems
 abstract: >
   Verifying that a parameterized system satisfies certain desired properties
@@ -31,4 +32,6 @@ download_links:
   - icfem-2010.pdf
   - theorem2.pdf
 publication_year: 2010
+tags:
+  - slede
 ---

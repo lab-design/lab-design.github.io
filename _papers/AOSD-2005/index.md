@@ -1,6 +1,7 @@
 ---
 key: AOSD-2005
 permalink: /papers/AOSD-2005/
+short_name: AOSD '05
 title: Aspect Language Features for Concern Coverage Profiling
 abstract: >
   In program profiling to assess test set adequacy, a challenge is to select
@@ -31,4 +32,6 @@ bib: |
 kind: conference
 download_link: aosd05.pdf
 publication_year: 2005
+tags:
+  - eos
 ---

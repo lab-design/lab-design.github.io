@@ -1,6 +1,7 @@
 ---
 key: FSE-14
 permalink: /papers/FSE-14/
+short_name: FSE '14
 title: Mining Preconditions of APIs in Large-scale Code Corpus
 abstract: >
 bib: |
@@ -17,4 +18,6 @@ bib: |
 kind: conference
 download_link: fse14.pdf
 publication_year: 2014
+tags:
+  - boa
 ---

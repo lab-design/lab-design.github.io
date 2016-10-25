@@ -1,6 +1,7 @@
 ---
 key: IW-MSE-09
 permalink: /papers/IW-MSE-09/
+short_name: IW-MSE '09
 title: Phase-guided Thread-to-core Assignment for Improved Utilization of Performance-Asymmetric Multi-Core Processors
 abstract: >
   CPU vendors are starting to explore trade offs between die size, number of
@@ -35,4 +36,6 @@ bib: |
 kind: workshop
 download_link: iwmse09.pdf
 publication_year: 2009
+tags:
+  - sapha
 ---

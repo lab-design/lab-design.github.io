@@ -1,6 +1,7 @@
 ---
 key: TAOSD-13
 permalink: /papers/TAOSD-13/
+short_name: TAOSD '13
 title: "Language Features for Software Evolution and Aspect-oriented Interfaces: An Exploratory Study"
 abstract: >
   A variety of language features to modularize crosscutting concerns have
@@ -39,4 +40,6 @@ bib: |
 kind: journal
 download_link: paper.pdf
 publication_year: 2013
+tags:
+  - ptolemy
 ---

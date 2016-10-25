@@ -1,6 +1,7 @@
 ---
 key: ECOOP-15
 permalink: /papers/ECOOP-15/
+short_name: ECOOP '15
 title: Intensional Effect Polymorphism
 abstract: >
   Type-and-effect systems are a powerful tool for program construction and
@@ -30,4 +31,6 @@ bib: |
 kind: conference
 download_link: main.pdf
 publication_year: 2015
+tags:
+  - panini
 ---

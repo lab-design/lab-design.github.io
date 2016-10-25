@@ -1,6 +1,7 @@
 ---
 key: Software-2006
 permalink: /papers/Software-2006/
+short_name: IEEE Software '06
 title: Modular Software Design with Crosscutting Interfaces
 abstract: >
   Aspect-oriented programming languages such as AspectJ offer new mechanisms for
@@ -29,4 +30,6 @@ bib: |
 kind: journal
 download_link: paper.pdf
 publication_year: 2006
+tags:
+  - ptolemy
 ---

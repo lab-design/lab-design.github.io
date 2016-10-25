@@ -1,6 +1,7 @@
 ---
 key: ICSE-14
 permalink: /papers/ICSE-14/
+short_name: ICSE '14
 title: Mining Billions of AST Nodes to Study Actual and Potential Usage of Java Language Features
 abstract: >
   Programming languages evolve over time, adding additional language features to
@@ -32,4 +33,6 @@ download_link:
   - icse14.pdf
   - icse14-slides.pptx
 publication_year: 2014
+tags:
+  - boa
 ---

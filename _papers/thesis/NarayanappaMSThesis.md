@@ -1,6 +1,7 @@
 ---
 key: NarayanappaMSThesis
 permalink: papers/thesis/NarayanappaMSThesis.html
+short_name: NarayanappaMSThesis
 title: Monitoring software using property-aware program sampling
 abstract: >
   Monitoring or profiling programs provides us with an understanding for its

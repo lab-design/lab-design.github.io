@@ -24,4 +24,6 @@ abstract: >
 kind: technical_report
 download_link: towardsInvocation.pdf
 publication_year:
+tags:
+  - nu
 ---

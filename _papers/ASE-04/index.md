@@ -1,6 +1,7 @@
 ---
 key: ASE-04
 permalink: /papers/ASE-04/
+short_name: ASE '04
 title: Understanding Aspects via Implicit Invocation
 abstract: >
   Aspect-oriented (AO) design and programming methods promise to improve the

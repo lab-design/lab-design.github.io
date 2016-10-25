@@ -1,6 +1,7 @@
 ---
 key: TR-15-05
 permalink: /papers/TR-15-05/
+short_name: TR-15-05
 title: "Duck Futures: A Generative Approach to Transparent Futures"
 abstract: >
   Futures offer a convenient abstraction for encapsulating delayed computation.
@@ -20,4 +21,6 @@ bib:
 kind: technical_report
 download_link: http://lib.dr.iastate.edu/cs_techreports/371/
 publication_year: 2015
+tags:
+  - panini
 ---

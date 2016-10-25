@@ -1,6 +1,7 @@
 ---
 key: CGO-11
 permalink: /papers/CGO-11/
+short_name: CGO '11
 title: Phase-based Tuning for Better Utilization of Performance-Asymmetric Multicore Processors
 abstract: >
   The latest trend towards performance asymmetry among cores on a single chip of
@@ -26,4 +27,6 @@ bib: |
 kind: conference
 download_link: cgo11.pdf
 publication_year: 2011
+tags:
+  - sapha
 ---

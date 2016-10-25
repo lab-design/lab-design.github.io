@@ -1,6 +1,7 @@
 ---
 key: ACoM-2008
 permalink: /papers/ACoM-2008/
+short_name: ACoM '08
 title: Mining Software Repositories for Evaluating Software Engineering Properties of Language Designs
 abstract: >
   Improved separation of concern is important for dealing with increasing

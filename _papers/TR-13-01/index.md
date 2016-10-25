@@ -1,6 +1,7 @@
 ---
 key: TR-13-01
 permalink: /papers/TR-13-01/
+short_name: TR-13-01
 title: Capsule-oriented Programming
 abstract: >
   Many programmers find writing and reasoning about concurrent programs
@@ -32,4 +33,6 @@ bib: |
 kind: technical_report
 download_link: capsule-oriented.pdf
 publication_year: 2013
+tags:
+  - panini
 ---

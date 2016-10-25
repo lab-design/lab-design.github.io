@@ -1,6 +1,7 @@
 ---
 key: TR-08-07
 permalink: /papers/TR-08-07/
+short_name: TR-08-07
 title: Reconciling Trust and Modularity Goals in Web Services
 abstract: >
   Web services are distributed software components, that are decoupled from each

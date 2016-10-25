@@ -1,6 +1,7 @@
 ---
 key: ICSE-13
 permalink: /papers/ICSE-13/
+short_name: ICSE '13
 title: "Boa: A Language and Infrastructure for Analyzing Ultra-Large-Scale Software Repositories"
 abstract: >
   In today's software-centric world, ultra-large-scale software repositories,
@@ -32,4 +33,6 @@ bib: |
 kind: conference
 download_link: icse13.pdf
 publication_year: 2013
+tags:
+  - boa
 ---

@@ -1,6 +1,7 @@
 ---
 key: ASE-13
 permalink: /papers/ASE-13/
+short_name: ASE '13
 title: A Study of Repetitiveness of Code Changes in Software Evolution
 abstract: >
   In this paper, we present a study of repetitiveness of code changes in
@@ -29,4 +30,6 @@ bib: |
 kind: conference
 download_link: ase13.pdf
 publication_year: 2013
+tags:
+  - boa
 ---

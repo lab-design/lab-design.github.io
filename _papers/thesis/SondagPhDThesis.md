@@ -1,6 +1,7 @@
 ---
 key: SondagPhDThesis
 permalink: /papers/thesis/SondagPhDThesis.html
+short_name: Sondag PhD Thesis
 title: "Phase-based tuning: better utilized performance asymmetric multicores"
 abstract: >
   The latest trend towards performance asymmetry among cores on a single chip of

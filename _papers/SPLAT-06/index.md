@@ -1,6 +1,7 @@
 ---
 key: SPLAT-06
 permalink: /papers/SPLAT-06/
+short_name: SPLAT '06
 title: Preserving Separation of Concerns through Compilation
 abstract: >
   Today’s aspect-oriented programming (AOP) languages provide software engineers
@@ -17,6 +18,8 @@ bib:
 kind: workshop
 download_link: splat06.pdf
 publication_year: 2006
+tags:
+  - nu
 ---
 
 A previous version of this paper appeared as [TR-214](/papers/TR-214/).

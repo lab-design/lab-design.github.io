@@ -1,6 +1,7 @@
 ---
 key: TR-10-09
 permalink: /papers/TR-10-09/
+short_name: TR-10-09
 title: A Type-and-Effect System for Shared Memory, Concurrent Implicit Invocation Systems
 abstract: >
   The notion of events in distributed publish-subscribe systems implies safe

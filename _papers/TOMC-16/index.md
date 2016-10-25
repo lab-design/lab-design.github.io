@@ -1,6 +1,7 @@
 ---
 key: TOMC-16
 permalink: /papers/TOMC-16/
+short_name: TOMC '16
 title: Modular Reasoning in the Presence of Event Subtyping
 abstract: >
   Separating crosscutting concerns while preserving modular reasoning is

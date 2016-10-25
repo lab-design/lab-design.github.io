@@ -1,6 +1,7 @@
 ---
 key: JalanMSThesis
 permalink: /papers/thesis/JalanMSThesis.html
+short_name: Jalan MS Thesis
 title: Feature selection, statistical modeling and its applications to universal JPEG steganalyzer
 abstract: >
   Steganalysis deals with identifying the instances of medium(s) which carry a
@@ -30,7 +31,6 @@ abstract: >
   image databases, having a total of 20,000 images. Finally, we provide a
   software package with a Graphical User Interface that has been developed to
   make this research accessible to local state forensic departments.
-
 bib:
 kind: thesis
 download_link: http://lib.dr.iastate.edu/etd/11012/

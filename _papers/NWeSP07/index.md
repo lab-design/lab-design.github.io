@@ -1,6 +1,7 @@
 ---
 key: NWeSP07
 permalink: /papers/NWeSP07/
+short_name: NWeSP '07
 title: How to Trust a Web Service Monitor Deployed in an Untrusted Environment?
 abstract: >
   In a service oriented architecture, certain requirements can be tested by
@@ -31,4 +32,6 @@ bib: |
 kind: workshop
 download_link: NWeSP07.pdf
 publication_year: 2007
+tags:
+  - tisa
 ---

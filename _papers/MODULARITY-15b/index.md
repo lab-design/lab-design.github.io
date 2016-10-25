@@ -1,6 +1,7 @@
 ---
 key: MODULARITY-15b
 permalink: /papers/MODULARITY-15b/
+short_name: Modularity '15
 title: Modular Reasoning in the Presence of Event Subtyping
 abstract: >
   Separating crosscutting concerns while preserving modular reasoning is
@@ -29,4 +30,6 @@ bib: |
 kind: conference
 download_link: event-subtyping-reasoning.pdf
 publication_year: 2015
+tags:
+  - ptolemy
 ---

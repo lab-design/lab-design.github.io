@@ -1,6 +1,7 @@
 ---
 key: ESEC-FSE-2003
-permalink: /papers/ESEC-FSE-2003
+permalink: /papers/ESEC-FSE-2003/
+short_name: ESEC/FSE '03
 title: "Eos: Instance-Level Aspects for Integrated System Design"
 abstract: >
   This paper makes two contributions: a generalization of AspectJ-like languages
@@ -27,4 +28,6 @@ bib: |
 kind: conference
 download_link: esecfse.pdf
 publication_year: 2003
+tags:
+  - eos
 ---

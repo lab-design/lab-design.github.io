@@ -1,6 +1,7 @@
 ---
 key: TR-09-27
 permalink: /papers/TR-09-27/
+short_name: TR-09-27
 title: A Quantitative Cost/Benefit Analysis for Dynamic Updating
 abstract: >
   Dynamic software updating provides many benefits, e.g. in runtime monitoring,

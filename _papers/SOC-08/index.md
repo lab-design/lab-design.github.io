@@ -1,6 +1,7 @@
 ---
 key: SOC-08
 permalink: /papers/SOC-08/
+short_name: IEEE SOC '08
 title: "Tisa: Towards Trustworthy Services in a Service-oriented Architecture"
 abstract: >
   Verifying whether a service implementation is conforming to its service-level
@@ -41,4 +42,6 @@ bib: |
 kind: journal
 download_link: Rajan-Hosamani-2008.pdf
 publication_year: 2008
+tags:
+  - tisa
 ---

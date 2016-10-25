@@ -1,6 +1,7 @@
 ---
 key: MODULARITY16b
 permalink: /papers/MODULARITY16b/
+short_name: Modularity '16
 title: A Type-and-Effect System for Asynchronous, Typed Events
 authors: Yuheng Long and Hridesh Rajan
 abstract: >

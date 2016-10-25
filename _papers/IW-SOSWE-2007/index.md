@@ -1,6 +1,7 @@
 ---
 key: IW-SOSWE-2007
 permalink: /papers/IW-SOSWE-2007/
+short_name: IW-SOSWE '07
 title: "Monitoring the Monitor: An Approach Towards Trustworthiness in Service Oriented Architecture"
 abstract: >
   The key notion in service-oriented architecture is decoupling clients and
@@ -29,4 +30,6 @@ bib: |
 kind: workshop
 download_link: main.pdf
 publication_year: 2007
+tags:
+  - tisa
 ---

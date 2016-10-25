@@ -1,6 +1,7 @@
 ---
 key: TOCE-12
 permalink: /papers/TOCE-12/
+short_name: TOCE '12
 title: "Frances: A Tool For Understanding Computer Architecture and Assembly Language"
 abstract: >
   Students in all areas of computing require knowledge of the computing device

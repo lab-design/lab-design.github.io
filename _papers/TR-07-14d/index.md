@@ -1,6 +1,7 @@
 ---
 key: TR-07-14d
 permalink: /papers/TR-07-14d/
+short_name: TR-07-14
 title: Quantified, Typed Events for Improved Separation of Concerns
 abstract: >
 bib:

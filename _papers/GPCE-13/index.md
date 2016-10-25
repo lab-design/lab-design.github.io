@@ -1,6 +1,7 @@
 ---
 key: GPCE-13
 permalink: /papers/GPCE-13/
+short_name: GPCE '13
 title: Declarative Visitors to Ease Fine-grained Source Code Mining with Full History on Billions of AST Nodes
 abstract: >
   Software repositories contain a vast wealth of information about software
@@ -42,4 +43,6 @@ bib: |
 kind: conference
 download_link: gpce13.pdf
 publication_year: 2013
+tags:
+  - boa
 ---

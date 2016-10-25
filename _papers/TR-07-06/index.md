@@ -1,6 +1,7 @@
 ---
 key: TR-07-06
 permalink: /papers/TR-07-06/
+short_name: TR-07-06
 title: "Nu: Towards a Flexible and Dynamic Aspect-Oriented Intermediate Language Model"
 abstract: >
   The contribution of this work is the design, implementation and evaluation of
@@ -27,4 +28,6 @@ abstract: >
 bib:
 kind: technical_report
 publication_year: 2007
+tags:
+  - nu
 ---

@@ -1,6 +1,7 @@
 ---
 key: TR-06-32
 permalink: /papers/TR-06-32/
+short_name: TR-06-32
 title: Type-based Quantification of Aspect-Oriented Programs
 abstract: >
   Quantification is a distinguishing characteristic of AspectJ-like

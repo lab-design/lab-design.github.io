@@ -1,6 +1,7 @@
 ---
 key: LinMSThesis
 permalink: /papers/thesis/LinMSThesis.html
+short_name: Lin MS Thesis
 title: "PaniniJ: Adding the capsule programming abstraction to Java to provide linguistic support for modular reasoning in concurrent program design"
 abstract: >
   Increasing the speed of single-core processors has been facing practical

@@ -1,6 +1,7 @@
 ---
 key: GPCE-10
 permalink: /papers/GPCE-10/
+short_name: GPCE '13
 title: Implicit Invocation Meets Safe, Implicit Concurrency
 abstract: >
   Writing correct and efficient concurrent programs still remains a challenge.
@@ -33,6 +34,8 @@ bib: |
 kind: conference
 download_link: main.pdf
 publication_year: 2010
+tags:
+  - panini
 ---
 
 This paper supercedes a previous ISU technical report:

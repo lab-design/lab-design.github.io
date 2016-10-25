@@ -1,6 +1,7 @@
 ---
 key: DyerPhDThesis
 permalink: /papers/thesis/DyerPhDThesis.html
+short_name: Dyer PhD Thesis
 title: Bringing ultra-large-scale software repository mining to the masses with Boa
 abstract: >
   Mining software repositories provides developers and researchers a chance to

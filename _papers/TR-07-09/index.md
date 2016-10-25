@@ -1,6 +1,7 @@
 ---
 key: TR-07-09
 permalink: /papers/TR-07-09/
+short_name: TR-07-09
 title: "SLEDE: A Domain-Specific Verification Framework for Sensor Network Security Protocol Implementations"
 abstract: >
   Sensor networks are often deployed in hostile situations. A number of
@@ -26,4 +27,6 @@ bib:
 kind: technical_report
 download_link: http://lib.dr.iastate.edu/cs_techreports/318/
 publication_year: 2007
+tags:
+  - slede
 ---

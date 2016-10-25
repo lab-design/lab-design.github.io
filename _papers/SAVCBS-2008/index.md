@@ -1,6 +1,7 @@
 ---
 key: SAVCBS-2008
 permalink: /papers/SAVCBS-2008/
+short_name: SAVCBS '08
 title: Model Programs for Preserving Composite Invariants
 abstract: >
   We describe a solution for the SAVCBS challenge problem: a technique for

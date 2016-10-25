@@ -1,6 +1,7 @@
 ---
 key: TR-06-30
 permalink: /papers/TR-06-30/
+short_name: TR-06-30
 title: Modular Compilation Strategies for Aspect-Oriented Constructs
 abstract: >
   In our previous work, we presented an aspect-oriented intermediate language,
@@ -25,4 +26,6 @@ bib:
 kind: technical_report
 download_link: http://lib.dr.iastate.edu/cs_techreports/251/
 publication_year: 2006
+tags:
+  - nu
 ---

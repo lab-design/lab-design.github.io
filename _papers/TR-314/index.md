@@ -1,6 +1,7 @@
 ---
 key: TR-314
 permalink: /papers/TR-314/
+short_name: TR-314
 title: Design Patterns in Eos
 abstract: >
   In earlier work, we showed that the AspectJ notions of aspect and class can be
@@ -21,6 +22,8 @@ bib:
 kind: technical_report
 download_link: http://lib.dr.iastate.edu/cs_techreports/314/
 publication_year: 2007
+tags:
+  - eos
 ---
 
 See a revised version of this paper: [TR15-07](/papers/TR-15-07/)

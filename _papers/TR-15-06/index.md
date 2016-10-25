@@ -1,7 +1,8 @@
 ---
 key: TR-15-06
-title: "Design, Semantics and Implementation of the Ptolemy Programming Language: A Language with Quantified Typed Events"
 permalink: /papers/TR-15-06/
+short_name: TR-15-06
+title: "Design, Semantics and Implementation of the Ptolemy Programming Language: A Language with Quantified Typed Events"
 abstract: >
   Implicit invocation (II) and aspect-oriented (AO) languages provide software
   designers with related but distinct mechanisms and strategies for decomposing
@@ -20,4 +21,6 @@ bib:
 kind: technical_report
 download_link: http://lib.dr.iastate.edu/cs_techreports/372/
 publication_year: 2015
+tags:
+  - ptolemy
 ---

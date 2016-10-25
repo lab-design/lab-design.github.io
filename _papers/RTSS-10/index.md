@@ -1,6 +1,7 @@
 ---
 key: RTSS-10
 permalink: /papers/RTSS-10/
+short_name: RTSS '10
 title: A More Precise Abstract Domain for Multi-level Caches for Tighter WCET Analysis
 abstract: >
   Many program analyses and optimizations rely on knowledge of cache behavior.
@@ -30,4 +31,6 @@ bib: |
 kind: conference
 download_link: rtss10.pdf
 publication_year: 2010
+tags:
+  - sapha
 ---

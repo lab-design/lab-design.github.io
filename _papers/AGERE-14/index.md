@@ -1,6 +1,7 @@
 ---
 key: AGERE-14
 permalink: /papers/AGERE-14/
+short_name: AGERE '14
 title: An Automatic Actors to Threads Mapping Technique for JVM-Based Actor Frameworks
 abstract: >
   Actor frameworks running on Java Virtual Machine (JVM) platform face two main
@@ -31,4 +32,6 @@ bib: |
 kind: workshop
 download_link: agere2014.pdf
 publication_year: 2014
+tags:
+  - panini
 ---

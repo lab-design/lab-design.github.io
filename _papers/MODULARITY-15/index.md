@@ -1,6 +1,7 @@
 ---
 key: MODULARITY-15
 permalink: /papers/MODULARITY-15/
+short_name: Modularity '15
 title: "Panini: A Concurrent Programming Model for Solving Pervasive and Oblivious Interference"
 abstract: >
   Modular reasoning about concurrent programs is complicated by the possibility
@@ -35,4 +36,6 @@ bib: |
 kind: conference
 download_link: panini-reasoning.pdf
 publication_year: 2015
+tags:
+  - panini
 ---

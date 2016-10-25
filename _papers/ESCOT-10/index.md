@@ -1,6 +1,7 @@
 ---
 key: ESCOT-10
 permalink: /papers/ESCOT-10/
+short_name: ESCOT '10
 title: A Preliminary Study of Quantified, Typed Events
 abstract: >
   In previous work, Rajan and Leavens presented the design of Ptolemy,

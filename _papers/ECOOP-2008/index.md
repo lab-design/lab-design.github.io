@@ -1,6 +1,7 @@
 ---
 key: ECOOP-2008
 permalink: /papers/ECOOP-2008/
+short_name: ECOOP '08
 title: "Ptolemy: A Language with Quantified Typed, Events"
 abstract: >
   Implicit invocation and aspect-oriented languages provide related but distinct
@@ -36,4 +37,6 @@ bib: |
 kind: conference
 download_link: ptolemy.pdf
 publication_year: 2008
+tags:
+  - ptolemy
 ---

@@ -1,6 +1,7 @@
 ---
 key: VMIL-2008
 permalink: /papers/VMIL-2008/
+short_name: VMIL '08
 title: A decision tree-based approach to dynamic pointcut evaluation
 abstract: >
   Constructs of dynamic nature, e.g., history-based pointcuts and control-flow
@@ -43,4 +44,6 @@ bib: |
 kind: workshop
 download_link: dyer-rajan-vmil08.pdf
 publication_year: 2008
+tags:
+  - nu
 ---

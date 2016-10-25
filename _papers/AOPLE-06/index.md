@@ -1,6 +1,7 @@
 ---
 key: AOPLE-06
 permalink: /papers/AOPLE-06/
+short_name: AOPLE '06
 title: The Role of Aspects in Modeling Product Line Variabilities
 abstract: >
   As of today, it is unclear whether aspect-oriented modeling can benefit the

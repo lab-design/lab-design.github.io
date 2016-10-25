@@ -1,6 +1,7 @@
 ---
 key: ICSE-15a
 permalink: /papers/ICSE-15a/
+short_name: ICSE '15 (NIER)
 title: Capsule-Oriented Programming
 abstract: >
   "Explicit concurrency should be abolished from all higher-level programming
@@ -31,4 +32,6 @@ bib: |
 kind: conference
 download_link: Rajan-Capsule-Oriented.pdf
 publication_year: 2015
+tags:
+  - panini
 ---

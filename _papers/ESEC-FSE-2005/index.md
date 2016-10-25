@@ -1,6 +1,7 @@
 ---
 key: ESEC-FSE-2005
-permalink: /papers/ESEC-FSE-2005
+permalink: /papers/ESEC-FSE-2005/
+short_name: ESEC/FSE '05
 title: Information Hiding Interfaces for Aspect-Oriented Design
 abstract: >
   The growing popularity of aspect-oriented languages, such as AspectJ, and of
@@ -35,4 +36,6 @@ bib: |
 kind: conference
 download_link: paper.pdf
 publication_year: 2005
+tags:
+  - ptolemy
 ---

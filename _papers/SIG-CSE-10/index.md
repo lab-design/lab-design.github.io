@@ -1,6 +1,7 @@
 ---
 key: SIG-CSE-10
 permalink: /papers/SIG-CSE-10/
+short_name: SIGCSE '10
 title: "Frances: A Tool For Understanding Code Generation"
 abstract: >
   Compiler and programming language implementation courses are integral parts of
@@ -30,4 +31,6 @@ download_links:
   - sigcse10.pdf
   - sigcse10-presentation.pdf
 publication_year: 2010
+tags:
+  - frances
 ---

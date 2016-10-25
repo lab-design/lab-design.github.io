@@ -1,6 +1,7 @@
 ---
 key: MooneyMSThesis
 permalink: /papers/thesis/MooneyMSThesis.html
+short_name: Mooney MS Thesis
 title: A Unified Design of Capsules
 abstract: >
   The process of reading, writing, and reasoning about concurrent programs

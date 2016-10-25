@@ -1,6 +1,7 @@
 ---
 key: FSE-2006
 permalink: /papers/FSE-2006/
+short_name: FSE '06 (Poster)
 title: "Nu: Preserving Design Modularity in Object Code"
 abstract: >
   For a number of reasons, such as to generate object code that is compliant
@@ -27,6 +28,8 @@ bib: |
     address = {New York, NY, USA},
   }
 kind: poster
-download_link: nu-poster
+download_link: nu-poster.pdf
 publication_year: 2006
+tags:
+  - nu
 ---

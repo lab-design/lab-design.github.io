@@ -1,6 +1,7 @@
 ---
 key: LongPhDThesis
 permalink: /papers/thesis/LongPhDThesis.html
+short_name: Long PhD Thesis
 title: Formal Foundations for Hybrid Effect Analysis
 abstract: >
   Type-and-effect systems are a powerful tool for program construction and

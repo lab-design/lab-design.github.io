@@ -1,6 +1,7 @@
 ---
 key: LongMSThesis
 permalink: /papers/thesis/LongMSThesis.html
+short_name: Long MS Thesis
 title: Implicit Invocation Meets Safe, Implicit Concurrency
 abstract: >
   Writing correct and efficient concurrent programs still remains a challenge.

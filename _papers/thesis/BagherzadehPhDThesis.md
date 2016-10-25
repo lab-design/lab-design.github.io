@@ -1,6 +1,7 @@
 ---
 key: BagherzadehPhDThesis
 permalink: /papers/thesis/BagherzadehPhDThesis.html
+short_name: Bagherzadeh PhD Thesis
 title: Toward a Concurrent Programming Model with Modular Reasoning
 abstract: >
   Modular reasoning and concurrent programming are both necessary for scalable

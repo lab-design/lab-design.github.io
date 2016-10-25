@@ -1,6 +1,7 @@
 ---
 key: ESEC-FSE-09
 permalink: /papers/ESEC-FSE-09/
+short_name: ESEC/FSE '09
 title: Behavioral Automata Composition for Automatic Topology Independent Verification of Parameterized Systems
 abstract: >
   Verifying correctness properties of parameterized systems is a long-standing
@@ -32,6 +33,8 @@ bib: |
 kind: conference
 download_link: esec-fse-09.pdf
 publication_year: 2009
+tags:
+  - slede
 ---
 
 See also the ISU tech report, [TR09-17](/papers/TR-09-17/).

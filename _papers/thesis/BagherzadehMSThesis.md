@@ -1,6 +1,7 @@
 ---
 key: BagherzadehMSThesis
 permalink: /papers/thesis/BagherzadehMSThesis.html
+short_name: Bagherzadeh MS Thesis
 title: "Translucid contracts: Expressive specification and modular verification of aspect oriented interfaces"
 abstract: >
   As aspect-oriented (AO) programming techniques become more widely used, their

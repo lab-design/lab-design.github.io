@@ -1,6 +1,9 @@
 ---
+# Note this conference went by both "AOSD" and "Modularity" in 2012 and 2013.
+# See http://modularity.info/conference/
 key: AOSD-13
 permalink: /papers/AOSD-13/
+short_name: Modularity '13
 title: On Exceptions, Events and Observer Chains
 abstract: >
   Modular understanding of behaviors and flows of exceptions may help in their
@@ -30,4 +33,6 @@ bib: |
 kind: conference
 download_link: aosd13.pdf
 publication_year: 2013
+tags:
+  - ptolemy
 ---

@@ -1,6 +1,7 @@
 ---
 key: VMIL-2007
 permalink: /papers/VMIL-2007/
+short_name: VMIL '07
 title: A Case for Explicit Join Point Models for Aspect-oriented Intermediate Languages
 abstract: >
   Aspect-oriented languages mostly employ implicit language-defined join point
@@ -27,4 +28,6 @@ bib: |
 kind: workshop
 download_link: rajan-explicit.pdf
 publication_year: 2007
+tags:
+  - nu
 ---

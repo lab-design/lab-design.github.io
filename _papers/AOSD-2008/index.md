@@ -1,6 +1,7 @@
 ---
 key: AOSD-2008
 permalink: /papers/AOSD-2008/
+short_name: AOSD '08
 title: "Nu: a Dynamic Aspect-Oriented Intermediate Language Model and Virtual Machine for Flexible Runtime Adaptation"
 abstract: >
   A variety of dynamic aspect-oriented language constructs are proposed in
@@ -36,9 +37,11 @@ bib: |
 kind: conference
 download_link: nu.pdf
 publication_year: 2008
+tags:
+  - nu
 ---
 
-Previous version appeared as [Technical Report 07-06](/papers/TR-07-06/), Computer Science, Iowa
-State University, June 03, 2007.
+Previous version appeared as [Technical Report 07-06](/papers/TR-07-06/),
+Computer Science, Iowa State University, June 03, 2007.
 
 See also this preliminary poster paper on this topic: [FSE-2006](/papers/FSE-2006/)

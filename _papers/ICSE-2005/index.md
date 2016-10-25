@@ -1,6 +1,7 @@
 ---
 key: ICSE-2005
 permalink: /papers/ICSE-2005/
+short_name: ICSE '05
 title: "Classpects: Unifying Aspect- and Object-Oriented Language Design"
 abstract: >
   The contribution of this work is the design, implementation, and early
@@ -33,4 +34,6 @@ bib: |
 kind: conference
 download_link: p174-rajan.pdf
 publication_year: 2005
+tags:
+  - eos
 ---

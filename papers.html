@@ -16,7 +16,7 @@ permalink: /papers/
   {% for paper in conference_papers reversed %}
   <li>
     <a href="{{ paper.url }}">
-      {{ paper.key }}
+      {{ paper.short_name }}
     </a>
   </li>
   {% endfor %}
@@ -28,7 +28,7 @@ permalink: /papers/
   {% for paper in journal_papers reversed %}
   <li>
     <a href="{{ paper.url }}">
-      {{ paper.key }}
+      {{ paper.short_name }}
     </a>
   </li>
   {% endfor %}
@@ -40,7 +40,7 @@ permalink: /papers/
   {% for paper in workshop_papers reversed %}
   <li>
     <a href="{{ paper.url }}">
-      {{ paper.key }}
+      {{ paper.short_name }}
     </a>
   </li>
   {% endfor %}
@@ -51,7 +51,7 @@ permalink: /papers/
   {% for paper in theses reversed %}
   <li>
     <a href="{{ paper.url }}">
-      {{ paper.key }}
+      {{ paper.short_name }}
     </a>
   </li>
   {% endfor %}
@@ -62,7 +62,7 @@ permalink: /papers/
   {% for paper in technical_reports reversed %}
   <li>
     <a href="{{ paper.url }}">
-      {{ paper.key }}
+      {{ paper.short_name }}
     </a>
   </li>
   {% endfor %}

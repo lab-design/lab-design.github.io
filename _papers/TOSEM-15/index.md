@@ -1,6 +1,7 @@
 ---
 key: TOSEM-15
 permalink: /papers/TOSEM-15/
+short_name: TOSEM '15
 title: "Boa: Ultra-Large-Scale Software Repository and Source-Code Mining"
 abstract: >
   In today's software-centric world, ultra-large-scale software repositories,
@@ -24,6 +25,8 @@ abstract: >
   improvements in scalability.
 bib:
 kind: journal
-download_link: http://lib.dr.iastate.edu/cs_techreports/374/
+download_link: https://dl.acm.org/citation.cfm?id=2803171
 publication_year: 2015
+tags:
+  - boa
 ---

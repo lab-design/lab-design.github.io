@@ -1,6 +1,7 @@
 ---
 key: FOAL-12
 permalink: /papers/FOAL-12/
+short_name: FOAL '12
 title: Event Type Polymorphism
 abstract: >
   Subtype polymorphism is an important feature available in most modern type
@@ -31,4 +32,6 @@ download_links:
   - FOAL-12.pdf
   - foal12-slides.pdf
 publication_year: 2012
+tags:
+  - ptolemy
 ---

@@ -1,6 +1,7 @@
 ---
 key: CCSC-11
 permalink: /papers/CCSC-11/
+short_name: CCSC '11
 title: "Frances-A: A Tool For Architecture Level Software Visualization"
 abstract: >
   Integral to computer science education are computer organization and
@@ -24,4 +25,6 @@ bib: |
 kind: journal
 download_link: ccsc11.pdf
 publication_year: 2011
+tags:
+  - frances
 ---

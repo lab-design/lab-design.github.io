@@ -1,6 +1,7 @@
 ---
 key: FoSER-10
 permalink: /papers/FoSER-10/
+short_name: FoSER '10
 title: Building Scalable Software Systems in the Multicore Era
 abstract: >
   Software systems must face two challenges today: growing complexity and
@@ -37,4 +38,6 @@ bib: |
 kind: workshop
 download_link: Rajan-FoSER10.pdf
 publication_year: 2010
+tags:
+  - panini
 ---

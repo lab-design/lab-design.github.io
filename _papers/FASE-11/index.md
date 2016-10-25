@@ -1,6 +1,7 @@
 ---
 key: FASE-11
 permalink: /papers/FASE-11/
+short_name: FASE '11
 title: "Analyzing Software Updates: Should You Build a Dynamic Updating Infrastructure?"
 abstract: >
   The ability to adapt software systems to fix bugs, add/change features without
@@ -37,6 +38,8 @@ bib: |
 kind: conference
 download_link: Gharaibeh-Rajan-Chang.pdf
 publication_year: 2011
+tags:
+  - nu
 ---
 
 A Previous version of this paper appeared as [Technical Report 09-27](/papers/TR-09-27/),

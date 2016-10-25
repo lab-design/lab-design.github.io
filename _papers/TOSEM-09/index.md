@@ -1,6 +1,7 @@
 ---
 key: TOSEM-09
 permalink: /papers/TOSEM-09/
+short_name: TOSEM '09
 title: Modular Aspect-Oriented Design with XPIs
 abstract: >
   The emergence of aspect-oriented programming (AOP) languages has provided
@@ -33,4 +34,6 @@ bib: |
 kind: journal
 download_link: aop-xpi-journal.pdf
 publication_year: 2009
+tags:
+  - ptolemy
 ---

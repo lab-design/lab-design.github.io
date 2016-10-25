@@ -1,6 +1,7 @@
 ---
 key: AOSD-14
 permalink: /papers/AOSD-14/
+short_name: AOSD '14
 title: "AspectJML: Modular Specfication and Runtime Checking for Crosscutting Contracts"
 abstract: >
   Aspect-oriented programming (AOP) is a popular technique for modularizing

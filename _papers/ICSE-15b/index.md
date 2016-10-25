@@ -1,6 +1,7 @@
 ---
 key: ICSE-15b
 permalink: /papers/ICSE-15b/
+short_name: ICSE '15 (NIER)
 title: Inferring Behavioral Specifications from Large-scale Repositories by Leveraging Collective Intelligence
 abstract: >
   Despite[1] their proven benefits, useful, comprehen- sible, and efficiently
@@ -34,4 +35,6 @@ bib: |
 kind: conference
 download_link: Rajan-ETAL.pdf
 publication_year: 2015
+tags:
+  - boa
 ---

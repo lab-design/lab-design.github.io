@@ -1,6 +1,7 @@
 ---
 key: TR-13-04
 permalink: /papers/TR-13-04/
+short_name: TR-13-04
 title: "Open Effects: Programmer-guided Effects for Open World Concurrent Programs"
 abstract: >
   The open world assumption makes the design of a type-and-effect system

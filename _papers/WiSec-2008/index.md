@@ -1,6 +1,7 @@
 ---
 key: WiSec-2008
 permalink: /papers/WiSec-2008/
+short_name: WiSec '08
 title: "Slede: A Domain-Specific Verification Framework for Sensor Network Security Protocol Implementations"
 abstract: >
   Finding flaws in security protocol implementations is hard. Finding flaws in
@@ -41,6 +42,8 @@ bib: |
 kind: conference
 download_link: slede-wisec-08.pdf
 publication_year: 2008
+tags:
+  - slede
 ---
 
 A previous version of this paper appeared as [Technical Report 07-09](/papers/TR-07-09),

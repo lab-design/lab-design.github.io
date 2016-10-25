@@ -1,6 +1,7 @@
 ---
 key: TR-08-02
 permalink: /papers/TR-08-02/
+short_name: TR-08-02
 title: "Weave Now or Weave Later: A Test Driven Development Perspective on Aspect-oriented Deployment Models"
 abstract: >
   The choice to use static or load-time weaving techniques in the development

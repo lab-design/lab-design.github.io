@@ -1,6 +1,7 @@
 ---
 key: ESOP-2009
 permalink: /papers/ESOP-2009/
+short_name: ESOP '09
 title: "Tisa: A Language Design and Modular Verification Technique for Temporal Policies in Web Services"
 abstract: >
   Web services are distributed software components, that are decoupled from each
@@ -37,4 +38,6 @@ download_links:
   - Rajan-Tao-Shaner-Leavens-09.pdf
   - Rajan-ETAL-ESOP-09-Talk.pdf
 publication_year: 2009
+tags:
+  - tisa
 ---

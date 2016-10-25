@@ -1,6 +1,7 @@
 ---
 key: TR-07-11
 permalink: /papers/TR-07-11/
+short_name: TR-07-11
 title: Verifying Fault-Tolerance of Sensor Network Applications Using Auto-generated Fault Injection Mechanisms
 abstract: >
   The deployment scenarios for sensor networks are often hostile. These networks
@@ -28,4 +29,6 @@ bib:
 kind: technical_report
 download_link: http://lib.dr.iastate.edu/cs_techreports/319/
 publication_year: 2007
+tags:
+  - slede
 ---

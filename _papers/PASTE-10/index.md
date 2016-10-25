@@ -1,6 +1,7 @@
 ---
 key: PASTE-10
 permalink: /papers/PASTE-10/
+short_name: PASTE '10
 title: Property-Aware Program Sampling
 abstract: >
   Monitoring or profiling programs provides us with an understanding for its

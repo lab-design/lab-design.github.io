@@ -1,6 +1,7 @@
 ---
 key: AOSD-12
 permalink: /papers/AOSD-12/
+short_name: AOSD '12
 title: An Exploratory Study of the Design Impact of Language Features for Aspect-oriented Interfaces
 abstract: >
   A variety of language features to modularize crosscutting concerns have
@@ -33,4 +34,6 @@ download_links:
   - AOSD-12.pdf
   - aosd12-slides.pdf
 publication_year: 2012
+tags:
+  - ptolemy
 ---

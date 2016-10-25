@@ -1,6 +1,7 @@
 ---
 key: PLOS-2007
 permalink: /papers/PLOS-2007/
+short_name: PLOS '07
 title: Predictive Thread-to-Core Assignment on a Heterogeneous Multi-core Processor
 abstract: >
   As multi-core processors are becoming common, vendors are starting to explore
@@ -35,4 +36,6 @@ bib: |
 kind: workshop
 download_link: plos07.pdf
 publication_year: 2007
+tags:
+  - sapha
 ---

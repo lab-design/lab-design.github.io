@@ -1,6 +1,7 @@
 ---
 key: AOSD-11
 permalink: /papers/AOSD-11/
+short_name: AOSD '11
 title: "Translucid Contracts: Expressive Specification and Modular Verification for Aspect-Oriented Interfaces"
 abstract: >
   As aspect-oriented programming techniques become more widely used, their use
@@ -33,4 +34,6 @@ download_links:
   - AOSD-11.pdf
   - slides.pdf
 publication_year: 2011
+tags:
+  - ptolemy
 ---

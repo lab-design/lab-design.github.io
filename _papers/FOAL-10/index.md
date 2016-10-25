@@ -1,6 +1,7 @@
 ---
 key: FOAL-10
 permalink: /papers/FOAL-10/
+short_name: FOAL '10
 title: Translucid Contracts for Aspect-oriented Interfaces
 abstract: >
   There is some consensus in the aspect-oriented community that a notion of
@@ -35,4 +36,6 @@ download_links:
   - FOAL-10.pdf
   - FOAL-10-slides.pdf
 publication_year: 2010
+tags:
+  - ptolemy
 ---

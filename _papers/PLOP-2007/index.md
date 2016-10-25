@@ -1,6 +1,7 @@
 ---
 key: PLOP-2007
 permalink: /papers/PLOP-2007/
+short_name: PLoP '07
 title: Design Pattern Implementations in Eos
 abstract: >
   In earlier work, we showed that the AspectJ notions of aspect and class can be
@@ -29,4 +30,6 @@ bib: |
 kind: conference
 download_link: plop07.pdf
 publication_year: 2007
+tags:
+  - eos
 ---

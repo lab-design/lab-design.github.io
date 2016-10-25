@@ -1,6 +1,7 @@
 ---
 key: FOAL-11
 permalink: /papers/FOAL-11/
+short_name: FOAL '11
 title: Applying Translucid Contracts for Modular Reasoning About Aspect and Object Oriented Events
 abstract: >
   The Implicit Invocation (II) architectural style improves modularity and is

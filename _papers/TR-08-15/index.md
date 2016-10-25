@@ -1,6 +1,7 @@
 ---
 key: TR-08-15
 permalink: /papers/TR-08-15/
+short_name: TR-08-15
 title: Instance-level Quantified, Typed Events for Integrated System Design
 abstract: >
   Integrated systems are those where components must behave together in order to

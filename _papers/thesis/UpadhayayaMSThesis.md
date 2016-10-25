@@ -1,6 +1,7 @@
 ---
 key: UpadhayayaMSThesis
 permalink: /papers/thesis/UpadhayayaMSThesis.html
+short_name: Upadhayaya MS Thesis
 title: Abstraction and performance, together at last; Auto-tuning message-passing concurrency on the Java Virtual Machine
 abstract: >
   Performance tuning is the leading justification for breaking abstraction

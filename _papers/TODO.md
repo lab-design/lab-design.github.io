@@ -1,6 +1,12 @@
 - [TR #414: "Nu: Towards an Aspect-Oriented Invocation Mechanism"](http://web.cs.iastate.edu/~nu/papers/towardsInvocation.pdf)
 - [TR #201](http://lib.dr.iastate.edu/cs_techreports/201/)
-- Everything!
-- Scan through the whole list on the old site to see what I've missed.
-- FIgure out why old site's SPLAT-06 says that it builds on TR-405 (which
-- doesn't appear to exist) instead of TR-214.
+- Figure out why old site's SPLAT-06 says that it builds on TR-405 (which
+  doesn't appear to exist) instead of TR-214.
+- Figure out [TR-unknown](/papers/TR-unknown).
+- Osiris Pub?
+- Scrape Slede Website Pubs
+- Slede: "ESEC/FSE '07 - DS"?
+- Slede: "FSE '06 - Poster paper" (not to be confused with FSE-2006) (broken link)
+- TR-13-02
+- Fix broken link in body of TR-314. What should it go to?
+- More TRs?

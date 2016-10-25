@@ -1,6 +1,7 @@
 ---
 key: TOSEM-08
 permalink: /papers/TOSEM-08/
+short_name: TOSEM '08
 title: Unifying Aspect- and Object-Oriented Design
 abstract: >
   The contribution of this work is the design and evaluation of a programming
@@ -28,4 +29,6 @@ bib: |
 kind: journal
 download_link: unified-tosem.pdf
 publication_year: 2009
+tags:
+  - eos
 ---

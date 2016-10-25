@@ -1,6 +1,7 @@
 ---
 key: TR-09-17
 permalink: /papers/TR-09-17/
+short_name: TR-09-17
 title: Behavioral Automata Composition for Automatic Topology Independent Verification of Parameterized Systems
 abstract: >
   Verifying correctness properties of parameterized systems is a long-standing

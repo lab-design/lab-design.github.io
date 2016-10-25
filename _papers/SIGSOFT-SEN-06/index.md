@@ -1,6 +1,7 @@
 ---
 key: SIGSOFT-SEN-06
-permalink: /papers/SIGSOFT-SEN-06
+permalink: /papers/SIGSOFT-SEN-06/
+short_name: SIGSOFT SEN '06
 title: "SLEDE: event-based specification of sensor network security protocols"
 abstract: >
   The semantic gap between specification and implementation languages for sensor

@@ -1,6 +1,7 @@
 ---
 key: MODULARITY16a
 permalink: /papers/MODULARITY16a/
+short_name: Modularity '16
 title: On Ordering Problems in Message Passing Software
 abstract: >
   The need for concurrency in modern software is increasingly fulfilled by
