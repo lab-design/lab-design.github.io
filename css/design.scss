@@ -51,6 +51,25 @@
   color: #FFFFFF;
 }
 
+.sm-width,
+.md-width,
+.lg-width {
+  float: left;
+  padding-right: 5px;
+}
+
+.sm-width {
+  min-width: 10%;
+}
+
+.md-width {
+  min-width: 15%;
+}
+
+.lg-width {
+  min-width: 20%;
+}
+
 footer {
   border-top: 2px solid rgb(204, 0, 0);
   font-size: 65%;

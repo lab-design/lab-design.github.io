@@ -15,9 +15,10 @@ permalink: /papers/
 <ul id="conference-papers-list">
   {% for paper in conference_papers reversed %}
   <li>
-    <a href="{{ paper.url }}">
+    <a href="{{ paper.url }}" class="md-width">
       {{ paper.short_name }}
     </a>
+    - {{ paper.title }}
   </li>
   {% endfor %}
 </ul>
@@ -27,9 +28,10 @@ permalink: /papers/
 <ul id="journal-papers-list">
   {% for paper in journal_papers reversed %}
   <li>
-    <a href="{{ paper.url }}">
+    <a href="{{ paper.url }}" class="md-width">
       {{ paper.short_name }}
     </a>
+    - {{ paper.title }}
   </li>
   {% endfor %}
 </ul>
@@ -39,9 +41,10 @@ permalink: /papers/
 <ul id="workshop-papers-list">
   {% for paper in workshop_papers reversed %}
   <li>
-    <a href="{{ paper.url }}">
+    <a href="{{ paper.url }}" class="md-width">
       {{ paper.short_name }}
     </a>
+    - {{ paper.title }}
   </li>
   {% endfor %}
 </ul>
@@ -50,9 +53,10 @@ permalink: /papers/
 <ul id="theses-list">
   {% for paper in theses reversed %}
   <li>
-    <a href="{{ paper.url }}">
+    <a href="{{ paper.url }}" class="lg-width">
       {{ paper.short_name }}
     </a>
+    - {{ paper.title }}
   </li>
   {% endfor %}
 </ul>
@@ -61,9 +65,10 @@ permalink: /papers/
 <ul id="technical-reports-list">
   {% for paper in technical_reports reversed %}
   <li>
-    <a href="{{ paper.url }}">
+    <a href="{{ paper.url }}" class="sm-width">
       {{ paper.short_name }}
     </a>
+    - {{ paper.title }}
   </li>
   {% endfor %}
 </ul>
