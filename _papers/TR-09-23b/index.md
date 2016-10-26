@@ -1,7 +1,7 @@
 ---
 key: TR-09-23b
 permalink: /papers/TR-09-23b/
-short_name: TR-09-23
+short_name: TR-09-23b
 title: Towards Efficient Java Virtual Machine Support for Dynamic Deployment of Inter-type Declarations
 abstract: >
   Dynamic deployment is an important feature of an aspect-oriented language

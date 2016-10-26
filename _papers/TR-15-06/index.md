@@ -2,21 +2,9 @@
 key: TR-15-06
 permalink: /papers/TR-15-06/
 short_name: TR-15-06
-title: "Design, Semantics and Implementation of the Ptolemy Programming Language: A Language with Quantified Typed Events"
+title: "Staged Tuning: A Hybrid (Compile/Install-time) Technique for Improving Utilization of Performance-asymmetric Multicores"
 abstract: >
-  Implicit invocation (II) and aspect-oriented (AO) languages provide software
-  designers with related but distinct mechanisms and strategies for decomposing
-  programs into modules and composing modules into systems. II languages have
-  explicitly announced events that run registered observer methods. AO languages
-  have implicitly announced events that run method-like but more powerful
-  advice. A limitation of II languages is their inability to refer to a large
-  set of events succinctly. They also lack the expressive power of AO advice.
-  Limitations of AO languages include potentially fragile dependence on
-  syntactic structure that may hurt maintainability, and limits on the available
-  set of implicit events and the reflective contextual information available.
-  Quantified, typed events, as implemented in our language Ptolemy, solve all
-  these problems. This paper describes Ptolemy and explores its advantages
-  relative to both II and AO languages.
+  Emerging trends towards performance-asymmetric multicore processors (AMPs) are posing new challenges, because for effective utilization of AMPs, code sections of a program must be assigned to cores such that the resource needs of the code sections closely match the resources available at the assigned core. Computing this assignment can be difficult especially in the presence of unknown or many target AMPs. We observe that finding a mapping between the code segment characteristics and the core characteristics is inexpensive enough, compared to finding a mapping between the code segments and the cores, that it can be deferred until installation-time for more precise decision. We present staged tuning which combines extensive compile time analysis with intelligent binary customization at install-time. Staged tuning is like staged compilation, just for core assignment. Our evaluation shows that staged tuning is effective in improving the utilization of AMPs. We see a 23% speedup over untuned workloads.
 bib:
 kind: technical_report
 download_link: http://lib.dr.iastate.edu/cs_techreports/372/

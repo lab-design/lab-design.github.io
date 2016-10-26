@@ -27,6 +27,7 @@ abstract: >
   time remains fairly close to the manually inlined version.
 bib:
 kind: technical_report
+download_link: TR-07-09.pdf
 publication_year: 2007
 tags:
   - nu

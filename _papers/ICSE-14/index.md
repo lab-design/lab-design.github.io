@@ -29,7 +29,7 @@ bib: |
     location = {Hyderabad, India},
   }
 kind: conference
-download_link:
+download_links:
   - icse14.pdf
   - icse14-slides.pptx
 publication_year: 2014
