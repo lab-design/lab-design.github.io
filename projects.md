@@ -8,8 +8,8 @@ layout: page
 
 ### [Panini](http://web.cs.iastate.edu/~panini/)
 
-Panini project is developing the capsule-oriented programming model.
-Capsule-oriented programming model is aimed at making concurrent software
+The Panini project is developing the capsule-oriented programming model.
+This model is aimed at making concurrent software
 development easier by providing two properties: (1) given a module it ought to
 be possible to statically, and modularly identify all points in its code where
 other modules might interfere (interference points), and (2) given a module and
