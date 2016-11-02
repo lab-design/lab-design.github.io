@@ -12,63 +12,63 @@ permalink: /papers/
 
 
 <h3>Conference Papers</h3>
-<ul id="conference-papers-list">
+<ul id="conference-papers-list" class="no-bullets">
   {% for paper in conference_papers reversed %}
   <li>
     <a href="{{ paper.url }}" class="md-width">
-      {{ paper.short_name }}
+      {{ paper.short_name }}:
     </a>
-    - {{ paper.title }}
+    {{ paper.title }}
   </li>
   {% endfor %}
 </ul>
 
 
 <h3>Journal Papers</h3>
-<ul id="journal-papers-list">
+<ul id="journal-papers-list" class="no-bullets">
   {% for paper in journal_papers reversed %}
   <li>
     <a href="{{ paper.url }}" class="md-width">
-      {{ paper.short_name }}
+      {{ paper.short_name }}:
     </a>
-    - {{ paper.title }}
+    {{ paper.title }}
   </li>
   {% endfor %}
 </ul>
 
 
 <h3>Workshop Papers</h3>
-<ul id="workshop-papers-list">
+<ul id="workshop-papers-list" class="no-bullets">
   {% for paper in workshop_papers reversed %}
   <li>
     <a href="{{ paper.url }}" class="md-width">
-      {{ paper.short_name }}
+      {{ paper.short_name }}:
     </a>
-    - {{ paper.title }}
+    {{ paper.title }}
   </li>
   {% endfor %}
 </ul>
 
 <h3>PhD and MS Theses</h3>
-<ul id="theses-list">
+<ul id="theses-list" class="no-bullets">
   {% for paper in theses reversed %}
   <li>
     <a href="{{ paper.url }}" class="lg-width">
-      {{ paper.short_name }}
+      {{ paper.short_name }}:
     </a>
-    - {{ paper.title }}
+    {{ paper.title }}
   </li>
   {% endfor %}
 </ul>
 
 <h3>Technical Reports</h3>
-<ul id="technical-reports-list">
+<ul id="technical-reports-list" class="no-bullets">
   {% for paper in technical_reports reversed %}
   <li>
     <a href="{{ paper.url }}" class="sm-width">
-      {{ paper.short_name }}
+      {{ paper.short_name }}:
     </a>
-    - {{ paper.title }}
+    {{ paper.title }}
   </li>
   {% endfor %}
 </ul>
