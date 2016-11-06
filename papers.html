@@ -10,65 +10,37 @@ permalink: /papers/
 {% assign theses =            (site.papers | where: 'kind', 'thesis'           | sort: 'publication_year') %}
 {% assign technical_reports = (site.papers | where: 'kind', 'technical_report' | sort: 'publication_year') %}
 
-
 <h3>Conference Papers</h3>
-<ul id="conference-papers-list" class="no-bullets">
-  {% for paper in conference_papers reversed %}
-  <li>
-    <a href="{{ paper.url }}" class="md-width">
-      {{ paper.short_name }}:
-    </a>
-    {{ paper.title }}
-  </li>
-  {% endfor %}
-</ul>
-
+<div id="conference-papers-list" role="tablist" aria-multiselectable="true">
+    {% for paper in conference_papers reversed %}
+      {%include paper-card.html paper=paper accordionKey="conference-papers-list" %}
+    {% endfor %}
+</div>
 
 <h3>Journal Papers</h3>
-<ul id="journal-papers-list" class="no-bullets">
+<div id="journal-papers-list" role="tablist" aria-multiselectable="true">
   {% for paper in journal_papers reversed %}
-  <li>
-    <a href="{{ paper.url }}" class="md-width">
-      {{ paper.short_name }}:
-    </a>
-    {{ paper.title }}
-  </li>
+      {%include paper-card.html paper=paper accordionKey="journal-papers-list" %}
   {% endfor %}
-</ul>
-
+</div>
 
 <h3>Workshop Papers</h3>
-<ul id="workshop-papers-list" class="no-bullets">
+<div id="workshop-papers-list" role="tablist" aria-multiselectable="true">
   {% for paper in workshop_papers reversed %}
-  <li>
-    <a href="{{ paper.url }}" class="md-width">
-      {{ paper.short_name }}:
-    </a>
-    {{ paper.title }}
-  </li>
+      {%include paper-card.html paper=paper accordionKey="workshop-papers-list" %}
   {% endfor %}
-</ul>
+</div>
 
 <h3>PhD and MS Theses</h3>
-<ul id="theses-list" class="no-bullets">
+<div id="theses-list" role="tablist" aria-multiselectable="true">
   {% for paper in theses reversed %}
-  <li>
-    <a href="{{ paper.url }}" class="lg-width">
-      {{ paper.short_name }}:
-    </a>
-    {{ paper.title }}
-  </li>
+      {%include paper-card.html paper=paper accordionKey="theses-list" %}
   {% endfor %}
-</ul>
+</div>
 
 <h3>Technical Reports</h3>
-<ul id="technical-reports-list" class="no-bullets">
+<div id="technical-reports-list" role="tablist" aria-multiselectable="true">
   {% for paper in technical_reports reversed %}
-  <li>
-    <a href="{{ paper.url }}" class="sm-width">
-      {{ paper.short_name }}:
-    </a>
-    {{ paper.title }}
-  </li>
+      {%include paper-card.html paper=paper accordionKey="technical-reports-list" %}
   {% endfor %}
-</ul>
+</div>

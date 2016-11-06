@@ -51,31 +51,24 @@
   color: #FFFFFF;
 }
 
-.sm-width,
-.md-width,
-.lg-width {
-  float: left;
-  padding-right: 5px;
+.thin-card-block {
+  padding: 0.5rem 1rem 0.5rem 1rem;
 }
 
-.sm-width {
-  min-width: 10%;
+.hamburger-icon,
+.hamburger-icon:link,
+.hamburger-icon:active,
+.hamburger-icon:hover {
+  text-decoration: none;
+  color: #000000;
+  outline: none;
+  font-size: 1.5em;
 }
 
-.md-width {
-  min-width: 15%;
-}
-
-.lg-width {
-  min-width: 20%;
-}
-
-.no-bullets {
-  list-style-type: none;
-}
-
-.no-bullets li {
-  padding-bottom: 1em;
+.hamburger-icon:before {
+  content: "\2261";
+  text-align: center;
+  vertical-align: middle;
 }
 
 footer {
