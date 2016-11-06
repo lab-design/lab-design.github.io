@@ -24,7 +24,7 @@ bib: |
     publisher = {IEEE Computer Society},
     address = {Washington, DC, USA},
   }
-kind:
+kind: conference
 download_link: modularize-integration.pdf
 publication_year: 2004
 tags:

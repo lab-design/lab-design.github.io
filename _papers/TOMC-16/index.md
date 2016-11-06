@@ -18,7 +18,24 @@ abstract: >
   an event-based calculus to show how these challenges can be overcome. Finally,
   we present modular reasoning rules of our technique and show its applicability
   to other event-based techniques.
-bib:
+bib: |
+  @inproceedings{Bagherzadeh:2015:MRP:2724525.2724569,
+    author = {Bagherzadeh, Mehdi and Dyer, Robert and Fernando, Rex D. and S\'{a}nchez, Jos{\'e} and Rajan, Hridesh},
+    title = {Modular Reasoning in the Presence of Event Subtyping},
+    booktitle = {Proceedings of the 14th International Conference on Modularity},
+    series = {MODULARITY 2015},
+    year = {2015},
+    isbn = {978-1-4503-3249-1},
+    location = {Fort Collins, CO, USA},
+    pages = {117--132},
+    numpages = {16},
+    url = {http://doi.acm.org/10.1145/2724525.2724569},
+    doi = {10.1145/2724525.2724569},
+    acmid = {2724569},
+    publisher = {ACM},
+    address = {New York, NY, USA},
+    keywords = {Event subtyping, event specification refinement, event type inheritance, modular rea- soning, translucid contracts},
+  }
 kind: journal
 download_link: event-subtyping-reasoning-TOMC.pdf
 publication_year: 2016

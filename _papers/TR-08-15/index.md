@@ -18,7 +18,7 @@ abstract: >
   there have been no previous formalizations of language features that aim to
   modularize separation of integration relationships. To demonstrate the
   feasibility of our language design, we have implemented this design in an
-  interpreter. To provide an initial assessment of the language�s benefits, we
+  interpreter. To provide an initial assessment of the language's benefits, we
   have implemented canonical examples in the literature. Our initial assessments
   show that instance-level quantified, typed events improve the separation of
   integration concerns over previous language design proposals.

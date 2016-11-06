@@ -7,6 +7,7 @@
 - Scrape Slede Website Pubs
 - Slede: "ESEC/FSE '07 - DS"?
 - Slede: "FSE '06 - Poster paper" (not to be confused with FSE-2006) (broken link)
-- TR-13-02
 - Fix broken link in body of TR-314. What should it go to?
 - More TRs?
+- ICSE-2004: What does the "- DS" stand for?
+- SPLASH-13-src: What does the "-src" stand for?

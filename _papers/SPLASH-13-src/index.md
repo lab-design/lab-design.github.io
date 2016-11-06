@@ -18,7 +18,7 @@ bib: |
     month = {October},
     year = {2013},
   }
-kind:
+kind: conference
 download_links:
   - http://dl.acm.org/authorize?N95813
   - splash13-src-poster.pdf
