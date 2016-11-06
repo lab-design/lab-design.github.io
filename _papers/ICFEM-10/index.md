@@ -28,8 +28,8 @@ bib: |
     address = {Shanghai, China},
   }
 kind: conference
-download_links:
-  - icfem-2010.pdf
+download_link: icfem-2010.pdf
+extra_download_links:
   - theorem2.pdf
 publication_year: 2010
 tags:

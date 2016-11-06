@@ -32,8 +32,8 @@ bib: |
     year = {2010},
   }
 kind: workshop
-download_links:
-  - FOAL-10.pdf
+download_link: FOAL-10.pdf
+extra_download_links:
   - FOAL-10-slides.pdf
 publication_year: 2010
 tags:

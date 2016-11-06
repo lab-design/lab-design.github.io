@@ -30,8 +30,8 @@ bib: |
     year = {2011},
   }
 kind: conference
-download_links:
-  - AOSD-11.pdf
+download_link: AOSD-11.pdf
+extra_download_links:
   - slides.pdf
 publication_year: 2011
 tags:

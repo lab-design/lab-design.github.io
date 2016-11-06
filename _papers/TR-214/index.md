@@ -17,8 +17,8 @@ abstract: >
   simple but representative AO program showing the benefits of our approach.
 bib:
 kind: technical_report
-download_links:
-  - http://lib.dr.iastate.edu/cs_techreports/214/
+download_link: http://lib.dr.iastate.edu/cs_techreports/214/
+extra_download_links:
   - preserveSoC.pdf
 publication_year: 2006
 ---

@@ -4,7 +4,7 @@ permalink: /warnings/
 layout: page
 ---
 
-{% assign expected_properties = "key|permalink|short_name|abstract|bib|kind|publication_year" | split: "|" %}
+{% assign expected_properties = "key|permalink|short_name|abstract|bib|kind|publication_year|download_link" | split: "|" %}
 
 <ul>
   {% for property in expected_properties %}
@@ -21,4 +21,3 @@ layout: page
   {% endfor %}
 </ul>
 
-<!-- TODO: Expect either a `download_link` or a `download_links`. -->

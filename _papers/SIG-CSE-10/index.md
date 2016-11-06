@@ -27,8 +27,8 @@ bib: |
     year = {2010},
   }
 kind: conference
-download_links:
-  - sigcse10.pdf
+download_link: sigcse10.pdf
+extra_download_links:
   - sigcse10-presentation.pdf
 publication_year: 2010
 tags:

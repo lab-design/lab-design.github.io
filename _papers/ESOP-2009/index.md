@@ -34,8 +34,8 @@ bib: |
     pages = {To appear},
   }
 kind: conference
-download_links:
-  - Rajan-Tao-Shaner-Leavens-09.pdf
+download_link: Rajan-Tao-Shaner-Leavens-09.pdf
+extra_download_links:
   - Rajan-ETAL-ESOP-09-Talk.pdf
 publication_year: 2009
 tags:

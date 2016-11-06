@@ -30,8 +30,8 @@ bib: |
     year = {2012},
   }
 kind: conference
-download_links:
-  - AOSD-12.pdf
+download_link: AOSD-12.pdf
+extra_download_links:
   - aosd12-slides.pdf
 publication_year: 2012
 tags:

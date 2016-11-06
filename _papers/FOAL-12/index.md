@@ -28,8 +28,8 @@ bib: |
     year = {2012},
   }
 kind: workshop
-download_links:
-  - FOAL-12.pdf
+download_link: FOAL-12.pdf
+extra_download_links:
   - foal12-slides.pdf
 publication_year: 2012
 tags:

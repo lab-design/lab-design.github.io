@@ -19,8 +19,8 @@ bib: |
     year = {2013},
   }
 kind: conference
-download_links:
-  - http://dl.acm.org/authorize?N95813
+download_link: http://dl.acm.org/authorize?N95813
+extra_download_links:
   - splash13-src-poster.pdf
   - splash13-src-slides.pdf
 publication_year: 2013

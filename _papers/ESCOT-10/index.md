@@ -27,8 +27,8 @@ bib: |
     year = {2010},
   }
 kind: workshop
-download_links:
-  - ESCOT-10.pdf
+download_link: ESCOT-10.pdf
+extra_download_links:
   - ESCOT-10-slides.pdf
 publication_year: 2010
 ---

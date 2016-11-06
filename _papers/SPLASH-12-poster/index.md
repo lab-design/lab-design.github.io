@@ -19,8 +19,8 @@ bib: |
     year = {2012},
   }
 kind: poster
-download_links:
-  - http://dl.acm.org/authorize?N95825
+download_link: http://dl.acm.org/authorize?N95825
+extra_download_links:
   - splash12-poster.pdf
 publication_year: 2012
 tags:
