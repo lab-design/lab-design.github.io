@@ -1,0 +1,29 @@
+---
+layout: page
+---
+
+<h2>Current Lab Members</h2>
+
+<ul id="lab-members-list">
+{% for member in site.data.members %}
+  <li>
+    {{ member.name }}
+    {% if member.status %}
+      [{{ member.status }}]
+    {% endif %}
+</li>
+{% endfor %}
+</ul>
+
+<h2>Lab Alumni</h2>
+
+<ul id="lab-alumni-list">
+{% for alumni in site.data.alumni %}
+  <li>
+    {{ alumni.name }}
+    {% if alumni.status %}
+      [{{ alumni.status }}]
+    {% endif %}
+</li>
+{% endfor %}
+</ul>
