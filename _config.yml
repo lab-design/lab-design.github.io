@@ -25,6 +25,7 @@ markdown: kramdown
 exclude:
   - Gemfile
   - Gemfile.lock
+  - vendor
 
 collections:
   papers:  # Declare the `papers` collection, and output a page for every item.
