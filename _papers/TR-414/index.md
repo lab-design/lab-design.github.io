@@ -1,7 +1,7 @@
 ---
-# TODO: Figure out what this paper is.
-key: TR-unknown
-# permalink: TODO
+key: TR-414
+permalink: /papers/TR-414/
+short_name: TR-414
 title: "Nu: Towards an Aspect-Oriented Invocation Mechanism"
 abstract: >
   The contribution of this work is the design, implementation and evaluation of
@@ -22,8 +22,8 @@ abstract: >
   aspect-language models can be emulated using Bind, and used in arbitrary
   combinations without compromising the design modularity in the object code.
 kind: technical_report
-download_link: towardsInvocation.pdf
-publication_year:
+download_link: TR-414.pdf
+publication_year: 2006
 tags:
   - nu
 ---
