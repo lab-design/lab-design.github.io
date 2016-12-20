@@ -177,8 +177,6 @@ compatibility with the existing tool chain, better run-time performance, cross
 AO language compatibility, improved pointcut expressivity, efficient run-time
 weaving support, etc.
 
-[FASE'11], [TOSEM'09], [AOSD'08], [VMIL '08], [VMIL '07], [FSE '06(Poster)], [SPLAT '06]
-
 <ul>
 {% for paper in papers reversed %}{% if paper.tags contains 'nu' and paper.kind != 'technical_report' %}
 <li><a href="{{ paper.url }}">{{ paper.short_name }}</a></li>
