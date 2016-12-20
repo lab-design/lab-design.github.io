@@ -39,4 +39,4 @@ tags:
 ---
 
 This paper supercedes a previous ISU technical report:
-[Technical Report 09-28b](/papers/TR-09-28b/)
+[Technical Report 10-28b](/papers/TR-10-28b/)
