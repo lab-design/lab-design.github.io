@@ -37,6 +37,12 @@ defaults:
       path: ""
     values:
       layout: paper
+  - scope:  # Make all `posts` use the `news` layout and namespace by default.
+      type: posts
+      path: ""
+    values:
+      layout: news
+      permalink: '/news/:categories/:year/:month/:day/:title/'
 
 static_files:
   extname: pdf

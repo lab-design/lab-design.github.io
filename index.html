@@ -1,0 +1,17 @@
+---
+title: Laboratory for Software Design
+layout: default
+---
+
+<!-- TODO: Carousel -->
+<a href="/" id="header-logo">
+  <img class="img-fluid" src="/img/lab-logo.png" alt="Laboratory for Software Design Logo"/>
+</a>
+
+<br />
+
+<h2>Recent News</h2>
+
+{% for news_item in site.posts limit:4 %}
+  {% include home_page_news_card.html news_item=news_item %}
+{% endfor %}
