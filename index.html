@@ -3,15 +3,24 @@ title: Laboratory for Software Design
 layout: default
 ---
 
-<!-- TODO: Carousel -->
-<a href="/" id="header-logo">
-  <img class="img-fluid" src="/img/lab-logo.png" alt="Laboratory for Software Design Logo"/>
-</a>
+<main class="container">
+  <br />
+  <div class="row">
+    <div class="col col-lg-10 push-lg-1">
 
-<br />
+      <!-- TODO: Carousel -->
+      <a href="/" id="header-logo">
+        <img class="img-fluid" src="/img/lab-logo.png" alt="Laboratory for Software Design Logo"/>
+      </a>
 
-<h2>Recent News</h2>
+      <br />
 
-{% for news_item in site.posts limit:4 %}
-  {% include home_page_news_card.html news_item=news_item %}
-{% endfor %}
+      <h2>Recent News</h2>
+
+      {% for news_item in site.posts limit:4 %}
+        {% include home_page_news_card.html news_item=news_item %}
+      {% endfor %}
+    </div>
+  </div>
+  <br />
+</main>
