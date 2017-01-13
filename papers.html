@@ -13,34 +13,34 @@ permalink: /papers/
 <h3>Conference Papers</h3>
 <div id="conference-papers-list" role="tablist" aria-multiselectable="true">
     {% for paper in conference_papers reversed %}
-      {%include paper-card.html paper=paper accordionKey="conference-papers-list" %}
+      {%include paper_card.html paper=paper accordionKey="conference-papers-list" %}
     {% endfor %}
 </div>
 
 <h3>Journal Papers</h3>
 <div id="journal-papers-list" role="tablist" aria-multiselectable="true">
   {% for paper in journal_papers reversed %}
-      {%include paper-card.html paper=paper accordionKey="journal-papers-list" %}
+      {%include paper_card.html paper=paper accordionKey="journal-papers-list" %}
   {% endfor %}
 </div>
 
 <h3>Workshop Papers</h3>
 <div id="workshop-papers-list" role="tablist" aria-multiselectable="true">
   {% for paper in workshop_papers reversed %}
-      {%include paper-card.html paper=paper accordionKey="workshop-papers-list" %}
+      {%include paper_card.html paper=paper accordionKey="workshop-papers-list" %}
   {% endfor %}
 </div>
 
 <h3>PhD and MS Theses</h3>
 <div id="theses-list" role="tablist" aria-multiselectable="true">
   {% for paper in theses reversed %}
-      {%include paper-card.html paper=paper accordionKey="theses-list" %}
+      {%include paper_card.html paper=paper accordionKey="theses-list" %}
   {% endfor %}
 </div>
 
 <h3>Technical Reports</h3>
 <div id="technical-reports-list" role="tablist" aria-multiselectable="true">
   {% for paper in technical_reports reversed %}
-      {%include paper-card.html paper=paper accordionKey="technical-reports-list" %}
+      {%include paper_card.html paper=paper accordionKey="technical-reports-list" %}
   {% endfor %}
 </div>
