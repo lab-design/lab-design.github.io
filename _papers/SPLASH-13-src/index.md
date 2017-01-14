@@ -21,8 +21,8 @@ bib: |
 kind: conference
 download_link: http://dl.acm.org/authorize?N95813
 extra_download_links:
-  - splash13-src-poster.pdf
-  - splash13-src-slides.pdf
+  - { link: splash13-src-poster.pdf, title: Poster }
+  - { link: splash13-src-slides.pdf, title: Slides }
 publication_year: 2013
 tags:
   - boa

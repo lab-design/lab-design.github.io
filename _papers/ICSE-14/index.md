@@ -31,7 +31,7 @@ bib: |
 kind: conference
 download_link: icse14.pdf
 extra_download_links:
-  - icse14-slides.pptx
+  - {link: icse14-slides.pptx, title: Slides }
 publication_year: 2014
 tags:
   - boa

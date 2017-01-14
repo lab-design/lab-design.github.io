@@ -95,6 +95,26 @@ nav.navbar {
   padding: 0.8rem 0.8rem 0.8rem 0.8rem;
 }
 
+.space-above {
+  margin-top: 2rem;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.icon > img {
+  height: 1.6rem;
+}
+
+.icon > span {
+  margin-left: 0.5rem;
+  font-size: 1.4rem;
+}
+
 html {
   min-width: 320px;
   position: relative;

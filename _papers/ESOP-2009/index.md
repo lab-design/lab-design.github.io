@@ -36,7 +36,7 @@ bib: |
 kind: conference
 download_link: Rajan-Tao-Shaner-Leavens-09.pdf
 extra_download_links:
-  - Rajan-ETAL-ESOP-09-Talk.pdf
+  - { link: Rajan-ETAL-ESOP-09-Talk.pdf, title: Slides }
 publication_year: 2009
 tags:
   - tisa

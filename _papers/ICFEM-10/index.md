@@ -30,7 +30,7 @@ bib: |
 kind: conference
 download_link: icfem-2010.pdf
 extra_download_links:
-  - theorem2.pdf
+  - { link: theorem2.pdf, title: Theorem 2 }
 publication_year: 2010
 tags:
   - slede

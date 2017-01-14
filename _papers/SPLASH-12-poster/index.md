@@ -21,7 +21,7 @@ bib: |
 kind: poster
 download_link: http://dl.acm.org/authorize?N95825
 extra_download_links:
-  - splash12-poster.pdf
+  - { link: splash12-poster.pdf, title: Poster }
 publication_year: 2012
 tags:
   - boa

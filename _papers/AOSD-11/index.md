@@ -32,7 +32,7 @@ bib: |
 kind: conference
 download_link: AOSD-11.pdf
 extra_download_links:
-  - slides.pdf
+  - { link: slides.pdf, title: Slides }
 publication_year: 2011
 tags:
   - ptolemy

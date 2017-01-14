@@ -32,9 +32,9 @@ bib: |
     month = { March },
   }
 kind: technical_report
-download_link: TR-10-28b.pdf
+download_link: http://lib.dr.iastate.edu/cs_techreports/316/
 extra_download_links:
-  - http://lib.dr.iastate.edu/cs_techreports/316/
+  - { link: TR-10-28b.pdf, title: Direct PDF }
 publication_year: 2010
 ---
 

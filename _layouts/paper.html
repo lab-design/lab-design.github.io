@@ -3,14 +3,15 @@ layout: page
 ---
 
 {% if page.download_link %}
-<a href="{{ page.download_link }}">Download</a>
-<br />
-<br />
+<a href="{{ page.download_link }}" class="icon">
+  <img src="/img/pdf_icon.svg"/>
+  <span>Download Paper</span>
+</a>
 {% endif %}
 
-{% if page.download_links %}
-{% for download_link in page.download_links %}
-<a href="{{ download_link }}">Download</a>
+{% if page.extra_download_links %}
+{% for download_link in page.extra_download_links %}
+<a href="{{ download_link.link }}">{{ download_link.title }}</a>
 <br />
 {% endfor %}
 <br />

@@ -19,6 +19,6 @@ bib:
 kind: technical_report
 download_link: http://lib.dr.iastate.edu/cs_techreports/214/
 extra_download_links:
-  - preserveSoC.pdf
+  - { link: preserveSoC.pdf, title: Direct PDF }
 publication_year: 2006
 ---

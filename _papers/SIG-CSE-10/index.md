@@ -29,7 +29,7 @@ bib: |
 kind: conference
 download_link: sigcse10.pdf
 extra_download_links:
-  - sigcse10-presentation.pdf
+  - { link: sigcse10-presentation.pdf, title: Slides }
 publication_year: 2010
 tags:
   - frances

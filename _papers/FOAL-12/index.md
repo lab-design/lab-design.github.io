@@ -30,7 +30,7 @@ bib: |
 kind: workshop
 download_link: FOAL-12.pdf
 extra_download_links:
-  - foal12-slides.pdf
+  - { link: foal12-slides.pdf, title: Slides }
 publication_year: 2012
 tags:
   - ptolemy

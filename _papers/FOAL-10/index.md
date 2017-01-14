@@ -34,7 +34,7 @@ bib: |
 kind: workshop
 download_link: FOAL-10.pdf
 extra_download_links:
-  - FOAL-10-slides.pdf
+  - { link: FOAL-10-slides.pdf, title: Slides }
 publication_year: 2010
 tags:
   - ptolemy
