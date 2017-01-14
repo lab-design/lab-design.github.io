@@ -91,8 +91,12 @@ nav.navbar {
   flex-grow: 1;
 }
 
-.paper_card .card-block {
+.paper_card .padded-inner-card-block {
   padding: 0.8rem 0.8rem 0.8rem 0.8rem;
+}
+
+.paper_card .card-block {
+  padding: 0;
 }
 
 .space-above {
