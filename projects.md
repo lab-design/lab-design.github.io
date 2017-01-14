@@ -7,6 +7,7 @@ layout: page
 ## Active Research Projects
 
 ### [Panini](http://web.cs.iastate.edu/~panini/)
+<a id="panini"></a>
 
 The Panini project is developing the capsule-oriented programming model.
 This model is aimed at making concurrent software
