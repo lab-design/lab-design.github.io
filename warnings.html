@@ -4,10 +4,12 @@ permalink: /warnings/
 layout: page
 ---
 
-{% assign expected_properties = "key|permalink|short_name|abstract|bib|kind|publication_year|download_link" | split: "|" %}
+{% assign expected_properties =
+  "key|permalink|short_name|abstract|bib|kind|publication_year|download_link" | split: "|"
+%}
 
 {% assign extra_download_link_properties =
-"link|title" | split: "|"
+  "link|title" | split: "|"
 %}
 
 <ul>
@@ -36,4 +38,3 @@ layout: page
 
   {% endfor %}
 </ul>
-

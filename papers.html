@@ -20,27 +20,27 @@ permalink: /papers/
 <h3 class="space-above">Journal Papers</h3>
 <div id="journal-papers-list" role="tablist" aria-multiselectable="true">
   {% for paper in journal_papers reversed %}
-      {%include paper_card.html paper=paper accordionKey="journal-papers-list" %}
+    {%include paper_card.html paper=paper accordionKey="journal-papers-list" %}
   {% endfor %}
 </div>
 
 <h3 class="space-above">Workshop Papers</h3>
 <div id="workshop-papers-list" role="tablist" aria-multiselectable="true">
   {% for paper in workshop_papers reversed %}
-      {%include paper_card.html paper=paper accordionKey="workshop-papers-list" %}
+    {%include paper_card.html paper=paper accordionKey="workshop-papers-list" %}
   {% endfor %}
 </div>
 
 <h3 class="space-above">PhD and MS Theses</h3>
 <div id="theses-list" role="tablist" aria-multiselectable="true">
   {% for paper in theses reversed %}
-      {%include paper_card.html paper=paper accordionKey="theses-list" %}
+    {%include paper_card.html paper=paper accordionKey="theses-list" %}
   {% endfor %}
 </div>
 
 <h3 class="space-above">Technical Reports</h3>
 <div id="technical-reports-list" role="tablist" aria-multiselectable="true">
   {% for paper in technical_reports reversed %}
-      {%include paper_card.html paper=paper accordionKey="technical-reports-list" %}
+    {%include paper_card.html paper=paper accordionKey="technical-reports-list" %}
   {% endfor %}
 </div>
