@@ -10,35 +10,43 @@ permalink: /papers/
 {% assign theses =            (site.papers | where: 'kind', 'thesis'           | sort: 'publication_year') %}
 {% assign technical_reports = (site.papers | where: 'kind', 'technical_report' | sort: 'publication_year') %}
 
-<h3 class="space-above">Conference Papers</h3>
+1. TOC
+{: toc}
+
+### Conference Papers
+{: .space-above}
 <div id="conference-papers-list" role="tablist" aria-multiselectable="true">
     {% for paper in conference_papers reversed %}
       {%include paper_card.html paper=paper accordionKey="conference-papers-list" %}
     {% endfor %}
 </div>
 
-<h3 class="space-above">Journal Papers</h3>
+### Journal Papers
+{: .space-above}
 <div id="journal-papers-list" role="tablist" aria-multiselectable="true">
   {% for paper in journal_papers reversed %}
     {%include paper_card.html paper=paper accordionKey="journal-papers-list" %}
   {% endfor %}
 </div>
 
-<h3 class="space-above">Workshop Papers</h3>
+### Workshop Papers
+{: .space-above}
 <div id="workshop-papers-list" role="tablist" aria-multiselectable="true">
   {% for paper in workshop_papers reversed %}
     {%include paper_card.html paper=paper accordionKey="workshop-papers-list" %}
   {% endfor %}
 </div>
 
-<h3 class="space-above">PhD and MS Theses</h3>
+### PhD and MS Theses
+{: .space-above}
 <div id="theses-list" role="tablist" aria-multiselectable="true">
   {% for paper in theses reversed %}
     {%include paper_card.html paper=paper accordionKey="theses-list" %}
   {% endfor %}
 </div>
 
-<h3 class="space-above">Technical Reports</h3>
+### Technical Reports
+{: .space-above}
 <div id="technical-reports-list" role="tablist" aria-multiselectable="true">
   {% for paper in technical_reports reversed %}
     {%include paper_card.html paper=paper accordionKey="technical-reports-list" %}

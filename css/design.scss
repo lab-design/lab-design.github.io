@@ -79,6 +79,14 @@ nav.navbar {
   padding: 0 0 0 0;
 }
 
+#markdown-toc {
+  border: 1px solid black;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-top: 1rem;
+  background: #F5F5F5
+}
+
 .paper_card_header {
   display: flex;
   justify-content: flex-start;
