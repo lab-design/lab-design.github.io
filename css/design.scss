@@ -83,8 +83,14 @@ nav.navbar {
   border: 1px solid black;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  padding-right: 1.5rem;
   margin-top: 1rem;
-  background: #F5F5F5
+  background: #F5F5F5;
+  display: table;
+}
+
+#markdown-toc a {
+  font-weight: lighter;
 }
 
 .paper_card_header {
