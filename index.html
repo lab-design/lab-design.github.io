@@ -1,20 +1,28 @@
 ---
 title: Laboratory for Software Design
 layout: default
+highlighted_papers:
+  - OOPSLA16
+  - TOSEM-15
+  - ECOOP-15
 ---
 
 <main class="container">
   <br />
   <div class="row">
     <div class="col col-md-10 push-md-1">
-
-      {% include home_page_carousel.html %}
-
-      <h2>Recent News</h2>
-
-      {% for news_item in site.posts limit:4 %}
-        {% include home_page_news_card.html news_item=news_item %}
-      {% endfor %}
+      <div class="container">
+        <div class="col-12">
+          {% include home_page/carousel.html %}
+        </div>
+        <div class="col col-md-6">
+          {% include home_page/highlighted_papers.html
+                     highlighted_papers=page.highlighted_papers %}
+        </div>
+        <div class="col col-md-6">
+          {% include home_page/recent_news.html %}
+        </div>
+      </div>
     </div>
   </div>
   <br />

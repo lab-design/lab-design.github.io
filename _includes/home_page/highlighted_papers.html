@@ -1,0 +1,14 @@
+<h2>Highlighted Papers</h2>
+<ul id="highlighted-papers-list">
+  {% for highlighted_paper in include.highlighted_papers %}
+    {% for paper in site.papers %}
+      {% if paper.key == highlighted_paper %}
+        <li>
+          <a href="{{ paper.url }}">
+            {{ paper.short_name }}: {{ paper.title }}
+          </a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+</ul>
