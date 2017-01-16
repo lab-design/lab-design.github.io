@@ -1,0 +1,12 @@
+{% assign news_item = include.news_item %}
+
+<a href="{{ news_item.url }}">
+  <div class="card news-page-news-card">
+    <div class="card-block">
+      <h6 class="card-title">
+        {{ news_item.title }}
+      </h6>
+      <p class="card-subtitle text-muted">{{ news_item.date | date: '%B %d, %Y' }}</p>
+    </div>
+  </div>
+<a>

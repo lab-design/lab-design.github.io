@@ -20,7 +20,7 @@ permalink: /papers/
 {: .space-above}
 <div id="conference-papers-list" role="tablist" aria-multiselectable="true">
     {% for paper in conference_papers reversed %}
-      {%include paper_card.html paper=paper accordionKey="conference-papers-list" %}
+      {%include papers_page/paper_card.html paper=paper accordionKey="conference-papers-list" %}
     {% endfor %}
 </div>
 
@@ -28,7 +28,7 @@ permalink: /papers/
 {: .space-above}
 <div id="journal-papers-list" role="tablist" aria-multiselectable="true">
   {% for paper in journal_papers reversed %}
-    {%include paper_card.html paper=paper accordionKey="journal-papers-list" %}
+    {%include papers_page/paper_card.html paper=paper accordionKey="journal-papers-list" %}
   {% endfor %}
 </div>
 
@@ -36,7 +36,7 @@ permalink: /papers/
 {: .space-above}
 <div id="workshop-papers-list" role="tablist" aria-multiselectable="true">
   {% for paper in workshop_papers reversed %}
-    {%include paper_card.html paper=paper accordionKey="workshop-papers-list" %}
+    {%include papers_page/paper_card.html paper=paper accordionKey="workshop-papers-list" %}
   {% endfor %}
 </div>
 
@@ -44,7 +44,7 @@ permalink: /papers/
 {: .space-above}
 <div id="theses-list" role="tablist" aria-multiselectable="true">
   {% for paper in theses reversed %}
-    {%include paper_card.html paper=paper accordionKey="theses-list" %}
+    {%include papers_page/paper_card.html paper=paper accordionKey="theses-list" %}
   {% endfor %}
 </div>
 
@@ -52,6 +52,6 @@ permalink: /papers/
 {: .space-above}
 <div id="technical-reports-list" role="tablist" aria-multiselectable="true">
   {% for paper in technical_reports reversed %}
-    {%include paper_card.html paper=paper accordionKey="technical-reports-list" %}
+    {%include papers_page/paper_card.html paper=paper accordionKey="technical-reports-list" %}
   {% endfor %}
 </div>

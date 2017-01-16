@@ -5,5 +5,5 @@ permalink: /news/
 ---
 
 {% for news_item in site.posts %}
-  {% include news_page_card.html news_item=news_item %}
+  {% include news_page/news_card.html news_item=news_item %}
 {% endfor %}

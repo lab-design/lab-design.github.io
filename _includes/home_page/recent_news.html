@@ -2,3 +2,6 @@
 {% for news_item in site.posts limit:4 %}
   {% include home_page/news_card.html news_item=news_item %}
 {% endfor %}
+<div id="home-page-more-news">
+  <a href="/news/">More News</a>
+</div>

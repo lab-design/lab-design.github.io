@@ -201,3 +201,17 @@ footer div {
   // TODO: @extend .card
   color: black;
 }
+
+.news-page-news-card {
+  // TODO: @extend .card
+  color: black;
+}
+
+div#home-page-more-projects,
+div#home-page-more-papers,
+div#home-page-more-news {
+  text-align: center;
+  font-weight: light;
+  font-size: small;
+  margin-bottom: 1rem;
+}
