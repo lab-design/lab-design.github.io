@@ -28,6 +28,10 @@
 
 # M.S. Graduates:
 
+- name: Eric Y Lin
+  status: MS Spring'16
+  netid: eylin
+
 - name: Sean L. Mooney
   status: MS Summer'15
   site: http://web.cs.iastate.edu/~smooney/
@@ -36,6 +40,10 @@
   status: MS Spring'10
   site: http://web.cs.iastate.edu/~harish/
   netid: harish
+
+- name: Youssef W. Hanna
+  status: MS Fall'08
+  netid: ywhanna
 
 - name: Rakesh Setty
   status: MS Fall'08
@@ -78,3 +86,7 @@
 - name: Rex Fernando
   status: B.S. Spring'13
   email: rex@cs.wisc.edu
+
+- name: Eric Lin
+  status: B.S. Fall'12
+  email: eylin

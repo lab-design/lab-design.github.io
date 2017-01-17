@@ -26,20 +26,15 @@
   email: ganeshau@iastate.edu
   site: http://web.cs.iastate.edu/~ganeshau/
 
-- name: Eric Lin
-  status: PhD, B.S. Fall'12
-  email: eylin@iastate.edu
-  site: http://web.cs.iastate.edu/~eylin/
-
 - name: Hamid Bagheri
   status: PhD
   email: hbagheri@iastate.edu
   site: http://www.cs.iastate.edu/people/hamid-bagheri
 
-- name: Ankur Agarwal
+- name: Hung Phan
   status: PhD
-  email: ankuraga@iastate.edu
-  site: http://web.cs.iastate.edu/~ankuraga/
+  email: hungphd@iastate.edu
+  site: http://design.cs.iastate.edu/
 
 - name: Johirul Islam
   status: PhD
@@ -61,20 +56,6 @@
   email: spriya@iastate.edu
   site: http://web.cs.iastate.edu/~spriya/
 
-- name: Youssef Hanna
-  status: PhD, MS Fall'08
-  email: ywhanna@iastate.edu
-  site: http://web.cs.iastate.edu/~ywhanna/
-  description: >
-    Youssef Hanna is a graduate student in the Department of Computer Science at
-    Iowa State University, where he works with Dr. Hridesh Rajan. His research
-    interests are in specification and verification techniques for security
-    protocols in sensor networks. Youssef obtained his M.S. degree in Fall 2008
-    and his thesis title was "Slede: verification of sensor network security
-    protocols." Youssef is currently leading the research efforts on the Slede
-    project. He can be reached at ywhanna@iastate.edu.
-
-
 # Master's Students:
 
 - name: David Johnston
@@ -93,6 +74,10 @@
   email: rramu@iastate.edu
   site: http://web.cs.iastate.edu/~rramu/
 
+- name: Jackson L Maddox
+  status: MS
+  email: jlmaddox@iastate.edu
+  site: http://design.cs.iastate.edu
 
 # Bachelor's Students:
 # None at the moment.
