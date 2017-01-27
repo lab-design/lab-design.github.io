@@ -27,6 +27,7 @@ exclude:
   - Gemfile.lock
   - vendor
   - script
+  - README.md
 
 collections:
   papers:  # Declare the `papers` collection, and output a page for every item.
