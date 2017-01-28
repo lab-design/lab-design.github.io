@@ -1,27 +1,33 @@
 ---
 layout: sdsi
-title: SDSI Home
+title: Presidential Initiative for Interdisciplinary Research (PIIR) in Data Driven Science Project
 permalink: /sdsi/
 ---
 
-<h1>Presidential Initiative for Interdisciplinary Research (PIIR) in Data Driven Science Project</h1>
 <br>
 <br>
 
-<h4>Project Title: Bridging the Digital Divide in Data Science: Invention and Refinement of Shared Data Science Infrastructures</h4>
-
-<br>
+<p><b>Project Title:</b> Bridging the Digital Divide in Data Science: Invention and Refinement of Shared Data Science Infrastructures</p>
 <hr>
-
+<br>
 <div class="row">
 <h1>PI</h1>
-<div class="col-md-12 col-lg-12 col-sm-12 service wow fadeInUp" data-wow-delay="400ms">
-    <div class="thumbnail"> <img src="{/img/sdsi/hrajan.jpg" alt="..." class="img-rounded memberimg">
-        <div class="caption">
-            <h6>Hridesh Rajan</h6>
-            <p>Department of Computer Science, Iowa State University</p>
-        </div>
-    </div>
+<hr>
+<div class="col-md-6 col-lg-6 col-sm-12 service wow fadeInUp" data-wow-delay="400ms">
+
+    <table style="border:none;">
+    <tr>
+    <td> <img src="/img/sdsi/hrajan.jpg" alt="..." class="img-rectangle"></td>
+    <td></td>
+    <td>
+    <div class="caption" style="float:right;">
+                        <h6>Hridesh Rajan</h6>
+                        <p>Department of Computer Science, Iowa State University</p>
+         </div>
+    </td>
+    </tr>
+    </table>
+
 </div>
 </div>
 
