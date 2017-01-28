@@ -1,0 +1,122 @@
+
+- name: Carson Andorf
+  email: test@iastate.edu
+  site: test
+  image: /img/sdsi/andorf.jpg
+  about: Computer Science (USDA-ARS Scientist)
+
+- name: Kris De Brabanter
+  email: test@iastate.edu
+  site: test
+  image: /img/sdsi/brabanter.jpg
+  about: Statistics
+
+- name: Iddo Friedberg
+  email: test@iastate.edu
+  site: test
+  image: /img/sdsi/friedberg.jpg
+  about: Veterinary Microbiology &
+         Preventive Medicine
+
+- name: Baskar Ganapathysubramanian
+  email: test@iastate.edu
+  site: test
+  image: /img/sdsi/ganapathysubramanian.jpg
+  about: Mechanical Engineering
+
+- name: Dermot Hayes
+  email: test@iastate.edu
+  site: test
+  image: /img/sdsi/hayes.jpg
+  about: Economics, Center for Agriculture and Rural Development
+
+- name: Priyanka Jayashankar
+  email: test@iastate.edu
+  site: test
+  image: /img/sdsi/jayashankar.jpg
+  about: Business, Leopold Center for Sustainable Agriculture
+
+- name: Jonathan Kelly
+  email: test@iastate.edu
+  site: test
+  image: /img/sdsi/kelly.jpg
+  about: Psychology
+
+- name: Catherine Kling
+  email: test@iastate.edu
+  site: test
+  image: /img/sdsi/kling.jpg
+  about: Economics, Center for Agriculture and Rural Development
+
+- name: Paul Lasley
+  email: test@iastate.edu
+  site: test
+  image: /img/sdsi/lasley_p.jpg
+  about: Sociology
+
+- name: Carolyn Lawrence-Dill
+  email: test@iastate.edu
+  site: test
+  image: /img/sdsi/lawrence.jpg
+  about: Genetics, Development &
+         Cell Biology
+
+- name: Daren Mueller
+  email: test@iastate.edu
+  site: test
+  image: /img/sdsi/mueller.jpg
+  about: Plant Pathology
+
+- name: Dan Nettleton
+  email: test@iastate.edu
+  site: test
+  image: /img/sdsi/nettleton.jpg
+  about: Statistics
+
+- name: Mark Rasmussen
+  email: test@iastate.edu
+  site: test
+  image: /img/sdsi/rasmussen.jpg
+  about: Animal Science, Leopold Center for Sustainable Agriculture
+
+- name: Soumik Sarkar
+  email: test@iastate.edu
+  site: test
+  image: /img/sdsi/sarkar.jpg
+  about: Mechanical Engineering
+
+- name: Patrick Schnable
+  email: test@iastate.edu
+  site: test
+  image: /img/sdsi/schnable.jpg
+  about: Agronomy, Plant Sciences Institute (PSI)
+
+- name: Arti Singh
+  email: test@iastate.edu
+  site: test
+  image: /img/sdsi/singh.jpg
+  about: Agronomy
+
+- name: Asheesh K. Singh
+  email: test@iastate.edu
+  site: test
+  image: /img/sdsi/asingh.jpg
+  about: Agronomy
+
+- name: Srikant Srinivasan
+  email: test@iastate.edu
+  site: test
+  image: /img/sdsi/srinivasan.jpg
+  about: Plant Sciences Institute (PSI)
+
+- name: Greg Tylka
+  email: test@iastate.edu
+  site: test
+  image: /img/sdsi/tylka.jpg
+  about: Plant Pathology
+
+- name: Zhengyuan Zhu
+  email: test@iastate.edu
+  site: test
+  image: /img/sdsi/zhu.jpg
+  about: Statistics
