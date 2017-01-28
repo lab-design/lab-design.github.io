@@ -1,0 +1,15 @@
+
+{% assign title=include.news.title %}
+{% assign url = include.news.url %}
+{% assign short = include.news.short %}
+<div class="col-md-12 col-lg-12 col-sm-12 service wow fadeInUp" data-wow-delay="400ms">
+    <div>
+        <h1>{{title}}</h1>
+    </div>
+    <div>
+        <p>
+            {{short}} <button class="btn-info"><a href="{{url}}">Read More...</a></button>
+        </p>
+    </div>
+    <hr>
+</div>
