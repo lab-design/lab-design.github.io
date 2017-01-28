@@ -1,122 +1,72 @@
 
-- name: Carson Andorf
+- name: Jan Lauren Boyles
   email: test@iastate.edu
   site: test
-  image: /img/sdsi/andorf.jpg
-  about: Computer Science (USDA-ARS Scientist)
+  image: /img/sdsi/jan.jpg
+  about: Greenlee School of Journalism and Communication
 
-- name: Kris De Brabanter
+- name: Gianfranco Ciardo
   email: test@iastate.edu
   site: test
-  image: /img/sdsi/brabanter.jpg
-  about: Statistics
+  image: /img/sdsi/gfcclr.gif
+  about: Dept. of Computer Science
 
-- name: Iddo Friedberg
+- name: Heike Hofmann
   email: test@iastate.edu
   site: test
   image: /img/sdsi/friedberg.jpg
-  about: Veterinary Microbiology &
-         Preventive Medicine
+  about: Dept. of Statistics and Statistical Laboratory
 
-- name: Baskar Ganapathysubramanian
+- name: Stephen D. Holland
   email: test@iastate.edu
   site: test
   image: /img/sdsi/ganapathysubramanian.jpg
-  about: Mechanical Engineering
+  about: Dept. of Aerospace Engineering and Center for Non-destructive Evaluation
 
-- name: Dermot Hayes
+- name: Matthew Hufford
   email: test@iastate.edu
   site: test
   image: /img/sdsi/hayes.jpg
-  about: Economics, Center for Agriculture and Rural Development
+  about: Dept. of Ecology, Evolution, and Organismal Biology
 
-- name: Priyanka Jayashankar
+- name: Wei Le
   email: test@iastate.edu
   site: test
   image: /img/sdsi/jayashankar.jpg
-  about: Business, Leopold Center for Sustainable Agriculture
+  about: Dept. of Computer Science
 
-- name: Jonathan Kelly
+- name: Glenn R. Luecke
   email: test@iastate.edu
   site: test
   image: /img/sdsi/kelly.jpg
-  about: Psychology
+  about: Dept. of Mathematics
 
-- name: Catherine Kling
+- name: James M. Reecy
   email: test@iastate.edu
   site: test
   image: /img/sdsi/kling.jpg
-  about: Economics, Center for Agriculture and Rural Development
+  about: Office of Biotechnology Director, NRSP-8 Bioinformatics Coordinator and Dept. of Animal Science
 
-- name: Paul Lasley
+- name: Andrew Severin
   email: test@iastate.edu
   site: test
   image: /img/sdsi/lasley_p.jpg
-  about: Sociology
+  about: Genome Informatics Facility Manager, Office of Biotechnology
 
-- name: Carolyn Lawrence-Dill
+- name: Anuj Sharma
   email: test@iastate.edu
   site: test
   image: /img/sdsi/lawrence.jpg
-  about: Genetics, Development &
-         Cell Biology
+  about: Dept. of Civil, Construction, and Environment Engineering and Institute for Transportation
 
-- name: Daren Mueller
+- name: Jin Tian
   email: test@iastate.edu
   site: test
   image: /img/sdsi/mueller.jpg
-  about: Plant Pathology
+  about: Dept. of Computer Science
 
-- name: Dan Nettleton
+- name: Christopher K. Tuggle
   email: test@iastate.edu
   site: test
   image: /img/sdsi/nettleton.jpg
-  about: Statistics
-
-- name: Mark Rasmussen
-  email: test@iastate.edu
-  site: test
-  image: /img/sdsi/rasmussen.jpg
-  about: Animal Science, Leopold Center for Sustainable Agriculture
-
-- name: Soumik Sarkar
-  email: test@iastate.edu
-  site: test
-  image: /img/sdsi/sarkar.jpg
-  about: Mechanical Engineering
-
-- name: Patrick Schnable
-  email: test@iastate.edu
-  site: test
-  image: /img/sdsi/schnable.jpg
-  about: Agronomy, Plant Sciences Institute (PSI)
-
-- name: Arti Singh
-  email: test@iastate.edu
-  site: test
-  image: /img/sdsi/singh.jpg
-  about: Agronomy
-
-- name: Asheesh K. Singh
-  email: test@iastate.edu
-  site: test
-  image: /img/sdsi/asingh.jpg
-  about: Agronomy
-
-- name: Srikant Srinivasan
-  email: test@iastate.edu
-  site: test
-  image: /img/sdsi/srinivasan.jpg
-  about: Plant Sciences Institute (PSI)
-
-- name: Greg Tylka
-  email: test@iastate.edu
-  site: test
-  image: /img/sdsi/tylka.jpg
-  about: Plant Pathology
-
-- name: Zhengyuan Zhu
-  email: test@iastate.edu
-  site: test
-  image: /img/sdsi/zhu.jpg
-  about: Statistics
+  about: NRSP-8 Swine Genome Coordinator, Dept. of Animal Science
