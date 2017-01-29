@@ -41,6 +41,12 @@
   image: /img/sdsi/Glenn_b2.jpg
   about: Dept. of Mathematics
 
+- name: Hridesh Rajan
+  email: hridesh@iastate.edu
+  site: http://www.cs.iastate.edu/~hridesh/
+  image: /img/sdsi/hrajan.jpg
+  about: Dept. of Computer Science
+
 - name: James M. Reecy
   email: test@iastate.edu
   site: test
