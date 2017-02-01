@@ -1,10 +1,17 @@
 ---
 ---
 
-/* Header CSS */
-header {
-  background-color: rgb(161, 31, 18);
+body {
+  font-family: Helvetica, Arial, san-serif;
+}
+
+.brand-bg-color {
+  background-color: #C03;
   padding-top: 0.5rem;
+}
+
+.nav-bg-color {
+  background-color: #F3F3F3;
 }
 
 .brand-navbar {
@@ -30,13 +37,20 @@ header {
   font-size: 1rem;
 }
 
-.navbar-dark .navbar-nav .nav-link {
-  color: rgba(255,255,255,0.9);
+.navbar-dark {
+  padding: 0;
 }
 
-#header-separator {
-  background-color: #DFBD00;
-  height: 2px;
+.navbar-dark .navbar-nav .nav-link {
+  margin: 0;
+  width: 25%;
+  text-align: center;
+  color: #444;
+  font-weight: lighter;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: rgb(245, 184, 90);
 }
 
 .flex-separate {
@@ -45,18 +59,13 @@ header {
 }
 
 /* Header and Navigation CSS */
-.site-navbar a,
 .brand-navbar a,
 .brand-navbar button {
   color: #E3E3E3;
+  font-weight: bold;
 }
 
-.site-navbar a:hover,
-.brand-navbar a:hover {
-  color: #FFFFFF;
-}
-
-nav.navbar {
+nav .navbar {
   padding-top: 0.1rem;
   padding-bottom: 0.1rem;
 }
@@ -166,7 +175,7 @@ body {
 
 footer {
   position: absolute;
-  background-color: rgb(161, 31, 18);
+  background-color: #C03;
   color: #FFFFFF;
   font-size: 65%;
   margin-bottom: 1rem;
