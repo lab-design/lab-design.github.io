@@ -1,5 +1,5 @@
 <h2>Recent News</h2>
-{% for news_item in site.posts limit:4 %}
+{% for news_item in site.posts limit:6 %}
   {% include home_page/news_card.html news_item=news_item %}
 {% endfor %}
 <div id="home-page-more-news">
