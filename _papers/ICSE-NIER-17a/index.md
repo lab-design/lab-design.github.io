@@ -4,7 +4,7 @@ permalink: /papers/ICSE-NIER-17a/
 short_name: ICSE '17 (NIER)
 title: On Accelerating Ultra-Large-Scale Mining
 abstract: >
-	Ultra-large-scale mining has been shown to be useful for a number of 
+  Ultra-large-scale mining has been shown to be useful for a number of 
   software engineering tasks e.g. mining specifications, defect prediction. 
   We propose a new research direction for accelerating ultra-large-scale 
   mining that goes beyond parallelization. Our key idea is to analyze the 
