@@ -1,0 +1,216 @@
+<!--#include virtual="includes/template/headTop.htm"-->  
+
+<!--#include virtual="includes/template/headBottom.htm"-->  
+
+<h2 class="bar">VMIL 2012 Program</h2>
+
+<p><b>Workshop Date</b>: October 21, 2012</p>
+<p><b>Workshop Location</b>: Salon K </p>
+<p><a href="papers/vmil2012.pdf">Workshop proceedings as a single PDF file.</a></p>
+
+<h2 class="bar">Session I&nbsp;&nbsp;Tracing JIT Compilers</h2>
+
+<table width=100% cellspacing="5px">
+<tr>
+<td nowrap="nowrap">8:30 - 8:35</td>
+<td>
+Welcome, organizers introduction, brief introduction to the workshop, agenda<br/>
+<!--[<a href="slides/welcome-slides.pdf">slides</a>] -->
+</td>
+</tr>
+
+<tr>
+<td colspan = 2>&nbsp;<br/></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">8:35 - 9:30</td>
+<td>
+Keynote Talk: A Trace-based Java JIT Compiler for Large-scale Applications<br/>
+<a href="http://researcher.watson.ibm.com/researcher/view.php?person=jp-INOUEHRS">Hiroshi Inoue</a><br/>
+IBM Research - Tokyo<br/>
+Abstract: Trace-based compilation uses dynamically-identified
+frequently-executed code sequences (traces) as units for
+compilation. We explore trace-based compilation in Java to see if a
+trace-based JIT compiler (trace-JIT) can address a limitation of
+method-based JIT compilers: limited compilation scope when dealing
+with those with largely flat execution profile. Although, trace-based
+compilation has gained popularity in dynamic scripting languages
+(e.g. TraceMonkey and pypy) or for embedded devices (e.g. Dalvik VM),
+the benefits and drawbacks of trace-JIT for large-scale applications
+have not yet been studied. We first describe the design and
+implementation of our trace-JIT with emphasis on efficient trace
+selection and code generation. Then we discuss how the trace selection
+algorithm affects the performance of a large-scale Java application
+server.</br>
+<br/>
+</td>
+</tr>
+
+<tr>
+<td colspan = 2>&nbsp;<br/></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">9:30 - 10:00:</td>
+<td>The Efficient Handling of Guards in the Design of RPython&#39;s Tracing JIT<br/>
+David Schneider and Carl Friedrich Bolz<br/>
+Heinrich-Heine-Universitat Dusseldorf<br/>
+Germany<br/>
+</td>
+</tr>
+
+<tr bgcolor="#c00">
+<td height="5px" colspan="2"><!-- --></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">10:00 - 10:30:<br/></td>
+<td>Break<br/></td>
+</tr>
+
+<tr bgcolor="#c00">
+<td height="5px" colspan="2"><!-- --></td>
+</tr>
+
+<td colspan = 2><h2 class="bar">Session II&nbsp;&nbsp;JVM Design</h2></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">10:30 - 11:00:</td>
+<td>S-RVM: a Secure Design for a High-Performance Java Virtual Machine<br/>
+Yuval Yarom, Katrina Falkner and David S. Munro<br/>
+The University of Adelaide<br/>
+Australia<br/>
+20 minutes for talk + 10 minutes for discussion<br/>
+</td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">11:00 - 11:30:</td>
+<td>Bypassing Portability Pitfalls of High-level Low-level Programming</a><br/>
+Yi Lin and Steve Blackburn<br/>
+Australian National University<br/>
+Australia<br/>
+20 minutes for talk + 10 minutes for discussion<br/>
+</td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">11:30 - 12:00:</td>
+<td>The JVM is not observable enough (and what to do about it)</a><br/>
+Stephen Kell, Danilo Ansaloni, Walter Binder and Lukás Marek<br/>
+University of Lugano and Charles University<br/>
+Switzerland<br/>
+20 minutes for talk + 10 minutes for discussion<br/>
+</td>
+</tr>
+
+
+<tr>
+<td colspan = 2>&nbsp;<br/></td>
+</tr>
+
+<tr bgcolor="#c00">
+<td height="5px" colspan="2"><!-- --></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">12:00 - 1:30:</td>
+<td>Lunch Break</td>
+</tr>
+
+<tr bgcolor="#c00">
+<td height="5px" colspan="2"><!-- --></td>
+</tr>
+
+<td colspan = 2><h2 class="bar">Session III&nbsp;&nbsp;</h2></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">1:30 - 2:30</td>
+<td>Invited Talk: From Turtles to Hares -- speeding up a dynamic language for data analytics<br/>
+<a href="http://www.cs.purdue.edu/people/faculty/jv/">Jan Vitek</a></br>
+Purdue University</br>
+</td>
+</tr>
+
+<tr>
+<td colspan = 2>&nbsp;<br/></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">2:30 - 3:00</td>
+<td>Faster Work Stealing With Return Barriers<br/>
+Vivek Kumar and Steve Blackburn<br/>
+Australian National University<br/>
+Australia<br/>
+20 minutes for talk + 10 minutes for discussion<br/>
+</td>
+</tr>
+
+<tr bgcolor="#c00">
+<td height="5px" colspan="2"><!-- --></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">3:00 - 3:30:<br/></td>
+<td>Break<br/></td>
+</tr>
+
+<tr bgcolor="#c00">
+<td height="5px" colspan="2"><!-- --></td>
+</tr>
+
+<tr>
+<td colspan = 2><h2 class="bar">Session IV&nbsp;&nbsp;Inlining and Adaptive Compilation</h2></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">3:30 - 4:00:</td>
+<td>Some New Approaches to Partial Inlining<br/>
+Bowen Alpern, Anthony Cocchi and David Grove<br/>
+Lehman College, CUNY and IBM Research<br/>
+USA<br/>
+20 minutes for talk + 10 minutes for discussion<br/>
+</td>
+</tr>
+
+<tr>
+<td colspan = 2>&nbsp;<br/></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">4:00 - 4:30:</td>
+<td>Compilation Queuing and Graph Caching for Dynamic Compilers<br/>
+Lukas Stadler, Gilles Duboscq, Hanspeter Hanspeter M&ouml;ssenb&ouml;ck and Thomas W&uuml;rthinger<br/>
+Johannes Kepler University and Oracle Labs<br/>
+Austria<br/>
+20 minutes for talk + 10 minutes for discussion<br/>
+</td>
+</tr>
+
+<tr>
+<td colspan = 2>&nbsp;<br/></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">4:30 - 5:00:<br/></td>
+<td>Discussion<br/></td>
+</tr>
+
+<tr bgcolor="#c00">
+<td height="5px" colspan="2"><!-- --></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">7:00 - 9:00:</td>
+<td>Workshop dinner [Location: TBD] (meet in lobby at 6:45pm)</td>
+</tr>
+
+</table>
+
+<p></p>
+
+
+<!--#include virtual="includes/template/footer.htm"--> 
