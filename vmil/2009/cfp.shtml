@@ -1,0 +1,80 @@
+<!--#include virtual="includes/template/headTop.htm"-->  
+
+<!--#include virtual="includes/template/headBottom.htm"-->  
+
+<!--#include virtual="dates.html"--> 
+<BR>
+
+<!--#include virtual="motivation.html"--> 
+<BR><BR>
+
+<h2 class="bar">Topics of Interest</h2>
+<p>Topics of interest include, but are not limited to: </p>
+
+<UL>
+<LI>Compilation-based and interpreter-based virtual machine designs 
+with better support for these modularization mechanisms</LI>
+
+<LI>Intermediate language constructs that better support these 
+modularization mechanisms</LI>
+
+<LI>Compilation techniques from high-level languages to enhanced 
+intermediate languages</LI>
+
+<LI>Optimization strategies for reduction of runtime overhead due 
+to either compilation or interpretation</LI>
+
+<LI>Improved techniques for fast evaluation of pointcuts and other predicates</LI>
+
+<LI>Use cases for deeper support in the virtual machines and intermediate languages</LI>
+
+<LI>Advanced caching and memory management schemes in support of the mechanisms</LI>
+
+</UL>
+<BR>
+
+<h2 class="bar">Paper Categories</h2>
+
+<p>In these key areas, we invite high-quality papers in the following two categories.<p>
+
+<UL>
+<LI>Research and experience papers: These submissions should describe work that 
+advances the current state of the art in support of advanced separation of concerns 
+techniques in virtual machines and intermediate languages. Experience papers that 
+are of broader interest and describe insights gained from practical applications. 
+The page limit for these submissions is 10 pages. </LI>
+
+<LI>Position papers: These submissions present and defend the author/s position on 
+a topic related to the broader area of the workshop. The page limit for these 
+submissions is 6 pages. </LI>
+
+</UL>
+<BR>
+
+<h2 class="bar">Review Process</h2>
+
+<p>The program committee will evaluate each paper based on its relevance,
+significance, clarity and originality. Each submission will be
+reviewed by at least three PC members.</p>
+<BR>
+
+
+<h2 class="bar">Paper Submission</h2>
+
+<p>Papers should be submitted in PDF format. The results described
+ must be unpublished and must not be under review for another 
+ workshop, conference or journal. Submissions must conform to 
+ ACM SIGPLAN format and must not exceed the page limit of the 
+ category in which it is classified by authors (including all 
+ text, figures, references and appendices). Submissions which 
+ do not conform to this will be rejected without reviews.</p>
+
+<p>Submission website for VMIL 2009 is available at:
+<a href="http://www.easychair.org/conferences/?conf=vmil09">
+http://www.easychair.org/conferences/?conf=vmil09</a></p>
+<p></p>
+<BR>
+
+<!--#include virtual="pc.html"--> 
+
+<!--#include virtual="includes/template/footer.htm"--> 

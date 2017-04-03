@@ -1,0 +1,64 @@
+<!--#include virtual="includes/template/headTop.htm"-->  
+
+<!-- INSERT TITLE -->
+<title>Virtual Machines and Intermediate Languages for emerging modularization mechanisms (VMIL 2007)</title>
+
+<!--#include virtual="includes/template/headBottom.htm"-->  
+
+<h2 class="bar">Program Committee</h2>
+
+<p> 
+<UL>
+<LI>Samik Basu (Iowa State University, USA)</LI>
+<LI>Lodewijk Bergmans (University of Twente, The Netherlands)</LI>
+<LI>Christoph Bockisch (Darmstadt University of Technology, Germany)</LI>
+<LI>Johan Brichau (Université catholique de Louvain, Belgium)(tentative)</LI>
+<LI>Bruce Childers (University of Pittsburgh, USA)</LI>
+<LI>Yvonne Coady (University of Victoria, Canada)</LI>
+<LI>Michael Haupt (Hasso Plattner Institute, University of Potsdam, Germany)</LI>
+<LI>Hidehiko Masuhara (University of Tokyo, Japan)</LI>
+<LI>Mira Mezini (Darmstadt University of Technology, Germany) <b>[Co-Chair]</b></LI>
+<LI>Oege de Moor (University of Oxford, UK)</LI>
+<LI>Klaus Ostermann (Darmstadt University of Technology, Germany)</LI>
+<LI>Hridesh Rajan (Iowa State University, USA) <b>[Co-Chair]</b></LI>
+<LI>Eric Tanter (University of Chile, Chile)</LI>
+<LI>Eric Van Wyk (University of Minnesota, USA)</LI>
+<LI>Eric Wohlstadter (University of British Columbia, Canada)</LI>
+</UL>
+</p>
+
+<h2 class="bar">Organizers</h2>
+
+<UL>
+<LI><a href="http://www.cs.iastate.edu/~hridesh/">Hridesh Rajan</a>, Iowa State University</LI>
+<LI><a href="http://www.st.informatik.tu-darmstadt.de/staff/Mezini/">Mira Mezini</a>, Darmstadt University of Technology</LI>
+<LI><a href="http://www.st.informatik.tu-darmstadt.de/staff/Bockisch/">Christoph Bockisch</a>, Darmstadt University of Technology</LI>
+</UL>
+<p></p>
+
+<!-- Text for the actual webpage start -->
+
+<!-- Text for the actual webpage end -->
+
+<!--#include virtual="includes/template/footer.htm"--> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

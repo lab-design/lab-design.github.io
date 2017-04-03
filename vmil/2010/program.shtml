@@ -1,0 +1,190 @@
+<!--#include virtual="includes/template/headTop.htm"-->  
+
+<!--#include virtual="includes/template/headBottom.htm"-->  
+
+<h2 class="bar">Program</h2>
+
+<p><b>Workshop Date</b>: October 17, 2010</p>
+<p><b>Workshop Location</b>: 3rd Floor - Southern Pacific D</p>
+<!--
+<p><a href="papers/vmil-09.pdf">Workshop proceedings as a single PDF file.</a></p>
+-->
+
+<h2 class="bar">Session I&nbsp;&nbsp;New Abstractions for VMs and ILs</h2>
+
+<table width=100% cellspacing="5px">
+<tr>
+<td nowrap="nowrap">8:30 - 8:30</td>
+<td>
+Welcome, organizers introduction, brief introduction to the workshop, agenda<BR>
+[<a href="slides/welcome-slides.pdf">Slides</a>]
+</td>
+</tr>
+
+<tr>
+<td colspan = 2>&nbsp;<BR></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">8:30 - 9:30:</td>
+<td>Invited Talk: <a href="papers/p01-click.txt">A JVM Does What????</a><BR>
+[<a href="slides/p01-click-slides.pdf">slides</a>] [<a href="http://www.youtube.com/view_play_list?p=78FECC8FFB88BC27">video</a>]<BR>
+Cliff Click<BR>
+Azul Systems<BR>
+USA<BR>
+</td>
+</tr>
+
+<tr>
+<td colspan = 2>&nbsp;<BR></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">9:30 - 10:00:</td>
+<td><a href="papers/p02-stanley-marbell.pdf">Sal/Svm: An Assembly Language and Virtual Machine for Computing with Non-Enumerated Sets</a><BR>
+[<a href="slides/p02-stanley-marbell-slides.pdf">slides</a>]<BR>
+Phillip Stanley-Marbell<BR>
+IBM Research—Zürich<BR>
+Switzerland<BR>
+20 minutes for talk + 10 minutes for discussion<BR>
+</td>
+</tr>
+
+<tr bgcolor="#c00">
+<td height="5px" colspan="2"><!-- --></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">10:00 - 10:30:<BR></td>
+<td>Break<BR></td>
+</tr>
+
+<tr>
+<td colspan = 2><h2 class="bar">Session II&nbsp;&nbsp;VM Optimizations</h2></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">10:30 - 11:30:</td><td>Invited Talk: <a href="papers/p03-tillmann.txt">SPUR: A Trace-Based JIT Compiler for CIL</a><BR>
+[<a href="slides/p03-tillmann-slides.pdf">slides</a>] [<a href="http://www.youtube.com/view_play_list?p=78247E10FF66FE90">video</a>]<BR>
+Nikolai Tillmann<BR>
+Microsoft Research<BR>
+USA<BR>
+</td>
+</tr>
+
+<tr>
+<td colspan = 2>&nbsp;<BR></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">11:30 - 12:00:</td>
+<td><a href="papers/p04-bijker.pdf">Optimizing the Evaluation of Patterns in Pointcuts</a><BR>
+[<a href="slides/p04-bijker-slides.pdf">slides</a>]<BR>
+Remko Bijker*, Christoph Bockisch* and Andreas Sewe+<BR>
+University of Twente*, Technische Universität Darmstadt+<BR>
+The Netherlands*, Germany+<BR>
+20 minutes for talk + 10 minutes for discussion<BR>
+</td>
+</tr>
+
+
+<tr bgcolor="#c00">
+<td height="5px" colspan="2"><!-- --></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">12:00 - 1:30:</td>
+<td>Lunch Break</td>
+</tr>
+
+<td colspan = 2><h2 class="bar">Session III&nbsp;&nbsp;VM Evaluation and Studies</h2></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">1:30 - 2:00:</td>
+<td><a href="papers/p06-kaewkasi.pdf">Towards Performance Measurements for the Java Virtual Machine's invokedynamic</a><BR>
+[<a href="slides/p06-kaewkasi-slides.pdf">slides</a>]<BR>
+Chanwit Kaewkasi<BR>
+Sunaranee University of Technology<BR>
+Thailand<BR>
+20 minutes for talk + 10 minutes for discussion<BR>
+</td>
+</tr>
+
+<tr>
+<td colspan = 2>&nbsp;<BR></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">2:00 - 2:30:</td>
+<td><a href="papers/p05-durelli.pdf">A Systematic Mapping Study on High-level Language Virtual Machines</a><BR>
+[<a href="slides/p05-durelli-slides.pdf">slides</a>]<BR>
+Vinicius Durelli, Katia Scannavino and Marcio Delamaro<BR>
+University of São Paulo<BR>
+Brazil<BR>
+20 minutes for talk + 10 minutes for discussion<BR>
+</td>
+</tr>
+
+<tr>
+<td colspan = 2><h2 class="bar">Session IV&nbsp;&nbsp;VMs and Concurrency</h2></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">2:30 - 3:00:</td>
+<td><a href="papers/p07-bieniusa.pdf">The Architecture of DecentVM - Towards a Decentralized Virtual Machine for Many-Core Computing</a><BR>
+[<a href="slides/p07-bieniusa-slides.pdf">slides</a>]<BR>
+Annette Bieniusa*, Johannes Eickhold+ and Thomas Fuhrmann+<BR>
+University of Freiburg*, Technische Universität München+<BR>
+Germany<BR>
+20 minutes for talk + 10 minutes for discussion<BR>
+</td>
+</tr>
+<tr>
+
+<tr bgcolor="#c00">
+<td height="5px" colspan="2"><!-- --></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">3:00 - 3:30:<BR></td>
+<td>Break<BR></td>
+</tr>
+
+<tr bgcolor="#c00">
+<td height="5px" colspan="2"><!-- --></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">3:30 - 4:30:</td><td>Invited Talk: <a href="papers/p08-mckinley.txt">How's the Parallel Computing Revolution Going? Towards Parallel Scalable Virtual Machine Services</a><BR>
+[<a href="slides/p08-mckinley-slides.pdf">slides</a>] [<a href="http://www.youtube.com/view_play_list?p=402807341A322E3C">video</a>]<BR>
+Kathryn McKinley<BR>
+The University of Texas at Austin<BR>
+USA<BR>
+</td>
+</tr>
+
+<tr>
+<td colspan = 2>&nbsp;<BR></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">4:30 - 5:00:<BR></td>
+<td>Discussion<BR></td>
+</tr>
+
+<tr bgcolor="#c00">
+<td height="5px" colspan="2"><!-- --></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">6:30 - 8:30:</td>
+<td>Workshop dinner [Location: TBD] (meet in lobby at 6:15pm)</td>
+</tr>
+
+</table>
+
+<p></p>
+
+
+<!--#include virtual="includes/template/footer.htm"--> 

@@ -1,0 +1,177 @@
+<!--#include virtual="includes/template/headTop.htm"-->  
+
+<!-- INSERT TITLE -->
+<title>Virtual Machines and Intermediate Languages for emerging modularization mechanisms (VMIL 2008)</title>
+
+<!--#include virtual="includes/template/headBottom.htm"-->  
+
+<h2 class="bar">Advance Program</h2>
+
+<p><b>Workshop Date</b>: October 19, 2008</p>
+<p><b>Workshop Location</b>: Ryman-2</p>
+<p><a href="papers/vmil-08.pdf">Workshop proceedings as a single PDF file.</a></p>
+
+
+<h2 class="bar">&nbsp;</h2>
+
+<table width=100%>
+<tr>
+<td nowrap="nowrap">8:30 - 8:30</td>
+<td>
+Welcome, organizers introduction, brief introduction to the workshop, agenda. <!--[<a href="intro.ppt">Slides</a>]-->
+</td>
+</tr>
+
+<tr>
+<td colspan = 2>&nbsp;<BR></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">8:30 - 9:30:</td>
+<td>Invited Talk: <a href="papers/p01-vitek.txt">Memory Management for Hard Real-time Systems</a><BR>
+<!--[<a href="papers/slides/p01-vitek-slides.pdf">slides</a>]<BR>-->
+Jan Vitek<BR>
+Purdue University<BR>
+USA<BR>
+</td>
+</tr>
+
+<tr>
+<td colspan = 2>&nbsp;<BR></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">9:30 - 10:00:</td>
+<td><a href="papers/p02-kuhn.pdf">Composing New Abstractions From Object Fragments</a><BR>
+[<a href="papers/slides/p02-kuhn-slides.pdf">slides</a>]<BR>
+Adrian Kuhn and Oscar Nierstrasz<BR>
+University of Bern<BR>
+Switzerland<BR>
+20 minutes for talk + 10 minutes for discussion<BR>
+</td>
+</tr>
+
+
+<tr bgcolor="#c00">
+<td colspan = 2>&nbsp;<BR></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">10:00 - 10:30:<BR></td>
+<td>Break<BR></td>
+</tr>
+
+<tr bgcolor="#c00">
+<td colspan = 2>&nbsp;<BR></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">10:30 - 11:00:</td>
+<td><a href="papers/p03-chiba.pdf">Predicate dispatch for Aspect-Oriented Programming</a><BR>
+[<a href="papers/slides/p03-chiba-slides.pdf">slides</a>]<BR>
+Shigeru Chiba<BR>
+Tokyo Institute of Technology<BR>
+Japan<BR>
+20 minutes for talk + 10 minutes for discussion<BR>
+</td>
+</tr>
+
+<tr>
+<td colspan = 2>&nbsp;<BR></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">11:00 - 11:30:</td>
+<td><a href="papers/p04-sewe.pdf">Aspects and Class-based Security: A Survey of Interactions between Advice Weaving and the Java 2 Security Model</a> (position paper)<BR>
+[<a href="papers/slides/p04-sewe-slides.pdf">slides</a>]<BR>
+Andreas Sewe, Christoph Bockisch and Mira Mezini<BR>
+Darmstadt University of Technology<BR>
+Germany<BR>
+20 minutes for talk + 10 minutes for discussion<BR>
+</td>
+</tr>
+
+<tr>
+<td colspan = 2>&nbsp;<BR></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">11:30 - 12:00:</td>
+<td><a href="papers/p05-dyer.pdf">A Decision Tree-based Approach to Dynamic Pointcut Evaluation</a><BR>
+[<a href="papers/slides/p05-dyer-slides.pdf">slides</a>]<BR>
+Robert Dyer and Hridesh Rajan<BR>
+Iowa State University<BR>
+USA<BR>
+20 minutes for talk + 10 minutes for discussion<BR>
+</td>
+</tr>
+
+<tr bgcolor="#c00">
+<td colspan = 2>&nbsp;<BR></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">12:00 - 1:30:</td>
+<td>Lunch Break</td>
+</tr>
+
+<tr bgcolor="#c00">
+<td colspan = 2>&nbsp;<BR></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">1:30 - 2:30:</td><td>Invited Talk: <a href="papers/p06-gal.txt">Compiling the Web--Building a Just-in-Time Compiler for JavaScript</a><BR>
+<!--[<a href="papers/slides/p06-gal-slides.pdf">slides</a>]<BR>-->
+Andreas Gal<BR>
+Mozilla Corporation<BR>
+USA<BR>
+</td>
+</tr>
+
+<tr bgcolor="#c00">
+<td colspan = 2>&nbsp;<BR></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">2:30 - 3:00:<BR></td>
+<td>Break<BR></td>
+</tr>
+
+<tr bgcolor="#c00">
+<td colspan = 2>&nbsp;<BR></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">3:00 - 4:00:</td><td>Invited Talk: <a href="papers/p07-bacon.txt">Liquid Metal: Blurring the Hardware/Software Boundary</a><BR>
+<!--[<a href="papers/slides/p07-bacon-slides.pdf">slides</a>]<BR>-->
+David F. Bacon<BR>
+IBM Watson Research Center<BR>
+USA<BR>
+</td>
+</tr>
+
+<tr><td colspan = 2>&nbsp;<BR></td></tr>
+<tr>
+<td nowrap="nowrap">4:00 - 4:45:</td>
+<td>Formation of Focus Groups Followed by Discussions<BR>
+</td>
+</tr>
+
+<tr>
+<td colspan = 2>&nbsp;<BR></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">4:45 - 5:00:</td> 
+<td>Presentation of the results from the discussions and wrap-up</td>
+</tr>
+
+<tr bgcolor="#c00">
+<td colspan = 2>&nbsp;<BR></td>
+</tr>
+</table>
+
+<p></p>
+
+
+<!--#include virtual="includes/template/footer.htm"--> 

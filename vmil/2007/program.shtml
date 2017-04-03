@@ -1,0 +1,178 @@
+<!--#include virtual="includes/template/headTop.htm"-->  
+
+<!-- INSERT TITLE -->
+<title>Virtual Machines and Intermediate Languages for emerging modularization mechanisms (VMIL 2007)</title>
+
+<!--#include virtual="includes/template/headBottom.htm"-->  
+
+<h2 class="bar">Advance Program</h2>
+
+<p><b>Workshop Date</b>: March 13, 2006</p>
+<p><b>Workshop Location</b>: Room - Finback</p>
+<p><a href="papers/vmil-07.pdf">Workshop proceedings as a single PDF file.</a></p>
+
+<h2 class="bar">&nbsp;</h2>
+
+<table width=100%>
+<tr>
+<td>9:00 - 9:30:</td>
+<td>
+Welcome, organizers introduction, brief introduction to the workshop, agenda. [<a href="intro.ppt">Slides</a>]
+</td>
+</tr>
+
+<tr>
+<td colspan = 2>&nbsp;<BR></td>
+</tr>
+
+<tr>
+<td>9:30 - 10:00:</td>
+<td><a href="papers/p01-bockisch.pdf">A Flexible Architecture for Pointcut-Advice Language Implementations</a><BR>
+Christoph Bockisch and Mira Mezini<BR>
+Darmstadt University of Technology<BR>
+Germany<BR>
+20 minutes for talk + 10 minutes for discussion<BR>
+</td>
+</tr>
+
+<tr>
+<td colspan = 2>&nbsp;<BR></td>
+</tr>
+
+<tr>
+<td>10:00 - 10:30:</td>
+<td><a href="papers/p02-golbeck.pdf">A Machine Code Model for Efficient Advice Dispatch</a><BR>
+Ryan M. Golbeck and Gregor Kiczales<BR>
+University of British Columbia<BR>
+Canada<BR>
+20 minutes for talk + 10 minutes for discussion<BR>
+</td>
+</tr>
+
+<tr>
+<td colspan = 2>&nbsp;<BR></td>
+</tr>
+
+<tr>
+<td>10:30 - 11:00:<BR></td>
+<td>Break<BR></td>
+</tr>
+
+<tr>
+<td colspan = 2>&nbsp;<BR></td>
+</tr>
+
+<tr>
+<td>11:00 - 11:30:</td>
+<td><a href="papers/p03-kaewkasi.pdf">A Distributed Dynamic Aspect Machine for Scientific Software Development</a><BR>
+Chanwit Kaewkasi, John R. Gurd<BR>
+University of Manchester<BR>
+UK<BR>
+20 minutes for talk + 10 minutes for discussion<BR>
+</td>
+</tr>
+
+<tr>
+<td colspan = 2>&nbsp;<BR></td>
+</tr>
+
+<tr>
+<td>11:30 - 12:30:</td>
+<td>Open discussion session on the morning session topics</td>
+</tr>
+
+<tr bgcolor="#c00">
+<td colspan = 2>&nbsp;<BR></td>
+</tr>
+
+<tr>
+<td>12:30 - 2:00:</td>
+<td>Lunch Break</td>
+</tr>
+
+<tr bgcolor="#c00">
+<td colspan = 2>&nbsp;<BR></td>
+</tr>
+
+<tr>
+<td>2:00 - 2:30:</td>
+<td><a href="papers/p04-rajan.pdf">A Case for Explicit Join Point Models for Aspect-Oriented Intermediate Languages</a><BR>
+Hridesh Rajan<BR>
+Iowa State University<BR>
+USA<BR>
+20 minutes for talk + 10 minutes for discussion<BR>
+</td>
+</tr>
+
+<tr>
+<td colspan = 2>&nbsp;<BR></td>
+</tr>
+
+<tr>
+<td>2:30 - 3:00:</td>
+<td><a href="papers/p05-ossher.pdf">A Direction for Research on Virtual Machine Support for Concern Composition</a><BR>
+Harold Ossher<BR>
+IBM T. J. Watson Research Center<BR>
+USA<BR>
+20 minutes for talk + 10 minutes for discussion<BR>
+</td>
+</tr>
+
+<tr bgcolor="#c00">
+<td colspan = 2>&nbsp;<BR></td>
+</tr>
+
+<tr>
+<td>3:00 - 3:30:<BR></td>
+<td>Break<BR></td>
+</tr>
+
+<tr bgcolor="#c00">
+<td colspan = 2>&nbsp;<BR></td>
+</tr>
+
+<tr>
+<td>3:30 - 5:00:</td>
+<td>Formation of Focus Groups Followed by Discussions<BR>
+<BR></td>
+</tr>
+
+<tr>
+<td colspan = 2>&nbsp;<BR></td>
+</tr>
+
+<tr>
+<td>5:00 – 5:30:</td> 
+<td>Presentation of the results from the discussions and wrap-up</td>
+</tr>
+
+<tr bgcolor="#c00">
+<td colspan = 2>&nbsp;<BR></td>
+</tr>
+</table>
+
+<p></p>
+
+
+<!--#include virtual="includes/template/footer.htm"--> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

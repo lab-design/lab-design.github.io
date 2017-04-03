@@ -1,0 +1,46 @@
+The Maxine Virtual Machine
+By Doug Simon and Ben L. Titzer
+
+Abstract: The Maxine Virtual Machine
+(http://research.sun.com/projects/maxine/) aims to support VM research and
+enable fast prototyping of language features and implementation techniques. A
+meta-circular design implemented in the Java(TM) programming language blurs
+the distinction between VM and application and greatly simplifies important VM
+components. This talk will present details of the VM that make it attractive
+as a high performance but malleable platform for VM research. We will discuss
+two of the three compilers in Maxine: C1X , a port of the HotSpot client
+compiler, and the bootstrap compiler, which is based on continuation passing
+style. In addition, we will present the Maxine Inspector, a combined object
+browser and debugger that extensively leverages the meta-circularity of the VM
+to present a high-fidelity and robust debugging and inspection tool for
+Maxine.
+
+Doug's Bio: Doug Simon is a Staff Engineer at Sun Microsystems Laboratories
+and is currently leading the Maxine project, an open source Virtual Machine
+for the JavaTM platform written (mostly) in Java. Prior to Maxine, Doug was
+one half of the team that developed Squawk, a CLDC compliant JVM implemented
+also (mostly) in Java. Squawk is the underlying JVM for the Sun SPOTs, a
+wireless sensor device developed at Sun Labs. Another earlier project was to
+investigate secure, fine-grained dynamic provisioning of applications on small
+devices. The artifact from this project was the SKVM, a modified version of
+the KVM (the reference CLDC JVM). Yes, Doug likes working on virtual machines.
+Doug obtained a Bachelors in Information Technology from the University of
+Queensland in 1997, graduating with first class honors.
+
+Ben's Bio: Ben L. Titzer is a Member of Technical staff at Sun Microsystems
+Laboratories. Since October 2007, he has been working on the Maxine VM, a
+meta-circular virtual machine for Java written in Java. Ben earned his PhD in
+Computer Science from UCLA in 2007 under the supervision of Professor Jens
+Palsberg. Programming languages and their implementations have always been at
+the forefront of his research interest; his doctoral work focused on Virgil, a
+lightweight object-oriented language for microcontrollers that employed
+several novel compiler techniques for space optimization enabled by Virgil's
+object model. In 2006 he interned with David Bacon at IBM Research and
+developed the ExoVM, an application-specific persistence technique applied to
+an embedded version of the J9 virtual machine. In 2002 and 2003, he interned
+at Sun Labs with Grzegorz Czajkowski and Laurent Daynes, using native code
+isolation techniques to prevent privilege escalation for multiple users in the
+multi-tasking virtual machine (MVM), which was based on HotSpot. In 2001 and
+2002, he worked under Professor Jan Vitek at Purdue on the OVM and some of its
+support tools.
+

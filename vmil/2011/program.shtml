@@ -1,0 +1,212 @@
+<!--#include virtual="includes/template/headTop.htm"-->  
+
+<!--#include virtual="includes/template/headBottom.htm"-->  
+
+<h2 class="bar">Program</h2>
+
+<p><b>Workshop Date</b>: October 24, 2011</p>
+<p><b>Workshop Location</b>: Broadway I&II</p>
+<!--
+<p><a href="papers/vmil2011.pdf">Workshop proceedings as a single PDF file.</a></p>
+-->
+
+<h2 class="bar">Session I&nbsp;&nbsp;Design and Implementation</h2>
+
+<table width=100% cellspacing="5px">
+<tr>
+<td nowrap="nowrap">8:30 - 9:30</td>
+<td>
+Invited Talk: <a href="papers/p00-bracha.txt">Dart Programming Language</a> (joint with 
+<a href="http://splashcon.org/2011/program/dls">DLS</a>)<br/>
+<!--[<a href="slides/p00-bracha-slides.pdf">slides</a>]<br/>-->
+Gilad Bracha<br/>
+Google<br/>
+USA<br/>
+<br/>
+<b>Note:</b> This talk is in Pavillion East, please be back after the talk in Broadway I&II
+for the rest of the VMIL program<br/>
+</td>
+</tr>
+
+<tr>
+<td colspan = 2>&nbsp;<br/></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">9:30 - 9:30</td>
+<td>
+Welcome, organizers introduction, brief introduction to the workshop, agenda<br/>
+[<a href="slides/welcome-slides.pdf">slides</a>]
+</td>
+</tr>
+
+<tr>
+<td colspan = 2>&nbsp;<br/></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">9:30 - 10:00:</td>
+<td><a href="papers/p03-miranda.pdf">The Cog Smalltalk Virtual Machine. writing a JIT in a high-level dynamic language</a><br/>
+[<a href="http://www.mirandabanda.org/files/Cog/CogCastESUGITA2010.mp4">screencast</a>]<br/>
+Eliot Miranda<br/>
+Independent Consultant<br/>
+USA<br/>
+20 minutes for talk + 10 minutes for discussion<br/>
+</td>
+</tr>
+
+<tr bgcolor="#c00">
+<td height="5px" colspan="2"><!-- --></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">10:00 - 10:30:<br/></td>
+<td>Break<br/></td>
+</tr>
+
+<tr bgcolor="#c00">
+<td height="5px" colspan="2"><!-- --></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">10:30 - 11:30:</td>
+<td>Invited Talk: <a href="papers/p01-bak.txt">Designing the Dart programming language with a simple virtual machine in mind</a><br/>
+<!--[<a href="slides/p01-bak-slides.pdf">slides</a>]<br/>-->
+Lars Bak<br/>
+Google<br/>
+USA<br/>
+</td>
+</tr>
+
+<tr>
+<td colspan = 2>&nbsp;<br/></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">11:30 - 12:00:</td>
+<td><a href="papers/p02-kell.pdf">Virtual machines should be invisible</a><br/>
+[<a href="slides/p02-kell-slides.pdf">slides</a>]<br/>
+Stephen Kell* and Conrad Irwin+<br/>
+University of Oxford*, University of Cambridge+<br/>
+United Kingdom<br/>
+20 minutes for talk + 10 minutes for discussion<br/>
+</td>
+</tr>
+
+<tr bgcolor="#c00">
+<td height="5px" colspan="2"><!-- --></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">12:00 - 2:00:</td>
+<td>Lunch Break</td>
+</tr>
+
+<td colspan = 2><h2 class="bar">Session II&nbsp;&nbsp;VM Evaluation and Studies</h2></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">2:00 - 2:30:</td>
+<td><a href="papers/p06-gil.pdf">A Microbenchmark Case Study and Lessons Learned</a><br/>
+[<a href="slides/p06-gil-slides.pdf">slides</a>]<br/>
+Joseph (Yossi) Gil, Keren Lenz and Yuval Shimron<br/>
+The Technion—Israel Institute of Technology<br/>
+Israel<br/>
+20 minutes for talk + 10 minutes for discussion<br/>
+</td>
+</tr>
+
+<tr>
+<td colspan = 2>&nbsp;<br/></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">2:30 - 3:00:</td>
+<td><a href="papers/p05-bockisch.pdf">ALIA4J's [(Just-In-Time) Compile-Time] MOP for Advanced Dispatching (Position Paper)</a><br/>
+[<a href="slides/p05-bockisch-slides.pdf">slides</a>]<br/>
+Christoph Bockisch*, Andreas Sewe+ and Martin Zandberg*<br/>
+University of Twente*, Technische Universität Darmstadt+<br/>
+The Netherlands, Germany<br/>
+20 minutes for talk + 10 minutes for discussion<br/>
+</td>
+</tr>
+
+<tr>
+<td colspan = 2>&nbsp;<br/></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">3:00 - 3:30:</td>
+<td><a href="papers/p04-sewe.pdf">Next In Line, Please! Efficiently Estimating and Exploiting the Indirect Benefits of Inlining</a><br/>
+[<a href="slides/p04-sewe-slides.pdf">slides</a>]<br/>
+Andreas Sewe, Jannik Jochem and Mira Mezini<br/>
+Technische Universität Darmstadt<br/>
+Germany<br/>
+20 minutes for talk + 10 minutes for discussion<br/>
+</td>
+</tr>
+<tr>
+
+<tr bgcolor="#c00">
+<td height="5px" colspan="2"><!-- --></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">3:30 - 4:00:<br/></td>
+<td>Break<br/></td>
+</tr>
+
+<tr>
+<td colspan = 2><h2 class="bar">Session III&nbsp;&nbsp;VMs and Concurrency</h2></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">4:00 - 4:30:</td>
+<td><a href="papers/p07-zhao.pdf">Intermediate Language Extensions for Parallelism</a><br/>
+[<a href="slides/p07-zhao-slides.pdf">slides</a>]<br/>
+Jisheng Zhao and Vivek Sarkar<br/>
+Rice University<br/>
+USA<br/>
+20 minutes for talk + 10 minutes for discussion<br/>
+</td>
+</tr>
+
+<tr>
+<td colspan = 2>&nbsp;<br/></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">4:30 - 5:00:</td>
+<td><a href="papers/p08-marr.pdf">Which Problems Does a Multi-Language Virtual Machine Need to Solve in the Multicore/Manycore Era?</a><br/>
+[<a href="slides/p08-marr-slides.pdf">slides</a>]<br/>
+Stefan Marr*, Mattias De Wael*, Michael Haupt+ and Theo D’Hondt*<br/>
+Vrije Universiteit Brussel*, Oracle Labs+<br/>
+Belgium, Germany<br/>
+20 minutes for talk + 10 minutes for discussion<br/>
+</td>
+</tr>
+
+<tr>
+<td colspan = 2>&nbsp;<br/></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">5:00 - 5:30:<br/></td>
+<td>Discussion<br/></td>
+</tr>
+
+<tr bgcolor="#c00">
+<td height="5px" colspan="2"><!-- --></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">7:00 - 9:00:</td>
+<td>Workshop dinner [Location: TBD] (meet in lobby at 6:45pm)</td>
+</tr>
+
+</table>
+
+<p></p>
+
+
+<!--#include virtual="includes/template/footer.htm"--> 

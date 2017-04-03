@@ -1,0 +1,195 @@
+<!--#include virtual="includes/template/headTop.htm"-->  
+
+<!--#include virtual="includes/template/headBottom.htm"-->  
+
+<h2 class="bar">Program</h2>
+
+<p><b>Workshop Date</b>: October 25, 2009</p>
+<p><b>Workshop Location</b>: Fantasia Ballroom B</p>
+<!--
+<p><a href="papers/vmil-09.pdf">Workshop proceedings as a single PDF file.</a></p>
+-->
+
+<h2 class="bar">Session I&nbsp;&nbsp;New Abstractions for VMs and ILs, Part 1</h2>
+
+<table width=100% cellspacing="5px">
+<tr>
+<td nowrap="nowrap">8:30 - 8:30</td>
+<td>
+Welcome, organizers introduction, brief introduction to the workshop, agenda. <!--[<a href="intro.ppt">Slides</a>]-->
+</td>
+</tr>
+
+<tr>
+<td colspan = 2>&nbsp;<BR></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">8:30 - 9:30:</td>
+<td>Invited Talk: <a href="papers/p02-blackburn.txt">Abstraction Without Guilt</a><BR>
+[<a href="slides/Blackburn.pptx">slides</a>]<BR>
+Steve Blackburn<BR>
+Australian National University<BR>
+Australia<BR>
+</td>
+</tr>
+
+<tr>
+<td colspan = 2>&nbsp;<BR></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">9:30 - 10:00:</td>
+<td><a href="papers/p04-nielsen.pdf">Virtual Class Support at the Virtual Machine Level</a><BR>
+[<a href="slides/Nielsen.pdf">slides</a>]<BR>
+Anders Bach Nielsen and Erik Ernst<BR>
+University of Aarhus<BR>
+Denmark<BR>
+20 minutes for talk + 10 minutes for discussion<BR>
+</td>
+</tr>
+
+<tr bgcolor="#c00">
+<td height="5px" colspan="2"><!-- --></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">10:00 - 10:30:<BR></td>
+<td>Break<BR></td>
+</tr>
+
+<tr>
+<td colspan = 2><h2 class="bar">Session II&nbsp;&nbsp;New Abstractions for VMs and ILs, Part 2</h2></td>
+</tr>
+
+
+<tr>
+<td nowrap="nowrap">10:30 - 11:30:</td><td>Invited Talk: <a href="papers/p03-simon-titzer.txt">The Maxine Virtual Machine</a><BR>
+[<a href="slides/Simon-Titzer.pdf">slides</a>]<BR>
+Doug Simon and Ben L. Titzer<BR>
+Sun Microsystems<BR>
+USA<BR>
+</td>
+</tr>
+
+<tr>
+<td colspan = 2>&nbsp;<BR></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">11:30 - 12:00:</td>
+<td><a href="papers/p09-rose.pdf">Bytecodes meet combinators: Invokedynamic on the JVM</a><BR>
+[<a href="slides/Rose.pdf">slides</a>]<BR>
+John Rose<BR>
+Sun Microsystems, Inc.<BR>
+USA<BR>
+20 minutes for talk + 10 minutes for discussion<BR>
+</td>
+</tr>
+
+<tr bgcolor="#c00">
+<td height="5px" colspan="2"><!-- --></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">12:00 - 1:30:</td>
+<td>Lunch Break</td>
+</tr>
+
+<tr>
+<td colspan = 2><h2 class="bar">Session III&nbsp;&nbsp;VMs, ILs and Concurrency</h2></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">1:30 - 2:30:</td><td>Invited Talk: <a href="papers/p01-sarkar.txt">Virtual Machine and Intermediate Language Challenges for Parallelism</a><BR>
+[<a href="slides/Sarkar.pdf">slides</a>]<BR>
+Vivek Sarkar<BR>
+Rice University<BR>
+USA<BR>
+</td>
+</tr>
+
+<tr>
+<td colspan = 2>&nbsp;<BR></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">2:30 - 3:00:</td>
+<td><a href="papers/p08-marr.pdf">Intermediate Language Design of High-level Language Virtual Machines: Towards Comprehensive Concurrency Support</a><BR>
+[<a href="slides/Marr.pdf">slides</a>]<BR>
+Stefan Marr*, Michael Haupt+ and Theo D'Hondt*<BR>
+Vrije Universiteit Brussel*, Hasso Plattner Institute, University of Potsdam+<BR>
+Belgium*, Germany+<BR>
+20 minutes for talk + 10 minutes for discussion<BR>
+</td>
+</tr>
+
+<tr bgcolor="#c00">
+<td height="5px" colspan="2"><!-- --></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">3:00 - 3:30:<BR></td>
+<td>Break<BR></td>
+</tr>
+
+<tr>
+<td colspan = 2><h2 class="bar">Session IV&nbsp;&nbsp;VM Implementation Issues</h2></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">3:30 - 4:00:</td>
+<td><a href="papers/p05-binder.pdf">@J - Towards Rapid Development of Dynamic Analysis Tools for the Java Virtual Machine</a><BR>
+[<a href="slides/Binder.pdf">slides</a>]<BR>
+Walter Binder, Alex Villazon, Danilo Ansaloni and Philippe Moret<BR>
+University of Lugano<BR>
+Switzerland<BR>
+20 minutes for talk + 10 minutes for discussion<BR>
+</td>
+</tr>
+
+<tr>
+<td colspan = 2>&nbsp;<BR></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">4:00 - 4:30:</td>
+<td><a href="papers/p06-wuyts.pdf">Challenging VMs on Battery-Powered Embedded Devices</a><BR>
+[<a href="slides/Wuyts.pdf">slides</a>]<BR>
+Roel Wuyts<BR>
+IMEC<BR>
+Belgium<BR>
+20 minutes for talk + 10 minutes for discussion<BR>
+</td>
+</tr>
+
+<tr>
+<td colspan = 2>&nbsp;<BR></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">4:30 - 5:00:</td>
+<td><a href="papers/p07-sinschek.pdf">VM Performance Evaluation with Functional Models: An Optimist's Outlook (position paper)</a><BR>
+[<a href="slides/Sinschek-slides.pdf">slides</a>]<BR>
+Jan Sinschek, Andreas Sewe and Mira Mezini<BR>
+Technische Universitat Darmstadt<BR>
+Germany<BR>
+20 minutes for talk + 10 minutes for discussion<BR>
+</td>
+</tr>
+
+<tr bgcolor="#c00">
+<td height="5px" colspan="2"><!-- --></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">6:30 - 8:30:</td>
+<td>Workshop dinner [Location: Wave Restaurant] (meet in lobby at 6:15pm)</td>
+</tr>
+
+</table>
+
+<p></p>
+
+
+<!--#include virtual="includes/template/footer.htm"--> 

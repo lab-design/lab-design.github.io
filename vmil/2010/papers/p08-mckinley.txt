@@ -1,0 +1,32 @@
+How's the Parallel Computing Revolution Going?
+Towards Parallel Scalable Virtual Machine Services
+
+By Kathryn McKinley
+
+To answer this question, we first overview trends in scalability and power
+efficiency of modern application executing on a cross section of current and
+past processors.  These results show that many managed applications are not yet
+scalable and consume disproportionate amounts of power.  Achieving performance
+scaling of parallel applications written in managed languages must start with
+scalable virtual machine (VM) services.  Because the VM schedules, monitors,
+profiles, compiles, optimizes, garbage collects, and executes along with the
+application, it must be scalable and has a unique opportunity to enhance
+application scalability.  This talk uses results from my research group on
+concurrent dynamic analysis to illustrate the potential and challenges of
+obtaining scalability on modern chip multiprocessor hardware.
+
+We conclude with an overview of challenges for scalable virtual machines and
+suggested future directions.
+
+
+Biography: Professor Kathryn S McKinley received her Ph.D. from Rice University
+working with Ken Kennedy. Her research interests include compilers, memory
+management, runtime systems, programming languages, debugging, and
+architecture.  She and her collaborators have produced tools that are in wide
+research and industrial use, including the DaCapo Java Benchmarks, the TRIPS
+Compiler, the Hoard memory manager, the MMTk garbage collector toolkit, and the
+Immix mark-region garbage collector.  Her service includes program chair for
+ASPLOS, PACT, and PLDI; co-Editor-in-Chief of ACM Transactions on Programming
+Language Systems (TOPLAS); and mentoring in CRA-W programs for under
+represented students. She is currently supervising five and has graduated
+fourteen PhD students. McKinley is an ACM Fellow.

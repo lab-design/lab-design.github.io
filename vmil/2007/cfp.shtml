@@ -1,0 +1,139 @@
+<!--#include virtual="includes/template/headTop.htm"-->  
+
+<!-- INSERT TITLE -->
+<title>Virtual Machines and Intermediate Languages for emerging modularization mechanisms (VMIL 2007)</title>
+
+<!--#include virtual="includes/template/headBottom.htm"-->  
+
+<h2 class="bar">Motivation and Objectives</h2>
+<p>
+Modularization Mechanisms such as mix-ins, units, open classes, hyper-slices, adaptive methods, roles, composition filters, pointcut-advice, and intertype declarations have shown significant potential. They provide software engineers with new capabilities to modularize concerns that were hard to separate previously. Support for these modularization mechanisms have so far been largely limited to high-level languages and their compilers. Recent research results have shown that deeper support, e.g. in virtual machines and intermediate languages, have far-reaching impacts. In particular, more optimization opportunities open up. Development processes such as incremental compilation, debugging, etc are radically simplified. Moreover, dynamic support becomes possible without compromising on efficiency. To that end, the objective of this workshop, first in the series, is to generate interest in this topic, to frame and refine research problem formulations, and to
+identify and encourage the pursuit of promising opportunities and approaches. We invite novel insights from within the programming language, compilers, virtual machine community and elsewhere.
+</p>
+
+<h2 class="bar">Topics of Interest</h2>
+<p>Topics of interest include, but are not limited to: </p>
+
+<UL>
+<LI>Compilation-based and interpreter-based virtual machine designs with better support for these modularization mechanisms</LI>
+
+<LI>Intermediate language constructs that better support these modularization mechanisms</LI>
+
+<LI>Compilation techniques from high-level languages to enhanced intermediate languages</LI>
+
+<LI>Optimization strategies for reduction of runtime overhead due to either compilation or interpretation</LI>
+
+<LI>Improved pattern matching techniques for fast matching</LI>
+
+<LI>Use cases for deeper support in the virtual machines and intermediate languages</LI>
+</UL>
+
+<h2 class="bar">Paper Categories</h2>
+
+<p>In these key areas, we invite high-quality papers in the following two categories.<p>
+
+<UL>
+<LI>Research and experience papers: These submissions should describe work that advances the current state of the art in support of advanced separation of concerns techniques in virtual machines and intermediate languages. Experience papers that are of broader interest and describe insights gained from practical applications. The page limit for these submissions is 10 pages. </LI>
+
+<LI>Position papers: These submissions present and defend the author/s position on a topic related to the broader area of the workshop. The page limit for these submissions is 6 pages. </LI>
+
+</UL>
+
+<h2 class="bar">Review Process</h2>
+
+<p>The program committee will evaluate each paper based on its relevance,
+significance, clarity and originality. Each submission will be
+reviewed by at least three PC members.</p>
+
+<h2 class="bar">Important Dates</h2>
+
+<center>
+<table>
+<tr>
+<td>Submission Deadline:</td>
+<td>Jan 15, 2007, 23:00 GMT <b>(Extended to Jan 26, 2007, 23:00 GMT)</b></td>
+</tr>
+
+<tr>
+<td>Notification of Acceptance:</td>
+<td>Feb 2, 2007</td>
+</tr>
+
+<tr>
+
+<td>Final Versions of Papers Due:</td>
+<td>March 1, 2007</td>
+</tr>
+
+<tr>
+<td>Workshop:</td>
+<td>March 13, 2007</td>
+</tr>
+</table>
+</center>
+
+<h2 class="bar">Paper Submission</h2>
+
+<p>Papers should be submitted in PDF format. The results described
+ must be unpublished and must not be under review for another workshop, conference or journal. Submissions must conform to ACM SIGPLAN format and must not exceed the page limit of the category in which it is classified by authors (including all text, figures, references and appendices). Submissions which do not conform to this will be rejected without reviews.</p>
+
+<p>Submission website for VMIL 2007 is available at:
+<a href="http://continue.cs.brown.edu/servlets/vmil07/continue.ss">
+http://continue.cs.brown.edu/servlets/vmil07/continue.ss</a></p>
+<p></p>
+
+<h2 class="bar">Program Committee</h2>
+
+<p> 
+<UL>
+<LI>Samik Basu (Iowa State University, USA)</LI>
+<LI>Lodewijk Bergmans (University of Twente, The Netherlands)</LI>
+<LI>Christoph Bockisch (Darmstadt University of Technology, Germany)</LI>
+<LI>Johan Brichau (Université catholique de Louvain, Belgium)(tentative)</LI>
+<LI>Bruce Childers (University of Pittsburgh, USA)</LI>
+<LI>Yvonne Coady (University of Victoria, Canada)</LI>
+<LI>Michael Haupt (Hasso Plattner Institute, University of Potsdam, Germany)</LI>
+<LI>Hidehiko Masuhara (University of Tokyo, Japan)</LI>
+<LI>Mira Mezini (Darmstadt University of Technology, Germany) <b>[Co-Chair]</b></LI>
+<LI>Oege de Moor (University of Oxford, UK)</LI>
+<LI>Klaus Ostermann (Darmstadt University of Technology, Germany)</LI>
+<LI>Hridesh Rajan (Iowa State University, USA) <b>[Co-Chair]</b></LI>
+<LI>Therapon Skotiniotis (Northeastern University, USA)</LI>
+<LI>Eric Tanter (University of Chile, Chile)</LI>
+<LI>Eric Van Wyk (University of Minnesota, USA)</LI>
+<LI>Eric Wohlstadter (University of British Columbia, Canada)</LI>
+</UL>
+</p>
+
+<h2 class="bar">Organizers</h2>
+
+<UL>
+<LI><a href="http://www.cs.iastate.edu/~hridesh/">Hridesh Rajan</a>, Iowa State University</LI>
+<LI><a href="http://www.st.informatik.tu-darmstadt.de/staff/Mezini/">Mira Mezini</a>, Darmstadt University of Technology</LI>
+<LI><a href="http://www.st.informatik.tu-darmstadt.de/staff/Bockisch/">Christoph Bockisch</a>, Darmstadt University of Technology</LI>
+</UL>
+<p></p>
+
+
+<!--#include virtual="includes/template/footer.htm"--> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

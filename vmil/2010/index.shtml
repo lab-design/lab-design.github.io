@@ -1,0 +1,45 @@
+<!--#include virtual="includes/template/headTop.htm"-->  
+
+<!--#include virtual="includes/template/headBottom.htm"-->  
+
+<!-- Text for the actual webpage start -->
+
+<!--#include virtual="./motivation.html"-->
+<BR>
+<h2 class="bar">Invited Talks</h2>
+
+<p><a href="papers/p01-click.txt">A JVM Does What????</a><BR>
+<b><a href="http://www.azulsystems.com/blogs/cliff">Cliff Click</a></b><BR>
+<i>Azul Systems</i></p>
+<BR>
+
+<p><a href="papers/p03-tillmann.txt">SPUR: A Trace-Based JIT Compiler for CIL</a><BR>
+<b><a href="http://research.microsoft.com/en-us/people/nikolait/">Nikolai Tillmann</a></b><BR>
+<i>Microsoft Research</i></p>
+<BR>
+
+<p><a href="papers/p08-mckinley.txt">How's the Parallel Computing Revolution Going? Towards Parallel Scalable Virtual Machine Services</a><BR>
+<b><a href="http://userweb.cs.utexas.edu/~mckinley/">Kathryn McKinley</a></b><BR>
+<i>The University of Texas at Austin</i></p>
+<BR>
+
+<!--#include virtual="./dates.html"-->
+<BR>
+<h2 class="bar">Organizers</h2>
+
+<center>
+<table cellspacing="18px">
+<tr>
+<td><center><a href="http://www.cs.iastate.edu/~hridesh/"><img border="0" height="100px" width="80px" src="images/rajan.jpg"/><br/>Hridesh Rajan</a></center></td>
+<td><center><a href="http://trese.cs.utwente.nl/staff/staff.php?action=showDetails&amp;u_id=49"><img border="0" height="100px" width="80px" src="images/bockisch.jpg"/><br/>Christoph Bockisch</a></center></td>
+<td><center><a href="http://www.hpi.uni-potsdam.de/swa/people/haupt"><img border="0" height="100px" width="80px" src="images/haupt_bw.png"/><br/>Michael Haupt</a></center></td>
+<td><center><a href="http://www.cs.iastate.edu/~rdyer/"><img border="0" height="100px" width="80px" src="images/rdyer.jpg"/><br/>Robert Dyer</a></center></td>
+</tr>
+</table>
+</center>
+
+<!-- Text for the actual webpage end -->
+
+<!--#include virtual="includes/template/footer.htm"--> 
+
+
