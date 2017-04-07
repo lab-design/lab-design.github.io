@@ -2,5 +2,5 @@
 layout: redirect
 sitemap: false
 permalink: /vmil/2008/index.shtml
-redirect_to: /vmil/2008/
+redirect_to: /vmil/2008/index.html
 ---
