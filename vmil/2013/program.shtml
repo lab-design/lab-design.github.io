@@ -1,199 +1,202 @@
-<!--#include virtual="includes/template/headTop.htm"-->  
-
-<!--#include virtual="includes/template/headBottom.htm"-->  
-
-<h2 class="bar">VMIL 2013 Program</h2>
-
-<p><b>Workshop Date</b>: October 28, 2013</p>
-<p><b>Workshop Location</b>: Regency B </p>
-<!--p><a href="papers/vmil2013.pdf">Workshop proceedings as a single PDF file.</a></p-->
-
-<h2 class="bar">Session I</h2>
-
-<table width=100% cellspacing="5px">
-<tr>
-<td nowrap="nowrap">8:30 - 8:35</td>
-<td>
-Welcome, organizers introduction, brief introduction to the workshop, agenda<br/>
-<!--[<a href="slides/welcome-slides.pdf">slides</a>] -->
-</td>
-</tr>
-
-<tr>
-<td colspan = 2>&nbsp;<br/></td>
-</tr>
-
-<tr>
-<td nowrap="nowrap">8:35 - 9:30</td>
-<td>
-Keynote Talk: <a href="papers/p00-Krishnamurthi.txt">JavaScript as an Intermediate Language</a><br/>
-Shriram Krishnamurthi<br/>
-Brown University, USA
-</td>
-</tr>
-
-<tr>
-<td colspan = 2>&nbsp;<br/></td>
-</tr>
-
-<tr>
-<td nowrap="nowrap">9:30 - 10:00:</td>
-<td><b>Lightning session</b>: the podium opens for the audience to briefly present their ongoing research
-</td>
-</tr>
-
-<tr bgcolor="#c00">
-<td height="5px" colspan="2"><!-- --></td>
-</tr>
-
-<tr>
-<td nowrap="nowrap">10:00 - 10:30:<br/></td>
-<td>Break<br/></td>
-</tr>
-
-<tr bgcolor="#c00">
-<td height="5px" colspan="2"><!-- --></td>
-</tr>
-
-<td colspan = 2><h2 class="bar">Session II</h2></td>
-</tr>
-
-<tr>
-<td nowrap="nowrap">10:30 - 11:00:</td>
-<td>Secret plans and clever tricks: What your VM isn’t telling you about GC (Invited)<br/>
-Antony Hosking<br/>
-Purdue University, USA<br/>
-20 minutes for talk + 10 minutes for discussion<br/>
-</td>
-</tr>
-
-<tr>
-<td nowrap="nowrap">11:00 - 11:30:</td>
-<td>Debugging Virtual Machines (Invited)<br/>
-Matthias Hauswirth<br/>
-Univesity of Lugano, Switzerland<br/>
-20 minutes for talk + 10 minutes for discussion<br/>
-</td>
-</tr>
-
-<tr>
-<td nowrap="nowrap">11:30 - 12:00:</td>
-<td><a href="papers/p01-Barrett.pdf">Unipycation: A Case Study in Cross-Language Tracing</a><br/>
-Edd Barrett, Carl Friedrich Bolz and Laurence Tratt<br/>
-King's College London, UK<br/>
-20 minutes for talk + 10 minutes for discussion<br/>
-</td>
-</tr>
-
-
-<tr>
-<td colspan = 2>&nbsp;<br/></td>
-</tr>
-
-<tr bgcolor="#c00">
-<td height="5px" colspan="2"><!-- --></td>
-</tr>
-
-<tr>
-<td nowrap="nowrap">12:00 - 1:30:</td>
-<td>Lunch Break</td>
-</tr>
-
-<tr bgcolor="#c00">
-<td height="5px" colspan="2"><!-- --></td>
-</tr>
-
-<td colspan = 2><h2 class="bar">Session III</h2></td>
-</tr>
-
-<tr>
-<td nowrap="nowrap">1:30 - 2:30</td>
-<td>Keynote Talk: <a href="papers/p02-Shen.txt">Do Computer Programs Have to Be As Dumb As They Are?</a><br/>
-Xipeng Shen<br/>
-College of William and Mary, USA<br/>
-</td>
-</tr>
-
-<tr>
-<td colspan = 2>&nbsp;<br/></td>
-</tr>
-
-<tr>
-<td nowrap="nowrap">2:30 - 3:00</td>
-<td>Perspective on the R programming language (Invited)<br/>
-Jan Vitek<br/>
-Purdue University, USA<br/>
-20 minutes for talk + 10 minutes for discussion<br/>
-</td>
-</tr>
-
-<tr bgcolor="#c00">
-<td height="5px" colspan="2"><!-- --></td>
-</tr>
-
-<tr>
-<td nowrap="nowrap">3:00 - 3:30:<br/></td>
-<td>Break<br/></td>
-</tr>
-
-<tr bgcolor="#c00">
-<td height="5px" colspan="2"><!-- --></td>
-</tr>
-
-<tr>
-<td colspan = 2><h2 class="bar">Session IV</h2></td>
-</tr>
-
-<tr>
-<td nowrap="nowrap">3:30 - 4:00:</td>
-<td><a href="papers/p03-Zheng.pdf">Dynamic Optimization of Bytecode Instrumentation</a><br/>
-Yudi Zheng, Lubomir Bulej, Cheng Zhang, Stephen Kell, Danilo Ansaloni and Walter Binder<br/>
-University of Lugano, Switzerland<br/>
-20 minutes for talk + 10 minutes for discussion<br/>
-</td>
-</tr>
-
-<tr>
-<td colspan = 2>&nbsp;<br/></td>
-</tr>
-
-<tr>
-<td nowrap="nowrap">4:00 - 4:30:</td>
-<td><a href="papers/p04-Duboscq.pdf">An Intermediate Representation for Speculative Optimizations in a Dynamic Compiler</a><br/>
-Gilles Duboscq<sup>1</sup>, Thomas Wuerthinger<sup>2</sup>, Lukas Stadler<sup>1</sup>, Christian Wimmer<sup>2</sup>, Doug Simon<sup>2</sup> and Hanspeter Moessenboeck<sup>1</sup><br/>
-<sup>1</sup>Institute for System Software, Johannes Kepler University Linz, Austria<br/>
-<sup>2</sup>Oracle Labs<br/>
-20 minutes for talk + 10 minutes for discussion<br/>
-</td>
-</tr>
-
-<tr>
-<td colspan = 2>&nbsp;<br/></td>
-</tr>
-
-<tr>
-<td nowrap="nowrap">4:30 - 5:00:<br/></td>
-<td><a href="papers/p05-Sarimbekov.pdf">Characteristics of Dynamic JVM Languages</a><br/>
-Aibek Sarimbekov<sup>1</sup>, Andrej Podzimek<sup>2</sup>, Lubomir Bulej<sup>1</sup>, Yudi Zheng<sup>1</sup>, Nathan Ricci<sup>3</sup> and Walter Binder<sup>1</sup><br/>
-<sup>1</sup>University of Lugano, Switzerland<br/>
-<sup>2</sup>Charles University in Prague, Poland<br/>
-<sup>3</sup>Tufts University, USA<br/>
-20 minutes for talk + 10 minutes for discussion<br/>
-<br/></td>
-</tr>
-
-<tr bgcolor="#c00">
-<td height="5px" colspan="2"><!-- --></td>
-</tr>
-
-<!--tr>
-<td nowrap="nowrap">7:00 - 9:00:</td>
-<td>Workshop dinner [Location: TBD] (meet in lobby at 6:45pm)</td>
-</tr-->
-
-</table>
-
-<p></p>
-
-
-<!--#include virtual="includes/template/footer.htm"--> 
+---
+---
+
+{% include_relative includes/template/headTop.htm %}  
+
+{% include_relative includes/template/headBottom.htm %}  
+
+<h2 class="bar">VMIL 2013 Program</h2>
+
+<p><b>Workshop Date</b>: October 28, 2013</p>
+<p><b>Workshop Location</b>: Regency B </p>
+<!--p><a href="papers/vmil2013.pdf">Workshop proceedings as a single PDF file.</a></p-->
+
+<h2 class="bar">Session I</h2>
+
+<table width=100% cellspacing="5px">
+<tr>
+<td nowrap="nowrap">8:30 - 8:35</td>
+<td>
+Welcome, organizers introduction, brief introduction to the workshop, agenda<br/>
+<!--[<a href="slides/welcome-slides.pdf">slides</a>] -->
+</td>
+</tr>
+
+<tr>
+<td colspan = 2>&nbsp;<br/></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">8:35 - 9:30</td>
+<td>
+Keynote Talk: <a href="papers/p00-Krishnamurthi.txt">JavaScript as an Intermediate Language</a><br/>
+Shriram Krishnamurthi<br/>
+Brown University, USA
+</td>
+</tr>
+
+<tr>
+<td colspan = 2>&nbsp;<br/></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">9:30 - 10:00:</td>
+<td><b>Lightning session</b>: the podium opens for the audience to briefly present their ongoing research
+</td>
+</tr>
+
+<tr bgcolor="#c00">
+<td height="5px" colspan="2"><!-- --></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">10:00 - 10:30:<br/></td>
+<td>Break<br/></td>
+</tr>
+
+<tr bgcolor="#c00">
+<td height="5px" colspan="2"><!-- --></td>
+</tr>
+
+<td colspan = 2><h2 class="bar">Session II</h2></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">10:30 - 11:00:</td>
+<td>Secret plans and clever tricks: What your VM isn’t telling you about GC (Invited)<br/>
+Antony Hosking<br/>
+Purdue University, USA<br/>
+20 minutes for talk + 10 minutes for discussion<br/>
+</td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">11:00 - 11:30:</td>
+<td>Debugging Virtual Machines (Invited)<br/>
+Matthias Hauswirth<br/>
+Univesity of Lugano, Switzerland<br/>
+20 minutes for talk + 10 minutes for discussion<br/>
+</td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">11:30 - 12:00:</td>
+<td><a href="papers/p01-Barrett.pdf">Unipycation: A Case Study in Cross-Language Tracing</a><br/>
+Edd Barrett, Carl Friedrich Bolz and Laurence Tratt<br/>
+King's College London, UK<br/>
+20 minutes for talk + 10 minutes for discussion<br/>
+</td>
+</tr>
+
+
+<tr>
+<td colspan = 2>&nbsp;<br/></td>
+</tr>
+
+<tr bgcolor="#c00">
+<td height="5px" colspan="2"><!-- --></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">12:00 - 1:30:</td>
+<td>Lunch Break</td>
+</tr>
+
+<tr bgcolor="#c00">
+<td height="5px" colspan="2"><!-- --></td>
+</tr>
+
+<td colspan = 2><h2 class="bar">Session III</h2></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">1:30 - 2:30</td>
+<td>Keynote Talk: <a href="papers/p02-Shen.txt">Do Computer Programs Have to Be As Dumb As They Are?</a><br/>
+Xipeng Shen<br/>
+College of William and Mary, USA<br/>
+</td>
+</tr>
+
+<tr>
+<td colspan = 2>&nbsp;<br/></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">2:30 - 3:00</td>
+<td>Perspective on the R programming language (Invited)<br/>
+Jan Vitek<br/>
+Purdue University, USA<br/>
+20 minutes for talk + 10 minutes for discussion<br/>
+</td>
+</tr>
+
+<tr bgcolor="#c00">
+<td height="5px" colspan="2"><!-- --></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">3:00 - 3:30:<br/></td>
+<td>Break<br/></td>
+</tr>
+
+<tr bgcolor="#c00">
+<td height="5px" colspan="2"><!-- --></td>
+</tr>
+
+<tr>
+<td colspan = 2><h2 class="bar">Session IV</h2></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">3:30 - 4:00:</td>
+<td><a href="papers/p03-Zheng.pdf">Dynamic Optimization of Bytecode Instrumentation</a><br/>
+Yudi Zheng, Lubomir Bulej, Cheng Zhang, Stephen Kell, Danilo Ansaloni and Walter Binder<br/>
+University of Lugano, Switzerland<br/>
+20 minutes for talk + 10 minutes for discussion<br/>
+</td>
+</tr>
+
+<tr>
+<td colspan = 2>&nbsp;<br/></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">4:00 - 4:30:</td>
+<td><a href="papers/p04-Duboscq.pdf">An Intermediate Representation for Speculative Optimizations in a Dynamic Compiler</a><br/>
+Gilles Duboscq<sup>1</sup>, Thomas Wuerthinger<sup>2</sup>, Lukas Stadler<sup>1</sup>, Christian Wimmer<sup>2</sup>, Doug Simon<sup>2</sup> and Hanspeter Moessenboeck<sup>1</sup><br/>
+<sup>1</sup>Institute for System Software, Johannes Kepler University Linz, Austria<br/>
+<sup>2</sup>Oracle Labs<br/>
+20 minutes for talk + 10 minutes for discussion<br/>
+</td>
+</tr>
+
+<tr>
+<td colspan = 2>&nbsp;<br/></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">4:30 - 5:00:<br/></td>
+<td><a href="papers/p05-Sarimbekov.pdf">Characteristics of Dynamic JVM Languages</a><br/>
+Aibek Sarimbekov<sup>1</sup>, Andrej Podzimek<sup>2</sup>, Lubomir Bulej<sup>1</sup>, Yudi Zheng<sup>1</sup>, Nathan Ricci<sup>3</sup> and Walter Binder<sup>1</sup><br/>
+<sup>1</sup>University of Lugano, Switzerland<br/>
+<sup>2</sup>Charles University in Prague, Poland<br/>
+<sup>3</sup>Tufts University, USA<br/>
+20 minutes for talk + 10 minutes for discussion<br/>
+<br/></td>
+</tr>
+
+<tr bgcolor="#c00">
+<td height="5px" colspan="2"><!-- --></td>
+</tr>
+
+<!--tr>
+<td nowrap="nowrap">7:00 - 9:00:</td>
+<td>Workshop dinner [Location: TBD] (meet in lobby at 6:45pm)</td>
+</tr-->
+
+</table>
+
+<p></p>
+
+
+{% include_relative includes/template/footer.htm %} 

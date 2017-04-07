@@ -1,12 +1,15 @@
-<!--#include virtual="includes/template/headTop.htm"-->  
+---
+---
 
-<!--#include virtual="includes/template/headBottom.htm"-->  
+{% include_relative includes/template/headTop.htm %}
+
+{% include_relative includes/template/headBottom.htm %}
 
 <!-- Text for the actual webpage start -->
 
 <!-- Text for the actual webpage end -->
 
-<!--#include virtual="includes/template/footer.htm"--> 
+{% include_relative includes/template/footer.htm %}
 
 
 

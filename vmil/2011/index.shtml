@@ -1,10 +1,13 @@
-<!--#include virtual="includes/template/headTop.htm"-->  
+---
+---
 
-<!--#include virtual="includes/template/headBottom.htm"-->  
+{% include_relative includes/template/headTop.htm %}  
+
+{% include_relative includes/template/headBottom.htm %}  
 
 <!-- Text for the actual webpage start -->
 
-<!--#include virtual="./motivation.html"-->
+{% include_relative motivation.html %}
 <br/>
 
 <p>
@@ -23,10 +26,10 @@
 <i>Google</i></p>
 
 <br/>
-<!--#include virtual="./dates.html"-->
+{% include_relative dates.html %}
 
 <br/>
-<!--#include virtual="pc.html"-->
+{% include_relative pc.html %}
 
 <!--
 <br/>
@@ -45,6 +48,6 @@
 
 <!-- Text for the actual webpage end -->
 
-<!--#include virtual="includes/template/footer.htm"--> 
+{% include_relative includes/template/footer.htm %} 
 
 

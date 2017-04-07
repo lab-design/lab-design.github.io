@@ -1,6 +1,9 @@
-<!--#include virtual="includes/template/headTop.htm"-->  
+---
+---
 
-<!--#include virtual="includes/template/headBottom.htm"-->  
+{% include_relative includes/template/headTop.htm %}
+
+{% include_relative includes/template/headBottom.htm %}
 
 <h2 class="bar">Program</h2>
 
@@ -209,4 +212,4 @@ Belgium, Germany<br/>
 <p></p>
 
 
-<!--#include virtual="includes/template/footer.htm"--> 
+{% include_relative includes/template/footer.htm %}
