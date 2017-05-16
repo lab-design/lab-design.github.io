@@ -13,7 +13,22 @@ abstract: >
   an effective practice of AO design techniques. In this paper we show, in
   particular, that this bridge can be exploited to enable model checking of AO
   systems using existing techniques for II systems.
-bib:
+bib:  |
+  @inproceedings{Xu:2004:UAV:1025115.1025239,
+    author = {Xu, Jia and Rajan, Hridesh and Sullivan, Kevin},
+    title = {Understanding Aspects via Implicit Invocation},
+    booktitle = {Proceedings of the 19th IEEE International Conference on Automated Software Engineering},
+    series = {ASE '04},
+    year = {2004},
+    isbn = {0-7695-2131-2},
+    pages = {332--335},
+    numpages = {4},
+    url = {http://dx.doi.org/10.1109/ASE.2004.70},
+    doi = {10.1109/ASE.2004.70},
+    acmid = {1025239},
+    publisher = {IEEE Computer Society},
+    address = {Washington, DC, USA},
+  } 
 kind: conference
 download_link: ase04.pdf
 publication_year: 2004

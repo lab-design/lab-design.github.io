@@ -15,7 +15,16 @@ abstract: >
   aspect-oriented modeling techniques for product lines. A pacemaker product
   line, extracted from the real industry case, serves as a running example to
   illustrate our findings.
-bib:
+bib:  |
+  @inproceedings{liu2006role,
+    author = {Jing (Janet) Liu and Robyn R. Lutz and Hridesh Rajan},
+    title = {The Role of Aspects in Modeling Product Line Variabilities},
+    booktitle = {Proceedings for First Workshop on Aspect-oriented Product Line Engineering (AOPLE-1)},
+    location = {Portland, Oregon, USA},
+    month = {October},
+    year = {2006},
+    pages = {32-39}
+  }
 kind: workshop
 download_link: AOPLE06.pdf
 publication_year: 2006
