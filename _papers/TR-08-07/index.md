@@ -22,7 +22,15 @@ abstract: >
   speciﬁcation is satisﬁed by the service’s implementation. We specify policies
   using LTL and solve the ﬁrst problem by model checking. We solve the second
   problem by reﬁnement techniques.
-bib:
+bib:  |
+  @article{rajan2009reconciling,
+    title={Reconciling Trust and Modularity Goals in Web Services},
+    author={Rajan, Hridesh and Tao, Jia and Shaner, Steve M and Leavens, Gary T},
+    year={2009},
+    month={July},
+    numpages={36},
+    location={Ames, Iowa, USA}
+  }
 kind: technical_report
 download_link: Rajan-Tao-Shaner-Leavens-TR-08-07.pdf
 publication_year: 2008

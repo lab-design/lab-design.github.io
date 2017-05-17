@@ -14,7 +14,13 @@ abstract: >
   code, and that preserving it can have signiﬁcant beneﬁts in these dimensions.
   We present and evaluate a mechanism for preserving design modularity in object
   code, showing that doing so has potentially signiﬁcant benefits.
-bib:
+bib:  |
+  @article{rajan2006preserving,
+    title={Preserving separation of concerns through compilation},
+    author={Rajan, Hridesh and Dyer, Robert and Hanna, Youssef Wasfy and Narayanappa, Harish},
+    year={2006},
+    numpages={6}
+  }
 kind: workshop
 download_link: splat06.pdf
 publication_year: 2006

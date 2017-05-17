@@ -28,7 +28,16 @@ abstract: >
   number of join points executed. Our results also show that the percentage of
   join points affected by aspects do not differentiate between the two
   techniques.
-bib:
+bib:  |
+  @article{setty2008weave,
+    title={Weave Now or Weave Later: A Test Driven Development Perspective on Aspect-oriented Deployment Models},
+    author={Setty, Rakesh Bangalore Shivarudra and Dyer, Robert and Rajan, Hridesh},
+    year={2008},
+    month={February},
+    pages={2-13},
+    numpages={12},
+    location={Ames, Iowa, USA}
+  }
 kind: technical_report
 download_link: http://lib.dr.iastate.edu/cs_techreports/313/
 publication_year: 2008

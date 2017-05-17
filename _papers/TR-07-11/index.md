@@ -25,7 +25,16 @@ abstract: >
   fault models from a partial specification of the application. By automatically
   generating fault models, our approach eases the verification of
   fault-tolerance for sensor network applications.
-bib:
+bib:  |
+  @article{hanna2007verifying,
+    title={Verifying Fault-Tolerance of Sensor Network Applications Using Auto-generated Fault Injection Mechanisms},
+    author={Hanna, Youssef Wasfy and Rajan, Hridesh},
+    year={2007},
+    month={June},
+    pages={2-8},
+    numpages={7},
+    location={Ames, Iowa, USA}
+  }
 kind: technical_report
 download_link: http://lib.dr.iastate.edu/cs_techreports/319/
 publication_year: 2007

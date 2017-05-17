@@ -25,7 +25,16 @@ abstract: >
   implementation. Our performance analysis results show that method dispatch
   time is not degraded in our prototype implementation. Also, advice dispatch
   time remains fairly close to the manually inlined version.
-bib:
+bib:  |
+  @article{dyer2007nu,
+    title={Nu: Towards a Flexible and Dynamic Aspect-Oriented Intermediate Language Model},
+    author={Dyer, Robert and Setty, Rakesh Bangalore Shivarudra and Rajan, Hridesh},
+    year={2007}
+    month={June},
+    location={Ames, Iowa, USA},
+    pages={2-13},
+    numpages={12}
+  }
 kind: technical_report
 download_link: TR-07-09.pdf
 publication_year: 2007

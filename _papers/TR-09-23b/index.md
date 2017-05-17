@@ -22,7 +22,16 @@ abstract: >
   these features. We evaluate our prototype via a rigorous performance analysis,
   which shows that flexible, dynamic deployment of inter-type declarations can
   be efficiently supported in a JVM.
-bib:
+bib:  |
+  @article{gharaibeh2010towards,
+    title={Towards Efficient Java Virtual Machine Support for Dynamic Deployment of Inter-type Declarations},
+    author={Gharaibeh, Bashar and Rajan, Hridesh and Chang, J Morris},
+    year={2010},
+    location={Ames, IA, USA},
+    month={March},
+    numpages={17},
+    pages={2-18}
+  }
 kind: technical_report
 download_link: http://lib.dr.iastate.edu/cs_techreports/321/
 publication_year: 2009

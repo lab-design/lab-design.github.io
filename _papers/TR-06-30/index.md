@@ -22,7 +22,13 @@ abstract: >
   compilation strategies improve incremental compilation time of aspect-oriented
   programs. We also analyze our intermediate language with respect to constructs
   that are not directly supported.
-bib:
+bib:  |
+  @article{dyer2006modular,
+    title={Modular compilation strategies for aspect-oriented constructs},
+    author={Dyer, Robert and Rajan, Hridesh},
+    year={2006},
+    numpages={12}
+  }
 kind: technical_report
 download_link: http://lib.dr.iastate.edu/cs_techreports/251/
 publication_year: 2006

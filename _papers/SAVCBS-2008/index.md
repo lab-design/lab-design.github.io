@@ -10,7 +10,15 @@ abstract: >
   JML’s model program feature. We show that model program speciﬁcations function
   as exemplars for capturing helper method calls in a way that preserves
   modularity and encapsulation.
-bib:
+bib:  |
+  @inproceedings{shaner2008model,
+    title={Model Programs for Preserving Composite Invariants},
+    author={Shaner, Steve M and Rajan, Hridesh and Leavens, Gary T},
+    booktitle={Seventh International Workshop on Specification and Verification of Component-Based Systems (SAVCBS 2008)},
+    pages={95-100},
+    year={2008},
+    numpages={6}
+  }
 kind: workshop
 download_link: savcbs08.pdf
 publication_year: 2008
