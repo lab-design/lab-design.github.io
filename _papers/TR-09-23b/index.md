@@ -30,7 +30,9 @@ bib:  |
     location={Ames, IA, USA},
     month={March},
     numpages={17},
-    pages={2-18}
+    institution={Iowa State U, Computer Sc.},
+    number={09-23b},
+    keywords={Inter-type declarations, invocation, weaving, aspect-oriented intermediate-languages, Nu, aspect-oriented virtual machines}
   }
 kind: technical_report
 download_link: http://lib.dr.iastate.edu/cs_techreports/321/

@@ -15,7 +15,16 @@ abstract: >
   code that the HLL compiler can generate and the semantics of the crosscutting
   primitives that it can expect. We present a preliminary evaluation using a
   simple but representative AO program showing the benefits of our approach.
-bib:
+bib:  |
+  @article{rajan2006preserving,
+    title={Preserving separation of concerns through compilation},
+    author={Rajan, Hridesh and Dyer, Robert and Hanna, Youssef Wasfy and Narayanappa, Harish},
+    year={2006},
+    institution={Iowa State U., Computer Sc.},
+    number={214},
+    location={Ames, Iowa, USA},
+    numpages={6}
+  }
 kind: technical_report
 download_link: http://lib.dr.iastate.edu/cs_techreports/214/
 extra_download_links:

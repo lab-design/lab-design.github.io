@@ -34,9 +34,11 @@ bib:  |
     author={Setty, Rakesh Bangalore Shivarudra and Dyer, Robert and Rajan, Hridesh},
     year={2008},
     month={February},
-    pages={2-13},
     numpages={12},
-    location={Ames, Iowa, USA}
+    location={Ames, Iowa, USA},
+    institution={Iowa State U., Computer Sc.},
+    keywords={incremental, compilation, weaving, aspect-oriented programming, load-time weaving},
+    number={08-02}
   }
 kind: technical_report
 download_link: http://lib.dr.iastate.edu/cs_techreports/313/

@@ -23,7 +23,27 @@ abstract: >
   hypotheses. Our evaluation demonstrates that Boa substantially reduces
   programming efforts, thus lowering the barrier to entry. We also show drastic
   improvements in scalability.
-bib:
+bib:  |
+ @article{Dyer:2015:BUS:2852270.2803171,
+    author = {Dyer, Robert and Nguyen, Hoan Anh and Rajan, Hridesh and Nguyen, Tien N.},
+    title = {Boa: Ultra-Large-Scale Software Repository and Source-Code Mining},
+    journal = {ACM Trans. Softw. Eng. Methodol.},
+    issue_date = {December 2015},
+    volume = {25},
+    number = {1},
+    month = dec,
+    year = {2015},
+    issn = {1049-331X},
+    pages = {7:1--7:34},
+    articleno = {7},
+    numpages = {34},
+    url = {http://doi.acm.org/10.1145/2803171},
+    doi = {10.1145/2803171},
+    acmid = {2803171},
+    publisher = {ACM},
+    address = {New York, NY, USA},
+    keywords = {Boa, domain-specific language, ease of use, lower barrier to entry, mining software repositories, scalable},
+ } 
 kind: technical_report
 download_link: http://lib.dr.iastate.edu/cs_techreports/374/
 publication_year: 2015

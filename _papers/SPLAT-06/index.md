@@ -19,7 +19,9 @@ bib:  |
     title={Preserving separation of concerns through compilation},
     author={Rajan, Hridesh and Dyer, Robert and Hanna, Youssef Wasfy and Narayanappa, Harish},
     year={2006},
-    numpages={6}
+    numpages={6},
+    institution={Iowa State U., Computer Sc.},
+    location={Ames, Iowa, USA}
   }
 kind: workshop
 download_link: splat06.pdf

@@ -27,9 +27,11 @@ bib:  |
     title={Reconciling Trust and Modularity Goals in Web Services},
     author={Rajan, Hridesh and Tao, Jia and Shaner, Steve M and Leavens, Gary T},
     year={2009},
-    month={July},
+    month={March},
     numpages={36},
-    location={Ames, Iowa, USA}
+    institution={Iowa State U., U. of Central Fl.},
+    number={08-07},
+    keywords={web services, data integrity, greybox specification, refinement}
   }
 kind: technical_report
 download_link: Rajan-Tao-Shaner-Leavens-TR-08-07.pdf

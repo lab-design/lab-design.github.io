@@ -18,7 +18,25 @@ abstract: >
   in being able to realize the intent of the design patterns more clearly. The
   design structures realized in the Eos implementation provide supporting
   evidence for the potential benefits of the unified model.
-bib:
+bib:  |
+ @inproceedings{Rajan:2007:DPI:1772070.1772081,
+    author = {Rajan, Hridesh},
+    title = {Design Pattern Implementations in Eos},
+    booktitle = {Proceedings of the 14th Conference on Pattern Languages of Programs},
+    series = {PLOP '07},
+    year = {2007},
+    isbn = {978-1-60558-411-9},
+    location = {Monticello, Illinois, USA},
+    pages = {9:1--9:11},
+    articleno = {9},
+    numpages = {11},
+    url = {http://doi.acm.org/10.1145/1772070.1772081},
+    doi = {10.1145/1772070.1772081},
+    acmid = {1772081},
+    publisher = {ACM},
+    address = {New York, NY, USA},
+    keywords = {Eos, binding, classpect, design patterns, unified aspect language model},
+  } 
 kind: technical_report
 download_link: http://lib.dr.iastate.edu/cs_techreports/314/
 publication_year: 2007

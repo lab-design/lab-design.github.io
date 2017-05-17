@@ -17,7 +17,17 @@ abstract: >
   using the Boa infrastructure for mining large scale open source repositories.
   Our study finds that transparent futures, despite their limitations, can be
   very useful in practice.
-bib:
+bib:  |
+  @article{lin2015duck,
+    title={Duck futures: A generative approach to transparent futures},
+    author={Lin, Eric and Upadhyaya, Ganesha and Mooney, Sean L and Rajan, Hridesh},
+    year={2015},
+    month={June},
+    numpages={10},
+    institution={Iowa State U., Computer Sc.},
+    location={Ames, Iowa, USA},
+    number={15-05}
+  }
 kind: technical_report
 download_link: http://lib.dr.iastate.edu/cs_techreports/371/
 publication_year: 2015

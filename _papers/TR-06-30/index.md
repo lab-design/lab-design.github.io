@@ -27,7 +27,11 @@ bib:  |
     title={Modular compilation strategies for aspect-oriented constructs},
     author={Dyer, Robert and Rajan, Hridesh},
     year={2006},
-    numpages={12}
+    month={September},
+    intitution={Iowa State U., Computer Sc.}
+    numpages={12},
+    number={06-30},
+    location={Ames, Iowa, USA}
   }
 kind: technical_report
 download_link: http://lib.dr.iastate.edu/cs_techreports/251/

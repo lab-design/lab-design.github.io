@@ -31,9 +31,11 @@ bib:  |
     author={Hanna, Youssef Wasfy and Rajan, Hridesh},
     year={2007},
     month={June},
-    pages={2-8},
     numpages={7},
-    location={Ames, Iowa, USA}
+    location={Ames, Iowa, USA},
+    institution={Iowa State U., Computer Sc.},
+    number={07-11},
+    keywords={sensor networks, fault tolerance, model checking, slede, fault injection model generation, fault-tolerant systems}
   }
 kind: technical_report
 download_link: http://lib.dr.iastate.edu/cs_techreports/319/

@@ -17,7 +17,18 @@ abstract: >
   Quantified, typed events, as implemented in our language Ptolemy, solve all
   these problems. This paper describes Ptolemy and explores its advantages
   relative to both II and AO languages.
-bib:
+bib:  |
+  @article{rajan2015design,
+    title={Design, Semantics and Implementation of the Ptolemy Programming Language: A Language with Quantified Typed Events},
+    author={Rajan, Hridesh and Leavens, Gary T},
+    year={2015},
+    month={July},
+    journal={ACM Transactions on Programming Languages and Systems},
+    volume={V},
+    number={N},
+    article={A},
+    institution={Iowa State U., Computer Sc., U. of Central Fl.}
+  }
 kind: technical_report
 download_link: http://lib.dr.iastate.edu/cs_techreports/376/
 publication_year: 2015

@@ -1,4 +1,4 @@
----
+—
 key: SAVCBS-2008
 permalink: /papers/SAVCBS-2008/
 short_name: SAVCBS '08
@@ -17,7 +17,8 @@ bib:  |
     booktitle={Seventh International Workshop on Specification and Verification of Component-Based Systems (SAVCBS 2008)},
     pages={95-100},
     year={2008},
-    numpages={6}
+    numpages={6},
+    institution={Iowa State U., U. of Central Fl.}
   }
 kind: workshop
 download_link: savcbs08.pdf

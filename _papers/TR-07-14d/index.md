@@ -11,9 +11,10 @@ bib:  |
     author={Rajan, Hridesh and Leavens, Gary T},
     month={May},
     year={2008},
-    pages={2-17},
     numpages={16},
-    location={Ames, Iowa, USA}
+    institution={Iowa State U., U. of Central Fl.}
+    keywords={implicit-invocation languages, aspect-oriented programming languages, quantification, pointcut, join point, context exposure, type checking, event types, event expressions},
+    number={07-14d}
   }
 kind: technical_report
 download_link: http://lib.dr.iastate.edu/cs_techreports/249/

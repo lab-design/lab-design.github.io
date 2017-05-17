@@ -23,7 +23,8 @@ bib:  |
     location = {Portland, Oregon, USA},
     month = {October},
     year = {2006},
-    pages = {32-39}
+    pages = {32-39},
+    institution={Iowa State U., Computer Sc.}
   }
 kind: workshop
 download_link: AOPLE06.pdf

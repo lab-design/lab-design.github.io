@@ -32,11 +32,13 @@ bib:  |
     year={2007}
     month={June},
     location={Ames, Iowa, USA},
-    pages={2-13},
-    numpages={12}
+    institution={Iowa State U., Computer Sc.},
+    numpages={12},
+    keywords={Nu, invocation, incremental, weaving, aspect-oriented intermediate languages, aspect-oriented virtual machines},
+    number={07-06}
   }
 kind: technical_report
-download_link: TR-07-09.pdf
+download_link: TR-07-06.pdf
 publication_year: 2007
 tags:
   - nu
