@@ -23,16 +23,13 @@ abstract: >
   which shows that flexible, dynamic deployment of inter-type declarations can
   be efficiently supported in a JVM.
 bib:  |
-  @article{gharaibeh2010towards,
-    title={Towards Efficient Java Virtual Machine Support for Dynamic Deployment of Inter-type Declarations},
-    author={Gharaibeh, Bashar and Rajan, Hridesh and Chang, J Morris},
-    year={2010},
-    location={Ames, IA, USA},
-    month={March},
-    numpages={17},
-    institution={Iowa State U, Computer Sc.},
-    number={09-23b},
-    keywords={Inter-type declarations, invocation, weaving, aspect-oriented intermediate-languages, Nu, aspect-oriented virtual machines}
+  @techreport{gharaibeh2010towards,
+    title = {Towards Efficient Java Virtual Machine Support for Dynamic Deployment of Inter-type Declarations},
+    author = {Gharaibeh, Bashar and Rajan, Hridesh and Chang, J Morris},
+    year = {2010},
+    month = {March},
+    institution = {Department of Computer Science, Iowa State University},
+    number = {09-23b}
   }
 kind: technical_report
 download_link: http://lib.dr.iastate.edu/cs_techreports/321/

@@ -20,7 +20,13 @@ abstract: >
   that apps required no changes to be portable. We performed a user study to test customizability and 
   we found that five of eight Candoia users found it very easy to customize an existing app. Candoia 
   is available for download.
-bib:
+bib:  |
+  @mastersthesis{tiwari_2017,
+    title={The design and implementation of Candoia: A platform for building and sharing mining software repositories tools as apps},
+    author={Tiwari, Nitin Mukesh},
+    year={2017},
+    school={Iowa State University}
+  }
 kind: thesis
 download_link: /papers/thesis/TiwariMSThesis.pdf
 publication_year: 2017

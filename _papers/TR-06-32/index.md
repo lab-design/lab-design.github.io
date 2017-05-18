@@ -18,13 +18,13 @@ abstract: >
   information about the join point without breaking the encapsulation of the
   advised code.
 bib: |
-  @TechReport{Rajan06-Quantification,
-    Author = {Hridesh Rajan},
-    Title = {Type-based Quantification of Aspect-oriented Programs},
-    institution = {Iowa State University, Department of Computer Science},
-    year = 2006,
+  @techreport{Rajan06-Quantification,
+    author = {Rajan, Hridesh},
+    title = {Type-based Quantification of Aspect-oriented Programs},
+    institution = {Department of Computer Science, Iowa State University},
+    year = {2006},
     number = {06-32},
-    month = {September},
+    month = {September}
   }
 kind: technical_report
 download_link: type-based.pdf

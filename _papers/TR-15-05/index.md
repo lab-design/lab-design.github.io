@@ -18,15 +18,13 @@ abstract: >
   Our study finds that transparent futures, despite their limitations, can be
   very useful in practice.
 bib:  |
-  @article{lin2015duck,
-    title={Duck futures: A generative approach to transparent futures},
-    author={Lin, Eric and Upadhyaya, Ganesha and Mooney, Sean L and Rajan, Hridesh},
-    year={2015},
-    month={June},
-    numpages={10},
-    institution={Iowa State U., Computer Sc.},
-    location={Ames, Iowa, USA},
-    number={15-05}
+  @techreport{lin2015duck,
+    title = {Duck futures: A generative approach to transparent futures},
+    author = {Lin, Eric and Upadhyaya, Ganesha and Mooney, Sean L and Rajan, Hridesh},
+    year = {2015},
+    month = {June},
+    institution = {Department of Computer Science, Iowa State University},
+    number = {15-05}
   }
 kind: technical_report
 download_link: http://lib.dr.iastate.edu/cs_techreports/371/

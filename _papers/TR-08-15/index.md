@@ -23,9 +23,9 @@ abstract: >
   show that instance-level quantified, typed events improve the separation of
   integration concerns over previous language design proposals.
 bib: |
-  @TechReport{Bagherzadeh-08-PtolemyI,
-    Author = {Mehdi Bagherzadeh, Robert Dyer, Yuheng Long and Hridesh Rajan},
-    Title = {Instance-level Quantified, Typed Events for Integrated System Design},
+  @techreport{Bagherzadeh-08-PtolemyI,
+    author = {Mehdi Bagherzadeh, Robert Dyer, Yuheng Long and Hridesh Rajan},
+    title = {Instance-level Quantified, Typed Events for Integrated System Design},
     institution = {Iowa State University, Department of Computer Science},
     year = 2008,
     number = {08-15},

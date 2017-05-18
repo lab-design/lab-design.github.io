@@ -24,7 +24,13 @@ abstract: >
   easier compared to standard concurrent object-oriented programs, but also
   performance of Panini programs is comparable to their equivalent hand-tuned
   versions written using Java's fork-join framework.
-bib:
+bib:  |
+  @mastersthesis{long_2010,
+    title={Implicit invocation meets safe, implicit concurrency},
+    author={Long, Yuheng},
+    year={2010},
+    school={Iowa State University}
+  }
 kind: thesis
 download_link: http://lib.dr.iastate.edu/etd/11853/
 publication_year: 2010

@@ -21,7 +21,13 @@ abstract: >
   will explore the implications on modularity and reuse of systems when a basic
   design decision – separating capsules and systems – is relaxed to allow a
   capsule to declare an internal composition of other capsule instances.
-bib:
+bib:  |
+  @mastersthesis{mooney_2015,
+    title={A Unified Design of Capsules},
+    author={Mooney, Sean Lawrence},
+    year={2015},
+    school={Iowa State University}
+  }
 kind: thesis
 download_link: /papers/thesis/MooneyMSThesis.pdf
 publication_year: 2015

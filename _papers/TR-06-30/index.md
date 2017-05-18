@@ -23,15 +23,13 @@ abstract: >
   programs. We also analyze our intermediate language with respect to constructs
   that are not directly supported.
 bib:  |
-  @article{dyer2006modular,
-    title={Modular compilation strategies for aspect-oriented constructs},
-    author={Dyer, Robert and Rajan, Hridesh},
-    year={2006},
-    month={September},
-    intitution={Iowa State U., Computer Sc.}
-    numpages={12},
-    number={06-30},
-    location={Ames, Iowa, USA}
+  @techreport{dyer2006modular,
+    title = {Modular compilation strategies for aspect-oriented constructs},
+    author = {Dyer, Robert and Rajan, Hridesh},
+    year = {2006},
+    month = {September},
+    intitution = {Department of Computer Science, Iowa State University}
+    number = {06-30}
   }
 kind: technical_report
 download_link: http://lib.dr.iastate.edu/cs_techreports/251/

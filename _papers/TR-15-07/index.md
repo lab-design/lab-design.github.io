@@ -19,15 +19,13 @@ abstract: >
   design structures realized in the Eos implementation provide supporting
   evidence for the potential benefits of the unified model.
 bib:  |
-  @article{rajan2015gang,
-    title={Gang-of-Four Design Patterns: A Case Study of the Unified Model and the Eos Programming Language},
-    author={Rajan, Hridesh},
-    year={2015},
-    month={June},
-    numpages={23},
-    location={Ames, Iowa, USA},
-    institution={Iowa State U., Computer Sc.},
-    number={15-07}
+  @techreport{rajan2015gang,
+    title = {Gang-of-Four Design Patterns: A Case Study of the Unified Model and the Eos Programming Language},
+    author = {Rajan, Hridesh},
+    year = {2015},
+    month = {June},
+    institution = {Department of Computer Science, Iowa State University},
+    number = {15-07}
   }
 kind: technical_report
 download_link: http://lib.dr.iastate.edu/cs_techreports/373/

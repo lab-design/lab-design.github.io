@@ -20,15 +20,12 @@ abstract: >
   systems affects their relative gain.
 bib:  |
   @article{gharaibeh2009quantitative,
-    title={A quantitative cost/benefit analysis for dynamic updating},
-    author={Gharaibeh, Bashar and Rajan, Hridesh and Chang, J Morris},
-    year={2009},
-    month={September},
-    numpages={11},
-    location={Ames, Iowa, USA},
-    keywords={Dynamic Updating, Cost Benefits Analysis, Software Evolution},
-    institution={Iowa State U., Computer Sc.},
-    number={09-27}
+    title = {A quantitative cost/benefit analysis for dynamic updating},
+    author = {Gharaibeh, Bashar and Rajan, Hridesh and Chang, J Morris},
+    year = {2009},
+    month = {September},
+    institution = {Department of Computer Science, Iowa State University},
+    number = {09-27}
   }
 kind: technical_report
 download_link: http://lib.dr.iastate.edu/cs_techreports/349/

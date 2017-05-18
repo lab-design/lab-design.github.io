@@ -23,9 +23,9 @@ abstract: >
   comparable to the equivalent programs written using Java's fork-join
   framework.
 bib: |
-  @TechReport{ Long-Mooney-Sondag-Rajan-10,
-    Author = { Yuheng Long and Sean Mooney and Tyler Sondag and Hridesh Rajan },
-    Title = { Panini: Reconciling Concurrency and Modularity in Design },
+  @techreport{ Long-Mooney-Sondag-Rajan-10,
+    author = { Yuheng Long and Sean Mooney and Tyler Sondag and Hridesh Rajan },
+    title = { Panini: Reconciling Concurrency and Modularity in Design },
     institution = { Iowa State University, Department of Computer Science },
     year = { 2010 },
     number = { 09-28b },

@@ -19,15 +19,13 @@ abstract: >
   relative to both II and AO languages.
 bib:  |
   @article{rajan2015design,
-    title={Design, Semantics and Implementation of the Ptolemy Programming Language: A Language with Quantified Typed Events},
-    author={Rajan, Hridesh and Leavens, Gary T},
-    year={2015},
-    month={July},
-    journal={ACM Transactions on Programming Languages and Systems},
-    volume={V},
-    number={N},
-    article={A},
-    institution={Iowa State U., Computer Sc., U. of Central Fl.}
+    title = {Design, Semantics and Implementation of the Ptolemy Programming Language: A Language with Quantified Typed Events},
+    author = {Rajan, Hridesh and Leavens, Gary T},
+    year = {2015},
+    month = {July},
+    journal = {ACM Transactions on Programming Languages and Systems},
+    volume = {V},
+    number = {N}
   }
 kind: technical_report
 download_link: http://lib.dr.iastate.edu/cs_techreports/376/

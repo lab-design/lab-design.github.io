@@ -36,7 +36,13 @@ abstract: >
   system is known) group assignment. The accuracy of lazy grouping for a wide
   range of machines is shown to be more than 90% for nearly all target machines
   and asymmetric multicores.
-bib:
+bib:  |
+  @phdthesis{sondag_2011,
+    title={Phase-based tuning: better utilized performance asymmetric multicores},
+    author={Sondag, Tyler},
+    year={2011},
+    school={Iowa State University}
+  }
 kind: thesis
 download_link: http://lib.dr.iastate.edu/etd/10416/
 publication_year: 2011

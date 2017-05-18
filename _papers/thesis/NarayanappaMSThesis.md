@@ -18,7 +18,13 @@ abstract: >
   relevant to the property of interest, (ii) to decompose large program slices
   into logically related slice fragments, and (iii) to apply statistical
   sampling on the set of slice fragments.
-bib:
+bib:  |
+  @mastersthesis{narayanappa_2010,
+    title={Monitoring software using property-aware program sampling},
+    author={Narayanappa, Harish B},
+    year={2010},
+    school={Iowa State University}
+  }
 kind: thesis
 download_link: http://lib.dr.iastate.edu/etd/11410/
 publication_year: 2010

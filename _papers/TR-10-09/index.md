@@ -23,12 +23,12 @@ abstract: >
   sequential version of several applications (up to 15.7x) at a negligible
   overhead.
 bib: |
-  @TechReport{Long-Sondag-Rajan-10,
-    Author = {Yuheng Long, Tyler Sondag, and Hridesh Rajan},
-    Title = {A Type-and-Effect System for Shared Memory, Concurrent Implicit Invocation Systems},
+  @techreport{Long-Sondag-Rajan-10,
+    author = {Yuheng Long, Tyler Sondag, and Hridesh Rajan},
+    title = {A Type-and-Effect System for Shared Memory, Concurrent Implicit Invocation Systems},
     institution = {Iowa State University, Department of Computer Science},
     year = {2011},
-    number = {10-09a},
+    number = {10-09},
     month = {June},
   }
 kind: technical_report

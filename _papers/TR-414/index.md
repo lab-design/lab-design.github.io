@@ -23,14 +23,11 @@ abstract: >
   combinations without compromising the design modularity in the object code.
 bib:  |
   @techreport{rajan2006nu,
-    title={Nu: Towards an AspectOriented Invocation Mechanism},
-    author={Rajan, Hridesh and Dyer, Robert and Narayanappa, Harish and Hanna, Youssef},
-    year={2006},
-    institution={Technical Report 414, Iowa State University, Department of Computer Science},
-    number={414},
-    location={Ames, Iowa, USA},
-    keywords={Bind, Nu, invocation, incremental, weaving},
-    numpages={17}
+    title = {Nu: Towards an AspectOriented Invocation Mechanism},
+    author = {Rajan, Hridesh and Dyer, Robert and Narayanappa, Harish and Hanna, Youssef},
+    year = {2006},
+    institution = {Technical Report 414, Iowa State University, Department of Computer Science},
+    number = {414}
   }
 kind: technical_report
 download_link: TR-414.pdf

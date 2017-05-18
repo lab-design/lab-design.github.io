@@ -16,14 +16,12 @@ abstract: >
   primitives that it can expect. We present a preliminary evaluation using a
   simple but representative AO program showing the benefits of our approach.
 bib:  |
-  @article{rajan2006preserving,
-    title={Preserving separation of concerns through compilation},
-    author={Rajan, Hridesh and Dyer, Robert and Hanna, Youssef Wasfy and Narayanappa, Harish},
-    year={2006},
-    institution={Iowa State U., Computer Sc.},
-    number={214},
-    location={Ames, Iowa, USA},
-    numpages={6}
+  @techreport{rajan2006preserving,
+    title = {Preserving separation of concerns through compilation},
+    author = {Rajan, Hridesh and Dyer, Robert and Hanna, Youssef Wasfy and Narayanappa, Harish},
+    year = {2006},
+    institution = {Department of Computer Science, Iowa State University},
+    number = {214}
   }
 kind: technical_report
 download_link: http://lib.dr.iastate.edu/cs_techreports/214/

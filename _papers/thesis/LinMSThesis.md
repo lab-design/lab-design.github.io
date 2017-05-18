@@ -36,7 +36,13 @@ abstract: >
   the strategy used to retain meta- information about capsules after
   compilation, so that capsule-oriented programs enjoy the property of separate
   compilation.
-bib:
+bib:  |
+  @mastersthesis{lin_2016,
+    title={PaniniJ: adding the capsule programming abstraction to Java to provide linguistic support for modular reasoning in concurrent program design},
+    author={Lin, Eric},
+    year={2016},
+    school={Iowa State University}
+  }
 kind: thesis
 download_link: /papers/thesis/LinMSThesis.pdf
 publication_year: 2016

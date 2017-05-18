@@ -44,7 +44,13 @@ abstract: >
   pre- compute the effects and a dynamic analysis that uses the precomputed
   effects to improve concurrency. Our design simplifies modular concurrency
   reasoning and avoids concurrency hazards.
-bib:
+bib:  |
+  @phdthesis{long_2016,
+    title={Formal foundations for hybrid effect analysis},
+    author={Long, Yuheng},
+    year={2016},
+    school={Iowa State University}
+  }
 kind: thesis
 download_link: /papers/thesis/LongPhDThesis.pdf
 publication_year: 2016

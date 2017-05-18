@@ -31,7 +31,13 @@ abstract: >
   image databases, having a total of 20,000 images. Finally, we provide a
   software package with a Graphical User Interface that has been developed to
   make this research accessible to local state forensic departments.
-bib:
+bib:  |
+  @mastersthesis{jalan_2009,
+    title={Feature selection, statistical modeling and its applications to universal JPEG steganalyzer},
+    author={Jalan, Jaikishan},
+    year={2009},
+    school={Iowa State University}
+  }
 kind: thesis
 download_link: http://lib.dr.iastate.edu/etd/11012/
 publication_year: 2009

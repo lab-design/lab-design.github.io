@@ -26,16 +26,13 @@ abstract: >
   generating fault models, our approach eases the verification of
   fault-tolerance for sensor network applications.
 bib:  |
-  @article{hanna2007verifying,
-    title={Verifying Fault-Tolerance of Sensor Network Applications Using Auto-generated Fault Injection Mechanisms},
-    author={Hanna, Youssef Wasfy and Rajan, Hridesh},
-    year={2007},
-    month={June},
-    numpages={7},
-    location={Ames, Iowa, USA},
-    institution={Iowa State U., Computer Sc.},
-    number={07-11},
-    keywords={sensor networks, fault tolerance, model checking, slede, fault injection model generation, fault-tolerant systems}
+  @techreport{hanna2007verifying,
+    title = {Verifying Fault-Tolerance of Sensor Network Applications Using Auto-generated Fault Injection Mechanisms},
+    author = {Hanna, Youssef Wasfy and Rajan, Hridesh},
+    year = {2007},
+    month = {June},
+    institution = {Department of Computer Science, Iowa State University},
+    number = {07-11}
   }
 kind: technical_report
 download_link: http://lib.dr.iastate.edu/cs_techreports/319/

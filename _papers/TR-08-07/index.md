@@ -23,15 +23,13 @@ abstract: >
   using LTL and solve the ﬁrst problem by model checking. We solve the second
   problem by reﬁnement techniques.
 bib:  |
-  @article{rajan2009reconciling,
-    title={Reconciling Trust and Modularity Goals in Web Services},
-    author={Rajan, Hridesh and Tao, Jia and Shaner, Steve M and Leavens, Gary T},
-    year={2009},
-    month={March},
-    numpages={36},
-    institution={Iowa State U., U. of Central Fl.},
-    number={08-07},
-    keywords={web services, data integrity, greybox specification, refinement}
+  @techreport{rajan2009reconciling,
+    title = {Reconciling Trust and Modularity Goals in Web Services},
+    author = {Rajan, Hridesh and Tao, Jia and Shaner, Steve M and Leavens, Gary T},
+    year = {2009},
+    month = {March},
+    institution = {Iowa State University and University of Central Florida},
+    number = {08-07}
   }
 kind: technical_report
 download_link: Rajan-Tao-Shaner-Leavens-TR-08-07.pdf

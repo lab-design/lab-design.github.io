@@ -26,16 +26,13 @@ abstract: >
   time is not degraded in our prototype implementation. Also, advice dispatch
   time remains fairly close to the manually inlined version.
 bib:  |
-  @article{dyer2007nu,
-    title={Nu: Towards a Flexible and Dynamic Aspect-Oriented Intermediate Language Model},
-    author={Dyer, Robert and Setty, Rakesh Bangalore Shivarudra and Rajan, Hridesh},
-    year={2007}
-    month={June},
-    location={Ames, Iowa, USA},
-    institution={Iowa State U., Computer Sc.},
-    numpages={12},
-    keywords={Nu, invocation, incremental, weaving, aspect-oriented intermediate languages, aspect-oriented virtual machines},
-    number={07-06}
+  @techreport{dyer2007nu,
+    title = {Nu: Towards a Flexible and Dynamic Aspect-Oriented Intermediate Language Model},
+    author = {Dyer, Robert and Setty, Rakesh Bangalore Shivarudra and Rajan, Hridesh},
+    year = {2007},
+    month = {June},
+    institution = {Department of Computer Science, Iowa State University},
+    number = {07-06}
   }
 kind: technical_report
 download_link: TR-07-06.pdf

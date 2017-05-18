@@ -23,9 +23,9 @@ abstract: >
   and shorter programs that perform as well as the parallel versions provided
   with the benchmarks.
 bib: |
-  @TechReport{Long-Rajan-12,
-    Author = {Hridesh Rajan and Steven M. Kautz and Eric Lin and Sarah Kabala and Ganesha Upadhyaya and Yuheng Long and Rex Fernando, and Lor\'{a}nd Szak\'{a}cs},
-    Title = {Capsule-oriented Programming},
+  @techreport{Long-Rajan-12,
+    author = {Hridesh Rajan and Steven M. Kautz and Eric Lin and Sarah Kabala and Ganesha Upadhyaya and Yuheng Long and Rex Fernando, and Lor\'{a}nd Szak\'{a}cs},
+    title = {Capsule-oriented Programming},
     institution = {Iowa State U., Computer Sc.},
     year = {2013},
     number = {13-01},

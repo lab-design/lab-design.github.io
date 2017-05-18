@@ -24,7 +24,13 @@ abstract: >
   evaluation on wide range of benchmark programs shows that our mapping
   technique can improve the performance by 30%-60% over default mapping
   techniques.
-bib:
+bib:  |
+  @mastersthesis{upadhyaya_2015,
+    title={Abstraction and performance, together at last; Auto-tuning message-passing concurrency on the java virtual machine},
+    author={Upadhyaya, Ganesha},
+    year={2015},
+    school={Iowa State University}
+  }
 kind: thesis
 download_link: /papers/thesis/UpadhyayaMSThesis.pdf
 publication_year: 2015

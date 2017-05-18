@@ -29,16 +29,13 @@ abstract: >
   join points affected by aspects do not differentiate between the two
   techniques.
 bib:  |
-  @article{setty2008weave,
-    title={Weave Now or Weave Later: A Test Driven Development Perspective on Aspect-oriented Deployment Models},
-    author={Setty, Rakesh Bangalore Shivarudra and Dyer, Robert and Rajan, Hridesh},
-    year={2008},
-    month={February},
-    numpages={12},
-    location={Ames, Iowa, USA},
-    institution={Iowa State U., Computer Sc.},
-    keywords={incremental, compilation, weaving, aspect-oriented programming, load-time weaving},
-    number={08-02}
+  @techreport{setty2008weave,
+    title = {Weave Now or Weave Later: A Test Driven Development Perspective on Aspect-oriented Deployment Models},
+    author = {Setty, Rakesh Bangalore Shivarudra and Dyer, Robert and Rajan, Hridesh},
+    year = {2008},
+    month = {February},
+    institution = {Department of Computer Science, Iowa State University},
+    number = {08-02}
   }
 kind: technical_report
 download_link: http://lib.dr.iastate.edu/cs_techreports/313/

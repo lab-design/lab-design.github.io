@@ -30,7 +30,13 @@ abstract: >
   to be a shared, community resource. Finally, we show the potential benefit of
   Boa to the community by reproducing a previously published case study and
   performing a new case study on the adoption of Java language features.
-bib:
+bib:  |
+  @phdthesis{dyer_2013,
+    title={Bringing ultra-large-scale software repository mining to the masses with Boa},
+    author={Dyer, Robert},
+    year={2013},
+    school={Iowa State University}
+  }
 kind: thesis
 download_link: http://lib.dr.iastate.edu/etd/13553/
 publication_year: 2013

@@ -43,7 +43,13 @@ abstract: >
   These three ideas have the potential to ease software engineering of
   concurrent systems by improv- ing a developer’s ability to design, implement,
   test and evolve their software one module at a time.
-bib:
+bib:  |
+  @phdthesis{bagherzadeh_2016, 
+    title={Toward a Concurrent Programming Model with Modular Reasoning},
+    author={Bagherzadeh, Mehdi},
+    year={2016},
+    school={Iowa State University}
+  }
 kind: thesis
 download_link: /papers/thesis/BagherzadehPhDThesis.pdf
 publication_year: 2016
