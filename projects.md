@@ -4,6 +4,9 @@ layout: page
 
 {% assign papers = site.papers | sort: 'publication_year' %}
 
+1. TOC
+{:toc}
+
 ## Active Research Projects
 
 ### [Panini](http://web.cs.iastate.edu/~panini/)

@@ -11,10 +11,7 @@ permalink: /papers/
 {% assign technical_reports = (site.papers | where: 'kind', 'technical_report' | sort: 'publication_year') %}
 
 1. TOC
-{: toc start="0"}
-
-### Jump to Section
-{: .no-display}
+{: toc}
 
 ### Conference Papers
 {: .space-above}
