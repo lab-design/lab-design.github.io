@@ -3,7 +3,15 @@ key: CCSC-10
 permalink: /papers/CCSC-10/
 short_name: CCSC '10
 title: Connecting High-Level Programming Constructs to Assembly Language Using Frances
-abstract:
+abstract: >
+  Central to computing is machine code generation. Upper level undergraduate
+  students studying computing are quite familiar with high-level languages. Most
+  undergraduate programs in computing begin with a course involving computer
+  programming in a high- level language and as students progress through their
+  studies they gain more experience with high-level languages. Not only is the
+  machine code central to upper level courses in computer science, introductory
+  programming texts address the issue of how high-level languages are translated
+  to execute on the machine [3, 4].
 bib: |
   @article{Pokorny-Sondag-Rajan-10,
     author = {Pokorny, Kian L. and Sondag, Tyler and Rajan, Hridesh},
