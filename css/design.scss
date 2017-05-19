@@ -191,7 +191,7 @@ footer {
   font-size: 65%;
   bottom: 0;
   width: 100%;
-  height: 13vh;
+  height: 15vh;
 }
 
 #footer-separator {
@@ -211,6 +211,10 @@ footer p {
 footer div {
   margin-top: .5rem;
   margin-bottom: .5rem;
+}
+
+footer .address {
+  text-align: right;
 }
 
 .home-page-highlighted-paper-card {
