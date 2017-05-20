@@ -56,6 +56,16 @@
   email: spriya@iastate.edu
   site: http://web.cs.iastate.edu/~spriya/
 
+- name: Wenfei Song
+  status: PhD
+  email: wsong@iastate.edu
+  site: http://web.cs.iastate.edu/~wsong/
+
+- name: Seyedehzahra Khoshmanesh
+  status: PhD
+  email: zkh@iastate.edu
+  site: http://web.cs.iastate.edu/~zkh/
+
 # Master's Students:
 
 - name: David Johnston
@@ -80,4 +90,20 @@
   site: http://design.cs.iastate.edu
 
 # Bachelor's Students:
-# None at the moment.
+
+- name: Eva M Kuntz
+  status: BS
+  email: evakuntz@iastate.edu
+  site: http://design.cs.iastate.edu
+
+- name: Robert H Schmidt
+  status: BS
+  email: robert2@iastate.edu
+  site: http://design.cs.iastate.edu
+
+- name: Nathaniel M Wernimont
+  status: BS
+  email: natew@iastate.edu
+  site: http://design.cs.iastate.edu
+
+
