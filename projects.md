@@ -4,8 +4,10 @@ layout: page
 
 {% assign papers = site.papers | sort: 'publication_year' %}
 
+<div id="papers-markdown-toc" markdown="1">
 1. TOC
 {:toc}
+</div>
 
 ## Active Research Projects
 

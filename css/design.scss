@@ -123,7 +123,14 @@ nav .navbar {
 
 #markdown-toc a {
   font-weight: lighter;
-  content: attr(id);
+}
+
+#papers-markdown-toc ol > li > ol > li {
+  list-style-type: disc;
+}
+
+#papers-markdown-toc ol > li {
+  list-style-type: none;
 }
 
 .paper_card_header {
