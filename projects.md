@@ -11,8 +11,16 @@ layout: page
 
 ## Active Research Projects
 
+{% comment %}
 ### [Panini](http://web.cs.iastate.edu/~panini/)
-<a id="panini"></a>
+{:.no_toc}
+
+### Panini {#panini}
+{:.no-display}
+
+This is crazy. ToC currently doesn't strip out the formatting on the header, so the regular header would link to the website rather than the location on the page. What you see above is a workaround for that.
+{% endcomment %}
+{% include projects_page.html name="Panini" link="http://web.cs.iastate.edu/~panini/" %}
 
 The Panini project is developing the capsule-oriented programming model.
 This model is aimed at making concurrent software
@@ -62,7 +70,7 @@ Foundation for supporting our work under following grants:
 [More information about the Panini project](http://www.paninij.org)
 
 
-### [Boa](http://boa.cs.iastate.edu)
+{% include projects_page.html name="Boa" link="http://boa.cs.iastate.edu" %}
 
 [Boa](http://boa.cs.iastate.edu) project is applying big data analytics toward
 improving software engineering. It is developing a domain-specific language and
@@ -104,7 +112,7 @@ Boa project has been supported in part by the following grants.
 [More information about the Boa project.](http://boa.cs.iastate.edu)
 
 
-### [Ptolemy](http://ptolemy.cs.iastate.edu)
+{% include projects_page.html name="Ptolemy" link="http://ptolemy.cs.iastate.edu" %}
 
 A software is created to satisfy user needs (also called concerns). These
 concerns may change often and unanticipatedly. On a concern change, the parts of
@@ -144,7 +152,7 @@ PI: Hridesh Rajan (2010 - 2013).
 
 ## Past Research Projects
 
-### [Eos](http://web.cs.iastate.edu/~eos/)
+{% include projects_page.html name="Eos" link="http://web.cs.iastate.edu/~eos/" %}
 
 Eos is a unified aspect-oriented extension for C# on Microsoft® .NET Framework™.
 Eos unifies aspects and objects as classpects. The unified language model
@@ -159,7 +167,7 @@ structures.
 </ul>
 
 
-### [Frances](http://web.cs.iastate.edu/~sapha/tools/frances/)
+{% include projects_page.html name="Frances" link="http://web.cs.iastate.edu/~sapha/tools/frances/" %}
 
 The Frances project produces tools for teaching topics related to code
 generation and mapping high-level languages to low-level langages. First,
@@ -174,7 +182,7 @@ and how high-level code actually executes on a system.
 </ul>
 
 
-### [Nu](http://web.cs.iastate.edu/~nu/)
+{% include projects_page.html name="Nu" link="http://web.cs.iastate.edu/~nu/" %}
 
 The Nu (pronounced new) project is exploring intermediate language design and
 corresponding virtual machine extensions to better support new features of
@@ -190,7 +198,7 @@ weaving support, etc.
 </ul>
 
 
-### [Sapha](http://web.cs.iastate.edu/~sapha/)
+{% include projects_page.html name="Sapha" link="http://web.cs.iastate.edu/~sapha/" %}
 
 As multi-core processors are becoming common, vendors are starting to explore
 trade offs between the die size and the number of cores on a die, leading to
@@ -213,7 +221,7 @@ the utilization of these processors.
 </ul>
 
 
-### [Slede](http://web.cs.iastate.edu/~slede/)
+{% include projects_page.html name="Slede" link="http://web.cs.iastate.edu/~slede/" %}
 
 The Slede project is looking at specification language design and supporting
 verification mechanisms for specifying and verifying cryptographic protocols for
@@ -230,7 +238,7 @@ these networks are utilized.
 </ul>
 
 
-### [Tisa](http://web.cs.iastate.edu/~tisa/)
+{% include projects_page.html name="Tisa" link="http://web.cs.iastate.edu/~tisa/" %}
 
 The key notion in service-oriented architecture is decoupling clients and
 providers of a service based on an abstract service description, which is used
@@ -254,7 +262,7 @@ applications.
 </ul>
 
 
-### [Osiris](http://design.cs.iastate.edu/projects/osiris/)
+{% include projects_page.html name="Osiris" link="http://design.cs.iastate.edu/projects/osiris/" %}
 
 Comprehending software is hard. As system complexity and size increases,
 existing approaches for program comprehension become less usable. Ironically,
