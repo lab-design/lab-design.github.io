@@ -195,6 +195,7 @@ footer {
   bottom: 0;
   width: 100%;
   height: 15vh;
+  overflow: hidden;
 }
 
 #footer-separator {
@@ -218,6 +219,7 @@ footer div {
 
 footer .address {
   text-align: right;
+  white-space: nowrap;
 }
 
 .home-page-highlighted-paper-card {
