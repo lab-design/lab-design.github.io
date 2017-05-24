@@ -3,21 +3,24 @@ layout: page
 ---
 
 <style>
-  .space-above {
-  margin-top: 1rem;
-  }
   .crop {
-  height:150px;
-  width:150px;
-  overflow:hidden;
+    height: 150px;
+    overflow: hidden;
   }
   .crop img {
-  border: 1px solid black;
+    border: 1px solid black;
   }
   .name {
-  height: 50px;
-  overflow: auto;
+    height: 75px;
+    overflow: auto;
+    position: absolute;
+    bottom: 0;
   }
+  .outer-box {
+    position: relative;
+    height: 225px;
+  }
+
 </style>
 
 <h2>Current Lab Members</h2>
@@ -26,29 +29,31 @@ layout: page
   <div class="row">
     <div class="col col-md-10">
       {% for member in site.data.members %}
-      <div class="col col-md-3 space-above">
-	<div class="crop">
-	  <a href="{{member.site}}"><!-- All members have a site listed-->
-	    {% if member.img %}
-	    <img src="/img/people/{{member.img}}" class="img-fluid">
-	    {% else %}
-	    <img src="/img/people/blank.png" class="img-fluid">
-	    {% endif %}
-	  </a>
-	</div>
-	<div class="name">
-	  <a href="{{member.site}}"><!--All members have a site listed-->
-	    {{member.name}}
-	    {% if member.status %}
-	    [{{ member.status }}]
-	    {% endif %}
-	  </a>
-	</div>
-      </div>
+        <div class="col col-md-3 outer-box">
+          <div class="crop">
+            <a href="{{member.site}}">
+              <!-- All members have a site listed-->
+              {% if member.img %}
+                <img src="/img/people/{{member.img}}" class="img-fluid">
+              {% else %}
+                <img src="/img/people/blank.png" class="img-fluid">
+              {% endif %}
+            </a>
+          </div>
+          <div class="name">
+            <a href="{{member.site}}">
+              <!--All members have a site listed-->
+              {{member.name}}
+              {% if member.status %}
+                [{{ member.status }}]
+              {% endif %}
+            </a>
+          </div>
+        </div>
       {% endfor %}
     </div>
   </div>
-  
+
 </ul>
 
 <h2>Lab Alumni</h2>
@@ -57,29 +62,30 @@ layout: page
   <div class="row">
     <div class="col col-md-10">
       {% for alumni in site.data.alumni %}
-      <div class="col col-md-3 space-above">
-	<div class="crop">
-	  {% if alumni.site %}
-	  <a href="{{alumni.site}}">
-	    {% endif %}
-	    {% if alumni.img %}
-	    <img src="/img/people/{{alumni.img}}" class="img-fluid">
-	    {% else %}
-	    <img src="/img/people/blank.png" class="img-fluid">
-	    {% endif %}
-	  </a><!-- Would this be considered bad code? -->
-	</div>
-	<div class="name">
-	  {% if alumni.site %}
-	  <a href="{{alumni.site}}">
-	    {% endif %}
-	    {{ alumni.name }}
-	    {% if alumni.status %}
-	    [{{ alumni.status }}]
-	    {% endif %}
-	  </a>
-	</div>
-      </div>
+        <div class="col col-md-3 outer-box">
+          <div class="crop">
+            {% if alumni.site %}
+              <a href="{{alumni.site}}">
+              {% endif %}
+              {% if alumni.img %}
+                <img src="/img/people/{{alumni.img}}" class="img-fluid">
+              {% else %}
+                <img src="/img/people/blank.png" class="img-fluid">
+              {% endif %}
+            </a>
+            <!-- Would this be considered bad code? -->
+          </div>
+          <div class="name">
+            {% if alumni.site %}
+              <a href="{{alumni.site}}">
+              {% endif %}
+              {{ alumni.name }}
+              {% if alumni.status %}
+                [{{ alumni.status }}]
+              {% endif %}
+            </a>
+          </div>
+        </div>
       {% endfor %}
     </div>
   </div>
