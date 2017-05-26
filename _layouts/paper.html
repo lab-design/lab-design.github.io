@@ -2,6 +2,17 @@
 layout: page
 ---
 
+{% capture author %}
+{% bibtex --style /csl/paper_pages.csl %}
+{{page.bib}}
+{% endbibtex %}
+{% endcapture %}
+
+
+<h4>
+By: {{ author | strip_html }}
+</h4>
+
 {% if page.download_link %}
 <a href="{{ page.download_link }}" class="icon">
   <img src="/img/pdf_icon.svg"/ alt="PDF Download">
@@ -17,13 +28,12 @@ layout: page
 <br />
 {% endif %}
 
-
-{% if page.abstract %}
 <h3>Abstract</h3>
 <p>
-{{ page.abstract | escape }}
+  {% bibtex --style /csl/abstract.csl %}
+  {{page.bib}}
+  {% endbibtex %}
 </p>
-{% endif %}
 
 {% if page.bib %}
 <h3>Bib Info</h3>
@@ -31,6 +41,8 @@ layout: page
 {{ page.bib | escape }}
 </code></pre>
 {% endif %}
+
+
 
 {% assign maybe_content = content | strip_newlines %}
 {% if maybe_content != "" %}

@@ -14,7 +14,11 @@
         &#9776;
       </button>
     </div>
-    <a class="paper_card_header_name" href="{{ include.paper.url }}">{{ include.paper.short_name }}: {{ include.paper.title }}</a>
+    <a class="paper_card_header_name" href="{{ include.paper.url }}">
+      {% bibtex --style /csl/papers_page.csl %}
+      {{paper.bib}}
+      {% endbibtex %}
+    </a>
     <a href="{{ download_link_prefix }}{{ include.paper.download_link }}">
       <img src="/img/pdf_icon.svg" alt="PDF Download"/>
     </a>

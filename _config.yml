@@ -48,3 +48,8 @@ defaults:
 
 static_files:
   extname: pdf
+
+scholar:
+  source: .
+
+gems: ['jekyll/scholar']
