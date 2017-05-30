@@ -37,9 +37,14 @@ By: {{ author | strip_html }}
 
 {% if page.bib %}
 <h3>Bib Info</h3>
+<h5>BibTeX</h5>
 <pre><code>
 {{ page.bib | escape }}
 </code></pre>
+<h5>ACM</h5>
+{% bibtex --style acm-sig-proceedings %}
+{{page.bib}}
+{% endbibtex %}
 {% endif %}
 
 
