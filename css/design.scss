@@ -183,23 +183,21 @@ nav .navbar {
 
 html {
   min-width: 320px;
-  position: relative;
-  min-height: 100%;
+  height: 100%;
 }
 
 body {
-  margin-bottom: 180px;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
 }
 
 footer {
-  position: absolute;
+  margin-top: auto;
   background-color: #C03;
   color: #FFFFFF;
   font-size: 65%;
-  bottom: 0;
   width: 100%;
-  height: 15vh;
-  overflow: hidden;
 }
 
 #footer-separator {
@@ -222,7 +220,12 @@ footer div {
 }
 
 footer .address {
-  text-align: right;
+  @media screen and (max-width:767px){
+    text-align: left;
+  }
+  @media screen and (min-width:768px){
+    text-align: right;
+  }
   white-space: nowrap;
 }
 
