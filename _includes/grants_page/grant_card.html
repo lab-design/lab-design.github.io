@@ -1,0 +1,17 @@
+<div class="card grant_card">
+  <div class="card-header grant_card_header" id="head-{{ include.grant.key }}">
+    <div>
+      <button class="navbar-toggler" type="button" href="#coll-{{ include.grant.key }}" data-toggle="collapse" data-parent="#grants-list" aria-expanded="false" aria-controls="coll-{{ include.grant.key }}">
+        &#9776;
+      </button>
+    </div>
+    <a class="grant_card_header_name" href="{{ include.grant.url }}">
+      {{ include.grant.title }}
+    </a>
+  </div>
+  <div id="coll-{{ include.grant.key }}" class="card-block collapse" aria-labelledby="head-{{ include.grant.key }}">
+    <div class="padded-inner-card-block">
+      {{ include.grant.abstract }}
+    </div>
+  </div>
+</div>

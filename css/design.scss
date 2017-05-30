@@ -53,7 +53,7 @@ body {
 /* Note: Update width when changing the nav links */
 @media screen and (min-width: 544px) {
   .navbar .navbar-nav .nav-link {
-    width: 25%;
+    width: 20%;
     text-align: center;
     padding-left: 0;
   }
@@ -133,7 +133,7 @@ nav .navbar {
   list-style-type: none;
 }
 
-.paper_card_header {
+.paper_card_header, .grant_card_header {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -145,15 +145,15 @@ nav .navbar {
   margin: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
 
-.paper_card_header .paper_card_header_name {
+.paper_card_header, .paper_card_header_name, .grant_card_header, .grant_card_header_name {
   flex-grow: 1;
 }
 
-.paper_card .padded-inner-card-block {
+.paper_card, .padded-inner-card-block {
   padding: 0.8rem 0.8rem 0.8rem 0.8rem;
 }
 
-.paper_card .card-block {
+.paper_card, .card-block {
   padding: 0;
 }
 
