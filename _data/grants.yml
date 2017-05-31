@@ -1,0 +1,291 @@
+#Date is the start date of the grant
+
+- key: grant-nsf-0846059
+  title: "CAREER: On Mutualism of Modularity and Concurrency Goals"
+  date: 2009-7-1
+  url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=0846059"
+  abstract: >
+    This project focuses on the problem of making concurrent programs easier to
+    write correctly and to implement efficiently. Modularity promotes ease of
+    understand and maintainability, but modularity is often at odds with the
+    discovery and exploitation of concurrency needed to get high performance while
+    avoiding undesirable interactions and race conditions. To approach this problem,
+    this project is developing a novel language, Panini, in which events are
+    first-class objects which can be analyzed to plan concurrent executions. The
+    objective is to reconcile modularity and concurrency goals so that modular
+    designs are naturally more amenable to concurrency. Panini will be evaluated in
+    terms of its ability to support program modularity and performance on publicly
+    available versions of large open-source software projects on multi-core
+    processors use. The broader impacts are to make software more reliable,
+    maintainable, and at the same time faster. Considering that software systems are
+    essential elements of today's society, better and faster software will directly
+    impact society.
+- key: grant-nsf-1518789
+  title: "SHF:Large:Collaborative Research: Inferring Software Specifications from Open Source Repositories by Leveraging Data and Collective Community Expertise"
+  date: 2015-7-1
+  url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1518789"
+  abstract: >
+    Today individuals, society, and the nation critically depend on software to
+    manage critical infrastructures for power, banking and finance, air traffic
+    control, telecommunication, transportation, national defense, and healthcare.
+    Specifications are critical for communicating the intended behavior of software
+    systems to software developers and users and to make it possible for automated
+    tools to verify whether a given piece of software indeed behaves as intended.
+    Safety critical applications have traditionally enjoyed the benefits of such
+    specifications, but at a great cost. Because producing useful, non-trivial
+    specifications from scratch is too hard, time consuming, and requires expertise
+    that is not broadly available, such specifications are largely unavailable. The
+    lack of specifications for core libraries and widely used frameworks makes
+    specifying applications that use them even more difficult. The absence of
+    precise, comprehensible, and efficiently verifiable specifications is a major
+    hurdle to developing software systems that are reliable, secure, and easy to
+    maintain and reuse.
+
+    This project brings together an interdisciplinary team of researchers with
+    complementary expertise in formal methods, software engineering, machine
+    learning and big data analytics to develop automated or semi-automated methods
+    for inferring the specifications from code. The resulting methods and tools
+    combine analytics over large open source code repositories to augment and
+    improve upon specifications by program analysis-based specification inference
+    through synergistic advances across both these areas.
+
+    The broader impacts of the project include: transformative advances in
+    specification inference and synthesis, with the potential to dramatically
+    reduce, the cost of developing and maintaining high assurance software; enhanced
+    interdisciplinary expertise at the intersection of formal methods software
+    engineering, and big data analytics; Contributions to research-based training of
+    a cadre of scientists and engineers with expertise in high assurance software.
+- key: grant-nsf-1518732
+  title: "SHF:Large:Collaborative Research: Inferring Software Specifications from Open Source Repositories by Leveraging Data and Collective Community Expertise"
+  date: 2015-7-1
+  url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1518732"
+  abstract: >
+    Today individuals, society, and the nation critically depend on software to
+    manage critical infrastructures for power, banking and finance, air traffic
+    control, telecommunication, transportation, national defense, and healthcare.
+    Specifications are critical for communicating the intended behavior of software
+    systems to software developers and users and to make it possible for automated
+    tools to verify whether a given piece of software indeed behaves as intended.
+    Safety critical applications have traditionally enjoyed the benefits of such
+    specifications, but at a great cost. Because producing useful, non-trivial
+    specifications from scratch is too hard, time consuming, and requires expertise
+    that is not broadly available, such specifications are largely unavailable. The
+    lack of specifications for core libraries and widely used frameworks makes
+    specifying applications that use them even more difficult. The absence of
+    precise, comprehensible, and efficiently verifiable specifications is a major
+    hurdle to developing software systems that are reliable, secure, and easy to
+    maintain and reuse.
+
+    This project brings together an interdisciplinary team of researchers with
+    complementary expertise in formal methods, software engineering, machine
+    learning and big data analytics to develop automated or semi-automated methods
+    for inferring the specifications from code. The resulting methods and tools
+    combine analytics over large open source code repositories to augment and
+    improve upon specifications by program analysis-based specification inference
+    through synergistic advances across both these areas.
+
+    The broader impacts of the project include: transformative advances in
+    specification inference and synthesis, with the potential to dramatically
+    reduce, the cost of developing and maintaining high assurance software; enhanced
+    interdisciplinary expertise at the intersection of formal methods software
+    engineering, and big data analytics; Contributions to research-based training of
+    a cadre of scientists and engineers with expertise in high assurance software.
+- key: grant-nsf-1513263
+  title: "CI-EN: Boa: Enhancing Infrastructure for Studying Software and its Evolution at a Large Scale"
+  date: 2015-6-1
+  url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1513263"
+  abstract: >
+    In today's software-centric world, ultra-large-scale software repositories,
+    e.g., SourceForge, GitHub, and Google Code, with hundreds of thousands of
+    projects each, are the new library of Alexandria. They contain an enormous
+    corpus of software and information about software and software projects.
+    Scientists and engineers alike are interested in analyzing this wealth of
+    information to test important research hypotheses. However, the current barrier
+    to entry is prohibitive because deep expertise and sophisticated tools are
+    needed to write programs that access version control systems, store and retrieve
+    workable data subsets, and perform the needed ultra-large-scale analysis. The
+    goal is accelerate the pace of Software Engineering research and to increase
+    reusability and replicability, while properly curating the data and analyses.
+
+    This project is building a CISE research infrastructure called Boa to aid and
+    assist with such research and will be globally available. The project designs a
+    new programming language that can hide the details of programmatically accessing
+    version control systems, data storage and retrieval, data mining, and
+    parallelization from the scientists and engineers and allow them to focus on the
+    program logic. The project also designs a data mining infrastructure for Boa,
+    and a BIGDATA repository containing 700,000+ open source projects for analyzing
+    ultra-large-scale software repositories to help with such experiments. The
+    broader impacts of Boa stem from its potential to enable developers, designers
+    and researchers to build intuitive, multi-modal, user-centric, scientific
+    applications that can aid and enable scientific research on individual, social,
+    legal, policy, and technical aspects of open source software development. This
+    advance will primarily be achieved by significantly lowering the barrier to
+    entry and thus enabling a larger and more ambitious line of data-intensive
+    scientific discovery in this area.
+- key: grant-nsf-1512947
+  title: "CI-EN: Boa: Enhancing Infrastructure for Studying Software and its Evolution at a Large Scale"
+  date: 2015-6-1
+  url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1512947"
+  abstract: >
+    In today's software-centric world, ultra-large-scale software repositories,
+    e.g., SourceForge, GitHub, and Google Code, with hundreds of thousands of
+    projects each, are the new library of Alexandria. They contain an enormous
+    corpus of software and information about software and software projects.
+    Scientists and engineers alike are interested in analyzing this wealth of
+    information to test important research hypotheses. However, the current barrier
+    to entry is prohibitive because deep expertise and sophisticated tools are
+    needed to write programs that access version control systems, store and retrieve
+    workable data subsets, and perform the needed ultra-large-scale analysis. The
+    goal is accelerate the pace of Software Engineering research and to increase
+    reusability and replicability, while properly curating the data and analyses.
+
+    This project is building a CISE research infrastructure called Boa to aid and
+    assist with such research and will be globally available. The project designs a
+    new programming language that can hide the details of programmatically accessing
+    version control systems, data storage and retrieval, data mining, and
+    parallelization from the scientists and engineers and allow them to focus on the
+    program logic. The project also designs a data mining infrastructure for Boa,
+    and a BIGDATA repository containing 700,000+ open source projects for analyzing
+    ultra-large-scale software repositories to help with such experiments. The
+    broader impacts of Boa stem from its potential to enable developers, designers
+    and researchers to build intuitive, multi-modal, user-centric, scientific
+    applications that can aid and enable scientific research on individual, social,
+    legal, policy, and technical aspects of open source software development. This
+    advance will primarily be achieved by significantly lowering the barrier to
+    entry and thus enabling a larger and more ambitious line of data-intensive
+    scientific discovery in this area.
+- key: grant-nsf-1423370
+  title: "SHF: Small: Capsule-oriented Programming"
+  date: 2014-8-1
+  url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1423370"
+  abstract: >
+    Modern software systems tend to be distributed, event-driven, and asynchronous,
+    often requiring components to maintain multiple threads of control for message
+    and event handling. In addition, there is increasing pressure on software
+    developers to introduce concurrency into applications in order to take advantage
+    of multicore and many-core processors to improve performance. Yet concurrent
+    programming remains difficult and error-prone. The need to train the software
+    development workforce in concurrent programming has become increasingly urgent
+    as the CPU frequency growth no longer provides adequate scalability. As a result
+    of that, a large number of developers in the current software development
+    workforce continue to find it hard to deal with thorny concurrency issues in
+    software design and implementation.
+
+    The projects designs a new programming language construct called Capsules, an
+    improved abstraction for concurrency that can hide the details of concurrency
+    from the programmer and allow them to focus on the program logic. The main goal
+    of this project is to conduct a formal study of the semantic properties of
+    capsules, efficiently realize this abstraction in industrial strength tools that
+    will be globally disseminated, and empirically evaluate performance and software
+    engineering properties of a programming language design that incorporates this
+    abstraction. This approach seeks to create software that is correct with respect
+    to concurrency by construction. Its success will aid and enable more reliable
+    development of concurrent software. While it makes great sense to develop
+    explicit concurrency mechanisms, sequential programmers continue to find it hard
+    to understand task interleavings and non-deterministic semantics. Thus, this
+    research on the capsule abstraction, if successful, will have a large positive
+    impact on the productivity of these programmers, on the understandability and
+    maintainability of source code that they write, and on the scalability and
+    correctness of software systems that they produce.
+- key: grant-nsf-1349153
+  title: "EAGER: Boa: A Community Research Infrastructure for Mining Software Repositories"
+  date: 2013-9-1
+  url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1349153"
+  abstract: >
+    In today's software-centric world, ultra-large-scale software repositories, e.g.
+    SourceForge (350,000+ projects), GitHub (250,000+ projects), and Google Code
+    (250,000+ projects) are the new library of Alexandria. They contain an enormous
+    corpus of software and information about software. Scientists and engineers
+    alike are interested in analyzing this wealth of information both for curiosity
+    as well as for testing important research hypotheses. However, the current
+    barrier to entry is often prohibitive and only a few with well-established
+    research infrastructure and deep expertise in mining software repositories can
+    attempt such ultra-large-scale experiments.
+
+    A facility called Boa has been prototyped: a domain-specific language and a
+    BIGDATA repository containing 700,000+ open source projects for analyzing
+    ultra-large scale software repositories to help with such experiments.
+
+    This experimental research infrastructure is of significant interest to a wide
+    community of software engineering and programming language researchers. The main
+    goal of this EAGER project is to examine the requirements for making Boa broadly
+    available to the software engineering and programming language community, to
+    work with an initial set of researchers to try to fulfill these requirements,
+    and to take preliminary steps toward making Boa a community-sustained, scalable,
+    and extensible research infrastructure. This is an enabling and transformative
+    project. Its success will aid and accelerate scientific research in software
+    engineering, allowing scientists and engineers to focus on the essential tasks.
+    This advance will primarily be achieved by significantly lowering the barrier to
+    entry and thus enabling a larger and more ambitious line of data-intensive
+    scientific discovery in this area.
+- key: grant-nsf-1117937
+  title: "SHF: Small: Phase-Based Tuning for Better Utilization of Performance-Asymmetric Multicores"
+  date: 2011-8-1
+  url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1117937"
+  abstract: >
+    This project focuses on the problem of making it easier to program
+    performance-asymmetric multicore processors (AMP). A multicore processor is
+    called performance-asymmetric when its constituent cores may have different
+    characteristics such as frequency, functional units, etc. High-performance
+    Computing (HPC) community has demonstrated significant interest in the AMPs as
+    they are shown to provide nice trade-off between the performance and power. On
+    the other hand, asymmetry makes programming these platforms hard. The
+    programmers targeting these hardware platforms must ensure that tasks of a
+    software system are well matched with the characteristics of the processor
+    intended to run it. To make matters even more complicated, a wide range of AMPs
+    exist in practice with varying configurations. To efficiently utilize such
+    platforms, the programmer must account for their asymmetry and optimize their
+    software for each configuration. This manual, costly, tedious, and error prone
+    process significantly complicates software engineering for AMP platforms and
+    leads to version maintenance nightmare. To approach this problem, this project
+    is developing a novel program analysis technique, phase-based tuning.
+    Phase-based tuning adapts an application to effectively utilize performance
+    asymmetric multicores. Main goals are to create a technique that can be deployed
+    without changes in the compiler or operating system, does not require
+    significant inputs from programmer, and is largely independent of the
+    performance-asymmetry of the target processor. The broader impacts are to help
+    realize the potential of emerging AMPs and other novel extreme-scale computing
+    architectures, which in turn will enable researchers in the scientific
+    disciplines to analyze, model, simulate, and predict complex phenomena important
+    to society.
+- key: grant-nsf-1017334
+  title: "SHF: Small: Collaborative Research: Balancing Expressiveness and Modular Reasoning for Aspect-oriented Programming"
+  date: 2010-8-15
+  url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1017334"
+  abstract: >
+    Software systems are poised to keep growing in complexity and permeate deeper
+    into the critical infrastructures of society. The complexity of these systems is
+    exceeding the limits of existing modularization mechanisms and reliability
+    requirements are becoming stringent. Development of new separation of concerns
+    (SoC) techniques is thus vital to make software more reliable and maintainable.
+    Implicit invocation (II) and aspect-oriented (AO) programming languages provide
+    related but distinct mechanisms for separation of concerns. The proposed work
+    encompasses fundamental and practical efforts to improve modularization and
+    reasoning mechanisms for II and AO languages, which is a long standing challenge
+    for both kinds of languages. Addressing these challenges has the potential to
+    significantly improve the quality of software by easing the adoption of new
+    separation of concerns techniques.
+
+    The project will proceed using the experimental language, Ptolemy, which blends
+    both II and AO ideas. Ptolemy has explicitly announced events, which are defined
+    in interfaces called "event types". Event types help separate concerns and
+    decouple advice from the code it advises. Event type declarations also offer a
+    place to specify advice. The explicit announcement of events allows the
+    possibility of careful reasoning about correctness of Ptolemy programs, since it
+    is possible to reason about parts of the program where there are no events in a
+    conventional manner. The project aims to investigate reasoning by developing a
+    formal specification language and verification technique. The approach is based
+    on the idea of greybox ("model program'') specifications, as found in JML and
+    the refinement calculus. There are known techniques for reasoning about uses of
+    abstractions that have model program specifications, and the project will apply
+    these to Ptolemy. The intellectual merit is in the treatment of expressions in
+    Ptolemy that announce events and those that cause an advice to proceed. A
+    straightforward adaptation of existing reasoning techniques to these cases
+    appears to require a whole program analysis, which is generally not desirable
+    for modular and scalable verification. The project also aims to investigate the
+    utility and effectiveness of Ptolemy and its specification system. A software
+    evolution analysis will be conducted to study the ability of competing
+    aspect-oriented, implicit invocation, and Ptolemy implementations of open source
+    projects to withstand change. Showing Ptolemy's benefits over II and AO
+    languages will help software designers in deciding on advanced mechanisms for
+    separation of concerns.
