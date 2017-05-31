@@ -145,15 +145,19 @@ nav .navbar {
   margin: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
 
-.paper_card_header, .paper_card_header_name, .grant_card_header, .grant_card_header_name {
+.paper_card_header .paper_card_header_name {
   flex-grow: 1;
 }
 
-.paper_card, .padded-inner-card-block {
+.grant_card_header .grant_card_header_name {
+  flex-grow: 1;
+}
+
+.paper_card .padded-inner-card-block {
   padding: 0.8rem 0.8rem 0.8rem 0.8rem;
 }
 
-.paper_card, .card-block {
+.paper_card .card-block {
   padding: 0;
 }
 
