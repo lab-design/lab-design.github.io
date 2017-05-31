@@ -4,11 +4,13 @@
   status: Director
   email: hridesh@iastate.edu
   site: http://web.cs.iastate.edu/~hridesh/
+  img: hrajan.jpg
 
 - name: Dr. Steve M. Kautz
   status:
   email: smkautz@iastate.edu
   site: http://web.cs.iastate.edu/~smkautz/
+  img: skautz.jpg
 
 
 # Postdocs:
@@ -17,61 +19,72 @@
   status: Postdoctoral Fellow
   email: hoan@iastate.edu
   site: https://sites.google.com/site/nguyenanhhoan/home
+  img: hnguyen.jpg
 
 
 # PhD Candidates:
 
-- name: Ganesha Upadhayaya
+- name: Ganesha Upadhyaya
   status: PhD
   email: ganeshau@iastate.edu
   site: http://web.cs.iastate.edu/~ganeshau/
+  img: gupadhyaya.jpg
 
 - name: Hamid Bagheri
   status: PhD
   email: hbagheri@iastate.edu
   site: http://www.cs.iastate.edu/people/hamid-bagheri
+  img: hbagheri.jpg
 
 - name: Hung Phan
   status: PhD
   email: hungphd@iastate.edu
-  site: http://design.cs.iastate.edu/
+  site: http://www.cs.iastate.edu/people/hung-dang-phan
+  img: 
 
 - name: Johirul Islam
   status: PhD
   email: mislam@iastate.edu
   site: http://www.cs.iastate.edu/people/johirul-islam
+  img: jislam.jpg
 
 - name: Nitin M. Tiwari
   status: PhD
   email: nmtiwari@iastate.edu
-  site: http://design.cs.iastate.edu/students/ntiwari.htm
+  site: http://www.cs.iastate.edu/people/nitin-tiwari
+  img: ntiwari.jpg
 
 - name: Samantha Khairunnesa
   status: PhD
   email: sammy@iastate.edu
-  site: http://web.cs.iastate.edu/~sammy/
+  site: http://www.cs.iastate.edu/people/samantha-syed-khairunnesa
+  img: skhairunnesa.jpg
 
 - name: Swarn Priya
   status: PhD
   email: spriya@iastate.edu
-  site: http://web.cs.iastate.edu/~spriya/
+  site: http://www.cs.iastate.edu/people/swarn-priya
+  img: spriya.jpg
 
 - name: Wenfei Song
   status: PhD
   email: wsong@iastate.edu
-  site: http://web.cs.iastate.edu/~wsong/
+  site: http://www.cs.iastate.edu/people/wenfei-song
+  img: wsong.jpg
 
-- name: Seyedehzahra Khoshmanesh
+- name: Seyedeh Z. Khoshmanesh
   status: PhD
   email: zkh@iastate.edu
   site: http://web.cs.iastate.edu/~zkh/
+  img: skhoshmanesh.jpg
 
 # Master's Students:
 
 - name: David Johnston
   status: MS
   email: dwtj@iastate.edu
-  site: https://dwtj.github.io
+  site: https://github.com/dwtj
+  img: djohnston.jpg
   description: >
     David Johnston is an undergraduate student at Iowa State University where he
     is majoring in software engineering. David is currently working on an
@@ -82,12 +95,14 @@
 - name: Ramanathan Ramu
   status: MS
   email: rramu@iastate.edu
-  site: http://web.cs.iastate.edu/~rramu/
+  site: http://www.cs.iastate.edu/people/ramanathan-ramu
+  img: rramu.jpg
 
 - name: Jackson L Maddox
   status: MS
   email: jlmaddox@iastate.edu
   site: http://design.cs.iastate.edu
+  img:
 
 # Bachelor's Students:
 
@@ -95,15 +110,17 @@
   status: BS
   email: evakuntz@iastate.edu
   site: http://design.cs.iastate.edu
+  img:
 
 - name: Robert H Schmidt
   status: BS
   email: robert2@iastate.edu
   site: http://design.cs.iastate.edu
+  img:
 
 - name: Nathaniel M Wernimont
   status: BS
   email: natew@iastate.edu
   site: http://design.cs.iastate.edu
-
+  img:
 

@@ -2,28 +2,91 @@
 layout: page
 ---
 
+<style>
+  .crop {
+    height: 150px;
+    overflow: hidden;
+  }
+  .crop img {
+    border: 1px solid black;
+  }
+  .name {
+    height: 75px;
+    overflow: auto;
+    position: absolute;
+    bottom: 0;
+  }
+  .outer-box {
+    position: relative;
+    height: 225px;
+  }
+
+</style>
+
 <h2>Current Lab Members</h2>
 
 <ul id="lab-members-list">
-{% for member in site.data.members %}
-  <li>
-    {{ member.name }}
-    {% if member.status %}
-      [{{ member.status }}]
-    {% endif %}
-</li>
-{% endfor %}
+  <div class="row">
+    <div class="col col-md-10">
+      {% for member in site.data.members %}
+        <div class="col col-md-3 outer-box">
+          <div class="crop">
+            <a href="{{member.site}}">
+              <!-- All members have a site listed-->
+              {% if member.img %}
+                <img src="/img/people/{{member.img}}" class="img-fluid" alt="Image of {{member.name}}">
+              {% else %}
+                <img src="/img/people/blank.png" class="img-fluid" alt="Image of {{member.name}} not found">
+              {% endif %}
+            </a>
+          </div>
+          <div class="name">
+            <a href="{{member.site}}">
+              <!--All members have a site listed-->
+              {{member.name}}
+              {% if member.status %}
+                [{{ member.status }}]
+              {% endif %}
+            </a>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
 </ul>
 
 <h2>Lab Alumni</h2>
 
 <ul id="lab-alumni-list">
-{% for alumni in site.data.alumni %}
-  <li>
-    {{ alumni.name }}
-    {% if alumni.status %}
-      [{{ alumni.status }}]
-    {% endif %}
-</li>
-{% endfor %}
+  <div class="row">
+    <div class="col col-md-10">
+      {% for alumni in site.data.alumni %}
+        <div class="col col-md-3 outer-box">
+          <div class="crop">
+            {% if alumni.site %}
+              <a href="{{alumni.site}}">
+              {% endif %}
+              {% if alumni.img %}
+                <img src="/img/people/{{alumni.img}}" class="img-fluid" alt="Image of {{alumni.name}}">
+              {% else %}
+                <img src="/img/people/blank.png" class="img-fluid" alt="Image of {{alumni.name}} not found">
+              {% endif %}
+            </a>
+            <!-- Would this be considered bad code? -->
+          </div>
+          <div class="name">
+            {% if alumni.site %}
+              <a href="{{alumni.site}}">
+              {% endif %}
+              {{ alumni.name }}
+              {% if alumni.status %}
+                [{{ alumni.status }}]
+              {% endif %}
+            </a>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
 </ul>

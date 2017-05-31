@@ -3,6 +3,8 @@
 - name: Dr. Yuheng Long
   status: PhD Spring'16, MS Spring'10
   netid: csgzlong
+  site: http://web.cs.iastate.edu/~csgzlong/
+  img: ylong.jpg
 
 - name: Dr. Mehdi Bagherzadeh
   status: PhD Summer'16, MS Fall'10
@@ -15,15 +17,19 @@
     programming language. He also contributes to the Tisa project. He can be
     reached at mbagherz@iastate.edu
   netid: mbagherz
+  site: https://mbagherz.bitbucket.io
+  img: mbagherzadeh.jpg
 
 - name: Dr. Robert Dyer
   status: PhD Fall'13, MS Fall'08
   site: http://www.cs.bgsu.edu/rdyer/
   email: rdyer@bgsu.edu
+  img: rdyer.jpg
 
 - name: Dr. Tyler Sondag
   status: PhD Fall'11, MS Fall'09
   netid: sondag
+  img: tsondag.jpg
 
 
 # M.S. Graduates:
@@ -31,27 +37,33 @@
 - name: Eric Y Lin
   status: MS Spring'16
   netid: eylin
+  img:
 
 - name: Sean L. Mooney
   status: MS Summer'15
   site: http://web.cs.iastate.edu/~smooney/
+  img: smooney.jpg
 
 - name: Harish Narayanappa
   status: MS Spring'10
   site: http://web.cs.iastate.edu/~harish/
   netid: harish
+  img: hnarayanappa.jpg
 
 - name: Youssef W. Hanna
   status: MS Fall'08
   netid: ywhanna
+  img: yhanna.jpg
 
 - name: Rakesh Setty
   status: MS Fall'08
   netid: rsetty
+  img:
 
 - name: Mahantesh Hosamani
   status: MS Fall'07
   netid: mahantes
+  img:
 
 
 # B.S. Graduates
@@ -59,6 +71,7 @@
 - name: Sambhav P. Srirama
   status: B.S. Spring'16
   netid: ssrirama
+  img: ssrirama.png
 
 - name: Cody Hanika
   status: B.S. Spring'16
@@ -78,6 +91,7 @@
 - name: Shang Liu
   status: B.S. Spring'15
   netid: shangliu
+  img: sliu.png
 
 - name: Bryan Shrader
   status: B.S. Spring'14
@@ -90,3 +104,4 @@
 - name: Eric Lin
   status: B.S. Fall'12
   email: eylin
+  img:

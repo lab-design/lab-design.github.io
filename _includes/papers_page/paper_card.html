@@ -2,26 +2,40 @@
 {% if include.paper.download_link contains "/" %}
   {% assign download_link_prefix = "" %}
 {% else %}
-  {% assign download_link_prefix = key | append: "/" %}
+  {% assign download_link_prefix = key | append : "/" %}
 {% endif %}
 
 <div class="card paper_card">
   <div class="card-header paper_card_header" id="head-{{ key }}">
     <div>
-      <button class="navbar-toggler" type="button" href="#coll-{{ key }}"
-              data-toggle="collapse" data-parent="#{{ include.accordionKey }}"
-              aria-expanded="false" aria-controls="coll-{{ key }}">
+      <button class="navbar-toggler" type="button" href="#coll-{{ key }}" data-toggle="collapse" data-parent="#{{ include.accordionKey }}" aria-expanded="false" aria-controls="coll-{{ key }}">
         &#9776;
       </button>
     </div>
-    <a class="paper_card_header_name" href="{{ include.paper.url }}">{{ include.paper.short_name }}: {{ include.paper.title }}</a>
+    <a class="paper_card_header_name" href="{{ include.paper.url }}">
+      {% bibtex --style /_citation_styles/papers_page.csl %}
+      {{paper.bib}}
+      {% endbibtex %}
+    </a>
     <a href="{{ download_link_prefix }}{{ include.paper.download_link }}">
       <img src="/img/pdf_icon.svg" alt="PDF Download"/>
     </a>
   </div>
   <div id="coll-{{ key }}" class="card-block collapse" aria-labelledby="head-{{ key }}">
     <div class="padded-inner-card-block">
-      {{ include.paper.abstract | truncatewords:50 }}
+      {% capture abstract %}
+        {% bibtex --style /_citation_styles/abstract.csl %}
+        {{paper.bib}}
+        {% endbibtex %}
+      {% endcapture %}
+      {% comment %}
+        bibtex tag inserts it's own <span></span>, which gets confused by the
+      truncate, so it has to be stripped first.
+      {% endcomment %}
+      {% assign abstract = abstract | strip_html %}
+      <span>
+        {{ abstract | truncatewords:50 }}
+      </span>
     </div>
   </div>
 </div>

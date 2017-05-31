@@ -26,7 +26,8 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
-  - script
+  - _scripts
+  - _citation_styles
   - README.md
 
 collections:
@@ -48,3 +49,8 @@ defaults:
 
 static_files:
   extname: pdf
+
+scholar:
+  source: .
+
+gems: ['jekyll/scholar']

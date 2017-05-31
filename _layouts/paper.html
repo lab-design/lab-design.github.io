@@ -2,12 +2,23 @@
 layout: page
 ---
 
+{% capture author %}
+{% bibtex --style /_citation_styles/paper_pages.csl %}
+{{page.bib}}
+{% endbibtex %}
+{% endcapture %}
+
+<h4>
+By: {{ author | strip_html }}
+</h4>
+
 {% if page.download_link %}
 <a href="{{ page.download_link }}" class="icon">
   <img src="/img/pdf_icon.svg"/ alt="PDF Download">
   <span>Download Paper</span>
 </a>
 {% endif %}
+<br/>
 
 {% if page.extra_download_links %}
 {% for download_link in page.extra_download_links %}
@@ -17,23 +28,27 @@ layout: page
 <br />
 {% endif %}
 
-
-{% if page.abstract %}
-<h3>Abstract</h3>
+<h4>Abstract</h4>
 <p>
-{{ page.abstract | escape }}
+  {% bibtex --style /_citation_styles/abstract.csl %}
+  {{page.bib}}
+  {% endbibtex %}
 </p>
-{% endif %}
-
-{% if page.bib %}
-<h3>Bib Info</h3>
-<pre><code>
-{{ page.bib | escape }}
-</code></pre>
-{% endif %}
 
 {% assign maybe_content = content | strip_newlines %}
 {% if maybe_content != "" %}
-<h3>Other Info</h3>
+<h4>Other Info</h4>
 {{ content }}
+{% endif %}
+
+{% if page.bib %}
+<h4>ACM Reference</h4>
+<p>
+{% bibtex --style acm-sig-proceedings %}
+{{page.bib }}
+{% endbibtex %}
+</p>
+
+<h4>BibTeX Reference</h4>
+<pre><code>{{ page.bib }}</code></pre>
 {% endif %}

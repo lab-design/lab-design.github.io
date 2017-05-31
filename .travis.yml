@@ -2,10 +2,10 @@ language: ruby
 rvm:
 - 2.2.5
 
-script: ./script/cibuild
+script: ./_scripts/cibuild
 
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true  # Speeds up installation of html-proofer
 
-sudo: false # Use container-based infrastructure for a faster build.
+sudo: false  # Use container-based infrastructure for a faster build.
