@@ -3,90 +3,86 @@ layout: page
 ---
 
 <style>
-  .crop {
-    height: 150px;
-    overflow: hidden;
+div .member-images, .alumni-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.member-image, .alumni-image {
+  font-size: 16px;
+  display: inline-block;
+  width: calc(33% - 4px);
+  max-width: 130px;
+  object-fit: cover;
+  padding: 0px 4px;
+}
+@media screen and (min-width: 768px){
+  .member-image, .alumni-image {
+    width: calc(25% - 4px);
   }
-  .crop img {
-    border: 1px solid black;
-  }
-  .name {
-    height: 75px;
-    overflow: auto;
-    position: absolute;
-    bottom: 0;
-  }
-  .outer-box {
-    position: relative;
-    height: 225px;
-  }
+}
+
+a {
+  color: inherit;
+}
+
+.crop-image {
+  max-height: 130px;
+  object-fit: cover;
+  max-width: 100%;
+  border: 1px solid black;
+  border-radius: 5px;
+}
 
 </style>
 
 <h2>Current Lab Members</h2>
 
-<ul id="lab-members-list">
-  <div class="row">
-    <div class="col col-md-10">
-      {% for member in site.data.members %}
-        <div class="col col-md-3 outer-box">
-          <div class="crop">
-            <a href="{{member.site}}">
-              <!-- All members have a site listed-->
-              {% if member.img %}
-                <img src="/img/people/{{member.img}}" class="img-fluid" alt="Image of {{member.name}}">
-              {% else %}
-                <img src="/img/people/blank.png" class="img-fluid" alt="Image of {{member.name}} not found">
-              {% endif %}
-            </a>
-          </div>
-          <div class="name">
-            <a href="{{member.site}}">
-              <!--All members have a site listed-->
-              {{member.name}}
-              {% if member.status %}
-                [{{ member.status }}]
-              {% endif %}
-            </a>
-          </div>
-        </div>
-      {% endfor %}
-    </div>
-  </div>
-
-</ul>
+<div class="member-images">
+  {% for member in site.data.members %}
+    <a class="member-image {{member.name}}" href="{{member.site}}">
+      <figure>
+        <!-- All members have a site listed-->
+        {% if member.img %}
+          <img class="crop-image" src="/img/people/{{member.img}}" alt="Image of {{member.name}}">
+        {% else %}
+          <img class="crop-image" src="/img/people/blank.png" alt="Image of {{member.name}} not found">
+        {% endif %}
+        <!--All members have a site listed-->
+        <figcaption>
+          {{member.name}}
+          {% if member.status %}
+            [{{ member.status }}]
+          {% endif %}
+        </figcaption>
+      </figure>
+    </a>
+  {% endfor %}
+</div>
 
 <h2>Lab Alumni</h2>
 
-<ul id="lab-alumni-list">
-  <div class="row">
-    <div class="col col-md-10">
-      {% for alumni in site.data.alumni %}
-        <div class="col col-md-3 outer-box">
-          <div class="crop">
-            {% if alumni.site %}
-              <a href="{{alumni.site}}">
-              {% endif %}
-              {% if alumni.img %}
-                <img src="/img/people/{{alumni.img}}" class="img-fluid" alt="Image of {{alumni.name}}">
-              {% else %}
-                <img src="/img/people/blank.png" class="img-fluid" alt="Image of {{alumni.name}} not found">
-              {% endif %}
-            </a>
-            <!-- Would this be considered bad code? -->
-          </div>
-          <div class="name">
-            {% if alumni.site %}
-              <a href="{{alumni.site}}">
-              {% endif %}
-              {{ alumni.name }}
-              {% if alumni.status %}
-                [{{ alumni.status }}]
-              {% endif %}
-            </a>
-          </div>
-        </div>
-      {% endfor %}
-    </div>
-  </div>
-</ul>
+<div class="alumni-images">
+  {% for alumni in site.data.alumni %}
+    {% if alumni.site %}
+    <a class="alumni-image {{alumni.name}}" href="{{alumni.site}}">
+    {% else %}
+    <a class="alumni-image {{alumni.name}}">
+    {% endif %}
+      <figure>
+        {% if alumni.img %}
+          <img class="crop-image" src="/img/people/{{alumni.img}}" alt="Image of {{alumni.name}}">
+        {% else %}
+          <img class="crop-image" src="/img/people/blank.png" alt="Image of {{alumni.name}} not found">
+        {% endif %}
+        <!--All members have a site listed-->
+        <figcaption>
+          {{alumni.name}}
+          {% if alumni.status %}
+            [{{ alumni.status }}]
+          {% endif %}
+        </figcaption>
+      </figure>
+    </a>
+  {% endfor %}
+</div>
