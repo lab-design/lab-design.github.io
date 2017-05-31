@@ -194,15 +194,30 @@ body {
 
 footer {
   margin-top: auto;
-  background-color: #C03;
-  color: #FFFFFF;
-  font-size: 65%;
+  padding-top: 5px;
+  background-color: #f3f3f3;
+  color: #444;
+  font-size: 14px;
   width: 100%;
+  line-height: 24px;
+  vertical-align: top;
 }
 
-#footer-separator {
-  background-color: rgb(204, 0, 0);
-  height: 2px;
+footer .isu-logo {
+  width: 180px;
+}
+
+footer hr {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+footer a {
+  color: inherit;
+}
+
+footer ul {
+  padding-left: 15px;
 }
 
 footer img {
@@ -219,14 +234,8 @@ footer div {
   margin-bottom: .5rem;
 }
 
-footer .address {
-  @media screen and (max-width:767px){
-    text-align: left;
-  }
-  @media screen and (min-width:768px){
-    text-align: right;
-  }
-  white-space: nowrap;
+footer .logo {
+  width: 42px;
 }
 
 .home-page-highlighted-paper-card {
