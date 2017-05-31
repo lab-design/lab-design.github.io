@@ -6,7 +6,7 @@ layout: page
 div .member-images, .alumni-images {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: flex-start;
 }
 .member-image, .alumni-image {
   font-size: 16px;
@@ -20,6 +20,10 @@ div .member-images, .alumni-images {
   .member-image, .alumni-image {
     width: calc(25% - 4px);
   }
+}
+
+a {
+  color: inherit;
 }
 
 .crop-image {
