@@ -26,7 +26,8 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
-  - script
+  - _scripts
+  - _citation_styles
   - README.md
 
 collections:

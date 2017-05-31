@@ -1,13 +1,13 @@
 # `design.cs.iastate.edu`
 
 This is the source code for the website for the Laboratory for Software Design
-at Iowa State University. This site is hosted at http://design.cs.iastate.edu. 
+at Iowa State University. This site is hosted at <http://design.cs.iastate.edu>.
 
 
 ## Setup Build Environment
 
 The site is built using [Jekyll](https://jekyllrb.com/), a static site
-generator written in Rubt. Jekyll builds HTML+CSS sites from HTML, Markdown,
+generator written in Ruby. Jekyll builds HTML+CSS sites from HTML, Markdown,
 CSS, and SCSS augmented by [the Liquid template
 language](https://shopify.github.io/liquid/).
 
@@ -42,10 +42,10 @@ $ bundle exec jekyll serve
 ```
 
 
-## Deploying the Site
+## Manually Deploying the Site
 
 Currently, the site is deployed by pushing the built website to the `pyrite`
-server. This can be done by invoking the `script/deploy/manually.sh` script
+server. This can be done by invoking the `_scripts/deploy/manually.sh` script
 from the root of this repository.
 
 Note that one can only access `pyrite` if one is either on campus or using the
