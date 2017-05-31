@@ -3,11 +3,10 @@ layout: page
 ---
 
 {% capture author %}
-{% bibtex --style /csl/paper_pages.csl %}
+{% bibtex --style /_citation_styles/paper_pages.csl %}
 {{page.bib}}
 {% endbibtex %}
 {% endcapture %}
-
 
 <h4>
 By: {{ author | strip_html }}
@@ -19,6 +18,7 @@ By: {{ author | strip_html }}
   <span>Download Paper</span>
 </a>
 {% endif %}
+<br/>
 
 {% if page.extra_download_links %}
 {% for download_link in page.extra_download_links %}
@@ -28,29 +28,27 @@ By: {{ author | strip_html }}
 <br />
 {% endif %}
 
-<h3>Abstract</h3>
+<h4>Abstract</h4>
 <p>
-  {% bibtex --style /csl/abstract.csl %}
+  {% bibtex --style /_citation_styles/abstract.csl %}
   {{page.bib}}
   {% endbibtex %}
 </p>
 
-{% if page.bib %}
-<h3>Bib Info</h3>
-<h5>BibTeX</h5>
-<pre><code>
-{{ page.bib | escape }}
-</code></pre>
-<h5>ACM</h5>
-{% bibtex --style acm-sig-proceedings %}
-{{page.bib}}
-{% endbibtex %}
-{% endif %}
-
-
-
 {% assign maybe_content = content | strip_newlines %}
 {% if maybe_content != "" %}
-<h3>Other Info</h3>
+<h4>Other Info</h4>
 {{ content }}
+{% endif %}
+
+{% if page.bib %}
+<h4>ACM Reference</h4>
+<p>
+{% bibtex --style acm-sig-proceedings %}
+{{page.bib }}
+{% endbibtex %}
+</p>
+
+<h4>BibTeX Reference</h4>
+<pre><code>{{ page.bib }}</code></pre>
 {% endif %}

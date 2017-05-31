@@ -13,7 +13,7 @@
       </button>
     </div>
     <a class="paper_card_header_name" href="{{ include.paper.url }}">
-      {% bibtex --style /csl/papers_page.csl %}
+      {% bibtex --style /_citation_styles/papers_page.csl %}
       {{paper.bib}}
       {% endbibtex %}
     </a>
@@ -24,7 +24,7 @@
   <div id="coll-{{ key }}" class="card-block collapse" aria-labelledby="head-{{ key }}">
     <div class="padded-inner-card-block">
       {% capture abstract %}
-        {% bibtex --style /csl/abstract.csl %}
+        {% bibtex --style /_citation_styles/abstract.csl %}
         {{paper.bib}}
         {% endbibtex %}
       {% endcapture %}
