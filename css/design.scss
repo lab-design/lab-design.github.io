@@ -6,12 +6,12 @@ body {
 }
 
 .brand-bg-color {
-  background-color: #C03;
+  background-color: #c00;
   padding-top: 0.5rem;
 }
 
 .nav-bg-color {
-  background-color: #F3F3F3;
+  background-color: rgba(230,230,230,0.95);
 }
 
 .brand-navbar {
@@ -21,7 +21,7 @@ body {
 }
 
 #isu-logo {
-  background-image: url("/img/isu-logo.png");
+  background-image: url("/img/isu-logo.svg");
   background-position: left center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -208,7 +208,17 @@ footer {
 }
 
 footer .isu-logo {
-  width: 180px;
+  width: 170px;
+}
+
+footer .isu-logo-wrapper {
+  text-align: center;
+}
+
+@media screen and (min-width:992px){
+  footer .isu-logo-wrapper {
+    text-align: left;
+  }
 }
 
 footer hr {
@@ -218,10 +228,6 @@ footer hr {
 
 footer a {
   color: inherit;
-}
-
-footer ul {
-  padding-left: 15px;
 }
 
 footer img {
