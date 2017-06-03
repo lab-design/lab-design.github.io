@@ -35,7 +35,7 @@
 # M.S. Graduates:
 
 - name: Eric Y Lin
-  status: MS Spring'16
+  status: MS Spring'16, B.S. Fall'12
   netid: eylin
   img:
 
@@ -100,8 +100,3 @@
 - name: Rex Fernando
   status: B.S. Spring'13
   email: rex@cs.wisc.edu
-
-- name: Eric Lin
-  status: B.S. Fall'12
-  email: eylin
-  img:
