@@ -6,15 +6,14 @@ layout: page
 div .member-images, .alumni-images {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  flex-flow: flex-start;
 }
 .member-image, .alumni-image {
   font-size: 16px;
   display: inline-block;
-  width: calc(33% - 4px);
   max-width: 130px;
   object-fit: cover;
-  padding: 0px 4px;
+  margin: 0 4px;
 }
 @media screen and (min-width: 768px){
   .member-image, .alumni-image {

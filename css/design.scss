@@ -5,6 +5,12 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+@media screen and (min-width:576px){//This messes with extra small sizes
+  .container {
+    width: 1140px;//This is the maximum width a container can ever be
+  }
+}
+
 .brand-bg-color {
   background-color: #c00;
   padding-top: 0.5rem;
@@ -38,7 +44,8 @@ body {
 }
 
 .navbar {
-  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -53,7 +60,7 @@ body {
 /* Note: Update width when changing the nav links */
 @media screen and (min-width: 544px) {
   .navbar .navbar-nav .nav-link {
-    width: 20%;
+    width: calc(100% / 6);
     text-align: center;
     padding-left: 0;
   }
