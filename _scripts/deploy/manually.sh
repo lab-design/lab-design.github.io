@@ -6,7 +6,7 @@
 remote_user="$1"
 local_src="_site/"
 remote_host="pyrite.cs.iastate.edu"
-remote_dest="/auto/web-home/other/design/WWW/"
+remote_dest="/home/natew/TRAVIS_TESTS/"
 
 if [ -z "$remote_user" ]; then
     echo "A remote user name must be supplied as an argument."
@@ -18,7 +18,8 @@ if [ ! -d "$local_src" ]; then
     exit
 fi
 
-
+#--chmod refuses to remove x for the owner.
 # This is meant to be invoked from the root of the repository.
 rsync --recursive --delete --progress \
+      --perms --chmod=Du+rwx,Dg+rws,Do+rx,Fug+rw,Fo+r,Fugo-x \
       ${local_src} "${remote_user}@${remote_host}:${remote_dest}"
