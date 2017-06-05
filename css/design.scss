@@ -222,9 +222,19 @@ footer .isu-logo-wrapper {
   text-align: center;
 }
 
+footer .project-logos {
+  text-align: left;
+  padding: 0 30px;
+  margin: 0;
+}
+
 @media screen and (min-width:992px){
   footer .isu-logo-wrapper {
     text-align: left;
+  }
+  footer .project-logos {
+    text-align: center;
+    padding: 0 15px;
   }
 }
 
