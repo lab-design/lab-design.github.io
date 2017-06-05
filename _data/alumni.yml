@@ -58,7 +58,7 @@
 - name: Rakesh Setty
   status: MS Fall'08
   netid: rsetty
-  img:
+  img: rsetty.jpg
 
 - name: Mahantesh Hosamani
   status: MS Fall'07
@@ -100,3 +100,4 @@
 - name: Rex Fernando
   status: B.S. Spring'13
   email: rex@cs.wisc.edu
+  img: rfernando.jpg
