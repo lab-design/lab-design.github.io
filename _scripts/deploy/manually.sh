@@ -6,7 +6,7 @@
 remote_user="$1"
 local_src="_site/"
 remote_host="pyrite.cs.iastate.edu"
-remote_dest="/home/natew/TRAVIS_TESTS/"
+remote_dest="/auto/web-home/other/design/WWW/"
 
 if [ -z "$remote_user" ]; then
     echo "A remote user name must be supplied as an argument."
