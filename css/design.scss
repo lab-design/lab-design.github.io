@@ -228,6 +228,12 @@ footer .project-logos {
   margin: 0;
 }
 
+@media screen and (max-width:543px){
+  footer .isu-logo-wrapper {
+    text-align: left;
+  }
+}
+
 @media screen and (min-width:992px){
   footer .isu-logo-wrapper {
     text-align: left;
