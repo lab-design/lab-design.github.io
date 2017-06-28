@@ -1,6 +1,7 @@
+{% assign content = include.news_item.content | strip %}
 {% assign news_item = include.news_item %}
 
-{% unless news_item.content == blank or news_item.content == "" %}
+{% unless content == blank or content == "" %}
 <a href="{{ news_item.url }}">
 {% endunless %}
   <div class="card home-page-news-card">
@@ -8,9 +9,11 @@
       <h6 class="card-title">
         {{ news_item.title }}
       </h6>
-      <p class="card-subtitle text-muted">{{ news_item.date | date: '%B %d, %Y' }}</p>
+      <p class="card-subtitle text-muted">
+        {{ new}}
+        {{ news_item.date | date: '%B %d, %Y' }}</p>
     </div>
   </div>
-{% unless news_item.content == blank or news_item.content == "" %}
+{% unless content == blank or content == "" %}
 </a>
 {% endunless %}
