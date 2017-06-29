@@ -8,7 +8,7 @@
       <h6 class="card-title">
         {{ news_item.title }}
       </h6>
-      <p class="card-subtitle text-muted">{{ news_item.date | date: '%B %d, %Y' }}</p>
+      <p class="card-subtitle mb-2 text-muted">{{ news_item.date | date: '%B %d, %Y' }}</p>
     </div>
   </div>
 {% unless news_item.content == "" or news_item.content == blank %}

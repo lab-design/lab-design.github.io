@@ -5,6 +5,15 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+.news-page-news-card .card-title {
+  color: #c00;
+}
+
+.card-link {
+  color: rgb(68, 68, 68);
+  font-weight: bold;
+}
+
 @media screen and (min-width:576px){//This messes with extra small sizes
   .container {
     width: 1140px;//This is the maximum width a container can ever be
