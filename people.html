@@ -13,11 +13,12 @@ div .member-images, .alumni-images {
   display: inline-block;
   max-width: 130px;
   object-fit: cover;
-  margin: 0 4px;
+  margin: 0px 4px;
 }
-@media screen and (min-width: 768px){
+
+@media screen and (max-width: 443px){
   .member-image, .alumni-image {
-    width: calc(25% - 4px);
+    margin: 0px calc((100% - 260px)/4);
   }
 }
 
