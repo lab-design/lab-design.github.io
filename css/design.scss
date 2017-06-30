@@ -9,7 +9,7 @@ body {
   color: #c00;
 }
 
-.card-link {
+.card-link, .news-link {
   color: rgb(68, 68, 68);
   font-weight: bold;
 }
@@ -149,6 +149,14 @@ nav .navbar {
   list-style-type: none;
 }
 
+.card {
+  transition: all .5s ease;
+}
+
+.card:hover {
+  transform: scale(1.01);
+}
+
 .paper_card_header, .grant_card_header {
   display: flex;
   justify-content: flex-start;
@@ -161,12 +169,13 @@ nav .navbar {
   margin: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
 
-.paper_card_header .paper_card_header_name {
+.paper_card_header .paper_card_header_name, .grant_card_header .grant_card_header_name {
+  color: rgb(68, 68, 68);
   flex-grow: 1;
 }
 
-.grant_card_header .grant_card_header_name {
-  flex-grow: 1;
+.paper_card_header .paper_card_header_name:hover, .grant_card_header .grant_card_header_name:hover {
+  color: #c00;
 }
 
 .paper_card .padded-inner-card-block {

@@ -2,4 +2,11 @@
 layout: page
 ---
 
+<p class="mb-2 text-muted">{{ page.date | date: '%B %d, %Y' }}</p>
+{% if page.links %}
+<span class="news-link">Links: </span>
+{% for link in page.links %}
+<a href="{{link.link}}" class="news-link">{{link.title}}</a>
+{% endfor %}
+{% endif %}
 {{ content }}

@@ -13,7 +13,10 @@
       </a>
       {% endunless %}
       <p class="card-subtitle mb-2 text-muted">{{ news_item.date | date: '%B %d, %Y' }}</p>
-      <p class="card-text">{{ news_item.content | truncatewords: 25 | strip_html }}</p>
+      <p class="card-text">{{ news_item.content | strip_html | truncatewords: 25 }}</p>
+      {% if news_item.links %}
+      <span class="card-link">Links: </span>
+      {% endif %}
       {% for link in news_item.links %}
         <a href="{{link.link}}" class="card-link">{{link.title}}</a>
       {% endfor %}
