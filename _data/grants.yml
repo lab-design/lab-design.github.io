@@ -5,8 +5,12 @@
 - key: grant-nsf-0846059
   primary: true
   title: "CAREER: On Mutualism of Modularity and Concurrency Goals"
-  date: 2009-7-1
+  start_date: 2009-07-01
   url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=0846059"
+  amount: $565,935
+  PI: Hridesh Rajan
+  coPIs:
+  end_date: 2016-06-30
   abstract: >
     This project focuses on the problem of making concurrent programs easier to
     write correctly and to implement efficiently. Modularity promotes ease of
@@ -26,8 +30,12 @@
 - key: grant-nsf-1518789
   primary: false
   title: "SHF:Large:Collaborative Research: Inferring Software Specifications from Open Source Repositories by Leveraging Data and Collective Community Expertise"
-  date: 2015-7-1
+  start_date: 2015-07-01
   url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1518789"
+  amount: $320,000
+  PI: Gary Leavens
+  coPIs:
+  end_date: 2018-06-30
   abstract: >
     Today individuals, society, and the nation critically depend on software to
     manage critical infrastructures for power, banking and finance, air traffic
@@ -62,8 +70,12 @@
 - key: grant-nsf-1518732
   primary: false
   title: "SHF:Large:Collaborative Research: Inferring Software Specifications from Open Source Repositories by Leveraging Data and Collective Community Expertise"
-  date: 2015-7-1
+  start_date: 2015-07-01
   url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1518732"
+  amount: $319,511
+  PI: Vasant Honavar
+  coPIs:
+  end_date: 2018-06-30
   abstract: >
     Today individuals, society, and the nation critically depend on software to
     manage critical infrastructures for power, banking and finance, air traffic
@@ -98,8 +110,13 @@
 - key: grant-nsf-1513263
   primary: true
   title: "CI-EN: Boa: Enhancing Infrastructure for Studying Software and its Evolution at a Large Scale"
-  date: 2015-6-1
+  start_date: 2015-06-01
   url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1513263"
+  amount: $1,426,917
+  PI: Hridesh Rajan
+  coPIs:
+    - Tien Nguyen
+  end_date: 2018-05-31
   abstract: >
     In today's software-centric world, ultra-large-scale software repositories,
     e.g., SourceForge, GitHub, and Google Code, with hundreds of thousands of
@@ -131,8 +148,12 @@
 - key: grant-nsf-1512947
   primary: false
   title: "CI-EN: Boa: Enhancing Infrastructure for Studying Software and its Evolution at a Large Scale"
-  date: 2015-6-1
+  start_date: 2015-06-01
   url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1512947"
+  amount: $132,889
+  PI: Robert Dyer
+  coPIs:
+  end_date: 2018-05-31
   abstract: >
     In today's software-centric world, ultra-large-scale software repositories,
     e.g., SourceForge, GitHub, and Google Code, with hundreds of thousands of
@@ -164,8 +185,12 @@
 - key: grant-nsf-1423370
   primary: true
   title: "SHF: Small: Capsule-oriented Programming"
-  date: 2014-8-1
+  start_date: 2014-08-01
   url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1423370"
+  amount: $450,098
+  PI: Hridesh Rajan
+  coPIs:
+  end_date: 2018-07-31
   abstract: >
     Modern software systems tend to be distributed, event-driven, and asynchronous,
     often requiring components to maintain multiple threads of control for message
@@ -198,8 +223,13 @@
 - key: grant-nsf-1349153
   primary: true
   title: "EAGER: Boa: A Community Research Infrastructure for Mining Software Repositories"
-  date: 2013-9-1
+  start_date: 2013-09-01
   url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1349153"
+  amount: $96,408
+  PI: Hridesh Rajan
+  coPIs:
+    - Tien Nguyen
+  end_date: 2015-08-31
   abstract: >
     In today's software-centric world, ultra-large-scale software repositories, e.g.
     SourceForge (350,000+ projects), GitHub (250,000+ projects), and Google Code
@@ -230,8 +260,12 @@
 - key: grant-nsf-1117937
   primary: true
   title: "SHF: Small: Phase-Based Tuning for Better Utilization of Performance-Asymmetric Multicores"
-  date: 2011-8-1
+  start_date: 2011-08-01
   url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1117937"
+  amount: $416,000
+  PI: Hridesh Rajan
+  coPIs:
+  end_date: 2016-07-31
   abstract: >
     This project focuses on the problem of making it easier to program
     performance-asymmetric multicore processors (AMP). A multicore processor is
@@ -261,8 +295,12 @@
 - key: grant-nsf-1017334
   primary: true
   title: "SHF: Small: Collaborative Research: Balancing Expressiveness and Modular Reasoning for Aspect-oriented Programming"
-  date: 2010-8-15
+  start_date: 2010-08-15
   url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1017334"
+  amount: $273,729
+  PI: Hridesh Rajan
+  coPIs:
+  end_date: 2013-07-31
   abstract: >
     Software systems are poised to keep growing in complexity and permeate deeper
     into the critical infrastructures of society. The complexity of these systems is
@@ -303,8 +341,13 @@
 - key: grant-nsf-1518897
   primary: true
   title: "SHF: Large:Collaborative Research: Inferring Software Specifications from Open Source Repositories by Leveraging Data and Collective Community Expertise"
-  date: 2015-7-1
+  start_date: 2015-07-01
   url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1518897"
+  amount: $750,125
+  PI: Hridesh Rajan
+  coPIs:
+    - Tien Nguyen
+  end_date: 2018-06-30
   abstract: >
     Today individuals, society, and the nation critically depend on software to
     manage critical infrastructures for power, banking and finance, air traffic
@@ -339,8 +382,12 @@
 - key: grant-nsf-1518776
   primary: false
   title: "SHF:Large:Collaborative Research: Inferring Software Specifications from Open Source Repositories by Leveraging Data and Collective Community Expertise"
-  date: 2015-7-1
+  start_date: 2015-07-01
   url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1518776"
+  amount: $214,843
+  PI: Robert Dyer
+  coPIs:
+  end_date: 2018-06-30
   abstract: >
     Today individuals, society, and the nation critically depend on software to
     manage critical infrastructures for power, banking and finance, air traffic
@@ -375,8 +422,13 @@
 - key: grant-nsf-0627354
   primary: true
   title: "CT-ISG: Specification and Verification Challenges for Security Protocols in Sensor Networks"
-  date: 2006-9-1
+  start_date: 2006-09-01
   url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=0627354&HistoricalAwards=false"
+  amount: $366,000
+  PI: Hridesh Rajan
+  coPIs:
+    - Wensheng Zhang
+  end_date: 2010-08-31
   abstract: >
     Flaws in security protocols are subtle and hard to find. Finding flaws in the
     security protocols for sensor networks is even harder because they operate under
@@ -404,8 +456,14 @@
 - key: grant-nsf-0709217
   primary: true
   title: "Collaborative Research: CRI: CRD: A JML Community Infrastructure -- Revitalizing Tools and Documentation to Aid Formal Methods Research"
-  date: 2007-7-15
+  start_date: 2007-07-15
   url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=0709217"
+  amount: $75,000
+  PI: Gary Leavens
+  coPIs:
+    - Samik Basu
+    - Hridesh Rajan
+  end_date: 2008-01-31
   abstract: >
     This collaborative project, revitalizing tools and documentations to aid formal
     methods research, aims to
@@ -443,3 +501,61 @@
     in software engineering curriculum, courses will be developed and targeted to
     undergraduate research,. The collaborative involves two minority-serving
     institutions and an institution in an EPSCoR state.
+- key: grant-vpr-sdsi
+  primary: true
+  title: "Bridging the Digital Divide in Data Science: Invention and Refinement of Shared Data Science Infrastructures"
+  start_date: 2016-09-20 #Roughly
+  url: "http://design.cs.iastate.edu/sdsi/"
+  amount: $450,000
+  PI: Hridesh Rajan
+  coPIs:
+    - Jan Lauren Boyles
+    - Gianfranco Ciardo
+    - Heike Hofmann
+    - Stephen D. Holland
+    - Matthew Hufford
+    - Wei Le
+    - Glenn R. Luecke
+    - James M. Reecy
+    - Andrew Severin
+    - Anuj Sharma
+    - Jin Tian
+    - Christopher K. Tuggle
+  end_date: 2019-09-20 #Roughly
+  abstract: >
+    Open data promise to enable more efficient and effective decision making, foster
+    innovation that society can benefit from, and drive organizational and sector
+    change through transparency.
+
+    Availability of big open data, e.g. on the web in a downloadable form, is a
+    positive step toward these goals, but access alone is not sufficient because of
+    significant barriers that exist in obtaining and using big data. Data-driven
+    scientists around the world are effectively facing a new digital divide: the
+    barrier to enter data-driven science is prohibitive. Only a few places with
+    well-established infrastructure and deep expertise can attempt large-scale data
+    analyses. Necessary expertise includes: programmatically accessing data sources
+    for data acquisition and cleaning, data storage and retrieval, data mining,
+    scalable data infrastructure design, and visualization.
+
+    The need for expertise in these five different areas significantly increases the
+    entrance costs. As a result, data-driven experiments are often not replicated,
+    reusability of experimental data is low, and data associated and produced by
+    such experiments is often inaccessible, obsolete, or worse. Moreover, building
+    analysis infrastructure to process ultra-large-scale data efficiently can be
+    costly and very hard to accomplish. There are efforts to simplify large-scale
+    data analysis; however, we do not yet have user-centric solutions that
+    democratize innovation in data-driven science. There have also been efforts that
+    provide users access to a set of web-based exploratory analysis tools and report
+    descriptive statistics over datasets, but any new idea, typically not
+    anticipated by data providers, is met with the same barriers. Many scientists
+    aren't able to innovate for themselves. The problem is particularly acute for
+    small colleges and HBCUs that lack both expertise and resources and are
+    essentially disenfranchised from data-driven science.
+
+    This project brings together a transdisciplinary team to decrease the barrier to
+    entry for data-driven science for ISU researchers and other data-driven
+    scientists around the world by enabling them to harness open data for
+    21st-century science and engineering. By doing so, we aim to prepare data-driven
+    scientists for grand challenges of the next decade, create unique data science
+    capabilities for research and education, and leverage federal, state, local and
+    private investments to facilitate shared and collaborative data-driven science.
