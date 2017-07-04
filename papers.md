@@ -4,51 +4,87 @@ title: Papers
 permalink: /papers/
 ---
 
-{% assign conference_papers = (site.papers | where: 'kind', 'conference'       | sort: 'publication_year') %}
-{% assign journal_papers =    (site.papers | where: 'kind', 'journal'          | sort: 'publication_year') %}
-{% assign workshop_papers =   (site.papers | where: 'kind', 'workshop'         | sort: 'publication_year') %}
-{% assign theses =            (site.papers | where: 'kind', 'thesis'           | sort: 'publication_year') %}
-{% assign technical_reports = (site.papers | where: 'kind', 'technical_report' | sort: 'publication_year') %}
+<script language="javascript">
+function toggle(contentClicked, otherContent){
+  var stuff1 = document.getElementById(contentClicked);
+  var stuff2 = document.getElementById(otherContent);
+  stuff1.style.display = "block";
+  stuff2.style.display = "none";
+}
+</script>
 
-1. TOC
-{: toc}
+<h4>Sort By:</h4>
 
-### Conference Papers
-{: .space-above}
-<div id="conference-papers-list" role="tablist" aria-multiselectable="true">
-    {% for paper in conference_papers reversed %}
-      {%include papers_page/paper_card.html paper=paper accordionKey="conference-papers-list" %}
+<div class="btn-group paper-btns" data-toggle="buttons" aria-label="Sorting">
+  <label id="project-btn" class="btn btn-primary paper-btn active project-btn" onclick="toggle('by-project', 'by-date')">
+    <input type="radio" name="options" id="option1" autocomplete="off" checked>Project
+  </label>
+  <label id="date-btn" class="btn btn-primary paper-btn date-btn" onclick="toggle('by-date', 'by-project')">
+    <input type="radio" name="options" id="option1" autocomplete="off">Publication Date
+  </label>
+</div>
+
+{% assign projects = "panini boa ptolemy eos frances nu sapha slede tisa osiris other" | split: ' ' %}
+{% assign paper_types = "conference journal workshop thesis technical_report other" | split: ' ' %}
+
+<div id="by-project" class="by-project">
+
+  {% for project in projects %}
+    <h2 class="space-above">{{ project | capitalize }}</h2>
+    {% if project == 'other' %}
+      {% assign project_papers = site.papers | where_exp: 'item', "item.tags == blank" %}
+    {% else %}
+      {% assign project_papers = site.papers | where: 'tags', project %}
+    {% endif %}
+
+    {% for paper_type in paper_types %}
+      {% assign papers = (project_papers | where: 'kind', paper_type) %}
+      {% assign papersSorted = papers | sort: 'publication_year' %}
+      {% assign size = papers | size %}
+      {% if size > 0 %}
+        <h3 class="space-above">
+        {% if paper_type == 'thesis' %}
+          PhD and MS Theses
+        {% elsif paper_type == 'technical_report' %}
+          Technical Reports
+        {% else %}
+          {{ paper_type | capitalize }}
+        {% endif %}
+        </h3>
+        <div id="{{paper_type}}-papers-list" role="tablist" aria-multiselectable="true">
+            {% for paper in papersSorted reversed %}
+              {% include papers_page/paper_card.html paper=paper accordionKey='-papers-list' %}
+            {% endfor %}
+        </div>
+      {% endif %}
     {% endfor %}
+  {% endfor %}
+
 </div>
 
-### Journal Papers
-{: .space-above}
-<div id="journal-papers-list" role="tablist" aria-multiselectable="true">
-  {% for paper in journal_papers reversed %}
-    {%include papers_page/paper_card.html paper=paper accordionKey="journal-papers-list" %}
-  {% endfor %}
-</div>
+<div id="by-date" class="by-date">
 
-### Workshop Papers
-{: .space-above}
-<div id="workshop-papers-list" role="tablist" aria-multiselectable="true">
-  {% for paper in workshop_papers reversed %}
-    {%include papers_page/paper_card.html paper=paper accordionKey="workshop-papers-list" %}
+  {% for paper_type in paper_types %}
+    {% if paper_type == 'other' %}
+      {% assign papers = site.papers | where_exp: 'item', "item.tags == blank" %}
+    {% else %}
+      {% assign papers = site.papers | where: 'kind', paper_type %}
+    {% endif %}
+    {% assign papersSorted = papers | sort: "publication_year" %}
+    <h3 class="space-above">
+    {% if paper_type == 'thesis' %}
+      PhD and MS Theses
+    {% elsif paper_type == 'technical_report' %}
+      Technical Reports
+    {% else %}
+      {{ paper_type | capitalize }}
+    {% endif %}
+    </h3>
+    <div id="{{paper_type}}-papers-list" role="tablist" aria-multiselectable="true">
+        {% for paper in papersSorted reversed %}
+          {% include papers_page/paper_card.html paper=paper accordionKey='-papers-list' %}
+        {% endfor %}
+    </div>
   {% endfor %}
-</div>
 
-### PhD and MS Theses
-{: .space-above}
-<div id="theses-list" role="tablist" aria-multiselectable="true">
-  {% for paper in theses reversed %}
-    {%include papers_page/paper_card.html paper=paper accordionKey="theses-list" %}
-  {% endfor %}
-</div>
-
-### Technical Reports
-{: .space-above}
-<div id="technical-reports-list" role="tablist" aria-multiselectable="true">
-  {% for paper in technical_reports reversed %}
-    {%include papers_page/paper_card.html paper=paper accordionKey="technical-reports-list" %}
-  {% endfor %}
 </div>
