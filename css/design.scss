@@ -160,10 +160,12 @@ $button-active-color: #c00;
 
 .paper-btn:active, .paper-btn:focus, .paper-btn.active, .paper-btn:active:focus, .paper-btn:active:hover {
   background-color: $button-active-color;
+  border-color: $button-active-color;
 }
 
 .paper-btn.active:hover {
   background-color: #b30000;
+  border-color: $button-active-color;
 }
 
 .paper-btn:hover {
@@ -173,6 +175,7 @@ $button-active-color: #c00;
 
 .paper-btn.active.focus {
   background-color: $button-active-color;
+  border-color: $button-active-color;
 }
 
 .paper-btn {
