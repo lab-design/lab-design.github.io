@@ -62,11 +62,13 @@ function toggle(contentClicked, otherContent){
 
 </div>
 
+{% assign paper_types = "general thesis technical_report" | split: ' ' %}
+{% assign general_papers = "conference journal workshop other" | split: ' ' %}
 <div id="by-date" class="by-date">
 
   {% for paper_type in paper_types %}
-    {% if paper_type == 'other' %}
-      {% assign papers = site.papers | where_exp: 'item', "item.tags == blank" %}
+    {% if paper_type == 'general' %}
+      {% assign papers = site.papers | where_exp: 'paper', "general_papers contains paper.kind" %}
     {% else %}
       {% assign papers = site.papers | where: 'kind', paper_type %}
     {% endif %}
@@ -76,8 +78,8 @@ function toggle(contentClicked, otherContent){
       PhD and MS Theses
     {% elsif paper_type == 'technical_report' %}
       Technical Reports
-    {% else %}
-      {{ paper_type | capitalize }}
+    {% elsif paper_type == 'general' %}
+      General Papers
     {% endif %}
     </h3>
     <div id="{{paper_type}}-papers-list" role="tablist" aria-multiselectable="true">
