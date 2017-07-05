@@ -111,6 +111,10 @@ nav .navbar {
   background-color: #444;
 }
 
+.carousel-inner > .carousel-item > a > img {
+  width: 100%;
+}
+
 .no-padding {
   padding: 0 0 0 0;
 }
