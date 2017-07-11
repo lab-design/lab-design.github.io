@@ -4,6 +4,43 @@ title: Papers
 permalink: /papers/
 ---
 
+<div class="col-xs-12 col-sm-6 title">
+  <h2>{{ page.title }}</h2>
+</div>
+<div class="col-xs-12 col-sm-6 title">
+  <div class="btn-group paper-btns" data-toggle="buttons" aria-label="Sorting">
+    <label id="project-btn" class="btn btn-primary paper-btn active project-btn" onclick="sort('project')">
+      <input type="radio" name="options" id="option1" autocomplete="off" checked>Project
+    </label>
+    <label id="date-btn" class="btn btn-primary paper-btn date-btn" onclick="sort('date')">
+      <input type="radio" name="options" id="option1" autocomplete="off">Publication Date
+    </label>
+  </div>
+</div>
+
+<style>
+
+  @media screen and (max-width: 543px){
+    .btn {
+      width: 50%;
+    }
+    .paper-btns {
+      float: none;
+      width: 100%;
+    }
+  }
+  .paper-btns {
+    float: right;
+  }
+
+  .page-title {
+    display: none;
+  }
+  .title {
+    padding: 0;
+  }
+</style>
+
 <script language="javascript">
 var projects = ["panini", "boa", "ptolemy", "eos", "frances", "nu", "sapha", "slede", "tisa", "osiris", "no_project"];
 var paper_types_project = ["conference", "journal", "workshop", "thesis", "technical_report", "other"];
@@ -18,7 +55,6 @@ window.onload = function(){
   sort('project');
 }
 
-<h4>Sort By:</h4>
 var toType = function(obj) {
   return ({}).toString.call(obj).match(/\s([a-zA-Z]+)/)[1].toLowerCase()
 }
@@ -26,14 +62,6 @@ var sort_by_year = function(a, b){
   return parseInt(b.getAttribute("data-year")) - parseInt(a.getAttribute("data-year"));
 }
 
-<div class="btn-group paper-btns" data-toggle="buttons" aria-label="Sorting">
-  <label id="project-btn" class="btn btn-primary paper-btn active project-btn" onclick="toggle('by-project', 'by-date')">
-    <input type="radio" name="options" id="option1" autocomplete="off" checked>Project
-  </label>
-  <label id="date-btn" class="btn btn-primary paper-btn date-btn" onclick="toggle('by-date', 'by-project')">
-    <input type="radio" name="options" id="option1" autocomplete="off">Publication Date
-  </label>
-</div>
 var getTypes = function(types){
   var answer = "";
   for(z = 0; z < types.length; z++){

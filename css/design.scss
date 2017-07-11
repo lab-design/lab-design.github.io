@@ -155,19 +155,21 @@ nav .navbar {
 
 $button-active-color: #c00;
 
-.by-project {
-  display: block;
+.paper-btns.btn-group {
+  display: flex;
 }
-.by-date {
-  display: none;
+
+.paper-btn {
+  transition: all .3s ease;
 }
 
 .paper-btn:active, .paper-btn:focus, .paper-btn.active, .paper-btn:active:focus, .paper-btn:active:hover {
   background-color: $button-active-color;
   border-color: $button-active-color;
+  font-weight: bold;
 }
 
-.paper-btn.active:hover {
+.paper-btn.active:hover, .paper-btn.focus:hover, .paper-btn:active:hover, .paper-btn:focus:hover {
   background-color: #b30000;
   border-color: $button-active-color;
 }
