@@ -5,7 +5,7 @@
   {% assign download_link_prefix = key | append : "/" %}
 {% endif %}
 
-<div class="card paper_card">
+<div class="card paper_card {{paper.tags}} {{paper.kind}}" data-year="{{paper.publication_year}}">
   <div class="card-header paper_card_header" id="head-{{ key }}">
     <div>
       <button class="navbar-toggler" type="button" href="#coll-{{ key }}" data-toggle="collapse" data-parent="#{{ include.accordionKey }}" aria-expanded="false" aria-controls="coll-{{ key }}">
