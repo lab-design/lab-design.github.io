@@ -1,5 +1,7 @@
 ---
 title: "Laboratory for Software Design Recruiting a Postdoctoral Fellow"
+links:
+  - { title: "Boa", link: "http://boa.cs.iastate.edu" }
 ---
 
 The [Laboratory for Software Design](http://design.cs.iastate.edu) in the
@@ -27,10 +29,10 @@ experimental design, the guidance of graduate students, writing of manuscripts,
 and preparing project meetings and progress reports.
 
 To apply please send the following to [Prof. Hridesh Rajan](http://www.cs.iastate.edu/~hridesh) at
-<hridesh@iastate.edu>: 
+<hridesh@iastate.edu>:
 
 1. a cover letter briefly summarizing your qualifications
-and describing your interest in the position and anticipated start date 
+and describing your interest in the position and anticipated start date
 2. a curriculum vitae
 3. contact information for three references familiar with your work
 
@@ -50,7 +52,7 @@ over 6,100 faculty and staff (see www.iastate.edu). Ames, Iowa is a progressive
 community of 60,000, located approximately 30 minutes north of Des Moines, and
 recently voted second best most livable small city in the nation (see
 www.amescvb.com).
- 
+
 
 Iowa State University is an Equal Opportunity/Affirmative Action employer. All
 qualified applicants will receive consideration for employment without regard

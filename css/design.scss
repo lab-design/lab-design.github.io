@@ -5,6 +5,15 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+.news-page-news-card .card-title {
+  color: #c00;
+}
+
+.card-link, .news-link {
+  color: rgb(68, 68, 68);
+  font-weight: bold;
+}
+
 @media screen and (min-width:576px){//This messes with extra small sizes
   .container {
     width: 1140px;//This is the maximum width a container can ever be
@@ -102,6 +111,10 @@ nav .navbar {
   background-color: #444;
 }
 
+.carousel-inner > .carousel-item > a > img {
+  width: 100%;
+}
+
 .no-padding {
   padding: 0 0 0 0;
 }
@@ -140,6 +153,51 @@ nav .navbar {
   list-style-type: none;
 }
 
+$button-active-color: #c00;
+
+.paper-btns.btn-group {
+  display: flex;
+}
+
+.paper-btn {
+  transition: all .3s ease;
+}
+
+.paper-btn:active, .paper-btn:focus, .paper-btn.active, .paper-btn:active:focus, .paper-btn:active:hover {
+  background-color: $button-active-color;
+  border-color: $button-active-color;
+  font-weight: bold;
+}
+
+.paper-btn.active:hover, .paper-btn.focus:hover, .paper-btn:active:hover, .paper-btn:focus:hover {
+  background-color: #b30000;
+  border-color: $button-active-color;
+}
+
+.paper-btn:hover {
+  background-color: #ccc;
+  border-color: $button-active-color;
+}
+
+.paper-btn.active.focus {
+  background-color: $button-active-color;
+  border-color: $button-active-color;
+}
+
+.paper-btn {
+  color: #444;
+  background-color: #e6e6e6;
+  border-color: $button-active-color;
+}
+
+.card {
+  transition: all .5s ease;
+}
+
+.card:hover {
+  transform: scale(1.01);
+}
+
 .paper_card_header, .grant_card_header {
   display: flex;
   justify-content: flex-start;
@@ -152,12 +210,13 @@ nav .navbar {
   margin: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
 
-.paper_card_header .paper_card_header_name {
+.paper_card_header .paper_card_header_name, .grant_card_header .grant_card_header_name {
+  color: rgb(68, 68, 68);
   flex-grow: 1;
 }
 
-.grant_card_header .grant_card_header_name {
-  flex-grow: 1;
+.paper_card_header .paper_card_header_name:hover, .grant_card_header .grant_card_header_name:hover {
+  color: #c00;
 }
 
 .paper_card .padded-inner-card-block {

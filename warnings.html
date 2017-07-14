@@ -5,7 +5,7 @@ layout: page
 ---
 
 {% assign expected_properties =
-  "key|permalink|short_name|bib|kind|publication_year|download_link" | split: "|"
+  "key|permalink|short_name|bib|kind|publication_year|download_link|tags" | split: "|"
 %}
 
 {% assign extra_download_link_properties =
@@ -15,7 +15,7 @@ layout: page
 <ul>
   {% for paper in site.papers %}
     {% for property in expected_properties %}
-      {% if paper[property] == nil %}
+      {% if paper[property] == nil or paper[property] == blank %}
         <li><a href="{{ paper.url }}">{{ paper.key | default: "Paper" }}</a> needs <code>{{ property }}</code></li>
       {% endif %}
     {% endfor %}

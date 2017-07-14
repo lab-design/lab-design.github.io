@@ -1,16 +1,18 @@
 ---
 title: "Graduate Research Assistant Needed in the Panini Project"
+links:
+  - { title: "Panini", link: "http://paninij.org" }
 ---
 
-The [Laboratory for Software Design](http://design.cs.iastate.edu) in the 
+The [Laboratory for Software Design](http://design.cs.iastate.edu) in the
 Department of Computer Science at Iowa State University is seeking a
-graduate student to work on the [Panini project](http://paninij.org). 
+graduate student to work on the [Panini project](http://paninij.org).
 The Panini project is developing programming languages and tools for improving
-modular reasoning about concurrent programs. 
-For more details about the project please refer to <http://paninij.org>. 
-The initial position is for one year with the possibility of extensions 
+modular reasoning about concurrent programs.
+For more details about the project please refer to <http://paninij.org>.
+The initial position is for one year with the possibility of extensions
 up to three years. A qualified
-candidate is: (1) enrolled in the Ph.D. program in Computer Science or Computer 
+candidate is: (1) enrolled in the Ph.D. program in Computer Science or Computer
 Engineering or a closely related field, and (2) outstanding ability to carry out research.
 Candidates who are applying to the Ph.D. program will also be considered.
 
@@ -18,11 +20,11 @@ The nature of our project will provide an excellent opportunity for a young
 scientist to be trained at the interface of programming languages, software
 engineering, and concurrency.  
 
-To apply please send the following to [Prof. Hridesh Rajan](http://www.cs.iastate.edu/~hridesh) 
-at <hridesh@iastate.edu>: 
+To apply please send the following to [Prof. Hridesh Rajan](http://www.cs.iastate.edu/~hridesh)
+at <hridesh@iastate.edu>:
 
 1. a cover letter briefly summarizing your qualifications
-and describing your interest in the position and anticipated start date 
+and describing your interest in the position and anticipated start date
 2. a curriculum vitae
 3. contact information for three references familiar with you
 
@@ -42,7 +44,7 @@ over 6,100 faculty and staff (see www.iastate.edu). Ames, Iowa is a progressive
 community of 60,000, located approximately 30 minutes north of Des Moines, and
 recently voted second best most livable small city in the nation (see
 www.amescvb.com).
- 
+
 
 Iowa State University is an Equal Opportunity/Affirmative Action employer. All
 qualified applicants will receive consideration for employment without regard
