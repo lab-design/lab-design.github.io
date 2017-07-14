@@ -47,8 +47,8 @@ var paper_types_project = ["conference", "journal", "workshop", "thesis", "techn
 var paper_types_date = ["general", "thesis", "technical_report"];
 var general_types = ["conference", "journal", "workshop", "other", "poster"];
 var other_types = ["other", "poster"];
-var sortedBy="none";
-var masterDiv="sorted-papers";
+var sortedBy = "none";
+var masterDiv = "sorted-papers";
 
 window.onload = function(){
   $("#"+masterDiv).css("display", "block");
@@ -86,6 +86,8 @@ function sort(sortBy){
         }
         var projectHeader = $("#"+project+"-title");
         projectHeader.css("display", "block");
+        $("#"+project+"-toc").css("display", "list-item");
+
         parent.appendChild(projectHeader[0]);
         for(j = 0; j < paper_types_project.length; j++){
           var paper_type = paper_types_project[j];
@@ -96,8 +98,10 @@ function sort(sortBy){
             papersByType = projectList.filter("."+paper_type);
           }
           var typeHeader = $("#"+project+"-"+paper_type+"-title");
+          //var typeTOC = $("#"+project+"-"+paper_type+"-toc");
           if(papersByType.length > 0){
             typeHeader.css("display", "block");
+            //typeTOC.css("display", "list-item");
             parent.appendChild(typeHeader[0]);
             papersByType.sort(sort_by_year);
             for(k = 0; k < papersByType.length; k++){
@@ -105,6 +109,7 @@ function sort(sortBy){
             }
           } else {
             typeHeader.css("display", "none");
+            //typeTOC.css("display", "none");
           }
         }
       }
@@ -114,6 +119,7 @@ function sort(sortBy){
         var paper_type = paper_types_date[i];
         var paperHeader = $("#"+paper_type+"-title");
         paperHeader.css("display", "block");
+        $("#"+paper_type+"-toc").css("display", "list-item");
         parent.appendChild(paperHeader[0]);
         var papers = [];
         if(paper_type == "general"){
@@ -134,8 +140,10 @@ function sort(sortBy){
 function hideProjectSort(){
   for(i = 0; i < projects.length; i++){
     $("#"+projects[i]+"-title").css("display", "none");
+    $("#"+projects[i]+"-toc").css("display", "none");
     for(j = 0; j < paper_types_project.length; j++){
       $("#"+projects[i]+"-"+paper_types_project[j]+"-title").css("display", "none");
+      //$("#"+projects[i]+"-"+paper_types_project[i]+"toc").css("display", "none");
     }
   }
 }
@@ -143,6 +151,7 @@ function hideProjectSort(){
 function hideDateSort(){
   for(i = 0; i < paper_types_date.length; i++){
     $("#"+paper_types_date[i]+"-title").css("display", "none");
+    $("#"+paper_types_date[i]+"-toc").css("display", "none");
   }
 }
 </script>
@@ -152,6 +161,44 @@ function hideDateSort(){
 {% assign paper_types_date = "general thesis technical_report" | split: ' ' %}
 
 <div class="sorted-papers" style="display: none" id="sorted-papers">
+  <ol id="papers-toc">
+    {% for project in projects %}
+      <li id="{{project}}-toc">
+        <a href="#{{project}}-title">
+        {% if project == "no_project" %}
+          Other
+        {% else %}
+          {{ project | capitalize }}
+        {% endif %}
+        </a>
+        {% comment %}
+        This makes the ToC incredibly big
+        <ol>
+          {% for paper_type in paper_types %}
+            <li id="{{project}}-{{paper_type}}-toc">
+              <a href="{{project}}-{{paper_type}}-title">
+                {% if paper_type == "technical_report" %}
+                  Technical Reports
+                {% elsif paper_type == "thesis" %}
+                  PhD and MS Theses
+                {% else %}
+                  {{ paper_type | capitalize }}
+                {% endif %}
+              </a>
+            </li>
+          {% endfor %}
+        </ol>
+        {% endcomment %}
+      </li>
+    {% endfor %}
+    {% for paper_type in paper_types_date %}
+      <li id="{{paper_type}}-toc">
+        <a href="#{{paper_type}}-title">
+        {% cycle "General","PhD and MS Theses","Technical Reports" %}
+        </a>
+      </li>
+    {% endfor %}
+  </ol>
   {% for project in projects %}
     <h2 id="{{project}}-title" class="space-above">
     {% if project == "no_project" %}
@@ -181,5 +228,4 @@ function hideDateSort(){
   {% for paper in site.papers %}
     {% include papers_page/paper_card.html paper=paper accordionKey='-papers-list' %}
   {% endfor %}
-
 </div>
