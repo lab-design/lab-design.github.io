@@ -1,8 +1,8 @@
 ---
-key: TR-17-UNASSIGNED-a
-permalink: /papers/TR-17-UNASSIGNED-a/
-short_name: TR-17-UNASSIGNED-a
-title: "Combining Event-driven and Capsule-oriented programming to Improve Integrated System Design"
+key: TR-17-01
+permalink: /papers/TR-17-01/
+short_name: TR-17-01
+title: "Combining Event-driven and Capsule-oriented Programming to Improve Integrated System Design"
 bib:  |
   @techreport{maddox2017-a,
      title = {Combining Event-driven and Capsule-oriented Programming to Improve Integrated System Design},
@@ -10,6 +10,7 @@ bib:  |
      year = {2017},
      month = {July},
      institution = {Department of Computer Science, Iowa State University},
+     number = {17-01},
      abstract = {
       As concurrent software becomes more pervasive, models that provide both safe
       concurrency and modular reasoning become more important.
@@ -35,7 +36,7 @@ bib:  |
      }
   }
 kind: technical_report
-download_link: TR-17-UNASSIGNED-a.pdf
+download_link: http://lib.dr.iastate.edu/cs_techreports/382/
 publication_year: 2017
 tags:
   - panini
