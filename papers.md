@@ -42,7 +42,7 @@ permalink: /papers/
 </style>
 
 <script language="javascript">
-var projects = ["panini", "boa", "ptolemy", "eos", "frances", "nu", "sapha", "slede", "tisa", "osiris", "no_project"];
+var projects = ["panini", "boa", "ptolemy", "eos", "nu", "sapha", "slede", "tisa", "osiris", "no_project"];
 var paper_types_project = ["conference", "journal", "workshop", "thesis", "technical_report", "other"];
 var paper_types_date = ["general", "thesis", "technical_report"];
 var general_types = ["conference", "journal", "workshop", "other", "poster"];
@@ -76,40 +76,34 @@ function sort(sortBy){
     var parent = $("#"+masterDiv)[0];
     if(sortBy=="project"){
       hideDateSort();
-      for(i = 0; i < projects.length; i++){
-        var project = projects[i];
-        var projectList;
-        if(project == "no_project"){
-          projectList = $(".paper_card").not(getTypes(projects));
+      for(i = 0; i < paper_types_project.length; i++){
+        var paper_type = paper_types_project[i];
+        var paperTypeList;
+        if(paper_type == "other"){
+          paperTypeList = $(getTypes(other_types));
         } else {
-          projectList = $("."+project);
+          paperTypeList = $("."+paper_type);
         }
-        var projectHeader = $("#"+project+"-title");
-        projectHeader.css("display", "block");
-        $("#"+project+"-toc").css("display", "list-item");
+        var paperTypeHeader = $("#"+paper_type+"-project-title");
+        paperTypeHeader.css("display", "block");
+        $("#"+paper_type+"-project-toc").css("display", "list-item");
 
-        parent.appendChild(projectHeader[0]);
-        for(j = 0; j < paper_types_project.length; j++){
-          var paper_type = paper_types_project[j];
-          var papersByType = [];
-          if(paper_type == "other"){
-            papersByType = projectList.filter(getTypes(other_types));
+        parent.appendChild(paperTypeHeader[0]);
+        for(j = 0; j < projects.length; j++){
+          var project = projects[j];
+          var projectList;
+          if(project == "no_project"){
+            projectList = paperTypeList.not(getTypes(projects));
+          } else if(project == "sapha"){
+            projectList = paperTypeList.filter(".sapha,.frances");//Dr. Rajan wants frances merged with sapha
           } else {
-            papersByType = projectList.filter("."+paper_type);
+            projectList = paperTypeList.filter("."+project);
           }
-          var typeHeader = $("#"+project+"-"+paper_type+"-title");
-          //var typeTOC = $("#"+project+"-"+paper_type+"-toc");
-          if(papersByType.length > 0){
-            typeHeader.css("display", "block");
-            //typeTOC.css("display", "list-item");
-            parent.appendChild(typeHeader[0]);
-            papersByType.sort(sort_by_year);
-            for(k = 0; k < papersByType.length; k++){
-              parent.appendChild(papersByType[k]);
+          if(projectList.length > 0){
+            projectList.sort(sort_by_year);
+            for(k = 0; k < projectList.length; k++){
+              parent.appendChild(projectList[k]);
             }
-          } else {
-            typeHeader.css("display", "none");
-            //typeTOC.css("display", "none");
           }
         }
       }
@@ -138,13 +132,9 @@ function sort(sortBy){
 }
 
 function hideProjectSort(){
-  for(i = 0; i < projects.length; i++){
-    $("#"+projects[i]+"-title").css("display", "none");
-    $("#"+projects[i]+"-toc").css("display", "none");
-    for(j = 0; j < paper_types_project.length; j++){
-      $("#"+projects[i]+"-"+paper_types_project[j]+"-title").css("display", "none");
-      //$("#"+projects[i]+"-"+paper_types_project[i]+"toc").css("display", "none");
-    }
+  for(i = 0; i < paper_types_project.length; i++){
+    $("#"+paper_types_project[i]+"-project-title").css("display", "none");
+    $("#"+paper_types_project[i]+"-project-toc").css("display", "none");
   }
 }
 
@@ -156,39 +146,22 @@ function hideDateSort(){
 }
 </script>
 
-{% assign projects = "panini boa ptolemy eos frances nu sapha slede tisa osiris no_project" | split: ' ' %}
 {% assign paper_types = "conference journal workshop thesis technical_report other" | split: ' ' %}
 {% assign paper_types_date = "general thesis technical_report" | split: ' ' %}
 
 <div class="sorted-papers" style="display: none" id="sorted-papers">
   <ol id="papers-toc">
-    {% for project in projects %}
-      <li id="{{project}}-toc">
-        <a href="#{{project}}-title">
-        {% if project == "no_project" %}
-          Other
+    {% for paper_type in paper_types %}
+      <li id="{{paper_type}}-project-toc">
+        <a href="#{{paper_type}}-project-title">
+        {% if paper_type == "technical_report" %}
+          Technical Reports
+        {% elsif paper_type == "thesis" %}
+          PhD and MS Theses
         {% else %}
-          {{ project | capitalize }}
+          {{ paper_type | capitalize }}
         {% endif %}
         </a>
-        {% comment %}
-        This makes the ToC incredibly big
-        <ol>
-          {% for paper_type in paper_types %}
-            <li id="{{project}}-{{paper_type}}-toc">
-              <a href="{{project}}-{{paper_type}}-title">
-                {% if paper_type == "technical_report" %}
-                  Technical Reports
-                {% elsif paper_type == "thesis" %}
-                  PhD and MS Theses
-                {% else %}
-                  {{ paper_type | capitalize }}
-                {% endif %}
-              </a>
-            </li>
-          {% endfor %}
-        </ol>
-        {% endcomment %}
       </li>
     {% endfor %}
     {% for paper_type in paper_types_date %}
@@ -199,25 +172,16 @@ function hideDateSort(){
       </li>
     {% endfor %}
   </ol>
-  {% for project in projects %}
-    <h2 id="{{project}}-title" class="space-above">
-    {% if project == "no_project" %}
-      Other
+  {% for paper_type in paper_types %}
+    <h2 id="{{paper_type}}-project-title" class="space-above">
+    {% if paper_type == "technical_report" %}
+      Technical Reports
+    {% elsif paper_type == "thesis" %}
+      PhD and MS Theses
     {% else %}
-      {{ project | capitalize }}
+      {{ paper_type | capitalize }}
     {% endif %}
     </h2>
-    {% for paper_type in paper_types %}
-      <h4 id="{{project}}-{{paper_type}}-title">
-        {% if paper_type == "technical_report" %}
-          Technical Reports
-        {% elsif paper_type == "thesis" %}
-          PhD and MS Theses
-        {% else %}
-          {{ paper_type | capitalize }}
-        {% endif %}
-      </h4>
-    {% endfor %}
   {% endfor %}
   {% for paper_type in paper_types_date %}
     <h4 id="{{paper_type}}-title">
