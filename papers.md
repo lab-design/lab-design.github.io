@@ -52,7 +52,7 @@ var masterDiv = "sorted-papers";
 
 window.onload = function(){
   $("#"+masterDiv).css("display", "block");
-  sort('project');
+  sort(window.location.href.split("#")[1]);
 }
 
 var toType = function(obj) {
@@ -74,7 +74,27 @@ var getTypes = function(types){
 function sort(sortBy){
   if(sortBy != sortedBy){
     var parent = $("#"+masterDiv)[0];
-    if(sortBy=="project"){
+    if(sortBy=="date"){
+      hideProjectSort();
+      for(i = 0; i < paper_types_date.length; i++){
+        var paper_type = paper_types_date[i];
+        var paperHeader = $("#"+paper_type+"-title");
+        paperHeader.css("display", "block");
+        $("#"+paper_type+"-toc").css("display", "list-item");
+        parent.appendChild(paperHeader[0]);
+        var papers = [];
+        if(paper_type == "general"){
+          papers = $(getTypes(general_types)).get();
+        } else {
+          papers = $("."+paper_type).get();
+        }
+        papers.sort(sort_by_year);
+        for(j = 0; j < papers.length; j++){
+          parent.appendChild(papers[j]);
+        }
+      }
+      sortedBy = "date";
+    } else {
       hideDateSort();
       for(i = 0; i < paper_types_project.length; i++){
         var paper_type = paper_types_project[i];
@@ -107,27 +127,9 @@ function sort(sortBy){
           }
         }
       }
-    } else if(sortBy=="date"){
-      hideProjectSort();
-      for(i = 0; i < paper_types_date.length; i++){
-        var paper_type = paper_types_date[i];
-        var paperHeader = $("#"+paper_type+"-title");
-        paperHeader.css("display", "block");
-        $("#"+paper_type+"-toc").css("display", "list-item");
-        parent.appendChild(paperHeader[0]);
-        var papers = [];
-        if(paper_type == "general"){
-          papers = $(getTypes(general_types)).get();
-        } else {
-          papers = $("."+paper_type).get();
-        }
-        papers.sort(sort_by_year);
-        for(j = 0; j < papers.length; j++){
-          parent.appendChild(papers[j]);
-        }
-      }
+      sortedBy = "project";
     }
-    sortedBy=sortBy;
+    location.hash = "#"+sortedBy;
   }
 }
 
