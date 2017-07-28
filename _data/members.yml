@@ -1,3 +1,6 @@
+#All images should be square in shape, otherwise it will
+#simply get cut off to make it square
+
 # Faculty:
 
 - name: Dr. Hridesh Rajan
@@ -46,7 +49,7 @@
   status: PhD
   email: hungphd@iastate.edu
   site: http://www.cs.iastate.edu/people/hung-dang-phan
-  img:
+  img: hphan.jpg
 
 - name: Johirul Islam
   status: PhD
@@ -112,11 +115,12 @@
 
 # Bachelor's Students:
 
-- name: Eva M Kuntz
-  status: BS
-  email: evakuntz@iastate.edu
-  site: http://design.cs.iastate.edu
-  img:
+# Commented out until she begins work
+#- name: Eva M Kuntz
+#  status: BS
+#  email: evakuntz@iastate.edu
+#  site: http://design.cs.iastate.edu
+#  img:
 
 - name: Robert H Schmidt
   status: BS
