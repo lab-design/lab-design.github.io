@@ -3,26 +3,11 @@ layout: page
 title: Papers
 permalink: /papers/
 ---
-
-<div class="col-xs-12 col-sm-6 title">
-  <h2>{{ page.title }}</h2>
-</div>
-<div class="col-xs-12 col-sm-6 title">
-  <div class="btn-group paper-btns" data-toggle="buttons" aria-label="Sorting">
-    <label id="project-btn" class="btn btn-primary paper-btn active project-btn" onclick="sort('project')">
-      <input type="radio" name="options" id="option1" autocomplete="off" checked>Project
-    </label>
-    <label id="date-btn" class="btn btn-primary paper-btn date-btn" onclick="sort('date')">
-      <input type="radio" name="options" id="option1" autocomplete="off">Publication Date
-    </label>
-  </div>
-</div>
-
 <style>
 
   @media screen and (max-width: 543px){
     .btn {
-      width: 50%;
+      width: 33%;
     }
     .paper-btns {
       float: none;
@@ -36,14 +21,12 @@ permalink: /papers/
   .page-title {
     display: none;
   }
-  .title {
-    padding: 0;
-  }
 </style>
 
 <script language="javascript">
+//Frances is merged with Sapha
 var projects = ["panini", "boa", "ptolemy", "eos", "nu", "sapha", "slede", "tisa", "osiris", "no_project"];
-var paper_types_project = ["conference", "journal", "workshop", "thesis", "technical_report", "other"];
+var paper_types_venue = ["conference", "journal", "workshop", "thesis", "technical_report", "other"];
 var paper_types_date = ["general", "thesis", "technical_report"];
 var general_types = ["conference", "journal", "workshop", "other", "poster"];
 var other_types = ["other", "poster"];
@@ -51,8 +34,9 @@ var sortedBy = "none";
 var masterDiv = "sorted-papers";
 
 window.onload = function(){
+  sort(window.location.href);
   $("#"+masterDiv).css("display", "block");
-  sort(window.location.href.split("#")[1]);
+  $("#papers-toc").css("display", "table");
 }
 
 var toType = function(obj) {
@@ -74,13 +58,60 @@ var getTypes = function(types){
 function sort(sortBy){
   if(sortBy != sortedBy){
     var parent = $("#"+masterDiv)[0];
-    if(sortBy=="date"){
+    if(sortBy.includes("project")){
+      hideVenueSort();
+      hideDateSort();
+      for(i = 0; i < projects.length; i++){
+        var project = projects[i];
+        var projectList;
+        if(project=="no_project"){
+          projectList = $(".paper_card").not(getTypes(projects));
+        } else if(project == "sapha"){
+          projectList = $(".sapha,.frances");
+        } else {
+          projectList = $("."+project);
+        }
+        var projectHeader = $("#"+project+"-project-title");
+        projectHeader.css("display", "block");
+        $("#"+project+"-project-toc").css("display", "list-item");
+        parent.appendChild(projectHeader[0]);
+
+        projectList.sort(sort_by_year);
+        for(j = 0; j < projectList.length; j++){
+          parent.appendChild(projectList[j]);
+        }
+      }
+      sortedBy = "project";
+    } else if(sortBy.includes("venue")){
+      hideDateSort();
       hideProjectSort();
+      for(i = 0; i < paper_types_venue.length; i++){
+        var paper_type = paper_types_venue[i];
+        var paperTypeList;
+        if(paper_type == "other"){
+          paperTypeList = $(getTypes(other_types));
+        } else {
+          paperTypeList = $("."+paper_type);
+        }
+        var paperTypeHeader = $("#"+paper_type+"-venue-title");
+        paperTypeHeader.css("display", "block");
+        $("#"+paper_type+"-venue-toc").css("display", "list-item");
+
+        parent.appendChild(paperTypeHeader[0]);
+        paperTypeList.sort(sort_by_year);
+        for(j = 0; j < paperTypeList.length; j++){
+          parent.appendChild(paperTypeList[j]);
+        }
+      }
+      sortedBy = "venue";
+    } else {//This should correspond to the default checkbox
+      hideProjectSort();
+      hideVenueSort();
       for(i = 0; i < paper_types_date.length; i++){
         var paper_type = paper_types_date[i];
-        var paperHeader = $("#"+paper_type+"-title");
+        var paperHeader = $("#"+paper_type+"-date-title");
         paperHeader.css("display", "block");
-        $("#"+paper_type+"-toc").css("display", "list-item");
+        $("#"+paper_type+"-date-toc").css("display", "list-item");
         parent.appendChild(paperHeader[0]);
         var papers = [];
         if(paper_type == "general"){
@@ -94,68 +125,44 @@ function sort(sortBy){
         }
       }
       sortedBy = "date";
-    } else {
-      hideDateSort();
-      for(i = 0; i < paper_types_project.length; i++){
-        var paper_type = paper_types_project[i];
-        var paperTypeList;
-        if(paper_type == "other"){
-          paperTypeList = $(getTypes(other_types));
-        } else {
-          paperTypeList = $("."+paper_type);
-        }
-        var paperTypeHeader = $("#"+paper_type+"-project-title");
-        paperTypeHeader.css("display", "block");
-        $("#"+paper_type+"-project-toc").css("display", "list-item");
-
-        parent.appendChild(paperTypeHeader[0]);
-        for(j = 0; j < projects.length; j++){
-          var project = projects[j];
-          var projectList;
-          if(project == "no_project"){
-            projectList = paperTypeList.not(getTypes(projects));
-          } else if(project == "sapha"){
-            projectList = paperTypeList.filter(".sapha,.frances");//Dr. Rajan wants frances merged with sapha
-          } else {
-            projectList = paperTypeList.filter("."+project);
-          }
-          if(projectList.length > 0){
-            projectList.sort(sort_by_year);
-            for(k = 0; k < projectList.length; k++){
-              parent.appendChild(projectList[k]);
-            }
-          }
-        }
-      }
-      sortedBy = "project";
     }
-    location.hash = "#"+sortedBy;
+    if(!location.hash.includes(sortedBy)){
+      location.hash = "#"+sortedBy;
+    }
   }
 }
 
 function hideProjectSort(){
-  for(i = 0; i < paper_types_project.length; i++){
-    $("#"+paper_types_project[i]+"-project-title").css("display", "none");
-    $("#"+paper_types_project[i]+"-project-toc").css("display", "none");
+  for(i = 0; i < projects.length; i++){
+    $("#"+projects[i]+"-project-title").css("display", "none");
+    $("#"+projects[i]+"-project-toc").css("display", "none");
+  }
+}
+
+function hideVenueSort(){
+  for(i = 0; i < paper_types_venue.length; i++){
+    $("#"+paper_types_venue[i]+"-venue-title").css("display", "none");
+    $("#"+paper_types_venue[i]+"-venue-toc").css("display", "none");
   }
 }
 
 function hideDateSort(){
   for(i = 0; i < paper_types_date.length; i++){
-    $("#"+paper_types_date[i]+"-title").css("display", "none");
-    $("#"+paper_types_date[i]+"-toc").css("display", "none");
+    $("#"+paper_types_date[i]+"-date-title").css("display", "none");
+    $("#"+paper_types_date[i]+"-date-toc").css("display", "none");
   }
 }
 </script>
 
-{% assign paper_types = "conference journal workshop thesis technical_report other" | split: ' ' %}
+{% assign paper_types_project = "panini boa ptolemy eos nu sapha slede tisa osiris no_project" | split: ' ' %}
+{% assign paper_types_venue = "conference journal workshop thesis technical_report other" | split: ' ' %}
 {% assign paper_types_date = "general thesis technical_report" | split: ' ' %}
 
-<div class="sorted-papers" style="display: none" id="sorted-papers">
-  <ol id="papers-toc">
-    {% for paper_type in paper_types %}
-      <li id="{{paper_type}}-project-toc">
-        <a href="#{{paper_type}}-project-title">
+<div class="col-xs-12 col-sm-6">
+  <ol id="papers-toc" style="display: none">
+    {% for paper_type in paper_types_venue %}
+      <li id="{{paper_type}}-venue-toc">
+        <a href="#{{paper_type}}-venue-title">
         {% if paper_type == "technical_report" %}
           Technical Reports
         {% elsif paper_type == "thesis" %}
@@ -167,28 +174,68 @@ function hideDateSort(){
       </li>
     {% endfor %}
     {% for paper_type in paper_types_date %}
-      <li id="{{paper_type}}-toc">
-        <a href="#{{paper_type}}-title">
-        {% cycle "General","PhD and MS Theses","Technical Reports" %}
+      <li id="{{paper_type}}-date-toc">
+        <a href="#{{paper_type}}-date-title">
+        {% cycle "Articles and Papers","PhD and MS Theses","Technical Reports" %}
+        </a>
+      </li>
+    {% endfor %}
+    {% for paper_type in paper_types_project %}
+      <li id="{{paper_type}}-project-toc">
+        <a href="#{{paper_type}}-project-title">
+          {% if paper_type == "no_project" %}
+            Other
+          {% else %}
+            {{ paper_type | capitalize }}
+          {% endif %}
         </a>
       </li>
     {% endfor %}
   </ol>
-  {% for paper_type in paper_types %}
-    <h2 id="{{paper_type}}-project-title" class="space-above">
-    {% if paper_type == "technical_report" %}
-      Technical Reports
-    {% elsif paper_type == "thesis" %}
-      PhD and MS Theses
-    {% else %}
-      {{ paper_type | capitalize }}
-    {% endif %}
+</div>
+
+<div class="col-xs-12 col-sm-6 title">
+  <div class="btn-group paper-btns" data-toggle="buttons" aria-label="Sorting">
+    <label id="date-btn" class="btn btn-primary paper-btn date-btn active" onclick="sort('date')">
+      <input type="radio" name="options" id="option1" autocomplete="off">Publication Date
+    </label>
+    <label id="venue-btn" class="btn btn-primary paper-btn venue-btn" onclick="sort('venue')">
+      <input type="radio" name="options" id="option1" autocomplete="off" checked>Venue
+    </label>
+    <label id="project-btn" class="btn btn-primary paper-btn project-btn" onclick="sort('project')">
+      <input type="radio" name="options" id="option1" autocomplete="off" checked>Project
+    </label>
+  </div>
+</div>
+
+<div class="sorted-papers col-xs-12" style="display: none" id="sorted-papers">
+
+  {% for paper_type in paper_types_venue %}
+    <h2 id="{{paper_type}}-venue-title" class="space-above">
+      {% if paper_type == "technical_report" %}
+        Technical Reports
+      {% elsif paper_type == "thesis" %}
+        PhD and MS Theses
+      {% else %}
+        {{ paper_type | capitalize }}
+      {% endif %}
     </h2>
   {% endfor %}
+
   {% for paper_type in paper_types_date %}
-    <h4 id="{{paper_type}}-title">
-      {% cycle "General","PhD and MS Theses","Technical Reports" %}
-    </h4>
+    <h2 id="{{paper_type}}-date-title" class="space-above">
+      {% cycle "Articles and Papers","PhD and MS Theses","Technical Reports" %}
+    </h2>
+  {% endfor %}
+
+  {% for paper_type in paper_types_project %}
+    <h2 id="{{paper_type}}-project-title" class="space-above">
+      {% if paper_type == "no_project" %}
+        Other
+      {% else %}
+        {{ paper_type | capitalize }}
+      {% endif %}
+    </h2>
   {% endfor %}
 
   {% for paper in site.papers %}
