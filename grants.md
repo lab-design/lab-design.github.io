@@ -4,7 +4,7 @@ title: Grants
 permalink: /grants/
 ---
 
-{% assign grants_list = {site.data.grants | where:"primary","true"} | sort: 'date' | reverse %}
+{% assign grants_list = {site.data.grants | where:"primary","true"} | sort: 'start_date' | reverse %}
 
 <div id="grants-list" role="tablist" aria-multiselectable="true">
   {% for grant in grants_list %}
