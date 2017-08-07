@@ -2,7 +2,7 @@
 {% assign news_item = include.news_item %}
 {% assign content = news_item.content %}
 
-<div class="card news-page-news-card">
+<div class="card news-card">
   <div class="card-block">
     {% unless content == blank or content == "" %}
     <a href="{{ news_item.url }}">

@@ -5,7 +5,7 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
-.news-page-news-card .card-title {
+.news-card .card-title, .home-page-highlighted-paper-card .card-title {
   color: #c00;
 }
 
@@ -340,12 +340,7 @@ footer .logo {
   color: black;
 }
 
-.home-page-news-card {
-  // TODO: @extend .card
-  color: black;
-}
-
-.news-page-news-card {
+.news-card, .home-page-highlighted-paper-card {
   // TODO: @extend .card
   color: black;
 }
