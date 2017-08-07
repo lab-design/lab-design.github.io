@@ -7,8 +7,8 @@ links:
 ---
 
 A paper on the Candoia Platform and Ecosystem has been accepted at the 14th
-International Conference on Mining Software Repositories ([MSR 2017](http://2017.msrconf.org/)),
-a conference co-located with [ICSE 2017](http://icse2017.gatech.edu/) at
+International Conference on Mining Software Repositories (<a href="http://2017.msrconf.org/">MSR 2017</a>),
+a conference co-located with <a href="http://icse2017.gatech.edu/">ICSE 2017</a> at
 Buenos Aires, Argentina, 20-21 May, 2017.
 Main goal of the platform is to bridge the gap between research and practice
 thereby easing the process of transitioning software engineering research results

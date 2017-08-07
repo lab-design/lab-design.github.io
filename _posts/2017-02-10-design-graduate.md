@@ -4,9 +4,9 @@ links:
   - { title: "Panini", link: "http://paninij.org" }
 ---
 
-The [Laboratory for Software Design](http://design.cs.iastate.edu) in the
+The <a href="http://design.cs.iastate.edu">Laboratory for Software Design</a> in the
 Department of Computer Science at Iowa State University is seeking a
-graduate student to work on the [Panini project](http://paninij.org).
+graduate student to work on the <a href="http://paninij.org">Panini project</a>.
 The Panini project is developing programming languages and tools for improving
 modular reasoning about concurrent programs.
 For more details about the project please refer to <http://paninij.org>.
@@ -20,7 +20,7 @@ The nature of our project will provide an excellent opportunity for a young
 scientist to be trained at the interface of programming languages, software
 engineering, and concurrency.  
 
-To apply please send the following to [Prof. Hridesh Rajan](http://www.cs.iastate.edu/~hridesh)
+To apply please send the following to <a href="http://www.cs.iastate.edu/~hridesh">Prof. Hridesh Rajan</a>
 at <hridesh@iastate.edu>:
 
 1. a cover letter briefly summarizing your qualifications
