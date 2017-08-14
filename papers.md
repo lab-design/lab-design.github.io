@@ -158,11 +158,62 @@ function hideDateSort(){
 {% assign paper_types_venue = "conference journal workshop thesis technical_report other" | split: ' ' %}
 {% assign paper_types_date = "general thesis technical_report" | split: ' ' %}
 
-<div class="col-xs-12 col-sm-6">
-  <ol id="papers-toc" style="display: none">
+<div class="row">
+
+  <div class="col-xs-12 col-sm-6">
+    <ol id="papers-toc" style="display: none">
+      {% for paper_type in paper_types_venue %}
+        <li id="{{paper_type}}-venue-toc">
+          <a href="#{{paper_type}}-venue-title">
+          {% if paper_type == "technical_report" %}
+            Technical Reports
+          {% elsif paper_type == "thesis" %}
+            PhD and MS Theses
+          {% else %}
+            {{ paper_type | capitalize }}
+          {% endif %}
+          </a>
+        </li>
+      {% endfor %}
+      {% for paper_type in paper_types_date %}
+        <li id="{{paper_type}}-date-toc">
+          <a href="#{{paper_type}}-date-title">
+          {% cycle "Articles and Papers","PhD and MS Theses","Technical Reports" %}
+          </a>
+        </li>
+      {% endfor %}
+      {% for paper_type in paper_types_project %}
+        <li id="{{paper_type}}-project-toc">
+          <a href="#{{paper_type}}-project-title">
+            {% if paper_type == "no_project" %}
+              Other
+            {% else %}
+              {{ paper_type | capitalize }}
+            {% endif %}
+          </a>
+        </li>
+      {% endfor %}
+    </ol>
+  </div>
+
+  <div class="col-xs-12 col-sm-6 title">
+    <div class="btn-group paper-btns" data-toggle="buttons" aria-label="Sorting">
+      <label id="date-btn" class="btn btn-primary paper-btn date-btn active" onclick="sort('date')">
+        <input type="radio" name="options" id="option1" autocomplete="off">Publication Date
+      </label>
+      <label id="venue-btn" class="btn btn-primary paper-btn venue-btn" onclick="sort('venue')">
+        <input type="radio" name="options" id="option1" autocomplete="off" checked>Venue
+      </label>
+      <label id="project-btn" class="btn btn-primary paper-btn project-btn" onclick="sort('project')">
+        <input type="radio" name="options" id="option1" autocomplete="off" checked>Project
+      </label>
+    </div>
+  </div>
+
+  <div class="sorted-papers col-xs-12" style="display: none" id="sorted-papers">
+
     {% for paper_type in paper_types_venue %}
-      <li id="{{paper_type}}-venue-toc">
-        <a href="#{{paper_type}}-venue-title">
+      <h2 id="{{paper_type}}-venue-title" class="space-above">
         {% if paper_type == "technical_report" %}
           Technical Reports
         {% elsif paper_type == "thesis" %}
@@ -170,75 +221,27 @@ function hideDateSort(){
         {% else %}
           {{ paper_type | capitalize }}
         {% endif %}
-        </a>
-      </li>
+      </h2>
     {% endfor %}
+
     {% for paper_type in paper_types_date %}
-      <li id="{{paper_type}}-date-toc">
-        <a href="#{{paper_type}}-date-title">
+      <h2 id="{{paper_type}}-date-title" class="space-above">
         {% cycle "Articles and Papers","PhD and MS Theses","Technical Reports" %}
-        </a>
-      </li>
+      </h2>
     {% endfor %}
+
     {% for paper_type in paper_types_project %}
-      <li id="{{paper_type}}-project-toc">
-        <a href="#{{paper_type}}-project-title">
-          {% if paper_type == "no_project" %}
-            Other
-          {% else %}
-            {{ paper_type | capitalize }}
-          {% endif %}
-        </a>
-      </li>
+      <h2 id="{{paper_type}}-project-title" class="space-above">
+        {% if paper_type == "no_project" %}
+          Other
+        {% else %}
+          {{ paper_type | capitalize }}
+        {% endif %}
+      </h2>
     {% endfor %}
-  </ol>
-</div>
 
-<div class="col-xs-12 col-sm-6 title">
-  <div class="btn-group paper-btns" data-toggle="buttons" aria-label="Sorting">
-    <label id="date-btn" class="btn btn-primary paper-btn date-btn active" onclick="sort('date')">
-      <input type="radio" name="options" id="option1" autocomplete="off">Publication Date
-    </label>
-    <label id="venue-btn" class="btn btn-primary paper-btn venue-btn" onclick="sort('venue')">
-      <input type="radio" name="options" id="option1" autocomplete="off" checked>Venue
-    </label>
-    <label id="project-btn" class="btn btn-primary paper-btn project-btn" onclick="sort('project')">
-      <input type="radio" name="options" id="option1" autocomplete="off" checked>Project
-    </label>
+    {% for paper in site.papers %}
+      {% include papers_page/paper_card.html paper=paper accordionKey='-papers-list' %}
+    {% endfor %}
   </div>
-</div>
-
-<div class="sorted-papers col-xs-12" style="display: none" id="sorted-papers">
-
-  {% for paper_type in paper_types_venue %}
-    <h2 id="{{paper_type}}-venue-title" class="space-above">
-      {% if paper_type == "technical_report" %}
-        Technical Reports
-      {% elsif paper_type == "thesis" %}
-        PhD and MS Theses
-      {% else %}
-        {{ paper_type | capitalize }}
-      {% endif %}
-    </h2>
-  {% endfor %}
-
-  {% for paper_type in paper_types_date %}
-    <h2 id="{{paper_type}}-date-title" class="space-above">
-      {% cycle "Articles and Papers","PhD and MS Theses","Technical Reports" %}
-    </h2>
-  {% endfor %}
-
-  {% for paper_type in paper_types_project %}
-    <h2 id="{{paper_type}}-project-title" class="space-above">
-      {% if paper_type == "no_project" %}
-        Other
-      {% else %}
-        {{ paper_type | capitalize }}
-      {% endif %}
-    </h2>
-  {% endfor %}
-
-  {% for paper in site.papers %}
-    {% include papers_page/paper_card.html paper=paper accordionKey='-papers-list' %}
-  {% endfor %}
 </div>

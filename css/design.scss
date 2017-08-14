@@ -9,6 +9,14 @@ body {
   color: #c00;
 }
 
+.card {
+  margin-bottom: 12px;
+}
+
+.card-block {
+  padding: 20px 20px 20px 20px;
+}
+
 .card-link, .news-link {
   color: rgb(68, 68, 68);
   font-weight: bold;
@@ -48,6 +56,10 @@ body {
   font-size: 1.15rem;
 }
 
+.brand-navbar .nav-link {
+  padding: 0;
+}
+
 .brand-navbar .nav-link > .small {
   font-size: 1rem;
 }
@@ -72,6 +84,9 @@ body {
     width: calc(100% / 6);
     text-align: center;
     padding-left: 0;
+  }
+  .navbar-nav {
+    width: 100%;
   }
 }
 
@@ -150,11 +165,11 @@ nav .navbar {
   font-weight: lighter;
 }
 
-#papers-markdown-toc ol > li > ol > li {
+#projects-markdown-toc ol > li > ol > li {
   list-style-type: disc;
 }
 
-#papers-markdown-toc ol > li {
+#projects-markdown-toc ol > li {
   list-style-type: none;
 }
 
@@ -165,6 +180,9 @@ $button-active-color: #c00;
 }
 
 .paper-btn {
+  color: #444;
+  background-color: #e6e6e6;
+  border-color: $button-active-color;
   transition: all .3s ease;
 }
 
@@ -172,6 +190,7 @@ $button-active-color: #c00;
   background-color: $button-active-color;
   border-color: $button-active-color;
   font-weight: bold;
+  color: #fff;
 }
 
 .paper-btn.active:hover, .paper-btn.focus:hover, .paper-btn:active:hover, .paper-btn:focus:hover {
@@ -186,12 +205,6 @@ $button-active-color: #c00;
 
 .paper-btn.active.focus {
   background-color: $button-active-color;
-  border-color: $button-active-color;
-}
-
-.paper-btn {
-  color: #444;
-  background-color: #e6e6e6;
   border-color: $button-active-color;
 }
 

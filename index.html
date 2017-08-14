@@ -16,18 +16,20 @@ highlighted_papers:
   <div class="row">
     <div class="col-xs-12">
       <div class="container">
-        <div class="col-12">
-          {% include home_page/carousel.html %}
-        </div>
-        <br />
+        <div class="row">
+          <div class="col-12">
+            {% include home_page/carousel.html %}
+          </div>
+          <br />
 
-        <div class="col col-md-6">
-          {% include home_page/highlighted_papers.html
-                     highlighted_papers=page.highlighted_papers %}
-        </div>
+          <div class="col-12 col-md-6">
+            {% include home_page/highlighted_papers.html
+                       highlighted_papers=page.highlighted_papers %}
+          </div>
 
-        <div class="col col-md-6">
-          {% include home_page/recent_news.html %}
+          <div class="col-12 col-md-6">
+            {% include home_page/recent_news.html %}
+          </div>
         </div>
       </div>
     </div>
