@@ -1,6 +1,6 @@
 ---
-key: OOPSLA17
-permalink: /papers/OOPSLA17/
+key: OOPSLA-17
+permalink: /papers/OOPSLA-17/
 short_name: OOPSLA '17
 title: Exploiting Implicit Beliefs to Resolve Sparse Usage Problem in Usage-based Specification Mining
 bib: |
