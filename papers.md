@@ -32,14 +32,20 @@ var general_types = ["conference", "journal", "workshop", "other", "poster"];
 var other_types = ["other", "poster"];
 var sortedBy = "none";
 var masterDiv = "sorted-papers";
+var defaultSort = 'date';
+var tocID = 'papers-toc';
+var btnsID = 'sort-btns';
 
 window.onload = function(){
   sort(window.location.href);
   $("#"+masterDiv).css("display", "block");
-  $("#papers-toc").css("display", "table");
+  $("#"+tocID).css("display", "table");
+  $('#'+defaultSort+'-btn').removeClass('active');
+  $('#'+sortedBy+'-btn').addClass('active');
+  $('#'+btnsID).css("display", "block");
 }
 
-var toType = function(obj) {
+var toType = function(obj) {//for debugging purposes
   return ({}).toString.call(obj).match(/\s([a-zA-Z]+)/)[1].toLowerCase()
 }
 var sort_by_year = function(a, b){
@@ -196,7 +202,7 @@ function hideDateSort(){
     </ol>
   </div>
 
-  <div class="col-xs-12 col-sm-6 title">
+  <div id="sort-btns" class="col-xs-12 col-sm-6" style="display: none">
     <div class="btn-group paper-btns" data-toggle="buttons" aria-label="Sorting">
       <label id="date-btn" class="btn btn-primary paper-btn date-btn active" onclick="sort('date')">
         <input type="radio" name="options" id="option1" autocomplete="off">Publication Date
