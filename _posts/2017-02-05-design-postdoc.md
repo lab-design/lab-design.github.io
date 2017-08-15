@@ -4,7 +4,7 @@ links:
   - { title: "Boa", link: "http://boa.cs.iastate.edu" }
 ---
 
-The [Laboratory for Software Design](http://design.cs.iastate.edu) in the
+The <a href="http://design.cs.iastate.edu">Laboratory for Software Design</a> in the
 Department of Computer Science at Iowa State University is seeking a
 postdoctoral fellow to work on the Boa project. The Boa project is developing
 an infrastructure for big code mining and using the infrastructure for such
@@ -28,7 +28,7 @@ organizing and coordinating all scientific aspects of this project, including
 experimental design, the guidance of graduate students, writing of manuscripts,
 and preparing project meetings and progress reports.
 
-To apply please send the following to [Prof. Hridesh Rajan](http://www.cs.iastate.edu/~hridesh) at
+To apply please send the following to <a href="http://www.cs.iastate.edu/~hridesh">Prof. Hridesh Rajan</a> at
 <hridesh@iastate.edu>:
 
 1. a cover letter briefly summarizing your qualifications

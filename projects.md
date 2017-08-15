@@ -4,12 +4,13 @@ layout: page
 
 {% assign papers = site.papers | sort: 'publication_year' %}
 
-<div id="papers-markdown-toc" markdown="1">
+<div id="projects-markdown-toc" markdown="1">
 1. TOC
 {:toc}
 </div>
 
 ## Active Research Projects
+{: .research-header}
 
 {% comment %}
 ### [Panini](http://web.cs.iastate.edu/~panini/)
@@ -20,6 +21,7 @@ layout: page
 
 This is crazy. ToC currently doesn't strip out the formatting on the header, so the regular header would link to the website rather than the location on the page. What you see above is a workaround for that.
 {% endcomment %}
+
 {% include projects_page.html name="Panini" link="http://web.cs.iastate.edu/~panini/" %}
 
 The Panini project is developing the capsule-oriented programming model.
@@ -151,6 +153,7 @@ PI: Hridesh Rajan (2010 - 2013).
 
 
 ## Past Research Projects
+{: .research-header}
 
 {% include projects_page.html name="Eos" link="http://web.cs.iastate.edu/~eos/" %}
 
