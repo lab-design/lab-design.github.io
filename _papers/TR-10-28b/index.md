@@ -7,9 +7,9 @@ bib: |
   @techreport{long2010panini,
     author = {Yuheng Long and Sean Mooney and Tyler Sondag and Hridesh Rajan},
     title = {Panini: Reconciling Concurrency and Modularity in Design},
-    institution = {Iowa State University, Department of Computer Science},
+    institution = {Iowa State University, Dept. of Computer Science},
     year = {2010},
-    number = {09-28b},
+    number = {10-28b},
     month = {March},
     abstract = {
       Writing correct and efficient concurrent programs still remains a challenge.

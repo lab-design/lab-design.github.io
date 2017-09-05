@@ -9,7 +9,7 @@ bib:  |
     author = {Gharaibeh, Bashar and Rajan, Hridesh and Chang, J Morris},
     year = {2010},
     month = {March},
-    institution = {Department of Computer Science, Iowa State University},
+    institution = {Iowa State University, Dept. of Computer Science},
     number = {09-23b},
     abstract = {
       Dynamic deployment is an important feature of an aspect-oriented language

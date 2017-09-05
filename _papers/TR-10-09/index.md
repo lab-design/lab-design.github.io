@@ -10,6 +10,7 @@ bib: |
     institution = {Iowa State University, Department of Computer Science},
     year = {2011},
     number = {10-09},
+    institution = {Iowa State University, Dept. of Computer Science},
     month = {June},
     abstract = {
       The notion of events in distributed publish-subscribe systems implies safe

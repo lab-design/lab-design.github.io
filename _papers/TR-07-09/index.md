@@ -7,19 +7,9 @@ bib:  |
   @techreport{hanna2008slede-a,
     author = {Hanna, Youssef and Rajan, Hridesh and Zhang, Wensheng},
     title = {Slede: A Domain-specific Verification Framework for Sensor Network Security Protocol Implementations},
-    booktitle = {Proceedings of the First ACM Conference on Wireless Network Security},
-    series = {WiSec '08},
     year = {2008},
-    isbn = {978-1-59593-814-5},
-    location = {Alexandria, VA, USA},
-    pages = {109--118},
-    numpages = {10},
-    url = {http://doi.acm.org/10.1145/1352533.1352551},
-    doi = {10.1145/1352533.1352551},
-    acmid = {1352551},
-    publisher = {ACM},
-    address = {New York, NY, USA},
-    keywords = {intruder generation, model checking, security protocols, sensor networks},
+    institution = {Iowa State University, Dept. of Computer Science},
+    number = {07-09},
     abstract = {
       Sensor networks are often deployed in hostile situations. A number of
       protocols are being developed to secure these networks. Current means to

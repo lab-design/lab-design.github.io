@@ -13,9 +13,21 @@
       </button>
     </div>
     <a class="paper_card_header_name" href="{{ include.paper.url }}">
-      {% bibtex --style /_citation_styles/papers_page.csl %}
-      {{paper.bib}}
-      {% endbibtex %}
+      {% if paper.kind == "thesis" %}
+        {% if key contains "PhD" %}
+          {% bibtex --style /_citation_styles/phd_thesis.csl %}
+            {{paper.bib}}
+          {% endbibtex %}
+        {% else %}
+          {% bibtex --style /_citation_styles/ms_thesis.csl %}
+            {{paper.bib}}
+          {% endbibtex %}
+        {% endif %}
+      {% else %}
+        {% bibtex --style /_citation_styles/normal_citation.csl %}
+          {{paper.bib}}
+        {% endbibtex %}
+      {% endif %}
     </a>
     <a href="{{ download_link_prefix }}{{ include.paper.download_link }}">
       <img src="/img/pdf_icon.svg" alt="PDF Download"/>

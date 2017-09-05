@@ -7,7 +7,7 @@ bib: |
   @techreport{rajan2006type,
     author = {Rajan, Hridesh},
     title = {Type-based Quantification of Aspect-oriented Programs},
-    institution = {Department of Computer Science, Iowa State University},
+    institution = {Iowa State University, Dept. of Computer Science},
     year = {2006},
     number = {06-32},
     month = {September},

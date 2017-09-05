@@ -9,7 +9,7 @@ bib:  |
      author = {Maddox, Jackson},
      year = {2017},
      month = {July},
-     institution = {Department of Computer Science, Iowa State University},
+     institution = {Iowa State University, Dept. of Computer Science},
      number = {17-01},
      abstract = {
       As concurrent software becomes more pervasive, models that provide both safe

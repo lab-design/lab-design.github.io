@@ -9,7 +9,7 @@ bib:  |
     author = {Dyer, Robert and Setty, Rakesh Bangalore Shivarudra and Rajan, Hridesh},
     year = {2007},
     month = {June},
-    institution = {Department of Computer Science, Iowa State University},
+    institution = {Iowa State University, Dept. of Computer Science},
     number = {07-06},
     abstract = {
       The contribution of this work is the design, implementation and evaluation of

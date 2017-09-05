@@ -8,7 +8,7 @@ bib:  |
     title = {Preserving separation of concerns through compilation},
     author = {Rajan, Hridesh and Dyer, Robert and Hanna, Youssef Wasfy and Narayanappa, Harish},
     year = {2006},
-    institution = {Department of Computer Science, Iowa State University},
+    institution = {Iowa State University, Dept. of Computer Science},
     number = {214},
     abstract = {
       Current aspect-oriented (AO) compilation techniques fail to preserve the

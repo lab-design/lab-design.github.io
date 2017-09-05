@@ -9,7 +9,7 @@ bib:  |
     author = {Dyer, Robert and Rajan, Hridesh},
     year = {2006},
     month = {September},
-    intitution = {Department of Computer Science, Iowa State University},
+    intitution = {Iowa State University, Dept. of Computer Science},
     number = {06-30},
     abstract = {
       In our previous work, we presented an aspect-oriented intermediate language,

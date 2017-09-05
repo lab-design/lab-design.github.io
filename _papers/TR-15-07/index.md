@@ -9,7 +9,7 @@ bib:  |
     author = {Rajan, Hridesh},
     year = {2015},
     month = {June},
-    institution = {Department of Computer Science, Iowa State University},
+    institution = {Iowa State University, Dept. of Computer Science},
     number = {15-07},
     abstract = {
       In earlier work, we showed that the AspectJ notions of aspect and class can be
