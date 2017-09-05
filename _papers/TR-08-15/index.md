@@ -7,7 +7,7 @@ bib: |
   @techreport{bagherzadeh2008instance,
     author = {Mehdi Bagherzadeh, Robert Dyer, Yuheng Long and Hridesh Rajan},
     title = {Instance-level Quantified, Typed Events for Integrated System Design},
-    institution = {Iowa State University, Department of Computer Science},
+    institution = {Iowa State University, Dept. of Computer Science},
     year = {2008},
     number = {08-15},
     month = {August},

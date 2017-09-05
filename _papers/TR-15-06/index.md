@@ -9,7 +9,7 @@ bib:  |
     author = {Sondag, Tyler and Rajan, Hridesh},
     year = {2015},
     month = {June},
-    institution = {Department of Computer Science, Iowa State University and Intel Labs},
+    institution = {Iowa State University, Dept. of Computer Science},
     number = {15-06},
     abstract = {
       Emerging trends towards performance-asymmetric multicore processors (AMPs) are

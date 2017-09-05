@@ -9,7 +9,7 @@ bib:  |
     author = {Lin, Eric and Upadhyaya, Ganesha and Mooney, Sean L and Rajan, Hridesh},
     year = {2015},
     month = {June},
-    institution = {Department of Computer Science, Iowa State University},
+    institution = {Iowa State University, Dept. of Computer Science},
     number = {15-05},
     abstract = {
       Futures offer a convenient abstraction for encapsulating delayed computation.

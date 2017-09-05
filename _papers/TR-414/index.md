@@ -8,7 +8,7 @@ bib:  |
     title = {Nu: Towards an AspectOriented Invocation Mechanism},
     author = {Rajan, Hridesh and Dyer, Robert and Narayanappa, Harish and Hanna, Youssef},
     year = {2006},
-    institution = {Technical Report 414, Iowa State University, Department of Computer Science},
+    institution = {Iowa State University, Dept. of Computer Science},
     number = {414},
     abstract = {
       The contribution of this work is the design, implementation and evaluation of

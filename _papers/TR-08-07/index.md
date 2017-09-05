@@ -9,7 +9,7 @@ bib:  |
     author = {Rajan, Hridesh and Tao, Jia and Shaner, Steve M and Leavens, Gary T},
     year = {2009},
     month = {March},
-    institution = {Iowa State University and University of Central Florida},
+    institution = {Iowa State University, Dept. of Computer Science},
     number = {08-07},
     abstract = {
       Web services are distributed software components, that are decoupled from each

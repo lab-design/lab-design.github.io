@@ -9,7 +9,7 @@ bib:  |
     author = {Setty, Rakesh Bangalore Shivarudra and Dyer, Robert and Rajan, Hridesh},
     year = {2008},
     month = {February},
-    institution = {Department of Computer Science, Iowa State University},
+    institution = {Iowa State University, Dept. of Computer Science},
     number = {08-02},
     abstract = {
       The choice to use static or load-time weaving techniques in the development

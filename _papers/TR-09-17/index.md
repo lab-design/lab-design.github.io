@@ -7,19 +7,9 @@ bib:  |
   @techreport{hanna2009behavioral-a,
     author = {Hanna, Youssef and Basu, Samik and Rajan, Hridesh},
     title = {Behavioral Automata Composition for Automatic Topology Independent Verification of Parameterized Systems},
-    booktitle = {Proceedings of the the 7th Joint Meeting of the European Software Engineering Conference and the ACM SIGSOFT Symposium on The Foundations of Software Engineering},
-    series = {ESEC/FSE '09},
     year = {2009},
-    isbn = {978-1-60558-001-2},
-    location = {Amsterdam, The Netherlands},
-    pages = {325--334},
-    numpages = {10},
-    url = {http://doi.acm.org/10.1145/1595696.1595758},
-    doi = {10.1145/1595696.1595758},
-    acmid = {1595758},
-    publisher = {ACM},
-    address = {New York, NY, USA},
-    keywords = {parameterized model checking},
+    institution = {Iowa State University, Dept. of Computer Science},
+    number = {09-17},
     abstract = {
       Verifying correctness properties of parameterized systems is a long-standing
       problem. The challenge lies in the lack of guarantee that the property is

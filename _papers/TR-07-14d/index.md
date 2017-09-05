@@ -9,7 +9,7 @@ bib:  |
     author = {Rajan, Hridesh and Leavens, Gary T},
     month = {May},
     year = {2008},
-    institution = {Iowa State University and University of Central Florida},
+    institution = {Iowa State University, Dept. of Computer Science},
     number = {07-14d},
     abstract = {
       Implicit invocation and aspect-oriented languages provide related but distinct

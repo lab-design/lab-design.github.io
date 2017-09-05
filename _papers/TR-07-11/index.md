@@ -9,7 +9,7 @@ bib:  |
     author = {Hanna, Youssef Wasfy and Rajan, Hridesh},
     year = {2007},
     month = {June},
-    institution = {Department of Computer Science, Iowa State University},
+    institution = {Iowa State University, Dept. of Computer Science},
     number = {07-11},
     abstract = {
       The deployment scenarios for sensor networks are often hostile. These networks

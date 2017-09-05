@@ -9,9 +9,8 @@ bib:  |
     author = {Rajan, Hridesh and Leavens, Gary T},
     year = {2015},
     month = {July},
-    journal = {ACM Transactions on Programming Languages and Systems},
-    volume = {V},
-    number = {N},
+    institution = {Iowa State University, Dept. of Computer Science},
+    number = {15-10},
     abstract = {
       Implicit invocation (II) and aspect-oriented (AO) languages provide software
       designers with related but distinct mechanisms and strategies for decomposing

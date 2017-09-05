@@ -205,7 +205,7 @@ function hideDateSort(){
   <div id="sort-btns" class="col-xs-12 col-sm-6" style="display: none">
     <div class="btn-group paper-btns" data-toggle="buttons" aria-label="Sorting">
       <label id="date-btn" class="btn btn-primary paper-btn date-btn active" onclick="sort('date')">
-        <input type="radio" name="options" id="option1" autocomplete="off">Publication Date
+        <input type="radio" name="options" id="option1" autocomplete="off">Date
       </label>
       <label id="venue-btn" class="btn btn-primary paper-btn venue-btn" onclick="sort('venue')">
         <input type="radio" name="options" id="option1" autocomplete="off" checked>Venue

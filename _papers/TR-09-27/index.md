@@ -9,7 +9,7 @@ bib:  |
     author = {Gharaibeh, Bashar and Rajan, Hridesh and Chang, J Morris},
     year = {2009},
     month = {September},
-    institution = {Department of Computer Science, Iowa State University},
+    institution = {Iowa State University, Dept. of Computer Science},
     number = {09-27},
     abstract = {
       Dynamic software updating provides many benefits, e.g. in runtime monitoring,

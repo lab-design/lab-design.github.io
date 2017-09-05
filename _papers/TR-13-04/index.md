@@ -7,7 +7,7 @@ bib: |
   @techreport{long2013open,
     author = {Yuheng Long and Mehdi Bagherzadeh and Hridesh Rajan},
     title = {Open Effects: Programmer-guided Effects for Open World Concurrent Programs},
-    institution = {Department of Computer Science, Iowa State University},
+    institution = {Iowa State University, Dept. of Computer Science},
     year = {2013},
     month = {October},
     number = {13-04},

@@ -7,7 +7,7 @@ bib: |
   @techreport{rajan2013capsule,
     author = {Hridesh Rajan and Steven M. Kautz and Eric Lin and Sarah Kabala and Ganesha Upadhyaya and Yuheng Long and Rex Fernando, and Lor\'{a}nd Szak\'{a}cs},
     title = {Capsule-oriented Programming},
-    institution = {Iowa State U., Computer Sc.},
+    institution = {Iowa State University, Dept. of Computer Science},
     year = {2013},
     number = {13-01},
     abstract = {
