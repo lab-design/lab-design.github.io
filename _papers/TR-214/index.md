@@ -29,4 +29,6 @@ download_link: http://lib.dr.iastate.edu/cs_techreports/214/
 extra_download_links:
   - { link: preserveSoC.pdf, title: Direct PDF }
 publication_year: 2006
+tags:
+  - nu
 ---

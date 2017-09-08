@@ -37,6 +37,8 @@ download_link: http://lib.dr.iastate.edu/cs_techreports/316/
 extra_download_links:
   - { link: TR-10-28b.pdf, title: Direct PDF }
 publication_year: 2010
+tags:
+  - panini
 ---
 
 This technical report is superceded by the following research paper:

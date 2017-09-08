@@ -41,4 +41,6 @@ bib:  |
 kind: thesis
 download_link: http://lib.dr.iastate.edu/etd/13553/
 publication_year: 2013
+tags:
+  - boa
 ---

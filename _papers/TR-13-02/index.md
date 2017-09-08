@@ -30,4 +30,6 @@ bib:  |
 kind: technical_report
 download_link: http://lib.dr.iastate.edu/cs_techreports/289/
 publication_year: 2013
+tags:
+  - boa
 ---

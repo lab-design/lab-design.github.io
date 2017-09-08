@@ -37,4 +37,6 @@ bib: |
 kind: conference
 download_link: ordering-quantification.pdf
 publication_year: 2016
+tags:
+  - panini
 ---

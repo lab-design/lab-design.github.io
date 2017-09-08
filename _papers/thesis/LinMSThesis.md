@@ -47,4 +47,6 @@ bib:  |
 kind: thesis
 download_link: /papers/thesis/LinMSThesis.pdf
 publication_year: 2016
+tags:
+  - panini
 ---

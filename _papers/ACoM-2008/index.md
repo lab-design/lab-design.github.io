@@ -34,4 +34,6 @@ bib: |
 kind: workshop
 download_link: Rajan-ACoM08.pdf
 publication_year: 2008
+tags:
+  - boa
 ---

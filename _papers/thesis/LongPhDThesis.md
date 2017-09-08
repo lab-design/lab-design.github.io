@@ -55,4 +55,6 @@ bib:  |
 kind: thesis
 download_link: /papers/thesis/LongPhDThesis.pdf
 publication_year: 2016
+tags:
+  - panini
 ---

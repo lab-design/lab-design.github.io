@@ -35,4 +35,6 @@ bib:  |
 kind: thesis
 download_link: http://lib.dr.iastate.edu/etd/11853/
 publication_year: 2010
+tags:
+  - panini
 ---

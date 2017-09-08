@@ -30,4 +30,6 @@ bib:  |
 kind: thesis
 download_link: http://lib.dr.iastate.edu/etd/10400/
 publication_year: 2011
+tags:
+  - ptolemy
 ---

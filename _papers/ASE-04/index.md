@@ -34,4 +34,6 @@ bib:  |
 kind: conference
 download_link: ase04.pdf
 publication_year: 2004
+tags:
+  - eos
 ---

@@ -35,4 +35,6 @@ bib:  |
 kind: thesis
 download_link: /papers/thesis/UpadhyayaMSThesis.pdf
 publication_year: 2015
+tags:
+  - panini
 ---

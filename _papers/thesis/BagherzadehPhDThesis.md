@@ -54,4 +54,6 @@ bib:  |
 kind: thesis
 download_link: /papers/thesis/BagherzadehPhDThesis.pdf
 publication_year: 2016
+tags:
+  - panini
 ---

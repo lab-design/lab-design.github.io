@@ -27,4 +27,6 @@ bib: |
 kind: workshop
 download_link: FOAL-11.pdf
 publication_year: 2011
+tags:
+  - ptolemy
 ---

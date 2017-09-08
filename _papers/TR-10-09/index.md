@@ -36,4 +36,6 @@ bib: |
 kind: technical_report
 download_link: TR.pdf
 publication_year: 2010
+tags:
+  - panini
 ---

@@ -32,4 +32,6 @@ bib: |
 kind: journal
 download_link: event-subtyping-reasoning-TOMC.pdf
 publication_year: 2016
+tags:
+  - ptolemy
 ---

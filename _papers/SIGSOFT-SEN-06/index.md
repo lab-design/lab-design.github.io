@@ -29,4 +29,6 @@ bib: |
 kind: other
 download_link: sigsoft-sen-06.pdf
 publication_year: 2006
+tags:
+  - slede
 ---

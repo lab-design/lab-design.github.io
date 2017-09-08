@@ -33,4 +33,6 @@ download_link: ESCOT-10.pdf
 extra_download_links:
   - { link: ESCOT-10-slides.pdf, title: Slides }
 publication_year: 2010
+tags:
+  - ptolemy
 ---

@@ -34,4 +34,6 @@ bib: |
 kind: workshop
 download_link: main.pdf
 publication_year: 2010
+tags:
+  - tisa
 ---

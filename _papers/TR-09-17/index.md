@@ -33,6 +33,8 @@ bib:  |
 kind: technical_report
 download_link: http://lib.dr.iastate.edu/cs_techreports/287/
 publication_year: 2009
+tags:
+  - panini
 ---
 
 See also the conference paper from [ESEC/FSE '09](/papers/ESEC-FSE-09/).

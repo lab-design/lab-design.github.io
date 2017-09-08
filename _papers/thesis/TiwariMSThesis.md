@@ -34,4 +34,6 @@ bib:  |
 kind: thesis
 download_link: /papers/thesis/TiwariMSThesis.pdf
 publication_year: 2017
+tags:
+  - boa
 ---

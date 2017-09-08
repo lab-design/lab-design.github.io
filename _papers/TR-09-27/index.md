@@ -31,4 +31,6 @@ bib:  |
 kind: technical_report
 download_link: http://lib.dr.iastate.edu/cs_techreports/349/
 publication_year: 2009
+tags:
+  - nu
 ---

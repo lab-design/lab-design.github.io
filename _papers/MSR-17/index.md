@@ -38,5 +38,5 @@ kind: conference
 download_link: main.pdf
 publication_year: 2017
 tags:
-  - Candoia
+  - boa
 ---

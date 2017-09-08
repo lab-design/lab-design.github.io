@@ -72,8 +72,6 @@ function sort(sortBy){
         var projectList;
         if(project=="no_project"){
           projectList = $(".paper_card").not(getTypes(projects));
-        } else if(project == "sapha"){
-          projectList = $(".sapha,.frances");
         } else {
           projectList = $("."+project);
         }
