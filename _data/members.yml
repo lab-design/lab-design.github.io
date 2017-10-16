@@ -69,17 +69,17 @@
   site: http://www.cs.iastate.edu/people/swarn-priya
   img: spriya.jpg
 
+- name: Melissa Robbins
+  status: PhD
+  email: robbinsm@iastate.edu
+  site: http://design.cs.iastate.edu
+  img: mrobbins.png
+
 - name: Wenfei Song
   status: PhD
   email: wsong@iastate.edu
   site: http://www.cs.iastate.edu/people/wenfei-song
   img: wsong.jpg
-
-- name: Seyedeh Z. Khoshmanesh
-  status: PhD
-  email: zkh@iastate.edu
-  site: http://web.cs.iastate.edu/~zkh/
-  img: skhoshmanesh.jpg
 
 # Master's Students:
 
