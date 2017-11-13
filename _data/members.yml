@@ -63,17 +63,11 @@
   site: http://www.cs.iastate.edu/people/samantha-syed-khairunnesa
   img: skhairunnesa.jpg
 
-- name: Swarn Priya
+- name: Giang Nguyen
   status: PhD
-  email: spriya@iastate.edu
-  site: http://www.cs.iastate.edu/people/swarn-priya
-  img: spriya.jpg
-
-- name: Melissa Robbins
-  status: PhD
-  email: robbinsm@iastate.edu
+  email: gnguyen@iastate.edu
   site: http://design.cs.iastate.edu
-  img: mrobbins.png
+  img: gnguyen.png
 
 - name: Wenfei Song
   status: PhD
