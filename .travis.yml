@@ -1,11 +1,19 @@
 language: ruby
 rvm:
 - 2.2.5
-
-script: ./_scripts/cibuild
-
+script: "./_scripts/cibuild"
 env:
   global:
-  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true  # Speeds up installation of html-proofer
-
-sudo: false  # Use container-based infrastructure for a faster build.
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+  matrix:
+    secure: hMs/MC74mITE29JFQLj8gVgb5ZoaTUQ8lteFXPqkA2OljTXAzcApvM4Dq46VMIuCsDa+mb8CqFHBXL/y/l13j5wvZJ2IF7XmMKiUDfMBKK733XH0slvAhBKlY7VR0tseFp6KSXPsj9cxwv410re1sJqWoPRV4fjKxYSfvfP0P9VwrGLqfMuL+zPQLkkOx1bR8xcylPX9dPB02t2/LvAmXCG0vLMEmiee7HQmkzey2VZaMpiZqq4sXCYKe91DNyAUkmuDLK4v/cZR6NnqsqGugJ721TdHzsjM9cqWSQCdYtRrLemhrN8Kkb4TYaZZ3pu9BqAHs5gcQfAexneV5tuZ+fNFO8Tco/Q1cRzipqa9mkSLRvpjMkiE4OQECAT1+dOijTDrTmZQFMB79yZhevYPF/HfCx+pGpf+AaWRAGHD+BhHqdeDKOOCAbT9QF7h5nTHLuncaO/vKYAidqBVDYB5Bjh3LswUhhzjWIvue+Hl0zYyObmyMYeHoYLBTnT2ncY+RDY1UNNUxz1fszSimT7KeGbkEsHrXvCJ6tf7OkCDunrik9/OyKTyBoKLpervu8WWypY7CbMDmi314QJgxOdT8r8kclnhDSY0Mw7y552sRteFAF6Vvza7WfPE2hTv26Zh1XzK78lRTRJgekGO1/hVtFbKuv3jcYAARcHmBUeLMVM=
+sudo: false
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  repo: lab-design/lab-design.github.io
+  target_branch: master
+  local_dir: _site
+  on:
+    branch: master
