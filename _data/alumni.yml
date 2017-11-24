@@ -1,5 +1,11 @@
 # PhD Graduates:
 
+- name: Dr. Ganesha Upadhyaya
+  status: PhD Fall'17, MS Spring'15
+  netid: ganeshau
+  site: http://web.cs.iastate.edu/~ganeshau/
+  img: gupadhyaya.jpg
+
 - name: Dr. Yuheng Long
   status: PhD Spring'16, MS Spring'10
   netid: csgzlong
@@ -33,6 +39,12 @@
 
 
 # M.S. Graduates:
+
+- name: Ramanathan Ramu
+  status: MS Fall'17
+  email: rramu@iastate.edu
+  site: http://www.cs.iastate.edu/people/ramanathan-ramu
+  img: rramu.jpg
 
 - name: Nitin M. Tiwari
   status: MS Spring'17 

@@ -33,12 +33,6 @@
 
 # PhD Candidates:
 
-- name: Ganesha Upadhyaya
-  status: PhD
-  email: ganeshau@iastate.edu
-  site: http://web.cs.iastate.edu/~ganeshau/
-  img: gupadhyaya.jpg
-
 - name: Hamid Bagheri
   status: PhD
   email: hbagheri@iastate.edu
@@ -88,12 +82,6 @@
     annotation-based front-end to the Panini languages. He is also learning
     about the goals of the Panini project. He can be reached at
     `dwtj@iastate.edu`
-
-- name: Ramanathan Ramu
-  status: MS
-  email: rramu@iastate.edu
-  site: http://www.cs.iastate.edu/people/ramanathan-ramu
-  img: rramu.jpg
 
 - name: Jackson L Maddox
   status: MS
