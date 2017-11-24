@@ -53,4 +53,4 @@ static_files:
 scholar:
   source: .
 
-gems: ['jekyll-scholar']
+gems: ['jekyll/scholar']
