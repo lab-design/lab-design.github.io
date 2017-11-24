@@ -1,5 +1,5 @@
 ---
-title: "Ganesha Upadhyaya passes his M.S. thesis defense"
+title: "Ganesha Upadhyaya passes his PhD thesis defense"
 links:
   - {title: "Thesis", link: "http://design.cs.iastate.edu/papers/thesis/UpadhyayaPhDThesis.html" }
 ---
