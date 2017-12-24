@@ -1,5 +1,5 @@
 ---
-title: “Two Papers Selected to Appear at ICSE 2018”
+title: Two Papers Selected to Appear at ICSE 2018
 links:
   - {title: “Papers”, link: "http://design.cs.iastate.edu/papers/thesis/UpadhyayaPhDThesis.html" }
 ---
