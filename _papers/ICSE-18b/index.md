@@ -5,7 +5,7 @@ short_name: ICSE '18
 title: Are Code Examples on an Online Q&A Forum Reliable? A Study of API Misuse on Stack Overflow
 bib: |
   @inproceedings{ReliableQA2018,
-    author = {Tianyi Zhang, Ganesha Upadhyaya, Anastasia Reinhardt, Hridesh Rajan and Miryung Kim},
+    author = {Tianyi Zhang and Ganesha Upadhyaya and Anastasia Reinhardt and Hridesh Rajan and Miryung Kim},
     title = {Are Code Examples on an Online Q&A Forum Reliable? A Study of API Misuse on Stack Overflow},
     booktitle = {ICSE'18: The 40th International Conference on Software Engineering},
     location = {Gothenberg, Sweden},
