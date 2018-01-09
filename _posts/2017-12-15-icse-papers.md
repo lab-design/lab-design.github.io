@@ -1,7 +1,7 @@
 ---
 title: Two Papers Selected to Appear at ICSE 2018
 links:
-  - {title: “Papers”, link: "http://design.cs.iastate.edu/papers/" }
+  - {title: Papers, link: "http://design.cs.iastate.edu/papers/" }
 ---
 
 Our lab has had two papers selected to appear at the 40th International Conference on 
