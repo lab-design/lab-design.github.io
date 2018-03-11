@@ -1,10 +1,10 @@
 ---
-title: "2017 Midwest Big Data Summer School, another successful edition"
+title: "2017 Midwest Big Data Summer School, a success!"
 ---
 
 The 2017 Midwest Big Data Summer School held from July 10-14, 2017 
 in Ames, Iowa on <a href="http://iastate.edu">Iowa State University</a>
-campus was another success. 
+campus was another successful edition. 
 
 Over 145 participants registered for the event from across Midwestern 
 Universities (and some from outside Midwest). 
