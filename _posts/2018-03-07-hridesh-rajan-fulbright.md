@@ -1,5 +1,5 @@
 ---
-title: "Prof. Hridesh Rajan awarded 2018-19 Fulbright U.S. Scholar Award"
+title: "Prof. Hridesh Rajan receives 2018-19 Fulbright U.S. Scholar Award"
 ---
 
 The J. William Fulbright Foreign Scholarship Board has selected Prof. Rajan
