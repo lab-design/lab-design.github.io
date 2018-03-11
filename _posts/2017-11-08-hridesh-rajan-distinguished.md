@@ -1,5 +1,5 @@
 ---
-title: "ACM Recognizes Dr. Hridesh Rajan as 2017 Distinguished Member for his Scientific Contributions to Computing"
+title: "ACM Recognizes Dr. Hridesh Rajan as a Distinguished Member"
 ---
 
 The Association for Computing Machinery (ACM) has recognized Dr. Hridesh
