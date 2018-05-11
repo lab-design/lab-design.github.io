@@ -245,7 +245,9 @@ function hideDateSort(){
     {% endfor %}
 
     {% for paper in site.papers %}
-      {% include papers_page/paper_card.html paper=paper accordionKey='-papers-list' %}
+      {% if paper.supplement != true %}
+        {% include papers_page/paper_card.html paper=paper accordionKey='-papers-list' %}
+      {% endif %}
     {% endfor %}
   </div>
 </div>
