@@ -7,7 +7,7 @@ bib: |
   @inproceedings{maddox18,
     author = {Maddox, Jackson and Long, Yuheng and Rajan, Hridesh},
     title = {Large-scale Study of Substitutability in the Presence of Effects},
-    booktitle = {Proceedings of the 2018 12th Joint Meeting on Foundations of Software Engineering},
+    booktitle = {ESEC/FSE'18: The ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE)},
     series = {ESEC/FSE 2018},
     month = {November},
     year = {2018},
