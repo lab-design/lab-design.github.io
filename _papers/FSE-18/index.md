@@ -2,7 +2,7 @@
 key: FSE-18
 permalink: /papers/FSE-18/
 short_name: FSE '18
-title: Large-scale Study of Substitutability in the Presence of Effects (Preprint)
+title: Large-scale Study of Substitutability in the Presence of Effects
 bib: |
   @inproceedings{maddox18,
     author = {Maddox, Jackson and Long, Yuheng and Rajan, Hridesh},
