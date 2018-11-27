@@ -34,7 +34,7 @@ bib: |
       improve the engineering of software that includes ML components.
     }
   }
-kind: Technical report
+kind: Technical_report
 download_link: mlstudy.pdf
 publication_year: NA
 tags:
