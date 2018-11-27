@@ -1,11 +1,11 @@
 ---
 key: mlstudy-techreport
 permalink: /papers/mlstudy-techreport/
-short_name: mlstudy
+short_name: mlstudy techreport
 title: Large-scale Study of Substitutability in the Presence of Effects
 bib: |
   @inproceedings{johir18,
-    author = {Johirul, Islam, and Nguyen, Hoan and Rajan, Hridesh},
+    author = {Md Johirul, Islam, and Nguyen, Hoan and Rajan, Hridesh},
     title = {What Do Developers Ask About ML Libraries? A Large-scale Study Using Stack Overflow},
     booktitle = {Technical Report},
     series = {Technical Report},
@@ -34,7 +34,7 @@ bib: |
       improve the engineering of software that includes ML components.
     }
   }
-kind: Technical_report
+kind: Technical report
 download_link: mlstudy.pdf
 publication_year: NA
 tags:
