@@ -69,11 +69,11 @@
   site: http://design.cs.iastate.edu
   img: gnguyen.png
 
-- name: Wenfei Song
+- name: Rangeet Pan
   status: PhD
-  email: wsong@iastate.edu
-  site: http://www.cs.iastate.edu/people/wenfei-song
-  img: wsong.jpg
+  email: rangeet@iastate.edu
+  site: http://www.cs.iastate.edu/people/rangeet-pan
+  img: pan.jpg
 
 # Master's Students:
 
@@ -97,12 +97,11 @@
 
 # Bachelor's Students:
 
-# Commented out until she begins work
-#- name: Eva M Kuntz
-#  status: BS
-#  email: evakuntz@iastate.edu
-#  site: http://design.cs.iastate.edu
-#  img:
+- name: Xuan-Long Vu
+  status: BS
+  email: longvu@iastate.edu
+  site: http://design.cs.iastate.edu
+  img: vu.jpg
 
 - name: Robert H Schmidt
   status: BS

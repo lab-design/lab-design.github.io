@@ -86,6 +86,12 @@
 
 # B.S. Graduates
 
+- name: Robert H Schmidt
+  status: B.S. Spring'19
+  email: robert2@iastate.edu
+  site: http://design.cs.iastate.edu
+  img: rschmidt.jpg
+
 - name: Sambhav P. Srirama
   status: B.S. Spring'16
   netid: ssrirama
