@@ -24,13 +24,6 @@
   site: https://sites.google.com/site/nguyenanhhoan/home
   img: hnguyen.jpg
 
-- name: Dr. Zhen Yu
-  status: Postdoctoral Fellow
-  email: yuzhen3301@gmail.com
-  site: http://design.cs.iastate.edu
-  img: zyu.jpeg
-
-
 # PhD Candidates:
 
 - name: Hamid Bagheri
@@ -39,17 +32,23 @@
   site: http://www.cs.iastate.edu/people/hamid-bagheri
   img: hbagheri.jpg
 
-- name: Hung Phan
+- name: Yijia Huang
   status: PhD
-  email: hungphd@iastate.edu
-  site: http://www.cs.iastate.edu/people/hung-dang-phan
-  img: hphan.jpg
+  email: hyj@iastate.edu
+  site: https://www.cs.iastate.edu/people/yijia-huang
+  img: blank.png
 
 - name: Johirul Islam
   status: PhD
   email: mislam@iastate.edu
   site: http://www.cs.iastate.edu/people/johirul-islam
   img: jislam.jpg
+
+- name: Yupei Li
+  status: PhD
+  email: liyp0095@iastate.edu
+  site: https://www.cs.iastate.edu/people/yuepei-li
+  img: blank.png
 
 - name: Samantha Khairunnesa
   status: PhD
@@ -75,11 +74,17 @@
   site: http://www.cs.iastate.edu/people/rangeet-pan
   img: pan.jpg
 
+- name: Hung Phan
+  status: PhD
+  email: hungphd@iastate.edu
+  site: http://www.cs.iastate.edu/people/hung-dang-phan
+  img: hphan.jpg
+
 - name: Mohammad Wardat
   status: PhD
   email: wardat@iastate.edu
   site: https://www.cs.iastate.edu/people/mohammad-wardat
-  img: pan.jpg
+  img: wardat.jpg
 
 # Master's Students:
 
