@@ -1,7 +1,7 @@
 ---
-key: MSR-17
-permalink: /papers/MSR-17/
-short_name: MSR '17
+key: MSR-19
+permalink: /papers/MSR-19/
+short_name: MSR '19
 title: "Candoia: A Platform for Building and Sharing Mining Software Repositories Tools as Apps"
 abstract: >
 bib: |
