@@ -1,4 +1,16 @@
-# PhD Graduates:
+# Postdoctoral and PhD Graduates:
+
+- name: Dr. Hoan A. Nguyen
+  status: Postdoctoral Fellow
+  email: hoan@iastate.edu
+  site: https://sites.google.com/site/nguyenanhhoan/home
+  img: hnguyen.jpg
+
+- name: Dr. Zhen Yu
+  status: Postdoctoral Fellow
+  email: yuzhen3301@gmail.com
+  site: http://design.cs.iastate.edu
+  img: zyu.jpeg
 
 - name: Dr. Ganesha Upadhyaya
   status: PhD Fall'17, MS Spring'15
@@ -39,6 +51,12 @@
 
 
 # M.S. Graduates:
+
+- name: Jackson L Maddox
+  status: MS Summer'18
+  email: jlmaddox@iastate.edu
+  site: http://design.cs.iastate.edu
+  img: jmaddox.jpg
 
 - name: Ramanathan Ramu
   status: MS Fall'17
@@ -85,6 +103,24 @@
 
 
 # B.S. Graduates
+
+- name: Robert H Schmidt
+  status: B.S. Spring'19
+  email: robert2@iastate.edu
+  site: http://design.cs.iastate.edu
+  img: rschmidt.jpg
+
+- name: David Johnston
+  status: B.S. Spring'16
+  email: dwtj@iastate.edu
+  site: https://github.com/dwtj
+  img: djohnston.jpg
+  description: >
+    David Johnston is an undergraduate student at Iowa State University where he
+    is majoring in software engineering. David is currently working on an
+    annotation-based front-end to the Panini languages. He is also learning
+    about the goals of the Panini project. He can be reached at
+    `dwtj@iastate.edu`
 
 - name: Sambhav P. Srirama
   status: B.S. Spring'16

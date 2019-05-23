@@ -18,19 +18,6 @@
 
 # Postdocs:
 
-- name: Dr. Hoan A. Nguyen
-  status: Postdoctoral Fellow
-  email: hoan@iastate.edu
-  site: https://sites.google.com/site/nguyenanhhoan/home
-  img: hnguyen.jpg
-
-- name: Dr. Zhen Yu
-  status: Postdoctoral Fellow
-  email: yuzhen3301@gmail.com
-  site: http://design.cs.iastate.edu
-  img: zyu.jpeg
-
-
 # PhD Candidates:
 
 - name: Hamid Bagheri
@@ -39,17 +26,23 @@
   site: http://www.cs.iastate.edu/people/hamid-bagheri
   img: hbagheri.jpg
 
-- name: Hung Phan
+- name: Yijia Huang
   status: PhD
-  email: hungphd@iastate.edu
-  site: http://www.cs.iastate.edu/people/hung-dang-phan
-  img: hphan.jpg
+  email: hyj@iastate.edu
+  site: https://www.cs.iastate.edu/people/yijia-huang
+  img: yhuang.png
 
 - name: Johirul Islam
   status: PhD
   email: mislam@iastate.edu
   site: http://www.cs.iastate.edu/people/johirul-islam
   img: jislam.jpg
+
+- name: Yupei Li
+  status: PhD
+  email: liyp0095@iastate.edu
+  site: https://www.cs.iastate.edu/people/yuepei-li
+  img: blank.png
 
 - name: Samantha Khairunnesa
   status: PhD
@@ -69,46 +62,33 @@
   site: http://design.cs.iastate.edu
   img: gnguyen.png
 
-- name: Wenfei Song
+- name: Rangeet Pan
   status: PhD
-  email: wsong@iastate.edu
-  site: http://www.cs.iastate.edu/people/wenfei-song
-  img: wsong.jpg
+  email: rangeet@iastate.edu
+  site: http://www.cs.iastate.edu/people/rangeet-pan
+  img: pan.jpg
+
+- name: Hung Phan
+  status: PhD
+  email: hungphd@iastate.edu
+  site: http://www.cs.iastate.edu/people/hung-dang-phan
+  img: hphan.jpg
+
+- name: Mohammad Wardat
+  status: PhD
+  email: wardat@iastate.edu
+  site: https://www.cs.iastate.edu/people/mohammad-wardat
+  img: wardat.jpg
 
 # Master's Students:
 
-- name: David Johnston
-  status: MS
-  email: dwtj@iastate.edu
-  site: https://github.com/dwtj
-  img: djohnston.jpg
-  description: >
-    David Johnston is an undergraduate student at Iowa State University where he
-    is majoring in software engineering. David is currently working on an
-    annotation-based front-end to the Panini languages. He is also learning
-    about the goals of the Panini project. He can be reached at
-    `dwtj@iastate.edu`
-
-- name: Jackson L Maddox
-  status: MS
-  email: jlmaddox@iastate.edu
-  site: http://design.cs.iastate.edu
-  img: jmaddox.jpg
-
 # Bachelor's Students:
 
-# Commented out until she begins work
-#- name: Eva M Kuntz
-#  status: BS
-#  email: evakuntz@iastate.edu
-#  site: http://design.cs.iastate.edu
-#  img:
-
-- name: Robert H Schmidt
+- name: Xuan-Long Vu
   status: BS
-  email: robert2@iastate.edu
+  email: longvu@iastate.edu
   site: http://design.cs.iastate.edu
-  img: rschmidt.jpg
+  img: vu.jpg
 
 - name: Nathaniel M Wernimont
   status: BS
