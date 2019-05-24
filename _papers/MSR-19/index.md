@@ -2,10 +2,10 @@
 key: MSR-19
 permalink: /papers/MSR-19/
 short_name: MSR '19
-title: "Boa Meets Python: A Boa Dataset of Data Science Software in Python Language"
+title: "Candoia: A Platform for Building and Sharing Mining Software Repositories Tools as Apps"
 abstract: >
 bib: |
-  @inproceedings{tiwari2017candoia,
+  @inproceedings{sumon2019pydata,
     author = {Sumon Biswas and Md Johirul Islam and Yijia Huang and and Hridesh Rajan},
     title = {Boa Meets Python: A Boa Dataset of Data Science Software in Python Language},
     booktitle = {MSR'19: 16th International Conference on Mining Software Repositories},
