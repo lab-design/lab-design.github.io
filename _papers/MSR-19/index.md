@@ -2,7 +2,7 @@
 key: MSR-19
 permalink: /papers/MSR-19/
 short_name: MSR '19
-title: "Candoia: A Platform for Building and Sharing Mining Software Repositories Tools as Apps"
+title: "Boa Meets Python: A Boa Dataset of Data Science Software in Python Language"
 abstract: >
 bib: |
   @inproceedings{tiwari2017candoia,
