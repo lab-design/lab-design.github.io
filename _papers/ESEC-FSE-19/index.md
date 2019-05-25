@@ -41,9 +41,6 @@ bib: |
   }
 kind: conference
 download_link: IslamNguyenPanRajan19.pdf
-extra_download_links:
-  - { link: supplement.html, title: Supplement }
-  - { link: IslamNguyenPanRajan19.zip , title: Artifact}
 publication_year: 2019
 tags:
   - boa
