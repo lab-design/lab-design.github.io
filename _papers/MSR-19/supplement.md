@@ -8,17 +8,9 @@ supplement: true
 {:toc}
 
 ### Introduction
-This page provides supplementary material for our effect substitutability study.
-We used the <a href="http://boa.cs.iastate.edu">Boa infrastructure</a>, and
-specifically their September 2015 GitHub dataset to complete this study.
-Here we provide access to our analyses implementations coupled with the raw
-results and an explanation of the output files.
-
 This page provides supplementary material for the Github dataset for Python Data
 Science (DS) projects which is published in MSR 2019. We have used
 <a href="http://boa.cs.iastate.edu">Boa infrastructure</a> for this dataset.
-
-<a href=""></a>
 
 ### Usage
 The dataset can be used in two ways: using Boa website and standalone project.
