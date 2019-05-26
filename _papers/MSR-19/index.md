@@ -31,6 +31,9 @@ bib: |
   }
 kind: conference
 download_link: msr19.pdf
+extra_download_links:
+  - { link: supplement.html, title: Supplement }
+  - { link: msr19-presentation.pdf , title: Presentation}
 publication_year: 2019
 tags:
   - boa
