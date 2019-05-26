@@ -25,7 +25,7 @@ are not registered, request for a user.</li>
 <li>Write a query under the Boa Source Code. If researchers are not familiar
 with the language, the example Boa programs can be utilized by clicking the
 Select Examples. Some good examples for this dataset can be also found from the
-<a href="https://github.com/sumonbis/MSR19-DataShowcase">Github repository</a>.</li>
+<a href="https://github.com/boalang/MSR19-DataShowcase">Github repository</a>.</li>
 <li>Select 2019 February/Python dataset in the drop-down list under Input
 Dataset and run the query.</li>
 </ol>
@@ -41,7 +41,10 @@ files and get parsed AST. The raw dataset is available
 
 We have a written a simple program to show how one can read the sequence file
 and get the parsed AST of the Python programs in the dataset:
-<a href="https://github.com/sumonbis/ReadPythonDataset">Github Link</a>.
+<a href="https://github.com/boalang/MSR19-DataShowcase/tree/master/ReadPythonDataset">Github Link</a>.
+
+### Example Boa Queries
+The example Boa queries can be found here: <a href="https://github.com/boalang/MSR19-DataShowcase/tree/master/Boa_Queries">Github Link</a>.
 
 ### Dataset Description
 The dataset contains 1,558 Github projects with following properties:
@@ -60,7 +63,7 @@ The dataset contains projects owned by both organizations and individual users.
 Some of the top rated projects are Tensorflow Models, Keras, Scikit-learn,
 Pandas, Spacy, Spotify Luigi, NVIDIA FastPhotoStyle, Theano, etc. A full list of
 all the 1,558 Github projects are available
-<a href="https://github.com/sumonbis/MSR19-DataShowcase/blob/master/info.txt">here</a>.
+<a href="https://github.com/boalang/MSR19-DataShowcase/blob/master/info.txt">here</a>.
 350 projects in the dataset are maintained by different organizations (Google,
 Microsoft, NVIDIA etc.) and the rest 1,208 projects are maintained by individual
 users. The other metrics of the dataset are:
