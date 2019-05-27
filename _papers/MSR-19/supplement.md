@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Supplementary Material - Github Python dataset for Boa
+title: Supplementary Material - Github Python Dataset for Boa
 supplement: true
 ---
 
@@ -15,7 +15,7 @@ Science (DS) projects which is published in MSR 2019. We have used
 ### Usage
 The dataset can be used in two ways: using Boa website and standalone project.
 
-#### Using Boa Website
+##### Using Boa Website
 To use the dataset go to <a href="http://boa.cs.iastate.edu">Boa website</a> and
 follow the steps:
 
@@ -30,10 +30,15 @@ Select Examples. Some good examples for this dataset can be also found from the
 Dataset and run the query.</li>
 </ol>
 
+The job will be submitted to Hadoop cluster and is executed parallely on the
+dataset. When the job status is finished, the output text file will be available
+for downloading. The job is saved for future reference. One can share the job
+with others and one can reproduce the result. 
+
 To learn about Boa language and queries, navigate through the Boa website,
 especially <a href="http://boa.cs.iastate.edu/docs/index.php">Programming Guide Section</a>.
 
-#### Standalone Project
+##### Standalone Project
 The dataset is also available outside of Boa website. All data are stored
 in Hadoop sequence files. Therefore, one can write simple programs to read those
 files and get parsed AST. The raw dataset is available
@@ -42,9 +47,10 @@ files and get parsed AST. The raw dataset is available
 We have a written a simple program to show how one can read the sequence file
 and get the parsed AST of the Python programs in the dataset:
 <a href="https://github.com/boalang/MSR19-DataShowcase/tree/master/ReadPythonDataset">Github Link</a>.
+Download the raw dataset and use this project to get parsed AST.
 
 ### Example Boa Queries
-The example Boa queries can be found here: <a href="https://github.com/boalang/MSR19-DataShowcase/tree/master/Boa_Queries">Github Link</a>.
+The example Boa queries and their output can be found here: <a href="https://github.com/boalang/MSR19-DataShowcase/tree/master/Boa_Queries">Github Link</a>.
 
 ### Dataset Description
 The dataset contains 1,558 Github projects with following properties:
