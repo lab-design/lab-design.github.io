@@ -33,7 +33,7 @@ Dataset and run the query.</li>
 The job will be submitted to Hadoop cluster and is executed parallely on the
 dataset. When the job status is finished, the output text file will be available
 for downloading. The job is saved for future reference. One can share the job
-with others and one can reproduce the result. 
+with others and one can reproduce the result.
 
 To learn about Boa language and queries, navigate through the Boa website,
 especially <a href="http://boa.cs.iastate.edu/docs/index.php">Programming Guide Section</a>.
@@ -42,7 +42,7 @@ especially <a href="http://boa.cs.iastate.edu/docs/index.php">Programming Guide 
 The dataset is also available outside of Boa website. All data are stored
 in Hadoop sequence files. Therefore, one can write simple programs to read those
 files and get parsed AST. The raw dataset is available
-<a href="">here</a> [~25 GB].
+<a href="https://drive.google.com/file/d/10XPEusLusHSxK5agxCBdA-rR3PowRbFX/view?usp=sharing">here</a> [~15 GB].
 
 We have a written a simple program to show how one can read the sequence file
 and get the parsed AST of the Python programs in the dataset:
