@@ -19,6 +19,11 @@
 # Postdocs:
 
 # PhD Candidates:
+- name: Shibbir Ahmed
+  status: PhD
+  email: shibbir@iastate.edu
+  site: https://www.cs.iastate.edu/people/shibbir-ahmed
+  img: sahmed.jpg
 
 - name: Hamid Bagheri
   status: PhD
