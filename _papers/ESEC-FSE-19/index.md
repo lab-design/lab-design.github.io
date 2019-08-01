@@ -4,7 +4,7 @@ permalink: /papers/ESEC-FSE-19/
 short_name: ESEC-FSE '19
 title: A Comprehensive Study on Deep Learning Bug Characteristics
 bib: |
-  @inproceedings{maddox18,
+  @inproceedings{islam19,
     author = {Md Johirul Islam and Giang Nguyen and Rangeet Pan and Hridesh Rajan},
     title = {A Comprehensive Study on Deep Learning Bug Characteristics},
     booktitle = {ESEC/FSE'19: The ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE)},
