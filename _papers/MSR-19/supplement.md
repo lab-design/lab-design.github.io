@@ -59,7 +59,7 @@ The dataset contains 1,558 Github projects with following properties:
 <li>Contains data at least one science keywords like machine-learning, deep
 neural network in the description of the project. The whole list of keywords are
 listed in the appendix.</li>
-<li>Contains at least one usage of data science library like Pytroch, Caffe,
+<li>Contains at least one usage of data science library like Pytorch, Caffe,
 Keras, Tensorflow etc. A full list of used 33 Python data science libraries are
 listed in the appendix.</li>
 <li>Contains at least 80 star.</li>
