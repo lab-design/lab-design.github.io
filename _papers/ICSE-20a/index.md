@@ -9,7 +9,7 @@ i  @inproceedings{islam20repairing,
     title = {Repairing Deep Neural Networks: Fix Patterns and Challenges},
     booktitle = {ICSE'20: The 42th International Conference on Software Engineering},
     location = {Seoul, South Korea},
-    month = {May 23-29, 2020},
+    month = {May 23-May 29, 2020},
     year = {2020},
     entrysubtype = {conference},
     abstract = {
