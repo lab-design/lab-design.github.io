@@ -4,8 +4,8 @@ permalink: /papers/ICSE-20b/
 short_name: ICSE '20
 title: BCFA Bespoke Control Flow Analysis for CFA at Scale
 bib: |
-  @inproceedings{collective2018,
-    author = {Ganesha Upadhyaya and Hridesh Rajan},
+  @inproceedings{ramu2020bcfa,
+    author = {Ramanathan Ramu and Ganesha Upadhyaya and Hoan Nguyen and Hridesh Rajan},
     title = {BCFA: Bespoke Control Flow Analysis for CFA at Scale},
     booktitle = {ICSE'20: The 42th International Conference on Software Engineering},
     location = {Seoul, South Korea},
