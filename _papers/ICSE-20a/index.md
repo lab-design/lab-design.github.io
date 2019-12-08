@@ -1,32 +1,47 @@
 ---
 key: ICSE-20a
 permalink: /papers/ICSE-20a/
-short_name: ICSE '20
-title: Repairing Deep Neural Networks: Fix Patterns and Challenges
+short_name: ICSE '18
+title: Collective Program Analysis
 bib: |
-  @inproceedings{islam20repairing,
-    author = {Md Johirul Islam and  Rangeet Pan and Giang Nguyen and Hridesh Rajan},
-    title = {Repairing Deep Neural Networks: Fix Patterns and Challenges},
-    booktitle = {ICSE'20: The 42th International Conference on Software Engineering},
-    location = {Seoul, South Korea},
-    month = {May 23-May 29, 2020},
-    year = {2020},
+  @inproceedings{collective2018,
+    author = {Ganesha Upadhyaya and Hridesh Rajan},
+    title = {Collective Program Analysis},
+    booktitle = {ICSE'18: The 40th International Conference on Software Engineering},
+    location = {Gothenberg, Sweden},
+    month = {May 27-June 3, 2018},
+    year = {2018},
     entrysubtype = {conference},
     abstract = {
-      Significant interest in applying Deep Neural Network (DNN) has fueled the need to support engineering of software that uses DNNs.
-     Repairing software that uses DNNs is one such unmistakable SE need where automated tools could be very helpful; however,
-     we do not fully understand challenges to repairing and patterns that are utilized when manually repairing them. 
-     What challenges should automated repair tools address? What are the repair patterns whose automation could help developers?
-     Which repair patterns should be assigned a higher priority for automation? This work presents a comprehensive study of bug fix patterns to address these questions.
-     We have studied 415 repairs from StackOverflow and 555 repairs from GitHub for five popular deep learning libraries Caffe, Keras, TensorFlow, Theano, and Torch to understand challenges in repairs and bug repair patterns.
-     Our key findings reveal that DNN bug fix patterns are distinctive compared to traditional bug fix patterns; the most common bug fix patterns are fixing data dimension and
-    neural network connectivity; DNN bug fixes have the potential to introduce adversarial vulnerabilities; DNN bug fixes frequently introduce new bugs; and DNN bug localization, reuse of trained model, and coping with frequent
-    releases are major challenges faced by developers when fixing bugs. We also contribute a benchmark of 667 DNN (bug, repair) instances.
+      Popularity of data-driven software engineering has led to an increasing demand
+      on the infrastructures to support efficient execution of tasks that require
+      deeper source code analysis. While task optimization and parallelization are the
+      adopted solutions, other research directions are less explored.
+      We present collective program analysis (CPA), a technique for
+      scaling large scale source code analysis by leveraging analysis specific similarity.
+      Analysis specific similarity is about, whether two or more programs can be
+      considered similar for a given analysis.
+      The key idea of collective program analysis is to cluster programs based on
+      analysis specific similarity, such that running the analysis on one candidate
+      in each cluster is sufficient to produce the result for others.
+      For determining the analysis specific similarity and for clustering
+      analysis-equivalent programs, we use a sparse representation and a
+      canonical labeling scheme.
+      A sparse representation contains only the parts that are relevant for the
+      analysis and the canonical labeling helps with finding isomorphic sparse representations.
+      In a nutshell, two or more programs with same sparse representation must behave
+      similarly for the given analysis.
+      Our evaluation shows that for a variety of source code analysis tasks when run
+      on a large dataset of programs, our technique is able to achieve substantial
+      reduction in the analysis times; on average 69% when compared to baseline and
+      on average 36% when compared to a prior technique.
+      We also show that there exists a large amount of analysis-equivalent programs in
+      large datasets for variety of analysis.
     }
   }
 kind: conference
 download_link: bugrepair.pdf
-publication_year: 2020
+publication_year: 2018
 tags:
   - boa
 ---

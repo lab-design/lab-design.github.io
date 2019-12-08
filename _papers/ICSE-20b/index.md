@@ -1,34 +1,47 @@
 ---
 key: ICSE-20b
 permalink: /papers/ICSE-20b/
-short_name: ICSE '20
-title: BCFA: Bespoke Control Flow Analysis for CFA at Scale
+short_name: ICSE '18
+title: Collective Program Analysis
 bib: |
-  @inproceedings{ramu20bcfa,
-    author = {Ramanathan Ramu and Ganesha Upadhyaya and Hoan A Nguyen and Hridesh Rajan},
-    title = {BCFA: Bespoke Control Flow Analysis for CFA at Scale},
-    booktitle = {ICSE'20: The 42th International Conference on Software Engineering},
+  @inproceedings{collective2018,
+    author = {Ganesha Upadhyaya and Hridesh Rajan},
+    title = {Collective Program Analysis},
+    booktitle = {ICSE'18: The 40th International Conference on Software Engineering},
     location = {Gothenberg, Sweden},
-    month = {May 23-May 29, 2020},
-    year = {2020},
+    month = {May 27-June 3, 2018},
+    year = {2018},
     entrysubtype = {conference},
     abstract = {
-     Many data-driven software engineering tasks such as discovering programming patterns, mining API specifications, etc.,
-     perform source code analysis over control flow graphs (CFGs) at scale. Analyzing millions of CFGs can be expensive and
-     performance of the analysis heavily depends on the underlying CFG traversal strategy. State-of-the-art analysis frameworks use
-     a fixed traversal strategy. We argue that a single traversal strategy does not fit all kinds of analyses and CFGs and propose
-     bespoke control flow analysis (BCFA). Given a control flow analysis (CFA) and a large number of CFGs, BCFA selects the most
-     efficient traversal strategy for each CFG. BCFA extracts a set of properties of the CFA by analyzing the code of the CFA and
-     combines it with properties of the CFG, such as branching factor and cyclicity, for selecting the optimal traversal strategy. We
-     have implemented BCFA in Boa, and evaluated BCFA using a set of representative static analyses that mainly involve traversing
-     CFGs and two large datasets containing 287 thousand and 162 million CFGs. Our results show that BCFA can speedup the
-     large scale analyses by 1%-28%. Further, BCFA has low overheads; less than 0.2%, and low misprediction rate; less than
-     0.01%.
+      Popularity of data-driven software engineering has led to an increasing demand
+      on the infrastructures to support efficient execution of tasks that require
+      deeper source code analysis. While task optimization and parallelization are the
+      adopted solutions, other research directions are less explored.
+      We present collective program analysis (CPA), a technique for
+      scaling large scale source code analysis by leveraging analysis specific similarity.
+      Analysis specific similarity is about, whether two or more programs can be
+      considered similar for a given analysis.
+      The key idea of collective program analysis is to cluster programs based on
+      analysis specific similarity, such that running the analysis on one candidate
+      in each cluster is sufficient to produce the result for others.
+      For determining the analysis specific similarity and for clustering
+      analysis-equivalent programs, we use a sparse representation and a
+      canonical labeling scheme.
+      A sparse representation contains only the parts that are relevant for the
+      analysis and the canonical labeling helps with finding isomorphic sparse representations.
+      In a nutshell, two or more programs with same sparse representation must behave
+      similarly for the given analysis.
+      Our evaluation shows that for a variety of source code analysis tasks when run
+      on a large dataset of programs, our technique is able to achieve substantial
+      reduction in the analysis times; on average 69% when compared to baseline and
+      on average 36% when compared to a prior technique.
+      We also show that there exists a large amount of analysis-equivalent programs in
+      large datasets for variety of analysis.
     }
   }
 kind: conference
 download_link: bcfaMain.pdf
-publication_year: 2020
+publication_year: 2018
 tags:
   - boa
 ---
