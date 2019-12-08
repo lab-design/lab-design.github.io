@@ -1,16 +1,16 @@
 ---
 key: ICSE-20a
 permalink: /papers/ICSE-20a/
-short_name: ICSE '18
-title: Collective Program Analysis
+short_name: ICSE '20
+title: Repairing Deep Neural Networks: Fix Patterns and Challenges
 bib: |
-  @inproceedings{collective2018,
-    author = {Ganesha Upadhyaya and Hridesh Rajan},
-    title = {Collective Program Analysis},
-    booktitle = {ICSE'18: The 40th International Conference on Software Engineering},
-    location = {Gothenberg, Sweden},
-    month = {May 27-June 3, 2018},
-    year = {2018},
+  @inproceedings{islam20repair,
+    author = {Md Johirul Islam and Rangeet Pan and Giang Nguyen and Hridesh Rajan},
+    title = {Repairing Deep Neural Networks: Fix Patterns and Challenges},
+    booktitle = {ICSE'20: The 42th International Conference on Software Engineering},
+    location = {Seoul, South Korea},
+    month = {May 23-29, 2020},
+    year = {2020},
     entrysubtype = {conference},
     abstract = {
       Popularity of data-driven software engineering has led to an increasing demand
@@ -41,7 +41,7 @@ bib: |
   }
 kind: conference
 download_link: bugrepair.pdf
-publication_year: 2018
+publication_year: 2020
 tags:
   - boa
 ---
