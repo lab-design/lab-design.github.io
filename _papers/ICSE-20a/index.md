@@ -5,7 +5,7 @@ short_name: ICSE '20
 title: Repairing Deep Neural Networks: Fix Patterns and Challenges
 bib: |
   @inproceedings{islam20repairing,
-    author = {Md Johirul Islam, Rangeet Pan, Giang Nguyen and Hridesh Rajan},
+    author = {Md Johirul Islam and  Rangeet Pan and Giang Nguyen and Hridesh Rajan},
     title = {Repairing Deep Neural Networks: Fix Patterns and Challenges},
     booktitle = {ICSE'20: The 42th International Conference on Software Engineering},
     location = {Seoul, South Korea},
