@@ -1,37 +1,34 @@
 ---
-key: ICSE-18b
-permalink: /papers/ICSE-18b/
-short_name: ICSE '18
-title: Are Code Examples on an Online Q&A Forum Reliable? A Study of API Misuse on Stack Overflow
+key: ICSE-20b
+permalink: /papers/ICSE-20b/
+short_name: ICSE '20
+title: BCFA: Bespoke Control Flow Analysis for CFA at Scale
 bib: |
-  @inproceedings{ReliableQA2018,
-    author = {Tianyi Zhang and Ganesha Upadhyaya and Anastasia Reinhardt and Hridesh Rajan and Miryung Kim},
-    title = {Are Code Examples on an Online Q&A Forum Reliable? A Study of API Misuse on Stack Overflow},
-    booktitle = {ICSE'18: The 40th International Conference on Software Engineering},
+  @inproceedings{ramu20bcfa,
+    author = {Ramanathan Ramu and Ganesha Upadhyaya and Hoan A Nguyen and Hridesh Rajan},
+    title = {BCFA: Bespoke Control Flow Analysis for CFA at Scale},
+    booktitle = {ICSE'20: The 42th International Conference on Software Engineering},
     location = {Gothenberg, Sweden},
-    month = {May 27-June 3, 2018},
-    year = {2018},
+    month = {May 23-May 29, 2020},
+    year = {2020},
     entrysubtype = {conference},
     abstract = {
-     Programmers often consult an online Q&A forum such as Stack Overflow to learn new APIs. 
-     This paper presents an empirical study on the prevalence and severity of API misuse on Stack Overflow. 
-     To reduce manual assessment effort, we design Maple, an API usage mining approach 
-     that extracts patterns from over 380K Java repositories on GitHub and subsequently 
-     reports potential API usage violations in Stack Overflow posts.
-     We analyze 217,818 Stack Overflow posts using Maple and find that around 31% of them 
-     have potential API usage violations that may produce the symptoms such as program 
-     crashes and resource leaks. Such API misuse is caused by three main 
-     reasons---missing control constructs, missing or incorrect order of API calls, and 
-     incorrect guard conditions. Even the posts that are accepted as correct answers or 
-     upvoted by other programmers are not necessarily more reliable than other posts in 
-     terms of API misuse. This study result calls for a new human-in-the-loop approach 
-     to augment Stack Overflow code snippets and help the user consider better or 
-     alternative API usage.
+     Many data-driven software engineering tasks such as discovering programming patterns, mining API specifications, etc.,
+     perform source code analysis over control flow graphs (CFGs) at scale. Analyzing millions of CFGs can be expensive and
+     performance of the analysis heavily depends on the underlying CFG traversal strategy. State-of-the-art analysis frameworks use
+     a fixed traversal strategy. We argue that a single traversal strategy does not fit all kinds of analyses and CFGs and propose
+     bespoke control flow analysis (BCFA). Given a control flow analysis (CFA) and a large number of CFGs, BCFA selects the most
+     efficient traversal strategy for each CFG. BCFA extracts a set of properties of the CFA by analyzing the code of the CFA and
+     combines it with properties of the CFG, such as branching factor and cyclicity, for selecting the optimal traversal strategy. We
+     have implemented BCFA in Boa, and evaluated BCFA using a set of representative static analyses that mainly involve traversing
+     CFGs and two large datasets containing 287 thousand and 162 million CFGs. Our results show that BCFA can speedup the
+     large scale analyses by 1%-28%. Further, BCFA has low overheads; less than 0.2%, and low misprediction rate; less than
+     0.01%.
     }
   }
 kind: conference
-download_link: MapleICSE2018.pdf
-publication_year: 2018
+download_link: bcfaMain.pdf
+publication_year: 2020
 tags:
   - boa
 ---
