@@ -2,7 +2,7 @@
 key: ICSE-20a
 permalink: /papers/ICSE-20a/
 short_name: ICSE '20
-title: Repairing Deep Neural Networks Fix Patterns and Challenges
+title: Repairing Deep Neural Networks\: Fix Patterns and Challenges
 bib: |
   @inproceedings{islam20repairing,
     author = {Johirul Islam and Rangeet Pan and Giang Nguyen and Hridesh Rajan},
