@@ -2,7 +2,7 @@
 key: ICSE-20b
 permalink: /papers/ICSE-20b/
 short_name: ICSE '18
-title: BCFA: Bespoke Control Flow Analysis for CFA at Scale
+title: BCFA Bespoke Control Flow Analysis for CFA at Scale
 bib: |
   @inproceedings{collective2018,
     author = {Ganesha Upadhyaya and Hridesh Rajan},
