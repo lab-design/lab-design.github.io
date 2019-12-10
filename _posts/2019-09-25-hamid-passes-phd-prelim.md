@@ -1,5 +1,5 @@
 ---
-title: Hamid Bagheri PhD successfully passed preliminary exam
+title: Hamid Bagheri has successfully passed the PhD preliminary exam
 links:
 - {title: Event Link, link: "https://www.cs.iastate.edu/phd-prelim-hamid-bagheri" }
 ---
