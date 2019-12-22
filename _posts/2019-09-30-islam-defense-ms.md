@@ -1,12 +1,12 @@
 ---
-title: Md Johirul Islam defends MS
+title: Md Johirul Islam defends MS thesis
 links:
 - {title: Event Link, link: "https://www.cs.iastate.edu/ms-defense-md-johirul-islam" }
 ---
 
 
 
-Md Johirul Islam has successfully defended the Masters of Science degree.
+Md Johirul Islam has successfully defended his Masters of Science thesis.
 The thesis abstract:
 
 <EM>

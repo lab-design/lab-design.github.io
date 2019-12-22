@@ -1,5 +1,5 @@
 ---
-title: Samantha-Syed Khairunnesa has successfully passed the PhD preliminary exam
+title: Samantha-Syed Khairunnesa has successfully passed her PhD preliminary exam
 links:
 - {title: Event Link, link: "https://www.cs.iastate.edu/phd-prelim-samantha-syed-khairunnesa" }
 ---

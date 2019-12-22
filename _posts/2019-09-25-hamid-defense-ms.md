@@ -1,12 +1,12 @@
 ---
-title: Hamid Bagheri defends MS
+title: Hamid Bagheri defends MS thesis
 links:
 - {title: Event Link, link: "https://www.cs.iastate.edu/ms-defense-hamid-bagheri" }
 ---
 
 
 
-Hamid Bagheri has successfully defended the Masters of Science degree.
+Hamid Bagheri has successfully defended his Masters of Science degree.
 The thesis abstract:
 
 <EM>
