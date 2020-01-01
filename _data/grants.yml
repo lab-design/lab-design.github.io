@@ -559,7 +559,7 @@
     scientists for grand challenges of the next decade, create unique data science
     capabilities for research and education, and leverage federal, state, local and
     private investments to facilitate shared and collaborative data-driven science.
-- key: grant-tripods
+- key: grant-nsf-tripods
   primary: true
   title: "HDR: TRIPODS: D4 (Dependable Data Driven Discovery) Institute,"
   start_date: 2019-10-01 #Roughly
