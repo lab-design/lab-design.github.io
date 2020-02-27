@@ -576,7 +576,7 @@
 - key: grant-nsf-tripods
   agency: NSF
   primary: true
-  title: "HDR: TRIPODS: D4 (Dependable Data Driven Discovery) Institute,"
+  title: "HDR: TRIPODS: D4 (Dependable Data Driven Discovery) Institute"
   start_date: 2019-10-01 #Roughly
   url: "http://tads.research.iastate.edu/"
   amount: $1,499,994
