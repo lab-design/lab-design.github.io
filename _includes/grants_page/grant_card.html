@@ -25,9 +25,9 @@
         {% endfor %}
       {% endif %}
       {% assign output = output | append: grant.title %}
-      {% if grant.key contains "nsf" %}
+      {% if grant.agency contains "NSF" %}
         {% assign output = output | append: ", US National Science Foundation (NSF) " %}
-      {% else if grant.key contains "vpr" %}
+      {% else if grant.agency contains "VPR" %}
         {% assign output = output | append: ", the ISU Office of the Vice President for Research (VPR) " %}
       {% endif %}
       {% assign start_date = grant.start_date | date: '%Y' %}
