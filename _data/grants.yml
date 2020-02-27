@@ -3,6 +3,7 @@
 #PI as non primary, which makes them non visible.
 
 - key: grant-nsf-0846059
+  agency: NSF
   primary: true
   title: "CAREER: On Mutualism of Modularity and Concurrency Goals"
   start_date: 2009-07-01
@@ -28,6 +29,7 @@
     essential elements of today's society, better and faster software will directly
     impact society.
 - key: grant-nsf-1518789
+  agency: NSF
   primary: false
   title: "SHF:Large:Collaborative Research: Inferring Software Specifications from Open Source Repositories by Leveraging Data and Collective Community Expertise"
   start_date: 2015-07-01
@@ -68,6 +70,7 @@
     engineering, and big data analytics; Contributions to research-based training of
     a cadre of scientists and engineers with expertise in high assurance software.
 - key: grant-nsf-1518732
+  agency: NSF
   primary: false
   title: "SHF:Large:Collaborative Research: Inferring Software Specifications from Open Source Repositories by Leveraging Data and Collective Community Expertise"
   start_date: 2015-07-01
@@ -108,6 +111,7 @@
     engineering, and big data analytics; Contributions to research-based training of
     a cadre of scientists and engineers with expertise in high assurance software.
 - key: grant-nsf-1513263
+  agency: NSF
   primary: true
   title: "CI-EN: Boa: Enhancing Infrastructure for Studying Software and its Evolution at a Large Scale"
   start_date: 2015-06-01
@@ -146,6 +150,7 @@
     entry and thus enabling a larger and more ambitious line of data-intensive
     scientific discovery in this area.
 - key: grant-nsf-1512947
+  agency: NSF
   primary: false
   title: "CI-EN: Boa: Enhancing Infrastructure for Studying Software and its Evolution at a Large Scale"
   start_date: 2015-06-01
@@ -183,6 +188,7 @@
     entry and thus enabling a larger and more ambitious line of data-intensive
     scientific discovery in this area.
 - key: grant-nsf-1423370
+  agency: NSF
   primary: true
   title: "SHF: Small: Capsule-oriented Programming"
   start_date: 2014-08-01
@@ -221,6 +227,7 @@
     maintainability of source code that they write, and on the scalability and
     correctness of software systems that they produce.
 - key: grant-nsf-1349153
+  agency: NSF
   primary: true
   title: "EAGER: Boa: A Community Research Infrastructure for Mining Software Repositories"
   start_date: 2013-09-01
@@ -258,6 +265,7 @@
     entry and thus enabling a larger and more ambitious line of data-intensive
     scientific discovery in this area.
 - key: grant-nsf-1117937
+  agency: NSF
   primary: true
   title: "SHF: Small: Phase-Based Tuning for Better Utilization of Performance-Asymmetric Multicores"
   start_date: 2011-08-01
@@ -293,6 +301,7 @@
     disciplines to analyze, model, simulate, and predict complex phenomena important
     to society.
 - key: grant-nsf-1017334
+  agency: NSF
   primary: true
   title: "SHF: Small: Collaborative Research: Balancing Expressiveness and Modular Reasoning for Aspect-oriented Programming"
   start_date: 2010-08-15
@@ -339,6 +348,7 @@
     languages will help software designers in deciding on advanced mechanisms for
     separation of concerns.
 - key: grant-nsf-1518897
+  agency: NSF
   primary: true
   title: "SHF: Large:Collaborative Research: Inferring Software Specifications from Open Source Repositories by Leveraging Data and Collective Community Expertise"
   start_date: 2015-07-01
@@ -380,6 +390,7 @@
     engineering, and big data analytics; Contributions to research-based training of
     a cadre of scientists and engineers with expertise in high assurance software.
 - key: grant-nsf-1518776
+  agency: NSF
   primary: false
   title: "SHF:Large:Collaborative Research: Inferring Software Specifications from Open Source Repositories by Leveraging Data and Collective Community Expertise"
   start_date: 2015-07-01
@@ -420,6 +431,7 @@
     engineering, and big data analytics; Contributions to research-based training of
     a cadre of scientists and engineers with expertise in high assurance software.
 - key: grant-nsf-0627354
+  agency: NSF
   primary: true
   title: "CT-ISG: Specification and Verification Challenges for Security Protocols in Sensor Networks"
   start_date: 2006-09-01
@@ -454,6 +466,7 @@
     scientists in programming languages, software engineering, computer networks,
     and most importantly enhanced computer security.
 - key: grant-nsf-0709217
+  agency: NSF
   primary: true
   title: "Collaborative Research: CRI: CRD: A JML Community Infrastructure -- Revitalizing Tools and Documentation to Aid Formal Methods Research"
   start_date: 2007-07-15
@@ -502,6 +515,7 @@
     undergraduate research,. The collaborative involves two minority-serving
     institutions and an institution in an EPSCoR state.
 - key: grant-vpr-sdsi
+  agency: VPR
   primary: true
   title: "Bridging the Digital Divide in Data Science: Invention and Refinement of Shared Data Science Infrastructures"
   start_date: 2016-09-20 #Roughly
@@ -560,6 +574,7 @@
     capabilities for research and education, and leverage federal, state, local and
     private investments to facilitate shared and collaborative data-driven science.
 - key: grant-nsf-tripods
+  agency: NSF
   primary: true
   title: "HDR: TRIPODS: D4 (Dependable Data Driven Discovery) Institute,"
   start_date: 2019-10-01 #Roughly
