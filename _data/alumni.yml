@@ -104,6 +104,12 @@
 
 # B.S. Graduates
 
+- name: Nathaniel M Wernimont
+  status: B.S. Spring'20
+  email: natew@iastate.edu
+  site: http://design.cs.iastate.edu
+  img: nwernimont.jpg
+
 - name: Robert H Schmidt
   status: B.S. Spring'19
   email: robert2@iastate.edu
