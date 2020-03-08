@@ -61,12 +61,6 @@
   site: http://www.cs.iastate.edu/people/samantha-syed-khairunnesa
   img: skhairunnesa.jpg
 
-- name: Eric Y Lin
-  status: PhD
-  email: eylin@iastate.edu
-  site: http://design.cs.iastate.edu
-  img: blank.png
-
 - name: Giang Nguyen
   status: PhD
   email: gnguyen@iastate.edu
@@ -78,12 +72,6 @@
   email: rangeet@iastate.edu
   site: http://www.cs.iastate.edu/people/rangeet-pan
   img: pan.jpg
-
-- name: Hung Phan
-  status: PhD
-  email: hungphd@iastate.edu
-  site: http://www.cs.iastate.edu/people/hung-dang-phan
-  img: hphan.jpg
 
 - name: Mohammad Wardat
   status: PhD
