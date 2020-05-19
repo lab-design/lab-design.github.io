@@ -2,42 +2,18 @@
 key: ESEC-FSE-20a
 permalink: /papers/ESEC-FSE-20a/
 short_name: ESEC-FSE '20
-title: Repairing Deep Neural Networks Fix Patterns and Challenges
+title: Do the Machine Learning Models on a Crowd Sourced Platform Exhibit Bias? An Empirical Study on Model Fairness
 bib: |
-  @inproceedings{islam20repairing,
-    author = {Md Johirul Islam and Rangeet Pan and Giang Nguyen and Hridesh Rajan},
-    title = {Repairing Deep Neural Networks: Fix Patterns and Challenges},
-    booktitle = {ICSE'20: The 42nd International Conference on Software Engineering},
-    location = {Seoul, South Korea},
-    month = {May 23-May 29, 2020},
+  @inproceedings{biswas20machine,
+    author = {Sumon Biswas and Hridesh Rajan},
+    title = {Do the Machine Learning Models on a Crowd Sourced Platform Exhibit Bias? An Empirical Study on Model Fairness},
+    booktitle = {ESEC/FSE'2020: The 28th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering},
+    location = {Sacramento, California, United States},
+    month = {November 8-November 13, 2020},
     year = {2020},
     entrysubtype = {conference},
     abstract = {
-      Significant interest in applying Deep Neural Network (DNN)
-      has fueled the need to support engineering of software that
-      uses DNNs.
-      Repairing software that uses DNNs is one such unmistakable SE
-      need where automated tools could be very helpful; however,
-      we do not fully understand challenges to repairing and
-      patterns that are utilized when manually repairing them.
-      What challenges should automated repair tools address?
-      What are the repair patterns whose automation could help
-      developers? Which repair patterns should be assigned a
-      higher priority for automation?
-      This work presents a comprehensive study of bug fix patterns
-      to address these questions.
-      We have studied 415 repairs from Stack Overflow and 555 repairs from
-      GitHub for five popular deep learning libraries Caffe, Keras,
-      Tensorflow, Theano, and Torch to understand challenges in
-      repairs and bug repair patterns.
-      Our key findings reveal that
-      DNN bug fix patterns are distinctive compared to traditional bug fix patterns;  
-      the most common bug fix patterns are fixing data dimension and neural network connectivity;
-      DNN bug fixes have the potential to introduce adversarial vulnerabilities;
-      DNN bug fixes frequently introduce new bugs; and
-      DNN bug localization, reuse of trained model, and coping with frequent releases
-      are major challenges faced by developers when fixing bugs.
-      We also contribute a benchmark of 667 DNN (bug, repair) instances.
+      Machine learning models are increasingly being used in important decision-making software such as approving bank loans, recommending criminal sentencing, hiring candidates, and so on. It is important to ensure the fairness of these models so that no discrimination is made between different groups in a protected attribute (e.g., race, sex, age) while decision making. Algorithms have been developed to measure fairness and mitigate them to a certain extent. In this paper, we have focused on the empirical evaluation of fairness and mitigations on real-world machine learning models. We have created a benchmark of 40 top-rated models from Kaggle used for 5 different tasks, and then using a comprehensive set of fairness metrics evaluated their fairness. Then, we have applied 7 mitigation techniques on these models and analyzed the unfairness, mitigation results, and impacts on performance. We have found that some model optimization techniques result in inducing unfairness in the models. On the other hand, although there are some fairness control mechanisms in machine learning libraries, they are not documented. The mitigation algorithm also exhibit common patterns such as mitigation in the post-processing is often costly (in terms of performance) and mitigation in the pre-processing stage is preferred in most cases. We have also presented different trade-off choices of fairness mitigation decisions. Our study suggests future research directions to reduce the gap between theoretical fairness aware algorithms and the software engineering methods to leverage them in practice.
 
     }
   }
