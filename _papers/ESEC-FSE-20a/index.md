@@ -1,7 +1,7 @@
 ---
-key: ICSE-20a
-permalink: /papers/ICSE-20a/
-short_name: ICSE '20
+key: ESEC-FSE-20a
+permalink: /papers/ESEC-FSE-20a/
+short_name: ESEC-FSE '20
 title: Repairing Deep Neural Networks Fix Patterns and Challenges
 bib: |
   @inproceedings{islam20repairing,
@@ -42,7 +42,7 @@ bib: |
     }
   }
 kind: conference
-download_link: bugrepair.pdf
+download_link: ml-fairness.pdf
 publication_year: 2020
 tags:
   - boa
