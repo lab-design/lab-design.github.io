@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/design.css">
+    <link rel="icon" href="/favicon.ico">
+    <title></title>
+  </head>
+
+  <body>
+    <!-- Load jQuery before the content in order to support the papers page sorting -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <header>
+
+  <div class="brand-bg-color">
+    <div class="container">
+      <div class="brand-navbar">
+        <div class="row">
+          <div class="flex-separate col-12">
+            <a href="/" class="nav-link">
+              <span id="isu-logo">Iowa State University</span>
+              <span class="d-none d-sm-block">Laboratory for Software Design</span>
+              <span class="small d-block d-sm-none">Laboratory for Software Design</span>
+            </a>
+            <button class="navbar-toggler d-block d-sm-none" type="button" data-toggle="collapse" data-target="#collapseNav">&#9776;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-bg-color">
+    <nav class="container navbar navbar-dark navbar-expand-sm">
+      <div class="collapse navbar-collapse" id="collapseNav">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="/projects.html">Projects</a>
+          <a class="nav-item nav-link" href="/papers/">Papers</a>
+          <a class="nav-item nav-link" href="/grants/">Grants</a>
+          <a class="nav-item nav-link" href="/news/">News</a>
+          <a class="nav-item nav-link" href="/people.html">People</a>
+          <a class="nav-item nav-link" href="/about/">About</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+</header>
+
+
+<main class="container">
+  <br />
+  <div class="row">
+  <div class="col-12">
+    <h2 class="page-title"></h2>
+    
+<div id="projects-markdown-toc">
+<ol id="markdown-toc">
+  <li><a href="#active-research-projects" id="markdown-toc-active-research-projects">Active Research Projects</a>    <ol>
+      <li><a href="#Panini" id="markdown-toc-Panini">Panini</a></li>
+      <li><a href="#Boa" id="markdown-toc-Boa">Boa</a></li>
+      <li><a href="#Ptolemy" id="markdown-toc-Ptolemy">Ptolemy</a></li>
+    </ol>
+  </li>
+  <li><a href="#past-research-projects" id="markdown-toc-past-research-projects">Past Research Projects</a>    <ol>
+      <li><a href="#Eos" id="markdown-toc-Eos">Eos</a></li>
+      <li><a href="#Frances" id="markdown-toc-Frances">Frances</a></li>
+      <li><a href="#Nu" id="markdown-toc-Nu">Nu</a></li>
+      <li><a href="#Sapha" id="markdown-toc-Sapha">Sapha</a></li>
+      <li><a href="#Slede" id="markdown-toc-Slede">Slede</a></li>
+      <li><a href="#Tisa" id="markdown-toc-Tisa">Tisa</a></li>
+      <li><a href="#Osiris" id="markdown-toc-Osiris">Osiris</a></li>
+    </ol>
+  </li>
+</ol>
+
+</div>
+
+<h2 class="research-header" id="active-research-projects">Active Research Projects</h2>
+
+<div id="link-Panini" class="project-header space-above">
+  <a class="no_toc" href="http://web.cs.iastate.edu/~panini/" id="Panini">
+    <h3>
+      Panini
+    </h3>
+  </a>
+</div>
+<div>
+  <h3 id="Panini" class="no-display">Panini</h3>
+</div>
+
+<p>The Panini project is developing the capsule-oriented programming model.
+This model is aimed at making concurrent software
+development easier by providing two properties: (1) given a module it ought to
+be possible to statically, and modularly identify all points in its code where
+other modules might interfere (interference points), and (2) given a module and
+the interfaces of other modules, that the subject module interacts with, it
+ought to be possible to statically and modularly construct an upper bound on the
+behavior of all potentially interferring tasks at each interference point. We
+show that if a programming model has these two properties, then it is possible
+to modularly reason about concurrent programs in that model. By the first
+property, humans and tools can identify points where interference from other
+concurrent tasks must be considered. By the second property, the computed upper
+bound can be used for reasoning instead of needing the implementation of
+interferring modules. Compared to alternatives, where reasoning either becomes a
+global process or entails a global step, modular reasoning afforded by this
+programming model makes both manual and automated reasoning about concurrent
+software more scalable.</p>
+
+<p>Following research papers document progress on this project:</p>
+
+<ul>
+
+  <li><a href="/papers/FSE-18/">FSE '18</a></li>
+
+  <li><a href="/papers/thesis/LongPhDThesis.html">Long PhD Thesis</a></li>
+
+  <li><a href="/papers/thesis/LinMSThesis.html">Lin MS Thesis</a></li>
+
+  <li><a href="/papers/thesis/BagherzadehPhDThesis.html">Bagherzadeh PhD Thesis</a></li>
+
+  <li><a href="/papers/OOPSLA16/">OOPSLA '16</a></li>
+
+  <li><a href="/papers/MODULARITY16b/">Modularity '16</a></li>
+
+  <li><a href="/papers/MODULARITY16a/">Modularity '16</a></li>
+
+  <li><a href="/papers/thesis/UpadhayayaMSThesis.html">Upadhayaya MS Thesis</a></li>
+
+  <li><a href="/papers/thesis/MooneyMSThesis.html">Mooney MS Thesis</a></li>
+
+  <li><a href="/papers/OOPSLA-15/">OOPSLA '15</a></li>
+
+  <li><a href="/papers/MODULARITY-15/">Modularity '15</a></li>
+
+  <li><a href="/papers/ICSE-15a/">ICSE '15 (NIER)</a></li>
+
+  <li><a href="/papers/ECOOP-15/">ECOOP '15</a></li>
+
+  <li><a href="/papers/AGERE-14/">AGERE '14</a></li>
+
+  <li><a href="/papers/thesis/LongMSThesis.html">Long MS Thesis</a></li>
+
+  <li><a href="/papers/ONWARD-10/">Onward! '10</a></li>
+
+  <li><a href="/papers/GPCE-10/">GPCE '13</a></li>
+
+  <li><a href="/papers/FoSER-10/">FoSER '10</a></li>
+
+</ul>
+
+<p>We have created two software systems that support this programming model so far:</p>
+
+<ul>
+  <li>an extension of Java (and the reference compiler <code class="highlighter-rouge">javac</code>) that we call
+<a href="http://web.cs.iastate.edu/~panini/">PaniniJ</a>, and</li>
+  <li>an annotation-based framework that uses annotation processing facilities,
+instead of syntax extensions, that we call <a href="https://paninij.github.io">@PaniniJ</a>.</li>
+</ul>
+
+<p>PI Rajan and students on the Panini project thank the US National Science
+Foundation for supporting our work under following grants:</p>
+
+<ul>
+  <li>
+    <p>US National Science Foundation, <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1423370">SHF:Small: Capsule-oriented Programming</a>.
+PI: Hridesh Rajan (2014-2017), Award amount: $450,098.</p>
+  </li>
+  <li>
+    <p>US National Science Foundation, <a href="https://www.nsf.gov/awardsearch/showAward.do?AwardNumber=0846059">CAREER:On Mutualism of Modularity and Concurrency Goals</a>.
+PI: Hridesh Rajan (2009-2016), Award amount: $565,935.</p>
+  </li>
+  <li>
+    <p>US National Science Foundation, <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1117937">SHF:Small:Phase-Based Tuning for Better Utilization of Performance-Asymmetric Multicores</a>. PI: Hridesh Rajan
+(2011-2016), Award amount: $416,000.</p>
+  </li>
+</ul>
+
+<p><a href="http://www.paninij.org">More information about the Panini project</a></p>
+
+<div id="link-Boa" class="project-header space-above">
+  <a class="no_toc" href="http://boa.cs.iastate.edu" id="Boa">
+    <h3>
+      Boa
+    </h3>
+  </a>
+</div>
+<div>
+  <h3 id="Boa" class="no-display">Boa</h3>
+</div>
+
+<p><a href="http://boa.cs.iastate.edu">Boa</a> project is applying big data analytics toward
+improving software engineering. It is developing a domain-specific language and
+its infrastructure whose goal is to significantly ease the experimental cost of
+mining ultra-large-scale open source repositories. Boa is a research
+infrastructure that consists of a domain-specific language, its compiler and
+data updating tools, terabytes (and growing) of raw data from open source
+repositories that contains hundreds of thousands of open source projects, a
+backend based on map-reduce to effectively analyze this dataset, a compute
+cluster, and a web-based frontend for writing analysis programs. Following
+research papers document progress on this project:</p>
+
+<ul>
+
+<li><a href="/papers/ICSE-20b/">ICSE '20</a></li>
+
+<li><a href="/papers/ICSE-20a/">ICSE '20</a></li>
+
+<li><a href="/papers/ESEC-FSE-20b/">ESEC-FSE '20</a></li>
+
+<li><a href="/papers/ESEC-FSE-20a/">ESEC-FSE '20</a></li>
+
+<li><a href="/papers/MSR-19/">MSR '19</a></li>
+
+<li><a href="/papers/ESEC-FSE-19/">ESEC-FSE '19</a></li>
+
+<li><a href="/papers/BMC-19/">BMC Bioinformatics '19</a></li>
+
+<li><a href="/papers/thesis/UpadhayayaPhDThesis.html">Upadhayaya PhD Thesis</a></li>
+
+<li><a href="/papers/TSE-18/">TSE '18</a></li>
+
+<li><a href="/papers/ICSE-18b/">ICSE '18</a></li>
+
+<li><a href="/papers/ICSE-18a/">ICSE '18</a></li>
+
+<li><a href="/papers/thesis/TiwariMSThesis.html">Tiwari MS Thesis</a></li>
+
+<li><a href="/papers/OOPSLA-17/">OOPSLA '17</a></li>
+
+<li><a href="/papers/MSR-17/">MSR '17</a></li>
+
+<li><a href="/papers/ICSE-NIER-17b/">ICSE '17 (NIER)</a></li>
+
+<li><a href="/papers/ICSE-NIER-17a/">ICSE '17 (NIER)</a></li>
+
+<li><a href="/papers/TOSEM-15/">TOSEM '15</a></li>
+
+<li><a href="/papers/ICSE-15b/">ICSE '15 (NIER)</a></li>
+
+<li><a href="/papers/BoaBook-15/">BoaBook '15</a></li>
+
+<li><a href="/papers/ICSE-14/">ICSE '14</a></li>
+
+<li><a href="/papers/FSE-14/">FSE '14</a></li>
+
+<li><a href="/papers/thesis/DyerPhDThesis.html">Dyer PhD Thesis</a></li>
+
+<li><a href="/papers/SPLASH-13-src/">SPLASH '13 (SRC)</a></li>
+
+<li><a href="/papers/ICSE-13/">ICSE '13</a></li>
+
+<li><a href="/papers/GPCE-13/">GPCE '13</a></li>
+
+<li><a href="/papers/ASE-13/">ASE '13</a></li>
+
+<li><a href="/papers/SPLASH-12-poster/">SPLASH '12 (Poster)</a></li>
+
+<li><a href="/papers/ACoM-2008/">ACoM '08</a></li>
+
+</ul>
+
+<p>Boa project has been supported in part by the following grants.</p>
+
+<ul>
+  <li>
+    <p>US National Science Foundation, CI-EN: Boa: Enhancing Infrastructure for
+Studying Software and its Evolution at a Large Scale. PI: Hridesh Rajan and
+Co-I: Tien Nguyen, Robert Dyer (2015-2018), Total award amount: $1,559,806,
+Links: <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1513263">ISU</a> and
+<a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1512947">BGSU</a>.</p>
+  </li>
+  <li>
+    <p>US National Science Foundation, SHF: Large:Collaborative Research: Inferring
+Software Specifications from Open Source Repositories by Leveraging Data and
+Collective Community Expertise. PI: Hridesh Rajan and Co-I: Robert Dyer, Tien
+Nguyen, Gary T. Leavens, and Vasant Honavar (2015-2018), Total award amount:
+$1,604,843, Links: <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1518897">ISU</a>,
+<a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1518776">BGSU</a>,
+<a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1518789">UCF</a>, and
+<a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1518732">PSU</a>.</p>
+  </li>
+  <li>
+    <p>US National Science Foundation, <a href="https://www.nsf.gov/awardsearch/showAward.do?AwardNumber=1349153">EAGER: Boa: A Community Research Infrastructure for Mining Software Repositories</a>.
+PI: Hridesh Rajan and Co-I: Tien Nguyen (2013-2015).</p>
+  </li>
+</ul>
+
+<p><a href="http://boa.cs.iastate.edu">More information about the Boa project.</a></p>
+
+<div id="link-Ptolemy" class="project-header space-above">
+  <a class="no_toc" href="http://ptolemy.cs.iastate.edu" id="Ptolemy">
+    <h3>
+      Ptolemy
+    </h3>
+  </a>
+</div>
+<div>
+  <h3 id="Ptolemy" class="no-display">Ptolemy</h3>
+</div>
+
+<p>A software is created to satisfy user needs (also called concerns). These
+concerns may change often and unanticipatedly. On a concern change, the parts of
+the software called modules, responsible for that concern must also be revised.
+A module revision incurs costs and may introduce new errors. It is thus
+desirable to minimize module revisions. Some concerns, called crosscutting
+concerns e.g. security, fault tolerance, accountability, etc; have systemic
+effect. If many modules are responsible for such a concern, a change in it could
+trigger costly and error-prone systemic module revisions. Advanced separation of
+concerns mechanisms help avert these systemic revisions.</p>
+
+<p><a href="http://ptolemy.cs.iastate.edu">Ptolemy</a> project is designing an event-based
+language whose goal is to enable more modular reasoning about advanced
+separation of concerns mechanisms such as implicit invocation and aspects.
+Ptolemy provides quantified-typed events that act as an interface between
+modules. A key benefit of quantified-typed events is that they allow programmers
+to write new kinds of contracts that we call translucid contracts, which enables
+modular reasoning about modules that announce events and those that listen to
+events.</p>
+
+<p>Following research papers document progress on this project:</p>
+
+<ul>
+
+<li><a href="/papers/TOMC-16/">TOMC '16</a></li>
+
+<li><a href="/papers/MODULARITY-15b/">Modularity '15</a></li>
+
+<li><a href="/papers/TAOSD-13/">TAOSD '13</a></li>
+
+<li><a href="/papers/AOSD-13/">Modularity '13</a></li>
+
+<li><a href="/papers/FOAL-12/">FOAL '12</a></li>
+
+<li><a href="/papers/AOSD-12/">AOSD '12</a></li>
+
+<li><a href="/papers/thesis/BagherzadehMSThesis.html">Bagherzadeh MS Thesis</a></li>
+
+<li><a href="/papers/FOAL-11/">FOAL '11</a></li>
+
+<li><a href="/papers/AOSD-11/">AOSD '11</a></li>
+
+<li><a href="/papers/FOAL-10/">FOAL '10</a></li>
+
+<li><a href="/papers/ESCOT-10/">ESCOT '10</a></li>
+
+<li><a href="/papers/TOSEM-09/">TOSEM '09</a></li>
+
+<li><a href="/papers/thesis/SettyMSThesis.html">Setty MS Thesis</a></li>
+
+<li><a href="/papers/ECOOP-2008/">ECOOP '08</a></li>
+
+<li><a href="/papers/Software-2006/">IEEE Software '06</a></li>
+
+<li><a href="/papers/ESEC-FSE-2005/">ESEC/FSE '05</a></li>
+
+</ul>
+
+<p>Ptolemy project has been supported in part by the following grant.</p>
+
+<p>US National Science Foundation, <a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1017334">SHF:Small:Balancing Expressiveness and Modular Reasoning for Aspect-oriented Programming</a>.
+PI: Hridesh Rajan (2010 - 2013).</p>
+
+<p><a href="http://ptolemy.cs.iastate.edu">More information about the Ptolemy project</a>.</p>
+
+<h2 class="research-header" id="past-research-projects">Past Research Projects</h2>
+
+<div id="link-Eos" class="project-header space-above">
+  <a class="no_toc" href="http://web.cs.iastate.edu/~eos/" id="Eos">
+    <h3>
+      Eos
+    </h3>
+  </a>
+</div>
+<div>
+  <h3 id="Eos" class="no-display">Eos</h3>
+</div>
+
+<p>Eos is a unified aspect-oriented extension for C# on Microsoft® .NET Framework™.
+Eos unifies aspects and objects as classpects. The unified language model
+improves the conceptual integrity of the language design and the
+compositionality of aspect modules to better support hierarchical advising
+structures.</p>
+
+<ul>
+
+<li><a href="/papers/TOSEM-08/">TOSEM '08</a></li>
+
+<li><a href="/papers/PLOP-2007/">PLoP '07</a></li>
+
+<li><a href="/papers/ICSE-2005/">ICSE '05</a></li>
+
+<li><a href="/papers/AOSD-2005/">AOSD '05</a></li>
+
+<li><a href="/papers/ICSE-2004/">ICSE '04 - DS</a></li>
+
+<li><a href="/papers/ASE-04/">ASE '04</a></li>
+
+<li><a href="/papers/ESEC-FSE-2003/">ESEC/FSE '03</a></li>
+
+</ul>
+
+<div id="link-Frances" class="project-header space-above">
+  <a class="no_toc" href="http://web.cs.iastate.edu/~sapha/tools/frances/" id="Frances">
+    <h3>
+      Frances
+    </h3>
+  </a>
+</div>
+<div>
+  <h3 id="Frances" class="no-display">Frances</h3>
+</div>
+
+<p>The Frances project produces tools for teaching topics related to code
+generation and mapping high-level languages to low-level langages. First,
+Frances is designed to help teach code generation and assembly language. Second,
+Frances-A is designed to help teach computer architecture, assembly language,
+and how high-level code actually executes on a system.</p>
+
+<ul>
+
+</ul>
+
+<div id="link-Nu" class="project-header space-above">
+  <a class="no_toc" href="http://web.cs.iastate.edu/~nu/" id="Nu">
+    <h3>
+      Nu
+    </h3>
+  </a>
+</div>
+<div>
+  <h3 id="Nu" class="no-display">Nu</h3>
+</div>
+
+<p>The Nu (pronounced new) project is exploring intermediate language design and
+corresponding virtual machine extensions to better support new features of
+aspect-oriented languages. The potential impacts of this project include better
+compatibility with the existing tool chain, better run-time performance, cross
+AO language compatibility, improved pointcut expressivity, efficient run-time
+weaving support, etc.</p>
+
+<ul>
+
+<li><a href="/papers/FASE-11/">FASE '11</a></li>
+
+<li><a href="/papers/TOSEM-09-NU/">TOSEM '09</a></li>
+
+<li><a href="/papers/thesis/DyerMSThesis.html">Dyer MS Thesis</a></li>
+
+<li><a href="/papers/VMIL-2008/">VMIL '08</a></li>
+
+<li><a href="/papers/AOSD-2008/">AOSD '08</a></li>
+
+<li><a href="/papers/VMIL-2007/">VMIL '07</a></li>
+
+<li><a href="/papers/SPLAT-06/">SPLAT '06</a></li>
+
+<li><a href="/papers/FSE-2006/">FSE '06 (Poster)</a></li>
+
+</ul>
+
+<div id="link-Sapha" class="project-header space-above">
+  <a class="no_toc" href="http://web.cs.iastate.edu/~sapha/" id="Sapha">
+    <h3>
+      Sapha
+    </h3>
+  </a>
+</div>
+<div>
+  <h3 id="Sapha" class="no-display">Sapha</h3>
+</div>
+
+<p>As multi-core processors are becoming common, vendors are starting to explore
+trade offs between the die size and the number of cores on a die, leading to
+heterogeneity among cores on a single chip. For efficient utilization of these
+processors, application threads must be assigned to cores such that the resource
+needs of a thread closely matches resource availability at the assigned core.
+Current methods of thread-to-core assignment often require an application’s
+execution trace to determine it’s runtime properties. These traces are obtained
+by running the application on some representative input. A problem is that
+developing these representative input sets is time consuming, and requires
+expertise that the user of a general-purpose processor may not have. In this
+project, we are designing, implementing and evaluating automatic thread-to-core
+assignment techniques for heterogeneous multi-core processors that will enhance
+the utilization of these processors.</p>
+
+<ul>
+
+<li><a href="/papers/TOCE-12/">TOCE '12</a></li>
+
+<li><a href="/papers/thesis/SondagPhDThesis.html">Sondag PhD Thesis</a></li>
+
+<li><a href="/papers/CGO-11/">CGO '11</a></li>
+
+<li><a href="/papers/CCSC-11/">CCSC '11</a></li>
+
+<li><a href="/papers/SIG-CSE-10/">SIGCSE '10</a></li>
+
+<li><a href="/papers/RTSS-10/">RTSS '10</a></li>
+
+<li><a href="/papers/CCSC-10/">CCSC '10</a></li>
+
+<li><a href="/papers/thesis/SondagMSThesis.html">Sondag MS Thesis</a></li>
+
+<li><a href="/papers/IW-MSE-09/">IW-MSE '09</a></li>
+
+<li><a href="/papers/PLOS-2007/">PLOS '07</a></li>
+
+</ul>
+
+<div id="link-Slede" class="project-header space-above">
+  <a class="no_toc" href="http://web.cs.iastate.edu/~slede/" id="Slede">
+    <h3>
+      Slede
+    </h3>
+  </a>
+</div>
+<div>
+  <h3 id="Slede" class="no-display">Slede</h3>
+</div>
+
+<p>The Slede project is looking at specification language design and supporting
+verification mechanisms for specifying and verifying cryptographic protocols for
+sensor networks. Applications of sensor networks are numerous from military to
+environmental research. By providing mechanisms to find cryptographic errors in
+the security protocols for sensor networks this research program is improving
+the reliability of these networks, making a direct impact on all areas where
+these networks are utilized.</p>
+
+<ul>
+
+<li><a href="/papers/ICFEM-10/">ICFEM '10</a></li>
+
+<li><a href="/papers/ESEC-FSE-09/">ESEC/FSE '09</a></li>
+
+<li><a href="/papers/thesis/HannaMSThesis.html">Hanna MS Thesis</a></li>
+
+<li><a href="/papers/WiSec-2008/">WiSec '08</a></li>
+
+<li><a href="/papers/SIGSOFT-SEN-06/">SIGSOFT SEN '06</a></li>
+
+</ul>
+
+<div id="link-Tisa" class="project-header space-above">
+  <a class="no_toc" href="http://web.cs.iastate.edu/~tisa/" id="Tisa">
+    <h3>
+      Tisa
+    </h3>
+  </a>
+</div>
+<div>
+  <h3 id="Tisa" class="no-display">Tisa</h3>
+</div>
+
+<p>The key notion in service-oriented architecture is decoupling clients and
+providers of a service based on an abstract service description, which is used
+by the service broker to point clients to a suitable service implementation. A
+client then sends service requests directly to the service implementation. A
+problem with the current architecture is that it does not provide trustworthy
+means for clients to specify, service brokers to verify, and service
+implementations to prove that certain desired non-functional properties are
+satisfied during service request processing. An example of such non-functional
+property is access and persistence restrictions on the data received as part of
+the service requests. In this project, we are developing an extension of the
+service-oriented architecture that provides these facilities. We are also
+developing a prototype implementation of this architecture that demonstrate the
+potential practical value of the proposed architecture in real-world software
+applications.</p>
+
+<ul>
+
+<li><a href="/papers/thesis/NarayanappaMSThesis.html">NarayanappaMSThesis</a></li>
+
+<li><a href="/papers/PASTE-10/">PASTE '10</a></li>
+
+<li><a href="/papers/ESOP-2009/">ESOP '09</a></li>
+
+<li><a href="/papers/SOC-08/">IEEE SOC '08</a></li>
+
+<li><a href="/papers/thesis/HosamaniMSThesis.html">Hosamani MS Thesis</a></li>
+
+<li><a href="/papers/NWeSP07/">NWeSP '07</a></li>
+
+<li><a href="/papers/IW-SOSWE-2007/">IW-SOSWE '07</a></li>
+
+</ul>
+
+<div id="link-Osiris" class="project-header space-above">
+  <a class="no_toc" href="http://design.cs.iastate.edu/projects/osiris/" id="Osiris">
+    <h3>
+      Osiris
+    </h3>
+  </a>
+</div>
+<div>
+  <h3 id="Osiris" class="no-display">Osiris</h3>
+</div>
+
+<p>Comprehending software is hard. As system complexity and size increases,
+existing approaches for program comprehension become less usable. Ironically,
+the need for these approaches increases with the size of the system. In the
+Osiris project, we are looking at approaches and tools for
+automatic/semi-automatic generation of concerns models from source code for
+better comprehension of large software systems.</p>
+
+  </div>
+  </div>
+  <br />
+</main>
+
+
+<footer>
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      },
+      i[r].l = 1 * new Date();
+      a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-512574-3', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <div class="container">
+    <div>
+      <div class="row">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-xs-12 col-lg-3 isu-logo-wrapper">
+              <a href="http://www.iastate.edu">
+                <img src="/img/isu-stacked.svg" alt="Iowa State University" class="isu-logo">
+              </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4">
+              <p>
+                <b>Laboratory for Software Design</b>
+              </p>
+              <p>115-2 Atanasoff Hall</p>
+              <p>Ames, IA, 50011-1040, USA</p>
+              <p>Phone: (515) 294-6168</p>
+              <p>E-Mail: hridesh@iastate.edu</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+              <p>
+                Copyright &copy;
+                2020
+                Iowa State University of Science and Technology. All rights reserved.<BR>
+                <div class="d-none d-lg-block" style="margin-top: 0">
+                  The research and educational activities described on these pages has been supported in part by the
+                  <a href="http://www.nsf.gov">US National Science Foundation (NSF)</a>.
+                </div>
+              </p>
+            </div>
+            <div class="col-md-3 col-lg-1 d-none d-md-block project-logos">
+              <div>
+                <a href="http://web.cs.iastate.edu/~panini/">
+                  <img src="/img/panini-logo.svg" class="logo" alt="Boa Logo">
+                  Panini
+                </div>
+                <div>
+                  <a href="http://boa.cs.iastate.edu">
+                    <img src="/img/boa-logo.svg" class="logo" alt="Boa Logo">
+                    Boa
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="/js/design.js"></script>
+  </body>
+</html>

@@ -1,0 +1,308 @@
+{
+  "apps": [
+    {
+      "name": "top-ten-commits",
+      "productName": "Top Ten Commits",
+      "version": "0.0.7",
+      "author": "Nitin Mukesh Tiwari <nmtiwari@iastate.edu>",
+      "description": "Displays top 10 commits based on number of files changed as a bar chart.",
+      "main": "main.html",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/candoia/top-ten-commits"
+      },
+      "icon": {
+        "type": "fa",
+        "name": "certificate"
+      }
+    },
+    {
+      "name": "hot-files",
+      "productName": "Hot files",
+      "version": "0.1.0",
+      "author": "Ganesha Upadhyaya<ganeshau@iastate.edu>",
+      "description": "Shows top 10 hot files based on number of revisions.",
+      "main": "main.html",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/candoia/hot-files"
+      },
+      "icon": {
+        "type": "fa",
+        "name": "fire"
+      }
+    },
+    {
+      "name": "constant-enforcer",
+      "productName": "Constant Enfrocer",
+      "version": "0.1.0",
+      "author": "Nitin Mukesh Tiwari <nmtiwari@iastate.edu>",
+      "description": "Reports and visualizes number of Static fields which are not Final.",
+      "main": "main.html",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/candoia/constant-enforcer"
+      },
+      "icon": {
+        "type": "fa",
+        "name": "shield"
+      }
+    },
+    {
+      "name": "wontfix-bug-detector",
+      "productName": "WontFix Bug Detector",
+      "version": "0.1.0",
+      "author": "Nitin Mukesh Tiwari <nmtiwari@iastate.edu>",
+      "description": "Shows number of WontFix bugs in Project.",
+      "main": "main.html",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/candoia/WontFix-Bug-Detector"
+      },
+      "icon": {
+        "type": "fa",
+        "name": "bug"
+      }
+    },
+    {
+      "name": "null-checks",
+      "productName": "Null Checks",
+      "version": "0.1.0",
+      "author": "Nitin Mukesh Tiwari <nmtiwari@iastate.edu>",
+      "description": "Counts number of null checking fixing revisions.",
+      "main": "main.html",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/candoia/null-checks"
+      },
+      "icon": {
+        "type": "fa",
+        "name": "ban"
+      }
+    },
+    {
+      "name": "noi-over-issues",
+      "productName": "NOI over Issues",
+      "version": "0.1.0",
+      "author": "Nitin Mukesh Tiwari <nmtiwari@iastate.edu>",
+      "description": "Displays Number of Issues per Issue type in Projects.",
+      "main": "main.html",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/candoia/noi-over-issueTypes"
+      },
+      "icon": {
+        "type": "fa",
+        "name": "ticket"
+      }
+    },
+    {
+      "name": "commit-police",
+      "productName": "Commit Police",
+      "version": "0.1.0",
+      "author": "Nitin Mukesh Tiwari <nmtiwari@iastate.edu>",
+      "description": "Checks and identifies developers writing empty or one word commit logs, e.g. fixed.",
+      "main": "main.html",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/candoia/commit-police"
+      },
+      "icon": {
+        "type": "fa",
+        "name": "bullhorn"
+      }
+    },
+    {
+      "name": "impactful-commits",
+      "productName": "Impactful Commits",
+      "version": "0.1.0",
+      "author": "Nitin Mukesh Tiwari <nmtiwari@iastate.edu>",
+      "description": "Lists commits that involved a large number of files.",
+      "main": "main.html",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/candoia/impactful-commits"
+      },
+      "icon": {
+      "type": "fa",
+      "name": "balance-scale"
+      }
+    },
+    {
+      "name": "flawed-logic",
+      "productName": "Flawed Logic",
+      "version": "0.1.0",
+      "author": "Nitin Mukesh Tiwari <nmtiwari@iastate.edu>",
+      "description": "Displays the number of instances of if-else logic, where depth is greater than 10.",
+      "main": "main.html",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/candoia/flawed-logic-detector"
+      },
+      "icon": {
+        "type": "fa",
+        "name": "crosshairs"
+      }
+    },
+    {
+      "name": "serialization-police",
+      "productName": "Serialization Police",
+      "version": "0.1.0",
+      "author": "Nitin Mukesh Tiwari <nmtiwari@iastate.edu>",
+      "description": "Show the number of violations to serialization property.",
+      "main": "main.html",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/candoia/serialization-police"
+      },
+      "icon": {
+        "type": "fa",
+        "name": "exchange"
+      }
+    },
+    {
+      "name": "deadcode-detector",
+      "productName": "Deadcode Detector",
+      "version": "0.1.0",
+      "author": "Nitin Mukesh Tiwari <nmtiwari@iastate.edu>",
+      "description": "Identifies locations of deadcode.",
+      "main": "main.html",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/candoia/deadcode-detector"
+      },
+      "icon": {
+        "type": "fa",
+        "name": "trash"
+      }
+    },
+    {
+      "name": "null-detector",
+      "productName": "Null Detector.",
+      "version": "0.1.0",
+      "author": "Nitin Mukesh Tiwari <nmtiwari@iastate.edu>",
+      "description": "Checks the improper use of null.",
+      "main": "main.html",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/candoia/null-detector"
+      },
+      "icon": {
+        "type": "fa",
+        "name": "thumb-tack"
+      }
+    },
+    {
+      "name": "revision-watcher",
+      "productName": "Revision Watcher",
+      "version": "0.1.0",
+      "author": "Ganesha Upadhyaya <ganeshau@iastate.edu>",
+      "description": "Provides details about a revision, which includes number of files modified, revision date etc",
+      "main": "main.html",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/candoia/revision-watcher"
+      },
+      "icon": {
+        "type": "fa",
+        "name": "list"
+      }
+    },
+    {
+      "name": "developer-activity-checker",
+      "productName": "Developer Activity Checker",
+      "version": "0.1.0",
+      "author": "Ganesha Upadhyaya <ganeshau@iastate.edu>",
+      "description": "Provides details about developer's last commit",
+      "main": "main.html",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/candoia/developer-activity-checker"
+      },
+      "icon": {
+        "type": "fa",
+        "name": "user-plus"
+      }
+    },
+    {
+      "name": "popularity-metrics",
+      "productName": "Popularity Metrics",
+      "version": "0.1.0",
+      "author": "Ganesha Upadhyaya <ganeshau@iastate.edu>",
+      "description": "Computes various metrics, such as CK Metrics (NOC WMC), OO Metrics (NOPM, FanOut, LOC) etc",
+      "main": "main.html",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/candoia/popularity-metrics"
+      },
+      "icon": {
+        "type": "fa",
+        "name": "users"
+      }
+    },
+    {
+      "name": "check-doubled-checked",
+      "productName": "Double-checked Locking Idiom Checker",
+      "version": "0.1.0",
+      "author": "Ganesha Upadhyaya <ganeshau@iastate.edu>",
+      "description": "Checks and warns against the used of doubled-checked locking idiom",
+      "main": "main.html",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/candoia/check-double-checked"
+      },
+      "icon": {
+        "type": "fa",
+        "name": "list"
+      }
+    },
+    {
+      "name": "wait-notify-police",
+      "productName": "Wait-Notify Police",
+      "version": "0.1.0",
+      "author": "Nitin Mukesh Tiwari <nmtiwari@iastate.edu>",
+      "description": "Checks and warns against improper usage of wait-notify features",
+      "main": "main.html",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/candoia/wait-notify-police"
+      },
+      "icon": {
+        "type": "fa",
+        "name": "hand-stop-o"
+      }
+    },
+    {
+      "name": "convention-checker",
+      "productName": "Convention Checker",
+      "version": "0.1.0",
+      "author": "Nitin Mukesh Tiwari <nmtiwari@iastate.edu>",
+      "description": "Checks naming conventions,e.g. class names should start with an uppercase letter",
+      "main": "main.html",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/candoia/convention-checker"
+      },
+      "icon": {
+        "type": "fa",
+        "name": "university"
+      }
+    },
+    {
+      "name": "top-performers",
+      "productName": "Top Performers",
+      "version": "0.1.1",
+      "author": "Trey Erenberger <treye@iastate.edu>",
+      "description": "Displays the number of commits per username as a pie chart.",
+      "main": "main.html",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/candoia/noa-over-revisions"
+      },
+      "icon": {
+        "type": "fa",
+        "name": "pie-chart"
+      }
+    }
+  ]
+}

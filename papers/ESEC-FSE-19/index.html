@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/design.css">
+    <link rel="icon" href="/favicon.ico">
+    <title>A Comprehensive Study on Deep Learning Bug Characteristics</title>
+  </head>
+
+  <body>
+    <!-- Load jQuery before the content in order to support the papers page sorting -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <header>
+
+  <div class="brand-bg-color">
+    <div class="container">
+      <div class="brand-navbar">
+        <div class="row">
+          <div class="flex-separate col-12">
+            <a href="/" class="nav-link">
+              <span id="isu-logo">Iowa State University</span>
+              <span class="d-none d-sm-block">Laboratory for Software Design</span>
+              <span class="small d-block d-sm-none">Laboratory for Software Design</span>
+            </a>
+            <button class="navbar-toggler d-block d-sm-none" type="button" data-toggle="collapse" data-target="#collapseNav">&#9776;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-bg-color">
+    <nav class="container navbar navbar-dark navbar-expand-sm">
+      <div class="collapse navbar-collapse" id="collapseNav">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="/projects.html">Projects</a>
+          <a class="nav-item nav-link" href="/papers/">Papers</a>
+          <a class="nav-item nav-link" href="/grants/">Grants</a>
+          <a class="nav-item nav-link" href="/news/">News</a>
+          <a class="nav-item nav-link" href="/people.html">People</a>
+          <a class="nav-item nav-link" href="/about/">About</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+</header>
+
+
+<main class="container">
+  <br />
+  <div class="row">
+  <div class="col-12">
+    <h2 class="page-title">A Comprehensive Study on Deep Learning Bug Characteristics</h2>
+    
+
+<h4>
+By: 
+Md Johirul Islam, Giang Nguyen, Rangeet Pan, and Hridesh Rajan
+
+</h4>
+
+
+<a href="IslamNguyenPanRajan19.pdf" class="icon">
+  <img src="/img/pdf_icon.svg"/ alt="PDF Download">
+  <span>Download Paper</span>
+</a>
+
+<br/>
+
+
+
+<a href="dataset.zip">Dataset</a>
+<br />
+
+<br />
+
+
+<h4>Abstract</h4>
+<p>
+  <span id="islam19">
+    Deep learning has gained substantial popularity in recent years.
+    Developers mainly rely on libraries and tools to add deep learning
+    capabilities to their software. What kinds of bugs are frequently
+    found in such software? What are the root causes of such bugs?
+    What impacts do such bugs have? Which stages of deep learning
+    pipeline are more bug prone? Are there any antipatterns?
+    Understanding such characteristics of bugs in deep learning
+    software has the potential to foster the development of better
+    deep learning platforms, debugging mechanisms, development practices,
+    and encourage the development of analysis and verification frameworks.
+    Therefore, we study 2716 high-quality posts from Stack Overflow
+    and 500 bug fix commits from Github about five popular deep learning
+    libraries Caffe, Keras, Tensorflow, Theano, and Torch to understand
+    the types of bugs, root causes of bugs, impacts of bugs, bug-prone
+    stage of deep learning pipeline as well as whether there are some
+    common antipatterns found in this buggy software.
+    The key findings of our study include: data bug and logic bug are
+    the most severe bug types in deep learning software appearing more
+    than 48% of the times, major root causes of these bugs are Incorrect
+    Model Parameter (IPS) and Structural Inefficiency (SI) showing up
+    more than 43% of the times.
+    We have also found that the bugs in the usage of deep learning
+    libraries have some common antipatterns that lead to a strong
+    correlation of bug types among the libraries.
+  </span>
+</p>
+
+
+
+
+
+<h4>ACM Reference</h4>
+<p>
+<span id="islam19">Islam, M.J. et al. 2019. A Comprehensive Study on Deep Learning Bug Characteristics. <i>ESEC/FSE’19: The ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE)</i> (Aug. 2019).</span>
+</p>
+
+<h4>BibTeX Reference</h4>
+<pre><code>@inproceedings{islam19,
+  author = {Md Johirul Islam and Giang Nguyen and Rangeet Pan and Hridesh Rajan},
+  title = {A Comprehensive Study on Deep Learning Bug Characteristics},
+  booktitle = {ESEC/FSE'19: The ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE)},
+  series = {ESEC/FSE 2019},
+  month = {August},
+  year = {2019},
+  entrysubtype = {conference},
+  abstract = {
+    Deep learning has gained substantial popularity in recent years.
+    Developers mainly rely on libraries and tools to add deep learning
+    capabilities to their software. What kinds of bugs are frequently
+    found in such software? What are the root causes of such bugs?
+    What impacts do such bugs have? Which stages of deep learning
+    pipeline are more bug prone? Are there any antipatterns?
+    Understanding such characteristics of bugs in deep learning
+    software has the potential to foster the development of better
+    deep learning platforms, debugging mechanisms, development practices,
+    and encourage the development of analysis and verification frameworks.
+    Therefore, we study 2716 high-quality posts from Stack Overflow
+    and 500 bug fix commits from Github about five popular deep learning
+    libraries Caffe, Keras, Tensorflow, Theano, and Torch to understand
+    the types of bugs, root causes of bugs, impacts of bugs, bug-prone
+    stage of deep learning pipeline as well as whether there are some
+    common antipatterns found in this buggy software.
+    The key findings of our study include: data bug and logic bug are
+    the most severe bug types in deep learning software appearing more
+    than 48% of the times, major root causes of these bugs are Incorrect
+    Model Parameter (IPS) and Structural Inefficiency (SI) showing up
+    more than 43% of the times.
+    We have also found that the bugs in the usage of deep learning
+    libraries have some common antipatterns that lead to a strong
+    correlation of bug types among the libraries.
+  }
+}
+</code></pre>
+
+
+  </div>
+  </div>
+  <br />
+</main>
+
+
+<footer>
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      },
+      i[r].l = 1 * new Date();
+      a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-512574-3', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <div class="container">
+    <div>
+      <div class="row">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-xs-12 col-lg-3 isu-logo-wrapper">
+              <a href="http://www.iastate.edu">
+                <img src="/img/isu-stacked.svg" alt="Iowa State University" class="isu-logo">
+              </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4">
+              <p>
+                <b>Laboratory for Software Design</b>
+              </p>
+              <p>115-2 Atanasoff Hall</p>
+              <p>Ames, IA, 50011-1040, USA</p>
+              <p>Phone: (515) 294-6168</p>
+              <p>E-Mail: hridesh@iastate.edu</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+              <p>
+                Copyright &copy;
+                2020
+                Iowa State University of Science and Technology. All rights reserved.<BR>
+                <div class="d-none d-lg-block" style="margin-top: 0">
+                  The research and educational activities described on these pages has been supported in part by the
+                  <a href="http://www.nsf.gov">US National Science Foundation (NSF)</a>.
+                </div>
+              </p>
+            </div>
+            <div class="col-md-3 col-lg-1 d-none d-md-block project-logos">
+              <div>
+                <a href="http://web.cs.iastate.edu/~panini/">
+                  <img src="/img/panini-logo.svg" class="logo" alt="Boa Logo">
+                  Panini
+                </div>
+                <div>
+                  <a href="http://boa.cs.iastate.edu">
+                    <img src="/img/boa-logo.svg" class="logo" alt="Boa Logo">
+                    Boa
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="/js/design.js"></script>
+  </body>
+</html>

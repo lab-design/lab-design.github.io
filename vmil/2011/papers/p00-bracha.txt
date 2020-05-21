@@ -1,0 +1,8 @@
+A Walk on the Dart Side
+
+By Gilad Bracha
+
+Dart is a pure object-oriented, dynamically typed language with  
+actor based concurrency. We'll take a quick tour of the Dart 
+programming language, focusing on its more unusual features, 
+such as optional typing and built-in factory support.

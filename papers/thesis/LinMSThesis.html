@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/design.css">
+    <link rel="icon" href="/favicon.ico">
+    <title>PaniniJ: Adding the capsule programming abstraction to Java to provide linguistic support for modular reasoning in concurrent program design</title>
+  </head>
+
+  <body>
+    <!-- Load jQuery before the content in order to support the papers page sorting -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <header>
+
+  <div class="brand-bg-color">
+    <div class="container">
+      <div class="brand-navbar">
+        <div class="row">
+          <div class="flex-separate col-12">
+            <a href="/" class="nav-link">
+              <span id="isu-logo">Iowa State University</span>
+              <span class="d-none d-sm-block">Laboratory for Software Design</span>
+              <span class="small d-block d-sm-none">Laboratory for Software Design</span>
+            </a>
+            <button class="navbar-toggler d-block d-sm-none" type="button" data-toggle="collapse" data-target="#collapseNav">&#9776;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-bg-color">
+    <nav class="container navbar navbar-dark navbar-expand-sm">
+      <div class="collapse navbar-collapse" id="collapseNav">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="/projects.html">Projects</a>
+          <a class="nav-item nav-link" href="/papers/">Papers</a>
+          <a class="nav-item nav-link" href="/grants/">Grants</a>
+          <a class="nav-item nav-link" href="/news/">News</a>
+          <a class="nav-item nav-link" href="/people.html">People</a>
+          <a class="nav-item nav-link" href="/about/">About</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+</header>
+
+
+<main class="container">
+  <br />
+  <div class="row">
+  <div class="col-12">
+    <h2 class="page-title">PaniniJ: Adding the capsule programming abstraction to Java to provide linguistic support for modular reasoning in concurrent program design</h2>
+    
+
+<h4>
+By: 
+Eric Lin
+
+</h4>
+
+
+<a href="/papers/thesis/LinMSThesis.pdf" class="icon">
+  <img src="/img/pdf_icon.svg"/ alt="PDF Download">
+  <span>Download Paper</span>
+</a>
+
+<br/>
+
+
+
+<h4>Abstract</h4>
+<p>
+  <span id="lin2016paninij">
+    Increasing the speed of single-core processors has been facing practical
+    challenges. Instead, multi- core architecture has been ascending for the past
+    decade as the dominant architecture. To gain full advantage of multi-core
+    processors, it is unavoidable for programmers to write concurrent programs.
+    However, writing and reasoning about concurrent programs is often difficult
+    for programmers. One reason for the difficulty stems from the hurdle of
+    dealing with concurrency abstractions, the other reason is the difficulty in
+    getting rid of concurrency related bugs. To address these problems, a new
+    abstraction for concurrent programming has been proposed called capsule.
+    Capsules are inspired by the long- standing ideas explored in the context of
+    message-passing concurrency (MPC) abstractions and other similar models.
+    Although the jury is still out on MPC abstractions as the de facto abstraction
+    for concurrency, their wide availability and advantages combine to warrant
+    research on the use of this model for concurrency. Capsules explore a new
+    point in this design space to balance flexibility and analyzability in the MPC
+    programming models. Unlike common avatars of the MPC model, a capsule is
+    statically deployed and configured, confines its local states, permits only a
+    single activity within itself, and communicates with other capsules in a
+    logically synchronous manner. This thesis focuses on the realization,
+    applicability and performance of this new abstraction. A major contribution of
+    this work is the realization of capsules. We have implemented capsules as an
+    extension of javac, the industrial strength standard Java compiler. The
+    implementation shows that it is feasible to extend an object- oriented
+    language with capsules. The default compilation strategy of capsules is based
+    on threads. In this work, we also show alternative compilation strategies to
+    improve the flexibility and adaptability of capsules. This shows that the
+    capsule abstraction can be decoupled from concrete strategies for processing
+    capsule messages and different underlying message processing mechanisms can be
+    deployed without changing the user facing source code. This work also shows
+    the strategy used to retain meta- information about capsules after
+    compilation, so that capsule-oriented programs enjoy the property of separate
+    compilation.
+  </span>
+</p>
+
+
+
+
+
+<h4>ACM Reference</h4>
+<p>
+<span id="lin2016paninij">Lin, E. 2016. <i>PaniniJ: adding the capsule programming abstraction to Java to provide linguistic support for modular reasoning in concurrent program design</i>. Iowa State University.</span>
+</p>
+
+<h4>BibTeX Reference</h4>
+<pre><code>@mastersthesis{lin2016paninij,
+  title = {PaniniJ: adding the capsule programming abstraction to Java to provide linguistic support for modular reasoning in concurrent program design},
+  author = {Lin, Eric},
+  year = {2016},
+  school = {Iowa State University},
+  abstract = {
+    Increasing the speed of single-core processors has been facing practical
+    challenges. Instead, multi- core architecture has been ascending for the past
+    decade as the dominant architecture. To gain full advantage of multi-core
+    processors, it is unavoidable for programmers to write concurrent programs.
+    However, writing and reasoning about concurrent programs is often difficult
+    for programmers. One reason for the difficulty stems from the hurdle of
+    dealing with concurrency abstractions, the other reason is the difficulty in
+    getting rid of concurrency related bugs. To address these problems, a new
+    abstraction for concurrent programming has been proposed called capsule.
+    Capsules are inspired by the long- standing ideas explored in the context of
+    message-passing concurrency (MPC) abstractions and other similar models.
+    Although the jury is still out on MPC abstractions as the de facto abstraction
+    for concurrency, their wide availability and advantages combine to warrant
+    research on the use of this model for concurrency. Capsules explore a new
+    point in this design space to balance flexibility and analyzability in the MPC
+    programming models. Unlike common avatars of the MPC model, a capsule is
+    statically deployed and configured, confines its local states, permits only a
+    single activity within itself, and communicates with other capsules in a
+    logically synchronous manner. This thesis focuses on the realization,
+    applicability and performance of this new abstraction. A major contribution of
+    this work is the realization of capsules. We have implemented capsules as an
+    extension of javac, the industrial strength standard Java compiler. The
+    implementation shows that it is feasible to extend an object- oriented
+    language with capsules. The default compilation strategy of capsules is based
+    on threads. In this work, we also show alternative compilation strategies to
+    improve the flexibility and adaptability of capsules. This shows that the
+    capsule abstraction can be decoupled from concrete strategies for processing
+    capsule messages and different underlying message processing mechanisms can be
+    deployed without changing the user facing source code. This work also shows
+    the strategy used to retain meta- information about capsules after
+    compilation, so that capsule-oriented programs enjoy the property of separate
+    compilation.
+  }
+}
+</code></pre>
+
+
+  </div>
+  </div>
+  <br />
+</main>
+
+
+<footer>
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      },
+      i[r].l = 1 * new Date();
+      a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-512574-3', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <div class="container">
+    <div>
+      <div class="row">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-xs-12 col-lg-3 isu-logo-wrapper">
+              <a href="http://www.iastate.edu">
+                <img src="/img/isu-stacked.svg" alt="Iowa State University" class="isu-logo">
+              </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4">
+              <p>
+                <b>Laboratory for Software Design</b>
+              </p>
+              <p>115-2 Atanasoff Hall</p>
+              <p>Ames, IA, 50011-1040, USA</p>
+              <p>Phone: (515) 294-6168</p>
+              <p>E-Mail: hridesh@iastate.edu</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+              <p>
+                Copyright &copy;
+                2020
+                Iowa State University of Science and Technology. All rights reserved.<BR>
+                <div class="d-none d-lg-block" style="margin-top: 0">
+                  The research and educational activities described on these pages has been supported in part by the
+                  <a href="http://www.nsf.gov">US National Science Foundation (NSF)</a>.
+                </div>
+              </p>
+            </div>
+            <div class="col-md-3 col-lg-1 d-none d-md-block project-logos">
+              <div>
+                <a href="http://web.cs.iastate.edu/~panini/">
+                  <img src="/img/panini-logo.svg" class="logo" alt="Boa Logo">
+                  Panini
+                </div>
+                <div>
+                  <a href="http://boa.cs.iastate.edu">
+                    <img src="/img/boa-logo.svg" class="logo" alt="Boa Logo">
+                    Boa
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="/js/design.js"></script>
+  </body>
+</html>

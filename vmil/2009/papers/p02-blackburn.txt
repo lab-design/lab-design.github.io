@@ -1,0 +1,29 @@
+Abstraction Without Guilt
+
+By Steve Blackburn
+
+Abstract: While on the one hand systems programmers strive for reliability,
+security, and maintainability, on the other hand they depend on performance
+and transparent access to low-level primitives. Abstraction is the key tool
+for enabling the former but it typically obstructs the latter. This talk
+addresses this conundrum from three distinct angles; as a producer, a
+consumer, and an evaluator of high level programming languages, and is based
+on ten years of experience in each of these roles.  I will discuss my
+experience as a producer, engineering a low-overhead, highly-expressive Java
+dialect suitable for systems programming.  I will discuss my experience as a
+consumer, using Java and object oriented programming principles to build a JVM
+and memory management subsystem.  Key to both of these is the role as an
+evaluator, measuring and understanding the complex behavior of managed runtime
+systems.   The phrase "abstraction without guilt", coined by Ken Kennedy,
+nicely captures our  philosophy on systems building.
+
+Bio: Steve Blackburn is an Associate Professor at the Australian National
+University.  His interests include memory management, runtime systems,
+performance analysis and computer architecture.  Together with his
+collaborators, he has produced a number of tools that are in wide use in the
+research community, including the DaCapo benchmark suite and the MMTk memory
+management toolkit.   He been heavily involved in development of the Jikes RVM
+research JVM, and lead the development of the Moxie JVM while at Intel.  He is
+actively involved in the research community and was program chair for ISMM
+2008 and MSP 2004.
+

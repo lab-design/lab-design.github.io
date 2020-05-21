@@ -1,0 +1,37 @@
+Memory Management for Hard Real-time Systems
+
+Jan Vitek
+Purdue University
+
+Abstract:
+The Java programming language has become a viable platform
+for real-time systems with applications in avionics, shipboard
+computing, audio processing, industrial control and the
+financial sector. High performance real-time Java virtual
+machines (RT JVMs) are now available from multiple vendors.
+
+One of the main challenges in using a high level programming
+language, such as Java or C#, to program hard-real time
+system is to deal with heap-allocated data structures. Traditional
+techniques such as pre-allocation and object pooling are
+ill-suited to modern software engineering practices. In this
+talk I describe two approaches that we have experimented
+with in the context of the Ovm real-time Java virtual machine:
+region-based allocation and real-time garbage collection. I
+will demonstrate that for tasks which can tolerate latencies
+on the order of 1 millisecond real-time collectors are
+perfectly adequate, but, in order to obtain sub-milliseconds
+latencies other approaches are required.  The talk will
+also give an overview of new results in non-blocking
+concurrent garbage collection.
+
+
+About the Speaker: 
+Jan Vitek is an Associate Professor in Computer Science at
+Purdue University. He leads the Secure Software Systems lab.
+He obtained his PhD from the University of Geneva in 1999, and a
+MSc from the University of Victoria in 1995. His research
+interests include programming language, virtual machines,
+mobile code, software engineering and information security.
+
+

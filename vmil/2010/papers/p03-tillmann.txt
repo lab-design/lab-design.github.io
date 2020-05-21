@@ -1,0 +1,27 @@
+SPUR: A Trace-Based JIT Compiler for CIL
+
+By Nikolai Tillmann
+
+Tracing just-in-time compilers (TJITs) determine frequently executed traces
+(hot paths and loops) in running programs and focus their optimization effort
+by emitting optimized machine code specialized to these traces. We designed and
+implemented SPUR, a TJIT for Microsoft’s Common Intermediate Language CIL,
+thereby supporting C#, VisualBasic, F#, JavaScript, many other languages, and
+cross-language scenarios. To achieve best performance, SPUR does not use an
+interpreter but always produces machine code, enabling tight coupling with the
+garbage collector in the presence of interior pointers, and very efficient
+transitions between different code versions. We are currently investigating the
+use of automated theorem provers to further optimize traces, and automated code
+parallelization by trace analysis.
+
+
+Biography: Nikolai Tillmann is a Principal Research Software Design Engineer at
+Microsoft Research. He works on combining dynamic and static program analysis
+techniques. He currently leads the Pex project, a framework for runtime
+verification and automatic test-case generation for .NET applications based on
+parameterized unit testing and dynamic symbolic execution. Try it in your
+browser at www.pexforfun.com. He also works on the Spur project, a tracing
+Just-In-Time compiler for .NET and JavaScript code. Previously he worked on
+AsmL, an executable modeling language, and the Spec Explorer 2004 model-based
+testing tool. He co-developed XRT, a concrete/symbolic state exploration engine
+and software model-checker for .NET.
