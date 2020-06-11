@@ -4,7 +4,7 @@ permalink: /papers/Bioinformatics-20/
 short_name: Bioinformatics '20
 title: Detecting and correcting misclassified sequences in the large-scale public databases
 bib: |
-  @inproceedings{pan20decomposing,
+  @inproceedings{bagheri20misannotations,
     author = {Hamid Bagheri, Andrew Severin, and Hridesh Rajan},
     title = {Detecting and correcting misclassified sequences in the large-scale public databases},
     booktitle = {Bioinformatics'2020},
@@ -33,5 +33,5 @@ kind: journal
 download_link: misannotations.pdf
 publication_year: 2020
 tags:
-  - misannotations
+  - boa
 ---
