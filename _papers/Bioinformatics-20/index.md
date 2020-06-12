@@ -4,33 +4,22 @@ permalink: /papers/Bioinformatics-20/
 short_name: Bioinformatics '20
 title: Detecting and correcting misclassified sequences in the large-scale public databases
 bib: |
-  @inproceedings{bagheri20misannotations,
-    author = {Hamid Bagheri, Andrew Severin, and Hridesh Rajan},
+  @article{Bagheri2020,
+    author = {Hamid Bagheri and Andrew J. Severin and Hridesh Rajan },
     title = {Detecting and correcting misclassified sequences in the large-scale public databases},
-    booktitle = {Bioinformatics'2020},
+    journal = {Bioinformatics},
+    volume = {20},
+    number = {436},
+    article = {},
+    month = {August},
     year = {2020},
-    entrysubtype = {journal},
-    abstract = {
-        Motivation: As the cost of sequencing decreases, the amount of data being deposited into public
-        repositories is increasing rapidly. Public databases rely on the user to provide metadata for each submission
-        that is prone to user error. Unfortunately, most public databases, such as non-redundant (NR), rely
-        on user input and do not have methods for identifying errors in the provided metadata, leading to the
-        potential for error propagation. Previous research on a small subset of the non-redundant (NR) database
-        analyzed misclassification based on sequence similarity. To the best of our knowledge, the amount of
-        misclassification in the entire database has not been quantified. We propose a heuristic method to detect
-        potentially misclassified taxonomic assignments in the NR database. We applied a curation technique
-        and quality control to find the most probable taxonomic assignment. Our method incorporates provenance
-        and frequency of each annotation from manually and computationally created databases and clustering
-        information at 95% similarity.
-        Results:We found more than 2 million potentially taxonomically misclassified proteins in the NR database.
-        Using simulated data, we show a high precision of 97% and a recall of 87% for detecting taxonomically
-        misclassified proteins. The proposed approach and findings could also be applied to other databases.
-        Availability: Source code, dataset, documentation, Jupyter notebooks, and Docker container are available
-        at https://github.com/boalang/nr.
-    }
+    publisher = {Oxford},
+    address = {},
+    abstract = {Background: Creating a scalable computational infrastructure to analyze the wealth of information contained in data repositories is difficult due to significant barriers in organizing, extracting and analyzing relevant data. Shared data science infrastructures like Boag is needed to efficiently process and parse data contained in large data repositories. The main features of Boag are inspired from existing languages for data intensive computing and can easily integrate data from biological data repositories. Results: As a proof of concept, Boa for genomics, Boag, has been implemented to analyze RefSeq’s 153,848 annotation (GFF) and assembly (FASTA) file metadata. Boag provides a massive improvement from existing solutions like Python and MongoDB, by utilizing a domain-specific language that uses Hadoop infrastructure for a smaller storage footprint that scales well and requires fewer lines of code. We execute scripts through Boag to answer questions about the genomes in RefSeq. We identify the largest and smallest genomes deposited, explore exon frequencies for assemblies after 2016, identify the most commonly used bacterial genome assembly program, and address how animal genome assemblies have improved since 2016. Boag databases provide a significant reduction in required storage of the raw data and a significant speed up in its ability to query large datasets due to automated parallelization and distribution of Hadoop infrastructure during computations. Conclusions: In order to keep pace with our ability to produce biological data, innovative methods are required. The Shared Data Science Infrastructure, Boag, provides researchers a greater access to researchers to efficiently explore data in new ways. We demonstrate the potential of a the domain specific language Boag using the RefSeq database to explore how deposited genome assemblies and annotations are changing over time. This is a small example of how Boag could be used with large biological datasets.},
+    doi={10.1186/s12859-019-2967-2}, 
   }
 kind: journal
-download_link: misannotations.pdf
+download_link: Bioinformatics20.pdf
 publication_year: 2020
 tags:
   - boa
