@@ -1,0 +1,44 @@
+<!--#include virtual="../includes/topbar.html"-->
+<!-- 2ND COLUMN. INSERT COPY -->
+
+<td id="b3" rowspan="2">
+<div class="maintext">
+<h2>Faculty</h2>
+<table "width=100%">
+<!--#include virtual="./hrajan.htm"-->
+</table>
+
+<h2>Students</h2>
+<table "width=100%">
+<!--#include virtual="./mbagherzadeh.htm"-->
+<!--#include virtual="./crodrigues.htm"-->
+<!--#include virtual="./rdyer.htm"-->
+<tr>
+<td colspan="3">
+<hr>
+</td>
+</tr>
+<!--#include virtual="./hnarayanappa.htm"-->
+<tr>
+<td colspan="3">
+<hr>
+</td>
+</tr>
+<!--#include virtual="./ysuvorov.htm"-->
+
+</table>
+
+<h2>Alumni</h2>
+<p></p>
+
+<table "width=100%">
+<!--#include virtual="./mhosamani.htm"-->
+</table>
+
+
+</div>
+
+
+</td>
+
+<!--#include virtual="../includes/bottombar.html"-->
