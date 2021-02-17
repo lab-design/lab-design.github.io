@@ -1,0 +1,85 @@
+<!--#include virtual="../includes/topbar.html"-->
+<!-- 2ND COLUMN. INSERT COPY -->
+
+<td rowspan="2">
+<div class="maintext">
+
+<h1>Publications Related to Slede</h1><BR>
+
+<p><h2 class=bar>2009</h2></p>
+<ul>
+<li>
+Youssef Hanna, Samik Basu, and Hridesh Rajan, "Behavioral Automata Composition for Automatic Topology 
+Independent Verification of Parameterized Systems", The 7th joint meeting of the European Software 
+Engineering Conference and the ACM SIGSOFT Symposium on the Foundations of Software Engineering (ESEC/FSE 09), 
+August 2009, Amsterdam, The Netherlands. [<a href="esec-fse-09.pdf">PDF Format</a>] 
+</li>
+<p/>
+<li>
+Youssef Hanna and Hridesh Rajan, 
+"Slede: Framework for Automatic Verification of Sensor Network Security Protocol Implementations",
+informal demo in the Proceedings of the 31st International Conference on Software Engineering (ICSE 2009), May 16-24 2009, Vancouver, Canada.
+[<a href="ICSE-09-paper.pdf">PDF Format</a>] [<a href="ICSE-09-poster.pdf">Poster</a>]
+</li>
+</ul>
+
+<p><h2 class=bar>2008</h2></p>
+
+<ul>
+<li>
+Youssef Hanna, Hridesh Rajan, and Wensheng Zhang, 
+"Slede: A Domain-Specific Verification Framework for Sensor Network Security Protocol Implementations",
+in the Proceedings of the First ACM Conference on Wireless Network Security (WiSec 2008), March 31 - April 2, 2008. Alexandria, VA.
+[<a href="slede-wisec-08.pdf">PDF Format</a>]
+</li>
+</ul>
+<p><h2 class=bar>2007</h2></p>
+
+<ul>
+<li>Youssef Hanna,
+SLEDE: lightweight verification of sensor network 
+security protocol implementations. 
+In Proceedings of the doctoral symposium of the 6th 
+Joint Meeting of the European Software Engineering 
+Conference and the ACM SIGSOFT Symposium on the 
+Foundations of Software Engineering (ESEC/FSE 2007).Dubrovnik, Croatia, 
+September 2007, pp. 591-594. 
+<a href="FSEslede07.pdf">[PDF Format]</a>
+</li>
+
+<p/>
+<li>Youssef Hanna, Hridesh Rajan. 
+SLEDE: A Domain-Specific Verification Framework 
+for Sensor Network Security Protocol Implementations. 
+Technical Report 07-09, Computer Science, 
+Iowa State University, June 11, 2007. 
+<a href="http://archives.cs.iastate.edu/documents/disk0/00/00/05/43/00000543-00/main.pdf">[PDF Format]</a>
+</li>
+</ul>
+
+<p><h2 class=bar>2006</h2></p>
+
+<ul>
+<li>
+Youssef Hanna and Hridesh Rajan. 
+SLEDE: event-based specification of Sensor network 
+security protocols. SIGSOFT Softw. Eng. Notes 31, 6 
+(Nov. 2006), 1-2 
+<a href="FSEslede06.pdf">[PDF Format]</a>
+</li>
+
+<p/>
+
+<li>Youssef Hanna and Hridesh Rajan. 
+Poster presentation at the proceedings of Fourteenth 
+ACM SIGSOFT Symposium on Foundations of Software 
+Engineering (FSE 2006), Portland, OR, Nov 2006.
+<a href="SledePosterFSE06.ppt">[PPT]</a>
+</li>
+</ul>
+
+</div>
+
+</td>
+
+<!--#include virtual="../includes/bottombar.html"-->

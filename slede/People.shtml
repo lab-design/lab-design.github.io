@@ -1,0 +1,61 @@
+<!--#include virtual="includes/topbar.html"-->
+<!-- 2ND COLUMN. INSERT COPY -->
+
+<td rowspan="2">
+<div class="maintext">
+<h1> People Involved in the Slede Project </h1> <BR>
+
+<h2 class="bar">Faculty</h2>
+
+<ul>
+<li>
+<b><a href="http://www.cs.iastate.edu/~hridesh">Hridesh Rajan</a></b> is 
+the principal investigator of the Slede project. He is an
+Assistant Professor in the  <a href="http://www.cs.iastate.edu">
+Department of Computer Science</a> at <a href="http://www.iastate.edu">
+Iowa State University</a>. His research interests are in software
+engineering, programming language design and implementation, and
+mobile ad hoc and sensor networks. He can be reached at
+<a href="mailto:hridesh@cs.iastate.edu">hridesh@cs.iastate.edu</a>.
+</li>
+<p/>
+<li><b><a href="http://www.cs.iastate.edu/~wzhang">Wensheng Zhang</a></b> 
+is the co-principal investigator of the Slede project. He is an
+Assistant Professor in the  <a href="http://www.cs.iastate.edu">
+Department of Computer Science</a> at <a href="http://www.iastate.edu">
+Iowa State University</a>. His research interests are in wireless
+(Ad-hoc/Sensor) networking and security, P2P computing and security,
+and cryptographic key management. He can be reached at
+<a href="mailto:wzhang@cs.iastate.edu">wzhang@cs.iastate.edu</a>.
+</li>
+</ul>
+<h2 class="bar">Students</h2>
+
+<ul>
+<li>
+<b><a href="http://www.cs.iastate.edu/~ywhanna/">Youssef Hanna</a></b> is 
+a Ph.D. student in the <a href="http://www.cs.iastate.edu">
+Department of Computer Science</a> at <a href="http://www.iastate.edu">
+Iowa State University</a>. His research interests are in specification 
+and verification techniques for security protocols in sensor networks. 
+He can be reached at 
+<a href="mailto:ywhanna@cs.iastate.edu">ywhanna@cs.iastate.edu</a>.
+</li>
+</ul>
+
+
+<!--<p><b><a href="http://www.cs.iastate.edu/~design/">James Yoder</a></b>
+is an undergraduate student at <a href="http://www.iastate.edu">
+Iowa State University</a>. He is interested in model checking, graph 
+theory, and compositional analysis.
+He is currently looking at compositional analysis in the context of the
+<a href="http://www.cs.iastate.edu/~slede">Slede</a> project.
+He can be reached at <a href="mailto:y0da00@iastate.edu">y0da00@iastate.edu</a>
+</p>
+-->
+</div>
+
+
+</td>
+
+<!--#include virtual="includes/bottombar.html"-->

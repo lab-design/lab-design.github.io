@@ -1,0 +1,85 @@
+<!--#include virtual="includes/topbar.html"-->
+<!-- 2ND COLUMN. INSERT COPY -->
+
+<td id="b3" rowspan="2">
+<div class="maintext">
+<h2> News Archive </h2>
+<br/>
+<p>
+<b>Jan 2009</b>:
+<p>
+Youssef's <a href="/~slede/papers/ICSE-09-paper.pdf">submission</a> to the ICSE 2009 Research Demonstrations track accepted as informal demo.
+</p>
+</p>
+<br/>
+<p>
+<b>Nov 2008</b>:
+<p>Eclipse plugin for Slede is available for
+<a href="/~slede/download/index.shtml">download</a>.
+</p>
+</p>
+<br/>
+<p>
+<b>July 2008</b>: 
+<P>Slede is available for
+<a href="/~slede/download/index.shtml">download</a>.
+</p>
+</p>
+<br/>
+<p>
+<b>Dec 2007</b>: 
+<p>
+Youssef's
+<a href="/~slede/papers/slede-wisec-08.pdf">submission</a> to
+the ACM Conference on
+Wireless Network Security (WiSec 08) accepted.
+</p>
+</p>
+<br/>
+<p>
+<b>Sep 2007</b>: 
+<p>
+Youssef's
+<a href="http://doi.acm.org/10.1145/1287624.1287718">submission</a>
+to the ESEC/FSE 2007 doctoral symposium accepted.
+</p>
+</p>
+<br/>
+<p>
+<b>Nov 2006</b>: 
+<p>
+Come by our <a href="/~slede/papers/SledePosterFSE2006.ppt">poster</a>
+presentation at FSE 2006.
+</p>
+</p>
+
+<br/>
+<p>
+<b>July 2006</b>: 
+<p>
+New Seminar on
+<a href="http://www.cs.iastate.edu/~hridesh/teaching/610/06/02/">
+Security Properties of Software Systems.</a>
+</p>
+</p>
+<br/>
+<p>
+<b>July 2006</b>: 
+<p>
+Slede web-site created and project initiation.
+</p>
+</p>
+<br/>
+<p>
+<b>Oct 2005</b>: 
+<p>
+Project conception.
+</p>
+</p>
+
+</div>
+
+
+</td>
+
+<!--#include virtual="includes/bottombar.html"-->
