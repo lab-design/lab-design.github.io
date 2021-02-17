@@ -1,0 +1,26 @@
+Title: Do Computer Programs Have to Be As Dumb As They Are?
+By Xipeng Shen
+The College of William and Mary
+
+Abstract:
+
+Looking around this world, we see that a fledgling can fly faster and
+faster, a pupil can calculate quicker and quicker, and a graduate
+student can write papers better and better.  But since the birth of
+computers, it has been the case that after the release of a software
+package, the one millionth run of the program is typically not a bit
+better than its first-time run. Do programs have to be this dumb? In
+this talk, I will discuss the barriers that cause such dumbness, our
+efforts in creating a more intelligent paradigm, and some open
+challenges that you may be able to help address.
+
+Bio:
+
+Xipeng Shen is the Adina Allen Term Distinguished Associate Professor
+in the College of William and Mary, an IBM Center for Advanced Studies
+(CAS) Faculty Fellow, a Visiting Researcher at Microsoft Research and
+MIT. His research in data locality and massive parallelism won the
+prestigious Early Career Research Award from the US Department of
+Energy in 2011 and the Best Paper Award at ACM PPoPP 2010. His
+research in input-centric program dynamic optimizations won the CAREER
+Award from the US National Science Foundation in 2010.

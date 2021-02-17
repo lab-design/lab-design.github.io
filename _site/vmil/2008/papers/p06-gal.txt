@@ -1,0 +1,44 @@
+Compiling the Web--Building a Just-in-Time Compiler for JavaScript
+
+Andreas Gal
+Mozilla Corporation
+
+Abstract:
+Over the last decade we have made great strides towards improving
+the execution performance of virtual-machine (VM) based high level
+programming languages. Today, dynamic compilation is standard in
+most Java and C# VMs, enabling programs written in these languages
+to execute with similar efficiency as legacy type-unsafe C or
+assembly code.
+
+However, for the past decade much of the research and development
+effort in the Just-in-Time compilation domain was focused on the
+runtime compilation of statically typed languages, leaving an
+important and steadily growing field of programming languages
+behind: dynamically typed high level languages such as JavaScript,
+Python, PHP and Ruby. Combined with an explosive growth of
+web applications and the wide-spread use of dynamically typed
+programming languages for the client and server side of such web
+applications, this has created a situation where bytecode
+interpretation is suddenly again the predominant mode of execution
+for much of the code used on a daily basis on desktop computers,
+including popular web programs and services like Google Mail or
+Google Docs.
+
+In this talk I will report on the design and development of
+TraceMonkey, the JavaScript Just-in-Time compiler in Mozilla's Firefox
+web browser. I will discuss the fundamental differences between
+statically typed and dynamically typed languages from the
+perspective of a compiler constructor, and I will highlight some
+of the unique challenges for compiling dynamically typed languages
+such as JavaScript.
+
+
+About the Speaker:
+Andreas Gal is a Project Scientist at the Computer Science Department
+of the University of California, Irvine. He is currently on leave,
+working with Mozilla on TraceMonkey, a Just-in-Time compiler for
+JavaScript. Andreas received his PhD from the University of California,
+Irvine, in 2006. His research interests include virtual machines,
+dynamic compilation, programming languages and mobile code.
+

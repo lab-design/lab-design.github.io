@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/design.css">
+    <link rel="icon" href="/favicon.ico">
+    <title>Supplementary Material - Large-Scale Study of Effect Substitutability</title>
+  </head>
+
+  <body>
+    <!-- Load jQuery before the content in order to support the papers page sorting -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <header>
+
+  <div class="brand-bg-color">
+    <div class="container">
+      <div class="brand-navbar">
+        <div class="row">
+          <div class="flex-separate col-12">
+            <a href="/" class="nav-link">
+              <span id="isu-logo">Iowa State University</span>
+              <span class="d-none d-sm-block">Laboratory for Software Design</span>
+              <span class="small d-block d-sm-none">Laboratory for Software Design</span>
+            </a>
+            <button class="navbar-toggler d-block d-sm-none" type="button" data-toggle="collapse" data-target="#collapseNav">&#9776;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-bg-color">
+    <nav class="container navbar navbar-dark navbar-expand-sm">
+      <div class="collapse navbar-collapse" id="collapseNav">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="/projects.html">Projects</a>
+          <a class="nav-item nav-link" href="/papers/">Papers</a>
+          <a class="nav-item nav-link" href="/grants/">Grants</a>
+          <a class="nav-item nav-link" href="/news/">News</a>
+          <a class="nav-item nav-link" href="/people.html">People</a>
+          <a class="nav-item nav-link" href="/about/">About</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+</header>
+
+
+<main class="container">
+  <br />
+  <div class="row">
+  <div class="col-12">
+    <h2 class="page-title">Supplementary Material - Large-Scale Study of Effect Substitutability</h2>
+    <ol id="markdown-toc">
+  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+  <li><a href="#analyses-and-output-details" id="markdown-toc-analyses-and-output-details">Analyses and Output Details</a></li>
+  <li><a href="#implementation-and-results" id="markdown-toc-implementation-and-results">Implementation and Results</a>    <ol>
+      <li><a href="#exception" id="markdown-toc-exception">Exception</a></li>
+      <li><a href="#synchronization" id="markdown-toc-synchronization">Synchronization</a></li>
+      <li><a href="#io" id="markdown-toc-io">I/O</a></li>
+      <li><a href="#method-call" id="markdown-toc-method-call">Method Call</a></li>
+      <li><a href="#combined-effect-analysis" id="markdown-toc-combined-effect-analysis">Combined Effect Analysis</a></li>
+    </ol>
+  </li>
+</ol>
+
+<h3 id="introduction">Introduction</h3>
+<p>This page provides supplementary material for our effect substitutability study.
+We used the <a href="http://boa.cs.iastate.edu">Boa infrastructure</a>, and
+specifically their September 2015 GitHub dataset to complete this study.
+Here we provide access to our analyses implementations coupled with the raw
+results and an explanation of the output files.</p>
+
+<h3 id="analyses-and-output-details">Analyses and Output Details</h3>
+<p>Each of the analyses were written in the Boa domain-specific language, and links
+to the implementations and raw outputs are given in the next section.
+Here we will discuss what one can expect to find in the outputs.</p>
+
+<p>In the outputs, each line has the form “x[y] = z” where x is the output type’s
+name, y is the key, and z is the value.
+There are two output types that are the most important.
+The first is lines with the format “stat[key] = # occurrences”, which provides
+statistical information such as the number of source files examined or the
+number of private methods that do not throw exceptions.
+The second has the format “out[] = value”, which is used by the exception,
+synchronization, and I/O analyses to output information on each method pair with
+that effect type.
+The value is a #-delimited list with the following format:</p>
+
+<ol>
+<li>GitHub repository name</li>
+<li>Method name for the method pair</li>
+<li>Subclass name</li>
+<li>Supermethod effect</li>
+<li>Submethod effect</li>
+<li>Category of effect difference between the two methods</li>
+<li>Further information dependent on the analysis</li>
+</ol>
+
+<p>In general, the categories begin with an exclamation and compare the sub and
+supermethod effects, stating which method has “more” effects than the other.
+For example, a category of !n is used to state the effects of both methods in a
+pair are the same and !y is used to state the “size” of the effects are the
+same, but the effect itself is different.</p>
+
+<h3 id="implementation-and-results">Implementation and Results</h3>
+<p>There are 5 Boa analyses, 4 for each of the side-effect types: exception,
+synchronization, I/O, and method call.
+The last analysis combines each of the previous analyses into one and provides
+aggregate information.
+For each analysis, a link is provided to the Boa job, whose page allows one to
+download both the implementation and the raw output.
+Note that each of these jobs were ran on the full September 2015 GitHub dataset.</p>
+
+<h4 id="exception">Exception</h4>
+<p>Boa job: <a href="http://boa.cs.iastate.edu/boa/?q=boa/job/public/66383">Exception Effect Analysis</a></p>
+
+<p>The methods effects are the set of exception types thrown in the format of a
+comma delimited list.
+The last item is the set of exception types that the supermethod declare it may
+throw in the method signature.
+An exception of type !UNKNOWN! indicates that the type could not be decided by
+the analysis.
+The category is a set-based comparison of the effects of the sub and
+supermethods.</p>
+
+<h4 id="synchronization">Synchronization</h4>
+<p>Boa job: <a href="http://boa.cs.iastate.edu/boa/?q=boa/job/public/66381">Synchronization Effect Analysis</a></p>
+
+<p>Method effects are the way synchronization is used: none (!NONE), only acquiring
+a lock (!ACQUIRE), only releasing (!RELEASE), or both (!BOTH).
+The last entry denotes the most fine-grained synchronization used in either of
+the methods.
+So if one method uses locks it would be !hasLock, if blocks then !hasBlock, and
+if only the synchronized modifier is used then !hasModifier.</p>
+
+<h4 id="io">I/O</h4>
+<p>Boa job: <a href="http://boa.cs.iastate.edu/boa/?q=boa/job/public/68545">I/O Effect Analysis</a></p>
+
+<p>Method effects are type of I/O identified: none (NONE), output only (OUT), input
+only (IN), and both (BOTH).
+Last entry denotes the type of I/O classes used: !CONSOLE if any console-related
+objects were used, !FILE if file objects are used but no console ones, otherwise
+!BUS.</p>
+
+<h4 id="method-call">Method Call</h4>
+<p>Boa job: <a href="http://boa.cs.iastate.edu/boa/?q=boa/job/public/66378">Method Call Effect Analysis</a></p>
+
+<p>Due to the number of methods and method calls in the dataset, we only output
+statistics here.</p>
+
+<h4 id="combined-effect-analysis">Combined Effect Analysis</h4>
+<p>Boa job: <a href="http://boa.cs.iastate.edu/boa/?q=boa/job/public/66382">All Effects Combined Analysis</a></p>
+
+<p>This output mainly provides statistics regarding the kinds of side-effects used
+by all methods and by all method pairs where the submethod has more of an
+effect.
+The method pair outputs that are shown are a small subset of pairs with effects
+as decided by a random number generator.</p>
+
+  </div>
+  </div>
+  <br />
+</main>
+
+
+<footer>
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      },
+      i[r].l = 1 * new Date();
+      a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-512574-3', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <div class="container">
+    <div>
+      <div class="row">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-xs-12 col-lg-3 isu-logo-wrapper">
+              <a href="http://www.iastate.edu">
+                <img src="/img/isu-stacked.svg" alt="Iowa State University" class="isu-logo">
+              </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4">
+              <p>
+                <b>Laboratory for Software Design</b>
+              </p>
+              <p>115-2 Atanasoff Hall</p>
+              <p>Ames, IA, 50011-1040, USA</p>
+              <p>Phone: (515) 294-6168</p>
+              <p>E-Mail: hridesh@iastate.edu</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+              <p>
+                Copyright &copy;
+                2021
+                Iowa State University of Science and Technology. All rights reserved.<BR>
+                <div class="d-none d-lg-block" style="margin-top: 0">
+                  The research and educational activities described on these pages has been supported in part by the
+                  <a href="http://www.nsf.gov">US National Science Foundation (NSF)</a>.
+                </div>
+              </p>
+            </div>
+            <div class="col-md-3 col-lg-1 d-none d-md-block project-logos">
+              <div>
+                <a href="http://web.cs.iastate.edu/~panini/">
+                  <img src="/img/panini-logo.svg" class="logo" alt="Boa Logo">
+                  Panini
+                </div>
+                <div>
+                  <a href="http://boa.cs.iastate.edu">
+                    <img src="/img/boa-logo.svg" class="logo" alt="Boa Logo">
+                    Boa
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="/js/design.js"></script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+- [TR #414: "Nu: Towards an Aspect-Oriented Invocation Mechanism"](http://web.cs.iastate.edu/~nu/papers/towardsInvocation.pdf)
+- [TR #201](http://lib.dr.iastate.edu/cs_techreports/201/)
+- Figure out why old site's SPLAT-06 says that it builds on TR-405 (which
+  doesn't appear to exist) instead of TR-214.
+- Figure out [TR-unknown](/papers/TR-unknown).
+- Osiris Pub?
+- Scrape Slede Website Pubs
+- Slede: "ESEC/FSE '07 - DS"?
+- Slede: "FSE '06 - Poster paper" (not to be confused with FSE-2006) (broken link)
+- Fix broken link in body of TR-314. What should it go to?
+- More TRs?
+- ICSE-2004: What does the "- DS" stand for?
+- SPLASH-13-src: What does the "-src" stand for?

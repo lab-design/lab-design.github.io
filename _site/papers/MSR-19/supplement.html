@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/design.css">
+    <link rel="icon" href="/favicon.ico">
+    <title>Supplementary Material - Github Python Dataset for Boa</title>
+  </head>
+
+  <body>
+    <!-- Load jQuery before the content in order to support the papers page sorting -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <header>
+
+  <div class="brand-bg-color">
+    <div class="container">
+      <div class="brand-navbar">
+        <div class="row">
+          <div class="flex-separate col-12">
+            <a href="/" class="nav-link">
+              <span id="isu-logo">Iowa State University</span>
+              <span class="d-none d-sm-block">Laboratory for Software Design</span>
+              <span class="small d-block d-sm-none">Laboratory for Software Design</span>
+            </a>
+            <button class="navbar-toggler d-block d-sm-none" type="button" data-toggle="collapse" data-target="#collapseNav">&#9776;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-bg-color">
+    <nav class="container navbar navbar-dark navbar-expand-sm">
+      <div class="collapse navbar-collapse" id="collapseNav">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="/projects.html">Projects</a>
+          <a class="nav-item nav-link" href="/papers/">Papers</a>
+          <a class="nav-item nav-link" href="/grants/">Grants</a>
+          <a class="nav-item nav-link" href="/news/">News</a>
+          <a class="nav-item nav-link" href="/people.html">People</a>
+          <a class="nav-item nav-link" href="/about/">About</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+</header>
+
+
+<main class="container">
+  <br />
+  <div class="row">
+  <div class="col-12">
+    <h2 class="page-title">Supplementary Material - Github Python Dataset for Boa</h2>
+    <ol id="markdown-toc">
+  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+  <li><a href="#usage" id="markdown-toc-usage">Usage</a>    <ol>
+      <li><a href="#using-boa-website" id="markdown-toc-using-boa-website">Using Boa Website</a></li>
+      <li><a href="#standalone-project" id="markdown-toc-standalone-project">Standalone Project</a></li>
+    </ol>
+  </li>
+  <li><a href="#example-boa-queries" id="markdown-toc-example-boa-queries">Example Boa Queries</a></li>
+  <li><a href="#dataset-description" id="markdown-toc-dataset-description">Dataset Description</a></li>
+</ol>
+
+<h3 id="introduction">Introduction</h3>
+<p>This page provides supplementary material for the Github dataset for Python Data
+Science (DS) projects which is published in MSR 2019. We have used
+<a href="http://boa.cs.iastate.edu">Boa infrastructure</a> for this dataset.</p>
+
+<h3 id="usage">Usage</h3>
+<p>The dataset can be used in two ways: using Boa website and standalone project.</p>
+
+<h5 id="using-boa-website">Using Boa Website</h5>
+<p>To use the dataset go to <a href="http://boa.cs.iastate.edu">Boa website</a> and
+follow the steps:</p>
+
+<ol>
+<li>From the left menu, select User Login to login as a registered user. If you
+are not registered, request for a user.</li>
+<li>Write a query under the Boa Source Code. If researchers are not familiar
+with the language, the example Boa programs can be utilized by clicking the
+Select Examples. Some good examples for this dataset can be also found from the
+<a href="https://github.com/boalang/MSR19-DataShowcase">Github repository</a>.</li>
+<li>Select 2019 February/Python dataset in the drop-down list under Input
+Dataset and run the query.</li>
+</ol>
+
+<p>The job will be submitted to Hadoop cluster and is executed parallely on the
+dataset. When the job status is finished, the output text file will be available
+for downloading. The job is saved for future reference. One can share the job
+with others and one can reproduce the result.</p>
+
+<p>To learn about Boa language and queries, navigate through the Boa website,
+especially <a href="http://boa.cs.iastate.edu/docs/index.php">Programming Guide Section</a>.</p>
+
+<h5 id="standalone-project">Standalone Project</h5>
+<p>The dataset is also available outside of Boa website. All data are stored
+in Hadoop sequence files. Therefore, one can write simple programs to read those
+files and get parsed AST. The raw dataset is available
+<a href="https://drive.google.com/file/d/10XPEusLusHSxK5agxCBdA-rR3PowRbFX/view?usp=sharing">here</a> [~15 GB].</p>
+
+<p>We have a written a simple program to show how one can read the sequence file
+and get the parsed AST of the Python programs in the dataset:
+<a href="https://github.com/boalang/MSR19-DataShowcase/tree/master/ReadPythonDataset">Github Link</a>.
+Download the raw dataset and use this project to get parsed AST.</p>
+
+<h3 id="example-boa-queries">Example Boa Queries</h3>
+<p>The example Boa queries and their output can be found here: <a href="https://github.com/boalang/MSR19-DataShowcase/tree/master/Boa_Queries">Github Link</a>.</p>
+
+<h3 id="dataset-description">Dataset Description</h3>
+<p>The dataset contains 1,558 Github projects with following properties:</p>
+<ol>
+<li>Original (not forked) project with Python as the primary language.</li>
+<li>Contains data at least one science keywords like machine-learning, deep
+neural network in the description of the project. The whole list of keywords are
+listed in the appendix.</li>
+<li>Contains at least one usage of data science library like Pytorch, Caffe,
+Keras, Tensorflow etc. A full list of used 33 Python data science libraries are
+listed in the appendix.</li>
+<li>Contains at least 80 star.</li>
+</ol>
+
+<p>The dataset contains projects owned by both organizations and individual users.
+Some of the top rated projects are Tensorflow Models, Keras, Scikit-learn,
+Pandas, Spacy, Spotify Luigi, NVIDIA FastPhotoStyle, Theano, etc. A full list of
+all the 1,558 Github projects are available
+<a href="https://github.com/boalang/MSR19-DataShowcase/blob/master/info.txt">here</a>.
+350 projects in the dataset are maintained by different organizations (Google,
+Microsoft, NVIDIA etc.) and the rest 1,208 projects are maintained by individual
+users. The other metrics of the dataset are:</p>
+
+<ul>
+<li>Number of developers: 9,839</li>
+<li>Number of Python files (latest snapshot): 86,321</li>
+<li>Number of Python files (all revisions):4,977,680.</li>
+</ul>
+
+  </div>
+  </div>
+  <br />
+</main>
+
+
+<footer>
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      },
+      i[r].l = 1 * new Date();
+      a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-512574-3', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <div class="container">
+    <div>
+      <div class="row">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-xs-12 col-lg-3 isu-logo-wrapper">
+              <a href="http://www.iastate.edu">
+                <img src="/img/isu-stacked.svg" alt="Iowa State University" class="isu-logo">
+              </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4">
+              <p>
+                <b>Laboratory for Software Design</b>
+              </p>
+              <p>115-2 Atanasoff Hall</p>
+              <p>Ames, IA, 50011-1040, USA</p>
+              <p>Phone: (515) 294-6168</p>
+              <p>E-Mail: hridesh@iastate.edu</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+              <p>
+                Copyright &copy;
+                2021
+                Iowa State University of Science and Technology. All rights reserved.<BR>
+                <div class="d-none d-lg-block" style="margin-top: 0">
+                  The research and educational activities described on these pages has been supported in part by the
+                  <a href="http://www.nsf.gov">US National Science Foundation (NSF)</a>.
+                </div>
+              </p>
+            </div>
+            <div class="col-md-3 col-lg-1 d-none d-md-block project-logos">
+              <div>
+                <a href="http://web.cs.iastate.edu/~panini/">
+                  <img src="/img/panini-logo.svg" class="logo" alt="Boa Logo">
+                  Panini
+                </div>
+                <div>
+                  <a href="http://boa.cs.iastate.edu">
+                    <img src="/img/boa-logo.svg" class="logo" alt="Boa Logo">
+                    Boa
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="/js/design.js"></script>
+  </body>
+</html>

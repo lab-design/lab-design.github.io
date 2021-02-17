@@ -1,0 +1,27 @@
+Title: JavaScript as an Intermediate Language
+By Shriram Krishnamurthi
+Brown University
+
+Abstract: 
+
+Numerous languages now compile to JavaScript, and its ubiquity in the
+browser seems to make this inevitable. However, JavaScript appears to
+be a medicore target for language deployment, erecting both obvious
+and subtle obstacles. I will discuss some of these issues, especially
+drawing on our experiences deploying Racket in the browser.
+
+Bio:
+
+Shriram Krishnamurthi is a Professor of Computer Science at Brown
+University.  He currently focuses on securing various attack surfaces
+on the Web.  With collaborators and students, he has created several
+influential systems: DrRacket (programming environment), Margrave
+(security policy analyzer), FrTime and Flapjax (reactive programming
+languages), and Lambda-JS and TeJaS (semantics and types
+for JavaScript).  He is a co-author of "How to Design Programs" and
+ author of "Programming Languages: Application and Interpretation".  He
+ coordinates the Bootstrap math-and-computing outreach program.  He won
+ SIGPLAN's Robin Milner Young Researcher Award, and Brown's Henry
+ Merritt Wriston Fellowship for distinguished contribution to
+ undergraduate education.  He has authored twelve papers recognized for
+ honors by program committees.

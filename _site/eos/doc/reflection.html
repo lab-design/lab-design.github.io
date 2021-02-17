@@ -1,0 +1,192 @@
+<!--#include virtual="../includes/topbar.html"-->
+
+  <table width="100%" border="0">
+    <tr>
+      <td ALIGN=left VALIGN=top COLSPAN="2" BGCOLOR="##0066CC"><b><font color="#ffffff" face="Arial,Helvetica"><a name="reflection"></a>Reflective Information at the Join Point</font></b></td>
+    </tr>
+    <tr> 
+      <td>
+       <blockquote>
+There are a bunch of new interfaces available to extract 
+the reflective information at the join point. In particular, 
+the reflective special variable thisJoinPoint in the advice is 
+now of type Eos.Runtime.IJoinPoint. The signatures at the join points 
+are now available.
+
+
+        </blockquote>
+      </td>
+    </tr>
+
+    <tr>
+      <td ALIGN=left VALIGN=top COLSPAN="2" BGCOLOR="##0066CC"><b><font color="#ffffff" face="Arial,Helvetica"><a name="ijoinpoint"></a>Eos.Runtime.IJoinpoint</font></b></td>
+    </tr>
+    <tr> 
+      <td>
+       <blockquote>
+
+The members of this new interface are described below: <BR><BR>
+
+This property: Returns the value of "this" at the join point. Returns null in the case of static join points <BR><BR>
+
+Target property: Returns the target of the join point. Returns null in cases where there is no target. <BR><BR>
+
+ReturnValue property: Returns the return value at the join point if it is a valid return value otherwise null. <BR><BR>
+
+Args property: Returns the list of arguments of the join points. Returns an array of length zero if there are no arguments. <BR><BR>
+
+Kind property: Returns the string representation of the join point kind. <BR><BR>
+
+Signature property: Returns the signature of the join point. Please see the interface Eos.Runtime.Signature.ISignature for more details. <BR><BR>
+
+StaticPart property: Returns the static representation at the join point. Please see Eos.Runtime.IStaticPart for more details. <BR><BR>
+
+Location property: Returns the Location of the join point. Please see Eos.Runtime.ISourceLocation for more details.<BR><BR>
+
+
+
+        </blockquote>
+      </td>
+    </tr>
+
+    <tr>
+      <td ALIGN=left VALIGN=top COLSPAN="2" BGCOLOR="##0066CC"><b><font color="#ffffff" face="Arial,Helvetica"><a name="isourcelocation"></a>Eos.Runtime.ISourceLocation</font></b></td>
+    </tr>
+    <tr> 
+      <td>
+       <blockquote>
+
+Details of the static location of the join point <BR><BR>
+
+EnclosingType property: The System.Type representation of the type that encloses the join point <BR><BR>
+
+FileName property: The file name that contains the join point. <BR><BR>
+
+Line property: The line number at which the join point occurs. <BR><BR>
+
+        </blockquote>
+      </td>
+    </tr>
+
+    <tr>
+      <td ALIGN=left VALIGN=top COLSPAN="2" BGCOLOR="##0066CC"><b><font color="#ffffff" face="Arial,Helvetica"><a name="istaticpart"></a>Eos.Runtime.IStaticPart</font></b></td>
+    </tr>
+    <tr> 
+      <td>
+       <blockquote>
+
+The static part of the reflective information at a join point. <BR><BR>
+
+Signature property: The signature of the join point. <BR><BR>
+
+Location property: The source location of the join point. <BR><BR>
+
+Kind property: The string representation of the join point kind <BR><BR>
+
+        </blockquote>
+      </td>
+    </tr>
+
+    <tr>
+      <td ALIGN=left VALIGN=top COLSPAN="2" BGCOLOR="##0066CC"><b><font color="#ffffff" face="Arial,Helvetica"><a name="isignature"></a>Eos.Runtime.Signature.ISignature</font></b></td>
+    </tr>
+    <tr> 
+      <td>
+       <blockquote>
+
+Summary description for ISignature. <BR><BR>
+
+Name property: Name of the signature. <BR><BR>
+
+Modifiers property: Modifiers of this signature <BR><BR>
+
+DeclaringType property: Type of the enclosing class <BR><BR>
+
+DeclaringTypeName property: Name of the enclosing class <BR><BR>
+
+ToString method: Returns a string representation of this signature. <BR><BR>
+
+        </blockquote>
+      </td>
+    </tr>
+
+    <tr>
+      <td ALIGN=left VALIGN=top COLSPAN="2" BGCOLOR="##0066CC"><b><font color="#ffffff" face="Arial,Helvetica"><a name="icatchclausesignature"></a>Eos.Runtime.Signature.ICatchClauseSignature</font></b></td>
+    </tr>
+    <tr> 
+      <td>
+       <blockquote>
+
+The signature for the handler join points. This signature extends the ISignature interface. <BR><BR>
+
+ParameterType property: Returns the type of the exception caught <BR><BR>
+
+ParameterName property: Returns the name of the exception caught. <BR><BR>
+
+        </blockquote>
+      </td>
+    </tr>
+
+
+    <tr>
+      <td ALIGN=left VALIGN=top COLSPAN="2" BGCOLOR="##0066CC"><b><font color="#ffffff" face="Arial,Helvetica"><a name="iconstructorsignature"></a>Eos.Runtime.Signature.IConstructorSignature</font></b></td>
+    </tr>
+    <tr> 
+      <td>
+       <blockquote>
+
+The signature of a constructor. An object initialization join point returns this signature. This signature extends the ISignature interface. <BR><BR>
+
+ParameterTypes property: The list of the types of the parameters at the join point. <BR><BR>
+
+ParameterNames property: The list of the names of the parameters at the join point. <BR><BR>
+
+        </blockquote>
+      </td>
+    </tr>
+
+
+    <tr>
+      <td ALIGN=left VALIGN=top COLSPAN="2" BGCOLOR="##0066CC"><b><font color="#ffffff" face="Arial,Helvetica"><a name="ifieldsignature"></a>Eos.Runtime.Signature.IFieldSignature </font></b></td>
+    </tr>
+    <tr> 
+      <td>
+       <blockquote>
+
+
+Signature of a field. A field get, set and property get, set join points return this signature. This signature extends the ISignature interface. <BR><BR>
+
+FieldType property: The System.Type representation of the type of the field. <BR><BR>
+
+        </blockquote>
+      </td>
+    </tr>
+
+    <tr>
+      <td ALIGN=left VALIGN=top COLSPAN="2" BGCOLOR="##0066CC"><b><font color="#ffffff" face="Arial,Helvetica"><a name="imethodsignature"></a>Eos.Runtime.Signature.IMethodSignature </font></b></td>
+    </tr>
+    <tr> 
+      <td>
+       <blockquote>
+
+Signature of the method. A call and an execution join point return this signature. This signature extends the ISignature interface. <BR><BR>
+
+ReturnType property: The return type of the method.  <BR><BR>
+
+        </blockquote>
+      </td>
+    </tr>
+
+
+
+    <tr>
+      <td ALIGN=left VALIGN=top COLSPAN="2" BGCOLOR="##0066CC"><b><font color="#ffffff" face="Arial,Helvetica"></font></b></td>
+    </tr>
+  </table>
+
+
+<!--#include virtual="../includes/bottombar.html"-->
+
+
+
+ 

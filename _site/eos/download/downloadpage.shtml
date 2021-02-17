@@ -1,0 +1,52 @@
+<!--#include virtual="../includes/topbar.html"-->
+<table width="100%" border="0">    
+   <tr>            
+     <td ALIGN=left VALIGN=top COLSPAN="2" BGCOLOR="##0066CC">
+       <b>
+         <font color="#ffffff" face="Arial,Helvetica">
+              Download Eos 
+         </font>
+      </b>
+     </td>
+   </tr>
+   <tr> 
+     <td>
+         <blockquote> 
+             <p>
+	        <p><a href="download/eos-0.3.4.tar"> Eos 0.3.4 Archive</a> [Released, Jun 06]. </p>
+                <p><a href="download/eos-0.3.3.zip"> Eos 0.3.3 Archive</a> [Released, Jun 05]. </p>
+                <p><a href="download/eos-0.3.2.zip"> Eos 0.3.2 Archive</a> [Released, Jun 05]. </p>
+                <p><a href="download/eos-0.3.1.zip"> Eos 0.3.1 Archive</a> [Released, Apr 05]. </p>
+                <p><a href="download/eos-0.3-beta.zip"> Eos 0.3 Beta Archive</a> [Released, Mar 05]. </p>
+		<p><a href="download/eos-0.2.2.zip">Eos 0.2.2 Archive</a> [Released Jun, 04]. </p>
+		<p><a href="download/eos-0.2.1.zip" >Eos 0.2.1 Archive</a> [Released May, 04]. </p>
+		<p><a href="download/eos-0.2-beta.zip" >Eos 0.2 Beta Archive</a> [Released Feb, 04]. </p>
+		<p><a href="download/eos-0.1.zip" >Eos 0.1 Archive.</a></p>
+		<p>We are very interested in your feedback, and bug reports. Please 
+                  feel free to send us an e-mail if you are encountering any problems. 
+                  Language manual will be significantly improved and many features 
+                  will be added so if you want to keep your copy updated please 
+                  send an e-mail to eos@nospam.cs.iastate.edu (remove nospam), 
+                  so that we can keep you updated. Please also consider joining the Eos discussion e-mail list.</a> </p>
+             </p>
+          </blockquote>
+     </td>       
+  </tr>  
+   <tr>
+      <td ALIGN=left VALIGN=top COLSPAN="2" BGCOLOR="##0066CC"><b><font color="#ffffff" face="Arial,Helvetica">Warning.</font></b></td>
+    </tr>
+    <tr> 
+      <td>
+        <blockquote>
+                <p>The current versions of Eos are preliminary and only tested with Microsoft .NET Framework Version 1.0 and 1.1. 
+                  We will be happy to learn about your experiences on Mono and other .NET platforms. </p>
+        </blockquote>
+      </td>
+    </tr>
+    <tr>
+    <tr>
+      <td ALIGN=left VALIGN=top COLSPAN="2" BGCOLOR="##0066CC"><b><font color="#ffffff" face="Arial,Helvetica"></font></b></td>
+    </tr>
+</table>
+<!--#include virtual="../includes/email.php"-->
+<!--#include virtual="../includes/bottombar.html"-->

@@ -1,0 +1,19 @@
+Designing the Dart programming language with a simple virtual machine in mind
+
+By Lars Bak
+
+Modern programming languages are often designed without considerations for the
+underlying execution engines. In many cases, this leads to systems that are
+slow, complicated, memory bloated, and therefore error prone. This talk will
+present a new structured web programming language where the underlying virtual
+machine has been designed along with the language. We will also discuss the
+results of this approach with respect to simplicity, scalability, and
+performance.
+
+Lars Bak is a veteran virtual machinist. His passion for designing and
+implementing object-oriented virtual machines has left marks on several
+software systems: Beta, Self, Strongtalk, Sun's HotSpot and CLDC HI, OOVM
+Smalltalk, and V8. Since joining Google in the fall of 2006, Lars has been
+responsible for the design and implementation of V8. In case you wonder, V8 is
+the accelerator that makes Google Chrome fast. Lars graduated in 1988 with a MS
+degree in computer science from Aarhus University.

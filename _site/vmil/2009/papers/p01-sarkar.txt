@@ -1,0 +1,46 @@
+Virtual Machine and Intermediate Language Challenges for Parallelism
+
+By Vivek Sarkar
+
+Abstract: A virtual machine (VM) specifies the behavior of a system at a high
+level of abstraction that includes precise semantics for state updates and
+control flow, but leaves unspecified the low-level software and hardware
+mechanisms that will be used to implement the semantics. Past virtual machines
+have followed the von Neumman execution model by making sequential execution
+the default at a high level, and supporting parallelism with lower-level
+mechanisms such as threads and locks.  Now that the multicore trend is making
+parallelism the default execution model for all software, it behooves us as a
+community to study the fundamental requirements in parallel execution models
+and explore how they can be supported by higher-level abstractions at the VM
+level.  
+
+In this talk, we discuss five key requirements for parallel VM's: 1)
+Lightweight asynchronous tasks and communications, 2) Explicit locality, 3)
+Directed Synchronization with Dynamic Parallelism:, 4) Mutual Exclusion and
+Isolation with Dynamic Parallelism, and 5) Relaxed Exception semantics for
+Parallelism.  For completeness, these requirements need to be addressed at
+both the VM and Intermediate Language (IL) levels.  We summarize the approach
+being taken in the Habanero Multicore Software Research project at Rice
+University (http://habanero.rice.edu) to define a Parallel Intermediate
+Representation (PIR) to address these requirements, and then identify key
+research challenges in developing VM's and IL's for parallelism.
+
+Bio: Vivek Sarkar conducts research in programming languages, program
+analysis, compiler optimizations and virtual machines for parallel and high
+performance computer systems, and currently leads the Habanero Multicore
+Software Research project at Rice University. Prior to joining Rice, he was
+Senior Manager of Programming Technologies at IBM Research. His
+responsibilities at IBM included leading IBM's research efforts in programming
+model, tools, and productivity in the PERCS project during 2002- 2007 as part
+of the DARPA High Productivity Computing System program. His past projects
+include the X10 programming language, the Jikes Research Virtual Machine for
+the Java language, the ASTI optimizer used in IBM's XL Fortran product
+compilers, the PTRAN automatic parallelization system, and profile-directed
+partitioning and scheduling of Sisal programs.  Vivek became a member of the
+IBM Academy of Technology in 1995, the E.D. Butcher Professor of Computer
+Science at Rice University in 2007, and was inducted as an ACM Fellow in 2008.
+He holds a B.Tech. degree from the Indian Institute of Technology, Kanpur, an
+M.S. degree from University of Wisconsin-Madison, and a Ph.D. from Stanford
+University. In 1997, he was on sabbatical as a visiting associate professor at
+MIT, where he was a founding member of the MIT RAW multicore project. 
+

@@ -1,0 +1,367 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>  
+
+<!-- INSERT TITLE -->
+<title>Virtual Machines and Intermediate Languages (VMIL 2012)</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<!-- INSERT PAGE CONTENT, KEYWORDS -->
+<meta name="description" content="The Workshop on Virtual Machines and Intermediate Languages"/>
+<meta name="keywords" content="VMIL 2012, virtual machine, intermediate languages, java, .NET, research
+      Hridesh Rajan, OOPSLA, Robert Dyer, Michael Haupt, Christoph Bockisch, Orlando, Florida,
+      improved support, language features, 2012"/>
+
+<!-- CHANGE STYLESHEET LINK  -->
+<link rel="stylesheet" media="all" href="/vmil/styles/isuP.css" />
+
+<!-- INSERT ADDITIONAL STYLESHEET, IF DESIRED -->
+
+<!-- INSERT INLINE STYLES, IF DESIRED -->
+<style type="text/css">
+<!--
+#titlebar { border-top: none; }
+.rphoto125 { float: right; width: 125px; border: 1px solid #000; }
+.lphoto60 { float: left; width: 60px; margin-right: 5px; border: 1px
+solid #000;}
+.lphoto250 { float: left; width: 250px; margin-right: 5px; border: 1px solid #000; }
+#b3 { width: 355px; }
+#c3 { width: 245px; }
+#hilite2 { font-size: x-small; padding: .5em .5em .5em 2.5em; }
+-->
+</style>
+
+<!--
+.mainphoto { float: left; width: 250px; padding: 0 5px 0 0; }
+-->
+</head>
+
+<body>
+
+<div id="container">
+
+<!-- INSERT PAGE TITLE -->
+<div id="titlebar">
+<h1>VMIL 2012</h1>
+<h3>The 6th workshop on Virtual Machines and Intermediate Languages</h3>
+<h3>A workshop at SPLASH 2012 in Tucson, Arizona on October 21, 2012</h3>
+</div>
+
+<table id="main" cellspacing="0">
+<tr>
+<td  id="a2" rowspan="2">
+<div id="mainlinks">
+
+
+<!-- INSERT LEFT COLUMN LINKS -->
+<div class="linkhead"><h3>Index</h3></div>
+<ul>
+<li><a href="index.shtml">Home</a></li>
+<li><a href="program.shtml">Program</a></li>
+<li><a href="cfp.shtml">Call for Papers</a></li>
+<li><a href="organization.shtml">Organization</a></li>
+</ul>
+<!--
+<div class="linkhead"><h3>Important Dates</h3></div>
+<ul>
+<li><a href="cfp.shtml">Abstract: </a></li>
+<li><a href="cfp.shtml">Full Paper: </a></li>
+<li><a href="">Notification: </a></li>
+<li><a href="">Final version: </a></li>
+<li><a href="">Workshop: </a></li>
+</ul>
+-->
+<div class="linkhead"><h3>Past Workshops</h3></div>
+<ul>
+<li><a href="/vmil/2011/">VMIL'11</a></li>
+<li><a href="/vmil/2010/">VMIL'10</a></li>
+<li><a href="/vmil/2009/">VMIL'09</a></li>
+<li><a href="/vmil/2008/">VMIL'08</a></li>
+<li><a href="/vmil/2007/">VMIL'07</a></li>
+</ul>
+<div class="linkhead"><h3>Quick Links</h3></div>
+<ul>
+<li><a href="http://splashcon.org/2012/">SPLASH 2012</a></li>
+</ul>
+</div>
+
+
+<!-- INSERT COPY OR DELETE -->
+<div class="maintext">
+<h3>Got a question?</h3>
+<p class="cutline">
+Got a question or comment? Contact us at
+(515) 294-6168 or <a href="mailto:hridesh@iastate.edu">hridesh@iastate.edu</a>.
+</p>
+</div>
+
+
+<div class="maintext">
+<h3>Join Us</h3>
+<table border=0 style="background-color: #fff; padding: 5px;" cellspacing=0>
+  <form action="http://groups.google.com/group/vmil/boxsubscribe">
+  <tr><td style="padding-left: 5px;">
+  Email: <input type=text name=email>
+  <input type=submit name="sub" value="Subscribe">
+  </td></tr>
+</form>
+<tr><td align=right>
+  <a href="http://groups.google.com/group/vmil">Visit this group</a>
+</td></tr>
+</table>
+</div>
+</td>
+
+<!-- 2ND COLUMN. INSERT COPY -->
+<td id="b2" rowspan="2">
+
+<div class="maintext">
+  
+
+<h2 class="bar">VMIL 2012 Program</h2>
+
+<p><b>Workshop Date</b>: October 21, 2012</p>
+<p><b>Workshop Location</b>: Salon K </p>
+<p><a href="papers/vmil2012.pdf">Workshop proceedings as a single PDF file.</a></p>
+
+<h2 class="bar">Session I&nbsp;&nbsp;Tracing JIT Compilers</h2>
+
+<table width=100% cellspacing="5px">
+<tr>
+<td nowrap="nowrap">8:30 - 8:35</td>
+<td>
+Welcome, organizers introduction, brief introduction to the workshop, agenda<br/>
+<!--[<a href="slides/welcome-slides.pdf">slides</a>] -->
+</td>
+</tr>
+
+<tr>
+<td colspan = 2>&nbsp;<br/></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">8:35 - 9:30</td>
+<td>
+Keynote Talk: A Trace-based Java JIT Compiler for Large-scale Applications<br/>
+<a href="http://researcher.watson.ibm.com/researcher/view.php?person=jp-INOUEHRS">Hiroshi Inoue</a><br/>
+IBM Research - Tokyo<br/>
+Abstract: Trace-based compilation uses dynamically-identified
+frequently-executed code sequences (traces) as units for
+compilation. We explore trace-based compilation in Java to see if a
+trace-based JIT compiler (trace-JIT) can address a limitation of
+method-based JIT compilers: limited compilation scope when dealing
+with those with largely flat execution profile. Although, trace-based
+compilation has gained popularity in dynamic scripting languages
+(e.g. TraceMonkey and pypy) or for embedded devices (e.g. Dalvik VM),
+the benefits and drawbacks of trace-JIT for large-scale applications
+have not yet been studied. We first describe the design and
+implementation of our trace-JIT with emphasis on efficient trace
+selection and code generation. Then we discuss how the trace selection
+algorithm affects the performance of a large-scale Java application
+server.</br>
+<br/>
+</td>
+</tr>
+
+<tr>
+<td colspan = 2>&nbsp;<br/></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">9:30 - 10:00:</td>
+<td>The Efficient Handling of Guards in the Design of RPython&#39;s Tracing JIT<br/>
+David Schneider and Carl Friedrich Bolz<br/>
+Heinrich-Heine-Universitat Dusseldorf<br/>
+Germany<br/>
+</td>
+</tr>
+
+<tr bgcolor="#c00">
+<td height="5px" colspan="2"><!-- --></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">10:00 - 10:30:<br/></td>
+<td>Break<br/></td>
+</tr>
+
+<tr bgcolor="#c00">
+<td height="5px" colspan="2"><!-- --></td>
+</tr>
+
+<td colspan = 2><h2 class="bar">Session II&nbsp;&nbsp;JVM Design</h2></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">10:30 - 11:00:</td>
+<td>S-RVM: a Secure Design for a High-Performance Java Virtual Machine<br/>
+Yuval Yarom, Katrina Falkner and David S. Munro<br/>
+The University of Adelaide<br/>
+Australia<br/>
+20 minutes for talk + 10 minutes for discussion<br/>
+</td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">11:00 - 11:30:</td>
+<td>Bypassing Portability Pitfalls of High-level Low-level Programming</a><br/>
+Yi Lin and Steve Blackburn<br/>
+Australian National University<br/>
+Australia<br/>
+20 minutes for talk + 10 minutes for discussion<br/>
+</td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">11:30 - 12:00:</td>
+<td>The JVM is not observable enough (and what to do about it)</a><br/>
+Stephen Kell, Danilo Ansaloni, Walter Binder and Lukás Marek<br/>
+University of Lugano and Charles University<br/>
+Switzerland<br/>
+20 minutes for talk + 10 minutes for discussion<br/>
+</td>
+</tr>
+
+
+<tr>
+<td colspan = 2>&nbsp;<br/></td>
+</tr>
+
+<tr bgcolor="#c00">
+<td height="5px" colspan="2"><!-- --></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">12:00 - 1:30:</td>
+<td>Lunch Break</td>
+</tr>
+
+<tr bgcolor="#c00">
+<td height="5px" colspan="2"><!-- --></td>
+</tr>
+
+<td colspan = 2><h2 class="bar">Session III&nbsp;&nbsp;</h2></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">1:30 - 2:30</td>
+<td>Invited Talk: From Turtles to Hares -- speeding up a dynamic language for data analytics<br/>
+<a href="http://www.cs.purdue.edu/people/faculty/jv/">Jan Vitek</a></br>
+Purdue University</br>
+</td>
+</tr>
+
+<tr>
+<td colspan = 2>&nbsp;<br/></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">2:30 - 3:00</td>
+<td>Faster Work Stealing With Return Barriers<br/>
+Vivek Kumar and Steve Blackburn<br/>
+Australian National University<br/>
+Australia<br/>
+20 minutes for talk + 10 minutes for discussion<br/>
+</td>
+</tr>
+
+<tr bgcolor="#c00">
+<td height="5px" colspan="2"><!-- --></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">3:00 - 3:30:<br/></td>
+<td>Break<br/></td>
+</tr>
+
+<tr bgcolor="#c00">
+<td height="5px" colspan="2"><!-- --></td>
+</tr>
+
+<tr>
+<td colspan = 2><h2 class="bar">Session IV&nbsp;&nbsp;Inlining and Adaptive Compilation</h2></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">3:30 - 4:00:</td>
+<td>Some New Approaches to Partial Inlining<br/>
+Bowen Alpern, Anthony Cocchi and David Grove<br/>
+Lehman College, CUNY and IBM Research<br/>
+USA<br/>
+20 minutes for talk + 10 minutes for discussion<br/>
+</td>
+</tr>
+
+<tr>
+<td colspan = 2>&nbsp;<br/></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">4:00 - 4:30:</td>
+<td>Compilation Queuing and Graph Caching for Dynamic Compilers<br/>
+Lukas Stadler, Gilles Duboscq, Hanspeter Hanspeter M&ouml;ssenb&ouml;ck and Thomas W&uuml;rthinger<br/>
+Johannes Kepler University and Oracle Labs<br/>
+Austria<br/>
+20 minutes for talk + 10 minutes for discussion<br/>
+</td>
+</tr>
+
+<tr>
+<td colspan = 2>&nbsp;<br/></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">4:30 - 5:00:<br/></td>
+<td>Discussion<br/></td>
+</tr>
+
+<tr bgcolor="#c00">
+<td height="5px" colspan="2"><!-- --></td>
+</tr>
+
+<tr>
+<td nowrap="nowrap">7:00 - 9:00:</td>
+<td>Workshop dinner [Location: TBD] (meet in lobby at 6:45pm)</td>
+</tr>
+
+</table>
+
+<p></p>
+
+
+</div>
+</td>
+</tr>
+</table>
+
+<!-- INSERT CONTACT INFO: UNIT, PHONE, E-MAIL  -->
+
+<div id="footer">
+<div id="copyright">
+<img src="/vmil/images/ISUbecoming.gif"
+alt="Becoming the Best" width="200"
+height="31" />
+
+
+<p><a href="http://design.cs.iastate.edu">Laboratory for Software Design</a>, <a href="http://www.cs.iastate.edu/">Department of Computer Science</a>, <a href="http://www.iastate.edu/">Iowa State University</a></p>
+<p>226 Atanasoff Hall, Ames, IA, 50011-1040, USA</p>
+<p>Voice: (515) 294-6168 . Fax: (515) 294-0258 . E-Mail: hridesh@iastate.edu</p>
+<p>Copyright &#169; 2012, Iowa State University of Science and
+Technology. All rights reserved.</p>
+</div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+	var pageTracker = _gat._getTracker("UA-1547227-6");
+	pageTracker._trackPageview();
+} catch(err) {}</script>
+</div>
+</body>
+</html>
+ 

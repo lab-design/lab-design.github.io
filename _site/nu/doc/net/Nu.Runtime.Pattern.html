@@ -1,0 +1,170 @@
+<html dir="LTR">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252" />
+    <meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5" />
+    <title>Nu.Runtime.Pattern</title>
+    <xml>
+    </xml>
+    <link rel="stylesheet" type="text/css" href="MSDN.css" />
+  </head>
+  <body id="bodyID" class="dtBODY">
+    <div id="nsbanner">
+      <div id="bannerrow1">
+        <table class="bannerparthead" cellspacing="0">
+          <tr id="hdr">
+            <td class="runninghead">Nu Runtime Documentation</td>
+            <td class="product">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div id="TitleRow">
+        <h1 class="dtH1">Nu.Runtime.Pattern Namespace</h1>
+      </div>
+    </div>
+    <div id="nstext">
+      <p>
+        <a href="Nu.Runtime.PatternHierarchy.html">Namespace hierarchy</a>
+      </p>
+      <h3 class="dtH3">Classes</h3>
+      <div class="tablediv">
+        <table class="dtTABLE" cellspacing="0">
+          <tr valign="top">
+            <th width="50%">Class</th>
+            <th width="50%">Description</th>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Nu.Runtime.Pattern.And.html">And</a>
+            </td>
+            <td width="50%"> The operator "And" is used to form composite patterns. This operator composes two patterns such that a join point is matched only when it is matched by both patterns. </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Nu.Runtime.Pattern.Args.html">Args</a>
+            </td>
+            <td width="50%">
+            
+            </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Nu.Runtime.Pattern.Call.html">Call</a>
+            </td>
+            <td width="50%"> A Call Pattern selects each method call join point whose signature matches Method. </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Nu.Runtime.Pattern.Execution.html">Execution</a>
+            </td>
+            <td width="50%"> An execution Pattern selects each method execution join point whose signature matches Method. </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Nu.Runtime.Pattern.Field.html">Field</a>
+            </td>
+            <td width="50%">
+            </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Nu.Runtime.Pattern.Method.html">Method</a>
+            </td>
+            <td width="50%"> The Method class provides a statically typed approach to represent patterns to be matched with method signatures. It provides different constructors to represent different types of patterns. </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Nu.Runtime.Pattern.Method.Any.html">Method.Any</a>
+            </td>
+            <td width="50%"> The only purpose of this class is to provide a type to represent any return type </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Nu.Runtime.Pattern.NewCall.html">NewCall</a>
+            </td>
+            <td width="50%"> A NewCallPattern selects each constructor call join point whose signature matches Method. </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Nu.Runtime.Pattern.NewExecution.html">NewExecution</a>
+            </td>
+            <td width="50%"> A NewExecutionPattern selects each constructor execution join point whose signature matches Method. </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Nu.Runtime.Pattern.Not.html">Not</a>
+            </td>
+            <td width="50%"> A "Not" operator negates a Pattern such that a join point is matched only when it is not matched by the operand Pattern. </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Nu.Runtime.Pattern.Or.html">Or</a>
+            </td>
+            <td width="50%"> An "Or" operator composes two Patterns such that a join point is matched if it is matched by either Patterns. </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Nu.Runtime.Pattern.Return.html">Return</a>
+            </td>
+            <td width="50%"> A return Pattern selects each method return join point whose signature matches Method. </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Nu.Runtime.Pattern.StaticInitialization.html">StaticInitialization</a>
+            </td>
+            <td width="50%"> A NewExecutionPattern selects each constructor execution join point whose signature matches Method. </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Nu.Runtime.Pattern.Target.html">Target</a>
+            </td>
+            <td width="50%"> A "Target" Pattern matches every join point when the target executing object is an instance of Type or Id's type. </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Nu.Runtime.Pattern.This.html">This</a>
+            </td>
+            <td width="50%"> A "This" Pattern matches every join point when the currently executing object is an instance of Type or Id's type. </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Nu.Runtime.Pattern.TypePattern.html">TypePattern</a>
+            </td>
+            <td width="50%">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h3 class="dtH3">Interfaces</h3>
+      <div class="tablediv">
+        <table class="dtTABLE" cellspacing="0">
+          <tr valign="top">
+            <th width="50%">Interface</th>
+            <th width="50%">Description</th>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Nu.Runtime.Pattern.IPattern.html">IPattern</a>
+            </td>
+            <td width="50%"> IPattern is an interface for every pattern in the "Nu" model. The bind and remove primitives expect a reference to an object that implements this interface. The patterns are of two types: basic and composite. Basic patterns are fundamental building blocks of this pattern language. An example of basic patterns is <a href="Nu.Runtime.Pattern.Method.html">Method</a>. The composite patterns are formed by qualifying or composing basic patterns. For example, a <b>Method</b> can be qualified with an <a href="Nu.Runtime.Pattern.Execution.html">Execution</a> and composed with other patterns using <a href="Nu.Runtime.Pattern.And.html">And</a>, <a href="Nu.Runtime.Pattern.Or.html">Or</a>, and negated using the <a href="Nu.Runtime.Pattern.Not.html">Not</a>. </td>
+          </tr>
+        </table>
+      </div>
+      <h3 class="dtH3">Enumerations</h3>
+      <div class="tablediv">
+        <table class="dtTABLE" cellspacing="0">
+          <tr valign="top">
+            <th width="50%">Enumeration</th>
+            <th width="50%">Description</th>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="Nu.Runtime.Pattern.Modifiers.html">Modifiers</a>
+            </td>
+            <td width="50%"> Attibutes for a class </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
