@@ -1,0 +1,215 @@
+<html>
+<head>
+<title>Learning Eos by examples.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<p><font size="+2" face="Verdana, Arial, Helvetica, sans-serif"><b><font size="+3">The 
+  Eos Programming Guide</font></b></font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif"><b><font size="+1">Hridesh 
+  Rajan and Kevin Sullivan</font></b></font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif"><b>Copyright &copy; 2004, 
+  The Rector and Visitors of the University of Virginia. All rights reserved.</b><br>
+  </font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif">Eos is an aspect-oriented 
+  extension of C#. The language is very similar to AspectJ except for constructs 
+  which are not implemented in Eos and constructs which AspectJ does not provides. 
+  Eos adds to C# join points, and four new constructs: pointcuts, advice, introductions 
+  and aspects. As in AspectJ, pointcuts and advices affect the program flow, and 
+  introductions affect the type. The Eos syntax is an extension to the C# syntax 
+  defined in the ECMA C# language specification. New key words are shown below. 
+  </font></p>
+<pre><font face="Verdana, Arial, Helvetica, sans-serif">advice, after, any, args, around, aspect, before, call, execution, fget, fset, instancelevel, pointcut </font></pre>
+<p><font face="Verdana, Arial, Helvetica, sans-serif">Most of these keywords are 
+  similar to their counterparts in AspectJ. Keywords fget and fset are equivalent 
+  to keywords get and set of AspectJ and there names were changed to avoid conflict 
+  with already existing keywords get and set in C# (used for declaring accessor 
+  functions for properties). Keyword any is equivalent to wildcard &quot;*&quot; 
+  in AspectJ pointcut designators and it was introduced to avoid conflict with 
+  the value of a pointer &quot;*&quot; operator in C#. The rest of these keywords 
+  will be discussed later in this section in the context they are useful.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif">According to the C# language 
+  specification, a reference type is a class type, an interface type, an array 
+  type, or a delegate type. In Eos we extend this to include aspect type. An aspect 
+  type defines a data structure that contains data members (constants and fields), 
+  function members (methods, properties, events, indexers, operators, instance 
+  constructors, destructors, and static constructors), crosscutting members (pointcuts, 
+  advices and introductions) and nested types. Aspect types support inheritance, 
+  a mechanism whereby derived aspects can extend and specialize abstract aspects 
+  or classes; however, a class may not extend and specialize aspects. Instances 
+  of instance level aspect types are created using object-creation-expressions. 
+  Instances of type level aspect types may not be created. An aspect declaration 
+  is:</font></p>
+<pre><font face="Verdana, Arial, Helvetica, sans-serif">aspect-declaration: optional-attributes optional-modifiers <b>aspect</b> identifier optional-aspect-base aspect-body optional-semicolon
+</font></pre>
+<p><font face="Verdana, Arial, Helvetica, sans-serif">An aspect-modifier is either 
+  of the permissible class-modifiers or <i>instancelevel</i> specifying instance 
+  level aspect weaving. As in C#, it is a compile-time error for the same modifier 
+  to appear multiple times. The instancelevel modifier can be applied to the aspects, 
+  and advices, as shown below. </font></p>
+<pre><font face="Verdana, Arial, Helvetica, sans-serif">1 /// Type Level aspect in Eos
+2  public aspect A 
+3    { 
+4      // Some Members 
+5    }
+6 
+7 // Instance Level aspect in Eos
+8  public instancelevel aspect B 
+9    { 
+10     pointcut callfoo():call(public void any.foo()); 
+11   }
+12
+13 // Aspect in Eos containing both type and instance level advices
+14 public aspect C 
+15   { 
+16     pointcut fval(): fget(public int any.val);
+17     instancelevel after(): execution (public void any.bar());   
+18     after():fval() { // Do something }
+19   }</font></pre>
+<p><font face="Verdana, Arial, Helvetica, sans-serif">In the code shown above, 
+  aspect A, has no weaving modifier, so it is woven at type level i.e. if some 
+  advice in aspect A is woven into some class P, each instance of the class P 
+  will be affected by the behavior of the advice. By declaring an aspect to be 
+  instancelevel, you are telling the weaver to wait until runtime to weave the 
+  aspect at the specified join points. The aspect B in the code shown above is 
+  an example of such an aspect. At compile time, the weaver attaches event stubs 
+  at join points specified in the pointcut declaration, to enable instance level 
+  weaving i.e. weaving the advice's to only those instances of the class P to 
+  which you tell it to weave the advice's. Here the pointcut declaration serves 
+  as a hint to the compiler to attach stubs only to join points that might be 
+  advised. This is the key difference between Eos and AspectJ. AspectJ only allows 
+  weaving at the type level whereas Eos allows type-level as well as instance-level 
+  weaving (selective weaving of instances).</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif"> One might want to weave 
+  some advice of an aspect at type-level and others at the instance level. Eos 
+  allows this kind of mixing. For example aspect C in the code above has no weaving 
+  modifier so all its advice's are woven at type level except the advice modified 
+  with <i>instancelevel</i> modifier. Each aspect declared as instancelevel or 
+  an aspect containing instancelevel advice's provides implicit methods addObject 
+  and removeObject for specifying which instances are to be woven and unwoven. 
+  At runtime these methods are called to specify objects to be advised. </font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif">In Eos like AspectJ, pointcuts 
+  are used to identify certain sets of join points in the program flow. For example, 
+  the pointcut call(public any.bar()) identifies any call to the method bar defined 
+  by any types. Eos also provides operators and (&amp;&amp;), or (||) and not 
+  (!) to compose pointcuts. For example, the pointcut callbarORfoo in code above 
+  identifies any call to either the bar or the foo methods defined by any types. 
+  Similarly, pointcut callbarANDfoo identifies any call to the bar and the foo 
+  methods, which is an empty set.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif">Advice code can access reflective 
+  information at join points using the implicit argument thisJoinPoint. Depending 
+  on the join point, the methods getThis, getTarget, getReturnValue, getArgs returns 
+  this object, the target object, the return value (only for method call and execution 
+  join points), and method arguments (for method call and execution join points) 
+  respectively. To illustrate these and several other related ideas we will now 
+  walk through some examples. <br>
+  </font></p>
+<p><font size="+2" face="Verdana, Arial, Helvetica, sans-serif"><b>A Bit System</b></font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif">Suppose that you are asked 
+  to construct a system out of several binary digit (Bit) components. The system 
+  has n Bit's, b1 b2, b3, b4 &#133; bn, each accessible to clients. The state 
+  space of a Bit is a single Boolean digit. Two mutator operations are applicable 
+  to a Bit, namely Set and Clear. They respectively set the abstract state of 
+  a Bit to 1 and 0. An observer operation, Get, returns the current state. Bit's 
+  can change their state independently. The C# code for Bit class is shown below.</font></p>
+<pre><font face="Verdana, Arial, Helvetica, sans-serif">1 namespace BIT{
+2    public class Bit 
+3    { 
+4    bool value;
+5    public Bit() { value = false; }
+6    public void Set() { value = true; } 
+7    public bool Get (){ return value; } 
+8    public void Clear() {value= false; }
+9    }
+10 }</font></pre>
+<p><font face="Verdana, Arial, Helvetica, sans-serif">There are numerous types 
+  of relationships between bits and any given bit instance can participate in 
+  zero or more relationship instances. Some of the relationships types are as 
+  follows: </font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif">Consistency: Two bits b1 
+  and b2 are said to be consistent if b1 and b2 work together as follows. If a 
+  client Set's either Bit to 1, the other must be Set to 1 before the first operation 
+  completes; and if either client Clear's either bit, the other must be Clear'ed, 
+  too: once again, before the original operation completes. In other words the 
+  states of the Bit's are to be kept in Consistent. </font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif">Trigger: Two Bits b1 and 
+  b2 are said to be in a trigger relationship if b1 and b2 work together as follows: 
+  if any client Set's b1, then b2 must be Set before the operation on b1 completes. 
+  Thus, Bit b2 can be Set and Clear'ed with no effect on the other Bit's, and 
+  b1 can be Clear'ed with no effect on b2, but if b1 is Set again, b2 has to be 
+  Set, too. </font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif">Numerous relationships R1, 
+  R2,.. Rm like Consistency and Trigger may exist in the Bit system. Moreover, 
+  any Bit bi can participate in any number of instances of any number of relationships. 
+  The structure of such a system is thus a network or graph of Bit instance nodes 
+  connected together by relationship instance arcs.<br>
+  </font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif">These relationships can 
+  be implemented using different techniques, but here we will focus on how they 
+  will be implemented using aspects. Let us first consider the relationship consistency. 
+  An implementation of this relationship using Eos is shown below.</font></p>
+<pre><font face="Verdana, Arial, Helvetica, sans-serif">1 using System;
+2 namespace BIT
+3 {
+4  public instancelevel aspect Consistency 
+5    { 
+6    Bit bit1, bit2;
+7    bool busy;
+8    public Consistency(Bit bit1, Bit bit2)
+9    {
+10   	addObject(bit1);
+11   	addObject(bit2);
+12   	this.bit1 = bit1;
+13   	this.bit2 = bit2;
+14   	busy = false;
+15   }
+16   after():execution(public void Bit.Set ())
+17   {
+18   if(!busy)
+19   	{
+20   	busy = true;
+21   	Bit bit = (Bit) thisJoinPoint.getTarget();
+22   	if(bit == bit1)bit2.Set();
+23      else bit1.Set();
+24   	busy = false;
+25   	}
+26   }
+27   after():execution(public void Bit.Clear ())
+28   {
+29   if(!busy)
+30   	{
+31   	busy = true;
+32   	Bit bit = (Bit) thisJoinPoint.getTarget();
+33   	if(bit == bit1)bit2.Set();
+34   	else bit1.Set();
+35   	busy = false;
+36   	}
+37   }
+38  }
+39 }</font></pre>
+<p><font face="Verdana, Arial, Helvetica, sans-serif">For people familiar with 
+  aspect-oriented programming, this code segment will look familiar except for 
+  the a) the modifier <i>instancelevel</i> before aspect (on line number 4), b) 
+  method <i>addObject</i> (on line number 10, 11) and c) explicit declaration 
+  of constructor for the aspect( from line number 8 - 15). For others at this 
+  point it will be sufficient to understand that this is a declaration of the 
+  aspect <i>Consistency</i>. Aspect declaration is very similar to class declarations. 
+  Aspect declaration may contain advice and pointcut declaration in addition to 
+  member field, member method declaration. An aspect in Eos also has a weaving 
+  modifier <i>instancelevel</i>, which if present advises the compiler to treat 
+  advices in this aspect as instance level advice's and weaves them selectively. 
+  The <i>Consistency</i> aspect provides a method Relate which takes two instances 
+  of Bit object and weaves them at run time using the implicit method addObject. 
+  There are two member advice's in this aspect, (from line 16-26 and 27-38). First 
+  advice declaration simply means that after execution of the method Set in class 
+  Bit execute the following body. Second advice is similar to the first, except 
+  that it applies to the execution of the method Clear. On line number 21 and 
+  32 n the the body of the first and second advice reflective information at the 
+  join point is accessed using the implicit argument thisJoinPoint of the advice 
+  to find out which bit is being set or cleared. Complete source code for this 
+  example is in the directory examples/bit.</font></p>
+<p></p>
+<p>&nbsp; </p>
+</body>
+</html>

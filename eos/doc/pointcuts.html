@@ -1,0 +1,75 @@
+<!--#include virtual="../includes/topbar.html"-->
+
+  <table width="100%" border="0">
+    <tr>
+      <td ALIGN=left VALIGN=top COLSPAN="2" BGCOLOR="##0066CC"><b><font color="#ffffff" face="Arial,Helvetica"><a name="pointcuts"></a>Pointcuts in Eos.</font></b></td>
+    </tr>
+    <tr> 
+      <td>
+       <blockquote>
+A pointcut expression in Eos can be a named pointcut expression or either of the pointcut designators. The pointcut expressions can be  composed using &&, || or !. The syntax of Eos pointcuts is given below.  
+
+<pre>
+
+pointcuts:  
+     pointcut 
+     | ! pointcuts 
+     | pointcuts && pointcut 
+     | pointcuts || pointcut 
+     | ( pointcuts)   
+
+
+pointcut 
+	 : named pointcut 
+	 | execution(method-pattern) 
+         | fget( field-pattern) 
+	 | fset(field-pattern) 
+         | pget(field-pattern) 
+	 | pset(field-pattern) 
+	 | initialization(constructor-pattern) 
+	 | staticinitialization(name-pattern) 
+         | handler(name-pattern) 
+	 | within(name-pattern) 
+	 | withincode(method-pattern) 
+	 | this(identifier) 
+	 | target(identifier) 
+	 | return(identifier) 
+	 | aroundptr(identifier) 
+	 | joinpoint(identifier) 
+	 | args(identifier) 
+	 | conditional( conditional-constructs) 
+	 | iteration( interation-construct)  
+
+named pointcut: pointcut name ( optional argument list)  
+
+conditional-construct: if | switch | any  
+	 
+iteration-construct: while | for | foreach | any  
+	
+method-pattern: optional-modifiers typeorany name-pattern(optional-parameters)  
+      An unspecified modifier matches all modifiers i.e. it is equivalent to the regular expression '*'.
+      A '..' in place of optional parameters matches to all parameter sequences.
+
+constructor-pattern: optional-modifiers name-pattern(optional-parameters)  
+
+typeorany: any | type  
+
+field-pattern: typeorany name-pattern  
+
+name-pattern: identifier | any | name-pattern.any | name-pattern.identifier  
+</pre>
+
+        </blockquote>
+      </td>
+    </tr>
+    <tr>
+      <td ALIGN=left VALIGN=top COLSPAN="2" BGCOLOR="##0066CC"><b><font color="#ffffff" face="Arial,Helvetica"></font></b></td>
+    </tr>
+  </table>
+
+
+<!--#include virtual="../includes/bottombar.html"-->
+
+
+
+ 

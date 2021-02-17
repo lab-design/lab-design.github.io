@@ -1,0 +1,5 @@
+AuthName      "Hypercast Source"
+AuthType      Basic
+AuthUserFile  /home/hr2j/aliciakey
+require       valid-user
+
