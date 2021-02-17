@@ -1,0 +1,58 @@
+<!--#include virtual="../includes/top.html"-->
+<title>Download the Compiler for the Ptolemy Programming Language</title>
+<!--#include virtual="../includes/header.html"-->
+<h1>Download Ptolemy</h1>
+                
+                    <div class="col2-content">
+						<p>
+							Ptolemy is available for free for evaluation and usage 
+							subject to the following licensing agreement. 
+						 </p>
+						<p>
+						 	<script type="text/javascript">
+						    copyright=new Date()
+						    fullYear=copyright.getFullYear();
+						    document.write("<EM>Copyright &copy; " + fullYear + " Iowa State University of Science and Technology. All rights reserved.</EM>")
+					       </script>
+						</p>
+						<p>
+							Ptolemy compiler, tools, libraries and sources are subject to the 
+							Mozilla Public License Version 1.1 (the "License"); you may not 
+							use them except in compliance with the License. You may obtain 
+							a copy of the License at http://www.mozilla.org/MPL/.
+						</p>
+						<p>
+						 	Software distributed under the License is distributed on an "AS IS" 
+						 	basis, WITHOUT WARRANTY OF ANY KIND, either express or 
+						 	implied. See the License for the specific language governing rights 
+						 	and limitations under the License.
+						</p>
+						<p>
+						 	The Initial Developer of the Original Code is Iowa State University. 
+						 	Portions created by Iowa State University are 
+						 	<script type="text/javascript">
+						    copyright=new Date()
+						    fullYear=copyright.getFullYear();
+						    document.write("Copyright &copy; " + fullYear + " Iowa State University of Science and Technology. All rights reserved.")
+					       </script>
+						</p>
+						
+						<!-- DOWNLOAD BUTTON -->
+						<div class="button">
+							<a href="http://sourceforge.net/projects/ptolemyj/files/1.2/">I AGREE, DOWNLOAD PTOLEMY</a>
+						</div>
+						
+						
+                        <!-- PACKAGE UPDATE -->                       
+						<p id="update" style="text-align:center;">
+							Version 1.2<br/>
+							Last modified on 2011/03/24
+						</p>
+                    </div>
+                    <div class="col2-toc">
+                        <p>
+                        	<b>Ptolemy can also be downloaded from the project's SourceForge page: <a href="http://sourceforge.net/projects/ptolemyj/">http://sourceforge.net/projects/ptolemyj/</a></b>	
+                        </p>
+                    </div>
+          
+<!--#include virtual="../includes/bottom.html"-->

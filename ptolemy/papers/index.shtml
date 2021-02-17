@@ -1,0 +1,310 @@
+<!--#include virtual="../includes/top.html"-->
+<title>Papers on the Ptolemy Programming Language</title>
+<!--#include virtual="../includes/header.html"-->
+<h1>Publications Related to Ptolemy</h1>
+<script type="text/javascript">
+copyright=new Date()
+fullYear=copyright.getFullYear();
+document.write("<h5>Copyright &copy; 2006-" + fullYear + ", Iowa State University of Science and Technology. All rights reserved.</h5>")
+</script>
+
+<!-- TABLE OF CONTENTS -->
+<div class="col2-toc">
+	<ul>
+		<li><a href="papers/#2012">2012</a>
+		</li>
+		<li><a href="papers/#2011">2011</a>
+		</li>
+		<li><a href="papers/#2010">2010</a>
+		</li>
+		<li><a href="papers/#2009">2009</a>
+		</li>
+		<li><a href="papers/#2008">2008</a>
+		</li>
+		<li><a href="papers/#2007">2007</a>
+		</li>
+		<li><a href="papers/#2006">2006</a>
+		</li>
+		<li><a href="papers/#2005">2005</a>
+		</li>
+	</ul>
+</div>
+
+<!-- CONTENT -->
+<div class="col2-content">
+	<h2>
+		<a name="2012">2012</a>
+	</h2>
+	<ul>
+		<li>
+			<p>
+				<a href="http://www.cs.iastate.edu/~rdyer/">Robert Dyer</a>, <a
+					href="http://www.cs.iastate.edu/~hridesh/">Hridesh Rajan</a> and <a
+					href="http://www.cs.drexel.edu/~yfcai/">Yuanfang Cai</a>. <a
+					href="http://www.cs.iastate.edu/~design/papers/AOSD-12"> An
+					Exploratory Study of the Design Impact of Language Features for
+					Aspect-oriented Interfaces</a>. <a href="http://www.aosd.net/2012/">11th
+					International Conference on Aspect-Oriented Software Development</a>
+				(AOSD 2012), March 25-30, 2012, Potsdam, Germany.
+			</p>
+		</li>
+		<li>
+			<p>
+				<a href="http://www.cs.iastate.edu/~fernanre/">Rex D. Fernando</a>, <a
+					href="http://www.cs.iastate.edu/~rdyer/">Robert Dyer</a> and <a
+					href="http://www.cs.iastate.edu/~hridesh/">Hridesh Rajan</a>. <a
+					href="http://www.cs.iastate.edu/~design/papers/FOAL-12">Event
+					Type Polymorphism</a>. <a
+					href="http://www.eecs.ucf.edu/FOAL/index-2012.shtml">2012
+					Foundations of Aspect-Oriented Languages workshop</a> (FOAL 2012),
+					March 26, 2012, Potsdam, Germany.
+			</p>
+		</li>
+	</ul>
+
+	<h2>
+		<a name="2011">2011</a>
+	</h2>
+	<ul>
+		<li>
+			<p>
+				<a href="http://www.cs.iastate.edu/~mbagherz/">Mehdi Bagherzadeh</a>,
+				<a href="http://www.cs.iastate.edu/~hridesh/">Hridesh Rajan</a>, <a
+					href="http://www.eecs.ucf.edu/~leavens/">Gary T. Leavens</a> and <a
+					href="http://www.cs.iasate.edu/~smooney/"> Sean Mooney </a>. <a
+					href="http://www.cs.iastate.edu/~design/papers/AOSD-11">
+					Translucid Contracts: Expressive Specification and Modular
+					Verification for Aspect-Oriented Interfaces</a>. <a
+					href="http://www.aosd.net/2011/">10th International Conference
+					on Aspect-Oriented Software Development</a> (AOSD 2011), March 21-25,
+				2011, Porto de Galinhas, Brazil.
+			</p>
+			<p>
+				<em>First formal paper that introduces translucid contracts in
+					Ptolemy and explores its advantages with respect to the black box
+					behavioral contracts for reasoning about aspect-oriented programs.
+					This paper supersedes our FOAL 2010 paper on this topic.</em>
+			</p></li>
+		<li>
+			<p>
+				<a href="http://www.cs.iastate.edu/~mbagherz/">Mehdi Bagherzadeh</a>,
+				<a href="http://www.eecs.ucf.edu/~leavens/">Gary T. Leavens</a>, and
+				<a href="http://www.cs.iastate.edu/~rdyer/">Robert Dyer</a>. <a
+					href="http://www.cs.iastate.edu/~design/papers/FOAL-11">
+					Applying Translucid Contracts for Modular Reasoning About Aspect
+					and Object Oriented Events</a>. <a
+					href="http://www.eecs.ucf.edu/FOAL/index-2011.shtml"> 2011
+					Foundations of Aspect-Oriented Languages workshop</a> (FOAL 2011),
+				March 21, 2011, Porto de Galinhas, Pernambuco, Brazil.
+			</p></li>
+	</ul>
+
+	<h2>
+		<a name="2010">2010</a>
+	</h2>
+	<ul>
+		<li>
+			<p>
+				<a href="http://www.cs.iastate.edu/~mbagherz/">Mehdi Bagherzadeh</a>,
+				<a href="http://www.cs.iastate.edu/~hridesh/">Hridesh Rajan</a>, <a
+					href="http://www.eecs.ucf.edu/~leavens/">Gary T. Leavens</a> and <a
+					href="http://www.cs.iasate.edu/~smooney/"> Sean Mooney </a>. <a
+					href="http://www.cs.iastate.edu/~design/papers/SPLASH-10-8">
+					Translucid Contracts for Modular Reasoning about Aspect-oriented
+					Programs</a>. a research poster at <a href="http://splashcon.org">SPLASH
+					2010</a> October 17-21, 2010, Reno\Tahoe, Nevada, USA.
+			</p></li>
+		<li>
+			<p>
+				<a href="http://www.cs.iastate.edu/~mbagherz/">Mehdi Bagherzadeh</a>,
+				<a href="http://www.cs.iastate.edu/~hridesh/">Hridesh Rajan</a>, and
+				<a href="http://www.eecs.ucf.edu/~leavens/">Gary T. Leavens</a>. <a
+					href="http://www.cs.iastate.edu/~design/papers/FOAL-10">Translucid
+					Contracts for Aspect-oriented Interfaces</a>. <a
+					href="http://www.eecs.ucf.edu/FOAL/index-2010.shtml">2010
+					Foundations of Aspect-Oriented Languages workshop</a> (FOAL 2010),
+				March 15, 2010, Rennes and Saint Malo, France.
+			</p></li>
+		<li>
+			<p>
+				<a href="http://www.cs.iastate.edu/~rdyer/">Robert Dyer</a>, <a
+					href="http://www.cs.iastate.edu/~mbagherz/">Mehdi Bagherzadeh</a>,
+				<a href="http://www.cs.iastate.edu/~hridesh/">Hridesh Rajan</a>, and
+				<a href="http://www.cs.drexel.edu/~yfcai/">Yuanfang Cai</a>. <a
+					href="http://www.cs.iastate.edu/~design/papers/ESCOT-10">A
+					Preliminary Study of Quantified, Typed Events</a>. the workshop on
+				Empirical Evaluation of Software Composition Techniques colocated
+				with <a href="http://www.aosd.net/2010/">the 9th Annual
+					Aspect-Oriented Software Development Conference,</a> (ESCOT 2010),
+				March 16, 2010, Rennes and Saint Malo, France.
+			</p></li>
+		<li>
+			<p>
+				<a href="http://www.cs.iastate.edu/~hridesh/">Hridesh Rajan</a>, <a
+					href="http://www.cs.iastate.edu/~mbagherz/">Mehdi Bagherzadeh</a>,
+				and <a href="http://www.cs.iastate.edu/~smooney/">Sean Mooney</a>. <a
+					href="http://www.cs.iastate.edu/~design/papers/AOSD-10-Demo">Introduction
+					to Ptolemy and its Development Environment</a>. Demonstration paper at
+				<a href="http://www.aosd.net/2010/program/demo.php">the 9th
+					Annual Aspect-Oriented Software Development Conference,</a> (AOSD
+				2010), March 17 and 18, 2010, Rennes and Saint Malo, France.
+			</p></li>
+	</ul>
+
+	<h2>
+		<a name="2009">2009</a>
+	</h2>
+	<ul>
+		<li>
+			<p>
+				<a href="http://www.cs.iastate.edu/~mbagherz/">Mehdi Bagherzadeh</a>,
+				<a href="http://www.cs.iastate.edu/~rdyer/">Robert Dyer</a>, <a
+					href="http://www.cs.iastate.edu/~csgzlong/">Yuheng Long</a>, and <a
+					href="http://www.cs.iastate.edu/~hridesh/">Hridesh Rajan</a>. <a
+					href="http://archives.cs.iastate.edu/documents/disk0/00/00/06/06/index.html">
+					Instance-level Quantified, Typed Events for Integrated System
+					Design</a>. Technical Report 08-15, Computer Science, Iowa State
+				University, July 2009.
+			</p></li>
+		<li>
+			<p>
+				<a href="http://www.cs.virginia.edu/~sullivan">Kevin J. Sullivan</a>,
+				<a href="http://www.cs.ucsd.edu/~wgg">William G. Griswold</a>, <a
+					href="http://www.cs.iastate.edu/~hridesh">Hridesh Rajan</a>, <a
+					href="http://www.cs.virginia.edu/~ys8a">Yuanyuan Song</a>, <a
+					href="http://www.cs.drexel.edu/~yfcai">Yuanfang Cai</a>, <a
+					href="http://www.cs.utsa.edu/~mshonle/">Macneil Shonle</a>, and <a
+					href="http://ptolemyj.sourceforge.net/">Nishit Tewari</a>. <a
+					href="http://www.cs.iastate.edu/~design/papers/TOSEM-09">Modular
+					Aspect-Oriented Design with XPIs</a>. ACM Transactions on Software
+				Engineering and Methodology (TOSEM), (Accepted April 2009), ACM
+				Press.
+			</p>
+			<p>
+				<em>Comprehensive introduction to crosscutting programming
+					interfaces (XPIs). This article supersedes previous ESEC/FSE 2005
+					and IEEE Software 2006 papers on this topic.</em>
+			</p></li>
+	</ul>
+
+	<h2>
+		<a name="2008">2008</a>
+	</h2>
+	<ul>
+		<li>
+			<p>
+				<a href="http://www.cs.iastate.edu/~hridesh/">Hridesh Rajan</a> and
+				<a href="http://www.eecs.ucf.edu/~leavens/">Gary T. Leavens</a>.
+				Ptolemy: A Language with Quantified, Typed Events. <a
+					href="http://2008.ecoop.org/">22nd European Conference on
+					Object-Oriented Programming</a> (ECOOP 2008), July 7th - 11th 2008,
+				Paphos, Cyprus. <a href="papers/ECOOP.08.abstract.txt">[abstract]</a>
+				<a href="papers/ECOOP.08.paper.pdf">[PDF]</a>
+			</p>
+			<p>
+				<em>First formal paper that introduces Ptolemy's design and its
+					advantages with respect to aspect-oriented languages and implicit
+					invocation languages, supersedes the technical report #07-13a.</em>
+			</p></li>
+		<li>
+			<p>
+				<a href="http://www.cs.iastate.edu/~hridesh/">Hridesh Rajan</a>.
+				Mining Software Repositories for Evaluating Software Engineering
+				Properties of Language Designs. <a
+					href="http://www.comp.lancs.ac.uk/computing/ACoM.08/"> 2nd
+					Workshop on Assessment of Contemporary Modularization Techniques</a>
+				(ACoM 2008), co-located with <a href="http://2008.oopsla.org">OOPSLA
+					2008</a>, October 19, 2008, Nashville, TN. <a
+					href="http://www.cs.iastate.edu/~design/papers/ACoM-2008/">[abstract]</a>
+				<a
+					href="http://www.cs.iastate.edu/~design/papers/ACoM-2008/main.pdf">[PDF]</a>
+			</p>
+			<p>
+				<em>Describes our position on emprical evaluation of language
+					designs in the context of the Ptolemy language.</em>
+			</p></li>
+	</ul>
+
+	<h2>
+		<a name="2007">2007</a>
+	</h2>
+	<ul>
+		<li>
+			<p>
+				<a href="http://www.cs.iastate.edu/~hridesh/">Hridesh Rajan</a> and
+				<a href="http://www.eecs.ucf.edu/~leavens/">Gary T. Leavens</a>.
+				Quantified, Typed Events for Improved Separation of Concerns.
+				Department of Computer Science, Iowa State University, TR #07-14c,
+				July 2007, revised October 2007. <a
+					href="ftp://ftp.cs.iastate.edu/pub/techreports/TR07-14/TR.abstract.txt">[abstract]</a>
+				<a href="ftp://ftp.cs.iastate.edu/pub/techreports/TR07-14/TR.pdf">[PDF]</a>
+				<a href="ftp://ftp.cs.iastate.edu/pub/techreports/TR07-14/TR.ps.gz">[PS]</a>
+			</p>
+			<p>
+				<em>Gives complete formal semantics of Ptolemy.</em>
+			</p></li>
+
+		<li>
+			<p>
+				<a href="http://www.cs.iastate.edu/~hridesh/">Hridesh Rajan</a> and
+				<a href="http://www.eecs.ucf.edu/~leavens/">Gary T. Leavens</a>.
+				Ptolemy: A Language of Quantified, Typed Events. Department of
+				Computer Science, Iowa State University, TR #07-13a, July 2007,
+				revised October 2007. <a
+					href="ftp://ftp.cs.iastate.edu/pub/techreports/TR07-13/TR.abstract.txt">[abstract]</a>
+				<a href="ftp://ftp.cs.iastate.edu/pub/techreports/TR07-13/TR.pdf">[PDF]</a>
+				<a href="ftp://ftp.cs.iastate.edu/pub/techreports/TR07-13/TR.ps.gz">[PS]</a>
+			</p>
+			<p>
+				<em>Technical report that introduces Ptolemy that has support
+					for quantified, typed events for better separation of crosscutting
+					concerns while preserving the encapsulation of the object-oriented
+					parts of the program. </em>
+			</p></li>
+	</ul>
+
+	<h2>
+		<a name="2006">2006</a>
+	</h2>
+	<ul>
+		<li>
+			<p>
+				William Griswold, Kevin Sullivan, Yuanyuan Song, Macneil Shonle,
+				Nishit Tewari, Yuanfang Cai, Hridesh Rajan,&quot;<a
+					href="http://www.cs.iastate.edu/~design/papers/Software-2006">Modular
+					Software Design with Crosscutting Interfaces</a>&quot;,IEEE Software,
+				Special Issue on Aspect-Oriented Programming, Jan/Feb 2006.
+			</p>
+			<p>
+				<em>Presents an AspectJ emulation of the crosscutting
+					programming interfaces (XPI) without the need for language
+					extensions.</em>
+			</p></li>
+	</ul>
+
+	<h2>
+		<a name="2005">2005</a>
+	</h2>
+	<ul>
+		<li>
+			<p>
+				Kevin Sullivan, William Griswold, Yuanyuan Song, Yuanfang Cai,
+				Macneil Shonle, Nishit Tewari, Hridesh Rajan,&quot;<a
+					href="http://www.cs.iastate.edu/~design/papers/ESEC-FSE-2005">Information
+					Hiding Interfaces for Aspect-Oriented Design</a>&quot;, Joint 10th
+				European Software Engineering Conference and 13th ACM SIGSOFT
+				Symposium on the Foundations of Software Engineering (ESEC/FSE
+				2005), 5-9 Sept 2005, Lisbon, Portugal.
+			</p>
+			<p>
+				<em>Introduces the notion of crosscutting programming
+					interfaces (XPIs) that in part led to the development of the
+					Ptolemy language.</em>
+			</p></li>
+	</ul>
+
+	<!-- PAGE UPDATE -->
+	<p id="update">Page last modified on $Date: 2012/01/19 04:43:53 $</p>
+</div>
+
+<!--#include virtual="../includes/bottom.html"-->

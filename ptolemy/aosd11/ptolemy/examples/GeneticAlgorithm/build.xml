@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="genetic-algorithm-example" default="build" basedir=".">
+	<property name="root.dir" value="${basedir}/../.." />
+	<property name="bin" value="bin" />
+	<property name="bin.dir" value="${root.dir}/${bin}" />
+	<property name="source" value="." />
+	<property name="output" value="." />
+	<property name="pyc.bin" value="${bin.dir}" />   
+	<property name="pyc.rt" value="${root.dir}/lib" />   
+	
+	<taskdef name="pyc" classname="edu.iastate.cs.ja_pyc.ant.JapycJavacAdaptor">
+		<classpath>
+			<pathelement location="${pyc.bin}/pyc.jar" />
+		</classpath>
+	</taskdef>
+	
+	<target name="build">
+		<pyc srcdir="${source}" destdir="${output}"
+				debuglevel="lines,source"
+				source="1.5"
+				target="1.5"
+				includes="*.java"
+			>
+			<compilerarg line="-Xlint:none" />
+			<classpath>
+				<pathelement location="." />
+				<pathelement location="${pyc.rt}/ptolemy_rt.jar" />
+			</classpath>
+		</pyc>
+	</target>
+
+	<!-- remove generated source files and .class files -->
+	<target name="clean" description="remove .class files">
+		<!-- delete all .class files recursively -->
+		<delete>
+			<fileset dir="${output}" includes="**/*.class" />
+		</delete>
+	</target>
+	
+    <target name="run" depends="build" description="run the example">
+		<java classname="AppEntry" fork="true"/>
+	</target>
+		
+</project>

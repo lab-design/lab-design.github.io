@@ -1,0 +1,197 @@
+<!--#include virtual="includes/top.html"-->
+<title>About the Ptolemy Programming Language</title>
+<!--#include virtual="includes/header.html"-->
+<h1>About the Ptolemy Programming Language</h1>
+                  	
+                  	<!-- TABLE OF CONTENTS -->
+                    <div class="col2-toc">
+                        <ul>
+                            <li><a href="about.shtml#what">What is Ptolemy?</a></li>
+                            <li><a href="about.shtml#history">History</a></li>
+                            <li><a href="about.shtml#goals">Design Goals</a></li>
+                            <li><a href="about.shtml#started">Getting Started</a></li>
+                            <li><a href="about.shtml#motivation">Motivation</a></li>
+                            <li><a href="papers/index.shtml">Publications</a></li>
+                            <!--<li><a href="about.shtml#experimental">Experimental Features</a></li>-->
+                            <li><a href="docs/what-is-ao.shtml">Aspect-oriention</a></li>
+                            <li><a href="docs/what-is-ii.shtml">Implicit-Inovation</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- CONTENT -->
+                    <div class="col2-content">
+                        <h2>
+                        	<a name="what">What is Ptolemy?</a>
+                        </h2>
+                        <p>
+                        	Ptolemy is a programming language whose goals are to improve 
+                        	a software engineer's ability to separate conceptual concerns. 
+                        	In particular, Ptolemy's features are useful towards modularization 
+                        	of crosscutting concerns. A key difference between Ptolemy and 
+                        	other technologies to separate conceptual concerns such as 
+                        	<a href="http://www.eclipse.org/aspectj">AspectJ</a> is that 
+                        	Ptolemy strives to balance separation of crosscutting concerns 
+                        	and modular understanding and reasoning about concerns. 
+                        	It is our motto that &quot;one shall not have to choose between 
+                        	modular reasoning and separation of crosscutting concerns.&quot;
+                        </p>
+                        
+                        <h2>
+                        	<a name="history">Ptolemy Programming Language History</a>
+                        </h2>
+                        <p>
+                       		Ptolemy combines best ideas from implicit invocation (II) design
+                       		style and aspect-oriented (AO) languages in the style of 
+                       		<a href="http://www.eclipse.org/aspectj">AspectJ</a>. 
+                       		For a brief background on implicit invocation (II) design style 
+                       		and its limitations see <a href="docs/what-is-ii.shtml">here</a>. 
+                       		For a brief background on aspect-oriented languages and their 
+                       		limitations see <a href="docs/what-is-ao.shtml">here</a>. 
+                       		Briefly, Ptolemy was designed to solve several problems with 
+                       		AO and II paradigms such as quantification failure, fragile 
+                       		pointcuts, limited context information, lack of modular 
+                       		reasoning and understanding. For a more detailed motivation 
+                       		of the language design, please see our web-page on this topic 
+                       		<a href="about.shtml#motivation">here</a>.  
+                        </p>
+                        
+                        <h2>
+                        	<a name="goals">Design Goals</a>
+                        </h2>
+                        <p>
+                        	Ptolemy has the following main design goals:
+                        </p>
+                        <ul>
+                            <li> 
+                            	Enable modularization of crosscutting concerns, while 
+                            	preserving encapsulation of existing object-oriented code, 
+							</li>
+                            <li> 
+                            	enable well-defined interfaces between object-oriented 
+                            	code and crosscutting code, and 
+							</li>
+                            <li> 
+                            	enable separate type-checking, separate compilation, and 
+                            	modular reasoning of both object-oriented and crosscutting code.
+                            </li>
+                        </ul>
+                        <p>
+                        	All these goals are important for scalability of software 
+                        	development processes but harder to achieve in current 
+                        	AO languages in the style of <a href="http://www.eclipse.org/aspectj">AspectJ</a>.
+                        </p>
+                        
+                        <h2>
+                        	<a name="started">Getting Started</a>
+                        </h2>
+                        <p>
+                        	The Ptolemy compiler offers support for compiling and running 
+                        	programs from command-line as well as from within Ant. 
+                        	To get started with setting up an environment for running 
+                        	Ptolemy programs please see our page on <a href="docs/running.shtml">
+                        	installing and running the compiler</a>.
+                        </p>
+                        <p>
+                        	Once you have downloaded and installed the compiler, you 
+                        	could look at the examples included in the distribution. 
+                        	Or alternatively, you could also consult the 
+                        	<a href="docs/index.shtml">programming guide</a> for Ptolemy.
+                        </p>
+                        
+                        <!--
+                        <h2>
+                        	<a name="experimental">Experimental Features in the Ptolemy Language</a></h2>
+                        <p>
+                        	We are investigating support for several experimental features in Ptolemy. 
+                        	These features are not yet available in the main Ptolemy compiler. 
+                        	Below we provide the list of these features with links to web-pages 
+                        	containing further details.
+                        </p>
+                        <ul>
+                            <li>
+                            	Translucid Contracts: allows developers to practice design-by-contract 
+                            	methodology in Ptolemy with expressive specification features. 
+                            	More details are <a href="docs/design-by-contract.shtml">here</a>.
+                            </li>
+                            <li>
+                            	Instance-level Events: allows developers to associate subjects and 
+                            	observers at the instance-level, whereas original Ptolemy's design
+                            	is type-level. More details are <a href="#">here</a>.
+                            </li>
+                        </ul>-->
+                        
+                        <h2>
+                        	<a name="motivation">Motivation</a>
+                        </h2>
+
+						<p>
+							The objective of both implicit invocation (II) and aspect-oriented (AO) 
+							languages is to improve a software engineer's ability to separate 
+							conceptual concerns. The problem that they address is that all
+							 <em>dimensions of design decisions</em>, or <em>concerns</em>, 
+							 are not amenable to modularization by a single dimension of 
+							 decomposition. Instead, some concerns cut across the dominant 
+							 dimension of decomposition. These approaches aim to improve 
+							 the separation of these types of concerns thereby enhancing modularity.
+						</p>
+						<p>
+							The key idea in II languages is that some interfaces declare <em>events</em>, 
+							allowing one set of modules to contain code that dynamically and 
+							explictly <em>announces</em> events, while a second set of modules 
+							dynamically <em>registers</em> methods, called <em>handlers</em>, 
+							to receive calls (the implicit invocations) when events are announced. 
+							The two sets of modules are independent of each other and need 
+							only share the event interface declarations.
+						</p>
+						<p>
+							In AO languages such as <a href="http://www.eclipse.org/aspectj">AspectJ</a> 
+							events (called "join points") are pre-defined by the language as 
+							certain kinds of standard actions (such as method calls) in a 
+							program's execution. AO events are all implicitly announced. 
+							<em>Pointcut descriptions (PCDs)</em> are used to declaratively 
+							register handlers (called &quot;advice&quot;) with sets of events. 
+							Using PCDs to register a handler with an entire set of events, called 
+							<em>quantification</em>, is a key idea in AO languages that has 
+							no counterpart in II languages. A language's set of PCDs and its set 
+							of events form its <em>event model</em> (in AO terms this is a 
+							&quot;join point model&quot;).
+						</p> 
+						<p>
+							II Languages have three limitations. First, they require complex 
+							event declaration, announcement, and registration code scattered 
+							across the system. Second, the ability to replace the code for an 
+							event (what AO calls &quot;around advice&quot;), is not available, 
+							without unnecessarily complex emulation code (to simulate 
+							closures in languages such as Java and C#). Third, quantification 
+							is not easy, since no abstraction like PCDs is available. 
+							Instead, a non-trivial strategy, such as a subscription registry, is needed.
+						</p>
+						<p>
+							AO languages also have limitations, primarily because most 
+							current event models use lexical PCDs. Such PCDs use patterns
+							of names; for example, <em>call(run*(..))</em> describes a set 
+							of call events in which the name of the called method starts with 
+							<em>run</em>. Lexical PCDs are fragile, exhibit quantification 
+							failures, and make it unnecessarily hard to uniformly access 
+							information from an event's context.
+						</p>
+						<a href="images/coupling-structure.png">
+							<img src="images/coupling-structure.png" alt="Overview of the Coupling Structure" class="figure"/>
+						</a>
+						<p class="caption">
+							<b>Figure 1:</b> Overview of the coupling structure in Observer design pattern, aspect-oriented programming, and Ptolemy's quantified event types.
+						</p>
+						<p>
+							Ptolemy solves the problems with II and AO languages using 
+							quantified, typed events. Ptolemy's event types are named 
+							when they are declared, and these names can be used in 
+							quantification. An event type <em>p</em> also declares the types
+							of information communicated between announcements of events 
+							of type <em>p</em> and handler methods.
+						</p>
+						
+						<!-- PAGE UPDATE -->
+                        <p id="update">Page last modified on $Date: 2011/07/31 21:33:56 $</p>
+                    </div>
+            
+<!--#include virtual="includes/bottom.html"-->

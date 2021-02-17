@@ -1,0 +1,40 @@
+<!--#include virtual="../../includes/topbar.html"-->
+<!-- 2ND COLUMN. INSERT COPY -->
+
+<td id="b3" rowspan="2">
+<div class="maintext">
+
+<h2>MobileMedia Example</h2>
+
+<p>
+We present a detailed empirical study to evaluate the effectiveness of
+PtolemyJ's design by applying it to a series of architectural releases of a
+software product line (SPL) for handling multimedia on mobile devices, called
+MobileMedia and the comparison and contrast of our findings with a previous
+in-depth analysis of the object-oriented and aspect-oriented design of the same
+system by Figueiredo et al. 
+</p>
+
+<p>
+<a href="mp_ptl_01.zip">MobileMedia Release 1 - PtolemyJ source</a><br/>
+<a href="mp_ptl_02.zip">MobileMedia Release 2 - PtolemyJ source</a><br/>
+<a href="mp_ptl_03.zip">MobileMedia Release 3 - PtolemyJ source</a><br/>
+<a href="mp_ptl_04.zip">MobileMedia Release 4 - PtolemyJ source</a><br/>
+<a href="mp_ptl_05.zip">MobileMedia Release 5 - PtolemyJ source</a><br/>
+<a href="mp_ptl_06.zip">MobileMedia Release 6 - PtolemyJ source</a><br/>
+<a href="mp_ptl_07.zip">MobileMedia Release 7 - PtolemyJ source</a><br/>
+<a href="mp_ptl_08.zip">MobileMedia Release 8 - PtolemyJ source</a>
+</p>
+
+<p>
+<a href="http://www.lancs.ac.uk/postgrad/figueire/spl/icse08/assessment.htm">OO and AO Source Download</a>, Figueiredo et al., ICSE '08
+</p>
+
+
+
+</div>
+
+
+</td>
+
+<!--#include virtual="../../includes/bottombar.html"-->
