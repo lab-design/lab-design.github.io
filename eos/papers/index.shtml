@@ -1,0 +1,119 @@
+<!--#include virtual="../includes/topbar.html"-->
+  <table width="100%" border="0">
+    <tr>
+      <td><p class="heading">Publications related to Eos</p></td>
+    </tr>
+    <tr> 
+      <td>
+        <blockquote> 
+
+          <p>Hridesh Rajan, and Kevin J. Sullivan, &quot; 
+	  Unifying Aspect-and Object-oriented Design,&quot; 
+	  ACM Transactions on Software Engineering and Methodology 
+	  (TOSEM), 2008, ACM Press.
+	  <a href="http://www.cs.iastate.edu/~design/TOSEM-08" target="_self">[PDF Format]</a>
+	  </p>
+
+          <p>Hridesh Rajan and Kevin Sullivan, &quot; Classpects: Unifying 
+	     Aspect- and Object-Oriented Language Design, &quot; 
+	     In the proceedings of the 27th International Conference on 
+	     Software Engineering (ICSE 2005), 15-21 May 2005, St. Louis, 
+	     Missouri, USA. <BR>
+             <a href="http://www.cs.iastate.edu/~eos/papers/p174-rajan.pdf" 
+	     target="_self">[PDF Format]</a></p>
+
+          <p>Hridesh Rajan and Kevin Sullivan, &quot;Generalizing AOP for 
+	     Aspect-Oriented Testing &quot;, In the proceedings of the 
+	     Fourth International Conference on Aspect-Oriented Software 
+	     Development (AOSD 2005), 14-18 March, 2005, Chicago, IL, USA.
+            <b>The AspectCov tool described in this paper is available 
+	    <a href = "http://www.cs.iastate.edu/~eos/download/AspectCov.zip">
+	    here</a>. All license terms of Eos applies to this tool.</b><BR>
+            <a href="http://www.cs.iastate.edu/~eos/papers/aosd05.pdf" target="_self">[PDF 
+            Format]</a> 
+            
+            </p>
+          <p>
+            Hridesh Rajan, &quot;Design Pattern Implementations in Eos,&quot; 
+	    PLoP '07: Conference on Pattern Languages of Programs, Monticello, IL, Sep 5, 2007.
+	    <a href="http://www.cs.iastate.edu/~design/PLOP-2007" target="_self">
+	    [PDF Format]</a>
+	  </p>
+
+
+          <p> 
+           Jia Xu, Hridesh Rajan and Kevin Sullivan, &quot;Understanding Aspects via Implicit Invocation&quot;, In the 
+           proceedings of 19th IEEE International Conference on Automated Software Engineering, Linz, Austria, Sept 2004.<BR>
+           <a href = "http://www.cs.iastate.edu/~eos/papers/ase04.pdf" target="_self">[PDF Format]</a> 
+          </p>
+
+          <p>
+          Hridesh Rajan and Kevin Sullivan, &quot;Generalizing AOP for Aspect-Oriented Testing&quot;,
+          Technical Report CS-2004-30, Department of Computer Science, University of Virginia, Sept 2004.<BR>
+          <a href = "http://www.cs.iastate.edu/~eos/papers/cs_2004_30.pdf" target="_self">[PDF Format]</a> 
+          </p>
+
+
+          <p>Hridesh Rajan and Kevin Sullivan, &quot;Classpects: Unifying Aspect- and Object-Oriented Language Design&quot;, 
+Technical Report CS-2004-21, Department of Computer Science, University of Virginia, Sept 2004.<BR>
+<a href = "http://www.cs.iastate.edu/~eos/papers/cs_2004_21.pdf" target="_self">[PDF Format]</a> 
+          </p>
+
+          <p>
+           Hridesh Rajan, &quot;One More Step in the Direction of Modularized Integration Concerns&quot;, In the proceedings of 
+           the Doctoral Symposium, 26th International Conference on Software Engineering (ICSE 2004), 23-28 May 2004, 
+           Edinburgh, UK. <BR><a href = "http://www.cs.iastate.edu/~eos/papers/icse04.pdf" target="_self">[PDF Format]</a> 
+          </p>
+          
+
+<p>Jia Xu, Hridesh Rajan and Kevin Sullivan, &quot;Aspect Reasoning by Reduction to Implicit Invocation&quot;, In the 
+proceedings of Workshop on Foundations of Aspect-Oriented Languages (FOAL) held in conjunction with the International Conference on Aspect-Oriented Software Development, Lancaster, UK, March 2004. <BR> 
+<a href = "http://www.cs.iastate.edu/~eos/papers/foal04.pdf" target = "_self">[PDF Format]</a> 
+</p>
+
+          <p>Hridesh Rajan and Kevin Sullivan, &quot;Eos: Instance-Level Aspects for Integrated System Design
+            &quot;, In the proceedings of the 2003 Joint European Software Engineering Conference and ACM SIGSOFT Symposium on the Foundations of Software Engineering (ESEC/FSE 2003), Helsinki, Finland, September 2003.<br>
+            <a href="http://www.cs.iastate.edu/~eos/papers/esecfse.pdf" target="_self">[PDF 
+            Format]</a></p>
+
+          <p>Hridesh Rajan and Kevin Sullivan, &quot;Need for Instance Level Aspects 
+            with Rich Pointcut Language&quot;, In the proceedings of the Workshop 
+            on Software Engineering Properties of Languages for Aspect Technologies 
+            (SPLAT) held in conjunction with AOSD 2003, Boston, MA, USA, Mar 2003.<br>
+            <a href="http://www.cs.iastate.edu/~eos/papers/splat03.pdf" target="_self">[PDF 
+            Format]</a><a href="http://www.cs.iastate.edu/~eos/papers/splat03.ps" target="_self">[PS 
+            Format]</a></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+          <p> </p>
+          <p></p>
+          <p class="heading">Other related publications:</p>
+          <p>David Larochelle, Karl Scheidt, Yuan Wei, Joel Winstead, Anthony 
+            Wood, and Kevin Sullivan, &quot;Join Point Encapsulation&quot;, In 
+            the proceedings of the Workshop on Software Engineering Properties 
+            of Languages for Aspect Technologies (SPLAT) held in conjunction with 
+            AOSD 2003, Boston, MA, USA, Mar 2003.<br>
+            <a href="http://www.cs.iastate.edu/~eos/papers/encapsulation.pdf" target="_self">[PDF 
+            Format]</a></p>
+          <p>Kevin Sullivan, Lin Gu and Yuanfang Cai, &quot;Non-modularity in 
+            aspect-oriented languages: integration as a crosscutting concern for 
+            AspectJ &quot;, Proceedings of the 1st international conference on 
+            Aspect-oriented software development, Enschede, The Netherlands, April 
+            2002.<br>
+            <a href="http://www.cs.iastate.edu/~eos/papers/aosd02.pdf" target="_self">[PDF 
+            Format]</a></p>
+        </blockquote>
+      </td>
+    </tr>
+    <tr>
+      <td><p class="heading"></p></td>
+    </tr>
+    <tr> 
+      <td>&nbsp;
+      </td>
+    </tr>
+  </table>
+
+<!--#include virtual="../includes/bottombar.html"-->
