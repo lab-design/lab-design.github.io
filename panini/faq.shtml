@@ -1,0 +1,271 @@
+<!--#include virtual="includes/top.html"-->
+<title>Frequently Asked Questions</title>
+<!-- PAGE SPECIFIC STYLING -->
+<style type="text/css">
+.col2-toc h2 {
+	margin: 0 0 10px;
+}
+</style>
+
+<!--#include virtual="includes/header.html"-->
+
+<h1>Frequently Asked Questions</h1> 
+<script type="text/javascript">
+copyright=new Date()
+fullYear=copyright.getFullYear();
+document.write("<h5>Copyright &copy; 2006-" + fullYear + ", Iowa State University of Science and Technology. All rights reserved.</h5>")
+</script>
+
+
+<!-- TABLE OF CONTENTS -->
+<div class="col2-toc">
+<h2>FAQs</h2>
+<ol>
+	<li><a href="docs/faq.shtml#language">Panini Language</a></li>
+	<li><a href="docs/faq.shtml#compiler">Panini Compiler</a></li>
+</ol>
+</div>
+
+<!-- CONTENT -->
+<div class="col2-content">
+<h2><a name="language">Frequently Asked Questions about the Panini Language</a></h2>
+<ul>
+  <li><a href="docs/faq.shtml#q_l_whatis">What is capsule-oriented programming?</a></li>
+  <li><a href="docs/faq.shtml#q_l_who">Who may benefit from capsule-oriented programming?</a></li>
+  <li><a href="docs/faq.shtml#q_l_whoNOT">Who may NOT benefit from capsule-oriented programming?</a></li>
+  <li><a href="docs/faq.shtml#q_l_priorKnowledgeConcurrency">What do I need to know about concurrency in order to learn the Panini language?</a></li>
+  <li><a href="docs/faq.shtml#q_l_existingCode">Will I be able to use my existing object-oriented code?</a></li>
+  <li><a href="docs/faq.shtml#q_l_Erlang">How are capsules different from Erlang actors?</a></li>
+  <li><a href="docs/faq.shtml#q_l_Scala">How are capsules different from Scala actors?</a></li>
+  <li><a href="docs/faq.shtml#q_l_Actors">How are capsules different from actors in general?</a></li>
+  <li><a href="docs/faq.shtml#q_l_ActorsWhy">Why are capsules different from actors?</a></li>
+  <li><a href="docs/faq.shtml#q_l_Class">How are capsules different from standard object-oriented classes?</a></li>
+  <li><a href="docs/faq.shtml#q_l_WhySyntax">Why did you introduce new syntax for capsules and system?</a></li>
+</ul>
+
+<!--------------------------------------------->
+<p id="q_l_whatis" style="color: #8d191d">
+What is Capsule-oriented Programming?
+</p>
+
+<p style="margin-left: 30px">
+Capsule-oriented programming is a programming paradigm that aims to 
+ease development of concurrent software systems by allowing abstraction
+from concurrency-related concerns.
+</p>
+
+<p style="margin-left: 30px">
+Capsule-oriented programming entails breaking down program logic into 
+distinct parts called <EM>capsule</EM> declarations and composing these parts to 
+form the complete program using <EM>system</EM> declaration.
+</p>
+
+
+<p id="q_l_who" style="color: #8d191d">
+Who can benefit from capsule-oriented programming?
+</p>
+
+<p style="margin-left: 30px">
+Capsule-oriented programming is a suitable approach for programmers who don't want to be 
+distracted by concurrency concerns so that they can focus on their software's logic.
+If you want your programming language to take care of your concurrency 
+concerns just like Java and C# handles your memory management
+concerns then capsules-oriented programming is for you.
+</p>
+
+<p id="q_l_whoNOT" style="color: #8d191d">
+Who may NOT benefit from capsule-oriented programming?
+</p>
+
+<p style="margin-left: 30px">
+Capsule-oriented programming may not be a suitable approach for a software project 
+if it is preferred in that project to manage every aspect of concurrency manually. 
+This is similar to why Java and C# are not suitable, if a software project requires 
+manual memory management and explicit pointer arithmetic. 
+</p>
+
+<!--------------------------------------------->
+<p id="q_l_priorKnowledgeConcurrency" style="color: #8d191d">
+What do I need to know about concurrency in order to learn the Panini language?
+</p>
+
+<p style="margin-left: 30px">
+Nothing.
+</p>
+
+<!--------------------------------------------->
+<p id="q_l_existingCode" style="color: #8d191d">
+Will I be able to use my existing object-oriented code when I move my project to 
+the Panini language?
+</p>
+
+<p style="margin-left: 30px">
+Mostly. All existing classes that do not have a main method would work as is.
+It is also advisable to avoid using explicit concurrency features, e.g. threads,
+locks, synchronized, etc since they may interfere with Panini's internal mechanisms.
+</p>
+
+<!--------------------------------------------->
+<p id="q_l_Erlang" style="color: #8d191d">
+How are capsules different from Erlang actors?
+</p>
+<p style="margin-left: 30px">
+Capsules are different from Erlang actors in that capsules ensure messages arrive in
+sequentially consistent order, as well as providing mutable state within the actor.
+</p>
+
+<!--------------------------------------------->
+<p id="q_l_Scala" style="color: #8d191d">
+How are capsules different from Scala actors?
+</p>
+<p style="margin-left: 30px">
+Capsules are different from Scala actors because of the enforced confinement of a
+capsule's state.
+</p>
+
+<!--------------------------------------------->
+<p id="q_l_Actors" style="color: #8d191d">
+How are capsules different from formal definition of actors in 
+Hewitt, Bishop, and Steiger's original 1973 paper?
+</p>
+<p style="margin-left: 30px">
+Here is a precise comparison <br>
+<img alt="Comparison between Actors and Capsules" src="images/actor_difference.png" height="256">
+</p>
+
+<!--------------------------------------------->
+<p id="q_l_ActorsWhy" style="color: #8d191d">
+Why are capsules different from formal definition of actors in 
+Hewitt, Bishop, and Steiger's original 1973 paper? Is it just a 
+case of &quot;Not Invented Here&quot; (NIH) syndrome?
+</p>
+<p style="margin-left: 30px">
+The decision to make different choices in capsule's design was based 
+on two factors. 
+<UL>
+<LI>
+To decrease the impedance mismatch between mainstream languages like 
+Java, C#, etc and the capsule-oriented programming model. 
+In the resulting design, inter-capsule procedure calls look like 
+ordinary method calls in mainstream programming languages.
+</LI>
+<LI>
+We also simplified the language model a bit 
+to make it feasible to build efficient, precise, and more automated 
+analysis and compilation strategies.
+</LI>
+</UL>
+</p>
+
+<!--------------------------------------------->
+<p id="q_1_Class" style="color: #8d191d">
+How are capsules different from standard object-oriented classes?
+</p>
+<p style="margin-left: 30px">
+A capsule is like a class in that it also defines a set of public operations,
+hides the implementation details, and could serve as a work
+assignment for a developer or a team of developers.
+Beyond these standard responsibilities, a capsule also serves as a
+memory region for some set of standard object instances and 
+behaves as an independent logical process.
+</p>
+
+<!--------------------------------------------->
+<p id="q_1_WhySyntax" style="color: #8d191d">
+Why did you introduce new syntax for capsules and system instead 
+of a library or annotation-based syntax?
+</p>
+<p style="margin-left: 30px">
+At first glance a capsule declaration may look similar to a class
+declaration, thus naturally raising the question as to why a new
+syntactic category is essential, and why class declarations may not be
+enhanced with the additional capabilities that capsules provide, namely,
+confinement (as in Erlang) and an activity thread (as in
+previous work on concurrent OO languages).
+There are three main reasons for this design decision in Panini.
+
+<UL>
+<LI>
+First, we believe based on previous experiences that objects may be too
+fine-grained to think of each one as a potentially independent
+activity.
+</LI>
+<LI>
+Second, we wanted to specify a system as a set of related capsules
+with a fixed topology, 
+in order to make it feasible to perform static analysis of
+the system graphs; this implies that capsules should not be first-class
+values.
+</LI>
+<LI>
+Third, there is a large body of OO code
+that is written without any regard to confinement. Changing the
+semantics of classes would have made reusing this vast set of libraries
+difficult, if not impossible. In the current design of Panini, since
+syntactic categories are different, sequential OO code can be reused
+within the boundary of a capsule without needing any modification.
+</LI>
+</UL>
+</p>
+
+<!--------------------------------------------->
+<h2><a name="compiler">Frequently Asked Questions about the Panini Compiler</a></h2>
+<ul>
+  <li><a href="docs/faq.shtml#q_c_errors">How do I report a bug?</a></li>
+  <li><a href="docs/faq.shtml#q_c_extension">Why do my files have the extension .java if I am writing Panini code?</a></li>
+  <li><a href="docs/faq.shtml#q_c_limitsOfJavaInteroperability">Can I compile all Java code with the Panini compiler?</a></li>
+  <li><a href="docs/faq.shtml#q_c_class">I compiled the HelloWorld Panini program and now I have all these .class files, can some of them be removed?</a></li>
+</ul>
+
+<!--------------------------------------------->
+<p id="q_c_errors" style="color: #8d191d">
+I believe I have just run into a compiler bug, how do I report it?
+</p>
+<p style="margin-left: 30px">
+All bugs in the Panini compiler can be reported by sending an e-mail
+to panini@iastate.edu. We would very much appreciate a self-contained
+source code file that reproduces the bug along with your e-mail, but 
+if you don't have it you could also describe what you were trying to 
+do and send us buggy output of the Panini compiler. 
+</p>
+
+<!--------------------------------------------->
+<p id="q_c_extension" style="color: #8d191d">
+Why do my files have the extension .java if I am writing Panini code?
+</p>
+<p style="margin-left: 30px">
+The Panini compiler was built on top of the Java OpenJDK compiler and, currently, we re-use most
+of the infrastructure provided by it. Panini files will have their own extension in future
+releases of the compiler.
+</p>
+
+<!--------------------------------------------->
+<p id="q_c_limitsOfJavaInteroperability" style="color: #8d191d">
+Can I compile all Java code with the Panini compiler?
+</p>
+<p style="margin-left: 30px">
+All code that does not have use any explicit concurrency features (e.g. <em>synchronized</em> keyword, threads, etc.) can be
+compiled using the Panini compiler. Also, the Java main method no longer has any special meaning in the Panini language.
+</p>
+
+<!--------------------------------------------->
+<p id="q_c_class" style="color: #8d191d">
+I compiled the HelloWorld Panini program and now I have all these .class files, can some of them be removed?
+</p>
+
+<p style="margin-left: 30px">
+Assuming you want your program to run, no. Currently, Panini programs first compile to Java programs and then to bytecode,
+the extra files contain everything needed to express Panini's abstractions in Java.
+</p>
+
+<!--------------------------------------------->
+
+<!-- PAGE UPDATE -->
+<p id="update">Page last modified on $Date: 2013/08/15 06:30:41 $</p>
+
+<!-- GUIDE NAVIGATION -->
+<div class="page-nav">
+<a href="docs/faq.shtml#pgtop">&#94; RETURN TO TOP</a> <!-- <a
+	href="#">NEXT &gt;</a>--> </div>
+</div>
+<!--#include virtual="includes/bottom.html"-->

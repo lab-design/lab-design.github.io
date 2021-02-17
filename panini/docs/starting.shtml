@@ -1,0 +1,217 @@
+<!--#include virtual="../includes/top.html"-->
+<title>The Panini Programming Guide</title>
+<!-- PAGE SPECIFIC STYLING -->
+<style type="text/css">
+.col2-toc h2 {
+	margin: 0 0 10px;
+}
+</style>
+<!--#include virtual="../includes/header.html"-->
+<h1>Getting Started</h1>
+
+<script type="text/javascript">
+copyright=new Date()
+fullYear=copyright.getFullYear();
+document.write("<h5>Copyright &copy; 2006-" + fullYear + ", Iowa State University of Science and Technology. All rights reserved.</h5>")
+</script>
+
+<!-- TABLE OF CONTENTS -->
+<div class="col2-toc">
+<h2>Table of Contents</h2>
+<ol>
+	<li><a href="docs/index.shtml">Programming Guide Overview</a></li>
+	<li><a href="docs/motivation.shtml">Motivation</a></li>
+	<li>Getting Started with Panini
+	<ul class="toc-currentpg">
+		<li><a href="docs/starting.shtml#goals">Panini's Goals</a></li>
+		<li><a href="docs/starting.shtml#helloworld0">Hello World!</a></li>
+		<li><a href="docs/starting.shtml#helloworld1">Hello World Decomposition</a></li>
+		<li><a href="docs/starting.shtml#implicitConcurrency">Implicit Concurrency</a></li>
+		<li><a href="docs/starting.shtml#compileandrun">Compiling and Running</a></li>
+	</ul>
+	</li>
+	<li><a href="docs/capsule-oriented.shtml">Capsule-oriented Design</a></li>
+	<li><a href="docs/language.shtml">Panini Language</a></li>
+	<li><a href="docs/parallel.shtml">Implicit Parallelism</a></li>
+	<li><a href="docs/running.shtml">Installing and Running the Panini compiler</a></li>
+    <li><a href="docs/profiling.shtml">Profiling Panini Programs</a></li>
+	<li><a href="docs/papers.shtml">Technical Publications</a></li>
+	<li><a href="docs/faq.shtml">FAQ</a></li>
+</ol>
+<hr />
+<!--#include virtual="./toc-just-examples.html"-->
+
+</div>
+
+<!-- CONTENT -->
+<div class="col2-content">
+<h2><a name="goals">Panini's Goals</a></h2>
+<p>
+A central goal of capsule-oriented programming and the Panini 
+language is to help programmers deal with the challenges of
+concurrent program design.
+</p>
+<p>
+The value proposition of the programming paradigm and the programming 
+language is to enable greater program modularity and in doing 
+so automatically enable greater program concurrency. 
+In fact, Panini does not use explicit concurrency features. 
+Instead, the programmer modularizes a program using capsules, 
+which implicitly specify boundaries outside of which concurrency can occur. 
+The Panini runtime will automatically enable concurrency in between the boundaries 
+of capsules when safe to do so.
+</p>
+
+<h2><a name="helloworld0">Hello World!</a></h2>
+<p>
+A Panini program is a collection of zero or more capsules. 
+For example, a simple "hello world" program in Panini 
+can be written as follows:
+</p> 
+<p>
+<pre class="brush: panini">
+capsule HelloWorld {
+  void run(){
+    System.out.println("Panini: Hello World!");
+    long time = System.currentTimeMillis();
+    System.out.println("Time is now: " + time);    
+  }
+}
+</pre>
+</p>
+<p>
+This program has a capsule called <em>Greeter</em>.
+The capsule <em>Greeter</em> contains only one procedure, <em>run</em>,  
+which does a simple print.
+The name <em>run</em> has special meaning within capsules, but for now 
+do not worry about it.
+</p>
+
+<p>
+This is a complete Panini program that can be compiled and run from the
+command-line. See <a href="docs/starting.shtml#compileandrun">below</a> 
+for more on that.
+</p>
+
+<h2><a name="helloworld1">Decomposing a Program into Capsules</a></h2>
+
+<p>
+For illustration, we can decompose this program into two parts:
+a <EM>Greeter</EM> capsule that knows about the method of proper greeting,
+e.g. &quot;Hello&quot; in English, &quot;Namaste&quot; in Hindi, and
+a <EM>Console</EM> capsule that knows about the medium that will be used to 
+convey the greeting, e.g. standard output, a file.
+
+<pre class="brush: panini">
+capsule Console () {
+  void write(String s) { System.out.println(s); }
+}
+
+capsule Greeter (Console c){
+  void run(){
+    c.write("Panini: Hello World, Decomposed!"); 
+    long time = System.currentTimeMillis();
+    c.write("Time is now: " + time);    
+  }
+}
+
+capsule HelloWorld {
+ design {
+  Console c; Greeter g;
+  g(c);
+ }
+}
+</pre>
+</p>
+
+<p>
+The <em>Greeter</em> capsule definition now contains a specification of 
+what other capsules it requires.
+On line 5, it says that a <EM>Greeter</EM> requires a <EM>Console</EM>
+to work properly.
+</p>
+<p>
+Once a capsule definition declares such requirements, procedures of 
+the required capsules can be called.
+For example, one procedure of the <EM>Console</EM> capsule is 
+<em>write</em>. 
+This procedure is called on lines 7 and 9 in the <em>Greeter</em> capsule.
+</p>
+
+<p>
+As you might notice the <em>Console</em> capsule does not have a 
+<em>run</em> procedure, but the <em>Greeter</em> does. 
+The run procedure is optional and signals that the capsule can start 
+computation without external stimuli (i.e. if said capsule is instantiated 
+in a program, then the run procedure of that capsule will
+be executed as soon as program initialization finishes).
+</p>
+
+<p>
+On lines 14-17, this program has a <EM>design declaration</EM>, a new feature in Panini. 
+The design declaration on lines 14-17 simply states that the topology of our 
+program consists of one instance of the <em>Greeter</em> capsule <em>g</em>,
+one instance of the <em>Console</em> capsule <em>c</em> on line 15.
+On line 16, the design declaration states that the greeter instance is 
+connected to the capsule instance.
+</p>
+
+<h2><a name="helloworld1">Implicit Concurrency in Capsule-oriented Programs</a></h2>
+
+<p>
+As mentioned previously, Panini does not use explicit concurrency features. 
+Instead, the programmer modularizes a program using capsules, 
+which implicitly specify boundaries outside of which concurrency can occur. 
+The Panini runtime will automatically enable concurrency in between the boundaries 
+of capsules when safe to do so.
+</p>
+
+<p>
+When a procedure is called on an external capsule, e.g. call to <em>write</em>
+procedure on line 7, and if it is safe to do so, the call immediately returns
+allowing the caller capsule and the callee capsule to work independently.
+Here, the <EM>Greeter</EM> capsule can immediately continue to obtain the current
+system time, while the <EM>Console</EM> capsule prints first line of the greeting.
+</p>
+
+<p>
+This is the main benefit of capsule-oriented programming and the Panini language.
+Implicit concurrency is achieved without having to introduce explicit concurrency
+features like threads, task pools, etc.  
+This simplifies programming tasks. Not having to worry about concurrency is 
+the main promise of capsule-oriented programming. 
+</p>
+
+<h2><a name="compileandrun">Compiling and running Hello World!</a></h2>
+<p>
+If you haven't installed the Panini compiler yet then please go to section on
+<a href="docs/running.shtml"> installing and running the compiler</a>.
+</p>
+
+<p>
+Copy or download either versions of the <em>Hello World</em> program and save it, say, to the file <em>paniniHelloWorld.java</em>.
+To compile the program simply run:
+<pre>panc paniniHelloWorld.java</pre>
+<p>And then you can run the panini program with:</p>
+<pre>panini HelloWorld</pre>
+<p>Where HelloWorld is the name of the capsule that you wish to run.</p>
+</p>
+
+<p>
+Now that you've written your first Panini program it is time to familiarize yourself with more
+complex features of the language. Please continue to the section on
+<a href="docs/starting.shtml">language semantics</a>.
+</p>
+
+
+
+
+<!-- PAGE UPDATE -->
+<p id="update">Page last modified on $Date: 2013/08/03 14:04:23 $</p>
+
+<!-- GUIDE NAVIGATION -->
+<div class="page-nav"><a href="docs/motivation.shtml">&lt; PREVIOUS</a>
+<a href="docs/starting.shtml#pgtop">&#94; RETURN TO TOP</a> <a
+	href="docs/capsule-oriented.shtml">NEXT &gt;</a></div>
+</div>
+<!--#include virtual="../includes/bottom.html"-->

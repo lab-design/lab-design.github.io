@@ -1,0 +1,152 @@
+<!--#include virtual="includes/headtop.html"-->
+
+<!-- INSERT TITLE -->
+<title>The Panini project at Iowa State University whose goals are 
+to reconcile concurrency and modularity goals in software design.</title>
+     
+<!--#include virtual="includes/headmiddle.html"-->
+
+<h1>The Panini Project</h1>
+
+<!--#include virtual="includes/headbottom.html"-->
+
+<td id="b3" rowspan="2">
+<div class="maintext">
+
+<h2>About the project</h2>
+
+<table>
+<tr>
+<td width=70% align="left" valign="top">
+<p>
+The main goal of the Panini project is to design programming mechanisms
+such that if programmers use these mechanisms to structure their software 
+system to improve modularity in its design, they get concurrency for free!
+Modularity implies concurrency.
+The project thus encompasses fundamental and practical efforts to unify
+modularization and parallelization mechanisms.
+The project takes its name from 
+<a href="http://en.wikipedia.org/wiki/P%C4%81%E1%B9%87ini">
+Panini
+</a>
+(fl.c.400 BC), an Indian grammarian, known for his formulation of the Sanskrit 
+grammar rules (the earliest work on linguistics).
+</p>
+
+<p>
+If you are completely new to the idea and the project, you may want to read 
+our <a href="docs/position.shtml">overview</a>.
+</p>
+</td>
+<td width=30% align="right" valign="top">
+<a href="images/panini-2012-overview.png">
+<img src="images/panini-2012-overview.png" width="100%">
+</a>
+</td>
+</tr>
+</table>
+
+<h2> Key efforts</h2>
+
+<p>Current efforts are along two main directions:</p>
+
+<table>
+<tr>
+<td width=70% align="left" valign="top">
+<h3>Programming language features that reconcile modularity and concurrency</h3> 
+<p> 
+  We are developing improved programming language features 
+  that improve concurrency in program design as a by-product of improving
+  modularity. Therefore, a programmer does not need to explicitly deal with 
+  threads and locks. Working directly with threads and locks is known to 
+  be error-prone. A detailed description of these efforts can be found 
+  <a href="docs/index.shtml">here</a>.
+</p>
+</td>
+<td width=30% align="right" valign="top">
+<a href="images/async-event-poster.jpg">
+<img src="images/async-event-poster.jpg" width="100%">
+</a>
+</td>
+</tr>
+
+<tr>
+<td width=70% align="left" valign="top">
+<h3>Programming frameworks that reconcile modularity and concurrency</h3>
+<p>
+   We are also developing an implicitly concurrent framework for the standard
+   Gang-of-Four (GOF) design patterns, e.g. 
+   <a href="http://en.wikipedia.org/wiki/Abstract_factory_pattern">abstract factory</a>, 
+   <a href="http://en.wikipedia.org/wiki/Chain-of-responsibility_pattern">chain-of-responsibility</a>. 
+   For 18 out of 23 GOF patterns, our framework provides support such 
+   that programs reap concurrency benefits (without the programmer having
+   to deal with threads and locks).
+   A detailed description of our framework can be found 
+   <a href="http://www.cs.iastate.edu/~design/projects/panini/patterns/">here</a>.
+</p>
+</td>
+<td width=30% align="right" valign="top">
+<a href="images/panini-implicitly-concurrent-pattern.png">
+<img src="images/panini-implicitly-concurrent-pattern.png" width="100%">
+</a>
+</td>
+</tr>
+
+</table>
+
+</p>
+
+<!---
+
+<p>
+The main motto of Panini's design is that if programmers structure their
+system to improve modularity in its design, they should get concurrency for free.
+Panini's features are useful towards exploiting fine-grained concurrency in 
+object-oriented programs.
+</p>
+<p>
+For a detailed introduction to Panini's design with examples please see our discussion of 
+the <a href="docs/motivation.shtml">motivation</a> behind Panini's design.
+</p>
+
+<p>
+As part of the Panini project, we have also developed concurrency-enhanced versions
+of the Gang-of-Four design patterns. For more description of these patterns and 
+preliminary download of our pattern framework please see our pages on this topic
+<a href="http://www.cs.iastate.edu/~design/projects/panini/patterns/">here</a>.
+</p>
+
+<h2>Design goals</h2>
+
+<p>
+Panini has the following main design goals.
+<ol>
+  <li> Improve a software engineer's ability to separate conceptual concern and improve modularity,
+  <li> reconcile the concurrency and modularity goals in software design, and
+  <li> provide a simple and flexible implicit concurrency model such that all Panini programs are 
+    <ul>
+      <li> free of data races,
+      <li> free of deadlocks, and 
+      <li> have a guaranteed sequential semantics.
+    </ul>
+</ol>
+A more detailed description of these goals and how Panini achieves them can found in our <a href="http://www.cs.iastate.edu/~design/papers/TR-09-28">technical report</a>.
+</p> -->
+
+</div>
+
+<div class="news">
+ <h2 style="margin-top: 0;">News</h2>
+  <div class="twitter-feed">
+   <ul id="twitter_update_list"></ul>
+   <div class="twitter-button"><a href="http://twitter.com/#!/paninij">FOLLOW PANINI ON TWITTER</a></div>	
+  </div>
+</div>
+				
+<!-- Twitter Feed -->
+<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
+<script type="text/javascript" src="http://api.twitter.com/1/statuses/user_timeline.json?screen_name=paninij&amp;count=5&amp;include_rts=false&amp;callback=twitterCallback2"></script>
+
+</td>
+
+<!--#include virtual="includes/bottombar.html"-->

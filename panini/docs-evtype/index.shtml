@@ -1,0 +1,58 @@
+<!--#include virtual="../includes/top.html"-->
+<title>Panini Programming Guide : Overview</title>
+<style type="text/css">
+.col2-toc h2 {
+	margin: 0 0 10px;
+}
+</style>
+<!--<meta name="description"
+	content="The Ptolemy Programming Guide helps introduce users to the features and syntax of the Ptolemy Programming Language. The Ptolemy language adds quantified, typed events to object-oriented languages, producing a language that has many of the advantages of both implicit-invocation and aspect-oriented languages." />
+<meta name="keywords"
+	content="ptolemy, programming, guide, introduction, tutorial, quantified, event, events, types, implicit, invocation, aspect, oriented, extension, java, C#, enhanced, reasoning, explict, declaration, Hridesh Rajan, Gary Leavens, modular reasoning aspects, pointcut fragility solution, separate compilation, incremental compilation, download, compiler, download ptolemy, translucid, contract, embedded contracts, greybox, specification, grey, box, gray, structural, refinement" />
+
+-->
+<!-- PAGE SPECIFIC STYLING -->
+
+<!--#include virtual="../includes/header.html"-->
+
+<h1>The Panini Programming Guide</h1>
+<script type="text/javascript">
+copyright=new Date()
+fullYear=copyright.getFullYear();
+document.write("<h5>Copyright &copy; 2006-" + fullYear + ", Iowa State University of Science and Technology. All rights reserved.</h5>")
+</script>
+
+<!-- TABLE OF CONTENTS -->
+<div class="col2-toc">
+<h2>Table of Contents</h2>
+<ol>
+	<li>Programming Guide Overview</li>
+	<li><a href="docs/motivation.shtml">Motivation</a></li>
+	<li><a href="docs/starting.shtml">Getting Started with Panini</a></li>
+	<li><a href="docs/running.shtml">Installing and Running the
+	Panini compiler</a></li>
+	<li><a href="papers/">Technical Publications</a></li>
+</ol>
+<hr />
+<h3>Examples</h3>
+<ul>
+	<li><a href="docs/starting-examples.shtml">Genetic Algorithm</a></li>
+</ul>
+</div>
+<div class="col2-content">
+<h2><a name="overview">Overview</a></h2>
+<p>This programming guide describes the motivation behind Panini
+language, the details about constructs and features in Panini and
+finally installing and running panini.</p>
+<p>If you are completely new to the idea and the project, you may
+want to read our <a href="docs/position.shtml">overview</a>.</p>
+
+<!-- PAGE UPDATE -->
+<p id="update">Page last modified on $Date: 2013/03/02 07:00:14 $</p>
+
+<!-- GUIDE NAVIGATION -->
+<div class="page-nav"><!-- <a href="#">&lt; PREVIOUS</a> --> <a
+	href="docs/index.shtml#pgtop">&#94; RETURN TO TOP</a> <a
+	href="docs/starting.shtml">NEXT &gt;</a></div>
+</div>
+<!--#include virtual="../includes/bottom.html"-->

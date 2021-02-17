@@ -1,0 +1,128 @@
+<!--#include virtual="../includes/top.html"-->
+<title>The Panini Programming Guide</title>
+<!-- PAGE SPECIFIC STYLING -->
+<style type="text/css">
+.col2-toc h2 {
+	margin: 0 0 10px;
+}
+</style>
+<!--#include virtual="../includes/header.html"-->
+<h1>Getting Started</h1>
+
+<script type="text/javascript">
+copyright=new Date()
+fullYear=copyright.getFullYear();
+document.write("<h5>Copyright &copy; 2006-" + fullYear + ", Iowa State University of Science and Technology. All rights reserved.</h5>")
+</script>
+
+<!-- TABLE OF CONTENTS -->
+<div class="col2-toc">
+<h2>Table of Contents</h2>
+<ol>
+	<li><a href="docs/index.shtml">Programming Guide Overview</a></li>
+	<li><a href="docs/motivation.shtml">Motivation</a></li>
+	<li>Getting Started with Panini
+	<ul class="toc-currentpg">
+		<li><a href="docs/starting.shtml#goals">Panini's Goals</a></li>
+		<li><a href="docs/starting.shtml#features">Language Features</a></li>
+		<li><a href="docs/starting.shtml#eventDeclaration">Event
+		Declaration</a></li>
+		<li><a href="docs/starting.shtml#eventBinding">Event Bindings
+		and Handlers</a></li>
+		<li><a href="docs/starting.shtml#regEx">Register Expressions</a></li>
+		<li><a href="docs/starting.shtml#announceStmts">Announce
+		Statements</a></li>
+	</ul>
+	</li>
+	<li><a href="docs/running.shtml">Installing and Running the
+	Panini compiler</a></li>
+	<li><a href="papers/">Technical Publications</a></li>
+</ol>
+<hr />
+<h3>Examples</h3>
+<ul>
+	<li><a href="docs/starting-examples.shtml">Genetic Algorithm</a></li>
+</ul>
+</div>
+
+<!-- CONTENT -->
+<div class="col2-content">
+<h2><a name="goals">Panini's Goals</a></h2>
+<p>Panini's goals are to enable greater program modularity and in
+doing so automatically enable greater program concurrency. In fact,
+Panini does not use explicit concurrency features. Instead, the runtime
+will automatically enable concurrency when safe to do so.</p>
+
+<h2><a name="features">Language Features</a></h2>
+<p>Panini introduces several new components to extend the Java
+language. These components are:
+<ul>
+	<li>Event Declarations</li>
+	<li>Event Bindings</li>
+	<li>Register Expressions</li>
+	<li>Announce Statements</li>
+</ul>
+</p>
+<h2><a name="eventDeclaration">Event Declaration</a></h2>
+<p>Events are declared as a top level type. Syntax for event declaration:</p> <pre
+	class="brush: java">
+	VisibilityModifier void event EvName{
+		ContextVariable*
+	}
+</pre>
+<p>Context variables are declared like regular fields.</p>
+
+<h2><a name="eventBinding">Event Bindings</a></h2>
+<p>A handler method within a class declaration is bound to an event
+announcement with a binding declaration of the form: </p><pre
+	class="brush: panini">
+	when EvName do methodName;
+</pre> <p>A handler method's argument list must include the event type as its
+first argument. Any of the event's context variables that will be
+accessed in the handler body should also be included in the argument
+list. For example, suppose we have an Event, GenAvailable, and we want
+to compute the fitness of the generation when the GenAvailable Event is
+announced.</p> <pre class="brush: panini">
+	public void event GenAvailable{
+		Generation g;
+	}
+
+	public class Fitness{
+		public void compute(GenAvailable gen, Generation g){
+			g.getGeneration();
+		}
+
+		when GenAvailable do fitness;
+	}
+</pre>
+
+<h2><a name="regEx">Regular Expressions</a></h2>
+<p>Objects must be registered with the event dispatcher before they will be
+notified about event announcements. Objects can be registered with a
+register(objectToRegister) expression.</p> <pre class="brush: panini">
+	public class Fitness{
+		public Fitness(){
+			register(this);
+		}
+	}
+</pre> <p>Any class with a register expression must have at least one event
+binding. Register statements will register the object for every event
+bound in the class body.</p>
+
+<h2><a name="announceStmts">Announce Statements</a></h2>
+<p>Announce statements are of the form: </p><pre class="brush: java">
+	announce EvName(params*);
+</pre> <p>where params* are the values to be bound to the event context. Announce
+statements may appear anywhere a standard Java statement may appear.
+Announce statements form the basis of the potential concurrency in a
+Panini program.</p> </div>
+
+<!-- PAGE UPDATE -->
+<p id="update">Page last modified on $Date: 2013/03/02 07:00:14 $</p>
+
+<!-- GUIDE NAVIGATION -->
+<div class="page-nav"><a href="docs/index.shtml">&lt; PREVIOUS</a>
+<a href="docs/starting.shtml#pgtop">&#94; RETURN TO TOP</a> <a
+	href="docs/running.shtml">NEXT &gt;</a></div>
+</div>
+<!--#include virtual="../includes/bottom.html"-->

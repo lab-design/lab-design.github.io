@@ -1,0 +1,93 @@
+<!--#include virtual="../includes/top.html"-->
+<title>The Panini Programming Guide</title>
+<!-- PAGE SPECIFIC STYLING -->
+<style type="text/css">
+.col2-toc h2 {
+	margin: 0 0 10px;
+}
+</style>
+<!--#include virtual="../includes/header.html"-->
+<h1>Implicit Parallelism in Capsule-oriented Program Design</h1>
+
+<script type="text/javascript">
+copyright=new Date()
+fullYear=copyright.getFullYear();
+document.write("<h5>Copyright &copy; 2006-" + fullYear + ", Iowa State University of Science and Technology. All rights reserved.</h5>")
+</script>
+
+<!-- TABLE OF CONTENTS -->
+<div class="col2-toc">
+<h2>Table of Contents</h2>
+<ol>
+	<li><a href="docs/index.shtml">Programming Guide Overview</a></li>
+	<li><a href="docs/motivation.shtml">Motivation</a></li>
+	<li><a href="docs/starting.shtml">Getting Started</a></li>
+	<li><a href="docs/capsule-oriented.shtml">Capsule-oriented Design</a></li>
+	<li><a href="docs/language.shtml">Panini Language</a></li>
+	<li>Implicit Parallelism
+	<ul class="toc-currentpg">
+		<li><a href="docs/parallel.shtml#applicability">Applicability</a></li>
+		<li><a href="docs/parallel.shtml#masterWorker">Master-Worker Pattern</a></li>
+		<li><a href="docs/parallel.shtml#leaderFollower">Leader-Follower Pattern</a></li>
+		<li><a href="docs/parallel.shtml#pipeline">Pipeline Pattern</a></li>
+		<li><a href="docs/parallel.shtml#distributor">Distributor Pattern</a></li>
+	</ul>
+	</li>
+	<li><a href="docs/running.shtml">Installing and Running the Panini compiler</a></li>
+    <li><a href="docs/profiling.shtml">Profiling Panini Programs</a></li>
+	<li><a href="docs/papers.shtml">Technical Publications</a></li>
+	<li><a href="docs/faq.shtml">FAQ</a></li>
+</ol>
+<hr />
+<!--#include virtual="./toc-just-examples.html"-->
+
+</div>
+
+<!-- CONTENT -->
+<div class="col2-content">
+<!-- <h2><a name="goals">Panini's Goals</a></h2>
+<p>
+A central goal of capsule-oriented programming and the Panini 
+language is to help programmers deal with the challenges of
+concurrent program design.
+</p>  -->
+
+<h2><a name="applicability">Applicability of Capsules</a></h2>
+<p>
+	In coarse-grained concurrent applications, such as the simplified
+	Asteroids game illustrated in the <a href="docs/capsule-oriented.shtml">previous 
+	chapter</a>, the main motivation
+	is not necessarily to achieve parallel execution but rather to
+	correctly and safely model components that are &quot;logically
+	autonomous&quot;.  These kinds of asynchronous,
+	event-driven systems are the obvious candidates
+	for capsule-oriented design.  
+	However, the capsule abstraction also adapts easily to
+	other styles of parallel programming, while retaining
+	Panini's advantages of abstracting away the concurrency 
+	control mechanisms and ensuring data confinement.
+</p>
+
+<b><p>UNDER CONSTRUCTION FOR 0.9.2: Check back after 08/05/2013.</p></b>
+
+<h2><a name="masterWorker">Master-Worker Pattern</a></h2>
+<p></p>
+
+<h2><a name="leaderFollower">Leader-Follower Pattern</a></h2>
+<p></p>
+
+<h2><a name="pipeline">Pipeline Pattern</a></h2>
+<p></p>
+
+<h2><a name="pipeline">Distributor Pattern</a></h2>
+<p></p>
+
+<!-- PAGE UPDATE -->
+<p id="update">Page last modified on $Date: 2013/08/03 14:08:35 $</p>
+
+<!-- GUIDE NAVIGATION -->
+<div class="page-nav"><a href="docs/language.shtml">&lt; PREVIOUS</a>
+<a href="docs/parallel.shtml#pgtop">&#94; RETURN TO TOP</a> <a
+	href="docs/running.shtml">NEXT &gt;</a></div>
+</div>
+<!--#include virtual="../includes/bottom.html"-->
