@@ -1,0 +1,151 @@
+<!--#include virtual="includes/header.html"-->
+				
+<article width="100%" id="post-25" class="post-25 page type-page status-publish hentry">
+	<header class="entry-header">
+		<h1 class="entry-title">2018 Midwest Big Data Summer School Agenda -
+                                        Big Data Applications Track</h1> 
+
+		</header><!-- .entry-header -->
+
+	<div width="100%" class="entry-content">
+
+<!-- <div class="entry-content" width="100%">-->
+		<table  style="border-collapse: collapse;" border="0"  width=“800” cellspacing="0" cellpadding="0">
+<tbody width="100%">
+<tr style="height: 25.5pt;"  width="100%">
+<!-- <td style="height: 25.5pt; font-size: x-large; font-weight: bold; color: white;" colspan="3" align="center" width="100%" height="34">Monday 6/20/2016</td> -->
+
+               
+               
+      
+               
+               
+               
+<tr style="height: 25.5pt;" >
+<td style="height: 25.5pt; font-size: x-large; font-weight: bold;" colspan="3" align="center" width="100%" height="34">Thursday, May 17 - Location: Sun Room </td>
+<tr width="100%" >
+<td width="30%">8:00 - 8:45am <br> Location: Sun Room</td><td> Registration</td>
+</tr>
+<tr><td></td><td></td></tr>
+               
+  
+ 
+
+               
+               
+  <tr width="100%" >
+<td width="30%" style="border:1px solid #ffffff ;">8:45 - 10:15am<br>Location: Sun Room</td>
+<td style="border:1px solid #ffffff ;">An Introduction to Computational Propaganda Research <br><b><i><a href="https://soc.iastate.edu/directory/dr-shawn-dorius/">Dr. Shawn Dorius</a></i></b></td>
+</tr>
+<tr width="100%" >
+<td width="30%" style="vertical-align:top">
+<a href="">      
+<img src="images/dorius.jpg" width="800" ></a></td>
+<td width="70%" style="vertical-align:top">
+<p>
+Abstract: As an ever-larger share of social life occurs in online environments, malicious actors (e.g. individuals, organizations, and states) use novel technologies to more efficiently engage with, and potentially influence, the public. While efforts to influence the public via coordinated disinformation campaigns are not new, there is concern that the application of computational methods to conventional propaganda campaigns represents a new kind of threat to social institutions, civic engagement, social cohesion, and public well-being. The volume and granularity of the data exhaust flowing from social media engagement have made it possible to identify actors directing such campaigns (and to do so faster and more accurately than previously possible) and to establish cause and effect relationships between disinformation and public opinions, sentiments, and behaviors. Likes, tweets, retweets, up votes, comments, page edits, and reviews are just a few of the areas in which researchers can observe the effects of disinformation campaigns on the public. In this workshop, you will learn how to think like an investigative social scientist, look for patterns and anomalies, identify distortionary influencers, and evaluate public response to disinformation exposure using observational and experimental methods. The workshop will feature sample R code, training datasets, and a little hands-on work with some of the models and methods for the emerging field of computational propaganda.
+
+</p>
+<p><EM>About Dr. Shawn Dorius:</EM>
+                                          
+<a href="https://soc.iastate.edu/directory/dr-shawn-dorius/">More</a></td>
+</p>
+</tr>                                                               
+          
+  
+        
+          
+
+          
+<tr width="100%" >
+<td width="30%">10:15 - 10:45am<br>Location: Sun Room</td>
+<td>Break - refreshments provided</td>
+</tr>
+<tr><td></td><td></td></tr>
+        
+
+
+
+
+
+              
+               
+<tr width="100%" >
+<td width="30%" style="border:1px solid #ffffff ;">10:45 - 12:15pm<br>Location: Sun Room</td>
+<td style="border:1px solid #ffffff ;">Tools for Big Data-Driven Research: Data-Squashing using Numerical Moment Matching and Data-Curing using Fractional Hot Deck Imputation <br><b><i><a href="https://www.ccee.iastate.edu/facultystaff/?user_page=icho">Dr. In-Ho Cho</a></i></b></td>
+</tr>
+<tr width="100%" >
+<td width="30%" style="vertical-align:top">
+<a href="">      
+<img src="images/Cho.jpg" width="800" ></a></td>
+<td width="70%" style="vertical-align:top">
+<p>
+Abstract: With the rise of advanced computational power and large-scale databases in the science and engineering fields, strong demand emerges for novel computational and numerical tools that can facilitate big data-oriented research. The topic of this talk will be twofold. First, I will present a numerical moment matching (NMM) technique and a relevant 64-bit window program that can be directly used to represent (or squash) large-scale irregular data populations. This technique will help researchers to quantify uncertainty and foresee how Big Data will behave (structurally, economically, biologically, etc.) in conjunction with advanced simulation/prediction models. Next, I will talk about a general data-curing tool, an R package named FHDI, which stands for fractional hot deck imputation in statistics. FHDI exhibits little restrictions to prior knowledge, statistical assumptions, a large number of variables, and complex missing patterns of original big data. Hands-on practical examples and publicly open programs will be presented through the tutorial-style talk.  
+</p>
+<p><EM>About Dr. In-Ho Cho:</EM>
+Dr. Cho is an assistant professor at Iowa State University's Department of Civil, Construction and Environmental Engineering. He began at Iowa State University in 2014. His research focuses on novel big data approaches to traditional engineering fields, including earthquake engineering and structural engineering. Advanced parallel computing technology and cutting-edge multi-scale finite element analyses are his primary research focuses. Dr. Cho is actively applying theories of structures and computational engineering to the areas of micro soft robotics. 
+<a href="https://www.ccee.iastate.edu/facultystaff/?user_page=icho">More</a></td>
+</p>
+</tr>
+ 
+
+        
+<tr width="100%" >
+<td width="30%">12:15 - 1:30pm<br>Location: Sun Room</td>
+<td>Lunch </td>
+</tr>
+
+ <tr><td></td><td></td></tr>      
+
+
+<tr width="100%" >
+<td width="30%" style="border:1px solid #ffffff ;">1:30 - 3:00am<br>Location: Sun Room</td>
+<td style="border:1px solid #ffffff ;">Natural Language Processing with Python <br><b><i><a href="http://sowmya.public.iastate.edu/">Dr. Sowmya Vajjala</a></i></b></td>
+</tr>
+<tr width="100%" >
+<td width="30%" style="vertical-align:top">
+<a href="">      
+<img src="images/vajjala.jpg" width="800" ></a></td>
+<td width="70%" style="vertical-align:top">
+<p>
+Abstract: Unstructured text data is everywhere, in the form of web pages, social media posts, news articles, blogs, and a lot of other documents. Natural Language Processing (NLP) deals with developing methods to solve various language processing problems involving these large  quantities of text data. Some examples of real-world problems where NLP is useful are: email spam classification, machine translation, question answering/search, automatically tagging content, identifying fake news etc. In this tutorial, we will learn about working with textual data using the state of the art methods in NLP and Python.  I will demonstrate the use of nltk and gensim libraries for processing text, and scikit-learn and keras libraries for building predictive models with the processed textual data. I will take text classification as my primary use case, and demonstrate how these tools enable us to build text classification models and use them in our own applications.
+</p>
+    
+    <p>
+        <a href="https://github.com/nishkalavallabhi/MBDS2018-NLPTutorial" > NLP Tutorial</a>
+    </p>
+<p><EM>About Dr. Sowmya Vajjala:</EM> 
+<a href="http://sowmya.public.iastate.edu/">More</a></td>
+</p>
+</tr>
+
+
+
+<tr width="100%" >
+<td width="30%">3:00 - 3:30pm<br>Location: Sun Room</td><td>Break</td>
+</tr>
+
+ <tr><td></td><td></td></tr>      
+<tr width="100%" >
+<td width="30%" style="border:1px solid #ffffff ;">3:30 - 5:00pm<br>Location: Sun Room</td>
+<td style="border:1px solid #ffffff ;">Analytics in Transportation <br><b><i><a href="https://www.ccee.iastate.edu/facultystaff/?user_page=anujs">Dr. Anuj Sharma</a></i></b></td>
+</tr>
+<tr width="100%" >
+<td width="30%" style="vertical-align:top">
+<a href="">      
+<img src="images/Anuj.png" width="800" ></a></td>
+<td width="70%" style="vertical-align:top">
+<p>
+<p><EM>About Dr. Anuj Sharma:</EM>
+Dr. Anuj Sharma is an associate professor in the Civil Construction and Environmental Engineering Department at Iowa State University. He also holds a joint appointment as a research scientist with the Institute of Transportation. In these positions, he teaches transportation engineering courses to undergraduate and graduate civil engineering students, conducts research in the transportation operations area and participates in numerous professional organizations. Dr. Sharma’s research has been recognized by many funding agencies. Dr. Sharma is currently leading research at the REACTOR (REaltime AnalytiCs of TranspORtation data) laboratory. The High Performance Cluster (HPC) assembled for the lab is able to ingest multiple streams of real-time data from multiple sources. The current efforts are focused on ingestion, real-time analytics, batch processing, visualization/front end development and archiving of data streams. Some of the tools developed under this effort can be found at the lab's website. REACTOR-HPC and a memorandum of understanding with Iowa DOT has placed Iowa State University among one of the very few facilities in the US transportation arena using big data analytics in the field of transportation. 
+<a href="https://www.ccee.iastate.edu/facultystaff/?user_page=anujs">More</a></td>
+</p>
+</tr>                                                                                             
+                                                                                              
+               
+</tbody>
+</table>
+			<!-- </div> -->
+</article><!-- #post-25 -->
+
+<!--#include virtual="includes/footer.html"-->

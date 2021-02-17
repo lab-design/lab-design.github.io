@@ -1,0 +1,16 @@
+<!--#include virtual="includes/header.html"-->  
+
+<article width="100%" id="post-25" class="post-25 page type-page status-publish hentry">
+<header class="entry-header">
+		<h1 class="entry-title">2018 Midwest Big Data Summer School - Overview</h1>
+                <p>Click image below or this link for <a href="./program-full.shtml">full program</a></p>
+</header> 
+
+<div class="entry-content" height="400px">
+<a href="./program-full.shtml">
+<img src="images/tentative.png" width="100%" alt="Midwest Big Data Summer School Agenda">
+</a>
+
+</article><!-- #post-25 -->
+
+<!--#include virtual="includes/footer.html"-->

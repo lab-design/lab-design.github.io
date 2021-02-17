@@ -1,0 +1,63 @@
+<!--#include virtual="includes/header.html"-->
+
+<div class="container">
+
+    <div class="row">
+        <div class="row">
+            <h1 class ="entry-title">Sponsors </h1>
+        </div>
+        We are thankful to our sponsors for their contributions that allows the Midwest Big Data Summer School to better support its participants and keep the registration fees lower.
+        More information about sponsorship opportunities <b><a href="http://mbds.cs.iastate.edu/2019/images/SponsorMBDS.pdf"> here</a>.</b>
+    </div>
+    <div class="row">
+        <h1 class ="entry-title">Platinum Sponsors </h1>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <a href="http://midwestbigdatahub.org/">
+                <img class="card-img-top img-fluid" height="auto" src="images/sponsors/mbds.jpg" alt="MBDS">
+            </a>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <h1 class ="entry-title">Gold Sponsors </h1>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <a href="https://las.iastate.edu/">
+                <img class="card-img-top img-fluid" height="auto" src="images/sponsors/LASlogo.png" alt="LAS">
+            </a>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <h1 class ="entry-title">Silver Sponsors </h1>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12 col-md-4 col-lg-4">
+            <a href="https://www.corteva.com/">
+                <img class="card-img-top img-fluid" height="auto" src="images/sponsors/corteva.jpg" alt="Corteva">
+            </a>
+
+        </div>
+
+        <div class="col-sm-12 col-md-4 col-lg-4">
+               <a href="https://www.syngenta.com/">
+                   <img class="card-img-top img-fluid" height="auto" src="images/sponsors/syngenta.png" alt="Syngenta">
+               </a>
+        </div>
+	<div class="col-sm-12 col-md-4 col-lg-4">
+               <a href="https://www.sas.com/">
+                   <img class="card-img-top img-fluid" height="auto" src="images/sponsors/sas.png" alt="SAS">
+               </a>
+        </div>
+    </div>
+</div>
+
+<!--#include virtual="includes/footer.html"-->

@@ -1,0 +1,316 @@
+<!--#include virtual="includes/header.html"-->  
+
+<article id="post-25" class="post-25 page type-page status-publish hentry">
+	<header class="entry-header">
+		<h1 class="entry-title">Organizers</h1>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<p style="text-align: justify;">
+			The Midwest Big Data Summer School is hosted by <a
+				href="http://www.iastate.edu/">Iowa State University.</a>
+		</p>
+
+		<table style="border: 1px solid #ffffff;" border-top="none"
+			border-collapse="separate" cellpadding="0" cellspacing="0" border="0">
+			<tr cellpadding="0" cellspacing="0" border="0">
+				<td style="border: 1px solid #ffffff;"  width="150"><div cellpadding="0"
+						cellspacing="0" border="0"
+						class="views-row views-row-1 views-row-odd views-row-first">
+
+						<div class="views-field views-field-field-people-image">
+							<div class="field-content">
+								<a href="http://www.cs.iastate.edu/~hridesh/"> 
+								<img src="images/Rajan.jpg" height="190" alt="">
+								</a>
+							</div>
+						</div>
+						<div class="views-field views-field-title profile-title h2">
+							<span class="field-content">
+							<a href="http://www.cs.iastate.edu/~hridesh">Hridesh Rajan</a>
+							</span>
+						</div>
+						<div class="views-field views-field-field-people-position">
+							<div class="field-content">Role: general arrangements, funding</div>
+						</div>
+					</div></td>
+
+				<td style="border: 1px solid #ffffff;" width="150"><div
+						class="views-row views-row-20 views-row-even">
+						<div class="views-field views-field-field-people-image">
+							<div class="field-content">
+								<a href="http://www.cs.iastate.edu/~pavan"> <img
+									typeof="foaf:Image"
+									src="http://www.cs.iastate.edu/files/styles/people_thumb/public/people/profilepictures/aduri_0.jpg?itok=u6j9IvIB"
+									height="190" alt="">
+								</a>
+							</div>
+						</div>
+						<div class="views-field views-field-title profile-title h2">
+							<span class="field-content">
+							<a href="http://www.cs.iastate.edu/~pavan">Pavan Aduri</a>
+							</span>
+						</div>
+						<div class="views-field views-field-field-people-position">
+							<div class="field-content">Co-chair: Foundations</div>
+						</div>
+					</div></td>
+
+				<td style="border: 1px solid #ffffff;"  width="150"><div
+						class="views-row views-row-5 views-row-odd views-row-last">
+						<div class="views-field views-field-field-people-image">
+							<div class="field-content">
+								<a href="http://www.cs.iastate.edu/people/adisak-sukul"> <img
+									typeof="foaf:Image"
+									src="http://www.cs.iastate.edu/files/styles/people_thumb/public/people/profilepictures/adisak.jpeg?itok=737ezDQJ"
+									height="190" alt=""></a>
+							</div>
+						</div>
+						<div class="views-field views-field-title profile-title h2">
+							<span class="field-content"><a
+								href="http://www.cs.iastate.edu/people/adisak-sukul"> Adisak
+									Sukul</a></span>
+						</div>
+						<div class="views-field views-field-field-people-position">
+							<div class="field-content">Role: finance and sponsorship</div>
+						</div>
+					</div></td>
+
+				<td style="border: 1px solid #ffffff;" width="150">
+					<div class="views-row views-row-5 views-row-odd views-row-last">
+
+						<div class="views-field views-field-field-people-image">
+							<div class="field-content">
+								<a href="http://home.engineering.iastate.edu/~chinmay/"> 
+								<img border="0" src="images/Hegde.jpg" height="190"></a>
+							</div>
+						</div>
+						<div class="views-field views-field-title profile-title h2">
+							<span class="field-content"><a
+								href="http://home.engineering.iastate.edu/~chinmay/">Chinmay Hegde</a>
+							</span>
+						</div>
+						<div class="views-field views-field-field-people-position">
+							<div class="field-content">Co-chair: Foundations</div>
+						</div>
+					</div>
+				</td>
+			</tr>
+		</table>
+            <table style="border: 1px solid #ffffff;" width:”100%” cellpadding="0"
+                        cellspacing="0" border="0">
+                        <tr cellpadding="0" cellspacing="0" border="0">
+                                <td style="border: 1px solid #ffffff;" width="150">
+                                        <div class="views-row views-row-5 views-row-odd views-row-last">
+
+                                                <div class="views-field views-field-field-people-image">
+                                                        <div class="field-content">
+                                                                <a href="http://www.public.iastate.edu/~esweber/"> 
+                                                                <img border="0" src="images/Weber.jpg" height="180"></a>
+                                                        </div>
+                                                </div>
+                                                <div class="views-field views-field-title profile-title h2">
+                                                        <span class="field-content"><a
+                                                                href="http://www.public.iastate.edu/~esweber/">Eric Weber</a>
+                                                        </span>
+                                                </div>
+                                                <div class="views-field views-field-field-people-position">
+                                                        <div class="field-content">Role: registration and travel support</div>
+                                                </div>
+                                        </div>
+                                </td>
+                        <td style="border: 1px solid #ffffff;" width="150">
+                                        <div class="views-row views-row-5 views-row-odd views-row-last">
+
+                                                <div class="views-field views-field-field-people-image">
+                                                        <div class="field-content">
+                                                                <a href="http://web.cs.iastate.edu/~weile/"> 
+                                                                <img border="0" src="images/Le.jpg" height="180"></a>
+                                                        </div>
+                                                </div>
+                                                <div class="views-field views-field-title profile-title h2">
+                                                        <span class="field-content"><a
+                                                                href="http://web.cs.iastate.edu/~weile/">Wei Le</a>
+                                                        </span>
+                                                </div>
+                                                <div class="views-field views-field-field-people-position">
+                                                        <div class="field-content">Co-chair: Software Analytics</div>
+                                                </div>
+                              </div>
+                        </td>
+                        <td style="border: 1px solid #ffffff;" width="150"><div
+                                                class="views-row views-row-5 views-row-odd views-row-last">
+
+                                                <div style="border: 1px solid #ffffff;"
+                                                        class="views-field views-field-field-people-image">
+                                                        <div class="field-content">
+                                                                <a href="http://cse.unl.edu/~tnguyen/"> <img
+                                                                        typeof="foaf:Image"
+                                                                        src="images/Vu.jpg"
+                                                                        height="180" alt=""></a>
+                                                        </div>
+                                                </div>
+                                                <div class="views-field views-field-title profile-title h2">
+                                                        <span class="field-content"><a
+                                                                href="http://cse.unl.edu/~tnguyen/">ThanhVu (Vu) Nguyen</a></span>
+                                                </div>
+                                                <div class="views-field views-field-field-people-position">
+                                                        <div class="field-content">Co-chair: Software Analytics</div>
+                                                </div>
+                       </div></td>
+                        <td style="border: 1px solid #ffffff;" width="150"><div
+                                                class="views-row views-row-5 views-row-odd views-row-last">
+
+                                                <div style="border: 1px solid #ffffff;"
+                                                        class="views-field views-field-field-people-image">
+                                                        <div class="field-content">
+                                                                <a href="http://faculty.agron.iastate.edu/singhak/"> <img
+                                                                        typeof="foaf:Image"
+                                                                        src="images/DannySingh.jpg"
+                                                                        height="180" alt=""></a>
+                                                        </div>
+                                                </div>
+                                                <div class="views-field views-field-title profile-title h2">
+                                                        <span class="field-content"><a
+                                                                href="http://faculty.agron.iastate.edu/singhak/">Asheesh (Danny) Singh</a></span>
+                                                </div>
+                                                <div class="views-field views-field-field-people-position">
+                                                        <div class="field-content">Co-chair: Digital Agriculture</div>
+                                                </div>
+                       </div></td>
+		</tr>
+	    </table>
+
+
+   	    <table style="border: 1px solid #ffffff;" width:”100%” cellpadding="0"
+			cellspacing="0" border="0">
+			<tr cellpadding="0" cellspacing="0" border="0">
+				<td style="border: 1px solid #ffffff;" width="150">
+					<div class="views-row views-row-5 views-row-odd views-row-last">
+
+						<div class="views-field views-field-field-people-image">
+							<div class="field-content">
+								<a href="http://www.agron.iastate.edu/personnel/userspage.aspx?ID=2046"> 
+								<img border="0" src="images/ArtiSingh.jpg" height="180"></a>
+							</div>
+						</div>
+						<div class="views-field views-field-title profile-title h2">
+							<span class="field-content"><a
+								href="http://www.agron.iastate.edu/personnel/userspage.aspx?ID=2046">Arti Singh</a>
+							</span>
+						</div>
+						<div class="views-field views-field-field-people-position">
+							<div class="field-content">Co-chair: Digital Agriculture</div>
+						</div>
+					</div>
+				</td>
+                               <td style="border: 1px solid #ffffff;" width="150"><div
+                                                class="views-row views-row-5 views-row-odd views-row-last">
+
+                                                <div style="border: 1px solid #ffffff;"
+                                                        class="views-field views-field-field-people-image">
+                                                        <div class="field-content">
+                                                                <a href="http://www.cpm.iastate.edu/contact-us"> <img
+                                                                        typeof="foaf:Image"
+                                                                        src="images/Smith.jpg"
+                                                                        height="180" alt=""></a>
+                                                        </div>
+                                                </div>
+                                                <div class="views-field views-field-title profile-title h2">
+                                                        <span class="field-content"><a
+                                                                href="http://www.cpm.iastate.edu/contact-us">Barbara Smith</a></span>
+                                                </div>
+                                                <div class="views-field views-field-field-people-position">
+                                                        <div class="field-content">Conference Planning</div>
+                                                </div>
+                                        </div></td>
+		        <td style="border: 1px solid #ffffff;" width="150">
+					<div class="views-row views-row-5 views-row-odd views-row-last">
+
+						<div class="views-field views-field-field-people-image">
+							<div class="field-content">
+								<a href="http://design.cs.iastate.edu"> 
+								<img border="0" src="images/Khairunnesa.jpg" height="180"></a>
+							</div>
+						</div>
+						<div class="views-field views-field-title profile-title h2">
+							<span class="field-content"><a
+								href="http://design.cs.iastate.edu">Samantha Khairunnesa</a>
+							</span>
+						</div>
+						<div class="views-field views-field-field-people-position">
+							<div class="field-content">Publicity Chair</div>
+						</div>
+					</div>
+				</td>
+				<td style="border: 1px solid #ffffff;" width="150"><div
+						class="views-row views-row-5 views-row-odd views-row-last">
+
+						<div style="border: 1px solid #ffffff;"
+							class="views-field views-field-field-people-image">
+							<div class="field-content">
+								<a href="http://design.cs.iastate.edu"> <img
+									typeof="foaf:Image"
+									src="images/Bagheri.jpg"
+									height="180" alt=""></a>
+							</div>
+						</div>
+						<div class="views-field views-field-title profile-title h2">
+							<span class="field-content"><a
+								href="http://design.cs.iastste.edu/">Hamid Bagheri</a></span>
+						</div>
+						<div class="views-field views-field-field-people-position">
+							<div class="field-content">Web Chair</div>
+						</div>
+					</div></td>
+                
+		<!--				<td style="border: 1px solid #ffffff;" width="140”><div class="
+					views-row views-row-5 views-row-oddviews-row-last">
+
+					<div style="border: 1px solid #ffffff;"
+						class="views-field views-field-field-people-image">
+						<div class="field-content">
+							<a href="http://www.cs.iastate.edu/people/hoda-gholami"> <img
+								typeof="foaf:Image"
+								src="http://www.cs.iastate.edu/files/styles/people_thumb/public/people/profilepictures/2014-09-13%2017.05.34.jpg?itok=dYIQRWpR"
+								width="130" height="180" alt="Hoda Gholami" title="Hoda Gholami"></a>
+						</div>
+					</div>
+					<div class="views-field views-field-title profile-title h2">
+						<span class="field-content"><a
+							href="http://www.cs.iastate.edu/people/hoda-gholami">Hoda
+								Gholami</a></span>
+					</div>
+					<div class="views-field views-field-field-people-position">
+						<div class="field-content">Web/Publicity Chair</div>
+					</div>
+					</div>
+				</td>
+				<td style="border: 1px solid #ffffff;" width="153”><div class="
+					views-row views-row-5 views-row-oddviews-row-last">
+
+					<div style="border: 1px solid #ffffff;"
+						class="views-field views-field-field-people-image">
+						<div class="field-content">
+							<a href="http://www.cs.iastate.edu/people/ganesha-upadhyaya">
+								<img typeof="foaf:Image"
+								src="http://www.cs.iastate.edu/files/styles/people_thumb/public/people/profilepictures/Upadhyaya%2C-Ganesha.jpg?itok=f4pEZ_oO"
+								width="130" height="180" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="views-field views-field-title profile-title h2">
+						<span class="field-content"><a
+							href="http://www.cs.iastate.edu/people/ganesha-upadhyaya">Ganesha
+								Upadhyaya</a></span>
+					</div>
+					<div class="views-field views-field-field-people-position">
+						<div class="field-content">Registration Chair</div>
+					</div>
+					</div>
+				</td> -->
+			</tr>
+		</table> 
+		</article><!-- #post-25 -->
+
+<!--#include virtual="includes/footer.html"-->
