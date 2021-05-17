@@ -1,0 +1,83 @@
+Requirements for the Ph.D. in Computer Science
+
+The purpose of the Ph.D. program is to train students to do original research in computer science.  Each student is also required to attain knowledge and proficiency commensurate with a leadership role in computer science.  The specific degree requirements are as follows:
+
+1.	Course and Credit Requirement. 
+Each student's POS must total at least 72 credits, including the following.
+a.  Core courses 511 and 531 (6 credits).
+b.  A breadth requirement that includes at least one course from each of four of the following areas (12 credits; see [3] below for a list of courses in each area).
+1.  Programming Languages and Software Engineering.
+2.  Operating Systems and Communications.
+3.  Computer Architecture.
+4.  Database Systems.
+5.  Artificial Intelligence
+6.  Parallel and Distributed Systems.
+c.  Non-Computer Science graduate courses (9-15 credits).  These courses must be offered by another department, but may be cross-listed with Computer Science.  In general, these courses should be at the 500 level or above, but the student's POS committee may, for the purpose of strengthening the POS, approve up to 6 credits of specific 400-level non-CS courses (available for graduate credit and not cross-listed with Computer Science) to be substituted for 500-level courses in satisfying this requirement.
+d.  ComS 591 and at least 3 credits of ComS 610.  (ComS 591 must be taken in the student's first fall semester or be replaced with a 3-credit 600-level course other than 699.)
+
+The above choices are subject to the following additional restrictions:
+a.  At least 36 credits, including dissertation research credits, must be earned under the supervision of the POS committee.
+b.  The course credits (excluding 590, 591, 599, 610, 699) must add up to at least 36 credits.
+c.  The course credits must include at least 6 credits of ComS 600-level courses, excluding 610 and 699.
+
+2.	Grade Requirement.
+The POS must include no more than two C's (C, C+) and no grade below a C.
+
+3.	Area Proficiency Requirement.
+Each student must demonstrate an especially high level of proficiency in three areas of computer science, to be chosen from the following list:
+a. Programming Languages and Software Engineering:  ComS 512, 540, 541, 542, 641.
+b. Operating Systems and Communication:  ComS 552, 554, 586, 587x, 652.
+c. Computer Architecture:  ComS 524, 583x, 624.
+d. Database Systems:  ComS 561, 661.
+e. Artificial Intelligence:  ComS 572, 576, 672, 673.
+f. Parallel and Distributed Computing:  ComS 526x, 625.
+g. Theory of Computation:  ComS 531, 631, 632, 633.
+h. Algorithms and Data Structures:  ComS 511, 518, 611, 612.
+
+The three areas are to be chosen by the student.  In each area, proficiency may be demonstrated in either of the following two manners.
+Option A	Pass a written proficiency examination in the area.
+Option B	Achieve a 3.5 grade-point average in two designated graduate courses in the area.
+
+Each area is supervised by an Area Committee consisting of two or more members of the Graduate Faculty.  The Area Committee administers and grades the proficiency examinations for Option A and determines which courses may be used for Option B.  The Option A examinations are normally offered once each year, early in the Spring Semester.  Current examination syllabi for Option A and course requirements for Option B may be found in Appendix B.  It should be noted that passing an Option A examination does not satisfy any portion of the Course and Credit Requirement.  Completion of the Area Proficiency Requirement is certified by written memos from each of the three Area Committees to the student.
+
+Because research is the most important component of the Ph.D. program, students are strongly encouraged to satisfy the Area Proficiency Requirement as early as possible.  Courses and/or Option A examinations may be retaken in order to satisfy this requirement, but every Ph.D. student must satisfy the Area Proficiency Requirement by the end of the sixth semester of his or her graduate program.
+
+4.	Research Skills Requirement.
+A Ph.D. student is expected to demonstrate a high degree of proficiency in reading, writing, and speaking skills (above that normally demonstrated by an undergraduate student) in order to read results of other researchers and to report results of personal research.  To insure such skills, the student should do one of the following, within three years prior to the Preliminary Examination:
+a.	Demonstrated proficiency in foreign language by either earning a score equal to or better than the 50th percentile level score on the GSFLT foreign language examination or by one academic year of formal study in a foreign language at a grade of B or better.  The choice of language should be deemed relevant to the student's area of research by the student and his/her POS Committee.  English may be considered as a foreign language only for those students whose native tongue (other than English) is deemed an acceptable language for research. 
+b.  Demonstrated proficiency in communication skills with a grade of B or better by taking a 2-semester sequence.  The sequence will consist of English 314 and a 500-level course in either English or Journalism carrying graduate minor credit.  The 500-level course must be approved by the graduate committee.  These credits must be taken in addition to the 72 credit total.
+c.	Demonstrate proficiency in communication skills by publishing a paper in English, as the sole or major author, in a reputable computer journal or conference proceedings, with written reports from the referees.  The student is encouraged to present a colloquium on this material to the Computer Science faculty and graduate students.
+
+	On the basis of the publication, the student's POS committee will decide if the research communication skills of the candidate are adequate or if the candidate would be well-served by further development of these skills.  In the former case, the manner in which the research communication skills have been satisfied are to be documented by the POS committee in the form of copies of: 1)  the article, and 2)  the referee reviews and letter of acceptance.  This document is to be placed in the student's file.
+
+5.	Timely Formation of POS Committee.
+The formation of a Program of Study (POS) committee is an essential phase of the Ph.D. program.  In order to advance to candidacy, the Ph.D. student must form a committee of graduate faculty members willing to supervise the POS.  (Regulations regarding the composition and approval of this committee appear in the Graduate Catalog.)  It is the responsibility of each Ph.D. student to find members (especially the chair or co-chairs) for the POS committee and to complete the POS paperwork as soon as possible, but in no case later than the end of the sixth semester of graduate study.
+
+6.	Preliminary Examination
+The purpose of the Preliminary Examination is to ensure that the student is prepared to pursue a significant, enduring program of original research in computer science. The examination consists of two phases.
+
+Phase 1 of the Preliminary Examination is written.  Ordinarily this portion of the examination contains the following two components.
+ (a)	A completed, original research paper that is, in the judgment of the POS committee, publishable in a refereed computer science journal.
+ (b)	A comprehensive written examination on areas of computer science pertinent to the student's primary area of research.
+
+The student must be a sole or major author of any paper used for component (a).  Papers that have already been published or that have been used to satisfy other requirements (e.g., M.S. research) are permissible, provided that they meet the criteria stated in (a) above.  The component (b) is administered and graded by the POS committee.
+
+If the student has not completed an original, publishable research paper, the POS committee may either defer the Preliminary Examination or use a longer, more thorough written examination for component (b).  Similarly, if the student has more than one paper as in component (a), or a paper of unusual magnitude and significance, the POS committee may shorten the component (b) examination.
+
+Phase 2 of the Preliminary Examination is an oral presentation of the student's proposed Ph.D. research, including a description of relevant existing literature and the student's progress to date.  This phase may also, at the discretion of the POS committee, include oral examination of Phase 1 material.
+
+Prior to scheduling the Preliminary Examination, each Ph.D. student must satisfy the Area Proficiency Requirement, form a POS Committee, and satisfy the Research Skills Requirement.  In general, a student who has not satisfied the Area Proficiency Requirement and formed a POS Committee, both by the end of his or her sixth semester in the graduate program in computer science at Iowa State University, will not be allowed to take the Preliminary Examination or advance to candidacy for the Ph.D. in Computer Science.
+
+Two weeks prior to Phase 2 of the Preliminary Examination, the student must request permission for the Preliminary Examination from the Graduate College (forms are available from the departmental graduate secretary) and provide the members of the POS committee with any papers to be used for component (a) of Phase 1.  The component (b) written examination must take place at least ten days before the Phase 2 oral examination.
+
+The Preliminary Examination may, with the approval of the POS committee, be retaken at most once.  Upon successful completion of the Preliminary Examination, the student is admitted to candidacy for the Ph.D. degree.
+
+7.	Research Requirement
+The most important component of the Ph.D. program is original research, culminating in the preparation of a Ph.D. dissertation.  (Consult the Graduate College Thesis Manual for preparation guidelines.)  It is expected that each Ph.D. student's research will also lead to publications in refereed computer science journals.
+
+8.	Colloquium Requirement.
+The results of the Ph.D. research must be presented in a colloquium to the Computer Science faculty and graduate students.
+
+9.	Final Oral Examination.
+This examination consists of a defense of the dissertation.
+

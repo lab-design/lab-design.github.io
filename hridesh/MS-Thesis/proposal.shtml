@@ -1,0 +1,141 @@
+<!--#include virtual="../includes/template/headTop.htm"-->  
+
+<!-- INSERT TITLE -->
+<title>Com S 541: Details About Project Proposal</title>
+<base href="http://www.cs.iastate.edu/~cs541/" />
+<!--#include virtual="../includes/template/headBottom.htm"-->  
+
+<!-- Text for the actual webpage start -->
+
+<p class="heading">Project Proposal: Due Sept 18, 2008 at 11:59pm CST</p>
+
+<p><b>Format for Proposal</b>
+This deliverable must be prepared using LaTeX. 
+We require you to use LaTeX as the operational 
+semantics, type systems, and meta-theory can be 
+easily typeset using this typesetting system. 
+We provide a template for preparing these 
+deliverables <a href="project/files/template-541.tar.gz">here</a>.
+</p>
+
+<p><b>Submission Instructions:</b>
+Project ideas must be submitted via e-mail to
+<a href="mailto:hridesh@cs.iastate.edu?subject=[Fall-08-541-Project-Proposal]
+&body=Please find attached my proposal for Com S 541 Project as 
+[MyLastName]-541-proposal.tar.gz.">hridesh@cs.iastate.edu</a>.
+If you click the link above the subject will be filled automatically,
+otherwise please ensure that your subject is exactly
+&quot;[Fall-08-541-Project-Proposal]&quot; (without the quotes).
+<UL>
+<LI>Please download the template for project report from
+<a href="project/files/template-541.tar.gz">here</a>.</LI>
+<LI>
+Modify the relevant tex file to contain the description
+of your proposal.</LI>
+<LI>Compile the files using the Makefile included 
+in the template distribution and <U>ensure that there are
+no LaTeX errors in compilation</U>.</LI>
+<LI>
+Before creating an archive remove LaTeX intermediate files
+using &quot;make clean&quot;.
+</LI>
+<LI>
+Create an archive of your LaTeX project and name it 
+[LastName]-541-proposal.tar.gz, e.g. rajan-541-proposal.tar.gz</LI>
+<LI>
+Please attach this archive file with your submission e-mail.
+</LI>
+</UL>
+</p>
+
+<p class="heading">How to write your submission and how it will be graded?</p>
+
+<p>There are two important parts of your project proposal.
+
+<UL>
+<LI>Related Work (5%)</LI>
+<LI>Evaluation Methodology (5%)</LI>
+</UL>
+
+and then there are two other parts, that are necessary to make
+the context of the above clear. 
+
+<UL>
+<LI>Introduction</LI>
+<LI>Background</LI>
+</UL>
+
+I will explain these in some detail below.
+
+</p>
+
+<p class="heading">Related Work</p>
+
+<p>An important part of your project is to 
+position your work with respect to the work that has already been
+done on the topic of your project. Thus, the first step in writing 
+your related work is to search for relevant papers. I suggest that
+you use the following iterative algorithm to look for related ideas. 
+
+<UL>
+<LI>
+<b>Init Step:</b> search for the keywords (submitted before) using 
+<a href="http://scholar.google.com">Google Scholar</a>. 
+Are the search results relevant? If not, you may need to refine 
+your keywords until you find at least one relevant paper. 
+</LI>
+<LI>
+<b>Most cited:</b> once the results of the search seem relevant 
+(by successive refinement of keywords), note the top most papers in
+the search result. Scholar results are ordered by citation. 
+You should download and read these papers to determine their 
+relevance to your project topic. A quick way to filter out these
+results would be glance at their title and abstract. 
+Second filter by venue can also be used, 
+e.g. did the paper appear in POPL, PLDI, ECOOP, OOPSLA, ICSE, 
+FSE, TACAS, TOPLAS, TOSEM, TSE, etc? 
+<UL>
+<LI> Explore the papers that cite these most cited papers.</LI>
+<LI> Continue until fix point </LI>
+</UL>
+</LI>
+
+<LI>
+<b>Most recent:</b> Scholar results are ordered by citation, 
+thus the papers that appear on the last pages of your search 
+results are either completely irrelevant or recently published
+(and thus not cited widely). 
+Again, it will be easy to filter out the irrelevant papers by 
+quick glance at title/abstract and by venue of the publication.
+</LI>
+</UL>
+
+<p class="heading">Evaluation Methodology</p>
+<p>
+The evaluation of your technical approach is the most important
+scientific activity.
+The main purpose of evaluation is to validate your hypothesis 
+about your approach. 
+In writing the evaluation methodology part of your project 
+proposal, I encourage you to emphasize on two main aspects of 
+your experiment. 
+<UL>
+<LI><b>Hypothesis:</b> What would be the main research result? 
+       What would be the secondary research results? 
+       Phrase these as primary and secondary hypothesis.</LI>
+<LI><b>Experiment Setup:</b> How are you going to setup your 
+       experiments that will test these hypothesis? 
+       What are the variables in this experiment?
+       How do you plan to control these variables for an 
+       unbiased experimental result?</LI>
+</UL>
+The description of hypothesis and experimental setup are 
+intertwined in the sense that each hypothesis must be 
+tested by a set of experiments. 
+</p>
+
+
+
+<!-- Text for the actual webpage end -->
+
+<!--#include virtual="../includes/template/footer.htm"--> 

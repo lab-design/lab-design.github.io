@@ -1,0 +1,765 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 9">
+<link rel=File-List href="./Textbooks-Spring2002_files/filelist.xml">
+<link rel=Edit-Time-Data href="./Textbooks-Spring2002_files/editdata.mso">
+<link rel=OLE-Object-Data href="./Textbooks-Spring2002_files/oledata.mso">
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Lisa Mayberry</o:Author>
+  <o:LastAuthor>DDCBQP</o:LastAuthor>
+  <o:LastPrinted>2001-10-08T18:44:46Z</o:LastPrinted>
+  <o:Created>2001-05-23T16:44:21Z</o:Created>
+  <o:LastSaved>2002-01-08T20:57:12Z</o:LastSaved>
+  <o:Company>ADP Center - Iowa State University</o:Company>
+  <o:Version>9.3821</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:DownloadComponents/>
+  <o:LocationOfComponents HRef="file:msowc.cab"/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+@page
+	{margin:1.0in .75in 1.0in .75in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-page-orientation:landscape;}
+tr
+	{mso-height-source:auto;}
+col
+	{mso-width-source:auto;}
+br
+	{mso-data-placement:same-cell;}
+.style0
+	{mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	white-space:nowrap;
+	mso-rotate:0;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	border:none;
+	mso-protection:locked visible;
+	mso-style-name:Normal;
+	mso-style-id:0;}
+td
+	{mso-style-parent:style0;
+	padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	border:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:locked visible;
+	white-space:nowrap;
+	mso-rotate:0;}
+.xl24
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;}
+.xl25
+	{mso-style-parent:style0;
+	mso-number-format:"\@";}
+.xl26
+	{mso-style-parent:style0;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;}
+.xl27
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;}
+.xl28
+	{mso-style-parent:style0;
+	font-size:14.0pt;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;}
+.xl29
+	{mso-style-parent:style0;
+	font-size:14.0pt;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;}
+.xl30
+	{mso-style-parent:style0;
+	text-align:center;}
+.xl31
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	border-top:none;
+	border-right:none;	border-bottom:.5pt solid windowtext;
+	border-left:none;}
+.xl32
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;}
+.xl33
+	{mso-style-parent:style0;
+	text-align:center;
+	white-space:normal;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <x:ExcelWorkbook>
+  <x:ExcelWorksheets>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet1</x:Name>
+    <x:WorksheetOptions>
+     <x:Print>
+      <x:ValidPrinterInfo/>
+      <x:HorizontalResolution>600</x:HorizontalResolution>
+      <x:VerticalResolution>600</x:VerticalResolution>
+     </x:Print>
+     <x:PageBreakZoom>60</x:PageBreakZoom>
+     <x:Selected/>
+     <x:Panes>
+      <x:Pane>
+       <x:Number>3</x:Number>
+       <x:ActiveRow>70</x:ActiveRow>
+       <x:ActiveCol>5</x:ActiveCol>
+      </x:Pane>
+     </x:Panes>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet2</x:Name>
+    <x:WorksheetOptions>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet3</x:Name>
+    <x:WorksheetOptions>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+  </x:ExcelWorksheets>
+  <x:WindowHeight>6105</x:WindowHeight>
+  <x:WindowWidth>11220</x:WindowWidth>
+  <x:WindowTopX>240</x:WindowTopX>
+  <x:WindowTopY>120</x:WindowTopY>
+  <x:AcceptLabelsInFormulas/>
+  <x:ProtectStructure>False</x:ProtectStructure>
+  <x:ProtectWindows>False</x:ProtectWindows>
+ </x:ExcelWorkbook>
+ <x:ExcelName>
+  <x:Name>Print_Area</x:Name>
+  <x:SheetIndex>1</x:SheetIndex>
+  <x:Formula>=Sheet1!$A$1:$E$73</x:Formula>
+ </x:ExcelName>
+</xml><![endif]-->
+</head>
+
+<body link=blue vlink=purple>
+
+<table x:str border=0 cellpadding=0 cellspacing=0 width=964 style='border-collapse:
+ collapse;table-layout:fixed;width:723pt'>
+ <col width=110 style='mso-width-source:userset;mso-width-alt:4022;width:83pt'>
+ <col width=135 style='mso-width-source:userset;mso-width-alt:4937;width:101pt'>
+ <col class=xl30 width=359 style='mso-width-source:userset;mso-width-alt:13129;
+ width:269pt'>
+ <col width=89 style='mso-width-source:userset;mso-width-alt:3254;width:67pt'>
+ <col width=143 style='mso-width-source:userset;mso-width-alt:5229;width:107pt'>
+ <col width=64 span=2 style='width:48pt'>
+ <tr class=xl28 height=24 style='height:18.0pt'>
+  <td height=24 class=xl28 width=110 style='height:18.0pt;width:83pt'><a
+  name="Print_Area"></a></td>
+  <td class=xl28 width=135 style='width:101pt'></td>
+  <td class=xl29 width=359 style='width:269pt'>Spring 2002 Computer Science
+  Textbook Listing</td>
+  <td class=xl28 width=89 style='width:67pt'></td>
+  <td class=xl28 width=143 style='width:107pt'></td>
+  <td class=xl28 width=64 style='width:48pt'></td>
+  <td class=xl28 width=64 style='width:48pt'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 colspan=2 style='height:12.75pt;mso-ignore:colspan'></td>
+  <td class=xl30></td>
+  <td colspan=4 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr class=xl24 height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'>Course</td>
+  <td class=xl24>Instructor</td>
+  <td class=xl31>Textbook</td>
+  <td class=xl24>ISBN</td>
+  <td class=xl24>Publisher</td>
+  <td class=xl24>&nbsp;</td>
+  <td class=xl24>&nbsp;</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 colspan=2 style='height:12.75pt;mso-ignore:colspan'></td>
+  <td class=xl30></td>
+  <td colspan=4 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ComS 101</td>
+  <td>Gloria Cain</td>
+  <td class=xl30>CourseWorks</td>
+  <td colspan=4 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 colspan=2 style='height:12.75pt;mso-ignore:colspan'></td>
+  <td class=xl30></td>
+  <td colspan=4 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ComS 103</td>
+  <td>Margaret Morris</td>
+  <td class=xl30>Course Kit - books</td>
+  <td>0-7895-6618-4</td>
+  <td>Course Technology</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 colspan=2 style='height:12.75pt;mso-ignore:colspan'></td>
+  <td class=xl30>Course Kit - passwords (get from instructor)</td>
+  <td>0-619-06652-0</td>
+  <td>Course Technology</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 colspan=2 style='height:12.75pt;mso-ignore:colspan'></td>
+  <td class=xl30></td>
+  <td colspan=4 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ComS 104</td>
+  <td>Becca Wemhoff</td>
+  <td class=xl30>The Computer Continuum</td>
+  <td>1-308-9813-9</td>
+  <td>Prentice Hall</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 colspan=2 style='height:12.75pt;mso-ignore:colspan'></td>
+  <td class=xl30>Visual Basic 6 Programming</td>
+  <td>1-302-6199-8</td>
+  <td>Prentice Hall</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 colspan=2 style='height:12.75pt;mso-ignore:colspan'></td>
+  <td class=xl30></td>
+  <td colspan=4 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=34 style='height:25.5pt'>
+  <td height=34 style='height:25.5pt'>ComS 107</td>
+  <td>Suzanne Tomlinson</td>
+  <td class=xl33 width=359 style='width:269pt'>Programming with MS Visual Basic
+  6.0 - A C<br>
+  Comprehensive with VB Working Model</td>
+  <td>0-619-03795-4</td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 colspan=2 style='height:12.75pt;mso-ignore:colspan'></td>
+  <td class=xl30></td>
+  <td colspan=4 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=34 style='height:25.5pt'>
+  <td height=34 style='height:25.5pt'>ComS 201</td>
+  <td>Suzanne Tomlinson</td>
+  <td class=xl33 width=359 style='width:269pt'>Structured COBOL Programming,
+  2nd ed.<br>
+  With Merant Microfocus</td>
+  <td>0-7895-5715-0</td>
+  <td>Course Technology</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 colspan=2 style='height:12.75pt;mso-ignore:colspan'></td>
+  <td class=xl30></td>
+  <td colspan=4 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ComS 203</td>
+  <td>Al Taylor</td>
+  <td class=xl30>no textbook</td>
+  <td colspan=4 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 colspan=2 style='height:12.75pt;mso-ignore:colspan'></td>
+  <td class=xl30></td>
+  <td colspan=4 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ComS 207</td>
+  <td>Ralph Tomlinson</td>
+  <td class=xl30>Starting Out with C++, 2nd Edition</td>
+  <td>1-57676-034-0</td>
+  <td>Scott/Jones Publishers</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 colspan=2 style='height:12.75pt;mso-ignore:colspan'></td>
+  <td class=xl30>Simple Program Design, 3rd Edition</td>
+  <td>0-619-01590-X</td>
+  <td>Course Technology</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 colspan=2 style='height:12.75pt;mso-ignore:colspan'></td>
+  <td class=xl30></td>
+  <td colspan=4 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ComS 227</td>
+  <td>Owen Reynolds</td>
+  <td class=xl30>A Computer Science Tapestry Exploring Programming and</td>
+  <td>0-07-232203-9</td>
+  <td>McGraw-Hill</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 colspan=2 style='height:12.75pt;mso-ignore:colspan'></td>
+  <td class=xl30>Computer Science with C++, 2nd ed.</td>
+  <td colspan=4 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 colspan=2 style='height:12.75pt;mso-ignore:colspan'></td>
+  <td class=xl30></td>
+  <td colspan=4 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ComS 228</td>
+  <td>Lynette Kizer</td>
+  <td class=xl30>Data Structures and Other Objects Using C++, 2nd Edition</td>
+  <td>0-201-70297-5</td>
+  <td>McGraw Hill</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 colspan=2 style='height:12.75pt;mso-ignore:colspan'></td>
+  <td class=xl30></td>
+  <td colspan=4 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ComS 309</td>
+  <td>Robyn Lutz</td>
+  <td class=xl30>Software Engineering, 6th Edition</td>
+  <td class=xl25>020139815x</td>
+  <td>Addison-Wesley</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td>Simanta Mitra</td>
+  <td class=xl30></td>
+  <td class=xl25></td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 colspan=2 style='height:12.75pt;mso-ignore:colspan'></td>
+  <td class=xl30></td>
+  <td colspan=4 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ComS 311</td>
+  <td class=xl26>Yan-Bin Jia</td>
+  <td class=xl30>Introduction to Algorithms, 2nd Ed.</td>
+  <td class=xl25>0-07-0131511</td>
+  <td>McGraw-Hill</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'></td>
+  <td class=xl26></td>
+  <td class=xl30></td>
+  <td class=xl25></td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ComS 321</td>
+  <td class=xl26>G. Prabhu</td>
+  <td class=xl30>Computer Organization and Design</td>
+  <td class=xl25>1-55860-428-6</td>
+  <td>Morgan Kaufmann</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 colspan=2 style='height:12.75pt;mso-ignore:colspan'></td>
+  <td class=xl30></td>
+  <td colspan=4 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ComS 330</td>
+  <td>Giora Slutzki</td>
+  <td class=xl30>Discrete Mathematics and Its Applications, 4th Ed.</td>
+  <td>0-07-289905-0</td>
+  <td>McGraw Hill</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 colspan=2 style='height:12.75pt;mso-ignore:colspan'></td>
+  <td class=xl30></td>
+  <td colspan=4 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ComS 331</td>
+  <td>Jack Lutz</td>
+  <td class=xl30>Automata and Computability</td>
+  <td>0-387-94907-0</td>
+  <td>Springer</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 colspan=2 style='height:12.75pt;mso-ignore:colspan'></td>
+  <td class=xl30></td>
+  <td colspan=4 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ComS 342</td>
+  <td>Markus Lumpe</td>
+  <td class=xl30>Essentials of Programming Languages</td>
+  <td>0-262-06217-8</td>
+  <td>MIT Press</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 colspan=2 style='height:12.75pt;mso-ignore:colspan'></td>
+  <td class=xl30>The Little Schemer, 4th Edition</td>
+  <td>0-262-56099-2</td>
+  <td>MIT Press</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 colspan=2 style='height:12.75pt;mso-ignore:colspan'></td>
+  <td class=xl30></td>
+  <td colspan=4 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ComS 352</td>
+  <td>Lynette Kizer</td>
+  <td class=xl30>Operating Systems Concepts</td>
+  <td>0-471-41743-2</td>
+  <td>John Wiley &amp; Sons</td>
+  <td>required</td>
+  <td></td>
+ </tr>
+ <tr class=xl27 height=17 style='height:12.75pt'>
+  <td height=17 colspan=2 class=xl27 style='height:12.75pt;mso-ignore:colspan'></td>
+  <td class=xl32></td>
+  <td colspan=4 class=xl27 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ComS 362</td>
+  <td>Gary Leavens</td>
+  <td class=xl30>Applying UML and Patterns: An Introduction…, 2nd Ed.</td>
+  <td class=xl25>0130925691</td>
+  <td>Addison-Wesley</td>
+  <td>required</td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 colspan=2 style='height:12.75pt;mso-ignore:colspan'></td>
+  <td class=xl30>UML Distilled, 2nd Ed.</td>
+  <td class=xl25>020165783X</td>
+  <td>Addison-Wesley</td>
+  <td colspan=2 style='mso-ignore:colspan'>recommended</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 colspan=2 style='height:12.75pt;mso-ignore:colspan'></td>
+  <td class=xl30>Design Patterns</td>
+  <td class=xl25>0-201-63361-2</td>
+  <td>Addison-Wesley</td>
+  <td colspan=2 style='mso-ignore:colspan'>recommended</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 colspan=2 style='height:12.75pt;mso-ignore:colspan'></td>
+  <td class=xl30>Object Oriented Design Heuristics</td>
+  <td class=xl25>020163385X</td>
+  <td>Addison-Wesley</td>
+  <td colspan=2 style='mso-ignore:colspan'>recommended</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 colspan=2 style='height:12.75pt;mso-ignore:colspan'></td>
+  <td class=xl30></td>
+  <td colspan=4 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ComS 363</td>
+  <td>Shashi Gadia</td>
+  <td class=xl30>A First Course in Database Systems</td>
+  <td class=xl25>0-13-035300-0</td>
+  <td>Prentice Hall</td>
+  <td>Required</td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 colspan=2 style='height:12.75pt;mso-ignore:colspan'></td>
+  <td class=xl30></td>
+  <td colspan=4 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>Com 381x</td>
+  <td>Les Miller</td>
+  <td class=xl30>Data Structures and Other Objects Using C++, 2nd Edition</td>
+  <td class=xl25>0-201-70297-5</td>
+  <td>McGraw Hill</td>
+  <td>Required</td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 colspan=2 style='height:12.75pt;mso-ignore:colspan'></td>
+  <td class=xl30></td>
+  <td colspan=4 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ComS 425</td>
+  <td>Ricky Kendall</td>
+  <td class=xl30>Parallel and Distributed Computing:<span style="mso-spacerun:
+  yes">  </span>A Survey of Models, Paradigms, and Approaches</td>
+  <td x:str="'0471358312">0471358312</td>
+  <td>Wiley-Interscience</td>
+  <td>Required</td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 colspan=2 style='height:12.75pt;mso-ignore:colspan'></td>
+  <td class=xl30>Expert C Programming</td>
+  <td x:str="'0131774298">0131774298</td>
+  <td>Prentice Hall PTR</td>
+  <td colspan=2 style='mso-ignore:colspan'>Recommended</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 colspan=2 style='height:12.75pt;mso-ignore:colspan'></td>
+  <td class=xl30>A Practical Guide to Linux</td>
+  <td x:str="'0201895498">0201895498</td>
+  <td>Addison-Wesley</td>
+  <td colspan=2 style='mso-ignore:colspan'>Recommended</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 colspan=2 style='height:12.75pt;mso-ignore:colspan'></td>
+  <td class=xl30></td>
+  <td colspan=4 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ComS 440/540</td>
+  <td>Hui-Hsien Chou</td>
+  <td class=xl30>Compilers: Principles, Techniques, and Tools</td>
+  <td>0-201-10088-6</td>
+  <td>Addison-Wesley</td>
+  <td>Required</td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 colspan=2 style='height:12.75pt;mso-ignore:colspan'></td>
+  <td class=xl30>Programming for the Java Virtual Machine</td>
+  <td>0-201-30972-6</td>
+  <td>Addison-Wesley</td>
+  <td>Required</td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 colspan=2 style='height:12.75pt;mso-ignore:colspan'></td>
+  <td class=xl30></td>
+  <td colspan=4 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=34 style='height:25.5pt'>
+  <td height=34 style='height:25.5pt'>ComS 512</td>
+  <td>Simanta Mitra</td>
+  <td class=xl33 width=359 style='width:269pt'>Programming in the 1990s - An
+  introduction<br>
+  to the calculation on programs</td>
+  <td></td>
+  <td>Springer-Verlag</td>
+  <td>Required</td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 colspan=2 style='height:12.75pt;mso-ignore:colspan'></td>
+  <td class=xl30></td>
+  <td colspan=4 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ComS 531</td>
+  <td>Jack Lutz</td>
+  <td class=xl30>Computability and Complexity Theory</td>
+  <td class=xl25>0-387-95055-9</td>
+  <td>Springer</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 colspan=2 style='height:12.75pt;mso-ignore:colspan'></td>
+  <td class=xl30></td>
+  <td class=xl25></td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ComS 552</td>
+  <td>Johnny Wong</td>
+  <td class=xl30>Advanced Concepts in Operating Systems</td>
+  <td>0-07-057572-X</td>
+  <td>McGraw Hill</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 colspan=2 style='height:12.75pt;mso-ignore:colspan'></td>
+  <td class=xl30>Recom. text:<span style="mso-spacerun: yes">  </span>Unix
+  Network Programming, Vol 2 - 2nd Ed.</td>
+  <td>0-13-081081-9</td>
+  <td>Prentice Hall</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 colspan=2 style='height:12.75pt;mso-ignore:colspan'></td>
+  <td colspan=2 class=xl30 style='mso-ignore:colspan'></td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ComS 561</td>
+  <td>Tavanapong Wallapak</td>
+  <td class=xl30>Database Management Systems, 2nd Edition</td>
+  <td class=xl25>0-07-232206-3</td>
+  <td>McGraw Hill</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 colspan=2 style='height:12.75pt;mso-ignore:colspan'></td>
+  <td class=xl30></td>
+  <td class=xl25></td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ComS 573</td>
+  <td>Vasant Honavar</td>
+  <td class=xl30>Machine Learning</td>
+  <td class=xl25>0070428077</td>
+  <td>McGraw Hill</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 colspan=2 style='height:12.75pt;mso-ignore:colspan'></td>
+  <td class=xl30></td>
+  <td class=xl25></td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ComS 612</td>
+  <td>Soma Chaudhuri</td>
+  <td class=xl30>Distributed Computing</td>
+  <td class=xl25>0-07-709352-6</td>
+  <td>McGraw Hill</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 colspan=2 style='height:12.75pt;mso-ignore:colspan'></td>
+  <td class=xl30></td>
+  <td class=xl25></td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ComS 641</td>
+  <td>Gary Leavens</td>
+  <td class=xl30>Refinement Calculus, A Systematic Introduction</td>
+  <td class=xl25>0-387-98417-8</td>
+  <td>Springer Verlag</td>
+  <td colspan=2 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 colspan=2 style='height:12.75pt;mso-ignore:colspan'></td>
+  <td class=xl30></td>
+  <td class=xl25></td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>ComS 673</td>
+  <td>Vasant Honavar</td>
+  <td class=xl30>No textbook</td>
+  <td class=xl25></td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 colspan=2 style='height:12.75pt;mso-ignore:colspan'></td>
+  <td class=xl30></td>
+  <td class=xl25></td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 style='height:12.75pt'>Updated 12/19/01</td>
+  <td></td>
+  <td class=xl30></td>
+  <td class=xl25></td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 colspan=2 style='height:12.75pt;mso-ignore:colspan'></td>
+  <td class=xl30></td>
+  <td class=xl25></td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 colspan=2 style='height:12.75pt;mso-ignore:colspan'></td>
+  <td class=xl30></td>
+  <td class=xl25></td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 colspan=2 style  <td height=17 colspan=2 style='height:12.75pt;mso-ignore:colspan'></td>
+  <td class=xl30></td>
+  <td class=xl25></td>
+  <td colspan=3 style='mso-ignore:colspan'></td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=110 style='width:83pt'></td>
+  <td width=135 style='width:101pt'></td>
+  <td width=359 style='width:269pt'></td>
+  <td width=89 style='width:67pt'></td>
+  <td width=143 style='width:107pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=64 style='width:48pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+</body>
+
+</html>

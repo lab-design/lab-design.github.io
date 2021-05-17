@@ -1,0 +1,34 @@
+<HTML>
+<HEAD><TITLE>Department of Computer Science</TITLE>
+<!--#include virtual="/top.shtml"-->
+
+<h3>Research Labs and Groups</h3><br>
+<ul>
+<li>
+Departmental Research Labs and Groups
+<ul>
+<li>
+  <a href="http://www.cs.iastate.edu/~honavar/aigroup.html">Artificial Intelligence Research Laboratory</a>
+<li>
+  <a href="http://www.cs.iastate.edu/~leavens/JML.html">Java Modeling Language</a>
+<li>
+  <a href="http://latte.cs.iastate.edu">Laboratory for Information System Technology</a>
+<li>
+  <a href="http://www.cs.iastate.edu/~rlutz/lss.html">Laboratory for Software Safety</a>
+<li>
+  <a href="http://www.cs.iastate.edu/~tavanapo">Multimedia Research Laboratory</a>
+</ul>
+<li><a href="http://www.cs.iastate.edu/gradadm/multidisc.html">Interdepartmental Research Labs and Groups</a>
+</ul>
+<p>
+
+<!--#include virtual="/bot.shtml"-->
+
+
+
+</body>
+</html>
+
+
+
+

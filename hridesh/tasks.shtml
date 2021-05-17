@@ -1,0 +1,15 @@
+<!--#include virtual="includes/template/headTop.htm"-->  
+
+<!--Title Begin-->
+<title> A quick and easy form to enter tasks into spreadsheet. </title>
+<!--Title End-->
+
+<!--#include virtual="includes/template/headBottom.htm"-->  
+
+<!--Contents Begin-->
+
+<iframe src="http://spreadsheets.google.com/embeddedform?key=pkXUXJ5tqCS__C7FMElzUBw" width="310" height="871" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+<!--Contents End-->
+
+<!--#include virtual="includes/template/footer.htm"-->

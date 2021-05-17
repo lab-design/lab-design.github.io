@@ -1,0 +1,82 @@
+COMPUTER SCIENCE GRADUATE
+COURSE DESCRIPTIONS
+
+Each course states the number of semester credits assigned to the course, preceded in parentheses by the number of hours in class (contact hours) expected of the student.  The first of the two contact-hour numbers indicates the number of lecture or recitation class hours per week for the semester.  The second is the number of laboratory or studio hours required per week.
+
+Within each course description may be found one or more of the following letters: F. S. SS., indicating which term -- fall, spring, summer session -- of the academic year the course is offered. All 600 level Com S courses (excluding Com S 610) will be offered on an alternate year basis.  A course number followed by a "DL" means the course is dual listed with the indicated course.
+
+Com S 507	Numerical Solution of Ordinary Differential Equations.  (Math 507) (3-0) Cr. 3 F.SS. Prereq. 415, 465, or  481; knowledge of FORTRAN or C. One step methods for initial value problems, one-step methods for systems, multi-step methods, boundary-value problems.  Examples using university computers.  
+
+Com S 509	Computational Methods of Linear Algebra.  (Math 509). (3-0) Cr. 3. F. Prereq: 307 or 317; knowledge of FORTRAN or C.  Numerical methods for solving linear systems of equations and linear least squares problems, and for computing eigenvalues and eigenvectors of matrices, symmetric or not.  Matrix factorizations, iteration methods. Analysis of well- and ill-conditioning of computational problems, and stability of methods.  Practical computing exercises.
+
+Com S 511	Design and Analysis of Algorithms.  (3-0) Cr. 3. F. Prereq: 311 or 330. A study of basic algorithm design and analysis techniques.  Advanced data structures, amortized analysis, and randomized algorithms.  Applications to sorting, graphs, and geometry.  NP-completeness and approximation algorithms.
+
+Com S 512	Formal Methods in Software Engineering.  (3-0) Cr. 3. S. Prereq: 311, 330.  A survey of formal topics relevant to the software life-cycle process including requirements, specifications, design, implementation, testing and maintenance. Implications of formal results for software prototyping and automated testing.
+
+Com S 518x	Introduction to Computational Geometry (3-0) Cr. 3. (418x DL). Alt. F, offered 1998. Prereq: 311 or equivalent.  Introduction to data structures, algorithms, and analysis techniques for computational problems that involve geometry.  Line segment intersection, polygon triangulation and art gallery problems, orthogonal range querie, point location, geometric data structures, arrangements and duality, delaunay triangulation, convex hulls, binary space partitions, quad trees, visibility graphs, simplex range searching.
+
+Com S 524	Computer System Architecture.  (3-0) Cr. 3. F. Prereq:  352 or CprE 305.  Fundamentals of computer design, performance and cost, Instruction set design, basic processor implementation techniques, pipelining, memory design, caches, I/O systems, multiprocessor systems, interconnection networks.
+
+Com S 525	Numerical Analysis of High Performance Computing. (3-0) Cr. 3. S. (Cpr E 525 or Math 525).  Prereq: Cpr E 308, or one of Math 471, 473 or 481; experience in scientific programming; knowledge of FORTRAN or C.  Development, analysis, and testing of efficient numerical methods for use on current state-of-the-art high performance computers.  Applications of the methods to the students' areas of research. 
+
+Com S 526x 	Practical Introduction to Parallel Programming. (3-1) Cr. 3. F. Prereq: 321 and 311 or equivalent. Fundamentals of parallel programming, design and analysis of parallel programs, survey of parallel programming environments for developing large-scale applications. The course will have a laboratory component to provide practical experience on different types of parallel computing platforms. 
+
+Com S 531	Theory of Computation.  (3-0) Cr. 3. S. Prereq: 331.  A systematic study of the fundamental models and analytical methods of theoretical computer science. Computability, the Church-Turing thesis, decidable and undecidable problems, and the elements of recursive function theory. Time complexity, logic, Boolean circuits, and NP-completeness.  Finite-state and pushdown computation. 
+
+Com S 540	Principles of Compiling (3-1) Cr. 3. S. (440 DL). Prereq: 342.  Techniques of lexical analysis, top-down and bottom-up parsing, semantic analysis and code generation.  Principles are reinforced through a number of programming projects.  Different projects will be assigned to students depending on whether they have enrolled for 440 or 540.
+
+Com S 541	Programming Languages I.  (3-1) Cr. 3. F.  Prereq:  342 or 440.  Survey of the goals and problems of language design.  Formal and informal studies of a wide array of programming language features including type systems, naming, state, and control.  Creative use of functional, object-oriented, declarative, concurrent and other programming paradigms.
+
+Com S 542	Programming Languages II.  (3-0)  Cr. 3.  Alt. F., offered 1999.  Prereq:  440. 
+	Compilation theory and techniques, emphasis on high-level software tools to facilitate compiler construction.  Lexical analysis, parsing, attribute grammars, code generation and optimization for traditional and non-traditional languages and architectures.
+
+Com S 552	Principles of Operating Systems.  (3-0) Cr. 3. S. Prereq:  352.  A comparative study of high-level language facilities for process synchronization and communication.  Formal analysis of deadlock, concurrency control and recovery, and system performance.  Protection issues including capability-based systems, access and flow control, encryption, and authentication.
+
+Com S 554	Implementation of Operating System and Distributed Computing Environment. (3-1) Cr. 3. (454 DL) Prereq:  311, 352.  Laboratory course dealing with practical issues of design and implementation of operating systems and distributed computing environments.  These include process management, device drivers, file systems, interrupts and signal handlers, RPC and Multithreading. Graduate credit requires additional in-depth study of advanced operating systems.
+
+Com S 561	Principles of Database Systems  (3-0) Cr. 3. S.  Prereq:  311and 352.  Introduction to database system concepts.  Physical data organization.  The network model and the DBTG proposal.  The hierarchical model.  The relational model.  Relational query languages.  Functional dependencies.  Multivalued dependencies.  Decomposition of relation schemes.  Normal forms.  Query systems. Query optimization.  Concurrence control.  Distributed database systems.
+
+Com S 572	Principles of Artificial Intelligence. (3-1) Cr. 3. F. (472 DL).  Prereq:  330, 342, CprE 310 or comparable programming experience.  Foundations, scope, and problems of artificial intelligence (AI) and cognitive science.  State-space search techniques for problem solving.  Knowledge representation and automated inference.  Machine learning.  Neural and evolutionary approaches to AI.  Artificial life.  Selected applications in planning, machine perception, analysis, design, intelligent agent architectures. AI programming using Common LISP. Graduate credit requires a research project and a written report.
+
+Com S 576	Motion Strategy: Algorithms and Applications. (3-1) Cr. 3. (476 DL) Alt. S., offered 2000.  Prereq: Engl 105, Sp Cm 212, Com S 311 or ME 519, or consent of instructor.  Recent techniques for developing algorithms that automatically generate continuous motions while satisfying geometric constraints.  Applications in areas such as robotics and graphical animation. Basic path planning.  Kinematics, configuration space, and topological issues.  Collision detection.  Randomized planning. Nonholonomic systems.  Optimal decisions and motion strategies.  Coordination of Multiple Bodies.  Representing and overcoming uncertainties.  Visibility-based motion strategies. Implementation of software that computes motion strategies.  Written reports. Nonmajor graduate credit.
+
+Com S 583X	Adaptive Computing Systems. (3-0) Cr. 3.  F.  (Cross listed with CpreE 583X). Prereq: ComS 524 or CprE 585, or consent of instructor.  Introduction to Adaptive/Recongifurable Computing, FPGA technology and architectures, spatial computing architectures, systolic and bit serial architectures, adaptive network architectures, bus-based and static and dynamic rearrangeable interconnection structure architectures, reconfigurable computing Architectures for Processors, Pipeline, and Caches.
+
+Com S 586	Computer Network Architectures.  (3-0) Cr. 3. F. Prereq: 511, 552 or CprE 489.  Design and development of advanced computer communication networks: distributed and failsafe routing in large and dynamic networks, gateways and interconnection of heterogeneous networks, flow control and congestion avoidance techniques, network architectures, communication protocol standards, formal specification and verification of protocols, implementation and conformance testing of protocol standards, network partitioning and intelligent reconfiguration of networks. 
+
+Com S 587x	Principles of Distributed and Network Programming. (3-0) Cr. 3. F. Prereq: 352 or CprE 489 or equivalent. Programming paradigms for building modern distributed applications, including multithreaded client-server programming, distributed object frameworks and programming languages. Web-based computing. Directory services. Mobile computing. Network multimedia applications. Reliability and manageability of networked systems, including aspects of distributed system security, verification of concurrent systems, and network management.
+
+Com S 590	Special Topics.  Cr. arr. Prereq:  Permission of instructor.  Offered on a satisfactory-fail basis only.
+
+Com S 591	Graduate Orientation Seminar.  (1-0) Cr. 1.  F.  Prereq: Graduate classification.  Topics include an introduction to ISU computing facilities; M.S. and Ph.D. degree requirements, career choices, ethics, literature searching, technical presentations, technical writing, ethics in writing, and discussion of research interests and projects by members of the graduate faculty.  Required by the M.S. Degree and is taken during the first semester of a normal M.S. program.  Offered on a satisfactory-fail basis only.
+
+Com S 599	Creative Component.  Cr. arr.  Offered on a satisfactory-fail basis only.
+
+Com S 610		Seminar.  Cr. arr.  Offered on a satisfactory-fail basis only.
+
+Com S 611		Advanced Topics in Analysis of Algorithms.  (3-0) Cr. 3.  Alt. S, offered 1999.
+Prereq: 511, 531.  Advanced algorithm analysis and design techniques.  Graph algorithms, algebraic algorithms, NP-completeness, probabilistic and parallel algorithms, intractable problems.
+
+Com S 612	Parallel and Distributed Algorithms.  (3-0) Cr. 3. Alt. S, offered 2000. Prereq: 511 or 531.  An advanced course in the theory of parallel and distributed computation. Models of computation, Algorithm paradigms and analysis, Lower Bounds and Impossibility results.  Parallel Sorting, Graph, Geometric, Algebraic, and Number-theoretic Algorithms.  The Parallel Computation Thesis.  P-Complete Problems and the class NC. Synchronous, asynchronous, and Partially Timed Distributed Systems. Consensus, Mutual Exclusion, and Resource Allocation.  Wait-free Register Implementations.  Shared Memory and Network models.  Fault-tolerance.  Randomized Computation.
+
+Com S 624	Advanced Topics in Computer Architecture.  (3-0) Cr. 3.  Alt. S, offered 2000. Prereq: 524.  Current topics in computer architecture design and implementation.  Advanced pipelining, cache and memory design techniques.  Interaction of algorithms with architecture models and implementations. Tradeoffs in architecture models and implementations.
+
+Com S 625	Issues in Parallel Programming and Performance.  (3-0)  Cr. 3.  Alt. S, offered 1999. Prereq:  511, 524.  Parallel solutions of numerical and non-numerical problems, implementation of parallel programs on parallel machines, performance and other computational issues in parallel programming.
+
+Com S 631	Computational Complexity.  (3-0) Cr. 3. Alt. F., offered 1998.  Prereq: 531.  Advanced study in the quantitative theory of computation. Time and space complexity of algorithmic problems. The structure of P, NP, PH, PSPACE, and other complexity classes, especially with respect to resource-bounded reducibilities and complete problems. Complexity relative to auxiliary information, including oracle computation and relativized classes, randomized algorithms, advice machines, Boolean circuits. Kolmogorov complexity and randomness.
+
+Com S 632	Circuit Complexity and Parallel Complexity.  (3-0) Cr. 3 Alt. S., offered 1999.  Prereq: 531.  An advanced course in the complexity of Boolean functions and parallel computation. General circuits, bounded-depth circuits, threshold circuits, and monotone circuits.  Parallel complexity, including uniform circuits, alternating Turing machines, and parallel RAMs.  Additional topics chosen from communication and sorting networks, communication complexity, VLSI complexity, cellular automata, neural networks, and general purpose parallel architectures.
+
+Com S 633	Randomness in Computation.  (3-0) Cr. 3. Alt. S., offered 2000. Prereq: 531.  Advanced study of the role of randomness in computation.  Randomized algorithms, random oracles, and probabilistic complexity classes. One-way functions and pseudorandom generators.  Kolmolgorov complexity, algorithmic information theory, and algorithmic randomness.  Applications chosen from cryptography, interactive proof systems, computational learning, lower bound arguments, mathematical logic, and the organization of complex systems.
+
+Com S 641	Semantic Models for Programming Languages.  (3-0) Cr. 3.  Alt. S., offered 2000. Prereq:  531, 541.  Interpretive, denotational, and logically based models of semantics; application of semantics to program correctness, language specification, and translation.
+
+Com S 652	Topics in Distributed Operating Systems.  (3-0) Cr. 3.  Alt. F., offered 1999.  Prereq:  552.  Concepts and techniques for network operating systems:  high-level languages and communication protocols, name and object management, concurrency control for consistent distributed data, design of reliable software, protection, performance analysis.
+
+Com S 661	Advanced Topics in Database Systems.  (3.0) Cr. 3.  Alt. F., offered 1998.  Prereq: 561. Advanced topics chosen from the following list:  Data dependencies.  Data models.  Query systems. Query optimization.  Null values, partial information and database semantics. Acyclic database schemes.  Concurrency control mechanisms.  Distributed database systems.  Logic and databases.
+
+Com S 672	Computational (Neural, Statistical, and Algorithmic) Models of Learning. (3-0) Cr. 3. Alt. S., offered 2000.  Prereq:  ComS 572 or 472 or 474.  Advanced study of artificial intelligence, neural, statistical, syntactic, evolutionary models and algorithms for machine learning.  Inductive learning, classification, grammar induction, function approximation, program induction, inductive logic programming.  Computational learning theory (PAC, maximum likelihood, minimum description length and related frameworks).  Deductive learning, reinforcement learning, discovery and data mining.  Selected applications.
+
+Com S 673	Advanced Topics in Artificial Intelligence and Cognitive Modeling.  (3-0) Cr. 3. Alt. S., offered 1999.  Prereq:  572 or 472 or 474.  Advanced study of selected topics from among the following:  machine learning; neural networks; genetic algorithms, genetic programming, artificial life; intelligent agent architectures and robotics; cognitive modeling; computational learning theory; parallel and distributed architectures and algorithms for artificial intelligence.
+
+Com S 699	Research.  Cr. arr.  Satisfactory/Fail only.

@@ -1,0 +1,336 @@
+<!--#include virtual="includes/template/headTop.htm"-->
+
+<!-- INSERT TITLE -->
+<title>Dr. Hridesh Rajan, Kingland Professor of Computer Science, Iowa State University</title>
+
+<!--#include virtual="includes/template/headBottom.htm"-->
+
+<!-- Text for the actual webpage start -->
+
+<table width="100%">
+<tr>
+<td align="left" width="198">
+<p><IMG src="http://www.cs.iastate.edu/~hridesh/images/hrajan.jpg" width="198" align="left" alt="picture"/></p>
+</td>
+
+<td width="5%">
+<p></p>
+</td>
+
+<td align="right">
+<p>
+Professor-In-Charge<BR>
+<a href="http://datascience.iastate.edu/">ISU Data Science Program</a>
+</p>
+
+<p> 
+Kingland Professor <BR>
+<a href="http://www.cs.iastate.edu/">Department of Computer Science</a>, <BR>
+<a href="http://se.iastate.edu/">Software Engineering Program</a>, <BR>
+<a href="http://iac.iastate.edu/">Information Assurance Program</a>, and<BR>
+<a href="http://www.vrac.iastate.edu/hci/">Human Computer Interaction (HCI) Program</a><BR>
+<a href="http://iastate.edu/">Iowa State University</a><BR>
+226 Atanasoff Hall, Ames, IA, 50011 <BR>
+</p>
+
+<p>
+phone: +1-515-294-6168 <BR>
+email: <a href="mailto:hridesh@iastate.edu">hridesh@iastate.edu</a><BR>
+office: <a href="http://www.fpm.iastate.edu/maps/closeup.asp?left=423&top=1577&xshow=663&yshow=1767">105 Atanasoff Hall</a><BR>
+</p>
+
+<p>Ph.D., <a href="http://www.virginia.edu">The University of Virginia</a>, 2005<BR>
+   M.S., <a href="http://www.virginia.edu">The University of Virginia</a>, 2004<BR>
+   B.Tech., <a href="http://www.itbhu.ac.in/">Indian Institute of Technology (BHU)</a>, 2000</p>
+</p>
+
+<p>Associate Editor<BR> 
+<a href="https://www.computer.org/web/tse">IEEE Transactions on Software Engineering</a></p> 
+
+</td>
+</tr>
+<tr>
+<td colspan="3">
+
+<p class="heading">Biography</p>
+<p>
+Hridesh Rajan is a full professor of computer science at Iowa State University, 
+where he has been since 2005. 
+Professor Rajan earned his MS and Ph.D. from the University of Virginia 
+in 2004 and 2005 respectively.
+Prof. Rajan's research interests are
+in programming languages, software engineering, and data science where he is most known
+for his design of the <a href="http://ptolemy.cs.iastate.edu">Ptolemy</a> 
+programming language that showed how to
+modularly reason about crosscutting concerns and the 
+<a href="http://boa.cs.iastate.edu">Boa</a> programming
+language and its infrastructure that decreases the barriers to
+data-driven software engineering.
+Professor Rajan’s recent research and educational activities are aimed at 
+decreasing the barrier to entry to data-driven sciences to broaden participation. 
+His work on the Boa project is aimed at invention and refinement of 
+cyberinfrastructures that democratize data-driven science. 
+His work on the Midwest Big Data Summer School is experimenting with broadly 
+accessible data science curricula. 
+Professor Rajan was the founding general chair of the 
+<a href="http://mbds.cs.iastate.edu">Midwest Big Data Summer School</a>. 
+</p>
+<p>
+Professor Rajan is the director of the 
+<a href="http://design.cs.iastate.edu">Laboratory for Software Design</a> at 
+Iowa State University, director of graduate admissions and recruitment for 
+the computer science department, Professor-In-Charge for the 
+<a href="http://datascience.iastate.edu">Data Science</a> programs 
+at Iowa State University, and chair of 
+the information technology committee for the university. 
+Professor Rajan serves on the steering committee of the 
+<a href="http://midwestbigdatahub.org/">Midwest Big Data Hub</a>, 
+a consortium of universities in the Midwest region of the United States 
+focussed on promoting data science activities. 
+Professor Rajan also serves as an associate editor for the 
+<a href="https://www.computer.org/web/tse">IEEE Transactions on Software Engineering</a>.
+Professor Rajan is a recipient of the National Science Foundation CAREER 
+award in 2009, LAS Award for Early Achievement in Research in 2010, 
+and a Big-12 Fellowship in 2012. 
+He is a distinguished member of ACM, and a member of IEEE, and AAAS. 
+He is also the inaugural holder of the Kingland professorship in the 
+Department of Computer Science.
+</p>
+
+<b>Short bio (for talks, etc.)</b> Hridesh Rajan is the Kingland professor in the Department of Computer 
+Science at Iowa State University. Prof. Rajan's research interests are 
+in programming languages, software engineering, and data science where he is most known 
+for his design of the Ptolemy programming language that showed how to 
+modularly reason about crosscutting concerns and the Boa programming 
+language and its infrastructure that decreases the barriers to 
+data-driven software engineering. He has been recognized by the US 
+National Science Foundation (NSF) with a CAREER award, an Early 
+Achievement in Research Award, a Big-12 Fellowship, the Kingland 
+Professorship, and an exemplary mentor for Junior Faculty award.
+Prof. Rajan is a distinguished member of the ACM, and serves
+as an associate editor for the IEEE Transactions on Software Engineering.
+</p>
+<p class="heading">Research Interests</p>
+	<ul>	
+		<li>Modularity, modular reasoning</li>
+     		<li>Programming languages, Software Engineering, and Compilers</li>
+     		<li>Data science, especially Software Engineering of Data Science software.</li>
+    		<li>Concurrency, especially modular reasoning about concurrency
+         	correctness and performance. Scalable support for modular verification
+         	of concurrency properties in compilers. </li>
+     		<li>Advanced separation of concerns mechanisms such as events, reactive 
+		signals, and aspects and modular reasoning about such mechanisms.
+	</ul>
+	<p>I have spent the majority of my career thinking about modularity and modular 
+        reasoning issues and inventing programming abstractions that allow reasoning 
+        mechanisms to scale to larger programs, to tackle new class of modularization 
+        mechanisms, and to tackle new class of properties. 
+	</p>
+	<p>
+	Our work on the <a href="http://web.cs.iastate.edu/~ptolemy/">Ptolemy project</a> 
+        has created more modular mechanisms for reasoning about crosscutting concerns.
+	</p>
+	<p>
+        Our work on the <a href="http://boa.cs.iastate.edu">Boa</a> programming language 
+        and its infrastructure has created linguistic abstractions for data-driven science 
+        that scale because the language design ensures more modular reasoning about runtime tasks. 
+        A deployed setup of Boa (<a href="http://boa.cs.iastate.edu">http://boa.cs.iastate.edu</a>) 
+        is used by hundreds of scientists around the world to study open source projects 
+        for a variety of purposes and over three dozen external research papers have 
+        appeared so far that have used Boa as a research instrument.
+	</p>
+	<p>
+        Our work on the <a href="http://paninij.org">Panini</a> project 
+        (<a href="http://paninij.org">http://paninij.org</a>) has created abstractions 
+        for improving modular reasoning about concurrent programs. 
+        </p> 
+	
+	<p> I direct the <a href="http://design.cs.iastate.edu/">Laboratory for Software Design</a>
+	in the <a href="http://www.cs.iastate.edu">Department of Computer Science</a>. 
+        <!--Our main projects are 
+	<a href="http://boa.cs.iastate.edu">Boa</a> that is investigating shared infrastructures 
+	for data driven science, and <a href="http://paninij.org">Panini</a> that is investigating 
+	programming abstractions for concurrency that also enable modular reasoning about concurrency
+	properties.--> 
+        In 2016 and 2017 we have also organized the 
+	<a href="http://mbds.cs.iastate.edu">Midwest Big Data Summer School</a>, 
+        a one-week, intensive curriculum aimed at early career researchers to get them 
+        started in data-driven research.</p>
+
+<p class="heading">Select Recent Publications</p>
+<UL>
+<LI>Ganesha Upadhyaya and Hridesh Rajan, "Collective Program Analysis," ICSE'18: The 40th International Conference on Software Engineering, Gothenberg, Sweden, May 27-June 3, 2018.
+</LI>
+<LI>
+Tianyi Zhang, Ganesha Upadhyaya, Anastasia Reinhardt, Hridesh Rajan and Miryung Kim, 
+"Are Code Examples on an Online Qi&amp;A Forum Reliable? A Study of API Misuse on Stack Overflow," 
+ICSE'18: The 40th International Conference on Software Engineering, Gothenberg, Sweden, May 27-June 3, 2018.
+</LI>
+<LI>Samantha Syeda Khairunnesa, Hoan Anh Nguyen, Tien N. Nguyen, and Hridesh Rajan, 
+"<a href="http://design.cs.iastate.edu/papers/OOPSLA-17/">Exploiting 
+Implicit Beliefs to Resolve Sparse Usage Problem in Usage-based 
+Specification Mining</a>," 
+OOPSLA’17: The ACM SIGPLAN conference on Object-Oriented 
+Programming, Systems, Languages, and Applications, October, 2017.</LI>
+
+<LI>Ganesha Upadhyaya and Hridesh Rajan, 
+"<a href="http://design.cs.iastate.edu/papers/ICSE-NIER-17a/">On 
+Accelerating Ultra-Large-Scale Mining</a>," 
+ICSE'17: The 39th International Conference on Software Engineering: NIER Track, 
+Buenos Aires, Argentina, May 2017.</LI>
+
+<LI>Yuheng Long, Yu David Liu, and Hridesh Rajan, 
+"<a href="http://design.cs.iastate.edu/papers/OOPSLA16/">
+First-Class Effect Reflection for Effect-Guided Programming</a>," 
+OOPSLA'16: The ACM SIGPLAN conference on Systems, Programming, 
+Languages and Applications: Software for Humanity (SPLASH), 
+Amsterdam, the Netherlands, October 2016.</LI>
+
+<LI>Yuheng Long, Yu David Liu, and Hridesh Rajan, 
+"<a href="http://design.cs.iastate.edu/papers/ECOOP-15/">Intensional 
+Effect Polymorphism</a>," 
+ECOOP'15: The 29th European Conference on Object-oriented 
+Programming, July 2015.</LI>
+
+<LI>Hridesh Rajan, 
+"<a href="http://design.cs.iastate.edu/papers/ICSE-15a/">Capsule-oriented 
+Programming</a>," ICSE’15: The 37th International Conference on Software 
+Engineering: NIER Track, May 2015.</LI>
+
+<LI>Hridesh Rajan, Tien N. Nguyen, Gary T. Leavens, and Robert Dyer, 
+"<a href="http://design.cs.iastate.edu/papers/ICSE-15b/">Inferring 
+Behavioral Specifications from Large-scale Repositories by Leveraging 
+Collective Intelligence</a>," ICSE’15: The 37th International Conference 
+on Software Engineering: NIER Track, May 2015.</LI>
+
+<LI>Ganesha Upadhyaya and Hridesh Rajan, 
+"<a href="http://design.cs.iastate.edu/papers/OOPSLA-15/">Effectively 
+Mapping Linguistic Abstractions for Message-passing Concurrency to 
+Threads on the Java Virtual Machine</a>," OOPSLA’15: The ACM SIGPLAN 
+conference on Systems, Programming, Languages and Applications: 
+Software for Humanity (SPLASH), October 2015.</LI>
+
+<LI>Robert Dyer, Hoan Anh Nguyen, Hridesh Rajan, and Tien N. Nguyen, 
+"<a href="http://design.cs.iastate.edu/papers/TOSEM-15/">Boa: 
+Ultra-Large-Scale Software Repository and Source-Code Mining</a>," 
+ACM Trans. Softw. Eng. Methodol., December 2015.</LI>
+
+</UL>
+
+<p>For more details including <a href="http://design.cs.iastate.edu/papers/">publications</a>,
+<a href="http://design.cs.iastate.edu/grants/">funded research projects</a>,
+and <a href="http://design.cs.iastate.edu/people.html">current students</a>
+please visit my lab's <a href="http://design.cs.iastate.edu">web-pages</a>.</p>
+
+
+<p class="heading">Teaching</p>
+<ul>
+<!--<li>
+<a href="http://www.cs.iastate.edu/~hridesh/teaching/">
+COMS 342: Programming Languages (undergraduate)</a>
+</li>-->
+<!--<li>
+<a href="http://www.cs.iastate.edu/~hridesh/teaching/">
+COMS 541: Programming Languages (graduate)</a>
+</li>-->
+<li>Spring 2018: <a href="teaching/342">COMS 342</a>, 
+a course on principles of programming languages </li>
+<li>Fall 2016: COMS 362, a course on object-oriented analysis and design </li>
+<li>Spring 2016: <a href="http://www.cs.iastate.edu/~hridesh/teaching/641/">
+COMS 641</a>, a course on design and semantics of data intensive languages and systems</li>
+
+<!--<a href="http://www.cs.iastate.edu/~hridesh/teaching/610/09/fall/">610:Type Systems</a></li>-->
+<!--<li>S09:<a href="http://www.cs.iastate.edu/~cs342">Com S 342</a></li>-->
+<!--<li><a href="http://www.cs.iastate.edu/~cs541">Com S 541</a>-->
+<!--<li><a href="http://www.cs.iastate.edu/~cs362">Com S 362</a></li>
+<li><a href="http://www.cs.iastate.edu/~cs342">Com S 342</a></li>-->
+
+</ul>
+
+<p class="heading">Major Awards and Honors</p>
+<ul>
+<li> 
+2009 Early CAREER Award, <a href="http://nsf.gov">US National Science Foundation</a>
+</li>
+<li> 
+2010 Early Achievement in Research Award, <a href="http://las.iastate.edu">College of Liberal Arts & Science</a>, 
+<a href="http://iastate.edu">Iowa State University</a>
+</li>
+<li>
+2012 Big-12 Fellowship 
+</li>
+<li>
+2014 ACM Senior Member
+</li>
+<li>
+2016-17 Emerging Leaders Academy. 
+See news <a href="https://www.inside.iastate.edu/article/2016/05/12/ela">here</a>.
+</li>
+<li>
+2016 Kingland Professorship. See news <a href="http://www.foundation.iastate.edu/s/1463/giving/interior.aspx?sid=1463&gid=1&pgid=252&cid=6884&ecid=6884&crid=0&calpgid=451&calcid=1843">here</a>.
+</li>
+<li>
+2016-17 Exemplary Mentor of Junior Faculty, Iowa State University.
+See news <a href="http://www.provost.iastate.edu/faculty-and-staff-resources/development/early-career/mentor-awardees">here</a>.
+<li>
+2017 ACM Distinguished Member. See news <a href="https://www.acm.org/media-center/2017/november/distinguished-members-2017">here</a>.
+</li>
+</ul>
+</p>
+
+<p class="heading">Former Graduate Students</p>
+<ul>
+ <li><a href="www.cs.iastate.edu/~ganeshau/">Ganesha Upadhyaya</a> (PhD Fall'17, MS Spring'15), Huawei R&D</li>
+ <li><a href="www.cs.iastate.edu/~mbagherz/">Mehdi Bagherzadeh</a> (PhD Summer'16, MS Fall'10), Assistant Professor at Oakland University</li>
+ <li><a href="www.cs.iastate.edu/~csgzlong/">Yuheng Long</a> (PhD Spring'16, MS Spring'10), Google</li>
+ <li><a href="www.cs.bgsu.edu/rdyer/">Robert Dyer</a> (PhD Fall'13, MS Fall'08), Assistant Professor at Bowling Green State University</li>
+ <li><a href="https://www.linkedin.com/in/tyler-sondag-92b757b">Tyler Sondag</a> (PhD Fall'11, MS Fall'09), Intel R&D</li> 
+ <li><a href="http://www.cs.iastate.edu/~smooney/">Sean L. Mooney</a> (MS Summer'15), SourceAllies</li>
+ <li><a href="http://www.cs.iastate.edu/~harish">Harish Narayanappa</a> (MS Spring'10), eBay</li>
+ <li><a href="http://www.cs.iastate.edu/~ywhanna">Youssef W. Hanna</a> (MS Fall'08), Google</li>
+ <li><a href="http://www.cs.iastate.edu/~rsetty">Rakesh Setty</a> (MS Fall'08), eBay</li>
+ <li><a href="http://www.cs.iastate.edu/~mahantes">Mahantesh Hosamani</a> (MS Fall'07), Ericsson</li>
+</ul>
+
+<p class="heading">Key Projects</p>
+
+<p></p>
+<p>
+<table>
+<tr>
+<td>
+<a href="http://mbds.cs.iastate.edu">
+<img src="http://mbds.cs.iastate.edu/2016/bigdatasummerschool.jpg" height="75" align="right" alt="Midwest Big Data Summer School"></a>
+</td>
+<td>&nbsp;</td>
+<td>
+<a href="http://boa.cs.iastate.edu">
+<img src="https://hridesh.github.io/images/boa.png" height="75" align="right" alt="Boa Project"></a>
+</td>
+<td>&nbsp;</td>
+<td>
+<a href="http://paninij.org"><img src="https://hridesh.github.io/images/paninilogo.png" height="75" align="right" alt="Panini Project"></a>
+</td>
+</tr>
+</table>
+</p>
+</td>
+</tr>
+
+</table>
+
+<!-- <script type="text/javascript">
+copyright=new Date()
+fullYear=copyright.getFullYear();
+document.write("<p>Copyright &copy; " + fullYear + " Iowa State University of Science and Technology. All rights reserved.</p>")
+</script> -->
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-512574-2";
+urchinTracker();
+</script>
+<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/hridesh.json?callback=twitterCallback2&amp;count=2"></script>
+</body>
+</html>

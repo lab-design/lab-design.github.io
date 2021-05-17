@@ -1,0 +1,738 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./msminor_files/filelist.xml">
+<title>Computer Science Department </title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>eckhart</o:Author>
+  <o:LastAuthor>Windows 2000</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>224</o:TotalTime>
+  <o:LastPrinted>2002-09-17T16:06:00Z</o:LastPrinted>
+  <o:Created>2002-11-05T16:08:00Z</o:Created>
+  <o:LastSaved>2002-11-05T16:08:00Z</o:LastSaved>
+  <o:Pages>3</o:Pages>
+  <o:Words>1611</o:Words>
+  <o:Characters>9184</o:Characters>
+  <o:Company>ADP Center - Iowa State University</o:Company>
+  <o:Lines>76</o:Lines>
+  <o:Paragraphs>18</o:Paragraphs>
+  <o:CharactersWithSpaces>11278</o:CharactersWithSpaces>
+  <o:Version>9.3821</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>
+  <w:UseMarginsForDrawingGridOrigin/>
+  <w:Compatibility>
+   <w:FootnoteLayoutLikeWW8/>
+   <w:ShapeLayoutLikeWW8/>
+   <w:AlignTablesRowByRow/>
+   <w:ForgetLastTabAlignment/>
+   <w:LayoutRawTableWidth/>
+   <w:LayoutTableRowsApart/>
+  </w:Compatibility>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:"Century Schoolbook";
+	panose-1:2 4 6 4 5 5 5 2 3 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+@font-face
+	{font-family:"Bookman Old Style";
+	panose-1:2 5 6 4 5 5 5 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+@font-face
+	{font-family:AvantGarde;
+	panose-1:0 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-format:other;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:16.5pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:AvantGarde;
+	text-transform:uppercase;
+	mso-font-kerning:0pt;
+	mso-bidi-font-weight:normal;}
+h2
+	{mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	font-weight:normal;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+h3
+	{mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	tab-stops:24.0pt 39.3pt 56.7pt 74.4pt 91.8pt 214.5pt 5.75in;
+	font-size:14.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	font-weight:normal;
+	text-decoration:underline;
+	text-underline:single;}
+h4
+	{mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	tab-stops:24.0pt 39.3pt 56.7pt 74.4pt 91.8pt 214.5pt 5.75in;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-bidi-font-weight:normal;}
+h5
+	{mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:1.8pt;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:5;
+	border:none;
+	mso-border-alt:double windowtext 2.25pt;
+	padding:0in;
+	mso-padding-alt:0in 1.0pt 1.0pt 1.0pt;
+	font-size:16.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-bidi-font-weight:normal;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:12.0pt;
+	margin-left:.75in;
+	text-align:justify;
+	line-height:12.0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	letter-spacing:-.25pt;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.DefinitionTerm, li.DefinitionTerm, div.DefinitionTerm
+	{mso-style-name:"Definition Term";
+	mso-style-next:"Definition List";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	layout-grid-mode:line;}
+p.DefinitionList, li.DefinitionList, div.DefinitionList
+	{mso-style-name:"Definition List";
+	mso-style-next:"Definition Term";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.25in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	layout-grid-mode:line;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:.75in .75in .5in .75in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:999162206;
+	mso-list-type:simple;
+	mso-list-template-ids:957536654;}
+@list l0:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	mso-level-legacy:yes;
+	mso-level-legacy-indent:.25in;
+	mso-level-legacy-space:0in;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l0:level1 lfo2
+	{mso-level-numbering:continue;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	mso-level-legacy:yes;
+	mso-level-legacy-indent:.25in;
+	mso-level-legacy-space:0in;
+	margin-left:.25in;
+	text-indent:-.25in;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+</head>
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h1><span style='font-size:16.0pt;mso-bidi-font-size:10.0pt;font-family:"Times New Roman";
+text-transform:none'>Computer Science Department Graduate Minor Requirements</span><span
+style='font-size:16.0pt;mso-bidi-font-size:10.0pt;font-family:"Times New Roman"'><o:p></o:p></span></h1>
+
+<h2><b style='mso-bidi-font-weight:normal'><span style='font-size:14.0pt;
+mso-bidi-font-size:10.0pt'>2002-2003<o:p></o:p></span></b></h2>
+
+<p class=MsoNormal style='tab-stops:24.0pt 39.3pt 56.7pt 74.4pt 91.8pt 214.5pt 5.75in'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal style='tab-stops:24.0pt 39.3pt 56.7pt 74.4pt 91.8pt 214.5pt 5.75in'><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt'>Students from other
+disciplines of graduate study at ISU may wish to earn a graduate minor in
+Computer Science.<span style="mso-spacerun: yes">  </span>Following are the
+requirements and approved course work for a graduate minor. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:24.0pt 39.3pt 56.7pt 74.4pt 91.8pt 214.5pt 5.75in'><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:24.0pt 39.3pt 56.7pt 74.4pt 91.8pt 214.5pt 5.75in'><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt'>A graduate minor in Computer
+Science consists of at least 12 credits chosen from Com S 309, 311, 321, 330,
+331, 342, 352, 362, 363, 401, 425, 430, 454, 461, 472, 474, and Com S courses
+numbered 511 or above (excluding 590, 599, 610 and 699).<span
+style="mso-spacerun: yes">  </span>The course descriptions can be found at <u>http://www.iastate.edu/~catalog/2001-03/courses/coms.html</u>.
+The course selection must also satisfy the following conditions:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:24.0pt 39.3pt 56.7pt 74.4pt 91.8pt 214.5pt 5.75in'><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:27.0pt;margin-bottom:
+0in;margin-left:27.0pt;margin-bottom:.0001pt;text-indent:-.25in;mso-list:l0 level1 lfo1;
+tab-stops:24.0pt 56.7pt 74.4pt 91.8pt 214.5pt 5.75in'><![if !supportLists]><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt'>Only
+one of the following may be included in the 12-credit minimum: Com S 321, 330,
+362.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:27.0pt;margin-bottom:
+0in;margin-left:27.0pt;margin-bottom:.0001pt;text-indent:-.25in;mso-list:l0 level1 lfo2;
+tab-stops:24.0pt 56.7pt 74.4pt 91.8pt 214.5pt 5.75in'><![if !supportLists]><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt'>At
+least 3 credits must be chosen from courses at or above the 400 level.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:27.0pt;margin-bottom:
+0in;margin-left:27.0pt;margin-bottom:.0001pt;text-indent:-.25in;mso-list:l0 level1 lfo2;
+tab-stops:24.0pt 56.7pt 74.4pt 91.8pt 214.5pt 5.75in'><![if !supportLists]><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt'>Courses
+must be taken while under graduate student status. Courses taken while an
+undergraduate may not be used.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:24.0pt 39.3pt 56.7pt 74.4pt 91.8pt 214.5pt 5.75in'><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:24.0pt 39.3pt 56.7pt 74.4pt 91.8pt 214.5pt 5.75in'><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt'>Any exceptions must be
+petitioned by the Student's Program of Study (POS) Committee and approved by
+the Graduate Committee in Computer Science.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:24.0pt 39.3pt 56.7pt 74.4pt 91.8pt 214.5pt 5.75in'><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:24.0pt 39.3pt 56.7pt 74.4pt 91.8pt 214.5pt 5.75in'><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt'>When a student chooses to
+add a graduate minor in computer science, one member of his or her POS
+committee must be a faculty member from the Computer Science Department.<span
+style="mso-spacerun: yes">  </span>You can choose faculty members from the
+attached listing. MS Word templates for the committee appointment, POS, and
+modifications can be downloaded from the Graduate College homepage.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:24.0pt 39.3pt 56.7pt 74.4pt 91.8pt 214.5pt 5.75in'><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:24.0pt 39.3pt 56.7pt 74.4pt 91.8pt 214.5pt 5.75in'><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt'>The student must complete
+their POS with the desired courses. After the POS is completed, courses may be
+added each semester by bringing a completed add slip to the Computer Science
+Graduate Secretary. It can take up to 24 hours to obtain a signature. If the
+course is not listed on the POS, your add slip will not be signed. If the
+course is full, the student may have to wait until the next semester to take
+the listed course.<span style="mso-spacerun: yes">  </span>Any course changes
+must be made with the “Modifications to the Program of Study” form and must be
+signed by all committee members and departmental officers.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:24.0pt 39.3pt 56.7pt 74.4pt 91.8pt 214.5pt 5.75in'><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:24.0pt 39.3pt 56.7pt 74.4pt 91.8pt 214.5pt 5.75in'><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<h3><b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt'>Computer Science Graduate
+Secretary<o:p></o:p></span></i></b></h3>
+
+<p class=MsoNormal style='tab-stops:24.0pt 39.3pt 56.7pt 74.4pt 91.8pt 214.5pt 5.75in'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt'>Linda L. Dutton<o:p></o:p></span></b></p>
+
+<h4>226 Atanasoff Hall</h4>
+
+<p class=MsoNormal style='tab-stops:24.0pt 39.3pt 56.7pt 74.4pt 91.8pt 214.5pt 5.75in'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt'>294-8361<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='tab-stops:24.0pt 39.3pt 56.7pt 74.4pt 91.8pt 214.5pt 5.75in'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt'>ldutton@admin.cs.iastate.edu<span style='mso-tab-count:2'>         </span><span
+style='mso-tab-count:1'>        </span><o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=right style='text-align:right;tab-stops:24.0pt 39.3pt 56.7pt 74.4pt 91.8pt 214.5pt 5.75in'>9/2002<b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt'><o:p></o:p></span></b></p>
+
+<span style='font-size:10.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'><br clear=all style='mso-special-character:line-break;
+page-break-before:always'>
+</span>
+
+<div style='border:double windowtext 2.25pt;padding:0in 1.0pt 1.0pt 1.0pt'>
+
+<p class=MsoNormal align=center style='margin-right:1.8pt;text-align:center;
+border:none;mso-border-alt:double windowtext 2.25pt;padding:0in;mso-padding-alt:
+0in 1.0pt 1.0pt 1.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h5>Computer Science Graduate Faculty to Serve on Minor Committees</h5>
+
+<p class=MsoNormal align=center style='margin-right:1.8pt;text-align:center;
+border:none;mso-border-alt:double windowtext 2.25pt;padding:0in;mso-padding-alt:
+0in 1.0pt 1.0pt 1.0pt'><span style='font-size:8.0pt;mso-bidi-font-size:10.0pt;
+font-family:"Century Schoolbook"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-right:-2.7pt;tab-stops:3.2in 3.7in 4.2in 4.7in 5.2in 5.7in'><b
+style='mso-bidi-font-weight:normal'><u><span style='font-size:9.0pt;mso-bidi-font-size:
+10.0pt;font-family:Arial;mso-bidi-font-family:"Times New Roman"'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></u></b></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b
+style='mso-bidi-font-weight:normal'><u>Pavan Aduri</u></b><span
+style='mso-bidi-font-weight:bold'> – Assistant Professor.<span
+style="mso-spacerun: yes">  </span>Major Interests: </span>Computational
+Complexity: Average-case Complexity, Connections between Average-case
+Complexity and Worst-case Complexity, Structural Complexity of Function
+Classes.<span style='mso-bidi-font-weight:bold'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:1.8pt;tab-stops:3.2in 3.7in 4.2in 4.7in 5.2in 5.7in'><span
+style='mso-bidi-font-weight:bold'>Internet: <a
+href="mailto:pavan@cs.iastate.edu">pavan@cs.iastate.edu</a><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:1.8pt;tab-stops:3.2in 3.7in 4.2in 4.7in 5.2in 5.7in'><span
+style='mso-bidi-font-weight:bold'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:1.8pt;tab-stops:3.2in 3.7in 4.2in 4.7in 5.2in 5.7in'><b
+style='mso-bidi-font-weight:normal'><u>John Peter Boysen</u></b> - Adjunct
+Assistant Professor and Computer Science and Systems Analyst, Computation
+Center.<span style="mso-spacerun: yes">  </span>Major Interests: Instructional
+Use of Computers, Programming Languages, Object-Oriented Programming.</p>
+
+<p class=MsoNormal style='margin-right:1.8pt;tab-stops:3.2in 3.7in 4.2in 4.7in 5.2in 5.7in'>Internet:<span
+style="mso-spacerun: yes">  </span><a href="mailto:pboysen@iastate.edu">pboysen@iastate.edu</a></p>
+
+<p class=MsoNormal style='margin-right:1.8pt;tab-stops:3.2in 3.7in 4.2in 4.7in 5.2in 5.7in'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=DefinitionList style='margin-left:0in'><b style='mso-bidi-font-weight:
+normal'><u><span style='font-size:10.0pt'>Carl K. Chang</span></u></b><span
+style='font-size:10.0pt;mso-bidi-font-weight:bold'> – Professor and Chair.<span
+style="mso-spacerun: yes">  </span>Major Interests:<span style="mso-spacerun:
+yes">  </span></span><span style='font-size:10.0pt'>Software Engineering and
+Net-centric Computing.<o:p></o:p></span></p>
+
+<p class=DefinitionTerm><span style='font-size:10.0pt'>Internet: <a
+href="mailto:chang@cs.iastate.edu">chang@cs.iastate.edu</a>; <a
+href="http://www.cs.iastate.edu/~chang">http://www.cs.iastate.edu/~chang</a></span><span
+style='font-size:10.0pt;font-family:"Bookman Old Style"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:1.8pt;tab-stops:3.2in 3.7in 4.2in 4.7in 5.2in 5.7in'><span
+style='mso-bidi-font-weight:bold'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:1.8pt;tab-stops:3.2in 3.7in 4.2in 4.7in 5.2in 5.7in'><b
+style='mso-bidi-font-weight:normal'><u>Soma Chaudhuri</u></b> - Associate
+Professor.<span style="mso-spacerun: yes">  </span>Major Interests: Theory of
+Distributed Computing, Parallel Algorithms and Parallel Complexity.</p>
+
+<p class=MsoNormal style='margin-right:1.8pt;tab-stops:3.2in 3.7in 4.2in 4.7in 5.2in 5.7in'>Internet:<span
+style="mso-spacerun: yes">  </span><a href="mailto:chaudhur@cs.iastate.edu">chaudhur@cs.iastate.edu</a></p>
+
+<p class=MsoNormal style='margin-right:1.8pt;tab-stops:3.2in 3.7in 4.2in 4.7in 5.2in 5.7in'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b
+style='mso-bidi-font-weight:normal'><u>Hui-Hsien Chou </u></b><span
+style="mso-spacerun: yes"> </span>- Assistant Professor of Zoology &amp;
+Genetics and Computer Science.<span style="mso-spacerun: yes">  </span>Major
+Interests:<span style="mso-spacerun: yes">  </span>Bioinformatics,
+Computational Biology, Cellular Automata, Programming Language Design and
+Compiling.</p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>Internet:<span
+style="mso-spacerun: yes">  </span><a href="mailto:hhchou@iastate.edu">hhchou@iastate.edu</a>;
+<a href="http://www.complex.iastate.edu/hhchou/">http://www.complex.iastate.edu/hhchou/</a><span
+style='font-family:"Courier New"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:1.8pt;tab-stops:3.2in 3.7in 4.2in 4.7in 5.2in 5.7in'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal style='margin-right:1.8pt;tab-stops:3.2in 3.7in 4.2in 4.7in 5.2in 5.7in'><b
+style='mso-bidi-font-weight:normal'><u>Oliver Eulenstein</u></b> - Assistant
+Professor.<span style="mso-spacerun: yes">  </span>Major Interests:
+Computational Biology, Combinatorial Optimization in Science and Engineering,
+Design and Analysis of Discrete Algorithms.</p>
+
+<p class=MsoNormal style='margin-right:1.8pt;tab-stops:3.2in 3.7in 4.2in 4.7in 5.2in 5.7in'>Internet:<span
+style="mso-spacerun: yes">  </span><a href="mailto:oeulenst@cs.iastate.edu">oeulenst@cs.iastate.edu</a>;
+<a href="http://www.cs.iastate.edu/~oeulenst">http://www.cs.iastate.edu/~oeulenst</a></p>
+
+<p class=MsoNormal style='margin-right:1.8pt;tab-stops:3.2in 3.7in 4.2in 4.7in 5.2in 5.7in'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal style='margin-right:1.8pt;tab-stops:3.2in 3.7in 4.2in 4.7in 5.2in 5.7in;
+mso-layout-grid-align:none;text-autospace:none'><b style='mso-bidi-font-weight:
+normal'><u>David F. Fernandez-Baca</u></b> – Professor. Major Interests: Design
+and Analysis of Algorithms, Combinatorial Optimization, Graph Algorithms,
+Computational Biology.</p>
+
+<p class=MsoNormal style='margin-right:1.8pt;tab-stops:3.2in 3.7in 4.2in 4.7in 5.2in 5.7in;
+mso-layout-grid-align:none;text-autospace:none'>Internet:<span
+style="mso-spacerun: yes">  </span><u><span style='color:blue'><a
+href="mailto:fernande@cs.iastate.edu">fernande@cs.iastate.edu</a></span></u>; <a
+href="http://www.cs.iastate.edu/~fernande/">http://www.cs.iastate.edu/~fernande/</a></p>
+
+<p class=MsoNormal style='margin-right:1.8pt;tab-stops:3.2in 3.7in 4.2in 4.7in 5.2in 5.7in'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal style='margin-right:1.8pt;tab-stops:3.2in 3.7in 4.2in 4.7in 5.2in 5.7in'><b
+style='mso-bidi-font-weight:normal'><u>Shashi K. Gadia</u></b> - Associate
+Professor.<span style="mso-spacerun: yes">  </span>Major Interests: Temporal,
+Spatial, Belief, Security, Statistical and Incomplete Data; Database Models,
+Type Hierarchy, Languages, User Interfaces, Optimization, Implementation and
+Access Methods; Pattern Matching in Spatio-Temporal Data.</p>
+
+<p class=MsoNormal style='margin-right:1.8pt;tab-stops:3.2in 3.7in 4.2in 4.7in 5.2in 5.7in'>Internet:<span
+style="mso-spacerun: yes">  </span><a href="mailto:gadia@cs.iastate.edu">gadia@cs.iastate.edu</a></p>
+
+<p class=MsoNormal style='margin-right:1.8pt;tab-stops:3.2in 3.7in 4.2in 4.7in 5.2in 5.7in'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b
+style='mso-bidi-font-weight:normal'><u><span style='layout-grid-mode:line'>Vasant
+Honavar</span></u></b><span style='layout-grid-mode:line'> - Professor.<span
+style="mso-spacerun: yes">  </span>Research and Teaching Interests: </span>Artificial
+Intelligence; Bioinformatics and Computational Biology; Distributed Intelligent
+Information Networks; Intelligent Agents and Multi-agent Systems; Machine
+Learning, Data Mining, and Knowledge Discovery; Computational Learning Theory;
+Information Assurance; Cognitive Science; Complex Adaptive Systems.<span
+style='layout-grid-mode:line'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='layout-grid-mode:line'>Internet:
+honavar@cs.iastate.edu; <u><span style='color:blue'>http://www.cs.iastate.edu/~honavar/</span></u><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:1.8pt;tab-stops:3.2in 3.7in 4.2in 4.7in 5.2in 5.7in'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><u>Xiaoqiu Huang </u></b>–
+Associate Professor.<span style="mso-spacerun: yes">  </span>Research and
+Teaching Interests: Computational Biology, Parallel and Distributed
+Applications.</p>
+
+<p class=MsoNormal><a
+href="mailto:Internet:%20xqhuang@cs.iastate.edu;%20http://www.cs.iastate.edu/~xqhuang/">Internet:
+xqhuang@cs.iastate.edu; http://www.cs.iastate.edu/~xqhuang/<o:p></o:p></a></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><a
+href="mailto:Internet:%20xqhuang@cs.iastate.edu;%20http://www.cs.iastate.edu/~xqhuang/"><span
+style="mso-spacerun: yes"> </span></a><b style='mso-bidi-font-weight:normal'><u><o:p></o:p></u></b></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b
+style='mso-bidi-font-weight:normal'><u>Yan-Bin Jia</u></b> - Assistant
+Professor.<span style="mso-spacerun: yes">  </span>Major Interests: Robotics,
+shape localization, reconstruction, and recognition, </p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>computational
+geometry, geometric modeling, curve computation, robot sensing, dexterous
+manipulation and control, hacking robot interfaces, optimization, nonlinear
+control and observation, kinematics and dynamics of manipulation.</p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>Internet:<span
+style="mso-spacerun: yes">  </span><a href="mailto:jia@cs.iastate.edu">jia@cs.iastate.edu</a>;
+<a href="http://www.cs.iastate.edu/~jia/">http://www.cs.iastate.edu/~jia/</a></p>
+
+<p class=MsoNormal style='margin-right:1.8pt;tab-stops:3.2in 3.7in 4.2in 4.7in 5.2in 5.7in'><b
+style='mso-bidi-font-weight:normal'><u><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></u></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><u>Ricky Kendall </u></b>–
+Adjunct Associate Professor; Scientist, Ames Laboratory.<span
+style="mso-spacerun: yes">  </span>Major Interests:<b style='mso-bidi-font-weight:
+normal'><span style="mso-spacerun: yes">  </span></b>Parallel and<b
+style='mso-bidi-font-weight:normal'> </b>Distributed Algorithms and Computing,
+Software Engineering for Parallel Applications, Communications Software,
+Parallel I/O, Computational Chemistry.</p>
+
+<p class=MsoNormal>Internet:<span style="mso-spacerun: yes">  </span><a
+href="mailto:rickyk@cs.iastate.edu"><span style='text-decoration:none;
+text-underline:none'>rickyk@cs.iastate.edu</span></a>, <a
+href="mailto:rickyk@ameslab.gov"><span style='text-decoration:none;text-underline:
+none'>rickyk@ameslab<span style='mso-bookmark:_Hlt509216253'>.</span>gov</span></a><![if !supportNestedAnchors]><a
+name="_Hlt509216253"></a><![endif]></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><u><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></u></b></p>
+
+<p class=MsoNormal style='margin-right:1.8pt;tab-stops:3.2in 3.7in 4.2in 4.7in 5.2in 5.7in'><b
+style='mso-bidi-font-weight:normal'><u>Gary T. Leavens</u></b> -
+Professor.<span style="mso-spacerun: yes">  </span>Major Interests: Programming
+and specification language design and semantics, formal methods (program
+specification and verification), object-oriented programming, aspect-oriented
+programming, component-based systems, information assurance, functional
+programming, type theory, distributed programming languages.</p>
+
+<p class=MsoNormal style='margin-right:1.8pt;tab-stops:3.2in 3.7in 4.2in 4.7in 5.2in 5.7in'>Internet:
+<a href="mailto:leavens@cs.iastate.edu">leavens@cs.iastate.edu</a>;<span
+style="mso-spacerun: yes">  </span><a href="http://www.cs.iastate.edu/~leavens">http://www.cs.iastate.edu/~leavens</a></p>
+
+<p class=MsoNormal style='margin-right:1.8pt;tab-stops:3.2in 3.7in 4.2in 4.7in 5.2in 5.7in'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoBodyText style='margin:0in;margin-bottom:.0001pt'><b
+style='mso-bidi-font-weight:normal'><u><span style='font-family:"Times New Roman"'>Marcus
+Lumpe</span></u></b><span style='font-family:"Times New Roman"'> -- Associate
+Professor.<span style="mso-spacerun: yes">  </span>Interests: Design and
+Implementation of Object- and Component-Oriented Languages, Type Theory for
+Software Composition, Formal Semantics, Concurrent Programming, Object-oriented
+Compiler Construction Techniques.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:1.8pt;tab-stops:3.2in 3.7in 4.2in 4.7in 5.2in 5.7in;
+mso-layout-grid-align:none;text-autospace:none'>Internet: <u><span
+style='color:blue'><a href="mailto:lumpe@cs.iastate.edu">lumpe@cs.iastate.edu</a></span></u>;
+<a href="http://www.cs.iastate.edu/~lumpe/">http://www.cs.iastate.edu/~lumpe/</a></p>
+
+<p class=MsoNormal style='margin-right:1.8pt;tab-stops:3.2in 3.7in 4.2in 4.7in 5.2in 5.7in'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><u>Jack H. Lutz</u></b>
+-- Professor.<span style="mso-spacerun: yes">  </span>Major Interests: <span
+style='layout-grid-mode:line'>Computational Complexity, including structure of
+complexity classes, resource-bounded measure, and probabilistic complexity.<span
+style="mso-spacerun: yes">  </span>Algorithmic Information and Randomness,
+including computational randomness, Kolmogorov complexity, computational depth,
+and games and prediction.</span></p>
+
+<p class=MsoNormal style='margin-right:1.8pt;tab-stops:3.2in 3.7in 4.2in 4.7in 5.2in 5.7in'>Internet:<span
+style="mso-spacerun: yes">  </span><a href="mailto:lutz@cs.iastate.edu">lutz@cs.iastate.edu</a></p>
+
+<p class=MsoNormal style='margin-right:1.8pt;tab-stops:3.2in 3.7in 4.2in 4.7in 5.2in 5.7in'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b
+style='mso-bidi-font-weight:normal'><u>Robyn Lutz</u></b> -- Associate
+Professor. Major Interests: Software engineering, software safety, requirements
+engineering, formal methods for specification and verification, safety-critical
+product lines, fault monitoring and recovery for spacecraft autonomy.</p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>Internet:
+<a href="mailto:rlutz@cs.iastate.edu">rlutz@cs.iastate.edu</a>; <a
+href="http://www.cs.iastate.edu/~rlutz/">http://www.cs.iastate.edu/~rlutz/</a>.</p>
+
+<p class=MsoNormal style='margin-right:1.8pt;text-align:justify;tab-stops:3.2in 3.7in 4.2in 4.7in 5.2in 5.7in'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b
+style='mso-bidi-font-weight:normal'><u>Dimitris Margaritis</u></b><span
+style='mso-bidi-font-weight:bold'> – Assistant Professor. Major Interests: </span>Probabilistic
+modeling, methods for managing and reasoning with uncertainty/indeterminacy in
+Artificial Intelligence and other applications, Bayesian networks, Markov
+networks, data mining, machine learning, cross-disciplinary applications of
+these in bioinformatics, econometrics, very large databases and</p>
+
+<p class=MsoNormal style='margin-right:1.8pt;tab-stops:3.2in 3.7in 4.2in 4.7in 5.2in 5.7in'>other
+domains.<span style='mso-bidi-font-weight:bold'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:1.8pt;tab-stops:3.2in 3.7in 4.2in 4.7in 5.2in 5.7in'><span
+style='mso-bidi-font-weight:bold'>Internet: <a
+href="mailto:dmarg@cs.iastate.edu">dmarg@cs.iastate.edu</a><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:1.8pt;tab-stops:3.2in 3.7in 4.2in 4.7in 5.2in 5.7in'><span
+style='mso-bidi-font-weight:bold'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:1.8pt;tab-stops:3.2in 3.7in 4.2in 4.7in 5.2in 5.7in'><b
+style='mso-bidi-font-weight:normal'><u>Les Miller</u></b> – Professor.<span
+style="mso-spacerun: yes">  </span>Major Interests: <span style='layout-grid-mode:
+line'>Object-Oriented Databases, Organizational Decision Support Systems,
+Knowledge Management, Computational Biology, Data Warehouses.</span></p>
+
+<p class=MsoNormal style='margin-right:1.8pt;tab-stops:3.2in 3.7in 4.2in 4.7in 5.2in 5.7in'>Internet:<span
+style="mso-spacerun: yes">  </span><a href="mailto:lmiller@iastate.edu">lmiller@iastate.edu</a></p>
+
+<p class=MsoNormal style='margin-right:1.8pt;tab-stops:3.2in 3.7in 4.2in 4.7in 5.2in 5.7in'><b
+style='mso-bidi-font-weight:normal'><u><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></u></b></p>
+
+<p class=MsoNormal style='tab-stops:.25in .5in'><b style='mso-bidi-font-weight:
+normal'><u><span style='layout-grid-mode:line'>Andrew Miner</span></u></b><span
+style='layout-grid-mode:line'> – Assistant Professor.<span style="mso-spacerun:
+yes">  </span>Major Interests: </span>Performance reliability and logical
+analysis of systems, Petri nets and stochastic modeling; state space generation
+techniques, binary and multi-valued decision diagrams; compositional
+approaches, distributed algorithms for solution techniques.</p>
+
+<p class=MsoNormal style='margin-right:1.8pt;tab-stops:3.2in 3.7in 4.2in 4.7in 5.2in 5.7in'>Internet:
+<a href="mailto:asminer@cs.iastate.edu">asminer@cs.iastate.edu</a></p>
+
+<p class=MsoNormal style='margin-right:1.8pt;tab-stops:3.2in 3.7in 4.2in 4.7in 5.2in 5.7in'><b
+style='mso-bidi-font-weight:normal'><u><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></u></b></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b
+style='mso-bidi-font-weight:normal'><u>Simanta Mitra</u></b> -- Assistant
+Adjunct Professor.<span style="mso-spacerun: yes">  </span>Major Interests:<b
+style='mso-bidi-font-weight:normal'> </b>Software Engineering, Programming
+Languages, Compilers, Parallelizing Tools, and Performance Evaluation of
+Computer Systems.<span style='layout-grid-mode:line'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:1.8pt;tab-stops:3.2in 3.7in 4.2in 4.7in 5.2in 5.7in'><span
+style='layout-grid-mode:line'>Internet:<span style="mso-spacerun: yes"> 
+</span><a href="mailto:smitra@cs.iastate.edu"><span style='layout-grid-mode:
+both;text-decoration:none;text-underline:none'>smitra@cs.iastate.edu</span></a><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:1.8pt;tab-stops:3.2in 3.7in 4.2in 4.7in 5.2in 5.7in'><span
+style='layout-grid-mode:line'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-right:1.8pt;tab-stops:3.2in 3.7in 4.2in 4.7in 5.2in 5.7in'><b
+style='mso-bidi-font-weight:normal'><u>G.M. Prabhu</u></b> -- Associate
+Professor. Major Interests: Parallel Processing, Computer Architecture,
+Business Process Modeling and Analysis.</p>
+
+<p class=MsoNormal style='margin-right:1.8pt;tab-stops:3.2in 3.7in 4.2in 4.7in 5.2in 5.7in'>Internet:<span
+style="mso-spacerun: yes">  </span><a href="mailto:prabhu@cs.iastate.edu">prabhu@cs.iastate.edu</a><b
+style='mso-bidi-font-weight:normal'><u><o:p></o:p></u></b></p>
+
+<p class=MsoNormal style='margin-right:1.8pt;tab-stops:3.2in 3.7in 4.2in 4.7in 5.2in 5.7in'><b
+style='mso-bidi-font-weight:normal'><u><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></u></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><u>Lu Ruan </u></b><span
+style='mso-bidi-font-weight:bold'>– Assistant Professor.<span
+style="mso-spacerun: yes">  </span>Major Interests: </span><span
+style="mso-spacerun: yes"> </span>Computer Networking, Approximation
+Algorithms.</p>
+
+<p class=MsoNormal>Internet: <a href="mailto:ruan@cs.iastate.edu">ruan@cs.iastate.edu</a>,
+<a href="http://www.cs.iastate.edu/~ruan">http://www.cs.iastate.edu/~ruan</a><b
+style='mso-bidi-font-weight:normal'><u><o:p></o:p></u></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><u><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></u></b></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><b
+style='mso-bidi-font-weight:normal'><u>Giora Slutzki</u></b> -- Professor.<span
+style="mso-spacerun: yes">  </span>Major Interests: Algorithms and Complexity,
+Game Theory and Computational Economics, Formal Languages, Automata Theory.</p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'>Internet:<span
+style="mso-spacerun: yes">  </span><a href="mailto:slutzki@cs.iastate.edu">slutzki@cs.iastate.edu</a>;
+<a href="http://www.cs.iastate.edu/~slutzki/">http://www.cs.iastate.edu/~slutzki/</a></p>
+
+<p class=MsoNormal style='margin-right:1.8pt;text-align:justify;tab-stops:3.2in 3.7in 4.2in 4.7in 5.2in 5.7in'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><u><span
+style='layout-grid-mode:line'>Wallapak Tavanapong</span></u></b><span
+style='layout-grid-mode:line'> -- Assistant Professor.<span
+style="mso-spacerun: yes">  </span>Major Interests:<span style="mso-spacerun:
+yes">  </span>Distributed Multimedia Systems, Multimedia and Communications,
+Multimedia Databases, Parallel and Distributed Databases, Web Performance.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='layout-grid-mode:line'>Internet:<span
+style="mso-spacerun: yes">  </span><a href="mailto:tavanapo@cs.iastate.edu">tavanapo@cs.iastate.edu</a><o:p></o:p></span></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><b><u>Jin Tian</u></b> – Assistant Professor.<span
+style="mso-spacerun: yes">  </span>Major Interests: Bayesian networks,
+probabilistic reasoning, causal reasoning and learning.</p>
+
+<p class=MsoNormal>Internet: <a href="mailto:jtian@cs.iastate.edu">jtian@cs.iastate.edu</a></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><u>Johnny S. K. Wong</u></b>
+- Professor.<span style="mso-spacerun: yes">  </span>Major Interests:
+Distributed Computing Environment (DCE), Distributed Operating Systems,
+Communication Protocols, Object-Oriented Systems and Databases, Common Object
+Request Broker Architecture (CORBA), Hypermedia Systems, Multimedia Information
+Systems, Web Caching, Intrusion Detection, Information Assurance.</p>
+
+<p class=MsoNormal style='margin-right:1.8pt;tab-stops:3.2in 3.7in 4.2in 4.7in 5.2in 5.7in'>Internet:<span
+style="mso-spacerun: yes">  </span><a href="mailto:wong@cs.iastate.edu">wong@cs.iastate.edu</a></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal>11/2002</p>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+Computer Science Graduate Admission Course Evaluation Form
+
+PLEASE COMPLETE THIS FORM AND SUBMIT TO:
+Graduate Program Assistant, Department of Computer Science
+226 Atanasoff Hall, Iowa State University, Ames, IA  50011
+
+You must provide the information requested directly on this form.  Failure to fill out this form may result in denial of admission.
+
+Name (family, first)____________________________________________ Country of Citizenship:________________________
+
+Email Address:_________________________________________________ Telephone Number:__________________________
+
+Desired Admission Semester: ______________________________________ Degree Sought (PhD or MS)___________________
+
+Main Computer Science Area(s) of Interest: ______________________________________________________________________
+
+Academic Record:
+College or University:________________________________________________________Degree;_________________________
+
+Dates:	Major:___________________________Minor:_____________________
+
+College or University:________________________________________________________Degree;_________________________
+
+Dates:	Major:___________________________Minor:_____________________
+
+Listed below are the titles of seven general areas of coursework.  Under each of the headings, please describe your preparation by specifying the formal courses you have taken.  For each course, you must list the author and title of the text used, e.g., Aho and Ullman, Foundations of Computer Science.  A grade, mark, score, or percentage must be included in the "grade" section.
+
+Programming Skills Background:
+
+Course Name:__________________________________________________________________  Grade:__________________
+
+Text (Author, Title):______________________________________________________________________________________
+
+Course Name:__________________________________________________________________  Grade:__________________
+
+Text (Author, Title):______________________________________________________________________________________
+
+Course Name:__________________________________________________________________  Grade:__________________
+
+Text (Author, Title):______________________________________________________________________________________
+
+Discrete Mathematics Background:
+
+Course Name:__________________________________________________________________  Grade:__________________
+
+Text (Author, Title):______________________________________________________________________________________
+
+Course Name:__________________________________________________________________  Grade:__________________
+
+Text (Author, Title):______________________________________________________________________________________
+
+Data Structures and Algorithms:
+
+Course Name:__________________________________________________________________  Grade:__________________
+
+Text (Author, Title):______________________________________________________________________________________
+
+Course Name:__________________________________________________________________  Grade:__________________
+
+Text (Author, Title):______________________________________________________________________________________
+
+
+Programming Languages and Compilers Background:
+
+Course Name:__________________________________________________________________  Grade:__________________
+
+Text (Author, Title):______________________________________________________________________________________
+
+Course Name:__________________________________________________________________  Grade:__________________
+
+Text (Author, Title):______________________________________________________________________________________
+
+Computer Architecture Background:
+
+Course Name:__________________________________________________________________  Grade:__________________
+
+Text (Author, Title):______________________________________________________________________________________
+
+Course Name:__________________________________________________________________  Grade:__________________
+
+Text (Author, Title):______________________________________________________________________________________
+
+Operating Systems Background:
+
+Course Name:__________________________________________________________________  Grade:__________________
+
+Text (Author, Title):______________________________________________________________________________________
+
+Course Name:__________________________________________________________________  Grade:__________________
+
+Text (Author, Title):______________________________________________________________________________________
+
+Mathematics Background (select the most advanced courses):
+
+Course Name:__________________________________________________________________  Grade:__________________
+
+Text (Author, Title):______________________________________________________________________________________
+
+Course Name:__________________________________________________________________  Grade:__________________
+
+Text (Author, Title):______________________________________________________________________________________
+
+Please describe any relevant employment or other large project experience.  Describe the nature of the work, the program-ming languages and tools used, the computer systems involved and the duration of the work or project.
+_______________________________________________________________________________________________________
+
+_______________________________________________________________________________________________________
+
+_______________________________________________________________________________________________________
+
+Please describe any experience you may have had in installing, configuring and maintaining work stations and/or personal computers in a network environment.  Please indicate any interest you may have in working with a systems support group:
+_______________________________________________________________________________________________________
+
+_______________________________________________________________________________________________________
+
+Previous honors, scholarships, research activities, publications, outstanding extracurricular work (please be concise):
+_______________________________________________________________________________________________________
+
+_______________________________________________________________________________________________________
+
+_______________________________________________________________________________________________________
+
+			admit/CourseEval.doc (7/99)
