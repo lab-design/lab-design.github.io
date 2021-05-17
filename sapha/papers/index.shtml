@@ -1,0 +1,172 @@
+<!--#include virtual="../includes/topbar.html"-->
+<!-- 2ND COLUMN. INSERT COPY -->
+
+<td id="b3" rowspan="2">
+<div class="maintext">
+
+<h1>Publications Related to the SAPHA Project</h2><BR>
+
+<h2>Refereed Conference Papers</h2><BR>
+
+<p>
+<a href="http://www.cs.iastate.edu/~sondag">Tyler Sondag</a>
+and
+<a href="http://www.cs.iastate.edu/~hridesh">Hridesh Rajan</A>
+"<a href="CGO11">Phase-based Tuning for Better Utilization of Performance-Asymmetric Multicore Processors.</a>,"
+<a href="http://www.cgo.org/cgo2011/">CGO '11</a>: International Symposium on Code Generation and Optimization, April 2011
+</p>
+
+<p>
+<a href="http://www.cs.iastate.edu/~sondag">Tyler Sondag</a>,
+<a href="http://faculty.mckendree.edu/kian_pokorny/">Kian L. Pokorny</a>,
+and
+<a href="http://www.cs.iastate.edu/~hridesh">Hridesh Rajan</A>
+"<a href="http://www.cs.iastate.edu/~design/papers/CCSC-11">Frances-A: A Tool for Architecture Level Program Visualization</a>,"
+<a href="http://www.ccsc.org/centralplains/">Journal of Computing Sciences at Small Colleges, Consortium for Computing Sciences in Colleges -- Central Plains</a>,
+April 2011
+</p>
+
+
+<p>
+<a href="http://www.cs.iastate.edu/~sondag">Tyler Sondag</a>
+and
+<a href="http://www.cs.iastate.edu/~hridesh">Hridesh Rajan</A>
+"<a href="RTSS10">A More Precise Abstract Domain For Multi-level Caches for Tighter WCET Analysis</a>,"
+<a href="http://www.rtss.org">RTSS '10</a>: The 31st IEEE Real Time Systems Symposium, November 2010
+</p>
+
+
+<p>
+<a href="http://www.cs.iastate.edu/~sondag">Tyler Sondag</a>,
+<a href="http://faculty.mckendree.edu/kian_pokorny/">Kian L. Pokorny</a>,
+and
+<a href="http://www.cs.iastate.edu/~hridesh">Hridesh Rajan</A>
+"<a href="SIGCSE10">Frances: A Tool For Understanding Code Generation</a>,"
+<a href="http://www.sigcse.org/sigcse2010/">SIGCSE '10</a>: The 41st ACM Technical Symposium on Computer Science Education, Milwaukee, WI, March 2010
+</p>
+
+<BR><BR>
+<h2>Invited Talks</h2><BR>
+
+<p>
+<a href="http://www.cs.iastate.edu/~sondag">Tyler Sondag</a>
+and
+<a href="http://www.cs.iastate.edu/~hridesh">Hridesh Rajan</A>
+"<a href="CGO11">Phase-based Tuning for Better Utilization of Performance-Asymmetric Multicore Processors.</a>,"
+<a href="http://ctuning.org/workshop-smart11">SMART '11</a>: 
+Workshop on Statistical and Machine Learning Approaches to Architecture and Compilation, April 2011
+</p>
+
+
+<BR><BR>
+<h2>Refereed Workshop Papers</h2><BR>
+
+<p>
+<a href="http://www.cs.iastate.edu/~sondag">Tyler Sondag</a>
+and
+<a href="http://www.cs.iastate.edu/~hridesh">Hridesh Rajan</a>,
+"<a href="IWMSE09">Phase-guided Thread-to-core Assignment for Improved Utilization of Performance-Asymmetric Multi-Core Processors</a>
+,"IWMSE '09: Proceedings of the 2nd International Workshop on Multicore Software Engineering, Vancouver, Canada, May 2009
+</p>
+
+<p>
+<a href="http://www.cs.iastate.edu/~sondag">Tyler Sondag</a>,
+<a href="http://www.cs.iastate.edu/~viswa">Viswanath Krishnamurthy</a>,
+and
+<a href="http://www.cs.iastate.edu/~hridesh">Hridesh Rajan</a>,
+"<a href="PLOS07">Predictive Thread-to-Core Assignment on a Heterogeneous Multi-core Processor</a>
+," PLOS '07: ACM SIGOPS 4th Workshop on Programming Languages and Operating Systems, Skamania Lodge, Stevenson, Washington, USA, Oct 2007.</p>
+
+
+<BR><BR>
+<h2>Refereed Tutorials</h2><BR>
+
+<p>
+<a href="http://faculty.mckendree.edu/kian_pokorny/">Kian L. Pokorny</a>,
+<a href="http://www.cs.iastate.edu/~sondag">Tyler Sondag</a>,
+and
+<a href="http://www.cs.iastate.edu/~hridesh">Hridesh Rajan</a>,
+"<a href="CCSC10">Connecting High-Level Programming Constructs to Assembly Language Using Frances</a>
+,"CCSC '10: Consortium for Computing Sciences in Colleges, Parkville, Missouri, April 2010
+</p>
+
+
+<BR><BR>
+<h2>Technical Reports</h2><BR>
+
+<p>
+<a href="http://www.cs.iastate.edu/~sondag">Tyler Sondag</a>,
+<a href="http://faculty.mckendree.edu/kian_pokorny/">Kian L. Pokorny</a>
+and
+<a href="http://www.cs.iastate.edu/~hridesh">Hridesh Rajan</a>,
+"Frances-A: A Tool For Easy Realistic Architecture Level Program Visualization".
+Technical Report 10-08, Computer Science, Iowa State University, September 2010
+[<a href="http://archives.cs.iastate.edu/documents/disk0/00/00/06/51/00000651-00/mainTR.pdf">PDF</a>].</p>
+</p>
+
+ 		
+<p>
+<a href="http://www.cs.iastate.edu/~sondag">Tyler Sondag</a>,
+<a href="http://faculty.mckendree.edu/kian_pokorny/">Kian L. Pokorny</a>
+and
+<a href="http://www.cs.iastate.edu/~hridesh">Hridesh Rajan</a>,
+"Frances: A Tool For Understanding Code Generation". Technical Report 09-21, Computer Science, Iowa State University, August  2009
+[<a href="http://archives.cs.iastate.edu/documents/disk0/00/00/06/15/00000615-00/mainTR.pdf">PDF</a>].</p>
+</p>
+
+<p>
+<a href="http://www.cs.iastate.edu/~sondag">Tyler Sondag</a>
+and
+<a href="http://www.cs.iastate.edu/~hridesh">Hridesh Rajan</a>,
+"A Theory of Reads and Writes for Multi-level Caches". Technical Report 09-20, Computer Science, Iowa State University, July 2009
+[<a href="http://archives.cs.iastate.edu/documents/disk0/00/00/06/10/00000610-00/mainTR.pdf">PDF</a>].</p>
+</p>
+
+<p>
+<a href="http://www.cs.iastate.edu/~sondag">Tyler Sondag</a>
+and
+<a href="http://www.cs.iastate.edu/~hridesh">Hridesh Rajan</a>,
+"Phase-guided Auto-Tuning for Improved Utilization of Performance-Asymmetric Multicore Processors". Technical Report 08-14a, Computer Science, Iowa State University, March 2009
+[<a href="http://archives.cs.iastate.edu/documents/disk0/00/00/05/96/00000596-00/mainTR.pdf">PDF</a>].</p>
+</p>
+
+<p>
+<a href="http://www.cs.iastate.edu/~sondag">Tyler Sondag</a>
+and
+<a href="http://www.cs.iastate.edu/~hridesh">Hridesh Rajan</a>,
+"Phase-guided Thread-to-core Assignment for Improved Utilization of Performance-Asymmetric Multi-Core Processors". Technical Report 08-14, Computer Science, Iowa State University, January 2009
+[<a href="http://archives.cs.iastate.edu/documents/disk0/00/00/05/92/00000592-00/mainTR.pdf">PDF</a>].</p>
+</p>
+
+<p>
+<a href="http://www.cs.iastate.edu/~viswa">Viswanath Krishnamurthy</a>,
+<a href="http://www.cs.iastate.edu/~sondag">Tyler Sondag</a>,
+and
+<a href="http://www.cs.iastate.edu/~hridesh">Hridesh Rajan</a>,
+"Predictive Thread-to-Core Assignment on a Heterogeneous Multi-core Processor," Technical Report 07-10, Computer Science, Iowa State University, July 2007
+[<a href="http://archives.cs.iastate.edu/documents/disk0/00/00/05/47/00000547-00/mainTR.pdf">PDF</a>].</p>
+
+<!--
+<BR><BR>
+<h2>Presentations</h2><BR>
+
+<p>
+<a href="http://www.cs.iastate.edu/~sondag">Tyler Sondag</a>
+and
+<a href="http://www.cs.iastate.edu/~hridesh">Hridesh Rajan</a>,
+"Phase-guided Thread-to-core Assignment for Improved Utilization of Performance-Asymmetric Multi-Core Processors," IWMSE '09: Proceedings of the 2nd International Workshop on Multicore Software Engineering, Vancouver, Canada, May 2009</I>
+[<a href="IWMSE09/iwmse09-sondag-presentation.pdf">PDF</a>].</p>
+
+<p>
+<a href="http://www.cs.iastate.edu/~sondag">Tyler Sondag</a>,
+<a href="http://www.cs.iastate.edu/~viswa">Viswanath Krishnamurthy</a>,
+and
+<a href="http://www.cs.iastate.edu/~hridesh">Hridesh Rajan</a>,
+"Predictive Thread-to-Core Assignment on a Heterogeneous Multi-core Processor," PLOS '07: ACM SIGOPS 4th Workshop on Programming Languages and Operating Systems, Skamania Lodge, Stevenson, Washington, USA, Oct 2007
+[<a href="PLOS07/plos07-presentation.pdf">PDF</a>].</p>
+ -->	
+</div>
+
+</td>
+
+<!--#include virtual="../includes/bottombar.html"-->

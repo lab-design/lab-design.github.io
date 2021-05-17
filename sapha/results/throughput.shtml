@@ -1,0 +1,53 @@
+<!--#include virtual="../includes/topbar.html"-->
+<!-- 2ND COLUMN. INSERT COPY -->
+
+<td id="b3" rowspan="2">
+<div class="maintext">
+<div class="title"><h1>Throughput</h1>
+
+Throughput is measured in terms of instructions committed over a fixed interval
+in execution time.
+Our more fin grained techniques improve throughput most since they more accurately
+assign the code to individual cores.
+However, this is at the cost of increased overhead.
+<BR><BR>
+
+<table class="figure">
+<tr><td>
+  <img src="../figures/BB_size_10_0.png">
+</td><td>
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+</td><td>
+  <img src="../figures/INT_size.png">
+</td></tr>
+<tr><td colspan=3>
+<b>Figure 1:</b>
+Throughput improvement
+for <a href="variations.shtml">variations</a> of our technique. 
+</td></tr>
+</table>
+<BR><BR>
+
+<!--
+<center><img src="../figures/BB_lookahead_15_0_0.png"></center>
+-->
+
+<!-- <center><img src="figures/BB_error_15_0.png" width=400></center>
+<center><img src="figures/BB_thresh_15_0_0.png"></center>
+<center><img src="figures/INT_thresh.png"></center> -->
+
+<HR SIZE=1, WIDTH=95%, ALIGN=CENTER, NOSHADE>
+<ol>
+<li>These results are shown in our latest <a href="http://archives.cs.iastate.edu/documents/disk0/00/00/05/96/index.html">technical report</a>.
+</ol>
+
+</div>
+
+
+</td>
+
+<!--#include virtual="../includes/bottombar.html"-->

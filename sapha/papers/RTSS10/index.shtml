@@ -1,0 +1,57 @@
+
+
+<!--#include virtual="../../includes/topbar.html"-->
+<!-- 2ND COLUMN. INSERT COPY -->
+
+<td id="b3" rowspan="2">
+<div class="maintext">
+
+<!-- INSERT TITLE OF THE PAPER BELOW.-->
+<h1>
+A More Precise Abstract Domain For Multi-level Caches for Tighter WCET Analysis
+</h1>
+
+
+<!-- INSERT AUTHOR NAME AS IT APPEARS BELOW -->
+<h2>
+Tyler Sondag and Hridesh Rajan
+</h2>
+
+<!-- INSERT ABSTRACT OF THE PAPER BELOW -->
+<h2 class="bar">Abstract</h2>
+<p>
+Many program analyses and optimizations rely on knowledge of cache behavior. The precision of the underlying cache model is increasingly important with the recent uptake of multi-core and many-core architectures for two reasons. First, per-core cache sizes generally decrease as the number of cores becomes large resulting in more cache misses. Second, large scale sharing of the communication bandwidth to memory increases contention resulting in greater cost of cache misses. We present a sound technique for cache behavior analysis that handles instruction and data caches as well as a variety of multi-level cache policies. The resulting analysis is applicable to current general-purpose processors. Our technique relies on a new abstraction, live caches which model relationships between cache levels to improve accuracy of multi-level cache analysis. In an existing many-core cache configuration, live caches improve L2 hit accuracy by an average of 5.7%. Among others, this reduces the upper bound on memory accesses for worst case execution time (WCET) by an average 6.4%.
+</p>
+
+<!-- INSERT BIBLIOGRAPHIC INFORMATION BELOW, DON'T FORGET to END EACH LINE
+  WITH <BR> -->
+
+<h2 class="bar">Bibliographic Information</h2>
+<p>
+@inproceedings{Sondag-Rajan-10,<BR>
+author = {Tyler Sondag and Hridesh Rajan},<BR>
+title = {A More Precise Abstract Domain For Multi-level Caches for Tighter {WCET} Analysis},<BR>
+booktitle = {RTSS '10: The 31st IEEE Real Time Systems Symposium},<BR>
+location = {San Diego, CA},<BR>
+month = {November},<BR>
+year = {2010},<BR>
+}<BR>
+</p>
+<!--- INSERT LINK TO THE FULL PAPER BELOW AND ADD THE PAPER TO THE CURRENT 
+  DIRECTORY -->
+<!-- <p>Most recent version: <a href="papers/PLOS-2007/skr-predictive-assignment.pdf">PDF</a></p> -->
+<p>Most recent paper version: <a href="rtss10.pdf">PDF</a></p>
+<p>Presentation: <a href="rtss10.pdf">PDF</a></p>
+
+<hr>
+
+<p>Previous version appeared as Technical Report 09-20b, Computer
+Science, Iowa State University, April 1, 2010.  [<a
+href="http://archives.cs.iastate.edu/documents/disk0/00/00/06/32/00000632-00/mainTR.pdf">PDF</a>]</p>
+
+</div>
+
+</td>
+
+<!--#include virtual="../../includes/bottombar.html"-->
+
