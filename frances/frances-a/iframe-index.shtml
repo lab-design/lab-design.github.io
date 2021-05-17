@@ -1,0 +1,23 @@
+<!--#include virtual="../includes/topbar-compact.html"-->
+
+<style type="text/csss">
+iframe {
+ zoom:80%;
+}
+</style>
+
+<td id="b2" rowspan="2">
+<div class="maintext">
+
+<!--#set var="tool_name" value="Frances" -->
+
+
+<iframe id="frances" name="frances" src="http://jhelum.cs.iastate.edu/archit/frances-a.php"
+frameborder="0" scrolling="auto" width="100%" height="850" marginwidth="5" marginheight="5" >
+</iframe>
+
+</div>
+
+</td>
+
+<!--#include virtual="../includes/bottombar.html"-->

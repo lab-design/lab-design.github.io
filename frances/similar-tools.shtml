@@ -1,0 +1,35 @@
+<!--#include virtual="includes/topbar.html"-->
+
+<td id="b3" rowspan="2">
+<div class="maintext">
+
+<!--#set var="tool_name" value="Frances" -->
+
+<h1>Similar Control Flow Tools</h1>
+
+<p>
+Here is a collection of control flow tools similar to Frances.
+If you know of a tool not listed here, please <a href="mailto:sondag@cs.iastate.edu">let us know</a>.
+<ul>
+  <li><a href="http://www.icd.de/es/icd-c/">ICD-C</a>: Gives colored basic blocks annotated with source code in a standard graph format<BR>
+      Our tool differs in the way blocks are layed out.
+      We display blocks in the same way they are layed out by a code generator.
+      Also, our blocks are annotated with assembly code.
+      We do this to help understand the code generation process.
+  <li><a href="http://compilers.cs.ucla.edu/avrora/cfg.html">Avora</a>: Gives shaped nodes to represent procedure entry points, etc. in a standard graph format<BR>
+      Our tool again differs in the way blocks are layed out.
+      We also perform a very different graph coloring based on what control structures blocks are a part of.
+      Finally, we annotate blocks with code rather than addresses.
+  <li><a href="http://suif.stanford.edu/">SUIF</a>
+  <li><a href="http://www.absint.com/aisee/">aiSee</a>: Is a very powerful tool that created a wide range of graphs.  
+      One such example is a control flow graph.
+      However, graphs are shown similar to a flow chart and nodes are annotated with source code.
+</ul>
+</p>
+
+
+</div>
+
+</td>
+
+<!--#include virtual="includes/bottombar.html"-->
