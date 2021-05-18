@@ -238,7 +238,7 @@ h2.bar a:hover {
 }
 
 #hilite2 { /* khaki bar along highlight */
-  background: #fff url(http://www.cs.iastate.edu/~sapha/includes/cc9.gif) left 
+  background: #fff url(/includes/cc9.gif) left 
 repeat-y;
   border-top: 1px solid #666;
   margin: 0;
@@ -355,7 +355,7 @@ ul.sublist {
   }
 
 #indexlabel {
-  background: #000 url(http://www.cs.iastate.edu/~sapha/includes/llcurve.gif) bottom 
+  background: #000 url(/includes/llcurve.gif) bottom 
   left no-repeat;
   width: 42px;
   padding: 2px 2px 2px 5px;

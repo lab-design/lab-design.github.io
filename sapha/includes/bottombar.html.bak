@@ -33,7 +33,7 @@ simply commented out.
 
 <div id="footer">
 <div id="copyright">
-<img src="http://www.cs.iastate.edu/~sapha/includes/ISUbecoming.gif" 
+<img src="/includes/ISUbecoming.gif" 
 alt="Becoming the Best" width="200" height="31" /> 
 
 <p>Department of Computer Science, sondag@cs.iastate.edu.</p>  
