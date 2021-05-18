@@ -13,7 +13,7 @@ layout: page
 {: .research-header}
 
 {% comment %}
-### [Panini](http://web.cs.iastate.edu/~panini/)
+### [Panini](panini/)
 {:.no_toc}
 
 ### Panini {#panini}
@@ -126,7 +126,7 @@ effect. If many modules are responsible for such a concern, a change in it could
 trigger costly and error-prone systemic module revisions. Advanced separation of
 concerns mechanisms help avert these systemic revisions.
 
-[Ptolemy](http://ptolemy.cs.iastate.edu) project is designing an event-based
+[Ptolemy](ptolemy/) project is designing an event-based
 language whose goal is to enable more modular reasoning about advanced
 separation of concerns mechanisms such as implicit invocation and aspects.
 Ptolemy provides quantified-typed events that act as an interface between
@@ -155,7 +155,7 @@ PI: Hridesh Rajan (2010 - 2013).
 ## Past Research Projects
 {: .research-header}
 
-{% include projects_page.html name="Eos" link="http://web.cs.iastate.edu/~eos/" %}
+{% include projects_page.html name="Eos" link="eos/" %}
 
 Eos is a unified aspect-oriented extension for C# on Microsoft® .NET Framework™.
 Eos unifies aspects and objects as classpects. The unified language model
@@ -170,7 +170,7 @@ structures.
 </ul>
 
 
-{% include projects_page.html name="Frances" link="http://web.cs.iastate.edu/~sapha/tools/frances/" %}
+{% include projects_page.html name="Frances" link="frances/" %}
 
 The Frances project produces tools for teaching topics related to code
 generation and mapping high-level languages to low-level langages. First,
@@ -185,7 +185,7 @@ and how high-level code actually executes on a system.
 </ul>
 
 
-{% include projects_page.html name="Nu" link="http://web.cs.iastate.edu/~nu/" %}
+{% include projects_page.html name="Nu" link="nu/" %}
 
 The Nu (pronounced new) project is exploring intermediate language design and
 corresponding virtual machine extensions to better support new features of
@@ -201,7 +201,7 @@ weaving support, etc.
 </ul>
 
 
-{% include projects_page.html name="Sapha" link="http://web.cs.iastate.edu/~sapha/" %}
+{% include projects_page.html name="Sapha" link="sapha/" %}
 
 As multi-core processors are becoming common, vendors are starting to explore
 trade offs between the die size and the number of cores on a die, leading to
@@ -224,7 +224,7 @@ the utilization of these processors.
 </ul>
 
 
-{% include projects_page.html name="Slede" link="http://web.cs.iastate.edu/~slede/" %}
+{% include projects_page.html name="Slede" link="slede/" %}
 
 The Slede project is looking at specification language design and supporting
 verification mechanisms for specifying and verifying cryptographic protocols for
@@ -241,7 +241,7 @@ these networks are utilized.
 </ul>
 
 
-{% include projects_page.html name="Tisa" link="http://web.cs.iastate.edu/~tisa/" %}
+{% include projects_page.html name="Tisa" link="tisa/" %}
 
 The key notion in service-oriented architecture is decoupling clients and
 providers of a service based on an abstract service description, which is used
