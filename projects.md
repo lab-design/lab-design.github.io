@@ -22,7 +22,7 @@ layout: page
 This is crazy. ToC currently doesn't strip out the formatting on the header, so the regular header would link to the website rather than the location on the page. What you see above is a workaround for that.
 {% endcomment %}
 
-{% include projects_page.html name="Panini" link="http://web.cs.iastate.edu/~panini/" %}
+{% include projects_page.html name="Panini" link="panini/" %}
 
 The Panini project is developing the capsule-oriented programming model.
 This model is aimed at making concurrent software
