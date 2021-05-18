@@ -12,7 +12,7 @@
 <td id="b3" rowspan="2">
 <div class="maintext">
 
-<a href="http://ptolemy.cs.iastate.edu/docs/">< Table of Contents</a><BR>
+<a href="/docs/">< Table of Contents</a><BR>
 
 <h2>A Handler in the Ptolemy Language</h2>
 
@@ -56,7 +56,7 @@ This declaration has two parts: a standard object-oriented method
 A binding declaration in Ptolemy associates a method in a class to a set of events
 identified by an event type. An example is shown above on line 3.
 In this binding declaration, the identifier <EM>FEChanged</EM> refers to the type of an 
-<a href="http://ptolemy.cs.iastate.edu/docs/lang-evtype.shtml">
+<a href="/docs/lang-evtype.shtml">
 event type declaration</a>.
 Briefly, an event type declaration gives a type for events that can be 
 signalled in that program.
@@ -109,7 +109,7 @@ form of the binding declaration.</p>
 <p>
 In this binding declaration, a Ptolemy-specific annotation <EM>@When</EM> is used.
 The identifier <EM>FEChanged.class</EM> refers to the type of an 
-<a href="http://ptolemy.cs.iastate.edu/docs/lang-evtype.shtml">
+<a href="/docs/lang-evtype.shtml">
 event type declaration</a>.
 </p>
 

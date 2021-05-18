@@ -12,7 +12,7 @@
 <td id="b3" rowspan="2">
 <div class="maintext">
 
-<a href="http://ptolemy.cs.iastate.edu/docs/">< Table of Contents</a><BR>
+<a href="/docs/">< Table of Contents</a><BR>
 
 <h2>Introduction to the Ptolemy Language</h2>
 
@@ -32,13 +32,13 @@ The aim of the Ptolemy language is to provide
 programming language mechanisms that enable software developers to implement
 these type of requirements (e.g. exception handling) in separate
 modules called 
-<a href="http://ptolemy.cs.iastate.edu/docs/lang-handler.shtml">handlers</a>. 
+<a href="/docs/lang-handler.shtml">handlers</a>. 
 This enables better separation of such concerns.
 In this sense, Ptolemy has the same goals as  
 <a href="http://aosd.net">aspect-oriented languages</a> like 
 <a href="http://eclipse.org/aspectj">AspectJ</a>.
 However, aspect-oriented languages also have certain 
-<a href="http://ptolemy.cs.iastate.edu/docs/what-is-ao.shtml">limitations</a> that 
+<a href="/docs/what-is-ao.shtml">limitations</a> that 
 Ptolemy doesn't have.
 </p>
 
@@ -55,7 +55,7 @@ Like <a href="http://www.cs.iastate.edu/~eos">Eos</a> and unlike
 <a href="http://eclipse.org/aspectj">AspectJ</a>, Ptolemy does not have special 
 syntax for “aspects” or “advice”. Instead it has the capability to replace all 
 events in a specified set with a call to a 
-<a href="http://ptolemy.cs.iastate.edu/docs/lang-handler.shtml">handlers</a>.
+<a href="/docs/lang-handler.shtml">handlers</a>.
 </p>
 
 <h2>Compatibility</h2>

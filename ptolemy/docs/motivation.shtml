@@ -84,7 +84,7 @@ an event's context.
 
 <p> 
 <center>
-<img width="100%" src="http://ptolemy.cs.iastate.edu/images/overview-ptl-obs-aj.png" alt="Overview of the coupling structure"><BR>
+<img width="100%" src="/images/overview-ptl-obs-aj.png" alt="Overview of the coupling structure"><BR>
 <b>Figure 1:</b> Overview of the coupling structure in Observer design pattern, 
 aspect-oriented programming, and Ptolemy's quantified event types.
 </center>

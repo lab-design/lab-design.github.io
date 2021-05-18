@@ -114,7 +114,7 @@ Boa project has been supported in part by the following grants.
 [More information about the Boa project.](http://boa.cs.iastate.edu)
 
 
-{% include projects_page.html name="Ptolemy" link="http://ptolemy.cs.iastate.edu" %}
+{% include projects_page.html name="Ptolemy" link="ptolemy/" %}
 
 A software is created to satisfy user needs (also called concerns). These
 concerns may change often and unanticipatedly. On a concern change, the parts of
