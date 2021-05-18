@@ -44,7 +44,7 @@ Additionally, colors are added to nodes based on what control structure they are
 
 
 <p>
-<center><BIG><a href="http://www.cs.iastate.edu/~sapha/tools/frances/feedback">Take a quick survey</a></BIG></center>
+<center><BIG><a href="/feedback">Take a quick survey</a></BIG></center>
 </p>
 -->
 
@@ -64,7 +64,7 @@ Additionally, colors are added to nodes based on what control structure they are
 <a href="http://jhelum.cs.iastate.edu/cgi-bin/comp-intel.cgi">Code Generator - x86 Intel</a>
 </td></tr>
 <!--
-<a href="http://www.cs.iastate.edu/~sapha/tools/frances/frances/web-int/">Frances-Code generator</a>
+<a href="/frances/web-int/">Frances-Code generator</a>
 </td><td>-->
 <tr><td colspan=2><center>
 <a href="lessons/">Lessons</a>
@@ -72,7 +72,7 @@ Additionally, colors are added to nodes based on what control structure they are
 </table>
 </center>
 <!-- <p class="alignleft">
-<a href="http://www.cs.iastate.edu/~sapha/tools/frances/frances/web-int/">Frances web tool</a>
+<a href="/frances/web-int/">Frances web tool</a>
 <p class="alignright">
 <a href="lessons/">Lessons</a>
 </p> -->
