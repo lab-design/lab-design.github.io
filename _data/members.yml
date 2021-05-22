@@ -9,7 +9,6 @@
   site: http://web.cs.iastate.edu/~hridesh/
   img: hrajan.jpg
 
-
 # Postdocs:
 - name: Breno Dantas Cruz
   status: Postdoctoral Fellow
@@ -44,7 +43,7 @@
 
 - name: Sayem Imtiaz
   status: PhD
-  email: liyp0095@iastate.edu
+  email: sayem@iastate.edu
   site: https://www.cs.iastate.edu/people/sayem-mohammad-imtiaz
   img: simtiaz.jpg
 
