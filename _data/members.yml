@@ -8,14 +8,14 @@
   email: hridesh@iastate.edu
   site: http://web.cs.iastate.edu/~hridesh/
   img: hrajan.jpg
+  
+- name: Dr. Steve M. Kautz
+  status:
+  email: smkautz@iastate.edu
+  site: http://web.cs.iastate.edu/~smkautz/
+  img: skautz.jpg
 
 # Postdocs:
-
-- name: Breno Dantas Cruz
-  status: Postdoctoral Fellow
-  email: bdantasc@iastate.edu
-  site: https://people.cs.vt.edu/bdantasc/
-  img: breno.png
 
 # PhD Candidates:
 
@@ -25,35 +25,35 @@
   site: https://www.cs.iastate.edu/people/shibbir-ahmed
   img: sahmed.jpg
 
-- name: Fraol Batole
+- name: Hamid Bagheri
   status: PhD
-  email: fraol@iastate.edu
-  site: https://www.cs.iastate.edu/fraol
-  img: fraol.jpg
+  email: hbagheri@iastate.edu
+  site: http://www.cs.iastate.edu/people/hamid-bagheri
+  img: hbagheri.jpg
 
 - name: Sumon Biswas
   status: PhD
   email: sumon@iastate.edu
   site: http://web.cs.iastate.edu/~sumon/
   img: sbiswas.jpg
-
-- name: Mohna Chakraborty
+ 
+- name: Yijia Huang
   status: PhD
-  email: mohnac@iastate.edu
-  site: https://www.cs.iastate.edu/mohnac
-  img: mohna.jpeg
-
-- name: Usman Gohar
-  status: PhD
-  email: ugohar@iastate.edu
-  site: https://www.cs.iastate.edu/ugohar
-  img: usman.jpg
+  email: hyj@iastate.edu
+  site: https://www.cs.iastate.edu/people/yijia-huang
+  img: yhuang.png
 
 - name: Sayem Imtiaz
   status: PhD
   email: sayem@iastate.edu
   site: https://www.cs.iastate.edu/people/sayem-mohammad-imtiaz
   img: simtiaz.jpg
+
+- name: Yupei Li
+  status: PhD
+  email: liyp0095@iastate.edu
+  site: https://www.cs.iastate.edu/people/yuepei-li
+  img: blank.png
 
 - name: Samantha Khairunnesa
   status: PhD
@@ -65,13 +65,7 @@
   status: PhD
   email: gnguyen@iastate.edu
   site: https://www.cs.iastate.edu/gnguyen
-  img: giang.jpeg
-
-- name: David OBrien
-  status: PhD
-  email: dobrien@iastate.edu
-  site: https://davidmobrien.github.io/
-  img: david.jpg
+  img: gnguyen.png
 
 - name: Rangeet Pan
   status: PhD
@@ -86,22 +80,11 @@
   img: wardat.jpg
 
 # Master's Students:
-- name: Ruchira Manke
-  status: MS
-  email: rmanke@iastate.edu
-  site: https://tads.research.iastate.edu/people/ruchira-manke
-  img: ruchira.jpg
 
 # Bachelor's Students:
 
-- name: Ian Gluesing
-  status: BS
-  email: ianmg@iastate.edu
-  site: https://www.linkedin.com/in/iangluesing
-  img: ian.jpg
-
-- name: Huaiyao Ma
-  status: BS
-  email: huaiyao@iastate.edu
-  site: https://www.info.iastate.edu/individuals/info/294581/Ma-Huaiyao
-  img: huaiyao.jpg
+- name: Xuan-Long Vu
+  status: B.S.
+  email: longvu@iastate.edu
+  site: http://design.cs.iastate.edu
+  img: vu.jpg
