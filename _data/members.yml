@@ -35,6 +35,12 @@
   site: http://web.cs.iastate.edu/~sumon/
   img: sbiswas.jpg
 
+- name: Mohna Chakraborty
+  status: PhD
+  email: mohnac@iastate.edu
+  site: https://www.cs.iastate.edu/mohnac
+  img: mohna.jpeg
+
 - name: Usman Gohar
   status: PhD
   email: ugohar@iastate.edu
@@ -89,7 +95,7 @@
   status: BS
   email: ianmg@iastate.edu
   site: http://design.cs.iastate.edu
-  img: Ian.jpg
+  img: ian.jpg
 
 - name: Huaiyao Ma
   status: BS
