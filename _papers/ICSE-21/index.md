@@ -6,7 +6,7 @@ title: DeepLocalize Fault Localization for Deep Neural Networks
 bib: |
   @inproceedings{wardat21deeplocalize,
     author = {Mohammad Wardat and Wei Le and Hridesh Rajan},
-    title = {DeepLocalize Fault Localization for Deep Neural Networks},
+    title = {DeepLocalize: Fault Localization for Deep Neural Networks},
     booktitle = {ICSE'21: The 43nd International Conference on Software Engineering},
     location = {Virtual Conference},
     month = {May 23-May 29, 2021},
