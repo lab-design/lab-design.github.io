@@ -9,14 +9,13 @@
   site: http://web.cs.iastate.edu/~hridesh/
   img: hrajan.jpg
 
-- name: Dr. Steve M. Kautz
-  status:
-  email: smkautz@iastate.edu
-  site: http://web.cs.iastate.edu/~smkautz/
-  img: skautz.jpg
-
 
 # Postdocs:
+- name: Breno Dantas Cruz
+  status: Postdoctoral Fellow
+  email: bdantasc@iastate.edu
+  site: https://people.cs.vt.edu/bdantasc/
+  img: breno.png
 
 # PhD Candidates:
 - name: Shibbir Ahmed
@@ -25,35 +24,17 @@
   site: https://www.cs.iastate.edu/people/shibbir-ahmed
   img: sahmed.jpg
 
-- name: Hamid Bagheri
-  status: PhD
-  email: hbagheri@iastate.edu
-  site: http://www.cs.iastate.edu/people/hamid-bagheri
-  img: hbagheri.jpg
-
 - name: Sumon Biswas
   status: PhD
   email: sumon@iastate.edu
-  site: http://web.cs.iastate.edu/~sumon/ 
+  site: http://web.cs.iastate.edu/~sumon/
   img: sbiswas.jpg
-
-- name: Yijia Huang
-  status: PhD
-  email: hyj@iastate.edu
-  site: https://www.cs.iastate.edu/people/yijia-huang
-  img: yhuang.png
 
 - name: Sayem Imtiaz
   status: PhD
   email: liyp0095@iastate.edu
   site: https://www.cs.iastate.edu/people/sayem-mohammad-imtiaz
   img: simtiaz.jpg
-
-- name: Yupei Li
-  status: PhD
-  email: liyp0095@iastate.edu
-  site: https://www.cs.iastate.edu/people/yuepei-li
-  img: blank.png
 
 - name: Samantha Khairunnesa
   status: PhD
@@ -65,7 +46,7 @@
   status: PhD
   email: gnguyen@iastate.edu
   site: http://design.cs.iastate.edu
-  img: gnguyen.png
+  img: giang.jpeg
 
 - name: Rangeet Pan
   status: PhD
@@ -82,9 +63,3 @@
 # Master's Students:
 
 # Bachelor's Students:
-
-- name: Xuan-Long Vu
-  status: BS
-  email: longvu@iastate.edu
-  site: http://design.cs.iastate.edu
-  img: vu.jpg

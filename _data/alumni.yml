@@ -12,6 +12,12 @@
   site: http://design.cs.iastate.edu
   img: zyu.jpeg
 
+- name: Hamid Bagheri
+  status: PhD Spring'21
+  email: hbagheri@iastate.edu
+  site: http://www.cs.iastate.edu/people/hamid-bagheri
+  img: hbagheri.jpg
+
 - name: Dr. Md. Johirul Islam
   status: PhD Summer'20, MS Fall'19
   netid: mislam
@@ -71,7 +77,7 @@
   img: rramu.jpg
 
 - name: Nitin M. Tiwari
-  status: MS Spring'17 
+  status: MS Spring'17
   email: nmtiwari@iastate.edu
   site: http://www.cs.iastate.edu/people/nitin-tiwari
   img: ntiwari.jpg
@@ -109,6 +115,11 @@
 
 
 # B.S. Graduates
+- name: Xuan-Long Vu
+  status: B.S. Fall'20
+  email: longvu@iastate.edu
+  site: http://design.cs.iastate.edu
+  img: vu.jpg
 
 - name: Nathaniel M Wernimont
   status: B.S. Spring'20
