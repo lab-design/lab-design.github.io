@@ -10,6 +10,7 @@
   img: hrajan.jpg
 
 # Postdocs:
+
 - name: Breno Dantas Cruz
   status: Postdoctoral Fellow
   email: bdantasc@iastate.edu
@@ -17,6 +18,7 @@
   img: breno.png
 
 # PhD Candidates:
+
 - name: Shibbir Ahmed
   status: PhD
   email: shibbir@iastate.edu
@@ -91,6 +93,7 @@
   img: ruchira.jpg
 
 # Bachelor's Students:
+
 - name: Ian Gluesing
   status: BS
   email: ianmg@iastate.edu
