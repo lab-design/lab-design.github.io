@@ -56,7 +56,7 @@
 - name: Giang Nguyen
   status: PhD
   email: gnguyen@iastate.edu
-  site: http://design.cs.iastate.edu
+  site: https://www.cs.iastate.edu/gnguyen
   img: giang.jpeg
 
 - name: David OBrien
@@ -89,7 +89,7 @@
   status: BS
   email: ianmg@iastate.edu
   site: http://design.cs.iastate.edu
-  img: ian.jpg
+  img: Ian.jpg
 
 - name: Huaiyao Ma
   status: BS
