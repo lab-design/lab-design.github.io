@@ -24,11 +24,23 @@
   site: https://www.cs.iastate.edu/people/shibbir-ahmed
   img: sahmed.jpg
 
+- name: Fraol Batole
+  status: PhD
+  email: fraol@iastate.edu
+  site: https://www.cs.iastate.edu/fraol
+  img: fraol.jpg
+
 - name: Sumon Biswas
   status: PhD
   email: sumon@iastate.edu
   site: http://web.cs.iastate.edu/~sumon/
   img: sbiswas.jpg
+
+- name: Usman Gohar
+  status: PhD
+  email: ugohar@iastate.edu
+  site: https://www.cs.iastate.edu/ugohar
+  img: usman.jpg
 
 - name: Sayem Imtiaz
   status: PhD
@@ -48,6 +60,12 @@
   site: http://design.cs.iastate.edu
   img: giang.jpeg
 
+- name: David OBrien
+  status: PhD
+  email: dobrien@iastate.edu
+  site: https://davidmobrien.github.io/
+  img: david.jpg
+
 - name: Rangeet Pan
   status: PhD
   email: rangeet@iastate.edu
@@ -61,5 +79,21 @@
   img: wardat.jpg
 
 # Master's Students:
+- name: Ruchira Manke
+  status: MS
+  email: rmanke@iastate.edu
+  site: https://tads.research.iastate.edu/people/ruchira-manke
+  img: ruchira.jpg
 
 # Bachelor's Students:
+- name: Ian Gluesing
+  status: BS
+  email: ianmg@iastate.edu
+  site: http://design.cs.iastate.edu
+  img: ian.jpg
+
+- name: Huaiyao Ma
+  status: BS
+  email: huaiyao@iastate.edu
+  site: http://design.cs.iastate.edu
+  img: huaiyao.jpg
