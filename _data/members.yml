@@ -9,16 +9,10 @@
   site: http://web.cs.iastate.edu/~hridesh/
   img: hrajan.jpg
 
-- name: Dr. Steve M. Kautz
-  status:
-  email: smkautz@iastate.edu
-  site: http://web.cs.iastate.edu/~smkautz/
-  img: skautz.jpg
-
-
 # Postdocs:
 
 # PhD Candidates:
+
 - name: Shibbir Ahmed
   status: PhD
   email: shibbir@iastate.edu
