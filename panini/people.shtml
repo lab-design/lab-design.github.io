@@ -39,7 +39,7 @@ Programming Language</title>
 <table>
 <tr>
 <td>
-<img src="http://design.cs.iastate.edu/images/hrajan.jpg"
+<img src="/images/hrajan.jpg"
 	width="127" alt="Hridesh Rajan" />
 </td><td><p>
 <a name="rajan"
@@ -55,7 +55,7 @@ reached at <a href="mailto:hridesh@iastate.edu">hridesh@iastate.edu</a>.
 </p></td></tr>
 
 <tr><td>
-<img src="http://design.cs.iastate.edu/images/skautz.jpg"
+<img src="/images/skautz.jpg"
 	width="127" alt="Steven M. Kautz" />
 </td><td><p>
 <b> <a name="kautz"
@@ -72,7 +72,7 @@ He can be reached via the e-mail address provided on his web-page.
 </p></td></tr>
 
 <tr><td>
-<img src="http://design.cs.iastate.edu/images/elin.jpg"
+<img src="/images/elin.jpg"
 	width="127" alt="Eric Lin" /> 
 </td><td><p>
 <b> <a name="lin"
@@ -88,7 +88,7 @@ He can be reached via the e-mail address provided on his web-page.
 
 
 <tr><td>
-<img src="http://design.cs.iastate.edu/images/gupadhyaya.gif"
+<img src="/images/gupadhyaya.gif"
 	width="127" alt="Ganesha Upadhayaya" /> 
 </td><td><p>
 <b> <a name="upadhyaya"
@@ -101,7 +101,7 @@ He can be reached at <a href="mailto:spam@iastate.edu">ganeshau@iastate.edu</a>.
 </p></td></tr>
 
 <tr><td>
-<img src="http://design.cs.iastate.edu/images/mbagherzadeh.jpg"
+<img src="/images/mbagherzadeh.jpg"
 	width="127" alt="Mehdi Bagherzadeh" /> 
 </td><td><p>
 <b><a name="bagherzadeh" href="http://www.cs.iastate.edu/~mbagherz">Mehdi Bagherzadeh</a></b> is a 
@@ -111,7 +111,7 @@ at <a href="http://www.iastate.edu"> Iowa State University</a>, where he works w
 His research interests are in software specification and verification and in 
 programming language design and implementation.  
 Mehdi is currently working on the problems of 
-<a href="http://design.cs.iastate.edu/papers/Modularity-15/">pervasive and oblivous interference</a> 
+<a href="/papers/Modularity-15/">pervasive and oblivous interference</a> 
 in concurrent programming 
 in the context of <a href="http://paninij.org">the Panini programming language</a>. 
 He also contributes to the <a href="http://www.cs.iastate.edu/~ptolemy">Ptolemy</a> project. 
@@ -126,7 +126,7 @@ He can be reached at <a href="mailto:mbagherz@iastate.edu">mbagherz@iastate.edu<
 <table>
 
 <tr><td>
-<img src="http://design.cs.iastate.edu/images/ylong.jpg"
+<img src="/images/ylong.jpg"
         width="127" alt="Yuheng Long" />
 </td><td><p>
 <b> <a name="long"
@@ -147,7 +147,7 @@ csgzlong@iastate.edu</a>.
 
 
 <tr><td>
-<img src="http://design.cs.iastate.edu/images/smooney.jpg"
+<img src="/images/smooney.jpg"
         width="127" alt="Sean Mooney" />
 </td><td><p>
 <b> <a name="mooney"
@@ -155,8 +155,8 @@ csgzlong@iastate.edu</a>.
 earned his Masters degree in the <a href="http://www.cs.iastate.edu">
 Department of Computer Science</a> at the <a href="http://www.iastate.edu">
 Iowa State University</a>, where he worked with Dr. Hridesh Rajan.
-His Masters thesis proposed a <a href="http://design.cs.iastate.edu/papers/thesis/MooneyMS.pdf">unified design</a> 
-for <a href="http://design.cs.iastate.edu/papers/ICSE-15a/">capsules</a>. 
+His Masters thesis proposed a <a href="/papers/thesis/MooneyMS.pdf">unified design</a> 
+for <a href="/papers/ICSE-15a/">capsules</a>. 
 His research interests at the time were in programming languages and software
 engineering. Sean was mostly interested in compiler design and
 implementation and has been instrumental in the design and
@@ -165,7 +165,7 @@ implementation of JastAddJ-based Panini compiler. He can be reached at
 </p></td></tr>
 
 <tr><td>
-<img src="http://design.cs.iastate.edu/images/rfernando.jpg"
+<img src="/images/rfernando.jpg"
 	width="127" alt="Rex Fernando" />
 </td><td><p>
 <b> <a name="fernando"
@@ -181,7 +181,7 @@ He can be reached at <a	href="mailto:rex@cs.wisc.edu">rex@cs.wisc.edu</a>.
 </p></td></tr>
 
 <tr><td>
-<img src="http://design.cs.iastate.edu/images/skabala.jpg"
+<img src="/images/skabala.jpg"
 	width="127" alt="Sarah Kabala" />
 </td><td><p>
 <b> <a name="kabala"
@@ -196,7 +196,7 @@ She can be reached at <a href="mailto:skabala@iastate.edu">skabala@iastate.edu</
 </p></td></tr>
 
 <tr><td>
-<img src="http://design.cs.iastate.edu/images/lszakacs.jpg"
+<img src="/images/lszakacs.jpg"
 	width="127" alt="Lorand Szakacs" />
 </td><td><p>
 <b> <a name="lorand"

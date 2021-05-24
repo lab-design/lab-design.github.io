@@ -292,7 +292,7 @@ system Navigation {
 <b>References</b>
 <ol>
 	<li>Hridesh Rajan, Steven M. Kautz, Eric Lin, Sarah Kabala, Ganesha Upadhyaya, Yuheng Long, Rex Fernando, and Lor��nd Szak��cs. 
-        <a href="http://design.cs.iastate.edu/papers/TR-13-01">Capsule-oriented Programming</a>,
+        <a href="/papers/TR-13-01">Capsule-oriented Programming</a>,
         Tech. Report #13-01, Computer Science, Iowa State University, Feb 28, 2013.
 	<li>ACM/IEEE-CS Joint Task Force. Computer science curricula
         2013 (CS2013). Technical report, ACM/IEEE, 2012.

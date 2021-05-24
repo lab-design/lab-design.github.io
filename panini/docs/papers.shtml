@@ -58,7 +58,7 @@ document.write("<h5>Copyright &copy; 2006-" + fullYear + ", Iowa State Universit
     <a href="http://www.cs.iastate.edu/~ganeshau/">Bryan Shrader</a>, 
     <a href="http://www.cs.iastate.edu/~lorand/">Lorand Szakacs</a>, and 
     <a href="http://www.cs.iastate.edu/~fernanre/">Rex Fernando</a>.
-    <a href="http://design.cs.iastate.edu/papers/TR-13-01">Capsule-oriented Programming</a>,
+    <a href="/papers/TR-13-01">Capsule-oriented Programming</a>,
     Tech. Report 13-01, Computer Science, Iowa State University, July 25, 2013.
     </p>
     </li>
@@ -69,7 +69,7 @@ document.write("<h5>Copyright &copy; 2006-" + fullYear + ", Iowa State Universit
 	<p>
     <a href="http://www.cs.iastate.edu/~csgzlong/">Yuheng Long</a>, and
     <a href="http://www.cs.iastate.edu/~hridesh/">Hridesh Rajan</a>.
-    <a href="http://design.cs.iastate.edu/papers/TR-12-02">
+    <a href="/papers/TR-12-02">
     Trust, but verify: Optimistic Effect Analysis for Reusable Code</a>, 
     Technical Report 12-02, Computer Science, Iowa State University, April 2012.
     </p>
@@ -85,7 +85,7 @@ document.write("<h5>Copyright &copy; 2006-" + fullYear + ", Iowa State Universit
 	<p>
     <a href="http://www.cs.iastate.edu/~sondag/">Tyler Sondag</a>, and
     <a href="http://www.cs.iastate.edu/~hridesh/">Hridesh Rajan</a>.
-    <a href="http://design.cs.iastate.edu/papers/CGO-10">
+    <a href="/papers/CGO-10">
     Phase-based Tuning for Better Utilization of Performance-Asymmetric Multicore Processors</a>, 
     in the proceedings of the International Symposium on Code Generation and Optimization (CGO), 
     April 2011, Chamonix, France.
@@ -100,7 +100,7 @@ document.write("<h5>Copyright &copy; 2006-" + fullYear + ", Iowa State Universit
  <ul>
 	<li>
 	<p><a href="http://www.cs.iastate.edu/~hridesh/">Hridesh Rajan</a>. 
-    <a href="http://design.cs.iastate.edu/papers/FoSER-10">Building Scalable Software Systems in the Multicore Era</a>,
+    <a href="/papers/FoSER-10">Building Scalable Software Systems in the Multicore Era</a>,
     in the proceedings of the
     2010 FSE/SDP Workshop on the Future of Software Engineering, Santa Fe, NM, November 2010.</p>
     <p> This paper describes the overall hypothesis of the Panini project and discusses
@@ -112,7 +112,7 @@ document.write("<h5>Copyright &copy; 2006-" + fullYear + ", Iowa State Universit
     <a href="http://www.cs.iastate.edu/~hridesh/">Hridesh Rajan</a>,
     <a href="http://www.cs.iastate.edu/~smkautz/">Steven M. Kautz</a>, and
     <a href="http://www.cs.iastate.edu/~wrowcliff/">Wayne Rowcliffe</a>.
-    <a href="http://design.cs.iastate.edu/papers/ONWARD-10">
+    <a href="/papers/ONWARD-10">
     Concurrency by Modularity: Design Patterns, a Case in Point</a>,
     in the proceedings of the Onward! Conference, October 17-21, 2010,
     Reno-Tahoe, USA.
@@ -130,7 +130,7 @@ document.write("<h5>Copyright &copy; 2006-" + fullYear + ", Iowa State Universit
     <a href="http://www.cs.iastate.edu/~smooney/">Sean Mooney</a>,
     <a href="http://www.cs.iastate.edu/~sondag/">Tyler Sondag</a>, and
     <a href="http://www.cs.iastate.edu/~hridesh/">Hridesh Rajan</a>.
-    <a href="http://design.cs.iastate.edu/papers/GPCE-10">Implicit Invocation Meets Safe, Implicit Concurrency</a>, 
+    <a href="/papers/GPCE-10">Implicit Invocation Meets Safe, Implicit Concurrency</a>, 
     in the proceedings of the Ninth International Conference on Generative 
     Programming and Component Engineering. (GPCE'10), October 10-13, 2010, 
     Eindhoven, The Netherlands.
@@ -152,7 +152,7 @@ document.write("<h5>Copyright &copy; 2006-" + fullYear + ", Iowa State Universit
    <a href="http://www.cs.iastate.edu/~smooney/">Sean Mooney</a>,
    <a href="http://www.cs.iastate.edu/~sondag/">Tyler Sondag</a>, and
    <a href="http://www.cs.iastate.edu/~hridesh/">Hridesh Rajan</a>.
-   <a href="http://design.cs.iastate.edu/papers/TR-09-28">Panini: Reconciling Concurrency and Modularity in Design</a>.
+   <a href="/papers/TR-09-28">Panini: Reconciling Concurrency and Modularity in Design</a>.
    Technical Report 09-28b, Computer Science, Iowa State University, March 25, 2010.
    </p>
    <p>
@@ -164,7 +164,7 @@ document.write("<h5>Copyright &copy; 2006-" + fullYear + ", Iowa State Universit
    <p>
    <a href="http://www.cs.iastate.edu/~sondag/">Tyler Sondag</a> and
    <a href="http://www.cs.iastate.edu/~hridesh/">Hridesh Rajan</a>. 
-   <a href="http://design.cs.iastate.edu/papers/IW-MSE-09">
+   <a href="/papers/IW-MSE-09">
    Phase-guided Thread-to-core Assignment for Improved Utilization 
    of Performance-Asymmetric Multi-Core Processors</a>. 
    2nd International Workshop on Multicore Software Engineering (IWMSE '09), May 2009, Vancouver, Canada.
@@ -183,7 +183,7 @@ document.write("<h5>Copyright &copy; 2006-" + fullYear + ", Iowa State Universit
    <a href="http://www.cs.iastate.edu/~sondag/">Tyler Sondag</a>, 
    <a href="http://www.cs.iastate.edu/">Viswanath Krishnamurthy</a>, and
    <a href="http://www.cs.iastate.edu/~hridesh/">Hridesh Rajan</a>. 
-   <a href="http://design.cs.iastate.edu/papers/PLOS-2007/">
+   <a href="/papers/PLOS-2007/">
    Predictive Thread-to-Core Assignment on a Heterogeneous Multi-core 
    Processor</a>. 
    PLOS '07: ACM SIGOPS 4th Workshop on Programming Languages and 

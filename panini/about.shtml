@@ -23,7 +23,7 @@
 <h2><a name="capsule">Capsule-oriented programming</a></h2>
 
 <p>
-<a href="http://design.cs.iastate.edu/papers/TR-13-01">
+<a href="/papers/TR-13-01">
 Capsule-oriented programming </a>
 is a new programming style designed to address 
 the challenges of concurrent programming.

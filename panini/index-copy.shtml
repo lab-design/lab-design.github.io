@@ -93,7 +93,7 @@ avoidance, race freedom, open effects, deterministic semantics, modules, actors"
   
   <h2>Goals</h2>
   <ul>
-  <li>Solve <a href="http://design.cs.iastate.edu/papers/MODULARITY-15/">pervasive and oblivious interference</a> problems, 
+  <li>Solve <a href="/papers/MODULARITY-15/">pervasive and oblivious interference</a> problems, 
       enable modular reasoning about concurrent programs</li>
   <li>Implicit concurrency to eliminate usage of unsafe features like threads & locks</li>
   <li>Integrated compile-time analysis of concurrency hazards, so errors are caught early</li>
@@ -134,19 +134,19 @@ avoidance, race freedom, open effects, deterministic semantics, modules, actors"
  <h2>Key Publications</h2>
  <p>
     Hridesh Rajan,
-    <a href="http://design.cs.iastate.edu/papers/ICSE-15a/">
+    <a href="/papers/ICSE-15a/">
     Capsule-oriented Programming</a>,
     ICSE 2015, NIER track.
  </p>
  <p>
     Mehdi Bagherzadeh and Hridesh Rajan,
-    <a href="http://design.cs.iastate.edu/papers/MODULARITY-15/">
+    <a href="/papers/MODULARITY-15/">
     Panini: A Concurrent Programming Model for Solving Pervasive and Oblivious Interference</a>,
     Modularity 2015.
  </p>	
  <p>
     Ganesha Upadhayaya and Hridesh Rajan, 
-    <a href="http://design.cs.iastate.edu/papers/OOPSLA-15">Effectively 
+    <a href="/papers/OOPSLA-15">Effectively 
     Mapping Linguistic Abstractions for 
     Message-passing Concurrency to Threads on the Java Virtual Machine</a>,
     OOPSLA 2015.
@@ -158,7 +158,7 @@ avoidance, race freedom, open effects, deterministic semantics, modules, actors"
  </p> 
 <!-- <p>
     Hridesh Rajan, Steven M. Kautz, and Wayne Rowcliffe.
-    <a href="http://design.cs.iastate.edu/papers/ONWARD-10">
+    <a href="/papers/ONWARD-10">
     Concurrency by Modularity: Design Patterns, a Case in Point</a>,
     OOPSLA/Onward! Conference, Oct. 2010.
  </p> -->
