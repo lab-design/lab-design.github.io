@@ -243,7 +243,7 @@ table.HxLinkTable /* Keep in sync with general table settings below */
 	border-color: #999999;
 	background-color: #999999; 
 	font-size: 100%; /* Text in Table is same size as text outside table */
-	behavior:url(hxlinktable.htc); /* Attach the behavior to link elements. */
+	behavior:url(http://web.cs.iastate.edu/~nu/doc/net/hxlinktable.htc); /* Attach the behavior to link elements. */
 	}
 table.HxLinkTable th, table.HxLinkTable td /* Keep in sync with general table settings below */
 	{ 

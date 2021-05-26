@@ -106,7 +106,7 @@ img
 
 #container
 {
-	background: url(/~nu/images/bg.gif) repeat-y 50% 0;
+	background: url(../images/bg.gif) repeat-y 50% 0;
 	border: 1px solid #666;
 	border-top: 0;
 	margin: auto;
@@ -477,7 +477,7 @@ body>#footer
 
 #index ul li a#indexlabel
 {
-	background: #000 url(/~nu/images/indexcurve.gif) bottom left no-repeat;
+	background: #000 url(../images/indexcurve.gif) bottom left no-repeat;
 	width: 83px;
 	letter-spacing: 2px;
 }

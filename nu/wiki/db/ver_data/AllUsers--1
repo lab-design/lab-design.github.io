@@ -1,6 +1,0 @@
-a:6:{s:6:"markup";s:1:"2";s:6:"author";s:28:"The PhpWiki programming team";s:9:"author_id";s:28:"The PhpWiki programming team";s:8:"pagetype";s:8:"wikitext";s:5:"mtime";i:1179174555;s:8:"%content";s:198:"Here is a list of all users who have once successfully logged in,
-created their own home page or have saved UserPreferences at least once.
-----
-<?plugin AllUsers?>
-----
-Help:WikiPlugin PluginManager";}
