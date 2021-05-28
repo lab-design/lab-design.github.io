@@ -9,32 +9,20 @@
   site: http://web.cs.iastate.edu/~hridesh/
   img: hrajan.jpg
 
-- name: Dr. Steve M. Kautz
-  status:
-  email: smkautz@iastate.edu
-  site: http://web.cs.iastate.edu/~smkautz/
-  img: skautz.jpg
-
-
 # Postdocs:
 
 # PhD Candidates:
+
 - name: Shibbir Ahmed
   status: PhD
   email: shibbir@iastate.edu
   site: https://www.cs.iastate.edu/people/shibbir-ahmed
   img: sahmed.jpg
 
-- name: Hamid Bagheri
-  status: PhD
-  email: hbagheri@iastate.edu
-  site: http://www.cs.iastate.edu/people/hamid-bagheri
-  img: hbagheri.jpg
-
 - name: Sumon Biswas
   status: PhD
   email: sumon@iastate.edu
-  site: http://web.cs.iastate.edu/~sumon/ 
+  site: http://web.cs.iastate.edu/~sumon/
   img: sbiswas.jpg
 
 - name: Yijia Huang

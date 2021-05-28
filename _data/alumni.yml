@@ -6,6 +6,12 @@
   site: https://sites.google.com/site/nguyenanhhoan/home
   img: hnguyen.jpg
 
+- name: Hamid Bagheri
+  status: PhD
+  email: hbagheri@iastate.edu
+  site: http://www.cs.iastate.edu/people/hamid-bagheri
+  img: hbagheri.jpg
+
 - name: Dr. Zhen Yu
   status: Postdoctoral Fellow
   email: yuzhen3301@gmail.com
@@ -71,7 +77,7 @@
   img: rramu.jpg
 
 - name: Nitin M. Tiwari
-  status: MS Spring'17 
+  status: MS Spring'17
   email: nmtiwari@iastate.edu
   site: http://www.cs.iastate.edu/people/nitin-tiwari
   img: ntiwari.jpg
