@@ -37,12 +37,6 @@
   site: https://www.cs.iastate.edu/people/sayem-mohammad-imtiaz
   img: simtiaz.jpg
 
-- name: Yupei Li
-  status: PhD
-  email: liyp0095@iastate.edu
-  site: https://www.cs.iastate.edu/people/yuepei-li
-  img: blank.png
-
 - name: Samantha Khairunnesa
   status: PhD
   email: sammy@iastate.edu
@@ -71,8 +65,4 @@
 
 # Bachelor's Students:
 
-- name: Xuan-Long Vu
-  status: BS
-  email: longvu@iastate.edu
-  site: http://design.cs.iastate.edu
-  img: vu.jpg
+
