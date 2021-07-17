@@ -30,12 +30,24 @@
   email: sumon@iastate.edu
   site: http://web.cs.iastate.edu/~sumon/
   img: sbiswas.jpg
-
+  
+- name: Usman Gohar
+  status: PhD
+  email: ugohar@iastate.edu
+  site: https://www.cs.iastate.edu/ugohar
+  img: usman.jpg
+  
 - name: Sayem Imtiaz
   status: PhD
   email: liyp0095@iastate.edu
   site: https://www.cs.iastate.edu/people/sayem-mohammad-imtiaz
   img: simtiaz.jpg
+  
+- name: David OBrien
+  status: PhD
+  email: dobrien@iastate.edu
+  site: https://davidmobrien.github.io/
+  img: david.jpg
 
 - name: Samantha Khairunnesa
   status: PhD
@@ -63,6 +75,23 @@
 
 # Master's Students:
 
+- name: Ruchira Manke
+  status: MS
+  email: rmanke@iastate.edu
+  site: https://tads.research.iastate.edu/people/ruchira-manke
+  img: ruchira.jpg
+  
 # Bachelor's Students:
 
+- name: Ian Gluesing
+  status: BS
+  email: ianmg@iastate.edu
+  site: http://design.cs.iastate.edu
+  img: ian.jpg
+
+- name: Huaiyao Ma
+  status: BS
+  email: huaiyao@iastate.edu
+  site: http://design.cs.iastate.edu
+  img: huaiyao.jpg
 
