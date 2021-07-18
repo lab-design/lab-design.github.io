@@ -1,7 +1,7 @@
 ---
 title: Our paper on Empirical Study on Model Fairness is selected for ESEC/FSE'20
 links:
-- {title: Papers, link: "papers/ESEC-FSE-20a/" }
+- {title: Papers, link: "https://design.cs.iastate.edu/papers/ESEC-FSE-20a/ml-fairness.pdf" }
 ---
 
 
