@@ -1,14 +1,14 @@
 ---
 title: Biswas Presenting Python Dataset at MSR 2019
 links:
-  - {title: Papers, link: "http://design.cs.iastate.edu/papers/" }
+  - {title: Papers, link: "https://design.cs.iastate.edu/papers/MSR-19/" }
 ---
 
-Sumon Biswas will describe our brand new dataset at the 
-[MSR 2019 Conference](https://2019.msrconf.org/details/msr-2019-Data-Showcase/15/Boa-Meets-Python-A-Boa-Dataset-of-Data-Science-Software-in-Python-Language). 
+Sumon Biswas will describe our brand new dataset at the
+[MSR 2019 Conference](https://2019.msrconf.org/details/msr-2019-Data-Showcase/15/Boa-Meets-Python-A-Boa-Dataset-of-Data-Science-Software-in-Python-Language).
 
-This work describes a new dataset that we have created to study Data Science 
-software written using Python. Python is arguably the most popular language 
+This work describes a new dataset that we have created to study Data Science
+software written using Python. Python is arguably the most popular language
 for writing Data Science software due to the large number of libraries available.
 
 The paper's abstract:
@@ -19,4 +19,3 @@ The paper's abstract:
 
 We look forward to collaborating with other MSR researchers who intend
 to use this dataset.
-

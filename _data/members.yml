@@ -24,7 +24,7 @@
   email: shibbir@iastate.edu
   site: https://www.cs.iastate.edu/people/shibbir-ahmed
   img: sahmed.jpg
-  
+
 - name: Fraol Batole
   status: PhD
   email: fraol@iastate.edu
@@ -34,21 +34,21 @@
 - name: Sumon Biswas
   status: PhD
   email: sumon@iastate.edu
-  site: http://web.cs.iastate.edu/~sumon/
+  site: https://sumonbis.github.io/
   img: sbiswas.jpg
-  
+
 - name: Usman Gohar
   status: PhD
   email: ugohar@iastate.edu
   site: https://www.cs.iastate.edu/ugohar
   img: usman.jpg
-  
+
 - name: Sayem Imtiaz
   status: PhD
   email: liyp0095@iastate.edu
   site: https://www.cs.iastate.edu/people/sayem-mohammad-imtiaz
   img: simtiaz.jpg
-  
+
 - name: David OBrien
   status: PhD
   email: dobrien@iastate.edu
@@ -86,7 +86,7 @@
   email: rmanke@iastate.edu
   site: https://tads.research.iastate.edu/people/ruchira-manke
   img: ruchira.jpg
-  
+
 # Bachelor's Students:
 
 - name: Ian Gluesing
@@ -100,4 +100,3 @@
   email: huaiyao@iastate.edu
   site: https://www.info.iastate.edu/individuals/info/294581/Ma-Huaiyao
   img: huaiyao.jpg
-
