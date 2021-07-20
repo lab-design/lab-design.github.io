@@ -2,7 +2,7 @@
 key: ESEC-FSE-21
 permalink: /papers/ESEC-FSE-21/
 short_name: ESEC-FSE '21
-title: Fair Preprocessing: Towards Understanding Compositional Fairness of Data Transformers in Machine Learning Pipeline
+title: "Fair Preprocessing: Towards Understanding Compositional Fairness of Data Transformers in Machine Learning Pipeline"
 bib: |
   @inproceedings{biswas21fair,
     author = {Sumon Biswas and Hridesh Rajan},
