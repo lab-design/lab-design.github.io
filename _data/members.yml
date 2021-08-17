@@ -73,6 +73,12 @@
   site: https://rangeetpan.github.io
   img: pan.jpg
 
+- name: Mojdeh Saadati
+  status: PhD
+  email: msaadati@iastate.edu
+  site: https://www.cs.iastate.edu/people/mojdeh-saadati
+  img: saadati_mojdeh.jpeg
+
 - name: Mohammad Wardat
   status: PhD
   email: wardat@iastate.edu
