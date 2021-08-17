@@ -55,12 +55,6 @@
   site: https://davidmobrien.github.io/
   img: david.jpg
 
-- name: Samantha Khairunnesa
-  status: PhD
-  email: sammy@iastate.edu
-  site: http://www.cs.iastate.edu/people/samantha-syed-khairunnesa
-  img: skhairunnesa.jpg
-
 - name: Giang Nguyen
   status: PhD
   email: gnguyen@iastate.edu
