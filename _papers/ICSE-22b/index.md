@@ -2,7 +2,7 @@
 key: ICSE-22b
 permalink: /papers/ICSE-22b/
 short_name: ICSE '22
-title: 
+title: "DeepDiagnosis: Automatically Diagnosing Faults and Recommending Actionable Fixes in Deep Learning Programs"
 bib: |
   @inproceedings{wardat2021deepdiagnosis,
     author={Mohammad Wardat and Breno Dantas Cruz and Wei Le and Hridesh Rajan},
@@ -20,5 +20,5 @@ kind: conference
 download_link: deepdiagnosis.pdf
 publication_year: 2022
 tags:
-  - boa, deep learning, fault localization
+  - boa
 ---

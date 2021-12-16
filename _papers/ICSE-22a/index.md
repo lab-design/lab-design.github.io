@@ -2,7 +2,7 @@
 key: ICSE-22a
 permalink: /papers/ICSE-22a/
 short_name: ICSE '22
-title: Decomposing Convolutional Neural Networks into Reusable and Replaceable Modules
+title: "Decomposing Convolutional Neural Networks into Reusable and Replaceable Modules"
 bib: |
   @inproceedings{pan22decomposing,
     author = {Rangeet Pan and Hridesh Rajan},
