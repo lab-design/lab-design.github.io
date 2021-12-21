@@ -34,7 +34,7 @@ bib: |
       transformers. Finally, we showed how the local fairness of a preprocessing
       stage composes in the global fairness of the pipeline. We used the fairness
       composition to choose appropriate downstream transformer that mitigates
-      unfairness in the machine learning pipeline.
+      unfairness in the machine learning (ML) pipeline.
     }
   }
 kind: conference
