@@ -25,7 +25,7 @@
   site: https://www.cs.iastate.edu/people/shibbir-ahmed
   img: sahmed.jpg
 
-- name: Fraol Batole
+- name: Fraol A. Batole
   status: PhD
   email: fraol@iastate.edu
   site: https://www.cs.iastate.edu/fraol
@@ -55,23 +55,23 @@
   site: https://davidmobrien.github.io/
   img: david.jpg
 
-- name: Samantha Khairunnesa
-  status: PhD
-  email: sammy@iastate.edu
-  site: http://www.cs.iastate.edu/people/samantha-syed-khairunnesa
-  img: skhairunnesa.jpg
-
 - name: Giang Nguyen
   status: PhD
   email: gnguyen@iastate.edu
   site: https://www.cs.iastate.edu/gnguyen
-  img: gnguyen.png
+  img: giang.jpeg
 
 - name: Rangeet Pan
   status: PhD
   email: rangeet@iastate.edu
   site: https://rangeetpan.github.io
   img: pan.jpg
+
+- name: Mojdeh Saadati
+  status: PhD
+  email: msaadati@iastate.edu
+  site: https://www.cs.iastate.edu/people/mojdeh-saadati
+  img: saadati.jpg
 
 - name: Mohammad Wardat
   status: PhD
