@@ -1,5 +1,5 @@
 ---
-key: ICSE-22
+key: ICSE-22a
 permalink: /papers/ICSE-22a/
 short_name: ICSE '22
 title: "The Art and Practice of Data Science Pipelines: A Comprehensive Study of Data Science Pipelines In Theory, In-The-Small, and In-The-Large"
@@ -25,7 +25,7 @@ bib: |
       three-pronged comprehensive study to answer this for the state-of-the-art,
       data science in-the-small, and data science in-the-large. Our study analyzes
       three datasets: a collection of 71 proposals for data science pipelines and
-      related concepts in theory, a collection of over 105 implementations of 
+      related concepts in theory, a collection of over 105 implementations of
       curated data science pipelines from Kaggle competitions to understand data
       science in-the-small, and a collection of 21 mature data science projects
       from GitHub to understand data science in-the-large. Our study has led to
