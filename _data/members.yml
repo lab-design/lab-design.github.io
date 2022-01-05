@@ -17,6 +17,12 @@
   site: https://people.cs.vt.edu/bdantasc/
   img: breno.jpg
 
+- name: Ali Ghanbari
+  status: Postdoctoral Fellow
+  email: alighanbari@iastate.edu
+  site: https://ali-ghanbari.github.io/
+  img: alighanbari.jpeg
+
 # PhD Candidates:
 
 - name: Shibbir Ahmed
@@ -28,7 +34,7 @@
 - name: Fraol Batole
   status: PhD
   email: fraol@iastate.edu
-  site: https://www.cs.iastate.edu/fraol
+  site: https://fraolbatole.github.io/
   img: fraol.jpg
 
 - name: Sumon Biswas
