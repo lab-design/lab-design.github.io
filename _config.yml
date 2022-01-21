@@ -18,7 +18,7 @@ email: hridesh@iastate.edu
 description: >
   TODO
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://fraolbatole.github.io/demo"
+url: "https://lab-design.github.io/"
 
 # Build settings
 markdown: kramdown
