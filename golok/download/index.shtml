@@ -1,0 +1,68 @@
+<!--#include virtual="../includes/topbar.html"-->
+<!-- 2ND COLUMN. INSERT COPY -->
+
+<td rowspan="2">
+<div class="maintext">
+<h2> Downloading Golok </h2>
+
+<p>This web-page makes several versions of our tool available. 
+Each of the newer versions include capabilities of the older 
+versions. If you want to try out the tool, you should probably
+get the latest version. On the other hand, if you intend to 
+compare two we describe their differences below.</p>
+
+
+<h2 class=bar>ICFEM 2016: Golok version 1.3 (2016)</h2>
+<p>
+This is the version of Golok handles parameterized systems
+with spurious loops. For instance, in a protocol
+with linear topology where processes pass a token from their left to 
+their right, the number of passings of the token is dependent on
+the number of processes in the protocol. This version includes:
+</p>
+ <UL>
+ <LI> Support for parameterized systems with parameter-dependent behavior</LI>
+    <LI> Extraction of the Promela model of the parameterized system from the input specification. The model
+    could then be verified using the Spin Model Checker.</LI>
+        </UL>
+
+	<p>
+	This version can be downloaded from <a href="golok-1.3.shtml">here</a>.
+	</p>
+
+
+<h2 class=bar>Golok version 1.2 (Released Mar 2010)</h2>
+<p>
+This is the version of Golok is for
+<!--corresponding to our <a href="LINK-TO-TR">technical report on</a>-->
+verifying  multi-parameterized systems corresponding to our <a href="../papers/icfem-2010.pdf">ICFEM paper</a>. 
+It provides all features that were included in 1.1. 
+In addition to those features, it also includes:
+</p>
+ <UL>
+   <LI> Support for including processes of more than one type.</LI>
+   <LI> Number of significant optimizations to improve the scalability of Golok </LI>
+ </UL>
+
+<p>
+This version can be downloaded from <a href="golok-1.2.shtml">here</a>.
+</p>
+
+<h2 class=bar> Golok version 1.1 (Released June 2009)</h2>
+<p>
+This is the version of Golok corresponding to our <a href="../papers/esec-fse-09.pdf">ESEC/FSE paper</a>. 
+It provides the following features:
+</p>
+ <UL>
+  <LI> language constructs for expressing behavioral automata, </LI>
+  <LI> language constructs for expressing system topology, </LI>
+  <LI> language constructs for expressing initial configuration,</LI>
+  <LI> and implementation of our algorithm for computing cut-off value for a single-parameter system.</LI>
+ </UL>
+<p>
+This version can be downloaded from <a href="golok-1.1.shtml">here</a>.
+</p>
+
+</div>
+</td>
+<!--#include virtual="../includes/bottombar.html"-->

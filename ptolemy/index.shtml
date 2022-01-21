@@ -1,0 +1,125 @@
+<!--#include virtual="includes/top.html"-->
+<title>The Ptolemy Programming Language: Balancing Separation of Concerns and Modular Reasoning</title>
+<meta name="description" content="The Ptolemy language adds quantified, typed events to object-oriented languages, producing a language that has many of the advantages of both implicit-invocation and aspect-oriented languages. Download Ptolemy and learn how to compile, run and develop using better modularity. This project was started by Hridesh Rajan from Iowa State University and Gary T. Leavens from University of Central Florida." />
+<meta name="keywords" content="ptolemy, quantified, event, events, types, implicit, invocation, aspect, oriented, extension, java, C#, enhanced, reasoning, explict, declaration, Hridesh Rajan, Gary Leavens, modular reasoning aspects, pointcut fragility solution, separate compilation, incremental compilation, download, compiler, download ptolemy,
+translucid, contract, embedded contracts, greybox, specification, grey, box, gray, structural, refinement" />
+
+<!-- PAGE SPECIFIC STYLING -->
+<style type="text/css">
+/*Moves content border down for the top panel*/
+.content {
+	background-position: left 203px;
+}
+</style>
+
+</head>
+
+<body>
+<div class="body-container">
+    <header>
+        <h1><a href="index.shtml" name="pgtop">Ptolemy Programming Language</a></h1>
+        <h2>PROGRAMMING LANGUAGE</h2>
+    </header>
+ <div class="content">
+  <div class="top">
+  <h1>Better Modularity</h1>
+  <p>
+    Ptolemy is a programming language whose goals are to 
+    improve a software engineer's ability to separate conceptual 
+    concerns. <em>Ptolemy strives to balance expressiveness and 
+   modular reasoning for aspect-oriented software development.</em>
+  </p>
+  <div class="button"><a href="download/">DOWNLOAD PTOLEMY</a></div>
+</div>
+<div class="top-nav">
+ <nav>
+  <ul>
+   <li><a href="about.shtml">About</a></li>
+   <li><a href="people.shtml">People</a></li>
+   <li><a href="download/">Downloads</a></li>
+   <li><a href="forums.shtml">Forums</a></li>
+   <li><a href="docs/">Documentation</a></li>
+   <li><a href="faq.shtml" id="toplast">FAQs</a></li>
+  </ul>
+ </nav>
+</div>
+<div class="main-content">
+ <div class="col1">
+  <h2>Purpose</h2>
+  <p>
+   A software is created to satisfy user needs AKA <EM>concerns</EM>.
+   These concerns may change often and unanticipatedly.
+   On a concern change, the parts of the software, AKA <EM>modules</EM>, 
+   responsible for that concern must also be revised.
+   A module revision incurs costs and may introduce new errors.
+   It is thus desirable to minimize module revisions.
+   Some concerns, called <EM>crosscutting concerns</EM> e.g. security, 
+   fault tolerance, accountability, etc; have systemic effect.
+   If many modules are responsible for such a concern,
+   a change in it could trigger costly and error-prone 
+   systemic module revisions.
+   The Ptolemy language is designed to 
+   help avert these systemic revisions.   
+  </p>
+  <h2>Design Goals</h2>
+  <ul>
+   <li>
+   Enable modularization of crosscutting concerns, 
+   while preserving encapsulation of existing object-oriented (OO) code.
+   </li>
+   <li>
+   Enable well-defined interfaces between OO 
+   code and crosscutting code.
+   </li>
+   <li>
+   Enable separate type-checking, compilation, 
+   and modular reasoning of both OO and crosscutting code.
+   </li>
+  </ul>
+  <p>
+   All these goals are important for scalability of software development 
+   processes but harder to achieve in current programming languages.
+  </p>
+</div>
+<div class="col2">
+ <h2>Getting Started</h2>
+ <p>
+   The Ptolemy compiler offers support for compiling and 
+   running programs from command-line as well as from within Ant. 
+   To get started with setting up an environment for running 
+   Ptolemy programs please see our page on 
+   <a href="docs/running.shtml">installing and running the compiler</a>.
+ </p>
+ <p>
+   Once you have downloaded and installed the compiler, you could 
+   look at the examples included in the distribution. 
+   Or alternatively, you could also consult the 
+   <a href="docs/index.shtml">programming guide</a> for Ptolemy.
+ </p>
+ <h2>Key Publications</h2>
+ <p>Hridesh Rajan and Gary T. Leavens.
+   <a href="papers/ECOOP.08.paper.pdf">Ptolemy: A Language with Quantified, Typed Events</a>.
+   ECOOP 2008.</p> 
+ <p>Mehdi Bagherzadeh, Hridesh Rajan, Gary T. Leavens, and Sean Mooney.
+   <a href="http://www.cs.iastate.edu/~design/papers/AOSD-11"> 
+   Translucid Contracts: Expressive Specification and Modular Verification for Aspect-Oriented Interfaces</a>.
+   AOSD 2011.</p> 
+ <p>Robert Dyer, Hridesh Rajan, and Yuanfang Cai.
+   <a href="http://www.cs.iastate.edu/~design/papers/AOSD-12"> 
+   An Exploratory Study of the Design Impact of Language Features for Aspect-oriented Interfaces</a>.
+   AOSD 2012.</p>  
+ <p><a href="papers/">More ...</a> </p>
+</div>
+<div class="col3">
+ <h2>News</h2>
+ <div class="twitter-feed">
+  <ul id="twitter_update_list"></ul>
+  <div class="twitter-button"><a href="http://twitter.com/#!/ptolemyj">FOLLOW PTOLEMY ON TWITTER</a></div>	
+ </div>
+</div>
+				
+<!-- Twitter Feed -->
+<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
+<script type="text/javascript" src="http://api.twitter.com/1/statuses/user_timeline.json?screen_name=ptolemyj&amp;count=5&amp;include_rts=true&amp;callback=twitterCallback2"></script>
+
+<!--#include virtual="includes/bottom.html"-->

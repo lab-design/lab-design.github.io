@@ -1,0 +1,85 @@
+<!--#include virtual="includes/template/headTop.htm"-->  
+
+<!-- INSERT TITLE -->
+<title>Things to do around Ames, IA</title>
+
+<!--#include virtual="includes/template/headBottom.htm"-->  
+
+<!-- Text for the actual webpage start -->
+
+<h2 class="bar">Music and Social Gatherings</h2>
+<p>
+During Summer: 
+<a href="http://www.amesjaycees.com/aoths.htm">Ames on the Half Shell</a> - Friday evening 
+concerts in the Bandshell Park (Intersection of Duff Ave and 6th Street).
+</p>
+
+
+<h2 class="bar">Sports</h2>
+<p> During Football and Basketball Season: Check out the schedule for 
+<a href="http://www.cyclones.com/">Iowa State Cyclones</a>.</p>
+
+
+<h2 class="bar">Theater</h2>
+<UL>
+<LI>Stephens Auditorium at <a href="http://www.center.iastate.edu/">Iowa State Events Center</a></LI>
+</UL>
+
+
+<h2 class="bar">Other Sources of Ongoing Events</h2>
+
+<UL>
+<LI> <a href="http://www.ames365.com/">http://www.ames365.com/</a>:
+ a community website for Ames locals, includes an events calendar 
+ (sometimes slow, try searching on google and looking at the cached 
+ version of the website).</LI>
+
+<LI> <a href="http://event.iastate.edu/">http://event.iastate.edu/</a>: 
+Iowa State University's official events calendar</LI>
+
+<LI> <a href="http://www.ames.lib.ia.us/">http://www.ames.lib.ia.us/</a>:
+Ames Public Library's events calendar</LI>
+
+</UL>
+
+<h2 class="bar"> Finally, if you can't find anything, there is Cinema</h2>
+
+<UL>
+
+<LI><a href="http://www.cinemark.com/theater_showtimes.asp?theater_id=320">
+Cinema @ North Grand Mall</a>: dollar theater in Ames, well it's not quite a dollar, 
+but still super cheap to watch a movie, if you are willing to wait for a 
+month or so to watch it.</LI>
+
+<LI><a href="http://www.cinemark.com/theater_showtimes.asp?theater_id=264">Movie
+12</a>: another slightly more expensive theater on South Duff Avenue.</LI>
+
+<LI><a href="http://www.cinemark.com/theater_showtimes.asp?theater_id=319">
+Movies in Campustown</a>: usually plays great movies.</LI>
+
+</UL>
+
+<!-- Text for the actual webpage end -->
+
+<!--#include virtual="includes/template/footer.htm"--> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

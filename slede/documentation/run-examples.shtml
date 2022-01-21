@@ -1,0 +1,120 @@
+<!--#include virtual="../includes/topbar.html"-->
+<!-- 2ND COLUMN. INSERT COPY -->
+
+<td rowspan="2">
+<div class="maintext">
+<h1> Running Examples </h1>
+<br>
+<table>
+<tr>
+<td>
+1. Run Eclipse.
+</td>
+</tr>
+<tr>
+<td>
+<br>
+</td>
+</tr>
+<tr>
+<td>
+2. Click on Windows -> Open Perspective -> Other.
+</td>
+</tr>
+<tr>
+<td>
+<br>
+</td>
+</tr>
+<tr>
+<td>
+3. Choose TinyOS and then press OK.
+<br>
+<br>
+<br>
+<a href=figures/open-perspective-tinyos.png><img width=50% height=50% src=figures/open-perspective-tinyos.png></a>
+</td>
+</tr>
+<tr>
+<td>
+<br>
+</td>
+</tr>
+<tr>
+<td>
+4. Click on File -> Import.
+</td>
+</tr>
+<tr>
+<td>
+<br>
+</td>
+</tr>
+<tr>
+<td>
+5. Choose File System under TinyOS and then press Next.
+<br>
+<br>
+<br>
+<a href=figures/import-example.png><img width=80% height=80% src=figures/import-example.png></a>
+</td>
+</tr>
+<tr>
+<td>
+<br>
+</td>
+</tr>
+<tr>
+<td>
+6. Enter the location of one of the examples extracted from the downloaded <i>Slede</i> package. 
+<p>
+<p>
+Enter a project name.
+<p>
+Choose the pc option for the platform and then press Finish.
+<br>
+<br>
+<br>
+<a href=figures/import-wizard.png><img width=90% height=90% src=figures/import-wizard.png></a>
+</td>
+</tr>
+<tr>
+<td>
+<br>
+</td>
+</tr>
+<tr>
+<td colspan=2>
+7. Errors displayed next to <i>SensorM.nc</i> file are due to a bug of the TinyOS plugin (not Slede plugin) for TinyOS ver 1.1.0. Compilation is not affected though.
+<p>
+Open the file of extension <i>sld</i>.
+<br>
+<br>
+<br>
+<a alt="Verification Configuration" href=figures/keychain.png><img height=100% width=100% src=figures/keychain.png></a>
+</td>
+</tr>
+<tr>
+<td>
+<br>
+</td>
+</tr>
+<tr>
+<td>
+8. Any change and saving of the verificiation configuration file will trigger the model extraction and verification processes. 
+<p>
+Once a violaion of property is detected (if there is any), refresh the folder of the protocol implementation to get the counterexample (in counterexample.txt file).
+<br>
+<br>
+<br>
+<a href=figures/counterexample-generation.png><img width=100% height=100% src=figures/counterexample-generation.png></a>
+<br>
+<br>
+<br>
+<a href=figures/counterexample.png><img width=100% height=100% src=figures/counterexample.png></a>
+</td>
+</tr>
+</table>
+</td>
+
+<!--#include virtual="../includes/bottombar.html"-->

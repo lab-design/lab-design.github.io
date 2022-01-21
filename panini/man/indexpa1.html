@@ -1,0 +1,258 @@
+<!DOCTYPE html> 
+<html> 
+<head><title>I Introduction</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:light,regular,bold&amp;v1' rel='stylesheet' type='text/css' /> 
+<base href="/man/" /> 
+<link href="/style.css" rel="stylesheet" type="text/css" /> 
+<link href="/images/panini.ico" rel="shortcut icon" type="image/x-icon" /> 
+<!-- SYNTAX HIGHLIGHTING --> 
+<script type="text/javascript" src="/syntax/scripts/shCore.js"></script> 
+<script type="text/javascript" src="/syntax/scripts/shBrushBash.js"></script> 
+<script type="text/javascript" src="/syntax/scripts/shBrushJava.js"></script> 
+<script type="text/javascript" src="/syntax/scripts/shBrushPanini.js"></script> 
+<script type="text/javascript" src="/syntax/scripts/shBrushXml.js"></script> 
+<link type="text/css" rel="stylesheet" href="/syntax/styles/shCore.css"/> 
+<link type="text/css" rel="stylesheet" href="/syntax/styles/shThemeDefault.css"/> 
+<script type="text/javascript"> 
+//SyntaxHighlighter.config.clipboardSwf = 'scripts/clipboard.swf'; 
+SyntaxHighlighter.all(); 
+</script> 
+<!-- END SYTNAX HIGHLIGHTING --> 
+  
+<style type="text/css">  
+.col2-toc h2 {  
+margin: 0 0 10px;  
+}  
+</style>  
+ 
+<meta name="description"  
+content="The Panini Programming Guide helps introduce users to  
+the features and syntax of the Panini Programming Language.  
+Panini is a capsule-oriented programming language whose goals are  
+to ease development of correct, scalable, and portable software  
+for multicore and manycore, platforms.  
+Panini strives to reconcile modularity and concurrency goals  
+in software development." />  
+<meta name="keywords" content="panini, programming, guide, introduction, tutorial,  
+panini, capsule, capsules, capsule-oriented,  
+capsule-oriented programming, better modularity better concurrency,  
+concurrency, modularity, events, types, modules, implicit concurrency,  
+sequential consistency, data race freedom due to shared data, ease of use,  
+quantified, event, types, Hridesh Rajan, Yuheng Long,  
+Rex Fernando, Eric Lin, synergy between modularity and concurrency,  
+determinstic semantics, data race freedom, deadlock freedom,  
+multicore, multi-core, manycore, many-core, heterogeneous,  
+performance-asymmetric, platform portability, download, compiler,  
+download panini, concurrent, patterns, open effects, guarded effects,  
+explicit concurrency, pitfalls, data races, race conditions, deadlock  
+avoidance, race freedom, open effects, deterministic semantics, modules, actors" />  
+ 
+<!-- PAGE METADATA --> <link rel="stylesheet" type="text/css" href="index.css" /> 
+  
+<style type="text/css">  
+.lstlisting .label {  
+width: 100%;  
+font-size: 8pt;  
+}  
+</style>  
+  
+<style type="text/css">  
+.caption .content {  
+background-image: none;  
+background-position: left 12px;  
+background-repeat: no-repeat;  
+margin-left: 0;  
+margin-right: auto;  
+padding: 0 0 100px 50px;  
+width: 1070px;  
+}  
+</style>  
+  
+<style type="text/css">  
+.content {  
+width: 1070px;  
+}  
+</style>  
+  
+<style type="text/css">  
+.main-content {  
+background-image: url("/images/maincontent-right.png");  
+background-position:1028px 1px;  
+background-repeat: no-repeat;  
+width: 1021px;  
+}  
+</style>  
+  
+<style type="text/css">  
+.main-content .caption{  
+font-style: italic;  
+font-size: 8pt;  
+text-align: left;  
+width: 80 
+margin: 0 !important ;  
+}  
+</style>  
+</head>  
+<body>  
+<div class="body-container">  
+<header>  
+<h1><a href="index.html" name="pgtop">Panini Programming Language</a></h1>  
+<h2>PROGRAMMING LANGUAGE</h2>  
+</header>  
+<div class="content">  
+<div class="top-nav">  
+<nav>  
+<ul>  
+<li><a href="/about.shtml">About</a></li>  
+<li><a href="/people.shtml">People</a></li>  
+<li><a href="/download/">Downloads</a></li>  
+<li><a href="/papers.shtml">Research</a></li>  
+<li><a href="/man/">Manual</a></li>  
+<li><a href="/faq.shtml" id="toplast">FAQs</a></li>  
+</ul>  
+</nav>  
+</div>  
+<div class="main-content">  <h1 class="partHead"><span class="titlemark">Part&#x00A0;I<br /></span><a 
+ id="x3-2000I"></a>Introduction</h1>
+                                                                         
+
+                                                                         
+<!--l. 130--><p class="indent" >
+                                                                         
+
+                                                                         
+</p>
+   <div class="chapterTOCS">
+   <span class="chapterToc" >1 <a 
+href="indexch1.html#x4-30001">Overview</a></span>
+<br />   <span class="chapterToc" >2 <a 
+href="indexch2.html#x5-40002">Motivation</a></span>
+<br />   &#x00A0;<span class="sectionToc" >2.1 <a 
+href="indexch2.html#x5-50002.1">Concurrency: A Pressing Need</a></span>
+<br />   &#x00A0;<span class="sectionToc" >2.2 <a 
+href="indexch2.html#x5-60002.2">Running Example</a></span>
+<br />   &#x00A0;<span class="sectionToc" >2.3 <a 
+href="indexch2.html#x5-70002.3">Difficult Concurrency-related Design Decisions</a></span>
+<br />   <span class="chapterToc" >3 <a 
+href="indexch3.html#x6-80003">Getting Started</a></span>
+<br />   &#x00A0;<span class="sectionToc" >3.1 <a 
+href="indexch3.html#x6-90003.1">Panini&#8217;s Goals</a></span>
+<br />   &#x00A0;<span class="sectionToc" >3.2 <a 
+href="indexch3.html#x6-100003.2">Hello World!</a></span>
+<br />   &#x00A0;<span class="sectionToc" >3.3 <a 
+href="indexch3.html#x6-110003.3">Compiling and running Hello World!</a></span>
+<br />   &#x00A0;<span class="sectionToc" >3.4 <a 
+href="indexch3.html#x6-120003.4">Decomposing a Program into Capsules</a></span>
+<br />   &#x00A0;<span class="sectionToc" >3.5 <a 
+href="indexch3.html#x6-130003.5">Implicit Concurrency in Capsule-oriented Programs</a></span>
+<br />   <span class="chapterToc" >4 <a 
+href="indexch4.html#x8-140004">Capsule-oriented Design</a></span>
+<br />   &#x00A0;<span class="sectionToc" >4.1 <a 
+href="indexch4.html#x8-150004.1">Asteroids in Panini</a></span>
+<br />   &#x00A0;<span class="sectionToc" >4.2 <a 
+href="indexch4.html#x8-160004.2">Architecture and Design</a></span>
+<br />   &#x00A0;<span class="sectionToc" >4.3 <a 
+href="indexch4.html#x8-170004.3">Implementation</a></span>
+<br />   &#x00A0;<span class="sectionToc" >4.4 <a 
+href="indexch4.html#x8-180004.4">Analysis of Benefits</a></span>
+<br />   &#x00A0;<span class="sectionToc" >4.5 <a 
+href="indexch4.html#x8-190004.5">Compiling and running Asteroids!</a></span>
+   </div>
+                                                                         
+
+                                                                         
+                                                                         
+
+                                                                         
+</p>
+                                                                         
+
+                                                                         
+                                                                         
+
+                                                                         
+</p>
+                                                                         
+
+                                                                         
+                                                                         
+
+                                                                         
+</p>
+                                                                         
+
+                                                                         
+   <div class="page-nav"><a 
+href="indexli1.html" >&#x003C; PREVIOUS</a></div><div class="page-nav"><a 
+href="indexpa1.html" >^ RETURN TO TOP</a></div><div class="page-nav"><a 
+href="indexpa2.html" >NEXT &#x003E;</a></div>    
+</div><!--end-main-content-->  
+</div><!--end-content-->  
+</div> <!--end-body-container-->  
+ 
+<div class="footer-container">  
+<div class="footer">  
+<div class="bot-nav">  
+<nav>  
+<ul>  
+<li><a href="/about.shtml">About</a></li>  
+<li><a href="/people.shtml">People</a></li>  
+<li><a href="/download/">Downloads</a></li>  
+<li><a href="/papers.shtml">Research</a></li>  
+<li><a href="/man/">Documentation</a></li>  
+<li><a href="/faq.shtml" id="botlast">FAQs</a></li>  
+</ul>  
+</nav>  
+</div>  
+<div class="legal">  
+<div id="isu">Iowa State University</div>  
+<p id="copyright">  
+<script type="text/javascript">  
+copyright=new Date()  
+fullYear=copyright.getFullYear();  
+document.write("Copyright &copy; " + fullYear + " Iowa State University of Science and Technology. All rights reserved.")  
+</script>  
+</p>  
+<p id="credits">  
+These pages describe work carried out on the design  
+and the implementation of the Panini programming language.  
+The PI is  
+<a href="http://www.cs.iastate.edu/\protect \unhbox \voidb@x \penalty \@M \relax \unhbox \voidb@x \special {t4ht@+&{35}x00A0{59}}x{}hridesh/">Hridesh Rajan</a> from  
+<a href="http://www.cs.iastate.edu">Iowa State University</a>.  
+This work is supported in part by  
+the US <a href="http://www.nsf.gov">National Science Foundation</a> (NSF) under grants  
+<a href="http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=0846059">CCF-08-46059</a>,  
+<a href="http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=1017334">CCF-10-17334</a>,  
+<a href="http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=1117937">CCF-11-17937</a>, and  
+<a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1423370">CCF-14-23370</a> to Rajan.  
+Any opinions, findings, and conclusions or recommendations  
+expressed in this material are those of the author(s) and do not  
+necessarily reflect the views of the <a href="http://www.nsf.gov">NSF</a>.  
+</p>  
+</div>  
+<div class="links">  
+<h3>Related Sites</h3>  
+<ul>  
+<li><a href="http://www.cs.iastate.edu/\protect \unhbox \voidb@x \penalty \@M \relax \unhbox \voidb@x \special {t4ht@+&{35}x00A0{59}}x{}design/">Labratory for Software Design</a></li>  
+<li><a href="http://www.cs.iastate.edu/">Computer Science Department</a></li>  
+<li><a href="http://www.iastate.edu/">Iowa State University</a></li>  
+</ul>  
+</div>  
+</div>  
+</div>  
+ 
+<script type="text/javascript">  
+//Analytics account -- http://paninij.sourceforge.net  
+var _gaq = _gaq || [];  
+_gaq.push(['_setAccount', 'UA-15725511-1']);  
+_gaq.push(['_trackPageview']);  
+ 
+(function() {  
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;  
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';  
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);  
+})();  
+</script>  
+</body> 
+</html>

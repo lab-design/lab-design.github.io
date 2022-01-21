@@ -1,0 +1,396 @@
+<!DOCTYPE html> 
+<html> 
+<head><title>15 FAQs</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:light,regular,bold&amp;v1' rel='stylesheet' type='text/css' /> 
+<base href="/man/" /> 
+<link href="/style.css" rel="stylesheet" type="text/css" /> 
+<link href="/images/panini.ico" rel="shortcut icon" type="image/x-icon" /> 
+<!-- SYNTAX HIGHLIGHTING --> 
+<script type="text/javascript" src="/syntax/scripts/shCore.js"></script> 
+<script type="text/javascript" src="/syntax/scripts/shBrushBash.js"></script> 
+<script type="text/javascript" src="/syntax/scripts/shBrushJava.js"></script> 
+<script type="text/javascript" src="/syntax/scripts/shBrushPanini.js"></script> 
+<script type="text/javascript" src="/syntax/scripts/shBrushXml.js"></script> 
+<link type="text/css" rel="stylesheet" href="/syntax/styles/shCore.css"/> 
+<link type="text/css" rel="stylesheet" href="/syntax/styles/shThemeDefault.css"/> 
+<script type="text/javascript"> 
+//SyntaxHighlighter.config.clipboardSwf = 'scripts/clipboard.swf'; 
+SyntaxHighlighter.all(); 
+</script> 
+<!-- END SYTNAX HIGHLIGHTING --> 
+  
+<style type="text/css">  
+.col2-toc h2 {  
+margin: 0 0 10px;  
+}  
+</style>  
+ 
+<meta name="description"  
+content="The Panini Programming Guide helps introduce users to  
+the features and syntax of the Panini Programming Language.  
+Panini is a capsule-oriented programming language whose goals are  
+to ease development of correct, scalable, and portable software  
+for multicore and manycore, platforms.  
+Panini strives to reconcile modularity and concurrency goals  
+in software development." />  
+<meta name="keywords" content="panini, programming, guide, introduction, tutorial,  
+panini, capsule, capsules, capsule-oriented,  
+capsule-oriented programming, better modularity better concurrency,  
+concurrency, modularity, events, types, modules, implicit concurrency,  
+sequential consistency, data race freedom due to shared data, ease of use,  
+quantified, event, types, Hridesh Rajan, Yuheng Long,  
+Rex Fernando, Eric Lin, synergy between modularity and concurrency,  
+determinstic semantics, data race freedom, deadlock freedom,  
+multicore, multi-core, manycore, many-core, heterogeneous,  
+performance-asymmetric, platform portability, download, compiler,  
+download panini, concurrent, patterns, open effects, guarded effects,  
+explicit concurrency, pitfalls, data races, race conditions, deadlock  
+avoidance, race freedom, open effects, deterministic semantics, modules, actors" />  
+ 
+<!-- PAGE METADATA --> <link rel="stylesheet" type="text/css" href="index.css" /> 
+  
+<style type="text/css">  
+.lstlisting .label {  
+width: 100%;  
+font-size: 8pt;  
+}  
+</style>  
+  
+<style type="text/css">  
+.caption .content {  
+background-image: none;  
+background-position: left 12px;  
+background-repeat: no-repeat;  
+margin-left: 0;  
+margin-right: auto;  
+padding: 0 0 100px 50px;  
+width: 1070px;  
+}  
+</style>  
+  
+<style type="text/css">  
+.content {  
+width: 1070px;  
+}  
+</style>  
+  
+<style type="text/css">  
+.main-content {  
+background-image: url("/images/maincontent-right.png");  
+background-position:1028px 1px;  
+background-repeat: no-repeat;  
+width: 1021px;  
+}  
+</style>  
+  
+<style type="text/css">  
+.main-content .caption{  
+font-style: italic;  
+font-size: 8pt;  
+text-align: left;  
+width: 80 
+margin: 0 !important ;  
+}  
+</style>  
+</head>  
+<body>  
+<div class="body-container">  
+<header>  
+<h1><a href="index.html" name="pgtop">Panini Programming Language</a></h1>  
+<h2>PROGRAMMING LANGUAGE</h2>  
+</header>  
+<div class="content">  
+<div class="top-nav">  
+<nav>  
+<ul>  
+<li><a href="/about.shtml">About</a></li>  
+<li><a href="/people.shtml">People</a></li>  
+<li><a href="/download/">Downloads</a></li>  
+<li><a href="/papers.shtml">Research</a></li>  
+<li><a href="/man/">Manual</a></li>  
+<li><a href="/faq.shtml" id="toplast">FAQs</a></li>  
+</ul>  
+</nav>  
+</div>  
+<div class="main-content">  <h2 class="chapterHead"><span class="titlemark">Chapter&#x00A0;15</span><br /><a 
+ id="x22-8400015"></a>FAQs</h2>
+   <h3 class="sectionHead"><span class="titlemark">15.1    </span> <a 
+ id="x22-8500015.1"></a>FAQs about the Language</h3>
+      <ul class="itemize1">
+      <li class="itemize">What is capsule-oriented programming?
+      </li>
+      <li class="itemize">Who may benefit from capsule-oriented programming?
+      </li>
+      <li class="itemize">Who may NOT benefit from capsule-oriented programming?
+      </li>
+      <li class="itemize">What do I need to know about concurrency in order to learn the Panini
+      language?
+      </li>
+      <li class="itemize">Will I be able to use my existing object-oriented code?
+      </li>
+      <li class="itemize">How are capsules different from Erlang actors?
+      </li>
+      <li class="itemize">How are capsules different from Scala actors?
+      </li>
+      <li class="itemize">How are capsules different from actors in general?
+      </li>
+      <li class="itemize">Why are capsules different from actors?
+      </li>
+      <li class="itemize">How are capsules different from standard object-oriented classes?
+      </li>
+      <li class="itemize">Why did you introduce new syntax for capsules and system? <br 
+class="newline" /></li></ul>
+                                                                         
+
+                                                                         
+<!--l. 17--><p class="noindent" ><br 
+class="newline" /><span 
+class="ptmb8t-x-x-120">What is Capsule-oriented Programming?</span><br 
+class="newline" />Capsule-oriented programming is a programming paradigm that aims to ease
+development of concurrent software systems by allowing abstraction from
+concurrency-related concerns. <br 
+class="newline" />
+</p><!--l. 22--><p class="indent" >   Capsule-oriented programming entails breaking down program logic into distinct
+parts called capsule declarations and composing these parts to form the complete
+program using system declaration.<br 
+class="newline" />
+</p><!--l. 26--><p class="indent" >   <br 
+class="newline" /><span 
+class="ptmb8t-x-x-120">Who may benefit from capsule-oriented programming?</span><br 
+class="newline" />Capsule-oriented programming is a suitable approach for programmers who don&#8217;t
+want to be distracted by concurrency concerns so that they can focus on their
+software&#8217;s logic. If you want your programming language to take care of your
+concurrency concerns just like Java and C# handles your memory management
+concerns then capsules-oriented programming is for you.<br 
+class="newline" />
+</p><!--l. 33--><p class="indent" >   <br 
+class="newline" /><span 
+class="ptmb8t-x-x-120">Who may NOT benefit from capsule-oriented programming?</span><br 
+class="newline" />Capsule-oriented programming may not be a suitable approach for a software project
+if it is preferred in that project to manage every aspect of concurrency manually. This
+is similar to why Java and C# are not suitable, if a software project requires manual
+memory management and explicit pointer arithmetic.<br 
+class="newline" />
+</p><!--l. 39--><p class="indent" >   <br 
+class="newline" /><span 
+class="ptmb8t-x-x-120">What do I need to know about concurrency in order to learn the Panini</span>
+<span 
+class="ptmb8t-x-x-120">language?</span><br 
+class="newline" />Nothing. <br 
+class="newline" />
+</p><!--l. 42--><p class="indent" >   <br 
+class="newline" /><span 
+class="ptmb8t-x-x-120">Will I be able to use my existing object-oriented code?</span><br 
+class="newline" />Mostly. All existing classes that do not have a main method would work as is. It is also
+advisable to avoid using explicit concurrency features, e.g. threads, locks,
+synchronized, etc since they may interfere with Panini&#8217;s internal mechanisms.<br 
+class="newline" />
+</p><!--l. 48--><p class="indent" >   <br 
+class="newline" /><span 
+class="ptmb8t-x-x-120">How are capsules different from Erlang actors?</span><br 
+class="newline" />Capsules are different from Erlang actors in that capsules ensure messages arrive in
+sequentially consistent order, as well as providing mutable state within the
+actor.<br 
+class="newline" />
+</p><!--l. 53--><p class="indent" >   <br 
+class="newline" /><span 
+class="ptmb8t-x-x-120">How are capsules different from Scala actors?</span><br 
+class="newline" />Capsules are different from Scala actors because of the enforced confinement of a
+capsule&#8217;s state.<br 
+class="newline" />
+</p><!--l. 57--><p class="indent" >   <br 
+class="newline" /><span 
+class="ptmb8t-x-x-120">How are capsules different from actors in general?</span><br 
+class="newline" />Here is a precise comparison, </p><hr class="figure" /><div class="figure" 
+>
+                                                                         
+
+                                                                         
+                                                                         
+
+                                                                         
+
+<!--l. 62--><p class="noindent" ><img 
+src="figures/actor_difference.png" alt="PIC"  
+ />
+                                                                         
+
+                                                                         
+</p>
+   </div><hr class="endfigure" />
+<!--l. 65--><p class="indent" >   <br 
+class="newline" /><span 
+class="ptmb8t-x-x-120">Why are capsules different from actors?</span><br 
+class="newline" />The decision to make different choices in capsule&#8217;s design was based on two factors.
+</p>
+      <ul class="itemize1">
+      <li class="itemize">To  decrease  the  impedance  mismatch  between  mainstream  languages
+      like  Java,  C#,  etc  and  the  capsule-oriented  programming  model.  In  the
+      resulting design, inter-capsule procedure calls look like ordinary method
+      calls in mainstream programming languages.
+      </li>
+      <li class="itemize">We also simplified the language model a bit to make it feasible to build
+      efficient, precise, and more automated analysis and compilation strategies.
+      <br 
+class="newline" /></li></ul>
+<!--l. 76--><p class="indent" >   <br 
+class="newline" /><span 
+class="ptmb8t-x-x-120">How are capsules different from standard object-oriented classes?</span><br 
+class="newline" />A capsule is like a class in that it also defines a set of public operations, hides the
+implementation details, and could serve as a work assignment for a developer or a
+team of developers. Beyond these standard responsibilities, a capsule also serves as a
+memory region for some set of standard object instances and behaves as an
+independent logical process.<br 
+class="newline" />
+</p><!--l. 83--><p class="indent" >   <br 
+class="newline" /><span 
+class="ptmb8t-x-x-120">Why did you introduce new syntax for capsules and system?</span><br 
+class="newline" />At first glance a capsule declaration may look similar to a class declaration, thus
+naturally raising the question as to why a new syntactic category is essential, and why
+class declarations may not be enhanced with the additional capabilities that capsules
+provide, namely, confinement (as in Erlang) and an activity thread (as in previous
+work on concurrent OO languages). There are three main reasons for this design
+decision in Panini.<br 
+class="newline" /></p>
+      <ul class="itemize1">
+      <li class="itemize">First, we believe based on previous experiences that objects may be too
+      fine-grained to think of each one as a potentially independent activity.
+                                                                         
+
+                                                                         
+      </li>
+      <li class="itemize">Second, we wanted to specify a system as a set of related capsules with a
+      fixed topology, in order to make it feasible to perform static analysis of the
+      system graphs; this implies that capsules should not be first-class values.
+      </li>
+      <li class="itemize">Third, there is a large body of OO code that is written without any regard to
+      confinement. Changing the semantics of classes would have made reusing
+      this vast set of libraries difficult, if not impossible. In the current design of
+      Panini, since syntactic categories are different, sequential OO code can be
+      reused within the boundary of a capsule without needing any modification.
+      <br 
+class="newline" /></li></ul>
+   <h3 class="sectionHead"><span class="titlemark">15.2    </span> <a 
+ id="x22-8600015.2"></a>FAQs about the Compiler</h3>
+      <ul class="itemize1">
+      <li class="itemize">How do I report a bug?
+      </li>
+      <li class="itemize">Why do my files have the extension .java if I am writing Panini code?
+      </li>
+      <li class="itemize">Can I compile all Java code with the Panini compiler?
+      </li>
+      <li class="itemize">I compiled the HelloWorld Panini program and now I have all these .class
+      files, can some of them be removed?</li></ul>
+<!--l. 115--><p class="noindent" ><br 
+class="newline" /><span 
+class="ptmb8t-x-x-120">I believe I have just run into a compiler bug, how do I report it? </span><br 
+class="newline" />All bugs in the Panini compiler can be reported by sending an e-mail to panini@<br 
+class="newline" />iastate.edu. We would very much appreciate a self-contained source code file that
+reproduces the bug along with your e-mail, but if you don&#8217;t have it you could also
+describe what you were trying to do and send us buggy output of the Panini compiler.
+<br 
+class="newline" />
+                                                                         
+
+                                                                         
+</p><!--l. 122--><p class="indent" >   <br 
+class="newline" /><span 
+class="ptmb8t-x-x-120">Why do my files have the extension .java if I am writing Panini code?</span>
+<br 
+class="newline" />The Panini compiler was built on top of the Java OpenJDK compiler and, currently, we
+re-use most of the infrastructure provided by it. Panini files will have their own
+extension in future releases of the compiler. <br 
+class="newline" />
+</p><!--l. 127--><p class="indent" >   <br 
+class="newline" /><span 
+class="ptmb8t-x-x-120">Can I compile all Java code with the Panini compiler?  </span><br 
+class="newline" />All code that does not have use any explicit concurrency features (e.g. synchronized
+keyword, threads, etc.) can be compiled using the Panini compiler. Also, the
+Java main method no longer has any special meaning in the Panini language.
+<br 
+class="newline" />
+</p><!--l. 133--><p class="indent" >   <br 
+class="newline" /><span 
+class="ptmb8t-x-x-120">I compiled the HelloWorld Panini program and now I have all these .class files,</span>
+<span 
+class="ptmb8t-x-x-120">can some of them be removed?  </span><br 
+class="newline" />Assuming you want your program to run, no. Currently, Panini programs first compile
+to Java programs and then to bytecode, the extra files contain everything needed to
+express Panini&#8217;s abstractions in Java.
+                                                                         
+
+                                                                         
+</p><!--l. 1--><p class="indent" >   <div class="page-nav"><a 
+href="indexch14.html" >&#x003C; PREVIOUS</a></div><div class="page-nav"><a 
+href="indexch15.html" >^ RETURN TO TOP</a></div><div class="page-nav"><a 
+href="indexli2.html" >NEXT &#x003E;</a></div>     
+</div><!--end-main-content-->  
+</div><!--end-content-->  
+</div> <!--end-body-container-->  
+ 
+<div class="footer-container">  
+<div class="footer">  
+<div class="bot-nav">  
+<nav>  
+<ul>  
+<li><a href="/about.shtml">About</a></li>  
+<li><a href="/people.shtml">People</a></li>  
+<li><a href="/download/">Downloads</a></li>  
+<li><a href="/papers.shtml">Research</a></li>  
+<li><a href="/man/">Documentation</a></li>  
+<li><a href="/faq.shtml" id="botlast">FAQs</a></li>  
+</ul>  
+</nav>  
+</div>  
+<div class="legal">  
+<div id="isu">Iowa State University</div>  
+<p id="copyright">  
+<script type="text/javascript">  
+copyright=new Date()  
+fullYear=copyright.getFullYear();  
+document.write("Copyright &copy; " + fullYear + " Iowa State University of Science and Technology. All rights reserved.")  
+</script>  
+</p>  
+<p id="credits">  
+These pages describe work carried out on the design  
+and the implementation of the Panini programming language.  
+The PI is  
+<a href="http://www.cs.iastate.edu/\protect \unhbox \voidb@x \penalty \@M \relax \unhbox \voidb@x \special {t4ht@+&{35}x00A0{59}}x{}hridesh/">Hridesh Rajan</a> from  
+<a href="http://www.cs.iastate.edu">Iowa State University</a>.  
+This work is supported in part by  
+the US <a href="http://www.nsf.gov">National Science Foundation</a> (NSF) under grants  
+<a href="http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=0846059">CCF-08-46059</a>,  
+<a href="http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=1017334">CCF-10-17334</a>,  
+<a href="http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=1117937">CCF-11-17937</a>, and  
+<a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1423370">CCF-14-23370</a> to Rajan.  
+Any opinions, findings, and conclusions or recommendations  
+expressed in this material are those of the author(s) and do not  
+necessarily reflect the views of the <a href="http://www.nsf.gov">NSF</a>.  
+</p>  
+</div>  
+<div class="links">  
+<h3>Related Sites</h3>  
+<ul>  
+<li><a href="http://www.cs.iastate.edu/\protect \unhbox \voidb@x \penalty \@M \relax \unhbox \voidb@x \special {t4ht@+&{35}x00A0{59}}x{}design/">Labratory for Software Design</a></li>  
+<li><a href="http://www.cs.iastate.edu/">Computer Science Department</a></li>  
+<li><a href="http://www.iastate.edu/">Iowa State University</a></li>  
+</ul>  
+</div>  
+</div>  
+</div>  
+ 
+<script type="text/javascript">  
+//Analytics account -- http://paninij.sourceforge.net  
+var _gaq = _gaq || [];  
+_gaq.push(['_setAccount', 'UA-15725511-1']);  
+_gaq.push(['_trackPageview']);  
+ 
+(function() {  
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;  
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';  
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);  
+})();  
+</script>  
+</body> 
+</html>

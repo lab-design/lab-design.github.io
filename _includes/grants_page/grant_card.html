@@ -1,0 +1,48 @@
+{% assign grant = include.grant %}
+
+<div class="card grant_card">
+  <div class="card-header grant_card_header" id="head-{{ include.grant.key }}">
+    <div>
+      <button class="navbar-toggler" type="button" href="#coll-{{ include.grant.key }}" data-toggle="collapse" data-parent="#grants-list" aria-expanded="false" aria-controls="coll-{{ include.grant.key }}">
+        &#9776;
+      </button>
+    </div>
+    <a class="grant_card_header_name" href="{{ include.grant.url }}">
+      {% assign output = grant.PI %}
+      {% assign output = output | append: " (PI)" %}
+      {% if grant.coPIs.size == 1 %}
+        {% assign output = output | append: " " %}
+      {% else %}
+        {% assign output = output | append: ", " %}
+      {% endif %}
+      {% if grant.coPIs %}
+        {% for coPI in grant.coPIs %}
+          {% if forloop.last == true %}
+            {% assign output = output | append: "and " %}
+          {% endif %}
+          {% assign output = output | append: coPI %}
+          {% assign output = output | append: " (Co-PI), " %}
+        {% endfor %}
+      {% endif %}
+      {% assign output = output | append: grant.title %}
+      {% if grant.agency contains "NSF" %}
+        {% assign output = output | append: ", US National Science Foundation (NSF) " %}
+      {% else if grant.agency contains "VPR" %}
+        {% assign output = output | append: ", the ISU Office of the Vice President for Research (VPR) " %}
+      {% endif %}
+      {% assign start_date = grant.start_date | date: '%Y' %}
+      {% assign output = output | append: start_date %}
+      {% assign output = output | append: " - " %}
+      {% assign end_date = grant.end_date | date: '%Y' %}
+      {% assign output = output | append: end_date %}
+      {% assign output = output | append: ", " %}
+      {% assign output = output | append: grant.amount %}
+      {{ output }}
+    </a>
+  </div>
+  <div id="coll-{{ include.grant.key }}" class="card-block collapse" aria-labelledby="head-{{ include.grant.key }}">
+    <div class="padded-inner-card-block">
+      {{ grant.abstract }}
+    </div>
+  </div>
+</div>

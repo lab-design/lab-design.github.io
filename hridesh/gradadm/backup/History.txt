@@ -1,0 +1,15 @@
+ISU Computer Science Department 
+General Information
+
+Computing activities began at Iowa State in the late 1930's when John Vincent Atanasoff, a professor of physics and mathematics, built a computer on campus that is now recognized as the first electronic digital computer.
+
+The Department of Computer Science was established as a formal discipline in 1969, offering from the outset the B.S., M.S., and Ph.D. degrees.  The department now has approximately 3,000 alumni.
+
+At present, there are 18 tenured and tenure-track faculty, three adjunct faculty, eight instructors, and two industrial affiliates.  Support staff includes an administrative specialist, three departmental secretaries, 104 Master's students and nine Ph.D. students.  Each year, most of the graduate students are supported by either a teaching assistant positions in the department or by research assistant positions in the department and other university laboratories.
+
+The atmosphere of the department is such that research, interaction with students, and teaching are all considered to be important activities.  Development and continued maintenance of active research programs involving graduate students and faculty are basic objectives.  New research programs receive substantial departmental support.  Research interests cover a broad spectrum of areas and, in addition, there exist close ties with faculty in several other departments and centers.
+
+In support of its research and instruction, the department owns and operates a LAN consisting of numerous HP workstations and terminals.  The computers run under variants of the UNIX operating system and networking is made uniform through the TCP/IP protocol and the Network File System standard.  Other LANs, consisting of more than 60 HP Vectra PCs running under Windows '95/98 and Windows NT, are bridged to the main LAN and provides additional instructional support.  Connected to a campus-wide fiber optics network, departmental facilities have access to high-speed global Internet communication.
+
+Additional university facilities include the Scalable Computing Laboratory, which has several parallel computers including both SIMD and MIMD machines, and the Computation Center which supports a university-wide Athena-like network of file servers, workstations, and PCs.
+

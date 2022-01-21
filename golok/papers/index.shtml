@@ -1,0 +1,32 @@
+<!--#include virtual="../includes/topbar.html"-->
+<!-- 2ND COLUMN. INSERT COPY -->
+
+<td rowspan="2">
+<div class="maintext">
+
+<h2>Publications Related to Golok</h2>
+
+<p><h2 class=bar>2010</h2></p>
+<ul>
+<li>
+Youssef Hanna, David Samuelson, Samik Basu, and Hridesh Rajan, "Automating Cut-off for Multi-Parameterized
+Systems", The 12th International Conference on Formal Engineering Methods (ICFEM 2010),
+November 2010, Shanghai, China. [<a href="icfem-2010.pdf">PDF</a>] [<a href="../theorem2.pdf">Theorem2 / Notes</a>]
+</li>
+</ul>
+<p/>
+<p><h2 class=bar>2009</h2></p>
+<ul>
+<li>
+Youssef Hanna, Samik Basu, and Hridesh Rajan, "Behavioral Automata Composition for Automatic Topology 
+Independent Verification of Parameterized Systems", The 7th joint meeting of the European Software 
+Engineering Conference and the ACM SIGSOFT Symposium on the Foundations of Software Engineering (ESEC/FSE 09), 
+August 2009, Amsterdam, The Netherlands. [<a href="esec-fse-09.pdf">PDF</a>] [<a href="http://archives.cs.iastate.edu/documents/disk0/00/00/06/09/00000609-00/main-TR.pdf">Technial Report</a>]
+</li>
+</ul>
+
+</div>
+
+</td>
+
+<!--#include virtual="../includes/bottombar.html"-->

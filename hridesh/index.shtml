@@ -1,0 +1,654 @@
+<!--#include virtual="includes/template/headTop.htm"-->  
+
+<!-- INSERT TITLE -->
+<title>Dr. Hridesh Rajan, Kingland Professor, Department of Computer Science, Iowa State University</title>
+
+<!--#include virtual="includes/template/headBottom.htm"-->  
+
+<!-- Text for the actual webpage start -->
+
+<table width="100%">
+<tr>
+<td align="left" width="198">
+<p><IMG SRC="http://www.cs.iastate.edu/~hridesh/images/hrajan.jpg" width="198" align="left" alt="picture"></p>
+</td>
+
+<td width="5%">
+<p></p>
+</td>
+
+<td align="right">
+<p> 
+Kingland Professor and Department Chair, <a href="http://www.cs.iastate.edu/">Computer Science</a></p>
+<p>Ph.D., <a href="http://www.virginia.edu">University of Virginia</a>, 2005<BR>
+   M.S., <a href="http://www.virginia.edu">University of Virginia</a>, 2004<BR>
+   B.Tech., <a href="http://www.itbhu.ac.in/">Indian Institute of Technology (BHU)</a>, 2000</p>
+<p>Voice: +1-515-294-6168 <BR>
+E-mail: <a href="mailto:hridesh@iastate.edu">hridesh@iastate.edu</a><BR>
+Office: <a href="https://www.fpm.iastate.edu/maps/default.asp?zoom=2&xcenter=1452&ycenter=1906&xshow=1452&yshow=1906">226 Atanasoff Hall</a><BR>
+<!--Office Hours: Monday 4:00-5:30pm<BR>-->
+<!--
+CV: <a href="http://web.cs.iastate.edu/~hridesh/HRajan-1pageCV.pdf">brief</a>, <a href="http://web.cs.iastate.edu/~hridesh/HRajan-2pageCV.pdf">2 page</a>.
+-->
+</p>
+
+<table width="100%">
+  <td width = "46%">
+    <p class="heading">Research Interests</p>
+    <UL>
+     <LI>Software Engineering (SE), programming languages (PL), and data science</LI>
+     <LI>Data science, SE &amp; PL for data-intensive systems,
+         and data-driven SE.</LI>
+     <LI>Modular reasoning about properties of software. </LI>
+     <LI>Advanced modularity and separation of concerns mechanisms
+         and modular reasoning about such mechanisms.
+    </UL>
+  </td>
+  <td width = "54%">
+    <p class="heading">News</p>
+    <!--#include virtual="news.htm"-->
+  </td>
+</table>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+
+<!--<p>
+<FONT style="BACKGROUND-COLOR: yellow"><b>
+Research Assistantship Positions:
+</b></FONT> New graduate students please note that 
+I do not provide RA positions until I have had the chance to observe your 
+performance closely in at least one course.
+This semester (Fall 2010) I am teaching
+<a href="http://www.cs.iastate.edu/~cs541/">Com S 541: Principles of Programming Languages</a>. 
+I will pick 1-2 top-performing students from this course for RA positions.
+</p> -->
+
+<!--
+<p class="heading">News</p>
+<!--#include virtual="news.htm"-->
+<!--#include virtual="research-goals.htm"-->
+-->
+
+<p class="heading">Bio</p>
+<p>
+Hridesh Rajan is a professor and department chair
+of computer science at Iowa State University,
+where he has been since 2005.
+Professor Rajan earned his MS and Ph.D. from the University of Virginia
+in 2004 and 2005 respectively.
+Prof. Rajan's research interests are
+in programming languages, software engineering, and data science where he is most known
+for his design of the <a href="http://ptolemy.cs.iastate.edu">Ptolemy</a>
+programming language that showed how to
+modularly reason about crosscutting concerns and the
+<a href="http://boa.cs.iastate.edu">Boa</a> programming
+language and its infrastructure that decreases the barriers to
+data-driven software engineering.
+Professor Rajan’s recent research and educational activities are aimed at
+decreasing the barrier to entry to data-driven sciences to broaden participation.
+His work on the Boa project is aimed at invention and refinement of
+cyberinfrastructures that democratize data-driven science.
+His work on the Midwest Big Data Summer School is experimenting with broadly
+accessible data science curricula.
+Professor Rajan is the founding general chair of the annual
+<a href="http://mbds.cs.iastate.edu">Midwest Big Data Summer School</a>,
+and the founder of the <a href="https://2018.splashcon.org/series/vmil">VMIL workshop series</a>.
+</p>
+<p>
+Professor Rajan is the
+ department chair of
+<a href="https://cs.iastate.edu">Department of Computer Science</a>,
+director of the
+<a href="https://lab-design.github.io">Laboratory for Software Design</a> at
+Iowa State University, and
+Professor-In-Charge of the
+<a href="http://datascience.iastate.edu">Data Science</a> programs
+at Iowa State University.
+Professor Rajan also serves as an associate editor for the
+<a href="https://www.computer.org/web/tse">IEEE Transactions on Software Engineering</a>.
+Professor Rajan served on the steering committee of the
+<a href="http://midwestbigdatahub.org/">Midwest Big Data Hub</a>,
+a consortium of universities in the Midwest region of the United States
+focussed on promoting data science activities.
+Professor Rajan also served as the chair of the Faculty Senate
+Information Technology committee during the transition of ERP systems.
+Professor Rajan is a recipient of the National Science Foundation CAREER
+award in 2009, LAS Award for Early Achievement in Research in 2010,
+a Big-12 Fellowship in 2012, and a Fulbright scholarship in 2018.
+He is a distinguished member of ACM, and a member of IEEE, and AAAS.
+He is also the inaugural holder of the Kingland professorship in the
+Department of Computer Science.
+</p>
+
+<p class="heading">Short bio (for talks, etc.)</p>
+<p>
+Hridesh Rajan is the Kingland professor and department chair
+in the Department of Computer
+Science at Iowa State University. Prof. Rajan's research interests are
+in programming languages, software engineering, and data science where he is most known
+for his design of the Ptolemy programming language that showed how to
+modularly reason about crosscutting concerns and the Boa programming
+language and its infrastructure that decreases the barriers to
+data-driven software engineering. He has been recognized by the US
+National Science Foundation (NSF) with a CAREER award, an Early
+Achievement in Research Award, a Big-12 Fellowship, the Kingland
+Professorship, and an exemplary mentor for Junior Faculty award.
+Prof. Rajan is a Fulbright scholar,
+distinguished member of the ACM, and serves
+as an associate editor for the IEEE Transactions on Software Engineering.
+</p>
+
+<p class="heading">Select Recent Publications</p>
+<p><UL>
+<LI>
+Rangeet Pan and Hridesh Rajan, 
+<a href="https://lab-design.github.io/papers/ESEC-FSE-20b/">
+"On Decomposing a Deep Neural Network into Modules,"</a> 
+ESEC/FSE’2020: The 28th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering, November 2020.
+<B>[ACM SIGSOFT Distinguished Paper Award]</B>
+</LI>
+
+<LI>
+Sumon Biswas and Hridesh Rajan, 
+<a href="https://lab-design.github.io/papers/ESEC-FSE-20a/">
+"Do the Machine Learning Models on a Crowd Sourced Platform Exhibit Bias? An Empirical Study on Model Fairness,"</a>
+ESEC/FSE’2020: The 28th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (Nov. 2020).
+</LI>
+
+<LI>
+Md Johirul Islam, Rangeet Pan, Giang Nguyen, and Hridesh Rajan,
+<a href="https://lab-design.github.io/papers/ICSE-20a/">
+"Repairing Deep Neural Networks: Fix Patterns and Challenges,"</a> 
+ICSE’20: The 42nd International Conference on Software Engineering, May, 2020.
+</LI>
+<LI>
+Ramanathan Ramu, Ganesha Upadhyaya, Hoan Nguyen, and Hridesh Rajan, 
+<a href="https://lab-design.github.io/papers/ICSE-20b/">
+"BCFA: Bespoke Control Flow Analysis for CFA at Scale,"</a> 
+ICSE’20: The 42nd International Conference on Software Engineering, May, 2020.
+</LI>
+<LI>
+Md Johirul Islam, Giang Nguyen, Rangeet Pan, and Hridesh Rajan, 
+<a href="https://lab-design.github.io/papers/ESEC-FSE-19/">
+"A Comprehensive Study on Deep Learning Bug Characteristics,"</a> 
+ESEC/FSE’19: The ACM Joint European Software Engineering Conference 
+and Symposium on the Foundations of Software Engineering (ESEC/FSE), 
+Tallinn, Estonia, August 26-30, 2019.
+</LI>
+<LI>
+Hamid Bagheri, Usha Muppirala, Andrew J Severin, Hridesh Rajan,
+<a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-2967-2">
+"Shared Data Science Infrastructure for Genomics Data,"</a>
+BMC Bioinformatics 20, Article number: 436 (2019).
+</LI>
+<LI>
+Md Johirul Islam, Anuj Sharma, Hridesh Rajan,
+<a href="http://arxiv.org/abs/1805.00105">
+"A Cyberinfrastructure for BigData Transportation Engineering,"</a>
+Journal of Big Data Analytics in Transportation, June 2019, Volume 1, Issue 1, pp 83–94.
+</LI>
+<LI>
+Jackson Maddox, Yuheng Long, and Hridesh Rajan,
+"<a href="https://lab-design.github.io/papers/FSE-18/">Large-scale Study of Substitutability in the Presence of Effects,"</a>
+ESEC/FSE’18: The ACM Joint European Software Engineering Conference 
+and Symposium on the Foundations of Software Engineering (ESEC/FSE),
+Orlando, Florida, November 4-9, 2018.
+</LI>
+<LI>Ganesha Upadhyaya and Hridesh Rajan, 
+"<a href="https://lab-design.github.io/papers/ICSE-18a/">Collective Program Analysis,"</a>
+ICSE'18: The 40th International Conference on Software Engineering, 
+Gothenberg, Sweden, May 27-June 3, 2018.
+</LI>
+<LI>
+Tianyi Zhang, Ganesha Upadhyaya, Anastasia Reinhardt, Hridesh Rajan and Miryung Kim,
+"<a href="https://lab-design.github.io/papers/ICSE-18b/">Are Code Examples on an Online Q&amp;A Forum Reliable? A Study of API Misuse on Stack Overflow,"</a>
+ICSE'18: The 40th International Conference on Software Engineering, 
+Gothenberg, Sweden, May 27-June 3, 2018.
+</LI>
+<LI>Samantha Syeda Khairunnesa, Hoan Anh Nguyen, Tien N. Nguyen, and Hridesh Rajan,
+"<a href="https://lab-design.github.io/papers/OOPSLA-17/">Exploiting 
+Implicit Beliefs to Resolve Sparse Usage Problem in Usage-based 
+Specification Mining,"</a>
+OOPSLA’17: The ACM SIGPLAN conference on Object-Oriented
+Programming, Systems, Languages, and Applications, October, 2017.</LI>
+
+<LI>Hridesh Rajan,
+"<a href="https://2017.splashcon.org/event/splash-2017-splash-i-bridging-the-digital-divide-in-data-science">
+Bridging the Digital Divide in Data Science,"</a> SPLASH-I: The ACM SIGPLAN conference on Systems, Programming, 
+Languages and Applications: Software for Humanity (SPLASH), October, 2017.</LI>
+
+<LI>Ganesha Upadhyaya and Hridesh Rajan,
+"<a href="https://lab-design.github.io/papers/ICSE-NIER-17a/">On 
+Accelerating Ultra-Large-Scale Mining,"</a>
+ICSE'17: The 39th International Conference on Software Engineering: NIER Track,
+Buenos Aires, Argentina, May 2017.</LI>
+
+<LI>Yuheng Long, Yu David Liu, and Hridesh Rajan,
+"<a href="https://lab-design.github.io/papers/OOPSLA16/">
+First-Class Effect Reflection for Effect-Guided Programming,"</a>
+OOPSLA'16: The ACM SIGPLAN conference on Systems, Programming,
+Languages and Applications: Software for Humanity (SPLASH),
+Amsterdam, the Netherlands, October 2016.</LI>
+
+<LI>Yuheng Long, Yu David Liu, and Hridesh Rajan,
+"<a href="https://lab-design.github.io/papers/ECOOP-15/">Intensional 
+Effect Polymorphism,"</a>
+ECOOP'15: The 29th European Conference on Object-oriented
+Programming, July 2015.</LI>
+
+<LI>Hridesh Rajan,
+"<a href="https://lab-design.github.io/papers/ICSE-15a/">Capsule-oriented 
+Programming,"</a> ICSE’15: The 37th International Conference on Software
+Engineering: NIER Track, May 2015.</LI>
+
+<LI>Hridesh Rajan, Tien N. Nguyen, Gary T. Leavens, and Robert Dyer,
+"<a href="https://lab-design.github.io/papers/ICSE-15b/">Inferring 
+Behavioral Specifications from Large-scale Repositories by Leveraging 
+Collective Intelligence,"</a> ICSE’15: The 37th International Conference
+on Software Engineering: NIER Track, May 2015.</LI>
+
+<LI>Ganesha Upadhyaya and Hridesh Rajan,
+"<a href="https://lab-design.github.io/papers/OOPSLA-15/">Effectively 
+Mapping Linguistic Abstractions for Message-passing Concurrency to 
+Threads on the Java Virtual Machine,"</a> OOPSLA’15: The ACM SIGPLAN
+conference on Systems, Programming, Languages and Applications:
+Software for Humanity (SPLASH), October 2015.</LI>
+
+<LI>Robert Dyer, Hoan Anh Nguyen, Hridesh Rajan, and Tien N. Nguyen,
+"<a href="https://lab-design.github.io/papers/TOSEM-15/">Boa: 
+Ultra-Large-Scale Software Repository and Source-Code Mining,"</a>
+ACM Trans. Softw. Eng. Methodol., December 2015.</LI>
+
+<LI><a href="https://lab-design.github.io/papers/">more...</a></LI>
+</UL></p>
+
+<p class="heading">Research Projects</p>
+<p> 
+My recent research has focussed on data science and concurrency. 
+My overarching research program is aimed at improving programmer productivity, and correctness of software systems that
+they produce. In particular, I am interested in designing new programming abstractions that 
+abstract away error-prone concerns, improve modularity, and improve modular reasoning. 
+By abstracting away error-prone concerns, and having compilers and programming frameworks
+automatically provide adequate implementation of such concerns, my research aspires to reduce 
+potential for errors in software, and improve productivity. 
+By improving modularity and modular reasoning, my research strives for improved scalability
+in both manual and automatic reasoning as well as verification processes. 
+<!--I am interested in two specific questions: (1) <EM>how can we enable more modular reasoning 
+about concurrent programs?</EM> and (2) <EM>what are adequate programming abstractions for 
+data intensive programs (also popularly referred to as Big Data programs) that facilitate
+reasoning about such programs?</EM>-->
+My main research projects are:</p>
+
+<p><UL>
+<LI><a href="http://boa.cs.iastate.edu"><B>Boa</B></a>, a domain-specific
+language and its infrastructure whose goal is to significantly ease the
+experimental cost of mining ultra-large-scale open source repositories.
+Boa is a research infrastructure that consists of a domain-specific language, its compiler and data
+updating tools, terabytes (and growing) of raw data from open source
+repositories that contains hundreds of thousands of open source projects,
+a backend based on map-reduce to effectively analyze this dataset,
+a compute cluster, and a web-based frontend for writing analysis programs.
+
+Boa project has been supported in part by the following grants.
+<UL>
+<LI>
+US National Science Foundation, CI-EN: Boa: Enhancing Infrastructure for Studying Software and its Evolution at a Large Scale</a>.
+PI: Hridesh Rajan and Co-I: Tien Nguyen, Robert Dyer (2015-2020),
+Links: <a href="http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=1513263">ISU</a>, and
+<a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1512947">BGSU</a>.</LI>
+
+<LI>US National Science Foundation, <a href="http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=1349153">
+EAGER: Boa: A Community Research Infrastructure for Mining Software Repositories</a>.
+PI: Hridesh Rajan and Co-I: Tien Nguyen (2013-2015).</LI>
+</UL>
+
+<p>Following research papers document progress on this project:</p>
+<UL><LI>
+[<a href="https://lab-design.github.io/papers/FSE-18/">ESEC/FSE'18</a>],
+[<a href="https://lab-design.github.io/papers/ICSE-18a/">ICSE'18 (1)</a>],
+[<a href="https://lab-design.github.io/papers/ICSE-18b/">ICSE'18 (2)</a>],
+[<a href="https://lab-design.github.io/papers/ICSE-NIER-17a/">ICSE'17 (NIER)</a>],
+[<a href="https://lab-design.github.io/papers/MSR-17/">MSR'17</a>],
+[<a href="https://lab-design.github.io/papers/ICSE-14">ICSE'14</a>],
+[<a href="https://lab-design.github.io/papers/ICSE-13">ICSE'13</a>],
+[<a href="https://lab-design.github.io/papers/ASE-13">ASE'13</a>],
+[<a href="https://lab-design.github.io/papers/GPCE-13">GPCE'13</a>]
+</LI></UL>
+
+</LI>
+
+<LI><a href="https://specguru.github.io"><B>SpecGuru</B></a> project
+that is developing techniques for inferring behavioral specifications
+that rely on both program analysis and data mining of data from open
+source repositories. 
+
+SpecGuru project has been supported in part by the following grants.
+<UL>
+<LI>
+US National Science Foundation, SHF: Large:Collaborative Research: Inferring Software Specifications from
+Open Source Repositories by Leveraging Data and Collective Community Expertise.
+PI: Hridesh Rajan and Co-I: Robert Dyer, Tien Nguyen, Gary T. Leavens, and Vasant Honavar (2015-2018),
+Links: <a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1518897">ISU</a>,
+<a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1518776">BGSU</a>,
+<a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1518789">UCF</a>, and
+<a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1518732">PSU</a>.
+</LI>
+</UL>
+
+<p>Following research papers document progress on this project:</p>
+<UL><LI>
+[<a href="https://lab-design.github.io/papers/OOPSLA-17/">OOPSLA'17</a>],
+[<a href="https://lab-design.github.io/papers/ICSE-NIER-17b/">ICSE'17 (NIER)</a>],
+[<a href="https://lab-design.github.io/papers/ICSE-15b/">ICSE'15 (NIER)</a>],
+[<a href="https://lab-design.github.io/papers/FSE-14">FSE'14</a>],
+</LI></UL>
+
+</LI>
+
+<LI><a href="http://paninij.org"><B>Panini</B></a> project that is developing the 
+<a href="https://lab-design.github.io/papers/TR-13-01">capsule-oriented 
+programming model</B></a>. 
+Capsule-oriented programming model is aimed at making concurrent software
+development easier by providing two properties:
+(1) given a module it ought to be possible to statically, and modularly identify all points 
+in its code where other modules might interfere (interference points), and 
+(2) given a module and the interfaces of other modules, that the subject module interacts with, it 
+ought to be possible to statically and modularly construct an upper bound on the behavior 
+of all potentially interferring tasks at each interference point.
+We show that if a programming model has these two properties, then it is possible to modularly 
+reason about concurrent programs in that model.
+By the first property, humans and tools can identify points where interference from other 
+concurrent tasks must be considered. By the second property, the computed upper bound can be 
+used for reasoning instead of needing the implementation of interferring modules.
+Compared to alternatives, where reasoning either becomes a global process or entails a global
+step, modular reasoning afforded by this programming model makes both manual and automated 
+reasoning about concurrent software more scalable. Panini project has been supported in part
+by the following grants.
+</p>
+
+<UL>
+<LI>US National Science Foundation, <a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1423370">
+SHF:Small: Capsule-oriented Programming</a>. PI: Hridesh Rajan
+(2014-2018), Award amount: $450,098.</LI>
+
+<LI>US National Science Foundation, <a href="http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=0846059">
+CAREER:On Mutualism of Modularity and Concurrency Goals</a>. PI: Hridesh Rajan
+(2009-2015), Award amount: $565,935.</LI>
+
+<LI>US National Science Foundation, <a href="http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=1117937">
+SHF:Small:Phase-Based Tuning for Better Utilization of Performance-Asymmetric Multicores</a>.
+PI: Hridesh Rajan (2011-2015), Award amount: $416,000.</LI> 
+</UL>
+
+<p>Following research papers document progress on this project:</p>
+<UL>
+<LI>
+[<a href="https://lab-design.github.io/papers/OOPSLA-15/">OOPSLA'15</a>],
+[<a href="https://lab-design.github.io/papers/ICSE-15a/">ICSE'15 (NIER)</a>],
+[<a href="https://lab-design.github.io/papers/MODULARITY-15/">Modularity'15</a>],
+[<a href="https://lab-design.github.io/papers/ECOOP-15/">ECOOP'15</a>],
+[<a href="https://lab-design.github.io/papers/AGERE-14/">AGERE'14</a>],
+[<a href="https://lab-design.github.io/papers/ONWARD-10/">Onward!'10</a>],
+[<a href="https://lab-design.github.io/papers/GPCE-10">GPCE'10</a>],
+[<a href="https://lab-design.github.io/papers/FoSER-10/">FoSER'10</a>]
+</LI>
+</UL>
+
+<p>We have created two software systems that support this programming model so far:</p>
+<OL>
+<LI>
+an extension of Java (and the reference compiler javac) that we call 
+<a href="http://paninij.org">PaniniJ</a>, and </LI>
+<LI>an annotation-based framework that uses annotation processing facilities, 
+instead of syntax extensions, that we call <a href="http://hridesh.github.io/panini/">@PaniniJ</a>.</LI>
+</OL>
+</LI>
+
+<LI><a href="http://ptolemy.cs.iastate.edu"><B>Ptolemy</B></a>, an event-based 
+language whose goal is to enable more modular reasoning about advanced separation 
+of concerns mechanisms such as implicit invocation and aspects. Ptolemy provides
+<a href="https://lab-design.github.io/papers/ECOOP-2008">quantified-typed events</a> 
+that act as an interface between modules. A key benefit of quantified-typed events is 
+that they allow programmers to write new kinds of contracts that we call 
+<a href="https://lab-design.github.io/papers/AOSD-11">translucid contracts</a>, 
+which enables modular reasoning about modules that announce events and those 
+that listen to events. Ptolemy project has been supported in part by the following
+grant. 
+<UL>
+<LI>US National Science Foundation, <a href="http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=1017334">
+SHF:Small:Balancing Expressiveness and Modular Reasoning for Aspect-oriented Programming</a>.
+PI: Hridesh Rajan (2010 - 2013).</LI>
+</UL>
+
+<p>Following research papers document progress on this project:</p>
+<UL>
+<LI>
+[<a href="https://lab-design.github.io/papers/MODULARITY-15b/">Modularity'15</a>],
+[<a href="https://lab-design.github.io/papers/AOSD-13">Modularity'13</a>],
+[<a href="https://lab-design.github.io/papers/TAOSD-13">TAOSD'13</a>],
+[<a href="https://lab-design.github.io/papers/AOSD-12">AOSD'12</a>],
+[<a href="https://lab-design.github.io/papers/FOAL-12">FOAL'12</a>],
+[<a href="https://lab-design.github.io/papers/AOSD-11">AOSD'11</a>],
+[<a href="https://lab-design.github.io/papers/FOAL-10">FOAL'10</a>],
+[<a href="https://lab-design.github.io/papers/TOSEM-09">TOSEM'09</a>],
+[<a href="https://lab-design.github.io/papers/ECOOP-2008">ECOOP'08</a>],
+[<a href="https://lab-design.github.io/papers/Software-2006">IEEE Software'06</a>],
+[<a href="https://lab-design.github.io/papers/ESEC-FSE-2005">ESEC/FSE'05</a>]
+</LI>
+</UL>
+</LI>
+<LI><a href="https://lab-design.github.io/projects">more...</a></LI>
+</UL></p>
+
+
+<p class="heading">Teaching</p>
+<p><UL>
+<!--<li>
+<a href="http://www.cs.iastate.edu/~hridesh/teaching/">
+COMS 342: Programming Languages (undergraduate)</a>
+</li>-->
+<li>Spring 2019:
+<a href="teaching/541">COMS 541</a>, a graduate course on programming languages</a>
+</li>
+<li>Spring 2018: <a href="teaching/342">COMS 342</a>,
+an undergraduate course on principles of programming languages </li>
+<li>Fall 2016: COMS 362, a course on object-oriented analysis and design </li>
+<li>Spring 2016: <a href="http://www.cs.iastate.edu/~hridesh/teaching/641/">
+COMS 641</a>, a course on design and semantics of data intensive languages and systems</li>
+
+<!--<a href="http://www.cs.iastate.edu/~hridesh/teaching/610/09/fall/">610:Type Systems</a></li>-->
+<!--<li>S09:<a href="http://www.cs.iastate.edu/~cs342">Com S 342</a></li>-->
+<!--<li><a href="http://www.cs.iastate.edu/~cs541">Com S 541</a>-->
+<!--<li><a href="http://www.cs.iastate.edu/~cs362">Com S 362</a></li>
+<li><a href="http://www.cs.iastate.edu/~cs342">Com S 342</a></li>-->
+
+</UL></p>
+
+<p class="heading">Major Awards and Honors</p>
+<p><UL>
+<li>
+2009 Early CAREER Award, <a href="http://nsf.gov">US National Science Foundation</a>
+</li>
+<li>
+2010 Early Achievement in Research Award, <a href="http://las.iastate.edu">College of Liberal Arts & Science</a>,
+<a href="http://iastate.edu">Iowa State University</a>
+</li>
+<li>
+2012 Big-12 Fellowship
+</li>
+<li>
+2014 ACM Senior Member
+</li>
+<li>
+2016-17 Emerging Leaders Academy.
+See news <a href="https://www.inside.iastate.edu/article/2016/05/12/ela">here</a>.
+</li>
+<li>
+2016 Kingland Professorship. See news <a href="http://www.foundation.iastate.edu/s/1463/giving/interior.aspx?sid=1463&gid=1&pgid=252&cid=6884&ecid=6884&crid=0&calpgid=451&calcid=1843">here</a>.
+</li>
+<li>
+2016-17 Exemplary Mentor of Junior Faculty, Iowa State University.
+See news <a href="http://www.provost.iastate.edu/faculty-and-staff-resources/development/early-career/mentor-awardees">here</a>.
+<li>
+2017 ACM Distinguished Member. See news <a href="https://www.acm.org/media-center/2017/november/distinguished-members-2017">here</a>.
+</li>
+<li>
+2018 Fulbright US-UK Scholar. See news <a href="http://www.fulbright.org.uk/about-us/meet-our-fulbrighters/2018-19-us-uk-fulbright-award-grantees/2018-19-american-scholar-award-grantees">here</a>.
+</li>
+<li>
+2020 Facebook Probability and Programming Award
+</li>
+<li>
+2020 ACM SIGSOFT Distinguished Paper Award at ESEC/FSE 2020
+</li>
+</UL></p>
+
+<!--<!--#include virtual="projectListing.htm"-->--> 
+
+<p class="heading">Former Graduate Students</p>
+<p><UL>
+ <li><a href="https://scholar.google.com/citations?user=HdY_VO4AAAAJ&hl=en">Md. Johirul Islam</a> (PhD Summer'20, MS Fall'19), Lowes R&D</li>
+ <li><a href="www.cs.iastate.edu/~ganeshau/">Ganesha Upadhyaya</a> (PhD Fall'17, MS Spring'15), Huawei R&D</li>
+ <li><a href="www.cs.iastate.edu/~mbagherz/">Mehdi Bagherzadeh</a> (PhD Summer'16, MS Fall'10), Assistant Professor at Oakland University</li>
+ <li><a href="www.cs.iastate.edu/~csgzlong/">Yuheng Long</a> (PhD Spring'16, MS Spring'10), Google</li>
+ <li><a href="https://cse.unl.edu/~rdyer/">Robert Dyer</a> (PhD Fall'13, MS Fall'08), Assistant Professor at the University of Nebraska, Lincoln</li>
+ <li><a href="https://www.linkedin.com/in/tyler-sondag-92b757b">Tyler Sondag</a> (PhD Fall'11, MS Fall'09), Intel R&D</li>
+ <li><a href="http://www.cs.iastate.edu/~sammy/">Samantha Khairunnessa</a> (MS Fall'17), ISU Ph.D. Program</li>
+ <li><a href="http://www.cs.iastate.edu/~rramu/">Ramanathan Ramu</a> (MS Fall'17), Microsoft</li>
+ <li><a href="http://www.cs.iastate.edu/~nmtiwari/">Nitin M. Tiwari</a> (MS Spring'17), SAP</li>
+ <li><a href="http://www.cs.iastate.edu/~smooney/">Sean L. Mooney</a> (MS Summer'15), SourceAllies</li>
+ <li><a href="http://www.cs.iastate.edu/~harish">Harish Narayanappa</a> (MS Spring'10), eBay</li>
+ <li><a href="http://www.cs.iastate.edu/~jalan">Jaikishan Jalan</a> (MS Fall'09), Squad</li>
+ <li><a href="http://www.cs.iastate.edu/~ywhanna">Youssef W. Hanna</a> (MS Fall'08), Google</li>
+ <li><a href="http://www.cs.iastate.edu/~rsetty">Rakesh Setty</a> (MS Fall'08), eBay</li>
+ <li><a href="http://www.cs.iastate.edu/~mahantes">Mahantesh Hosamani</a> (MS Fall'07), Ericsson</li>
+</UL></p>
+
+<p class="heading">Recent Professional Services</p>
+<p>
+<UL>
+<LI>
+Editorships:
+<UL>
+<LI>Associate Editor, 
+<a href="https://www.computer.org/web/tse">IEEE Transactions on Software Engineering</a>
+</LI>
+<!--<LI>Associate Editor,
+<a href="https://www.sigsoft.org/SEN/">ACM SIGSOFT Software Engineering Notes</a>
+</LI>-->
+</UL>
+</LI>
+<LI>
+Organizing Committee:
+ <UL>
+  <LI>General Chair, 2020 <a href=="https://2020.splashcon.org">ACM SIGPLAN conference on Systems, Programming, Languages, and Applications: Software for Humanity</a>
+  </LI>
+  <LI>General Co-chair, <a href="http://mbds.cs.iastate.edu">2019 Midwest Big Data Summer School</a>
+   (also in 
+     <a href="http://mbds.cs.iastate.edu/2018">2018</a>,
+     <a href="http://mbds.cs.iastate.edu/2017">2017</a>, and
+     <a href="http://mbds.cs.iastate.edu/2016">2016</a>)
+  </LI>
+  <LI>Workshops on Virtual Machines and Intermediate Languages (<a href="http://www.cs.iastate.edu/~design/vmil/">VMIL 2007-2018</a>):
+      Founder and Co-organizer
+  </LI>
+ <LI>Doctoral Symposium Chair, <a href="http://">ESEC/FSE 2018</a> - 
+     the ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering 
+ </LI>
+ <LI>Doctoral Symposium Chair, <a href="http://splashcon.org/2012/">SPLASH/OOPSLA 2012</a> - 
+    the international Conference on Systems, Programming, Languages and Applications:
+    Software for Humanity</LI>
+  <LI>8th International Conference on Aspect-Oriented Software Development (<a href="http://aosd.net/2009/">AOSD 2009</a>): Student Volunteer Co-chair</LI>
+</UL>
+</LI>
+<LI>
+Program Committee: 
+<UL>
+ <LI>PC or ERC Member, <a href="http://modularity.info/">MODULARITY: the International Conference on Modularity</a>
+     (in
+       <a href="http://2016.modularity.info/">2016</a>,   
+       <a href="http://modularity.info/conference/2015/">2015</a>,   
+       <a href="http://modularity.info/conference/2014/">2014</a>,   
+       <a href="http://www.aosd.net/2013/">2013</a>,
+       <a href="http://www.aosd.net/2011/">2011</a>,
+       <a href="http://www.aosd.net/2010/">2010</a>, and
+       <a href="http://www.aosd.net/2009/">2009</a>)
+ </LI>
+ <LI>
+    PC Member, <a href="http://www.gpce.org">GPCE</a> - 
+    the International Conference on Generative Programming Concepts & Experiences
+    (in
+      <a href="http://program-transformation.org/GPCE15">2015</a>,
+      <a href="http://program-transformation.org/GPCE14">2014</a>, and
+      <a href="http://program-transformation.org/GPCE10">2010</a>.)
+ </LI> 
+ <LI>PC Member, <a href="http://splashcon.org/2013/">SPLASH/OOPSLA 2013</a> -
+    the international Conference on Systems, Programming, Languages and Applications:
+    Software for Humanity</LI>
+ <LI>ERC Member, <a href="http://splashcon.org/2012/">SPLASH/OOPSLA 2012</a> -
+    the international Conference on Systems, Programming, Languages and Applications:
+    Software for Humanity</LI>
+ <LI>PC Chair,      
+     <a href="http://www.eecs.ucf.edu/FOAL/index-2011.shtml">FOAL 2011</a> - 
+     the Foundations of Aspect-oriented Languages workshop
+ </LI>
+ <LI>PC Member, <a href="http://www.sbs.co.za/ICSE2010/">ICSE 2010</a> - 
+   the 32nd International Conference on Software Engineering 
+   (research demonstrations track)</LI>   
+ <LI>PC Member, <a href="http://onward-conference.org/">Onward! 2010</a> - 
+   the 2010 Onward! Conference on the new ideas, new paradigms track
+   at OOPSLA 2010</LI>
+ <LI>PC Member, <a href="http://oopsla.org/">OOPSLA 2009</a> - 
+ the ACM Conference on Object-Oriented Programming Systems, Languages,
+ and Applications</LI>
+ <LI>PC Member, <a href="http://aosd.net/workshops/acp4is/">ACP4IS</a>
+     <a href="http://aosd.net/workshops/acp4is/2008/">2008</a>,
+     <a href="http://aosd.net/workshops/acp4is/2009/">2009</a>, and
+     <a href="http://aosd.net/workshops/acp4is/2010/">2010</a> -  
+     the Workshop on Aspects, Components, and Patterns for Infrastructure Software</LI>
+ <LI>PC Member, <a href="http://www.eecs.ucf.edu/FOAL/">FOAL</a>
+    <a href="http://www.eecs.ucf.edu/FOAL/index-2006.shtml">2006</a>,
+    <a href="http://www.eecs.ucf.edu/FOAL/index-2008.shtml">2008</a>,
+    <a href="http://www.eecs.ucf.edu/FOAL/index-2010.shtml">2010</a>,
+    <a href="http://www.eecs.ucf.edu/FOAL/index-2012.shtml">2012</a>, 
+    <a href="http://www.eecs.ucf.edu/FOAL/index-2014.shtml">2014</a>, 
+    <a href="http://www.eecs.ucf.edu/FOAL/index-2015.shtml">2015</a> - 
+     the Foundations of Aspect-Oriented Languages workshop</LI>
+ </UL>
+<!--
+<LI>
+Reviewer: 
+ <UL>
+  <LI><a href"http://www.computer.org/software/">IEEE Software</a> (2005, 2007)</LI> 
+  <LI><a href="http://www.acm.org/pubs/tosem/">ACM Transactions on 
+      Software Engineering and Methodology (TOSEM)</a> (2006-2009)</LI>
+  <LI><a href="www.computer.org/tse/">IEEE Transactions on Software Engineering</a> (2006, 2007)</LI> 
+  <LI><a href="http://www.sosym.org/">Software and Systems Modeling</a> (2006)</LI>
+ </UL>
+</LI>
+
+<LI>
+Referee: <a href="http://fm06.mcmaster.ca/">
+Formal Methods 2006</a>, <a href="http://conferences.computer.org/compsac/2006/">
+COMPSAC 2006</a>, <a href="http://www.oopsla.org/2006/">
+OOPSLA 2006</a>, <a href="www.idt.mdh.se/esec-fse-2007/">ESEC/FSE 2007</a>,
+<a href="http://www.oopsla.org/2008/">OOPSLA 2008</a>.
+</LI> -->
+
+</UL>
+</p>
+
+<!-- <p class="heading">Funding</p>
+
+<!--#include virtual="fundingNSF.htm"--> 
+-->
+</td>
+</tr>
+
+</table>
+
+<!-- Text for the actual webpage end -->
+
+<!--#include virtual="includes/template/footer.htm"--> 

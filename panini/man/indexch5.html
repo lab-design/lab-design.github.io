@@ -1,0 +1,1182 @@
+<!DOCTYPE html> 
+<html> 
+<head><title>5 Capsule Declarations</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:light,regular,bold&amp;v1' rel='stylesheet' type='text/css' /> 
+<base href="/man/" /> 
+<link href="/style.css" rel="stylesheet" type="text/css" /> 
+<link href="/images/panini.ico" rel="shortcut icon" type="image/x-icon" /> 
+<!-- SYNTAX HIGHLIGHTING --> 
+<script type="text/javascript" src="/syntax/scripts/shCore.js"></script> 
+<script type="text/javascript" src="/syntax/scripts/shBrushBash.js"></script> 
+<script type="text/javascript" src="/syntax/scripts/shBrushJava.js"></script> 
+<script type="text/javascript" src="/syntax/scripts/shBrushPanini.js"></script> 
+<script type="text/javascript" src="/syntax/scripts/shBrushXml.js"></script> 
+<link type="text/css" rel="stylesheet" href="/syntax/styles/shCore.css"/> 
+<link type="text/css" rel="stylesheet" href="/syntax/styles/shThemeDefault.css"/> 
+<script type="text/javascript"> 
+//SyntaxHighlighter.config.clipboardSwf = 'scripts/clipboard.swf'; 
+SyntaxHighlighter.all(); 
+</script> 
+<!-- END SYTNAX HIGHLIGHTING --> 
+  
+<style type="text/css">  
+.col2-toc h2 {  
+margin: 0 0 10px;  
+}  
+</style>  
+ 
+<meta name="description"  
+content="The Panini Programming Guide helps introduce users to  
+the features and syntax of the Panini Programming Language.  
+Panini is a capsule-oriented programming language whose goals are  
+to ease development of correct, scalable, and portable software  
+for multicore and manycore, platforms.  
+Panini strives to reconcile modularity and concurrency goals  
+in software development." />  
+<meta name="keywords" content="panini, programming, guide, introduction, tutorial,  
+panini, capsule, capsules, capsule-oriented,  
+capsule-oriented programming, better modularity better concurrency,  
+concurrency, modularity, events, types, modules, implicit concurrency,  
+sequential consistency, data race freedom due to shared data, ease of use,  
+quantified, event, types, Hridesh Rajan, Yuheng Long,  
+Rex Fernando, Eric Lin, synergy between modularity and concurrency,  
+determinstic semantics, data race freedom, deadlock freedom,  
+multicore, multi-core, manycore, many-core, heterogeneous,  
+performance-asymmetric, platform portability, download, compiler,  
+download panini, concurrent, patterns, open effects, guarded effects,  
+explicit concurrency, pitfalls, data races, race conditions, deadlock  
+avoidance, race freedom, open effects, deterministic semantics, modules, actors" />  
+ 
+<!-- PAGE METADATA --> <link rel="stylesheet" type="text/css" href="index.css" /> 
+  
+<style type="text/css">  
+.lstlisting .label {  
+width: 100%;  
+font-size: 8pt;  
+}  
+</style>  
+  
+<style type="text/css">  
+.caption .content {  
+background-image: none;  
+background-position: left 12px;  
+background-repeat: no-repeat;  
+margin-left: 0;  
+margin-right: auto;  
+padding: 0 0 100px 50px;  
+width: 1070px;  
+}  
+</style>  
+  
+<style type="text/css">  
+.content {  
+width: 1070px;  
+}  
+</style>  
+  
+<style type="text/css">  
+.main-content {  
+background-image: url("/images/maincontent-right.png");  
+background-position:1028px 1px;  
+background-repeat: no-repeat;  
+width: 1021px;  
+}  
+</style>  
+  
+<style type="text/css">  
+.main-content .caption{  
+font-style: italic;  
+font-size: 8pt;  
+text-align: left;  
+width: 80 
+margin: 0 !important ;  
+}  
+</style>  
+</head>  
+<body>  
+<div class="body-container">  
+<header>  
+<h1><a href="index.html" name="pgtop">Panini Programming Language</a></h1>  
+<h2>PROGRAMMING LANGUAGE</h2>  
+</header>  
+<div class="content">  
+<div class="top-nav">  
+<nav>  
+<ul>  
+<li><a href="/about.shtml">About</a></li>  
+<li><a href="/people.shtml">People</a></li>  
+<li><a href="/download/">Downloads</a></li>  
+<li><a href="/papers.shtml">Research</a></li>  
+<li><a href="/man/">Manual</a></li>  
+<li><a href="/faq.shtml" id="toplast">FAQs</a></li>  
+</ul>  
+</nav>  
+</div>  
+<div class="main-content">  <h2 class="chapterHead"><span class="titlemark">Chapter&#x00A0;5</span><br /><a 
+ id="x10-210005"></a>Capsule Declarations</h2>
+                                                                         <div class="flushright" 
+>
+<!--l. 221--><p class="noindent" >
+<span 
+class="ptmri8t-x-x-90">Simplify, simplify. &#8211;Henry D. Thoreau</span></p></div>
+   The Panini programmer specifies a design as a collection of <span 
+class="ptmri8t-x-x-120">capsules </span>and ordinary
+object-oriented classes.
+<!--l. 6--><p class="indent" >   A <span 
+class="ptmri8t-x-x-120">capsule </span>is an abstraction for decomposing a software into its parts. A capsule is
+like an <span 
+class="ptmri8t-x-x-120">information-hiding module </span>in that it defines a set of public operations, hides the
+implementation details, and could serve as a work assignment for a developer or a
+team of developers. Beyond these standard responsibilities, a capsule also serves as a
+memory region, for some set of standard object instances and behaves as an
+independent logical process.
+</p><!--l. 17--><p class="indent" >   The notion of a capsule in the Panini programming language is designed to
+enable implicit concurrency at the interface of capsules as a direct result of the
+modularization of a design into capsules, and to maintain modular reasoning in
+                                                                         
+
+                                                                         
+the presence of implicit concurrency. Here, by modular reasoning we mean
+our ability to understand a software one module at a time by looking at the
+code for that module and only the interfaces of other modules referenced by
+name.
+</p><!--l. 25--><p class="indent" >   Inter-capsule calls look like ordinary method calls to the programmer.
+The object-oriented features are standard, but there are no explicit threads or
+synchronization locks in Panini.
+</p><!--l. 29--><p class="indent" >   A program in Panini can have zero or more signature declarations, zero or more
+class declarations, and zero or more capsule declarations. Panini classes are very
+similar to classes in other object oriented languages but with the restriction that they
+cannot contain any explicit concurrency constructs.
+</p>
+   <h3 class="sectionHead"><span class="titlemark">5.1    </span> <a 
+ id="x10-220005.1"></a>Syntax of Capsule Declaration</h3>
+<!--l. 39--><p class="noindent" >Capsules are designed to have the feel of ordinary classes, the intent being
+to capitalize on programmers&#8217; familiarity with object-oriented design and
+thus minimize the learning curve. Each capsule guarantees that its state is
+accessed by only one thread, thereby maintaining thread safety with respect to
+state mutations (by confinement in this case). Implicitly concurrent procedure
+calls on capsules are structured to have the appearance of ordinary method
+calls.
+</p><!--l. 48--><p class="indent" >   Capsules define a set of public operations as well as a memory region. They can
+have parameters, state declarations, inner class declarations, initializer, and procedure
+definitions.
+</p><!--l. 52--><p class="indent" >   The syntax of a capsule declaration is as follows.
+</p>
+   <!--l. 55-->
+<a 
+ id="x10-22001r1"></a>
+<a 
+ id="x10-22002"></a>
+<br /> <div class="caption" 
+><span class="id">Listing&#x00A0;5.1: </span><span  
+class="content">Syntax of Capsule Declarations</span></div><!--tex4ht:label?: x10-22001r5.1 --><div class="lstlisting" id="listing-19"><span class="label"><a 
+ id="x10-22003r1"></a></span><span 
+class="ptmb8t-x-x-120">capsule</span>&#x00A0;CapsuleName&#x00A0;[&#x00A0;(Param&#x00A0;p1,&#x00A0;...,&#x00A0;Param&#x00A0;pn)&#x00A0;]&#x00A0;[&#x00A0;<span 
+class="ptmb8t-x-x-120">implements</span>&#x00A0;SignatureName+&#x00A0;]&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x10-22004r2"></a></span>&#x00A0;&#x00A0;[Initializer]&#x00A0;<br /><span class="label"><a 
+ id="x10-22005r3"></a></span>&#x00A0;&#x00A0;[DesignDeclaration]&#x00A0;<br /><span class="label"><a 
+ id="x10-22006r4"></a></span>&#x00A0;&#x00A0;StateDeclaration<span 
+class="cmsy-10x-x-120">*</span>&#x00A0;<br /><span class="label"><a 
+ id="x10-22007r5"></a></span>&#x00A0;&#x00A0;ClassDeclaration<span 
+class="cmsy-10x-x-120">*</span>&#x00A0;<br /><span class="label"><a 
+ id="x10-22008r6"></a></span>&#x00A0;&#x00A0;procedure<span 
+class="cmsy-10x-x-120">*</span>&#x00A0;<br /><span class="label"><a 
+ id="x10-22009r7"></a></span>}&#x00A0;<br /><span class="label"><a 
+ id="x10-22010r8"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x10-22011r9"></a></span>Here,&#x00A0;[s]&#x00A0;means&#x00A0;s&#x00A0;is&#x00A0;optional,&#x00A0;s<span 
+class="cmsy-10x-x-120">*</span>&#x00A0;means&#x00A0;zero&#x00A0;or&#x00A0;more&#x00A0;of&#x00A0;s,&#x00A0;and&#x00A0;s+&#x00A0;means&#x00A0;one&#x00A0;or&#x00A0;more&#x00A0;of&#x00A0;s.
+   
+   </div>
+<!--l. 68--><p class="indent" >   A capsule declaration consists of the keyword &#8216;capsule&#8217;, the name of
+the capsule, zero or more formal parameters representing dependencies on
+other capsules, and zero or more signatures representing services that the
+capsule provides, followed by the capsule&#8217;s implementation. Each procedure
+                                                                         
+
+                                                                         
+declaration in every signature implemented by the capsule must match with
+exactly one capsule procedure. Panini does not have capsule inheritance but
+does have class inheritance. The primary mechanism for reuse of capsules is
+composition.
+</p><!--l. 86--><p class="indent" >   Let us start with an empty capsule declaration shown in listing&#x00A0;<a 
+href="#x10-22012r2">5.2<!--tex4ht:ref: list:capsule0 --></a>. This
+declaration just gives the capsule a name <span 
+class="pcrr8t-x-x-120">C</span>.
+</p>
+   <!--l. 89-->
+<a 
+ id="x10-22012r2"></a>
+<a 
+ id="x10-22013"></a>
+<br />            <div class="caption" 
+><span class="id">Listing&#x00A0;5.2:                    </span><span  
+class="content">An                    empty                    capsule
+declaration</span></div><!--tex4ht:label?: x10-22012r5.1 --><div class="lstlisting" id="listing-20"><span class="label"><a 
+ id="x10-22014r1"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">capsule</span>&#x00A0;C&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x10-22015r2"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;}
+   
+   </div>
+<!--l. 94--><p class="indent" >   Capsules can require access to instances of other capsules. For example, in
+listing&#x00A0;<a 
+href="#x10-22016r3">5.3<!--tex4ht:ref: list:capsule1 --></a> is a new version of the capsule <span 
+class="pcrr8t-x-x-120">C </span>that requires access to an instance of
+another capsule <span 
+class="pcrr8t-x-x-120">D</span>. Notice that when <span 
+class="pcrr8t-x-x-120">C </span>did not have any requirements, e.g. in
+listing&#x00A0;<a 
+href="#x10-22012r2">5.2<!--tex4ht:ref: list:capsule0 --></a> we can omit &#8216;(&#8217; and &#8216;)&#8217; in capsule declaration.
+</p>
+   <!--l. 101-->
+<a 
+ id="x10-22016r3"></a>
+<a 
+ id="x10-22017"></a>
+<br /> <div class="caption" 
+><span class="id">Listing&#x00A0;5.3: </span><span  
+class="content">An example capsule &#8216;C&#8217; that requires a capsule instance of kind
+&#8216;D&#8217;</span></div><!--tex4ht:label?: x10-22016r5.1 --><div class="lstlisting" id="listing-21"><span class="label"><a 
+ id="x10-22018r1"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">capsule</span>&#x00A0;D&#x00A0;()&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x10-22019r2"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;...&#x00A0;<br /><span class="label"><a 
+ id="x10-22020r3"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x10-22021r4"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">capsule</span>&#x00A0;C&#x00A0;(D&#x00A0;d)&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x10-22022r5"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;..&#x00A0;<br /><span class="label"><a 
+ id="x10-22023r6"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;}
+   
+   </div>
+<!--l. 110--><p class="indent" >   Capsules can also require access to primitive, reference, or array values. For
+example, in listing&#x00A0;<a 
+href="#x10-22024r4">5.4<!--tex4ht:ref: list:capsule2 --></a> is another version of capsule <span 
+class="pcrr8t-x-x-120">C </span>that requires access to
+an instance of another capsule <span 
+class="pcrr8t-x-x-120">D</span>, a boolean value, a string, and an array of
+strings.
+</p>
+   <!--l. 116-->
+<a 
+ id="x10-22024r4"></a>
+<a 
+ id="x10-22025"></a>
+<br /> <div class="caption" 
+><span class="id">Listing&#x00A0;5.4: </span><span  
+class="content">An example capsule &#8216;C&#8217; that also requires other values</span></div><!--tex4ht:label?: x10-22024r5.1 --><div class="lstlisting" id="listing-22"><span class="label"><a 
+ id="x10-22026r1"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">capsule</span>&#x00A0;D&#x00A0;()&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x10-22027r2"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;...&#x00A0;<br /><span class="label"><a 
+ id="x10-22028r3"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x10-22029r4"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">capsule</span>&#x00A0;C&#x00A0;(D&#x00A0;d,&#x00A0;<span 
+class="ptmb8t-x-x-120">boolean</span>&#x00A0;b,&#x00A0;String&#x00A0;s,&#x00A0;String[]&#x00A0;args)&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x10-22030r5"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;..&#x00A0;<br /><span class="label"><a 
+ id="x10-22031r6"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;}
+   
+                                                                         
+
+                                                                         
+   </div>
+<!--l. 125--><p class="indent" >   Capsules can implement signatures. An example is shown in listing&#x00A0;<a 
+href="indexch12.html#x18-69001r1">12.1<!--tex4ht:ref: list:capsule3 --></a>. In this
+listing an empty signature <span 
+class="pcrr8t-x-x-120">S </span>is implemented by the capsule <span 
+class="pcrr8t-x-x-120">D</span>.
+</p>
+   <!--l. 128-->
+<a 
+ id="x10-22032r5"></a>
+<a 
+ id="x10-22033"></a>
+<br /> <div class="caption" 
+><span class="id">Listing&#x00A0;5.5: </span><span  
+class="content">Signatures and capsules</span></div><!--tex4ht:label?: x10-22032r5.1 --><div class="lstlisting" id="listing-23"><span class="label"><a 
+ id="x10-22034r1"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">signature</span>&#x00A0;S&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x10-22035r2"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x10-22036r3"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">capsule</span>&#x00A0;D&#x00A0;()&#x00A0;<span 
+class="ptmb8t-x-x-120">implements</span>&#x00A0;S&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x10-22037r4"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;...&#x00A0;<br /><span class="label"><a 
+ id="x10-22038r5"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x10-22039r6"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">capsule</span>&#x00A0;C&#x00A0;(S&#x00A0;d,&#x00A0;<span 
+class="ptmb8t-x-x-120">boolean</span>&#x00A0;b,&#x00A0;String&#x00A0;s,&#x00A0;String[]&#x00A0;args)&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x10-22040r7"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;...&#x00A0;<br /><span class="label"><a 
+ id="x10-22041r8"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;}
+   
+   </div>
+<!--l. 139--><p class="indent" >   Capsules can require access to another capsule instance that implement certain
+signatures. For example, in listing&#x00A0;<a 
+href="indexch12.html#x18-69001r1">12.1<!--tex4ht:ref: list:capsule3 --></a> capsule <span 
+class="pcrr8t-x-x-120">C </span>now requires access to an instance
+of a capsule that implements signature <span 
+class="pcrr8t-x-x-120">S</span>. Since the capsule <span 
+class="pcrr8t-x-x-120">D </span>in this listing declares to
+implement this signature an instance of <span 
+class="pcrr8t-x-x-120">D </span>could be provided to <span 
+class="pcrr8t-x-x-120">C</span>, but it is also possible
+to provide instances of other capsules that also implement the signature <span 
+class="pcrr8t-x-x-120">S</span>. More on
+signatures in chapter&#x00A0;<a 
+href="indexch7.html#x12-370007">7<!--tex4ht:ref: chap:signatures --></a>.
+</p><!--l. 147--><p class="noindent" >
+</p>
+   <h4 class="subsectionHead"><a 
+ id="x10-230005.1"></a>Closed capsules</h4>
+<!--l. 148--><p class="noindent" >A capsule is considered closed, if it does not require access to external capsule
+instances. In listing&#x00A0;<a 
+href="indexch12.html#x18-69001r1">12.1<!--tex4ht:ref: list:capsule3 --></a>, <span 
+class="pcrr8t-x-x-120">D </span>is a closed capsule, whereas <span 
+class="pcrr8t-x-x-120">C </span>is not a closed capsule
+because it requires access to another capsule instance of type <span 
+class="pcrr8t-x-x-120">S</span>. A closed capsule is a
+complete Panini program. If a closed capsule provides autonomous behavior it can be
+executed.
+</p><!--l. 155--><p class="noindent" >
+</p>
+   <h3 class="sectionHead"><span class="titlemark">5.2    </span> <a 
+ id="x10-240005.2"></a>Capsule States</h3>
+<!--l. 158--><p class="noindent" >A capsule can declare <span 
+class="ptmri8t-x-x-120">states </span>to keep track of its internal information. A state
+declaration has a type, a name, and optionally an initialization expression. Legal types
+                                                                         
+
+                                                                         
+for a state declaration are primitive types and reference types.
+</p><!--l. 162--><p class="indent" >   For example, in listing&#x00A0;<a 
+href="#x10-24001r6">5.6<!--tex4ht:ref: list:capsule4 --></a>, the capsule <span 
+class="pcrr8t-x-x-120">D </span>declares a state of reference type
+<span 
+class="pcrr8t-x-x-120">String </span>and the capsule <span 
+class="pcrr8t-x-x-120">C </span>declares a state <span 
+class="pcrr8t-x-x-120">i </span>of primitive type <span 
+class="pcrr8t-x-x-120">int </span>and another state
+<span 
+class="pcrr8t-x-x-120">privList </span>of reference type <span 
+class="pcrr8t-x-x-120">ArrayList&#x003C;Integer&#x003E;</span>.
+</p>
+   <!--l. 167-->
+<a 
+ id="x10-24001r6"></a>
+<a 
+ id="x10-24002"></a>
+<br /> <div class="caption" 
+><span class="id">Listing&#x00A0;5.6: </span><span  
+class="content">State declarations in capsules</span></div><!--tex4ht:label?: x10-24001r5.2 --><div class="lstlisting" id="listing-24"><span class="label"><a 
+ id="x10-24003r1"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">import</span>&#x00A0;java.util.ArrayList;&#x00A0;<br /><span class="label"><a 
+ id="x10-24004r2"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">signature</span>&#x00A0;S&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x10-24005r3"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x10-24006r4"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">capsule</span>&#x00A0;D&#x00A0;()&#x00A0;<span 
+class="ptmb8t-x-x-120">implements</span>&#x00A0;S&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x10-24007r5"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;String&#x00A0;name&#x00A0;=&#x00A0;"D";&#x00A0;<br /><span class="label"><a 
+ id="x10-24008r6"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;...&#x00A0;<br /><span class="label"><a 
+ id="x10-24009r7"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x10-24010r8"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">capsule</span>&#x00A0;C&#x00A0;(S&#x00A0;d,&#x00A0;<span 
+class="ptmb8t-x-x-120">boolean</span>&#x00A0;b,&#x00A0;String&#x00A0;s,&#x00A0;String[]&#x00A0;args)&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x10-24011r9"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">int</span>&#x00A0;i;&#x00A0;<br /><span class="label"><a 
+ id="x10-24012r10"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;ArrayList&#x003C;Integer&#x003E;&#x00A0;privList&#x00A0;=&#x00A0;<span 
+class="ptmb8t-x-x-120">new</span>&#x00A0;ArrayList&#x003C;Integer&#x003E;();&#x00A0;<br /><span class="label"><a 
+ id="x10-24013r11"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;...&#x00A0;<br /><span class="label"><a 
+ id="x10-24014r12"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;}
+   
+   </div>
+<!--l. 182--><p class="indent" >   A state looks similar to a field in traditional class declarations, but there are two
+major differences.
+</p>
+      <ul class="itemize1">
+      <li class="itemize"><span 
+class="ptmri8t-x-x-120">State  is  always  private.  </span>All  state  declarations  are  private  to  a  capsule,
+      therefore, no visibility modifiers are necessary.
+      </li>
+      <li class="itemize"><span 
+class="ptmri8t-x-x-120">States  are  truly  encapsulated.  </span>A  capsule  instance  controls  all  accesses
+      to  the  object  graph  reachable  from  its  states.  More  precisely,  a  capsule
+      instance acts as a dominator for the object graph reachable from its states.
+      More on that in chapter&#x00A0;<a 
+href="indexch8.html#x13-380008">8<!--tex4ht:ref: chap:confinement --></a>.</li></ul>
+<!--l. 194--><p class="indent" >   The listing&#x00A0;<a 
+href="#x10-24001r6">5.6<!--tex4ht:ref: list:capsule4 --></a> also illustrates using the type <span 
+class="pcrr8t-x-x-120">ArrayList </span>available in the Java
+development kit (JDK). A type declared elsewhere can be imported using the import
+statements that has the same syntax as Java.
+</p><!--l. 199--><p class="noindent" ><!--tex4ht:inline--></p><div class="tabular"> <table id="TBL-2" class="tabular" 
+cellspacing="0" cellpadding="0"  
+><colgroup id="TBL-2-1g"><col 
+id="TBL-2-1" /><col 
+id="TBL-2-2" /></colgroup><tr  
+ style="vertical-align:baseline;" id="TBL-2-1-"><td  style="white-space:nowrap; text-align:center;" id="TBL-2-1-1"  
+class="td11">    </td><td  style="white-space:wrap; text-align:left;" id="TBL-2-1-2"  
+class="td11"> <!--l. 199--><p class="noindent" >                                              </p></td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-2-"><td  style="white-space:nowrap; text-align:center;" id="TBL-2-2-1"  
+class="td11"> <img 
+src="figures/caution.png" alt="PIC"  
+ />  </td><td  style="white-space:wrap; text-align:left;" id="TBL-2-2-2"  
+class="td11"> <!--l. 199--><p class="noindent" ><span 
+class="ptmr8t-x-x-144">A capsule name is not a legal type for a state declaration.</span>  </p></td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-3-"><td  style="white-space:nowrap; text-align:center;" id="TBL-2-3-1"  
+class="td11">    </td></tr></table></div>
+<!--l. 201--><p class="noindent" >
+</p>
+                                                                         
+
+                                                                         
+   <h3 class="sectionHead"><span class="titlemark">5.3    </span> <a 
+ id="x10-250005.3"></a>Capsule Initializer</h3>
+<!--l. 204--><p class="noindent" >To setup the internal data structures of the capsule before it can interact with external
+entities, capsules can [optionally] declare a single initializer.
+</p><!--l. 207--><p class="indent" >   A capsule initializer runs before any other external procedure calls on a capsule
+instance.
+</p><!--l. 210--><p class="indent" >   As a concrete example, let us add a simple initializer to the capsule <span 
+class="pcrr8t-x-x-120">C </span>that will
+initialize the values of <span 
+class="pcrr8t-x-x-120">i </span>and <span 
+class="pcrr8t-x-x-120">privList</span>.
+</p>
+   <!--l. 213-->
+<a 
+ id="x10-25001r7"></a>
+<a 
+ id="x10-25002"></a>
+<br /> <div class="caption" 
+><span class="id">Listing&#x00A0;5.7: </span><span  
+class="content">Initializer in capsules</span></div><!--tex4ht:label?: x10-25001r5.3 --><div class="lstlisting" id="listing-25"><span class="label"><a 
+ id="x10-25003r1"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">import</span>&#x00A0;java.util.ArrayList;&#x00A0;<br /><span class="label"><a 
+ id="x10-25004r2"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">signature</span>&#x00A0;S&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x10-25005r3"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x10-25006r4"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">capsule</span>&#x00A0;D&#x00A0;()&#x00A0;<span 
+class="ptmb8t-x-x-120">implements</span>&#x00A0;S&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x10-25007r5"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;String&#x00A0;name&#x00A0;=&#x00A0;"D";&#x00A0;<br /><span class="label"><a 
+ id="x10-25008r6"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;...&#x00A0;<br /><span class="label"><a 
+ id="x10-25009r7"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x10-25010r8"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">capsule</span>&#x00A0;C&#x00A0;(S&#x00A0;d,&#x00A0;<span 
+class="ptmb8t-x-x-120">boolean</span>&#x00A0;b,&#x00A0;String&#x00A0;s,&#x00A0;String[]&#x00A0;args)&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x10-25011r9"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">int</span>&#x00A0;i;&#x00A0;<br /><span class="label"><a 
+ id="x10-25012r10"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;ArrayList&#x003C;Integer&#x003E;&#x00A0;privList;&#x00A0;<br /><span class="label"><a 
+ id="x10-25013r11"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x10-25014r12"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;=&#x003E;&#x00A0;{&#x00A0;<span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">//</span><span 
+class="ptmri8t-x-x-120">Start</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">of</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">an</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">initializer</span>&#x00A0;<br /><span class="label"><a 
+ id="x10-25015r13"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;i&#x00A0;=&#x00A0;42;&#x00A0;<br /><span class="label"><a 
+ id="x10-25016r14"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;privList&#x00A0;=&#x00A0;<span 
+class="ptmb8t-x-x-120">new</span>&#x00A0;ArrayList&#x003C;Integer&#x003E;();&#x00A0;<br /><span class="label"><a 
+ id="x10-25017r15"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x10-25018r16"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;...&#x00A0;<br /><span class="label"><a 
+ id="x10-25019r17"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;}
+   
+   </div>
+<!--l. 233--><p class="indent" >   A capsule initializer runs without interruption until completion. A desirable
+initializer should terminate, although there are no restrictions in Panini on initializer&#8217;s
+structure to ensure termination.
+</p><!--l. 238--><p class="noindent" ><!--tex4ht:inline--></p><div class="tabular"> <table id="TBL-3" class="tabular" 
+cellspacing="0" cellpadding="0"  
+><colgroup id="TBL-3-1g"><col 
+id="TBL-3-1" /><col 
+id="TBL-3-2" /></colgroup><tr  
+ style="vertical-align:baseline;" id="TBL-3-1-"><td  style="white-space:nowrap; text-align:center;" id="TBL-3-1-1"  
+class="td11">    </td><td  style="white-space:wrap; text-align:left;" id="TBL-3-1-2"  
+class="td11"> <!--l. 238--><p class="noindent" >                                              </p></td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-3-2-"><td  style="white-space:nowrap; text-align:center;" id="TBL-3-2-1"  
+class="td11"> <img 
+src="figures/caution.png" alt="PIC"  
+ />  </td><td  style="white-space:wrap; text-align:left;" id="TBL-3-2-2"  
+class="td11"> <!--l. 238--><p class="noindent" ><span 
+class="ptmr8t-x-x-144">A long running capsule initializer can render a capsule</span>
+  <span 
+class="ptmr8t-x-x-144">unresponsive.</span>                                                                      </p></td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-3-3-"><td  style="white-space:nowrap; text-align:center;" id="TBL-3-3-1"  
+class="td11">    </td></tr></table></div>
+<!--l. 240--><p class="noindent" >
+</p>
+   <h3 class="sectionHead"><span class="titlemark">5.4    </span> <a 
+ id="x10-260005.4"></a>Capsule Procedures</h3>
+<!--l. 243--><p class="noindent" >After the capsule initializer has completed setting up the data structures of the capsule
+instance, capsule instance can receive external procedure calls.
+</p><!--l. 246--><p class="indent" >   A capsule procedure has a return type, a name, zero or more arguments, and a
+body. For example, in listing&#x00A0;<a 
+href="#x10-26001r8">5.8<!--tex4ht:ref: list:capsule6 --></a> on lines&#x00A0;<a 
+href="#x10-26001r7">7<!--tex4ht:ref: list:capsule6:appendBegin --></a>-<a 
+href="#x10-26001r10">10<!--tex4ht:ref: list:capsule6:appendEnd --></a> there is a procedure <span 
+class="pcrr8t-x-x-120">append</span>
+that takes a single argument <span 
+class="pcrr8t-x-x-120">s </span>of type <span 
+class="pcrr8t-x-x-120">String</span>, adds <span 
+class="pcrr8t-x-x-120">s </span>to <span 
+class="pcrr8t-x-x-120">name </span>and returns
+<span 
+class="pcrr8t-x-x-120">s</span>.
+</p>
+   <!--l. 252-->
+<a 
+ id="x10-26001r8"></a>
+                                                                         
+
+                                                                         
+<a 
+ id="x10-26002"></a>
+<br /> <div class="caption" 
+><span class="id">Listing&#x00A0;5.8: </span><span  
+class="content">Capsule procedures</span></div><!--tex4ht:label?: x10-26001r5.4 --><div class="lstlisting" id="listing-26"><span class="label"><a 
+ id="x10-26003r1"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">import</span>&#x00A0;java.util.ArrayList;&#x00A0;<br /><span class="label"><a 
+ id="x10-26004r2"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">signature</span>&#x00A0;S&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x10-26005r3"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;String&#x00A0;append&#x00A0;(String&#x00A0;s);&#x00A0;<br /><span class="label"><a 
+ id="x10-26006r4"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x10-26007r5"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">capsule</span>&#x00A0;D&#x00A0;()&#x00A0;<span 
+class="ptmb8t-x-x-120">implements</span>&#x00A0;S&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x10-26008r6"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;String&#x00A0;name&#x00A0;=&#x00A0;"D";&#x00A0;<br /><span class="label"><a 
+ id="x10-26009r7"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;String&#x00A0;append&#x00A0;(String&#x00A0;s)&#x00A0;{&#x00A0;&#x00A0;<br /><span class="label"><a 
+ id="x10-26010r8"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;name&#x00A0;+=&#x00A0;s;&#x00A0;<br /><span class="label"><a 
+ id="x10-26011r9"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">return</span>&#x00A0;s;&#x00A0;<br /><span class="label"><a 
+ id="x10-26012r10"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;}&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<br /><span class="label"><a 
+ id="x10-26013r11"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x10-26014r12"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">capsule</span>&#x00A0;C&#x00A0;(S&#x00A0;d,&#x00A0;<span 
+class="ptmb8t-x-x-120">boolean</span>&#x00A0;b,&#x00A0;String&#x00A0;s,&#x00A0;String[]&#x00A0;args)&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x10-26015r13"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">int</span>&#x00A0;i;&#x00A0;<br /><span class="label"><a 
+ id="x10-26016r14"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;ArrayList&#x003C;Integer&#x003E;&#x00A0;privList;&#x00A0;<br /><span class="label"><a 
+ id="x10-26017r15"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x10-26018r16"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;=&#x003E;&#x00A0;{&#x00A0;<span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">//</span><span 
+class="ptmri8t-x-x-120">Start</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">of</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">an</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">initializer</span>&#x00A0;<br /><span class="label"><a 
+ id="x10-26019r17"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;i&#x00A0;=&#x00A0;42;&#x00A0;<br /><span class="label"><a 
+ id="x10-26020r18"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;privList&#x00A0;=&#x00A0;<span 
+class="ptmb8t-x-x-120">new</span>&#x00A0;ArrayList&#x003C;Integer&#x003E;();&#x00A0;<br /><span class="label"><a 
+ id="x10-26021r19"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x10-26022r20"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x10-26023r21"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">private</span>&#x00A0;<span 
+class="ptmb8t-x-x-120">void</span>&#x00A0;add&#x00A0;(Integer&#x00A0;n)&#x00A0;{&#x00A0;&#x00A0;<br /><span class="label"><a 
+ id="x10-26024r22"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;privList.add(n);&#x00A0;<br /><span class="label"><a 
+ id="x10-26025r23"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;}&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<br /><span class="label"><a 
+ id="x10-26026r24"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x10-26027r25"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;...&#x00A0;<br /><span class="label"><a 
+ id="x10-26028r26"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;}
+   
+   </div>
+<!--l. 281--><p class="indent" >   A capsule procedure looks similar to a method in traditional class declarations, but
+there are three major differences.
+</p>
+      <ul class="itemize1">
+      <li class="itemize"><span 
+class="ptmri8t-x-x-120">Procedures   run   logically   synchronously.   </span>Unlike   methods   that   run
+      synchronously, i.e. when a method is called caller is blocked until caller
+      finishes and returns, capsule procedures run <span 
+class="ptmri8t-x-x-120">logically </span>synchronously, i.e.
+      when a procedure is called caller is blocked only if it needs the result right
+      away, otherwise caller and callee can compute concurrently.
+      </li>
+      <li class="itemize"><span 
+class="ptmri8t-x-x-120">Procedures  have  exclusive  access  to  states.  </span>A  capsule  procedure  has
+      exclusive access to the states of the capsule while it is running. Therefore,
+      a programmer need not use locks or other synchronization mechanisms to
+      gain exclusive access to states.
+      </li>
+      <li class="itemize"><span 
+class="ptmri8t-x-x-120">Procedures are by default public. </span>All procedure declarations are by default
+      public  for  a  capsule,  therefore,  no  visibility  modifiers  are  necessary  to
+      make them public.
+      </li></ul>
+<!--l. 302--><p class="indent" >   Helper procedures can be declared by qualifying them with a modifier
+private. For example, in listing&#x00A0;<a 
+href="#x10-26001r8">5.8<!--tex4ht:ref: list:capsule6 --></a> on lines&#x00A0;<a 
+href="#x10-26001r21">21<!--tex4ht:ref: list:capsule6:addBegin --></a>-<a 
+href="#x10-26001r23">23<!--tex4ht:ref: list:capsule6:addEnd --></a> there is a helper procedure
+<span 
+class="pcrr8t-x-x-120">add</span>.
+</p><!--l. 307--><p class="indent" >   All capsule procedures, except helper procedures, constitute the interface of the
+capsule.
+</p><!--l. 310--><p class="noindent" >
+                                                                         
+
+                                                                         
+</p>
+   <h3 class="sectionHead"><span class="titlemark">5.5    </span> <a 
+ id="x10-270005.5"></a>Autonomous Capsule Behavior</h3>
+<!--l. 313--><p class="noindent" >Capsule procedures like <span 
+class="pcrr8t-x-x-120">append </span>and <span 
+class="pcrr8t-x-x-120">add </span>are passive in that they cause the capsule to
+compute in response to a procedure call. A capsule can also declare autonomous
+behavior that does not require external call to run. There is one designated optional
+capsule procedure <span 
+class="pcrr8t-x-x-120">run </span>representing that the capsule can start computation without
+external stimuli.
+</p>
+   <!--l. 320-->
+<a 
+ id="x10-27001r9"></a>
+<a 
+ id="x10-27002"></a>
+<br /> <div class="caption" 
+><span class="id">Listing&#x00A0;5.9: </span><span  
+class="content">Autonomous capsule behavior</span></div><!--tex4ht:label?: x10-27001r5.5 --><div class="lstlisting" id="listing-27"><span class="label"><a 
+ id="x10-27003r1"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">import</span>&#x00A0;java.util.ArrayList;&#x00A0;<br /><span class="label"><a 
+ id="x10-27004r2"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">signature</span>&#x00A0;S&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x10-27005r3"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x10-27006r4"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">capsule</span>&#x00A0;D&#x00A0;()&#x00A0;<span 
+class="ptmb8t-x-x-120">implements</span>&#x00A0;S&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x10-27007r5"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;String&#x00A0;name&#x00A0;=&#x00A0;"D";&#x00A0;<br /><span class="label"><a 
+ id="x10-27008r6"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;String&#x00A0;append&#x00A0;(String&#x00A0;s)&#x00A0;{&#x00A0;&#x00A0;<br /><span class="label"><a 
+ id="x10-27009r7"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;name&#x00A0;+=&#x00A0;s;&#x00A0;<br /><span class="label"><a 
+ id="x10-27010r8"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">return</span>&#x00A0;s;&#x00A0;<br /><span class="label"><a 
+ id="x10-27011r9"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;}&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<br /><span class="label"><a 
+ id="x10-27012r10"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x10-27013r11"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">capsule</span>&#x00A0;C&#x00A0;(S&#x00A0;d,&#x00A0;<span 
+class="ptmb8t-x-x-120">boolean</span>&#x00A0;b,&#x00A0;String&#x00A0;s,&#x00A0;String[]&#x00A0;args)&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x10-27014r12"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">int</span>&#x00A0;i;&#x00A0;<br /><span class="label"><a 
+ id="x10-27015r13"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;ArrayList&#x003C;Integer&#x003E;&#x00A0;privList;&#x00A0;<br /><span class="label"><a 
+ id="x10-27016r14"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x10-27017r15"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;=&#x003E;&#x00A0;{&#x00A0;<span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">//</span><span 
+class="ptmri8t-x-x-120">Start</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">of</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">an</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">initializer</span>&#x00A0;<br /><span class="label"><a 
+ id="x10-27018r16"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;i&#x00A0;=&#x00A0;42;&#x00A0;<br /><span class="label"><a 
+ id="x10-27019r17"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;privList&#x00A0;=&#x00A0;<span 
+class="ptmb8t-x-x-120">new</span>&#x00A0;ArrayList&#x003C;Integer&#x003E;();&#x00A0;<br /><span class="label"><a 
+ id="x10-27020r18"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x10-27021r19"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x10-27022r20"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">private</span>&#x00A0;<span 
+class="ptmb8t-x-x-120">void</span>&#x00A0;add&#x00A0;(Integer&#x00A0;n)&#x00A0;{&#x00A0;&#x00A0;<br /><span class="label"><a 
+ id="x10-27023r21"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;privList.add(n);&#x00A0;<br /><span class="label"><a 
+ id="x10-27024r22"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;}&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<br /><span class="label"><a 
+ id="x10-27025r23"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x10-27026r24"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">void</span>&#x00A0;run()&#x00A0;{&#x00A0;&#x00A0;<br /><span class="label"><a 
+ id="x10-27027r25"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">for</span>(Integer&#x00A0;i&#x00A0;=&#x00A0;0;&#x00A0;i&#x00A0;&#x003C;&#x00A0;25;&#x00A0;i++)&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x10-27028r26"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;add(i);&#x00A0;&#x00A0;<br /><span class="label"><a 
+ id="x10-27029r27"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;d.append("_"&#x00A0;+&#x00A0;i);&#x00A0;&#x00A0;<br /><span class="label"><a 
+ id="x10-27030r28"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x10-27031r29"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;}&#x00A0;&#x00A0;<br /><span class="label"><a 
+ id="x10-27032r30"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;}
+   
+   </div>
+<!--l. 353--><p class="indent" >   For example, in listing&#x00A0;<a 
+href="#x10-27001r9">5.9<!--tex4ht:ref: list:capsule7 --></a> on lines&#x00A0;<a 
+href="#x10-27001r24">24<!--tex4ht:ref: list:capsule7:runBegin --></a>-<a 
+href="#x10-27001r29">29<!--tex4ht:ref: list:capsule7:runEnd --></a> there is an autonomous procedure
+<span 
+class="pcrr8t-x-x-120">run </span>that runs as soon as memory allocation and initialization for capsules is
+complete.
+</p><!--l. 359--><p class="noindent" ><!--tex4ht:inline--></p><div class="tabular"> <table id="TBL-4" class="tabular" 
+cellspacing="0" cellpadding="0"  
+><colgroup id="TBL-4-1g"><col 
+id="TBL-4-1" /><col 
+id="TBL-4-2" /></colgroup><tr  
+ style="vertical-align:baseline;" id="TBL-4-1-"><td  style="white-space:nowrap; text-align:center;" id="TBL-4-1-1"  
+class="td11">    </td><td  style="white-space:wrap; text-align:left;" id="TBL-4-1-2"  
+class="td11"> <!--l. 359--><p class="noindent" >                                              </p></td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-4-2-"><td  style="white-space:nowrap; text-align:center;" id="TBL-4-2-1"  
+class="td11"> <img 
+src="figures/caution.png" alt="PIC"  
+ />  </td><td  style="white-space:wrap; text-align:left;" id="TBL-4-2-2"  
+class="td11"> <!--l. 359--><p class="noindent" ><span 
+class="ptmr8t-x-x-144">A capsule can either be autonomous by declaring a </span><span 
+class="pcrr8t-x-x-144">run</span>
+ <span 
+class="ptmr8t-x-x-144">procedure or passive and declare other procedures, but</span>
+  <span 
+class="ptmr8t-x-x-144">not both.</span>                                                                              </p></td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-4-3-"><td  style="white-space:nowrap; text-align:center;" id="TBL-4-3-1"  
+class="td11">    </td></tr></table></div>
+<!--l. 361--><p class="noindent" >
+</p>
+   <h3 class="sectionHead"><span class="titlemark">5.6    </span> <a 
+ id="x10-280005.6"></a>Capsule Procedure Calls</h3>
+<!--l. 364--><p class="noindent" >The semantics of capsule procedure calls is new and worth emphasis. In listing&#x00A0;<a 
+href="#x10-27001r9">5.9<!--tex4ht:ref: list:capsule7 --></a> the
+body of the autonomous procedure <span 
+class="pcrr8t-x-x-120">run </span>shows two examples of capsule procedure
+calls on lines <a 
+href="#x10-27001r26">26<!--tex4ht:ref: list:capsule7:callAdd --></a> and <a 
+href="#x10-27001r27">27<!--tex4ht:ref: list:capsule7:callAppend --></a>.
+</p><!--l. 369--><p class="indent" >   <span 
+class="ptmri8t-x-x-120">Calling an internal helper procedure.</span><span 
+class="ptmri8t-x-x-120">&#x00A0; </span>On line&#x00A0;<a 
+href="#x10-27001r26">26<!--tex4ht:ref: list:capsule7:callAdd --></a> is an example of calling helper
+procedure <span 
+class="pcrr8t-x-x-120">add</span>, which runs to completion while the caller is blocked. This is to ensure
+that only a single capsule procedure has exclusive access to the states of the
+capsule.
+</p><!--l. 375--><p class="indent" >   <span 
+class="ptmri8t-x-x-120">Calling an external capsule procedure.</span><span 
+class="ptmri8t-x-x-120">&#x00A0; </span>On line&#x00A0;<a 
+href="#x10-27001r27">27<!--tex4ht:ref: list:capsule7:callAppend --></a> is an example of
+calling external capsule procedure <span 
+class="pcrr8t-x-x-120">append</span>. This call immediately returns,
+                                                                         
+
+                                                                         
+while the callee continues to finish running the <span 
+class="pcrr8t-x-x-120">append </span>procedure. This
+is because the caller does not make use of the return value of the <span 
+class="pcrr8t-x-x-120">append</span>
+procedure.
+</p>
+   <!--l. 381-->
+<a 
+ id="x10-28001r10"></a>
+<a 
+ id="x10-28002"></a>
+<br /> <div class="caption" 
+><span class="id">Listing&#x00A0;5.10: </span><span  
+class="content">Inter-capsule procedure call</span></div><!--tex4ht:label?: x10-28001r5.6 --><div class="lstlisting" id="listing-28"><span class="label"><a 
+ id="x10-28003r1"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">void</span>&#x00A0;run()&#x00A0;{&#x00A0;&#x00A0;<br /><span class="label"><a 
+ id="x10-28004r2"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">for</span>(Integer&#x00A0;i&#x00A0;=&#x00A0;0;&#x00A0;i&#x00A0;&#x003C;&#x00A0;25;&#x00A0;i++)&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x10-28005r3"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;add(i);&#x00A0;&#x00A0;<br /><span class="label"><a 
+ id="x10-28006r4"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;String&#x00A0;result&#x00A0;=&#x00A0;d.append("_"&#x00A0;+&#x00A0;i);&#x00A0;&#x00A0;<br /><span class="label"><a 
+ id="x10-28007r5"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x10-28008r6"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;}&#x00A0;
+   
+   </div>
+<!--l. 390--><p class="indent" >   In listing&#x00A0;<a 
+href="#x10-27001r9">5.9<!--tex4ht:ref: list:capsule7 --></a> on line&#x00A0;<a 
+href="#x10-28001r4">4<!--tex4ht:ref: list:capsule8:callAppend --></a> is another example of calling external capsule procedure
+<span 
+class="pcrr8t-x-x-120">append</span>. This call waits until the caller has finished running the <span 
+class="pcrr8t-x-x-120">append </span>procedure.
+This is because here the caller needs the return value of the <span 
+class="pcrr8t-x-x-120">append </span>procedure. So we
+must wait until that value is available.
+</p><!--l. 396--><p class="indent" >   A distinct advantage of capsule-oriented programming is that the programmer does
+not need to explicitly program these semantic variations.
+</p><!--l. 462--><p class="noindent" >
+</p>
+   <h3 class="sectionHead"><span class="titlemark">5.7    </span> <a 
+ id="x10-290005.7"></a>Shutdown and Exit Procedures</h3>
+<!--l. 465--><p class="noindent" >Each capsule implicitly supports two built-in procedures: <span 
+class="pcrr8t-x-x-120">shutdown </span>and
+<span 
+class="pcrr8t-x-x-120">exit</span>.
+</p><!--l. 468--><p class="indent" >   When a capsule is requested to <span 
+class="pcrr8t-x-x-120">shutdown</span>, and if it does not have any pending
+work, it terminates.
+</p><!--l. 471--><p class="indent" >   When a capsule is requested to <span 
+class="pcrr8t-x-x-120">shutdown</span>, and if it has pending work, it puts the
+shutdown request at the end of its work queue and continues to serve other
+requests.
+</p><!--l. 475--><p class="indent" >   When a capsule is requested to <span 
+class="pcrr8t-x-x-120">exit</span>, it terminates as soon as all of the pending
+work (as of the exit request) is done.
+</p><!--l. 478--><p class="noindent" >
+                                                                         
+
+                                                                         
+</p>
+   <h3 class="sectionHead"><span class="titlemark">5.8    </span> <a 
+ id="x10-300005.8"></a>Example: Bank Account</h3>
+<!--l. 480--><p class="noindent" >To review features of a capsule declaration, we would now use them to build a
+simplified banking application. As a concrete example of capsules consider this simple
+model of a bank account in listing&#x00A0;<a 
+href="#x10-30001r11">5.11<!--tex4ht:ref: list:bank0 --></a>.
+</p>
+   <!--l. 485-->
+<a 
+ id="x10-30001r11"></a>
+<a 
+ id="x10-30002"></a>
+<br /> <div class="caption" 
+><span class="id">Listing&#x00A0;5.11: </span><span  
+class="content">A Bank Account Capsule</span></div><!--tex4ht:label?: x10-30001r5.8 --><div class="lstlisting" id="listing-29"><span class="label"><a 
+ id="x10-30003r1"></a></span><span 
+class="ptmb8t-x-x-120">capsule</span>&#x00A0;BankAccount()&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x10-30004r2"></a></span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">//</span><span 
+class="ptmri8t-x-x-120">this</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">declaration</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">represents</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">the</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">state</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">of</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">the</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">capsule</span>&#x00A0;<br /><span class="label"><a 
+ id="x10-30005r3"></a></span>&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">double</span>&#x00A0;balance&#x00A0;=&#x00A0;0.0;&#x00A0;<br /><span class="label"><a 
+ id="x10-30006r4"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x10-30007r5"></a></span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">/</span><span 
+class="cmsy-10x-x-120">*</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">Capsule</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">procedures</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">are</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">defined</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">in</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">the</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">same</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">way</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">object</span>&#x00A0;<br /><span class="label"><a 
+ id="x10-30008r6"></a></span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">methods</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">are</span><span 
+class="ptmri8t-x-x-120">,</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">and</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">as</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">far</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">as</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">the</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">programmer</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">is</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">concerned</span>&#x00A0;<br /><span class="label"><a 
+ id="x10-30009r7"></a></span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">they</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">behave</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">largely</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">like</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">a</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">normal</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">class</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">method</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="cmsy-10x-x-120">*</span><span 
+class="ptmri8t-x-x-120">/</span>&#x00A0;<br /><span class="label"><a 
+ id="x10-30010r8"></a></span>&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">void</span>&#x00A0;deposit(<span 
+class="ptmb8t-x-x-120">double</span>&#x00A0;money)&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x10-30011r9"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;balance&#x00A0;+=&#x00A0;money;&#x00A0;<br /><span class="label"><a 
+ id="x10-30012r10"></a></span>&#x00A0;&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x10-30013r11"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x10-30014r12"></a></span>&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">void</span>&#x00A0;withdraw(<span 
+class="ptmb8t-x-x-120">double</span>&#x00A0;money)&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x10-30015r13"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">if</span>(balance&#x00A0;<span 
+class="zptmcm7y-x-x-120">-</span>&#x00A0;money&#x00A0;&amp;lt;&#x00A0;0)&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x10-30016r14"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">throw</span>&#x00A0;<span 
+class="ptmb8t-x-x-120">new</span>&#x00A0;InvalidTransactionException();&#x00A0;<br /><span class="label"><a 
+ id="x10-30017r15"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x10-30018r16"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;balance&#x00A0;<span 
+class="zptmcm7y-x-x-120">-</span>=&#x00A0;money;&#x00A0;<br /><span class="label"><a 
+ id="x10-30019r17"></a></span>&#x00A0;&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x10-30020r18"></a></span>}
+   
+   </div>
+<!--l. 506--><p class="noindent" >
+</p>
+   <h3 class="sectionHead"><span class="titlemark">5.9    </span> <a 
+ id="x10-310005.9"></a>Implicit concurrency</h3>
+<!--l. 509--><p class="noindent" >Now consider an example where you have two clients who have a joint bank account.
+At some point, both of them might try to withdraw money at the same time. In
+traditional programming languages, if no explicit synchronization is used, this would
+be a data-race.
+</p><!--l. 514--><p class="indent" >   Here comes Panini&#8217;s greatest strength, the programmer does not have to worry
+about any of that! He/she can write the out the logical design of the design and the
+concurrency related issues are dealt with behind the scenes.
+</p><!--l. 521--><p class="indent" >   Below is an example of such a design where the potential for error is eliminated by
+the language itself:
+</p>
+   <!--l. 525-->
+<a 
+ id="x10-31001r12"></a>
+<a 
+ id="x10-31002"></a>
+<br /> <div class="caption" 
+><span class="id">Listing&#x00A0;5.12: </span><span  
+class="content">Multiple Clients of the Bank Account Capsule</span></div><!--tex4ht:label?: x10-31001r5.9 --><div class="lstlisting" id="listing-30"><span class="label"><a 
+ id="x10-31003r1"></a></span><span 
+class="ptmb8t-x-x-120">capsule</span>&#x00A0;Bank{&#x00A0;<br /><span class="label"><a 
+ id="x10-31004r2"></a></span>&#x00A0;<span 
+class="ptmb8t-x-x-120">design</span>&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x10-31005r3"></a></span>&#x00A0;&#x00A0;BankClient&#x00A0;client1;&#x00A0;<br /><span class="label"><a 
+ id="x10-31006r4"></a></span>&#x00A0;&#x00A0;BankClient&#x00A0;client2;&#x00A0;<br /><span class="label"><a 
+ id="x10-31007r5"></a></span>&#x00A0;&#x00A0;BankAccount&#x00A0;jointAccount;&#x00A0;<br /><span class="label"><a 
+ id="x10-31008r6"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x10-31009r7"></a></span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">/</span><span 
+class="cmsy-10x-x-120">*</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">since</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">client1</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">and</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">client2</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">are</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">both</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">instantiations</span>&#x00A0;<br /><span class="label"><a 
+ id="x10-31010r8"></a></span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">of</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">a</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">capsule</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">with</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">a</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">run</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">procedure</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">they</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">will</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">be</span>&#x00A0;<br /><span class="label"><a 
+ id="x10-31011r9"></a></span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">executed</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">concurrently</span><span 
+class="ptmri8t-x-x-120">.</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">And</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">they</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">will</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">safely</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">access</span>&#x00A0;<br /><span class="label"><a 
+ id="x10-31012r10"></a></span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">the</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">bank</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">account</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">with</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">no</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">need</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">to</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">modify</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">the</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">original</span>&#x00A0;<br /><span class="label"><a 
+ id="x10-31013r11"></a></span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">implmentation</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">of</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">either</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">the</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">BankClient</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">or</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">BankAccount</span>&#x00A0;<br /><span class="label"><a 
+ id="x10-31014r12"></a></span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">capsules</span><span 
+class="ptmri8t-x-x-120">.</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="cmsy-10x-x-120">*</span><span 
+class="ptmri8t-x-x-120">/</span>&#x00A0;<br /><span class="label"><a 
+ id="x10-31015r13"></a></span>&#x00A0;&#x00A0;client1(jointAccount);&#x00A0;<br /><span class="label"><a 
+ id="x10-31016r14"></a></span>&#x00A0;&#x00A0;client2(jointAccount);&#x00A0;<br /><span class="label"><a 
+ id="x10-31017r15"></a></span>&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x10-31018r16"></a></span>}
+   
+   </div>
+                                                                         
+
+                                                                         
+<!--l. 225--><p class="indent" >   <div class="page-nav"><a 
+href="indexch5.html" >^ RETURN TO TOP</a></div><div class="page-nav"><a 
+href="indexch6.html" >NEXT &#x003E;</a></div>     
+</div><!--end-main-content-->  
+</div><!--end-content-->  
+</div> <!--end-body-container-->  
+ 
+<div class="footer-container">  
+<div class="footer">  
+<div class="bot-nav">  
+<nav>  
+<ul>  
+<li><a href="/about.shtml">About</a></li>  
+<li><a href="/people.shtml">People</a></li>  
+<li><a href="/download/">Downloads</a></li>  
+<li><a href="/papers.shtml">Research</a></li>  
+<li><a href="/man/">Documentation</a></li>  
+<li><a href="/faq.shtml" id="botlast">FAQs</a></li>  
+</ul>  
+</nav>  
+</div>  
+<div class="legal">  
+<div id="isu">Iowa State University</div>  
+<p id="copyright">  
+<script type="text/javascript">  
+copyright=new Date()  
+fullYear=copyright.getFullYear();  
+document.write("Copyright &copy; " + fullYear + " Iowa State University of Science and Technology. All rights reserved.")  
+</script>  
+</p>  
+<p id="credits">  
+These pages describe work carried out on the design  
+and the implementation of the Panini programming language.  
+The PI is  
+<a href="http://www.cs.iastate.edu/\protect \unhbox \voidb@x \penalty \@M \relax \unhbox \voidb@x \special {t4ht@+&{35}x00A0{59}}x{}hridesh/">Hridesh Rajan</a> from  
+<a href="http://www.cs.iastate.edu">Iowa State University</a>.  
+This work is supported in part by  
+the US <a href="http://www.nsf.gov">National Science Foundation</a> (NSF) under grants  
+<a href="http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=0846059">CCF-08-46059</a>,  
+<a href="http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=1017334">CCF-10-17334</a>,  
+<a href="http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=1117937">CCF-11-17937</a>, and  
+<a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1423370">CCF-14-23370</a> to Rajan.  
+Any opinions, findings, and conclusions or recommendations  
+expressed in this material are those of the author(s) and do not  
+necessarily reflect the views of the <a href="http://www.nsf.gov">NSF</a>.  
+</p>  
+</div>  
+<div class="links">  
+<h3>Related Sites</h3>  
+<ul>  
+<li><a href="http://www.cs.iastate.edu/\protect \unhbox \voidb@x \penalty \@M \relax \unhbox \voidb@x \special {t4ht@+&{35}x00A0{59}}x{}design/">Labratory for Software Design</a></li>  
+<li><a href="http://www.cs.iastate.edu/">Computer Science Department</a></li>  
+<li><a href="http://www.iastate.edu/">Iowa State University</a></li>  
+</ul>  
+</div>  
+</div>  
+</div>  
+ 
+<script type="text/javascript">  
+//Analytics account -- http://paninij.sourceforge.net  
+var _gaq = _gaq || [];  
+_gaq.push(['_setAccount', 'UA-15725511-1']);  
+_gaq.push(['_trackPageview']);  
+ 
+(function() {  
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;  
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';  
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);  
+})();  
+</script>  
+</body> 
+</html>

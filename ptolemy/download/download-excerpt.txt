@@ -1,0 +1,31 @@
+         <blockquote> 
+             <p>
+                Ptolemy is available for free for research and teaching purposes 
+                and for evaluation for commercial purposes subject to the following 
+                licensing agreement. 
+             </p>
+             <ol>
+                <p>Copyright (C) 2007, Iowa State University of Science and Technology. All rights reserved.<br><br>  
+                The Ptolemy compiler is available for free for non-profit research                     
+                and educational purposes. For commercial licensing please                     
+                contact ptolemy@cs.iastate.edu. The compiler, tools, libraries                     
+                and sources are licensed according to the following license:                     
+                Permission is hereby granted, free of charge, to any person                     
+                obtaining a copy of this software and associated documentation                     
+                files (the "Software") for non-profit research and educational                     
+                purposes, to use this Software subject to the following conditions:                     
+                The above copyright notice and this permission notice shall                     
+                be included in all copies or substantial portions of the Software.
+                THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY 
+                KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE 
+                WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE 
+                AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT 
+                HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, 
+                WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
+                FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE 
+                OR OTHER DEALINGS IN THE SOFTWARE.</p>
+             </ol>
+         </blockquote>
+
+         <BR><center><h2><B><A HREF = "downloadpage.shtml"> I agree take me to the download page. </A></B></h2><center><BR>
+

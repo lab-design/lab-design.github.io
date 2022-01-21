@@ -1,0 +1,84 @@
+<!--#include virtual="includes/topbar.html"-->
+<!-- 2ND COLUMN. INSERT COPY -->
+
+<td id="b3" rowspan="2">
+<div class="maintext">
+
+<h1>What is SAPHA?</h1>
+The goal of the SAPHA project is to design and implement automatic thread-to-core assignment techniques for performance asymmetric multi-core processors that will improve the overall utilization of these processors. 
+
+<BR><BR><BR>
+<h2>Motivation</h2>
+
+<p>
+As multi-core processors are becoming common, vendors are starting to explore
+trade offs between die size, number of cores on a die, and power consumption
+leading to performance asymmetry among cores on a single chip.
+For efficient utilization of these performance asymmetric multi-core
+processors, application threads must be assigned to cores such that the
+resource needs of a thread closely matches resource availability at the
+assigned core.
+Figure 1 illustrates this problem for a CPU consisting of three different
+core types and applications which vary in resource requirements.
+Current methods of thread-to-core assignment often require an application's
+execution trace to determine it's runtime properties.
+These traces are obtained by running the application on some representative
+input.
+A problem is that developing these representative input sets is time
+consuming, and requires expertise that the user of a general-purpose processor
+may not have.
+Other techniques for thread-to-core assignment require monitoring throughout
+the entire execution of a program.
+Reducing the amount of monitoring, we are likely to see improved performance.
+Furthermore, these techniques base decisions for future thread-to-core
+assignment based on past execution behavior.
+</p>
+
+<!--
+<table class="figure">
+<tr><td><img src="figures/problem.png"></td></tr>
+<tr><td width=400px><b>Figure 1:</b> The left side shows a performance asymmetric multicore with three core types. 
+The right side shows three processes which exhibit different behavior throughput execution (shown by different shading).</td></tr>
+</table>
+-->
+
+<p>
+In this project, we are designing, implementing, and evaluating automatic
+thread-to-core assignment techniques for performance asymmetric multi-core
+processors that will enhance the utilization of these processors.
+The first step of our approach is to group together code segments that are
+likely to exhibit similar runtime behavior.
+The key idea is that the actual runtime characteristics of a small number of
+code segments gives insight into the behavior of all similar code segments.
+Figure 1 illustrates the basic ideas behind our approach which we call 
+phase-based tuning.
+</p> 
+
+<table class="figure">
+<tr><td><img src="figures/codeToTypeActual.png"></td></tr>
+<tr><td width=602px><b>Figure 1: Overview of phase-based tuning</b> 
+</td></tr>
+</table>
+
+
+
+<br>
+
+<h2>Key Advantages of SAPHA</h2>
+
+<p>
+<ul>
+<li><b>Programmer oblivious:</b> Programmer does not need to understand the underlying performance asymmetry or the characteristics of their application.
+<li><b>Architecture independent:</b> Does not need to be re-run for different architectures.
+<li><b>Transparent deployment:</b> No OS or compiler modification is required.
+<li><b>Improved utilization:</b> Improved utilization of performance asymmetric multicore processors.
+<li><b>Negligible overhead</b>
+</ul>
+</p>
+
+</div>
+
+
+</td>
+
+<!--#include virtual="includes/bottombar.html"-->

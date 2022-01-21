@@ -1,0 +1,46 @@
+<!--#include virtual="../includes/topbar.html"-->
+<!-- 2ND COLUMN. INSERT COPY -->
+
+<td id="b3" rowspan="2">
+<div class="maintext">
+<h2> Downloading Golok</h2>
+
+         <blockquote> 
+             <p>
+	        You are downloading Golok version 1.3. 
+		Golok is a tool for push-button verification of parameterized systems.
+                Golok is available for free for research and teaching purposes 
+                and for evaluation for commercial purposes subject to the following 
+                licensing agreement. 
+             </p>
+             <ol>
+                <p>Copyright (C) 2012, Iowa State University of Science and Technology.<BR>
+		All rights reserved.<br><br>
+                The Golok framework is available for free for non-profit research                     
+                and educational purposes. For commercial licensing please                     
+                contact Hridesh Rajan by sending an e-mail to hridesh@iastate.edu. 
+		The compiler, tools, libraries                     
+                and sources are licensed according to the following license:                     
+                Permission is hereby granted, free of charge, to any person                     
+                obtaining a copy of this software and associated documentation                     
+                files (the "Software") for non-profit research and educational                     
+                purposes, to use this Software subject to the following conditions:                     
+                The above copyright notice and this permission notice shall                     
+                be included in all copies or substantial portions of the Software.
+                THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY 
+                KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE 
+                WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE 
+                AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT 
+                HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, 
+                WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
+                FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE 
+                OR OTHER DEALINGS IN THE SOFTWARE.</p>
+             </ol>
+         </blockquote>
+
+         <BR><center><h2><B><A HREF = "golok_bin_v1.3-fedora.tar.gz"> I agree, download Golok (Fedora Version). </A></B></h2><center><BR>
+</div>
+
+</td>
+
+<!--#include virtual="../includes/bottombar.html"-->

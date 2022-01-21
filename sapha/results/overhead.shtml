@@ -1,0 +1,55 @@
+<!--#include virtual="../includes/topbar.html"-->
+<!-- 2ND COLUMN. INSERT COPY -->
+
+<td id="b3" rowspan="2">
+<div class="maintext">
+<div class="title"><h1>Overhead</h1></div>
+To determine the overhead of our approach, we look at both time and space overheads.
+<BR><BR>
+
+<h2>Time Overhead</h2>
+Time overhead refers to the amount of time an instrumented application spends in inserted code (dynamic analysis and core switches).
+<BR><BR>
+
+<p>
+<table class="figure">
+<tr><td>
+  <img src="../figures/time-overhead.png"><BR>
+</td></tr>
+<tr><td width=500px>
+  <b>Figure 1:</b> Time overhead for <a href="variations.shtml">variations</a> of our technique. 
+</td></tr>
+</table>
+</p>
+<br><br>
+
+<h2>Space Overhead</h2>
+
+Space refers to the increase in program size caused by instrumented code.
+Trends in space overhead are similar to those for time overhead.
+<BR><BR>
+
+<table class="figure">
+<tr><td>
+  <img src="../figures/overhead_space_table.png"><BR>
+</td></tr>
+<tr><td width=500px>
+  <b>Figure 2:</b> Space overhead for <a href="variations.shtml">variations</a> of our technique. 
+</td></tr>
+</table>
+</p>
+
+<BR><BR>
+
+<HR SIZE=1, WIDTH=95%, ALIGN=CENTER, NOSHADE>
+<ol>
+<li>These results are shown in our latest <a href="http://archives.cs.iastate.edu/documents/disk0/00/00/05/96/index.html">technical report</a>.
+</ol>
+
+
+</div>
+
+
+</td>
+
+<!--#include virtual="../includes/bottombar.html"-->

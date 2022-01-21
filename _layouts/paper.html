@@ -1,0 +1,54 @@
+---
+layout: page
+---
+
+{% capture author %}
+{% bibtex --style /_citation_styles/author.csl %}
+{{page.bib}}
+{% endbibtex %}
+{% endcapture %}
+
+<h4>
+By: {{ author | strip_html }}
+</h4>
+
+{% if page.download_link %}
+<a href="{{ page.download_link }}" class="icon">
+  <img src="/img/pdf_icon.svg"/ alt="PDF Download">
+  <span>Download Paper</span>
+</a>
+{% endif %}
+<br/>
+
+{% if page.extra_download_links %}
+{% for download_link in page.extra_download_links %}
+<a href="{{ download_link.link }}">{{ download_link.title }}</a>
+<br />
+{% endfor %}
+<br />
+{% endif %}
+
+<h4>Abstract</h4>
+<p>
+  {% bibtex --style /_citation_styles/abstract.csl %}
+  {{page.bib}}
+  {% endbibtex %}
+</p>
+
+{% assign maybe_content = content | strip_newlines %}
+{% if maybe_content != "" %}
+<h4>Other Info</h4>
+{{ content }}
+{% endif %}
+
+{% if page.bib %}
+<h4>ACM Reference</h4>
+<p>
+{% bibtex --style acm-sig-proceedings %}
+{{page.bib }}
+{% endbibtex %}
+</p>
+
+<h4>BibTeX Reference</h4>
+<pre><code>{{ page.bib }}</code></pre>
+{% endif %}

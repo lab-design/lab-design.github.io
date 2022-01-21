@@ -1,0 +1,69 @@
+<!--#include virtual="../includes/topbar.html"-->
+<!-- 2ND COLUMN. INSERT COPY -->
+
+<td id="b3" rowspan="2">
+<div class="maintext">
+
+<h1>Publications Related to the Frances Project</h2><BR>
+
+<h2>Refereed Conference Papers</h2><BR>
+
+<p>
+<a href="http://www.cs.iastate.edu/~sondag">Tyler Sondag</a>,
+<a href="http://faculty.mckendree.edu/kian_pokorny/">Kian L. Pokorny</a>,
+and
+<a href="http://www.cs.iastate.edu/~hridesh">Hridesh Rajan</A>
+"<a href="http://www.cs.iastate.edu/~design/papers/CCSC-11">Frances-A: A Tool for Architecture Level Program Visualization</a>,"
+<a href="http://www.ccsc.org/centralplains/">Journal of Computing Sciences at Small Colleges, Consortium for Computing Sciences in Colleges -- Central Plains</a>,
+April 2011
+</p>
+
+<p>
+<a href="http://www.cs.iastate.edu/~sondag">Tyler Sondag</a>,
+<a href="http://faculty.mckendree.edu/kian_pokorny/">Kian L. Pokorny</a>,
+and
+<a href="http://www.cs.iastate.edu/~hridesh">Hridesh Rajan</A>
+"<a href="http://www.cs.iastate.edu/~sapha/papers/SIGCSE10/">Frances: A Tool For Understanding Code Generation</a>,"
+<a href="http://www.sigcse.org/sigcse2010/">SIGCSE '10</a>: The 41st ACM Technical Symposium on Computer Science Education, Milwaukee, WI, March 2010
+</p>
+
+
+<BR><BR>
+<h2>Refereed Tutorials</h2><BR>
+
+<p>
+<a href="http://faculty.mckendree.edu/kian_pokorny/">Kian L. Pokorny</a>,
+<a href="http://www.cs.iastate.edu/~sondag">Tyler Sondag</a>,
+and
+<a href="http://www.cs.iastate.edu/~hridesh">Hridesh Rajan</a>,
+"<a href="http://www.cs.iastate.edu/~sapha/papers/CCSC10">Connecting High-Level Programming Constructs to Assembly Language Using Frances</a>
+," J. Comput. Small Coll., 25(5):282–283, 2010.
+</p>
+
+<br><br>
+<h2>Technical Reports</h2><BR>
+ 		
+<p>
+<a href="http://www.cs.iastate.edu/~sondag">Tyler Sondag</a>,
+<a href="http://faculty.mckendree.edu/kian_pokorny/">Kian L. Pokorny</a>
+and
+<a href="http://www.cs.iastate.edu/~hridesh">Hridesh Rajan</a>,
+"Frances-A: A Tool For Easy Realistic Architecture Level Program Visualization".
+Technical Report 10-08, Computer Science, Iowa State University, September 2010
+[<a href="http://archives.cs.iastate.edu/documents/disk0/00/00/06/51/00000651-00/mainTR.pdf">PDF</a>].</p>
+</p>
+
+<p>
+<a href="http://www.cs.iastate.edu/~sondag">Tyler Sondag</a>,
+<a href="http://faculty.mckendree.edu/kian_pokorny/">Kian L. Pokorny</a>
+and
+<a href="http://www.cs.iastate.edu/~hridesh">Hridesh Rajan</a>,
+"Frances: A Tool For Understanding Code Generation". Technical Report 09-21, Computer Science, Iowa State University, August  2009
+[<a href="http://archives.cs.iastate.edu/documents/disk0/00/00/06/15/00000615-00/mainTR.pdf">PDF</a>].</p>
+</p>
+
+</div>
+
+</td>
+
+<!--#include virtual="../includes/bottombar.html"-->

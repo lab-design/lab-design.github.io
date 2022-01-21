@@ -1,0 +1,51 @@
+<!--#include virtual="../includes/topbar.html"-->
+<!-- 2ND COLUMN. INSERT COPY -->
+
+<td id="b3" rowspan="2">
+<div class="maintext">
+<div class="title"><h1>Technique Variations</h1>
+
+We currently have results for two major variations of our technique, a basic block[2] technique and an interval[2] technique.
+<BR><BR>
+
+<h2>Basic Block</h2>
+
+Our basic block technique performs its dynamic analysis and core switches with basic blocks as the granularity.
+Since basic blocks are frequently small, we do two things to reduce the overhead of this approach: minimum size and lookahead.
+
+<h3>Minimum Size</h3>
+It is common for basic blocks to be only one or two instructions.
+Clearly it would not be advantageous to switch cores for a single instruction.
+Based on this intuition, our first technique to reduce overhead is to only consider basic blocks larger than some minimum size.
+
+<h3>Lookahead</h3>
+Basic blocks are usually only in the tens of instructions.
+The cost of switching for this small amount of instructions is likely to outweigh the benefit.
+Our second technique to reduce overhead looks at x generations of successors.
+We only considers blocks that have at least a fixed percentage of successors of similar type.
+
+<BR><BR>
+
+<h2>Interval</h2>
+
+Our interval technique looks at intervals.
+As with basic blocks, we frequent have very small intervals.
+Thus, we use a minimum size in order to not consider very small intervals.
+<BR><BR>
+
+<B>
+In our results, BB[x, y] refers to our basic block technique with minimum size of x and lookahead depth y.
+In our results, INT[x] refers to our interval technique with minimum size of x.</B>
+<BR><BR>
+<HR SIZE=1, WIDTH=95%, ALIGN=CENTER, NOSHADE
+  <ol>
+    <li>For more detail see our latest <a href="http://archives.cs.iastate.edu/documents/disk0/00/00/05/96/index.html">technical report</a>.
+    <li>Frances E. Allen. Control flow analysis. In Symposium on Compiler Optimization, pages 1-19, 1970.
+  </ol>
+
+</div>
+
+
+</td>
+
+<!--#include virtual="../includes/bottombar.html"-->

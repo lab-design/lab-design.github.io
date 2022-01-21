@@ -1,0 +1,133 @@
+<!--#include virtual="../includes/top.html"-->
+<title>Open Positions in the Panini Project</title>
+<!--#include virtual="../includes/header.html"-->
+
+
+<div class="col2-content">
+
+<h1>Open Positions in the Panini Project</h1>
+
+<p>
+<h2>Postdoctoral Fellow</h2> 
+</p>
+
+<p>
+The Department of Computer Science, Iowa State University invites applications 
+for a postdoctoral fellow position. The initial position is for one year with 
+a possibility of extension up to three years. The position requires a Ph.D. in 
+Computer Science, Software Engineering, or a closely related field and 
+outstanding potential for research in computer science. Candidates who are in 
+the final stages of obtaining a Ph.D. will also be considered.
+</p>
+
+<p>
+We would like to hire immediately; however, a later start date is possible, 
+depending on the candidate’s timetable.
+</p>
+
+<p>
+The position is in the Panini project that is aimed at improving concurrent 
+software engineering by enabling modular reasoning about concurrent software 
+via synergistic advances in linguistic abstractions and verification mechanisms. 
+For more details about the project please refer to: <a href="http://paninij.org">paninij.org</a> and see 
+the following papers.
+</p>
+
+<UL>
+<LI> Hridesh Rajan, &quot;<a href="/papers/ICSE-15a/">Capsule-oriented Programming</a>,&quot; 
+ICSE'15: The 37th International Conference on Software Engineering, 
+Florence, Italy, May 2015.</LI>
+<LI> Mehdi Bagherzadeh and Hridesh Rajan, 
+&quot;<a href="/papers/MODULARITY-15/">Panini: A Concurrent Programming Model for Solving Pervasive and Oblivious Interference</a>,&quot;
+14th International Conference on Modularity (Modularity'15),  
+Fort Collins, Colorado, USA, March 2015. </LI>
+</UL>
+
+<p>
+Qualifications
+<UL>
+<LI> Required: a PhD in computer science, software engineering and related discipline.
+<LI> Required: strong background in either software engineering OR programming languages 
+<LI> Required: at least one publication in top-tier SE/PL venues.
+<LI> Preferred: strong background in compilers, program analysis, and concurrency.
+</UL>
+</p>
+
+<p>
+Iowa State University is classified as a Carnegie Foundation Doctoral/Research University-Extensive, a member of the Association of American Universities (AAU), and ranked by U.S. News and World Report as one of the top public universities in the nation. Over 34,000 students are enrolled, and served by over 6,100 faculty and staff (see www.iastate.edu). Ames, Iowa is a progressive community of 60,000, located approximately 30 minutes north of Des Moines, and recently voted second best most livable small city in the nation (see www.amescvb.com).
+</p>
+
+<p>
+To apply, please send the following to Dr. Hridesh Rajan at <a href="mailto:hridesh@iastate.edu">hridesh@iastate.edu</a>: 
+</p>
+<UL>
+<LI> a cover letter briefly summarizing qualifications and describing your interest in the position,</LI>
+<LI> curriculum vitae and</LI>
+<LI> contact information for three references</LI>
+</UL>
+
+<p>
+Review of applications will begin on July 31, 2016 and will continue until the position is filled.  You will be contacted if more information is needed.  Notification will be given via email when the position has been filled.
+</p>
+
+<p>
+All offers of employment, oral and written, are contingent upon the university’s verification of credentials and other information required by federal and state law, ISU policies/procedures, and may include the completion of a background check.
+</p>
+
+<p>
+Iowa State University is an Equal Opportunity/Affirmative Action employer. All qualified applicants will receive consideration for employment without regard to race, color, age, religion, sex, sexual orientation, gender identity, genetic information, national origin, marital status, disability, or protected veteran status, and will not be discriminated against. Inquiries can be directed to the Director of Equal Opportunity, 3350 Beardshear Hall, (515) 294-7612.
+</p>
+
+<p>
+<h2>Ph.D. Student</h2>
+</p>
+<p>
+One Ph.D. position is available that will focus on formal aspects of the Panini project. 
+We would expect graduate-level background in programming languages (e.g. having taken COMS 541)
+and formal methods (e.g. having taken COMS 512).
+To apply, please send the following to  Dr. Hridesh Rajan at <a href="mailto:hridesh@iastate.edu">hridesh@iastate.edu</a>:
+</p>
+
+<UL>
+<LI> a cover letter briefly summarizing qualifications and describing your interest in the position,</LI>
+<LI> curriculum vitae and</LI>
+<LI> informal transcripts</LI>
+</UL>
+
+
+<p>
+<h2>M.S. Student</h2>
+</p>
+<p>
+No M.S. positions are available at this time.
+</p>
+
+<p>
+<h2>Undergraduate Research Assistants</h2>
+</p>
+<p>
+Two research assistant positions are open for excellent undergraduates enrolled at 
+Iowa State University in the Computer Science, Software Engineering, or Computer Engineering Programs. 
+</p>
+
+<p>
+Qualifications
+<UL>
+<LI> Required: enrolled in computer science, software engineering and related discipline.
+<LI> Required: 3.25 or above GPA
+<LI> Required: B+ or above in COM S 227, COM S 228 
+<LI> Required: experience programming with Java and experience working with version control systems e.g. Git
+<LI> Preferred: background in programming languages
+</UL>
+</p>
+
+<p>
+To apply, send the following to hridesh@iastate.edu: 
+1) a cover letter briefly summarizing qualifications and describing your interest in the position, 
+2) curriculum vitae, 
+and 3) ISU informal transcript.
+</p>
+
+</div>
+
+<!--#include virtual="../includes/bottom.html"-->

@@ -1,0 +1,613 @@
+#Date is the start date of the grant
+#For grants with the same titles, mark the ones where Professor Rajan isn't the
+#PI as non primary, which makes them non visible.
+
+- key: grant-nsf-0846059
+  agency: NSF
+  primary: true
+  title: "CAREER: On Mutualism of Modularity and Concurrency Goals"
+  start_date: 2009-07-01
+  url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=0846059"
+  amount: $565,935
+  PI: Hridesh Rajan
+  coPIs:
+  end_date: 2016-06-30
+  abstract: >
+    This project focuses on the problem of making concurrent programs easier to
+    write correctly and to implement efficiently. Modularity promotes ease of
+    understand and maintainability, but modularity is often at odds with the
+    discovery and exploitation of concurrency needed to get high performance while
+    avoiding undesirable interactions and race conditions. To approach this problem,
+    this project is developing a novel language, Panini, in which events are
+    first-class objects which can be analyzed to plan concurrent executions. The
+    objective is to reconcile modularity and concurrency goals so that modular
+    designs are naturally more amenable to concurrency. Panini will be evaluated in
+    terms of its ability to support program modularity and performance on publicly
+    available versions of large open-source software projects on multi-core
+    processors use. The broader impacts are to make software more reliable,
+    maintainable, and at the same time faster. Considering that software systems are
+    essential elements of today's society, better and faster software will directly
+    impact society.
+- key: grant-nsf-1518789
+  agency: NSF
+  primary: false
+  title: "SHF:Large:Collaborative Research: Inferring Software Specifications from Open Source Repositories by Leveraging Data and Collective Community Expertise"
+  start_date: 2015-07-01
+  url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1518789"
+  amount: $320,000
+  PI: Gary Leavens
+  coPIs:
+  end_date: 2018-06-30
+  abstract: >
+    Today individuals, society, and the nation critically depend on software to
+    manage critical infrastructures for power, banking and finance, air traffic
+    control, telecommunication, transportation, national defense, and healthcare.
+    Specifications are critical for communicating the intended behavior of software
+    systems to software developers and users and to make it possible for automated
+    tools to verify whether a given piece of software indeed behaves as intended.
+    Safety critical applications have traditionally enjoyed the benefits of such
+    specifications, but at a great cost. Because producing useful, non-trivial
+    specifications from scratch is too hard, time consuming, and requires expertise
+    that is not broadly available, such specifications are largely unavailable. The
+    lack of specifications for core libraries and widely used frameworks makes
+    specifying applications that use them even more difficult. The absence of
+    precise, comprehensible, and efficiently verifiable specifications is a major
+    hurdle to developing software systems that are reliable, secure, and easy to
+    maintain and reuse.
+
+    This project brings together an interdisciplinary team of researchers with
+    complementary expertise in formal methods, software engineering, machine
+    learning and big data analytics to develop automated or semi-automated methods
+    for inferring the specifications from code. The resulting methods and tools
+    combine analytics over large open source code repositories to augment and
+    improve upon specifications by program analysis-based specification inference
+    through synergistic advances across both these areas.
+
+    The broader impacts of the project include: transformative advances in
+    specification inference and synthesis, with the potential to dramatically
+    reduce, the cost of developing and maintaining high assurance software; enhanced
+    interdisciplinary expertise at the intersection of formal methods software
+    engineering, and big data analytics; Contributions to research-based training of
+    a cadre of scientists and engineers with expertise in high assurance software.
+- key: grant-nsf-1518732
+  agency: NSF
+  primary: false
+  title: "SHF:Large:Collaborative Research: Inferring Software Specifications from Open Source Repositories by Leveraging Data and Collective Community Expertise"
+  start_date: 2015-07-01
+  url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1518732"
+  amount: $319,511
+  PI: Vasant Honavar
+  coPIs:
+  end_date: 2018-06-30
+  abstract: >
+    Today individuals, society, and the nation critically depend on software to
+    manage critical infrastructures for power, banking and finance, air traffic
+    control, telecommunication, transportation, national defense, and healthcare.
+    Specifications are critical for communicating the intended behavior of software
+    systems to software developers and users and to make it possible for automated
+    tools to verify whether a given piece of software indeed behaves as intended.
+    Safety critical applications have traditionally enjoyed the benefits of such
+    specifications, but at a great cost. Because producing useful, non-trivial
+    specifications from scratch is too hard, time consuming, and requires expertise
+    that is not broadly available, such specifications are largely unavailable. The
+    lack of specifications for core libraries and widely used frameworks makes
+    specifying applications that use them even more difficult. The absence of
+    precise, comprehensible, and efficiently verifiable specifications is a major
+    hurdle to developing software systems that are reliable, secure, and easy to
+    maintain and reuse.
+
+    This project brings together an interdisciplinary team of researchers with
+    complementary expertise in formal methods, software engineering, machine
+    learning and big data analytics to develop automated or semi-automated methods
+    for inferring the specifications from code. The resulting methods and tools
+    combine analytics over large open source code repositories to augment and
+    improve upon specifications by program analysis-based specification inference
+    through synergistic advances across both these areas.
+
+    The broader impacts of the project include: transformative advances in
+    specification inference and synthesis, with the potential to dramatically
+    reduce, the cost of developing and maintaining high assurance software; enhanced
+    interdisciplinary expertise at the intersection of formal methods software
+    engineering, and big data analytics; Contributions to research-based training of
+    a cadre of scientists and engineers with expertise in high assurance software.
+- key: grant-nsf-1513263
+  agency: NSF
+  primary: true
+  title: "CI-EN: Boa: Enhancing Infrastructure for Studying Software and its Evolution at a Large Scale"
+  start_date: 2015-06-01
+  url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1513263"
+  amount: $1,426,917
+  PI: Hridesh Rajan
+  coPIs:
+    - Tien Nguyen
+  end_date: 2018-05-31
+  abstract: >
+    In today's software-centric world, ultra-large-scale software repositories,
+    e.g., SourceForge, GitHub, and Google Code, with hundreds of thousands of
+    projects each, are the new library of Alexandria. They contain an enormous
+    corpus of software and information about software and software projects.
+    Scientists and engineers alike are interested in analyzing this wealth of
+    information to test important research hypotheses. However, the current barrier
+    to entry is prohibitive because deep expertise and sophisticated tools are
+    needed to write programs that access version control systems, store and retrieve
+    workable data subsets, and perform the needed ultra-large-scale analysis. The
+    goal is accelerate the pace of Software Engineering research and to increase
+    reusability and replicability, while properly curating the data and analyses.
+
+    This project is building a CISE research infrastructure called Boa to aid and
+    assist with such research and will be globally available. The project designs a
+    new programming language that can hide the details of programmatically accessing
+    version control systems, data storage and retrieval, data mining, and
+    parallelization from the scientists and engineers and allow them to focus on the
+    program logic. The project also designs a data mining infrastructure for Boa,
+    and a BIGDATA repository containing 700,000+ open source projects for analyzing
+    ultra-large-scale software repositories to help with such experiments. The
+    broader impacts of Boa stem from its potential to enable developers, designers
+    and researchers to build intuitive, multi-modal, user-centric, scientific
+    applications that can aid and enable scientific research on individual, social,
+    legal, policy, and technical aspects of open source software development. This
+    advance will primarily be achieved by significantly lowering the barrier to
+    entry and thus enabling a larger and more ambitious line of data-intensive
+    scientific discovery in this area.
+- key: grant-nsf-1512947
+  agency: NSF
+  primary: false
+  title: "CI-EN: Boa: Enhancing Infrastructure for Studying Software and its Evolution at a Large Scale"
+  start_date: 2015-06-01
+  url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1512947"
+  amount: $132,889
+  PI: Robert Dyer
+  coPIs:
+  end_date: 2018-05-31
+  abstract: >
+    In today's software-centric world, ultra-large-scale software repositories,
+    e.g., SourceForge, GitHub, and Google Code, with hundreds of thousands of
+    projects each, are the new library of Alexandria. They contain an enormous
+    corpus of software and information about software and software projects.
+    Scientists and engineers alike are interested in analyzing this wealth of
+    information to test important research hypotheses. However, the current barrier
+    to entry is prohibitive because deep expertise and sophisticated tools are
+    needed to write programs that access version control systems, store and retrieve
+    workable data subsets, and perform the needed ultra-large-scale analysis. The
+    goal is accelerate the pace of Software Engineering research and to increase
+    reusability and replicability, while properly curating the data and analyses.
+
+    This project is building a CISE research infrastructure called Boa to aid and
+    assist with such research and will be globally available. The project designs a
+    new programming language that can hide the details of programmatically accessing
+    version control systems, data storage and retrieval, data mining, and
+    parallelization from the scientists and engineers and allow them to focus on the
+    program logic. The project also designs a data mining infrastructure for Boa,
+    and a BIGDATA repository containing 700,000+ open source projects for analyzing
+    ultra-large-scale software repositories to help with such experiments. The
+    broader impacts of Boa stem from its potential to enable developers, designers
+    and researchers to build intuitive, multi-modal, user-centric, scientific
+    applications that can aid and enable scientific research on individual, social,
+    legal, policy, and technical aspects of open source software development. This
+    advance will primarily be achieved by significantly lowering the barrier to
+    entry and thus enabling a larger and more ambitious line of data-intensive
+    scientific discovery in this area.
+- key: grant-nsf-1423370
+  agency: NSF
+  primary: true
+  title: "SHF: Small: Capsule-oriented Programming"
+  start_date: 2014-08-01
+  url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1423370"
+  amount: $450,098
+  PI: Hridesh Rajan
+  coPIs:
+  end_date: 2018-07-31
+  abstract: >
+    Modern software systems tend to be distributed, event-driven, and asynchronous,
+    often requiring components to maintain multiple threads of control for message
+    and event handling. In addition, there is increasing pressure on software
+    developers to introduce concurrency into applications in order to take advantage
+    of multicore and many-core processors to improve performance. Yet concurrent
+    programming remains difficult and error-prone. The need to train the software
+    development workforce in concurrent programming has become increasingly urgent
+    as the CPU frequency growth no longer provides adequate scalability. As a result
+    of that, a large number of developers in the current software development
+    workforce continue to find it hard to deal with thorny concurrency issues in
+    software design and implementation.
+
+    The projects designs a new programming language construct called Capsules, an
+    improved abstraction for concurrency that can hide the details of concurrency
+    from the programmer and allow them to focus on the program logic. The main goal
+    of this project is to conduct a formal study of the semantic properties of
+    capsules, efficiently realize this abstraction in industrial strength tools that
+    will be globally disseminated, and empirically evaluate performance and software
+    engineering properties of a programming language design that incorporates this
+    abstraction. This approach seeks to create software that is correct with respect
+    to concurrency by construction. Its success will aid and enable more reliable
+    development of concurrent software. While it makes great sense to develop
+    explicit concurrency mechanisms, sequential programmers continue to find it hard
+    to understand task interleavings and non-deterministic semantics. Thus, this
+    research on the capsule abstraction, if successful, will have a large positive
+    impact on the productivity of these programmers, on the understandability and
+    maintainability of source code that they write, and on the scalability and
+    correctness of software systems that they produce.
+- key: grant-nsf-1349153
+  agency: NSF
+  primary: true
+  title: "EAGER: Boa: A Community Research Infrastructure for Mining Software Repositories"
+  start_date: 2013-09-01
+  url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1349153"
+  amount: $96,408
+  PI: Hridesh Rajan
+  coPIs:
+    - Tien Nguyen
+  end_date: 2015-08-31
+  abstract: >
+    In today's software-centric world, ultra-large-scale software repositories, e.g.
+    SourceForge (350,000+ projects), GitHub (250,000+ projects), and Google Code
+    (250,000+ projects) are the new library of Alexandria. They contain an enormous
+    corpus of software and information about software. Scientists and engineers
+    alike are interested in analyzing this wealth of information both for curiosity
+    as well as for testing important research hypotheses. However, the current
+    barrier to entry is often prohibitive and only a few with well-established
+    research infrastructure and deep expertise in mining software repositories can
+    attempt such ultra-large-scale experiments.
+
+    A facility called Boa has been prototyped: a domain-specific language and a
+    BIGDATA repository containing 700,000+ open source projects for analyzing
+    ultra-large scale software repositories to help with such experiments.
+
+    This experimental research infrastructure is of significant interest to a wide
+    community of software engineering and programming language researchers. The main
+    goal of this EAGER project is to examine the requirements for making Boa broadly
+    available to the software engineering and programming language community, to
+    work with an initial set of researchers to try to fulfill these requirements,
+    and to take preliminary steps toward making Boa a community-sustained, scalable,
+    and extensible research infrastructure. This is an enabling and transformative
+    project. Its success will aid and accelerate scientific research in software
+    engineering, allowing scientists and engineers to focus on the essential tasks.
+    This advance will primarily be achieved by significantly lowering the barrier to
+    entry and thus enabling a larger and more ambitious line of data-intensive
+    scientific discovery in this area.
+- key: grant-nsf-1117937
+  agency: NSF
+  primary: true
+  title: "SHF: Small: Phase-Based Tuning for Better Utilization of Performance-Asymmetric Multicores"
+  start_date: 2011-08-01
+  url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1117937"
+  amount: $416,000
+  PI: Hridesh Rajan
+  coPIs:
+  end_date: 2016-07-31
+  abstract: >
+    This project focuses on the problem of making it easier to program
+    performance-asymmetric multicore processors (AMP). A multicore processor is
+    called performance-asymmetric when its constituent cores may have different
+    characteristics such as frequency, functional units, etc. High-performance
+    Computing (HPC) community has demonstrated significant interest in the AMPs as
+    they are shown to provide nice trade-off between the performance and power. On
+    the other hand, asymmetry makes programming these platforms hard. The
+    programmers targeting these hardware platforms must ensure that tasks of a
+    software system are well matched with the characteristics of the processor
+    intended to run it. To make matters even more complicated, a wide range of AMPs
+    exist in practice with varying configurations. To efficiently utilize such
+    platforms, the programmer must account for their asymmetry and optimize their
+    software for each configuration. This manual, costly, tedious, and error prone
+    process significantly complicates software engineering for AMP platforms and
+    leads to version maintenance nightmare. To approach this problem, this project
+    is developing a novel program analysis technique, phase-based tuning.
+    Phase-based tuning adapts an application to effectively utilize performance
+    asymmetric multicores. Main goals are to create a technique that can be deployed
+    without changes in the compiler or operating system, does not require
+    significant inputs from programmer, and is largely independent of the
+    performance-asymmetry of the target processor. The broader impacts are to help
+    realize the potential of emerging AMPs and other novel extreme-scale computing
+    architectures, which in turn will enable researchers in the scientific
+    disciplines to analyze, model, simulate, and predict complex phenomena important
+    to society.
+- key: grant-nsf-1017334
+  agency: NSF
+  primary: true
+  title: "SHF: Small: Collaborative Research: Balancing Expressiveness and Modular Reasoning for Aspect-oriented Programming"
+  start_date: 2010-08-15
+  url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1017334"
+  amount: $273,729
+  PI: Hridesh Rajan
+  coPIs:
+  end_date: 2013-07-31
+  abstract: >
+    Software systems are poised to keep growing in complexity and permeate deeper
+    into the critical infrastructures of society. The complexity of these systems is
+    exceeding the limits of existing modularization mechanisms and reliability
+    requirements are becoming stringent. Development of new separation of concerns
+    (SoC) techniques is thus vital to make software more reliable and maintainable.
+    Implicit invocation (II) and aspect-oriented (AO) programming languages provide
+    related but distinct mechanisms for separation of concerns. The proposed work
+    encompasses fundamental and practical efforts to improve modularization and
+    reasoning mechanisms for II and AO languages, which is a long standing challenge
+    for both kinds of languages. Addressing these challenges has the potential to
+    significantly improve the quality of software by easing the adoption of new
+    separation of concerns techniques.
+
+    The project will proceed using the experimental language, Ptolemy, which blends
+    both II and AO ideas. Ptolemy has explicitly announced events, which are defined
+    in interfaces called "event types". Event types help separate concerns and
+    decouple advice from the code it advises. Event type declarations also offer a
+    place to specify advice. The explicit announcement of events allows the
+    possibility of careful reasoning about correctness of Ptolemy programs, since it
+    is possible to reason about parts of the program where there are no events in a
+    conventional manner. The project aims to investigate reasoning by developing a
+    formal specification language and verification technique. The approach is based
+    on the idea of greybox ("model program'') specifications, as found in JML and
+    the refinement calculus. There are known techniques for reasoning about uses of
+    abstractions that have model program specifications, and the project will apply
+    these to Ptolemy. The intellectual merit is in the treatment of expressions in
+    Ptolemy that announce events and those that cause an advice to proceed. A
+    straightforward adaptation of existing reasoning techniques to these cases
+    appears to require a whole program analysis, which is generally not desirable
+    for modular and scalable verification. The project also aims to investigate the
+    utility and effectiveness of Ptolemy and its specification system. A software
+    evolution analysis will be conducted to study the ability of competing
+    aspect-oriented, implicit invocation, and Ptolemy implementations of open source
+    projects to withstand change. Showing Ptolemy's benefits over II and AO
+    languages will help software designers in deciding on advanced mechanisms for
+    separation of concerns.
+- key: grant-nsf-1518897
+  agency: NSF
+  primary: true
+  title: "SHF: Large:Collaborative Research: Inferring Software Specifications from Open Source Repositories by Leveraging Data and Collective Community Expertise"
+  start_date: 2015-07-01
+  url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1518897"
+  amount: $750,125
+  PI: Hridesh Rajan
+  coPIs:
+    - Tien Nguyen
+  end_date: 2018-06-30
+  abstract: >
+    Today individuals, society, and the nation critically depend on software to
+    manage critical infrastructures for power, banking and finance, air traffic
+    control, telecommunication, transportation, national defense, and healthcare.
+    Specifications are critical for communicating the intended behavior of software
+    systems to software developers and users and to make it possible for automated
+    tools to verify whether a given piece of software indeed behaves as intended.
+    Safety critical applications have traditionally enjoyed the benefits of such
+    specifications, but at a great cost. Because producing useful, non-trivial
+    specifications from scratch is too hard, time consuming, and requires expertise
+    that is not broadly available, such specifications are largely unavailable. The
+    lack of specifications for core libraries and widely used frameworks makes
+    specifying applications that use them even more difficult. The absence of
+    precise, comprehensible, and efficiently verifiable specifications is a major
+    hurdle to developing software systems that are reliable, secure, and easy to
+    maintain and reuse.
+
+    This project brings together an interdisciplinary team of researchers with
+    complementary expertise in formal methods, software engineering, machine
+    learning and big data analytics to develop automated or semi-automated methods
+    for inferring the specifications from code. The resulting methods and tools
+    combine analytics over large open source code repositories to augment and
+    improve upon specifications by program analysis-based specification inference
+    through synergistic advances across both these areas.
+
+    The broader impacts of the project include: transformative advances in
+    specification inference and synthesis, with the potential to dramatically
+    reduce, the cost of developing and maintaining high assurance software; enhanced
+    interdisciplinary expertise at the intersection of formal methods software
+    engineering, and big data analytics; Contributions to research-based training of
+    a cadre of scientists and engineers with expertise in high assurance software.
+- key: grant-nsf-1518776
+  agency: NSF
+  primary: false
+  title: "SHF:Large:Collaborative Research: Inferring Software Specifications from Open Source Repositories by Leveraging Data and Collective Community Expertise"
+  start_date: 2015-07-01
+  url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1518776"
+  amount: $214,843
+  PI: Robert Dyer
+  coPIs:
+  end_date: 2018-06-30
+  abstract: >
+    Today individuals, society, and the nation critically depend on software to
+    manage critical infrastructures for power, banking and finance, air traffic
+    control, telecommunication, transportation, national defense, and healthcare.
+    Specifications are critical for communicating the intended behavior of software
+    systems to software developers and users and to make it possible for automated
+    tools to verify whether a given piece of software indeed behaves as intended.
+    Safety critical applications have traditionally enjoyed the benefits of such
+    specifications, but at a great cost. Because producing useful, non-trivial
+    specifications from scratch is too hard, time consuming, and requires expertise
+    that is not broadly available, such specifications are largely unavailable. The
+    lack of specifications for core libraries and widely used frameworks makes
+    specifying applications that use them even more difficult. The absence of
+    precise, comprehensible, and efficiently verifiable specifications is a major
+    hurdle to developing software systems that are reliable, secure, and easy to
+    maintain and reuse.
+
+    This project brings together an interdisciplinary team of researchers with
+    complementary expertise in formal methods, software engineering, machine
+    learning and big data analytics to develop automated or semi-automated methods
+    for inferring the specifications from code. The resulting methods and tools
+    combine analytics over large open source code repositories to augment and
+    improve upon specifications by program analysis-based specification inference
+    through synergistic advances across both these areas.
+
+    The broader impacts of the project include: transformative advances in
+    specification inference and synthesis, with the potential to dramatically
+    reduce, the cost of developing and maintaining high assurance software; enhanced
+    interdisciplinary expertise at the intersection of formal methods software
+    engineering, and big data analytics; Contributions to research-based training of
+    a cadre of scientists and engineers with expertise in high assurance software.
+- key: grant-nsf-0627354
+  agency: NSF
+  primary: true
+  title: "CT-ISG: Specification and Verification Challenges for Security Protocols in Sensor Networks"
+  start_date: 2006-09-01
+  url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=0627354&HistoricalAwards=false"
+  amount: $366,000
+  PI: Hridesh Rajan
+  coPIs:
+    - Wensheng Zhang
+  end_date: 2010-08-31
+  abstract: >
+    Flaws in security protocols are subtle and hard to find. Finding flaws in the
+    security protocols for sensor networks is even harder because they operate under
+    fundamentally different system design assumptions such as event-driven vs.
+    imperative or message passing, resource and bandwidth constraints, hostile
+    deployment scenarios, trivial physical capturing due to the lack of temper
+    resistance, group-oriented behavior, ad hoc and dynamic topologies, open-ended
+    nature, etc. These assumptions lead to complex security protocols, which in turn
+    makes them much harder to verify. Sensor networks are increasingly becoming an
+    integral part of the nation's cyber infrastructure, making it vital to protect
+    them against cryptographic errors in security protocols. There are several
+    existing techniques for specifying and verifying cryptographic protocols;
+    however, none accommodates all the system design assumptions mentioned above.
+    This research is advancing the state of the art in specification and
+    verification of cryptographic protocols for sensor networks. Applications of
+    sensor networks are numerous from military to environmental research. By
+    providing mechanisms to find cryptographic errors in the security protocols for
+    sensor networks this research program is improving the reliability of these
+    networks, making a direct impact on all areas where these networks are utilized.
+    The activities in this research program are collectively contributing to the
+    development of innovative specification and verification mechanisms for security
+    protocols in sensor networks, and training of a diverse cadre of young
+    scientists in programming languages, software engineering, computer networks,
+    and most importantly enhanced computer security.
+- key: grant-nsf-0709217
+  agency: NSF
+  primary: true
+  title: "Collaborative Research: CRI: CRD: A JML Community Infrastructure -- Revitalizing Tools and Documentation to Aid Formal Methods Research"
+  start_date: 2007-07-15
+  url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=0709217"
+  amount: $75,000
+  PI: Gary Leavens
+  coPIs:
+    - Samik Basu
+    - Hridesh Rajan
+  end_date: 2008-01-31
+  abstract: >
+    This collaborative project, revitalizing tools and documentations to aid formal
+    methods research, aims to
+
+    . Enhance JML's infrastructure including its type checker, runtime assertion
+    checking compiler, and IDE support;
+
+    . Make JML's software infrastructure more extensible;
+
+    . Substantially improve the documentation of the language and its supporting
+    tools;
+
+    . Develop course materials and tutorials to facilitate classroom use of JML; and
+
+    . Disseminate a well-documented, extensible, open source suite of enhanced JML
+    tools.
+
+    JML (Java Modeling Language), a formal specification language that can document
+    detailed designs of Java and interfaces, has been used in different projects
+    with great benefit. Feedback is obtained from users who are attracted by the
+    ability to check Java code against JML specifications using a variety of tools.
+    New research problems, however, are forcing re-inventing the infrastructure that
+    JML provides, slowing the innovation, since JML does not support many of the new
+    features of Java version 5, most notably generics. The Verified Software grand
+    challenge has identified lack of extensible tools for formal methods research as
+    a major impediment to experimentation. This project responds to the challenge by
+    enhancing, extending, and well-documenting the infrastructure to advance and
+    accelerate Java formal methods research.
+
+    Broader Impacts: The infrastructure is expected to open barriers to formal
+    methods adoption among software engineering professionals by endowing a large
+    collection of tools that share a common, mature specification language. These
+    advantages should attract more educators and improve reliability in safety- and
+    mission-critical systems. Moreover, strengthening the formal methods component
+    in software engineering curriculum, courses will be developed and targeted to
+    undergraduate research,. The collaborative involves two minority-serving
+    institutions and an institution in an EPSCoR state.
+- key: grant-vpr-sdsi
+  agency: VPR
+  primary: true
+  title: "Bridging the Digital Divide in Data Science: Invention and Refinement of Shared Data Science Infrastructures"
+  start_date: 2016-09-20 #Roughly
+  url: "http://design.cs.iastate.edu/sdsi/"
+  amount: $450,000
+  PI: Hridesh Rajan
+  coPIs:
+    - Jan Lauren Boyles
+    - Gianfranco Ciardo
+    - Heike Hofmann
+    - Stephen D. Holland
+    - Matthew Hufford
+    - Wei Le
+    - Glenn R. Luecke
+    - James M. Reecy
+    - Andrew Severin
+    - Anuj Sharma
+    - Jin Tian
+    - Christopher K. Tuggle
+  end_date: 2019-09-20 #Roughly
+  abstract: >
+    Open data promise to enable more efficient and effective decision making, foster
+    innovation that society can benefit from, and drive organizational and sector
+    change through transparency.
+
+    Availability of big open data, e.g. on the web in a downloadable form, is a
+    positive step toward these goals, but access alone is not sufficient because of
+    significant barriers that exist in obtaining and using big data. Data-driven
+    scientists around the world are effectively facing a new digital divide: the
+    barrier to enter data-driven science is prohibitive. Only a few places with
+    well-established infrastructure and deep expertise can attempt large-scale data
+    analyses. Necessary expertise includes: programmatically accessing data sources
+    for data acquisition and cleaning, data storage and retrieval, data mining,
+    scalable data infrastructure design, and visualization.
+
+    The need for expertise in these five different areas significantly increases the
+    entrance costs. As a result, data-driven experiments are often not replicated,
+    reusability of experimental data is low, and data associated and produced by
+    such experiments is often inaccessible, obsolete, or worse. Moreover, building
+    analysis infrastructure to process ultra-large-scale data efficiently can be
+    costly and very hard to accomplish. There are efforts to simplify large-scale
+    data analysis; however, we do not yet have user-centric solutions that
+    democratize innovation in data-driven science. There have also been efforts that
+    provide users access to a set of web-based exploratory analysis tools and report
+    descriptive statistics over datasets, but any new idea, typically not
+    anticipated by data providers, is met with the same barriers. Many scientists
+    aren't able to innovate for themselves. The problem is particularly acute for
+    small colleges and HBCUs that lack both expertise and resources and are
+    essentially disenfranchised from data-driven science.
+
+    This project brings together a transdisciplinary team to decrease the barrier to
+    entry for data-driven science for ISU researchers and other data-driven
+    scientists around the world by enabling them to harness open data for
+    21st-century science and engineering. By doing so, we aim to prepare data-driven
+    scientists for grand challenges of the next decade, create unique data science
+    capabilities for research and education, and leverage federal, state, local and
+    private investments to facilitate shared and collaborative data-driven science.
+- key: grant-nsf-tripods
+  agency: NSF
+  primary: true
+  title: "HDR: TRIPODS: D4 (Dependable Data Driven Discovery) Institute"
+  start_date: 2019-10-01 #Roughly
+  url: "http://tads.research.iastate.edu/"
+  amount: $1,499,994
+  PI: Hridesh Rajan
+  coPIs:
+    - Pavan Aduri
+    - Chinmay Hegde 
+    - Daniel Nettleton
+    - Eric Weber
+    - Michael J Catanzaro
+    - Namrata Vaswani
+    - Vinodchandran Variyam
+    - Li Wang 
+    - Zhengyuan Zhu
+  end_date: 2023-09-30 #Roughly
+  abstract: >
+    Data-driven discoveries are permeating critical fabrics of society. Unreliable discoveries lead to decisions that can have far-reaching and catastrophic consequences on society, defense, and the individual. Thus, the dependability of data-science lifecycles that produce discoveries and decisions is a critical issue that requires a new holistic view and formal foundations. This project will establish the Dependable Data Driven Discovery (D4) Institute at Iowa State University that will advance foundational research on ensuring that data-driven discoveries are of high quality. The activities of the D4 Institute will have a transformative impact on the dependability of data-science lifecycles. First, the problem definition itself will have a significant impact by helping future innovations beyond academia. While the notion of dependability is well-studied in the computer-systems literature, challenges in data science push the boundary of existing knowledge into the unknown. This institute's work will define D4, and increase data science's benefit to society by providing a transformative theory of D4. The second impact will come from the process of shared vocabulary development facilitated by this institute, and its result that would encourage experts across TRIPODS disciplines and domain experts to collaborate on common goals and challenges. Third, the institute will set research directions for D4 by providing funding for foundational research, which will have a separate set of impacts. Fourth, the institute will facilitate transdisciplinary training of a diverse cadre of data scientists through activities such as the Midwest Big Data Summer School and the D4 workshop.
+
+    The project will advance the theoretical foundations of data science by fostering foundational research to enable understanding of the risks to the dependability of data-science lifecycles, to formalize the rigorous mathematical basis of the measures of dependability for data science lifecycles, and to identify mechanisms to create dependable data-science lifecycles. The project defines a risk to be a cause that can lead to failures in data-driven discovery, and the processes that plan for, acquire, manage, analyze, and infer from data collectively as the data-science lifecycle. For instance, an inference procedure that is significantly expensive can deliver late information to a human operator facing a deadline (complexity as a risk); if the data-science lifecycle provides a recommendation without an uncertainty measure for the recommendation, a human operator has no means to determine whether to trust the recommendation (uncertainty as a risk). Compared to recent works that have focused on fairness, accountability, and trustworthiness issues for machine learning algorithms, this project will take a holistic perspective and consider the entire data-science lifecycle. In phase I of the project the investigators will focus on four measures: complexity, resource constraints, uncertainty, and data freshness. In developing a framework to study these measures, this work will prepare the investigators to scale up their activities to other measures in phase II as well as to address larger portions of the data-science lifecycle. The study of each measure brings about foundational challenges that will require expertise from multiple TRIPODS disciplines to address.
+- key: grant-nsf-2120448
+  agency: NSF
+  primary: true
+  title: "Collaborative Research: CCRI: ENS: Boa 2.0: Enhancing Infrastructure for Studying Software and its Evolution at a Large Scale"
+  start_date: 2021-10-01 #Roughly
+  url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2120448&HistoricalAwards=false"
+  amount: $824,474.00
+  PI: Hridesh Rajan
+  coPIs:
+  end_date: 2024-09-30 #Roughly
+  abstract: >
+    In today’s software-centric world, ultra-large-scale software repositories, e.g. GitHub, with hundreds of thousands of projects each, are the new library of Alexandria. They contain an enormous corpus of software and information about software. Scientists and engineers alike are interested in analyzing this wealth of information both for curiosity as well as for testing important research hypotheses. However, the current barrier to entry is prohibitive and only a few with well-established infrastructure and deep expertise can attempt such ultra-large-scale analysis. Necessary expertise includes: programmatically accessing version control systems, data storage and retrieval, data mining, and parallelization. The need to have expertise in these four different areas significantly increases the cost of scientific research that attempts to answer research questions involving ultra-large-scale software repositories. As a result, experiments are often not replicable, and reusability of experimental infrastructure low. Furthermore, data associated and produced by such experiments is often lost and becomes inaccessible and obsolete, because there is no systematic curation. Last but not least, building analysis infrastructure to process ultra-large-scale data efficiently can be very hard.
+
+    This project will continue to enhance the CISE research infrastructure called Boa to aid and assist with such research. This next version of Boa will be called Boa 2.0 and it will continue to be globally disseminated. The project will further develop the programming language also called Boa, that can hide the details of programmatically accessing version control systems, data storage and retrieval, data mining, and parallelization from the scientists and engineers and allow them to focus on the program logic. The project will also enhance the data mining infrastructure for Boa, and a BIGDATA repository containing millions of open source project for analyzing ultra-large-scale software repositories to help with such experiments. The project will integrate Boa 2.0 with the Center for Open Science Open Science Framework (OSF) to improve reproducibility and with the national computing resource XSEDE to improve scalability. The broader impacts of Boa 2.0 stem from its potential to enable developers, designers and researchers to build intuitive, multi-modal, user-centric, scientific applications that can aid and enable scientific research on individual, social, legal, policy, and technical aspects of open source software development. This advance will primarily be achieved by significantly lowering the barrier to entry and thus enabling a larger and more ambitious line of data-intensive scientific discovery in this area.
+    

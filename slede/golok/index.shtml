@@ -1,0 +1,100 @@
+<!--#include virtual="includes/topbar.html"-->
+<!-- 2ND COLUMN. INSERT COPY -->
+
+<td rowspan="2">
+<div class="maintext">
+
+<h1>About Golok</h1>
+<p>
+Golok is a framework for automatic verification of parameterized
+systems. Given the atomic actions of the processes of the system presented
+as behavioral automata, the topology of the system and the initial
+state of the system, Golok automatically generates system-specific cut-off.
+Golok generates GraphViz source for visualization of the generated cut-off.
+</p>
+
+
+<img width=550x src=golok-overview.png>
+
+
+<h1>Motivation</h1>
+
+<p>
+Parameterized systems are systems consisting of homogeneous processes,
+where the parameter indicates the number of such processes in the
+system. A parameterized system, therefore, describes an infinite
+family of systems where instances of the family can be obtained by
+fixing the parameter. Verification of correctness of such systems
+amounts to verifying the correctness of every member of the infinite
+family described by the system. This problem is undecidable in general.
+</p>
+
+<p>
+A number of sound but incomplete verification techniques has been 
+proposed and developed in the recent past. In essence, these techniques
+depend on computing the <i>invariant</i> or the common global behavior
+of <i>sys(n)</i> for all <i>n</i> and identifying the smallest <i>k &lt n</i> 
+such that <i>sys(k)</i> exhibits that behavior. Then it can be shown that a 
+property is satisfied on any system instance <i>sys(n)</i> for any <i>n &gt k</i>
+if and only if it is satisfied on <i>sys(k)</i>. The problem with current
+techniques is that they are either manual, cover only certain classes
+of systems and/or are dependent on the property to be verified.
+</p>
+
+<p>
+Golok aims to solve this problem. Golok is a framework for automating cut-off generation
+of parameterized systems. 
+</p>
+
+<h1>Key Features of Golok</h1>
+<ul>
+
+<li> an interface that allows a user to specify behavioral automata, </li>
+
+<li> full automation of cut-off technique including model generation 
+and simulation checking without user intervention</li>
+
+<li> a visualization of part of the <i>sys(k)</i> instance that simulates
+the maximal behavior of a process as a proof of the cut-off value. </i>
+
+</ul>
+
+<!--
+</p>The Slede project is advancing the state of the art 
+in specification and verification of cryptographic protocols 
+for sensor networks. Applications of sensor networks are 
+numerous from military to environmental research. By 
+providing mechanisms to find cryptographic errors in the 
+security protocols for sensor networks this research program 
+is improving the reliability of these networks, making a 
+direct impact on all areas where these networks are utilized. 
+The activities in this research project are collectively 
+contributing to the development of innovative specification 
+and verification mechanisms for security protocols in sensor 
+networks, and training of a diverse cadre of young scientists 
+in programming languages, software engineering, computer 
+networks, and most importantly enhanced computer security.
+</p>
+-->
+
+<br/>
+<br/>
+
+<!--
+<h2 class=bar> Downloads</h2>
+<ul>
+	<li>
+	<a>Golok v for single-parameterized systems</a>
+	</li>
+<p/>
+	<li>
+	<a>Golok v for multi-parameterized systems</a>
+	</li>
+</ul>
+-->			
+</div>
+
+
+</td>
+
+<!--#include virtual="includes/bottombar.html"-->

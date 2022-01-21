@@ -1,0 +1,26 @@
+{% assign content = include.news_item.content | strip %}
+{% assign contentSize = content | size %}
+{% assign news_item = include.news_item %}
+{% assign content = news_item.content %}
+
+<div class="card news-card">
+  <div class="card-block">
+    {% if contentSize > 1 %}
+    <a href="{{ news_item.url }}">
+    {% endif %}
+      <h5 class="card-title">
+        {{ news_item.title }}
+      </h5>
+    {% if contentSize > 1 %}
+    </a>
+    {% endif %}
+    <p class="card-subtitle mb-2 text-muted">{{ news_item.date | date: '%B %d, %Y' }}</p>
+    <p class="card-text">{{ news_item.content | strip_html | truncatewords: 25 }}</p>
+    {% if news_item.links %}
+    <span class="card-link">Links: </span>
+    {% endif %}
+    {% for link in news_item.links %}
+      <a href="{{link.link}}" class="card-link">{{link.title}}</a>
+    {% endfor %}
+  </div>
+</div>

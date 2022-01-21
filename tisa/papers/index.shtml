@@ -1,0 +1,51 @@
+<!--#include virtual="../includes/topbar.html"-->
+<!-- 2ND COLUMN. INSERT COPY -->
+
+<td id="b3" rowspan="2">
+<div class="maintext">
+
+<h2>Publications Related to Tisa</h2><BR>
+
+<p>
+Hridesh Rajan, Jia Tao, Steve Shaner, and Gary T. Leavens,
+&quot;<a href="http://www.cs.iastate.edu/~design/papers/ESOP-2009">Tisa: A Language Design and Modular Verification Technique for Temporal Policies in Web Services</a>,&quot;
+18th European Symposium on Programming (ESOP '09), March 2009,
+York, UK. 
+<span style="background-color:yellow"><sup>New</sup></span>
+</p>
+
+<p>Hridesh Rajan and Mahantesh Hosamani,
+&quot;<a href="http://www.cs.iastate.edu/~design/papers/SOC-08">Tisa: Towards Trustworthy Services in 
+a Service-oriented Architecture</a>,&quot;
+IEEE Transactions on Services Computing (SOC), 2008, IEEE Computer
+Society, Washington, DC.
+<span style="background-color:yellow"><sup>New</sup></span>
+</p>
+
+<p>Hridesh Rajan, Jia Tao, Steve Shaner, and Gary T. Leavens, &quot;
+<a href="http://www.cs.iastate.edu/~design/papers/TR-08-07">
+Reconciling Trust and Modularity Goals in Web Services</a>,&quot; 
+Technical Report 08-07, Computer Science, Iowa
+State University, July 2008.
+</p>
+
+<p>Mahantesh Hosamani, Harish Narayanappa, and Hridesh Rajan (2007)
+&quot;<a href="NWeSP07">How to Trust Web Services Monitor Executing in an Untrusted Environment?</a>&quot;
+In the proceeding of NWeSP '07: 3rd International Conference on Next Generation 
+Web Services Practices, Seoul, Korea, Oct 2007.
+</p>
+
+<p>Mahantesh Hosamani, Harish Narayanappa, Hridesh Rajan (2007)
+&quot; <a href="IW-SOSWE-2007">Monitoring the Monitor: An Approach Towards 
+Trustworthiness in Service Oriented Architecture</a>,&quot;
+In 2nd International Workshop on Service Oriented 
+Software Engineering (IW-SOSWE 2007), in conjunction 
+with ESEC/FSE 2007, Dubrovnik (Croatia) Sep 3, 2007.
+</p>
+
+
+</div>
+
+</td>
+
+<!--#include virtual="../includes/bottombar.html"-->

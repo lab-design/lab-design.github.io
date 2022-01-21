@@ -1,0 +1,236 @@
+<!--#include virtual="includes/top.html"-->
+<title>Frequently Asked Questions about the Ptolemy Programming Language</title>   
+<!--#include virtual="includes/header.html"-->
+
+<h1>Frequently Asked Questions</h1>
+                  
+                  	<!-- TABLE OF CONTENTS -->
+                    <div class="col2-toc">
+                        <ul>
+                            <li><a href="faq.shtml#what">What is Ptolemy?</a></li>
+                            <li><a href="faq.shtml#oo">Isn't Ptolemy just an OO language with native event handling?</a></li>
+                            <li><a href="faq.shtml#ii">What is implicit invocation (II) design style?</a></li>
+                            <li><a href="faq.shtml#aop">What is Aspect-oriented Programming (AOP)?</a></li>
+                            <li><a href="faq.shtml#aopbenefit">Is the primary benefit to AOP that it automates adding the same lines of code to every method?</a></li>
+                            <li><a href="faq.shtml#why">Why was the Ptolemy language designed?</a></li>
+                            <li><a href="faq.shtml#goals">What are the design goals of the Ptolemy language?</a></li>
+                            <li><a href="faq.shtml#compiler">Do you have a compiler?</a></li>
+                            <li><a href="faq.shtml#source">Can I download the source code for the Ptolemy compiler and modify it?</a></li>
+                            <li><a href="faq.shtml#event_v_method">Isn't an event type just a method signature in disguise?</a></li>
+                            <li><a href="faq.shtml#explicit">Doesn't explicit event announcement defeats the primary strength of AspectJ where events occur implicitly?</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- CONTENT -->
+                    <div class="col2-content">
+                        <h2>
+                        	<a name="what">What is Ptolemy?</a>
+                        </h2>
+                        <p>
+                        	Ptolemy is a programming language whose goals are to improve a 
+                        	software engineer's ability to separate conceptual concerns. 
+                        	In particular, Ptolemy's features are useful towards modularization 
+                        	of crosscutting concerns.
+                        </p>
+                        
+                        <h2>
+                        	<a name="oo">Isn't Ptolemy just an OO language with native event handling?</a>
+                        </h2>
+                        <p>
+                        	At a first glance this is one of the distinctions between Ptolemy 
+                        	and object-oriented languages such as Java. Programming languages 
+                        	such as C# eliminate a bit more of these distinctions because they 
+                        	support basic event handling as a language feature.  
+                        </p>
+                        <p>
+                        	However, Ptolemy also provides event types as a mechanism to:
+                        </p>
+						<ul>
+							<li>
+								Refer to a number of places in program where an event is 
+								triggered using the name of the event type. This is done 
+								without having to name the classes that trigger the event. 
+								In aspect-oriented terminology this is called quantification. 
+								This distinction is important for implementing crosscutting 
+								requirements (see below for more).
+							</li>
+							<li>
+								Provide overriding behavior. This distinction is important 
+								for implementing overriding features like exception 
+								handling, fault tolerance, etc.
+							</li>
+							<li>
+								Achieve 2-way decoupling between subjects and observers 
+								(whereas traditional event handling mechanisms only 
+								decouple subjects from observers). This distinction is 
+								important for improving reuse of modules in a software system.
+							</li>
+						</ul>
+                        
+                        <h2>
+                        	<a name="ii">What is implicit invocation (II) design style?</a>
+                        </h2>
+                        <p>
+                        	We have prepared a brief background on implicit-invocation (II) 
+                        	design style and its limitations see <a href="docs/what-is-ii.shtml">here</a>.
+                        </p>
+                        
+                        <h2>
+                        	<a name="aop">What is Aspect-oriented Programming (AOP)?</a>
+                        </h2>
+                        <p>
+                        	For a brief background on aspect-oriented programming see 
+                        	<a href="docs/what-is-ao.shtml">here</a>.
+                        </p>
+                        
+                        <h2>
+                        	<a name="aopbenefit">Is the primary benefit to AOP that it 
+                        	automates adding the same lines of code to every method?</a>
+                        </h2>
+                        <p>
+                        	No, we elaborate below.
+                        </p>
+                        <p>
+                        	With traditional object-oriented techniques, when we implement 
+                        	some requirements (e.g. exception handling, synchronization, 
+                        	resource sharing and other resource management protocols, 
+                        	logging, etc) such implementation is typically scattered 
+                        	everywhere in the software and tangled with implementation of 
+                        	other requirements. Such requirements are called crosscutting 
+                        	requirements. As a result, when maintenance requests arise in 
+                        	these type of requirements developers have to study a large 
+                        	number of modules in the software system to identify changes 
+                        	that are required to address maintenance request.
+                        </p>
+                        <p>
+                        	Objective of aspect-oriented software development (AOSD) is 
+                        	to provide programming language mechanisms that enable 
+                        	software developers to implement these type of requirements 
+                        	(e.g. exception handling) in separate modules.
+                        </p>
+                        
+                        <h2>
+                        	<a name="why">Why was the Ptolemy language designed?</a>
+                        </h2>
+                        <p>
+                        	The Ptolemy language was designed to combine best ideas 
+                        	from implicit invocation (II) design style and aspect-oriented 
+                        	(AO) languages in the style of <a href="http://www.eclipse.org/aspectj">AspectJ</a> 
+                        	and to not have the limitations of these styles.  
+                        	Briefly, Ptolemy was designed to solve the following 
+                        	problems with AO and II paradigms:
+                        </p>
+                        <ul>
+							<li> 
+								AO: quantification failure, fragile pointcuts, limited context information
+							</li>
+							<li> 
+								II: coupling of observers, no replacement of event code, no quantification
+							</li>
+                        </ul>
+                        <p>
+                        	For a more detailed motivation of the language design, please 
+                        	see our web-page on this topic <a href="about.shtml#motivation">here</a>.
+                        </p>
+                        
+                        <h2>
+                        	<a name="goals">What are the design goals of the Ptolemy language?</a>
+                        </h2>
+                        <p>
+                        	Ptolemy has the following main design goals:
+                        </p>
+                        <ul>
+							<li>
+								Preserve encapsulation of object-oriented code, while enabling 
+								modularization of crosscutting concerns, 
+							</li>
+							<li> 
+								enable well-defined interfaces between object-oriented code 
+								and crosscutting code, and 
+							</li>
+							<li> 
+								enable separate type-checking, separate compilation, and 
+								modular reasoning of both object-oriented and crosscutting code.
+							</li>
+                        </ul>
+                        <p>
+                        	All these goals are important for scalability of software development 
+                        	processes but harder to achieve in current AO languages in the 
+                        	style of <a href="http://www.eclipse.org/aspectj">AspectJ</a>.
+                        </p>
+                        
+                        <h2>
+                        	<a name="compiler">Do you have a compiler?</a>
+                        </h2>
+                        <p>
+                        	Yes. The Ptolemy compiler offers support for compiling and 
+                        	running programs from command-line as well as from within Ant. 
+                        	To get started with setting up an environment for running Ptolemy 
+                        	programs please see our page on <a href="docs/running.shtml">
+                        	installing and running the compiler</a>.
+                        </p>
+                        <p>
+                        	Once you have downloaded and installed the compiler, you 
+                        	could look at the examples included in the distribution. 
+                        	Or alternatively, you could also consult our web-pages on 
+                        	<a href="docs/starting.shtml">getting started with Ptolemy</a>.
+                        </p>
+                        
+                        <h2>
+                        	<a name="source">Can I download the source code for the 
+                        	Ptolemy compiler and modify it?</a>
+                        </h2>
+                        <p>
+                        	Yes. The Ptolemy compiler for Java programs is an open 
+                        	source project on <a href="http://sourceforge.net/projects/ptolemyj/">sourceforge.net</a>.
+                        </p>
+                        
+                        <h2>
+                        	<a name="event_v_method">Isn't an event type just a method signature in disguise?</a>
+                        </h2>
+                        <p>No. A method signature is an abstraction for the body of a single
+                            method. On the other hand, an event type p is a two-way abstraction --
+                            an interface between subjects that signal p and handlers that run when
+                            p is signaled. For subjects that announce event p, it is an
+                            abstraction for a chain of 0 or more handlers that may be fired when
+                            the event p is announced. For event handlers of p, it is an
+                            abstraction over 0 or more subjects that may signal the event p.
+                            Furthermore, this abstraction allows programmers to write more
+                            expressive contracts.</p>
+
+                        <h2>
+                        	<a name="explicit">Doesn't explicit event announcement defeats the primary strength of AspectJ where events occur implicitly?</a>
+                        </h2>
+                        <p>Yes, and it is <em>intentional</em>. An announce statement of the form announce
+                               p(...) { ... } explicitly signals an event p. It does NOT, however,
+                               explicitly names event handlers of p. </p>
+
+                        <p>The advantages of explicitly signaling events are in terms of
+                               understanding and maintaining programs. Following advantages accrue
+                               from explicit event announcement in Ptolemy.</p>
+
+                         <UL>
+                          <LI>Programmers can be sure that program locations that do NOT have
+                            announce statements are NOT going to be affected by event handlers.
+                            Therefore, the runtime behavior at those program locations will match
+                            the static source code. This simplifies understanding and reasoning
+                            about programs. </LI>
+
+                          <LI>Source code changes in subjects do not cause handlers to break. This
+                            problem, known as pointcut fragility, is avoided entirely.</LI>
+
+                          <LI>Arbitrary program points can be exposed by explicitly signaling
+                            events. This avoids another problem known as quantification failure.</LI>
+
+                           <LI>Since event type declarations have lightweight
+                            <a href="docs/design-by-contract.shtml">translucid contracts</a>
+                            that give insight into the potential behavior of handlers,
+                            programmers have an improved understanding of the program's runtime
+                            behavior.</LI>
+                          </UL>
+
+						<!-- PAGE UPDATE -->
+                        <p id="update">Page last modified on $Date: 2011/08/04 00:46:02 $</p>
+                        </div>
+                                
+<!--#include virtual="includes/bottom.html"-->

@@ -1,0 +1,19 @@
+#!/bin/bash
+
+#PYC_HOME=""
+
+#check if PYC_HOME is set.
+#error, prompt with fix and exit if it isn't
+
+#PYC_HOME=${PYC_HOME:=""}
+
+if [ ! -n "$PYC_HOME" ]; then
+	echo "PYC_HOME not set!  Please set PYC_HOME to the location of the pyc directory."
+	echo "$PYC_HOME"
+else
+	PYC="$PYC_HOME/bin/pyc.jar"
+	COMP_LIB="$PYC_HOME/bin/pyc.jar"
+
+	#pass all the command line args used onto japyc
+	java -jar $PYC -classpath $COMP_LIB $*
+fi

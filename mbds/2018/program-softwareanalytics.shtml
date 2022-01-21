@@ -1,0 +1,154 @@
+<!--#include virtual="includes/header.html"-->	
+				
+<article width="100%" id="post-25" class="post-25 page type-page status-publish hentry">
+	<header class="entry-header">
+		<h1 class="entry-title">2018 Midwest Big Data Summer School Agenda - 
+                                        Software Analytics</h1> 
+
+		</header><!-- .entry-header -->
+
+	<div width="100%" class="entry-content">
+
+<table  style="border-collapse: collapse;" border="0"  width=“800” cellspacing="0" cellpadding="0">
+<tbody width="100%">
+<tr style="height: 25.5pt;"  width="100%">
+
+<tr style="height: 25.5pt;" >
+<td style="height: 25.5pt; font-size: x-large; font-weight: bold;" colspan="3" align="center" width="100%" height="34">Thursday, May 17 - Location: Cardinal Room </td>
+<tr width="100%" >
+<td width="30%">8:00 - 8:30am <br> Location: Cardinal Room</td><td> Registration</td>
+</tr>
+               
+ <tr width="100%" >
+<td width="30%">8:30 - 8:40am<br>Location: Cardinal Room</td>
+<td>Opening Remarks </td>
+</tr>
+<tr><td></td><td></td></tr>
+    
+               
+<tr width="100%" >
+<td width="30%" style="border:1px solid #ffffff ;">8:40 - 10:30am<br>Location: Cardinal Room</td>
+<td style="border:1px solid #ffffff ;">Foundations and Tutorials of Big Data Science on Software Analytics <br><b><i><a href="http://web.eecs.utk.edu/~audris/">Dr. Audris Mockus</a></i></b></td>
+</tr>
+<tr width="100%" >
+<td width="30%" style="vertical-align:top">
+<a href="http://web.eecs.utk.edu/~audris/">      
+<img src="images/mockus.jpg" width="800" ></a></td>
+<td width="70%" style="vertical-align:top">
+<p>
+The reliance of the Software Engineering (SE) community on data and on quantitative
+analysis has grown tremendously fueled largely by the availability of version control and issue tracking data from open source ecosystems. Statistical tools, given their
+general nature, require a level of sophistication and in-depth knowledge about modeling and data analysis that a typical SE practitioner lacks. Furthermore, the illustrations on how to use statistical tools tend to be drawn from non-SE domains and do not take into account the
+peculiarities of the operational data in version control systems and other data sources used
+in SE.
+
+At the end of this brief tutorial, participants would be familiar with many of the challenges associated with statistical analysis of SE data, and will be exposed to some of the the best practices and techniques aimed to address such challenges. In particular, we will focus on the best practices for data analysis pipeline needed to build, interpret, and validate basic logistic regression models.
+
+</p>
+
+<p><EM>About Dr. Audris Mockus:</EM>
+Audris Mockus worked at AT&T, then Lucent Bell Labs and Avaya Labs for 21 years.  Now he is the Ericsson-Harlan D. Mills Chair professor in the Department of Electrical Engineering and Computer Science of the University of Tennessee. Dr. Mockus received a B.S. and an M.S. in Applied Mathematics from Moscow Institute of Physics and Technology in 1988. In 1991 he received an M.S. and in 1994 he received a Ph.D. in Statistics from Carnegie Mellon University.
+ 
+<a href="http://web.eecs.utk.edu/~audris/">More</a></td>
+</p>
+</tr>
+          
+<tr width="100%" >
+<td width="30%">10:30 - 10:45am<br>Location: Cardinal Room</td>
+<td>Break - refreshments provided</td>
+</tr>
+<tr><td></td><td></td></tr>
+               
+               
+                                                                  
+<tr width="100%" >
+<td width="30%" style="border:1px solid #ffffff ;">10:45 - 12:15pm<br>Location: Cardinal Room</td>
+<td style="border:1px solid #ffffff ;">How data helps us configure and run large-scale software projects? <br><b><i><a href="https://www.microsoft.com/en-us/research/people/jacekcz/">Jacek Czerwonka</a></i></b></td>
+</tr>
+<tr width="100%" >
+<td width="30%" style="vertical-align:top">
+<a href="https://www.microsoft.com/en-us/research/people/jacekcz/">      
+<img src="images/jacek.png" width="800" ></a></td>
+<td width="70%" style="vertical-align:top">
+<p>
+Large software projects are complex to set up, execute on and wind down. Data coming from past engineering projects can help us get started on a project quicker, spot risk and bottlenecks easier, and assist in its successful completion. But challenges to make it work are many. With help of several real-life examples this talk will cover our attempts, some successful and some failed ones, to explain a complex process with data and turning it into actionable insight. In the process, we will also discover some general guiding principles for analyzing data coming from engineering processes.
+
+</p>
+<p><EM>About Jacek Czerwonka:</EM>
+He is an engineer with experience managing large software development and testing processes, Developing and applying systematic and data-driven methods to software production process. Currently, he is leading a few company-wide projects focused on large scale verification infrastructure (unit testing, integration testing and code reviewing) and collecting and analyzing engineering process data.
+
+His areas of specialties are as follows: Engineering workflow improvement, Use of metrics in software processes, Leading engineering teams, leading distributed teams, software verification, systems-level testing. Pairwise and model-based testing.
+ 
+<a href="https://www.microsoft.com/en-us/research/people/jacekcz/">More</a></td>
+</p>
+</tr>
+          
+               
+<tr width="100%" >
+<td width="30%">12:15 - 1:30pm<br>Location: Cardinal Room</td>
+<td>Lunch </td>
+</tr>
+<tr><td></td><td></td></tr>
+               
+               
+          
+<tr width="100%" >
+<td width="30%" style="border:1px solid #ffffff ;">1:30 - 3:15pm<br>Location: Cardinal Room</td>
+<td style="border:1px solid #ffffff ;">Software Engineering Team Analytics Portal @ ABB <br><b><i><a href="https://www.linkedin.com/in/willsnipes/"> Will Snipes</a></i></b></td>
+</tr>
+<tr width="100%" >
+<td width="30%" style="vertical-align:top">
+<a href="https://www.linkedin.com/in/willsnipes/">      
+<img src="images/snipes.jpeg" width="800" ></a></td>
+<td width="70%" style="vertical-align:top">
+<p>
+Team Metrics at ABB will focus on describing the steps we followed to develop analytic visualizations of data relevant to software development teams. First, we gathered requirements for the data to be analyzed and identified the key measures and key dimensions.  Next, we defined a data model to support the visualizations.  Then we built visualizations for key measures.  Finally, we composed dashboards grouping visualizations by purpose and provided navigation between different views of the data.  We will discuss these steps and walk through interactive demos of some of the dashboards we created.
+
+</p>
+<p><EM>About Will Snipes:</EM>
+Will Snipes is a Principal Scientist at ABB Corporate Research.  Will has worked as a practitioner and researcher of software engineering for more than 20 years and contributed to published works in software engineering conferences and journals.  His current research is influencing practice by providing analytics relevant to individual developers and development teams.  Will received a Master of Science in Computer Science degree from North Carolina State University.  Contact him at will.snipes@us.abb.com.
+ 
+<a href="https://www.linkedin.com/in/willsnipes/">More</a></td>
+</p>
+</tr>
+
+<tr width="100%" >
+<td width="30%">3:15 - 3:30pm<br>Location: Cardinal Room</td><td>Break</td>
+</tr>
+<tr><td></td><td></td></tr>
+              
+               
+<tr width="100%" >
+<td width="30%" style="border:1px solid #ffffff ;">3:30 - 4:30pm<br>Location: Cardinal Room</td>
+<td style="border:1px solid #ffffff ;">Collective program analysis on Boa <br><b><i><a href="http://web.cs.iastate.edu/~ganeshau/">Dr. Ganesha Upadhyaya</a></i></b></td>
+</tr>
+
+<tr width="100%" >
+<td width="30%" style="vertical-align:top">
+<a href="http://web.cs.iastate.edu/~ganeshau/">      
+<img src="images/ganesh.jpg" width="800" ></a></td>
+<td width="70%" style="vertical-align:top">
+
+<p>
+Popularity of data-driven software engineering has led to an increasing demand on the infrastructures to support efficient execution of tasks that require deeper source code analysis. While task optimization and parallelization are helpful, other research directions are less explored. In this talk, I present our work on collective program analysis (CPA), a technique for scaling large scale source code analyses, especially those that make use of control and data flow analysis, by leveraging analysis specific similarity. Analysis specific similarity is about, whether two or more programs can be considered similar for a given analysis. The key idea of collective program analysis is to cluster programs based on analysis specific similarity, such that running the analysis on one candidate in each cluster is sufficient to produce the result for others. I will demonstrate how CPA can help to identify similar code fragments for a given analysis and thereby accelerate the analysis over million lines of code.
+
+</p>
+    
+<p><EM>About Dr. Ganesha Upadhyaya:</EM>
+Ganesha Upadhyaya is Staff Engineer at Huawei R&D, mainly researching on the compilers and runtime infrastructures for Huawei's mobile, IoT, and cloud platforms. Ganesha obtained his M.S. and PhD from Iowa State University in 2015 and 2017 respectively. His PhD research focused on scaling source code analyses to large code bases. His high-level research interests include program analysis, mining software repositories, and concurrent programming. He has published and presented several works at programming languages and software engineering conferences like OOPSLA, ICSE, MSR, Modularity, and AGERE. Ganesha has received the Research Excellence award, the John Vincent Atanasoff award, and the distinguished poster award, for his graduate research work and the Most Valuable Innovation Project award for his work at Huawei.
+ 
+<a href="http://web.cs.iastate.edu/~ganeshau/">More</a></td>
+</p>
+</tr>
+          
+<tr width="100%" >
+<td width="30%">4:30 - 5:00pm<br>Location: Cardinal Room</td><td>Closing remarks, future work and collaborations</td>
+</tr>
+                                                                                              
+               
+</tbody>
+</table>
+			<!-- </div> -->
+</article><!-- #post-25 -->
+
+<!--#include virtual="includes/footer.html"-->

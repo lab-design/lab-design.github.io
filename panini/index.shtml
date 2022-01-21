@@ -1,0 +1,205 @@
+<!--#include virtual="./includes/top.html"-->
+<title>Panini: a Capsule-oriented Programming Language for Reconciling Modularity and Concurrency</title>
+
+<meta name="description" content="Panini is a programming language 
+whose goals are to ease development of correct, scalable, and portable 
+software for multicore, many core, heterogeneous & performance-asymmetric 
+core, and cloud platforms. Panini provides new, implicitly concurrent, 
+modularization mechanisms. If programmers use these mechanisms to 
+structure their software system to improve modularity in its design, 
+they get concurrency for free! Modularity implies concurrency. 
+The language thus encompasses fundamental and practical efforts to 
+unify modularization and parallelization mechanisms.
+Download Panini and learn how to compile, run and develop 
+using better modularity. " />
+<meta name="keywords" content="panini, capsule, capsules, capsule-oriented, 
+capsule-oriented programming, better modularity better concurrency,
+concurrency, modularity, events, types, modules, implicit concurrency, 
+sequential consistency, data race freedom due to shared data, ease of use,
+quantified, event, types, Hridesh Rajan, Yuheng Long, Mehdi Bagherzadeh,
+Ganesha Upadhyaya, 
+Rex Fernando, Eric Lin, synergy between modularity and concurrency,
+determinstic semantics, data race freedom, deadlock freedom,
+multicore, multi-core, manycore, many-core, heterogeneous, 
+performance-asymmetric, platform portability, download, compiler, 
+download panini, concurrent, patterns, open effects, guarded effects,
+explicit concurrency, pitfalls, data races, race conditions, deadlock 
+avoidance, race freedom, open effects, deterministic semantics, modules, actors"/>    
+
+<!-- PAGE SPECIFIC STYLING -->
+<style type="text/css">
+/*Moves content border down for the top panel*/
+.content {
+	background-position: left 203px;
+}
+</style>
+
+</head>
+
+<body>
+<div class="body-container">
+    <header>
+        <h1><a href="index.shtml" name="pgtop">Panini Programming Language</a></h1>
+        <h2>PROGRAMMING LANGUAGE</h2>
+    </header>
+ <div class="content">
+  <div class="top">
+  <h1>Better Modularity, Better Concurrency</h1>
+  <p>
+  Panini is a capsule-oriented programming language whose goals are 
+  to ease development of concurrent software systems by
+  <em>reconciling modularity and concurrency goals.</em>
+  </p>
+  <div class="button"><a href="download/">DOWNLOAD PANINI</a></div>
+</div>
+<div class="top-nav">
+ <nav>
+  <ul>
+   <li><a href="about.shtml">About</a></li>
+   <li><a href="people.shtml">People</a></li>
+   <li><a href="download/">Downloads</a></li>
+   <li><a href="papers.shtml">Research</a></li>
+   <li><a href="man/">Manual</a></li>
+   <li><a href="faq.shtml" id="toplast">FAQs</a></li>
+  </ul>
+ </nav>
+</div>
+<div class="main-content">
+
+<div class="col1">
+  <h2>Why?</h2>
+  <p>
+  Existing concurrent programming practices leave practitioners with no choice but to
+  program using unbridled concurrency mechanisms, and then find and remove concurrency errors.
+  We believe that this path is untenable. The Panini project investigates an alternative: 
+  create abstractions that eliminate classes of concurrency errrors by construction. 
+  Our work focusses on an abstraction called a <EM>capsule</EM>,
+  a boundary within which you can write and reuse sequential code as is.
+  We work on increasing the class of concurrency errors that can be eliminated 
+  from capsule-oriented programs by construction.
+  </p>
+  <!--
+  <p>A central goal of the Panini language is to ease programming in the 
+  presence of concurrency, and make it less error-prone.
+  Programs in Panini are organized using a new feature called a 
+  <EM>capsule</EM>.
+  Think of a capsule as providing a boundary
+  within which you can write and reuse sequential code as is. 
+  Another important goal of the Panini project is to support fully-automatic 
+  compile-time checking of common concurrency hazards
+  Last but not least, Panini is simple and efficient.
+  We invite you to try it out.
+  </p>-->
+  
+  <h2>Goals</h2>
+  <ul>
+  <li>Solve <a href="/papers/MODULARITY-15/">pervasive and oblivious interference</a> problems, 
+      enable modular reasoning about concurrent programs</li>
+  <li>Implicit concurrency to eliminate usage of unsafe features like threads & locks</li>
+  <li>Integrated compile-time analysis of concurrency hazards, so errors are caught early</li>
+  <li>Retain familiarity, programmers need not switch to a different mental programming model</li>
+  <li>Enable as-is reuse of sequential code, portions of software guaranteed to be single-threaded</li>
+  </ul>
+  <!--<p>
+   All these goals are important for building correct, scalable, and 
+   portable software systems in the multicore/manycore/cloud era.
+  </p>-->
+</div>
+<div class="col2">
+ <h2>Getting Started</h2>
+ <p>
+ If you are completely new to Panini language, you may want 
+ to read our <a href="docs/capsule-oriented.shtml">getting started</a> page. 
+ You could also look at our overview poster below.
+ </p>
+ <p>
+ <a href="images/pi-panini.png">
+ <img src="images/pi-panini.png" width="100%">
+ </a>
+ </p>
+ <!--
+ <p>
+   The Panini compiler offers support for compiling and 
+   running programs from command-line as well as from within Ant. 
+   To get started with setting up an environment for running 
+   Panini programs please see our page on 
+   <a href="docs/running.shtml">installing and running the compiler</a>.
+ </p>
+ <p>
+   Once you have downloaded and installed the compiler, you could 
+   look at the examples included in the distribution. 
+   Or alternatively, you could also consult the 
+   <a href="docs/index.shtml">programming guide</a> for Panini.
+ </p> -->
+ <h2>Key Publications</h2>
+ <p>
+    Hridesh Rajan,
+    <a href="/papers/ICSE-15a/">
+    Capsule-oriented Programming</a>,
+    ICSE 2015, NIER track.
+ </p>
+ <p>
+    Mehdi Bagherzadeh and Hridesh Rajan,
+    <a href="/papers/MODULARITY-15/">
+    Panini: A Concurrent Programming Model for Solving Pervasive and Oblivious Interference</a>,
+    Modularity 2015.
+ </p>	
+ <p>
+    Ganesha Upadhayaya and Hridesh Rajan, 
+    <a href="/papers/OOPSLA-15">Effectively 
+    Mapping Linguistic Abstractions for 
+    Message-passing Concurrency to Threads on the Java Virtual Machine</a>,
+    OOPSLA 2015.
+ </p> 
+ <p>
+    Hridesh Rajan <EM>et al.</EM>, 
+    <a href="http://lib.dr.iastate.edu/cs_techreports/362">Capsule-oriented Programming in the Panini Language</a>,
+    Tech. Report 14-08, Iowa State University, 2014.
+ </p> 
+<!-- <p>
+    Hridesh Rajan, Steven M. Kautz, and Wayne Rowcliffe.
+    <a href="/papers/ONWARD-10">
+    Concurrency by Modularity: Design Patterns, a Case in Point</a>,
+    OOPSLA/Onward! Conference, Oct. 2010.
+ </p> -->
+ <p><a href="papers.shtml">More ...</a> </p>
+</div>
+<div class="col3">
+ <h2>
+   <a class='shareButtons'
+    href='http://www.facebook.com/sharer.php?u=http://paninij.org/'
+    target='_new'>
+    <span class='Facebook'></span>
+  </a>
+  <a class='shareButtons'
+    href="http://www.linkedin.com/shareArticle?mini=true&url=http://paninij.org/"
+    target="_new">
+    <span class='LinkedIn'></span>
+  </a>
+  <a
+    class='shareButtons'
+    href="https://plus.google.com/share?url=http://paninij.org/"
+    target="_new"
+    onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+    <span class='GPlus'></span>
+ </a> </h2>
+ <div class="twitter-feed">
+ <a class="twitter-timeline" 
+    href="https://twitter.com/paninij" 
+    data-widget-id="347063451065135105"
+    data-chrome="noheader nofooter transparent"
+    data-show-replies="false"
+    data-tweet-limit="4">News</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+</script>
+<!--<ul id="twitter_update_list"></ul>-->
+  <div class="twitter-button"><a href="http://twitter.com/#!/paninij">FOLLOW PANINI ON TWITTER</a></div>  
+ </div>
+</div>
+				
+<!-- Twitter Feed -->
+<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
+<script type="text/javascript" src="http://api.twitter.com/1/statuses/user_timeline.json?screen_name=paninij&amp;count=5&amp;include_rts=true&amp;callback=twitterCallback2"></script>
+
+
+<!--#include virtual="./includes/bottom.html"-->

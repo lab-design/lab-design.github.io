@@ -1,0 +1,440 @@
+<!DOCTYPE html> 
+<html> 
+<head><title>3 Getting Started</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:light,regular,bold&amp;v1' rel='stylesheet' type='text/css' /> 
+<base href="/man/" /> 
+<link href="/style.css" rel="stylesheet" type="text/css" /> 
+<link href="/images/panini.ico" rel="shortcut icon" type="image/x-icon" /> 
+<!-- SYNTAX HIGHLIGHTING --> 
+<script type="text/javascript" src="/syntax/scripts/shCore.js"></script> 
+<script type="text/javascript" src="/syntax/scripts/shBrushBash.js"></script> 
+<script type="text/javascript" src="/syntax/scripts/shBrushJava.js"></script> 
+<script type="text/javascript" src="/syntax/scripts/shBrushPanini.js"></script> 
+<script type="text/javascript" src="/syntax/scripts/shBrushXml.js"></script> 
+<link type="text/css" rel="stylesheet" href="/syntax/styles/shCore.css"/> 
+<link type="text/css" rel="stylesheet" href="/syntax/styles/shThemeDefault.css"/> 
+<script type="text/javascript"> 
+//SyntaxHighlighter.config.clipboardSwf = 'scripts/clipboard.swf'; 
+SyntaxHighlighter.all(); 
+</script> 
+<!-- END SYTNAX HIGHLIGHTING --> 
+  
+<style type="text/css">  
+.col2-toc h2 {  
+margin: 0 0 10px;  
+}  
+</style>  
+ 
+<meta name="description"  
+content="The Panini Programming Guide helps introduce users to  
+the features and syntax of the Panini Programming Language.  
+Panini is a capsule-oriented programming language whose goals are  
+to ease development of correct, scalable, and portable software  
+for multicore and manycore, platforms.  
+Panini strives to reconcile modularity and concurrency goals  
+in software development." />  
+<meta name="keywords" content="panini, programming, guide, introduction, tutorial,  
+panini, capsule, capsules, capsule-oriented,  
+capsule-oriented programming, better modularity better concurrency,  
+concurrency, modularity, events, types, modules, implicit concurrency,  
+sequential consistency, data race freedom due to shared data, ease of use,  
+quantified, event, types, Hridesh Rajan, Yuheng Long,  
+Rex Fernando, Eric Lin, synergy between modularity and concurrency,  
+determinstic semantics, data race freedom, deadlock freedom,  
+multicore, multi-core, manycore, many-core, heterogeneous,  
+performance-asymmetric, platform portability, download, compiler,  
+download panini, concurrent, patterns, open effects, guarded effects,  
+explicit concurrency, pitfalls, data races, race conditions, deadlock  
+avoidance, race freedom, open effects, deterministic semantics, modules, actors" />  
+ 
+<!-- PAGE METADATA --> <link rel="stylesheet" type="text/css" href="index.css" /> 
+  
+<style type="text/css">  
+.lstlisting .label {  
+width: 100%;  
+font-size: 8pt;  
+}  
+</style>  
+  
+<style type="text/css">  
+.caption .content {  
+background-image: none;  
+background-position: left 12px;  
+background-repeat: no-repeat;  
+margin-left: 0;  
+margin-right: auto;  
+padding: 0 0 100px 50px;  
+width: 1070px;  
+}  
+</style>  
+  
+<style type="text/css">  
+.content {  
+width: 1070px;  
+}  
+</style>  
+  
+<style type="text/css">  
+.main-content {  
+background-image: url("/images/maincontent-right.png");  
+background-position:1028px 1px;  
+background-repeat: no-repeat;  
+width: 1021px;  
+}  
+</style>  
+  
+<style type="text/css">  
+.main-content .caption{  
+font-style: italic;  
+font-size: 8pt;  
+text-align: left;  
+width: 80 
+margin: 0 !important ;  
+}  
+</style>  
+</head>  
+<body>  
+<div class="body-container">  
+<header>  
+<h1><a href="index.html" name="pgtop">Panini Programming Language</a></h1>  
+<h2>PROGRAMMING LANGUAGE</h2>  
+</header>  
+<div class="content">  
+<div class="top-nav">  
+<nav>  
+<ul>  
+<li><a href="/about.shtml">About</a></li>  
+<li><a href="/people.shtml">People</a></li>  
+<li><a href="/download/">Downloads</a></li>  
+<li><a href="/papers.shtml">Research</a></li>  
+<li><a href="/man/">Manual</a></li>  
+<li><a href="/faq.shtml" id="toplast">FAQs</a></li>  
+</ul>  
+</nav>  
+</div>  
+<div class="main-content">  <h2 class="chapterHead"><span class="titlemark">Chapter&#x00A0;3</span><br /><a 
+ id="x6-80003"></a>Getting Started</h2>
+   <h3 class="sectionHead"><span class="titlemark">3.1    </span> <a 
+ id="x6-90003.1"></a>Panini&#8217;s Goals</h3>
+<!--l. 4--><p class="noindent" >A central goal of capsule-oriented programming and the Panini language is to help
+programmers deal with the challenges of concurrent program design.
+</p><!--l. 8--><p class="indent" >   The value proposition of the programming paradigm and the programming
+language is to enable greater program modularity and in doing so automatically enable
+greater program concurrency. In fact, Panini does not use explicit concurrency
+features. Instead, the programmer modularizes a program using capsules, which
+implicitly specify boundaries outside of which concurrency can occur. The Panini
+runtime will automatically enable concurrency in between the boundaries of capsules
+when safe to do so.
+</p><!--l. 17--><p class="noindent" >
+</p>
+   <h3 class="sectionHead"><span class="titlemark">3.2    </span> <a 
+ id="x6-100003.2"></a>Hello World!</h3>
+<!--l. 20--><p class="noindent" >A Panini program is a collection of zero or more capsules. For example, a simple
+"hello world" program in Panini can be written as follows:
+</p>
+   <!--l. 24-->
+<a 
+ id="x6-10001r1"></a>
+<a 
+ id="x6-10002"></a>
+<br /> <div class="caption" 
+><span class="id">Listing&#x00A0;3.1: </span><span  
+class="content">Hello World in Panini</span></div><!--tex4ht:label?: x6-10001r3.2 --><div class="lstlisting" id="listing-8"><span class="label"><a 
+ id="x6-10003r1"></a></span>&#x00A0;<span 
+class="ptmb8t-x-x-120">capsule</span>&#x00A0;HelloWorld&#x00A0;{&#x00A0;&#x00A0;<br /><span class="label"><a 
+ id="x6-10004r2"></a></span>&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">void</span>&#x00A0;run(){&#x00A0;&#x00A0;<br /><span class="label"><a 
+ id="x6-10005r3"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;System.out.println("Panini:&#x2423;Hello&#x2423;World!");&#x00A0;&#x00A0;<br /><span class="label"><a 
+ id="x6-10006r4"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">long</span>&#x00A0;time&#x00A0;=&#x00A0;System.currentTimeMillis();&#x00A0;<br /><span class="label"><a 
+ id="x6-10007r5"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;System.out.println("Time&#x2423;is&#x2423;now:&#x2423;"&#x00A0;+&#x00A0;time);&#x00A0;&#x00A0;&#x00A0;<br /><span class="label"><a 
+ id="x6-10008r6"></a></span>&#x00A0;&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x6-10009r7"></a></span>&#x00A0;}&#x00A0;
+   
+   </div>
+<!--l. 34--><p class="indent" >   This program declares a capsule called <span 
+class="pcrr8t-x-x-120">HelloWorld</span>. The declaration of this
+capsule starts on line&#x00A0;<a 
+href="#x6-10001r1">1<!--tex4ht:ref: line:capsuleHelloWorld --></a> and ends on line&#x00A0;<a 
+href="#x6-10001r7">7<!--tex4ht:ref: line:capsuleHelloWorldEnd --></a>. The capsule <span 
+class="pcrr8t-x-x-120">HelloWorld </span>contains only
+one procedure, <span 
+class="pcrr8t-x-x-120">run </span>on line&#x00A0;<a 
+href="#x6-10001r2">2<!--tex4ht:ref: line:capsuleHelloWorldRun --></a>, which prints a message &#8220;Panini: Hello World!&#8221; on
+line&#x00A0;<a 
+href="#x6-10001r3">3<!--tex4ht:ref: line:capsuleHelloWorldRunPrintMessage --></a> and prints current time on line&#x00A0;<a 
+href="#x6-10001r5">5<!--tex4ht:ref: line:capsuleHelloWorldRunPrintTime --></a>.
+</p><!--l. 41--><p class="indent" >   This is a complete Panini program that can be compiled and executed.
+</p><!--l. 43--><p class="indent" >   When this program is executed, since it has only one capsule, and that capsule has
+a procedure named <span 
+class="pcrr8t-x-x-120">run</span>, code inside that procedure is executed.
+                                                                         
+
+                                                                         
+</p><!--l. 47--><p class="noindent" >
+</p>
+   <h3 class="sectionHead"><span class="titlemark">3.3    </span> <a 
+ id="x6-110003.3"></a>Compiling and running Hello World!</h3>
+<!--l. 50--><p class="noindent" >To compile and run this program, you will need the Panini compiler <span 
+class="pcrr8t-x-x-120">panc </span>and the
+Panini executable <span 
+class="pcrr8t-x-x-120">panini</span>. Both these applications are available from the Panini
+web-page <a 
+href="http://paninij.org" class="url" ><span 
+class="pcrr8t-x-x-120">http://paninij.org</span></a> for download. For more information about
+installing and running the compiler see chapter&#x00A0;<a 
+href="indexch13.html#x20-7100013">13<!--tex4ht:ref: chap:running --></a>.
+</p><!--l. 56--><p class="indent" >   Once you have downloaded and installed the Panini distribution, open your
+favorite text editor and save the HelloWorld program in listing&#x00A0;<a 
+href="#x6-10001r1">3.1<!--tex4ht:ref: list:helloworld --></a> in a new file
+<span 
+class="pcrr8t-x-x-120">HelloWorld.java</span>.
+</p><!--l. 62--><p class="indent" >   To compile this program simply run:<br 
+class="newline" />&#x00A0;&#x00A0;        <span 
+class="pcrb8t-x-x-120">$</span><span 
+class="pcrb8t-x-x-120">&#x00A0;panc</span><span 
+class="pcrb8t-x-x-120">&#x00A0;HelloWorld.java</span><br 
+class="newline" />&#x00A0;&#x00A0;        You can then run this panini program with:<br 
+class="newline" />&#x00A0;&#x00A0;        <span 
+class="pcrb8t-x-x-120">$</span><span 
+class="pcrb8t-x-x-120">&#x00A0;panini</span><span 
+class="pcrb8t-x-x-120">&#x00A0;HelloWorld</span><br 
+class="newline" />&#x00A0;&#x00A0;&#x00A0;            <span 
+class="pcrro8t-x-x-120">Panini: Hello World!</span><br 
+class="newline" /><span 
+class="pcrro8t-x-x-120">&#x00A0;</span><span 
+class="pcrro8t-x-x-120">&#x00A0;</span><span 
+class="pcrro8t-x-x-120">&#x00A0;     Time is now: 1375940448626</span><br 
+class="newline" />
+</p><!--l. 66--><p class="indent" >   The printed time is the difference, measured in milliseconds, between
+the time at which this command was issued and midnight, January 1, 1970
+UTC.
+</p><!--l. 70--><p class="noindent" >
+</p>
+   <h3 class="sectionHead"><span class="titlemark">3.4    </span> <a 
+ id="x6-120003.4"></a>Decomposing a Program into Capsules</h3>
+<!--l. 73--><p class="noindent" >A capsule-oriented program can have more than one capsules. To illustrate, let us
+decompose our HelloWorld program from previous section into two parts. Throughout
+this book we will use David Parnas&#8217;s <span 
+class="ptmri8t-x-x-120">information hiding principle </span>as our guide for
+program design. In essence, this principle says that one should decompose a program
+into parts in a manner such that each part is designed to &#8220;know about&#8221; and
+&#8220;hide&#8221; certain key decisions about how that program is implemented. This is
+                                                                         
+
+                                                                         
+done so that, if necessary, those decisions can be changed later by us and
+others.<span class="footnote-mark"><a 
+href="index7.html#fn1x4"><sup class="textsuperscript">1</sup></a></span><a 
+ id="x6-12001f1"></a> 
+<!--l. 85--><p class="indent" >   We can decompose our HelloWorld program into three parts: a <span 
+class="pcrr8t-x-x-120">Greeter </span>capsule
+that knows about the method of proper greeting, e.g. &#8220;Hello&#8221; in English, &#8220;Namaste&#8221; in
+Hindi, a <span 
+class="pcrr8t-x-x-120">Console </span>capsule that knows about the medium that will be used to convey
+the greeting, e.g. standard output, a file, and a <span 
+class="pcrr8t-x-x-120">HelloWorld </span>capsule that puts these
+parts together.
+</p>
+   <!--l. 92-->
+<a 
+ id="x6-12002r2"></a>
+<a 
+ id="x6-12003"></a>
+<br /> <div class="caption" 
+><span class="id">Listing&#x00A0;3.2: </span><span  
+class="content">Hello World Decomposed!</span></div><!--tex4ht:label?: x6-12002r3.4 --><div class="lstlisting" id="listing-9"><span class="label"><a 
+ id="x6-12004r1"></a></span><span 
+class="ptmb8t-x-x-120">capsule</span>&#x00A0;Console&#x00A0;{&#x00A0;&#x00A0;<br /><span class="label"><a 
+ id="x6-12005r2"></a></span>&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">void</span>&#x00A0;write(String&#x00A0;s)&#x00A0;{&#x00A0;&#x00A0;<br /><span class="label"><a 
+ id="x6-12006r3"></a></span>&#x00A0;&#x00A0;&#x00A0;System.out.println(s);&#x00A0;<br /><span class="label"><a 
+ id="x6-12007r4"></a></span>&#x00A0;&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x6-12008r5"></a></span>}&#x00A0;<br /><span class="label"><a 
+ id="x6-12009r6"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x6-12010r7"></a></span><span 
+class="ptmb8t-x-x-120">capsule</span>&#x00A0;Greeter&#x00A0;(&#x00A0;Console&#x00A0;c&#x00A0;)&#x00A0;{&#x00A0;&#x00A0;<br /><span class="label"><a 
+ id="x6-12011r8"></a></span>&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">void</span>&#x00A0;greet()&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x6-12012r9"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;c.write("Panini:&#x2423;Hello&#x2423;World,&#x2423;Decomposed!");&#x00A0;&#x00A0;<br /><span class="label"><a 
+ id="x6-12013r10"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">long</span>&#x00A0;time&#x00A0;=&#x00A0;System.currentTimeMillis();&#x00A0;<br /><span class="label"><a 
+ id="x6-12014r11"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;c.write("Time&#x2423;is&#x2423;now:&#x2423;"&#x00A0;+&#x00A0;time);&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<br /><span class="label"><a 
+ id="x6-12015r12"></a></span>&#x00A0;&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x6-12016r13"></a></span>}&#x00A0;<br /><span class="label"><a 
+ id="x6-12017r14"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x6-12018r15"></a></span><span 
+class="ptmb8t-x-x-120">capsule</span>&#x00A0;HelloWorld&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x6-12019r16"></a></span>&#x00A0;<span 
+class="ptmb8t-x-x-120">design</span>&#x00A0;{&#x00A0;&#x00A0;<br /><span class="label"><a 
+ id="x6-12020r17"></a></span>&#x00A0;&#x00A0;Console&#x00A0;c;&#x00A0;&#x00A0;<br /><span class="label"><a 
+ id="x6-12021r18"></a></span>&#x00A0;&#x00A0;Greeter&#x00A0;g;&#x00A0;&#x00A0;<br /><span class="label"><a 
+ id="x6-12022r19"></a></span>&#x00A0;&#x00A0;g(c);&#x00A0;&#x00A0;<br /><span class="label"><a 
+ id="x6-12023r20"></a></span>&#x00A0;}&#x00A0;&#x00A0;&#x00A0;<br /><span class="label"><a 
+ id="x6-12024r21"></a></span>&#x00A0;<span 
+class="ptmb8t-x-x-120">void</span>&#x00A0;run()&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x6-12025r22"></a></span>&#x00A0;&#x00A0;g.greet();&#x00A0;<br /><span class="label"><a 
+ id="x6-12026r23"></a></span>&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x6-12027r24"></a></span>}
+   
+   </div>
+<!--l. 119--><p class="indent" >   This new version declares a capsule <span 
+class="pcrr8t-x-x-120">Console </span>on line&#x00A0;<a 
+href="#x6-12002r1">1<!--tex4ht:ref: line:capsuleHelloWorldConsole --></a>. This capsule declares a
+single procedure <span 
+class="pcrr8t-x-x-120">write </span>on line&#x00A0;<a 
+href="#x6-12002r2">2<!--tex4ht:ref: line:capsuleHelloWorldConsoleWrite --></a> that writes its argument <span 
+class="pcrr8t-x-x-120">s </span>on the standard
+output.
+</p><!--l. 125--><p class="indent" >   The <span 
+class="pcrr8t-x-x-120">Greeter </span>capsule definition now contains a specification of what other
+capsules it requires. On line&#x00A0;<a 
+href="#x6-12002r7">7<!--tex4ht:ref: line:capsuleHelloWorldGreeter --></a>, it says that a <span 
+class="pcrr8t-x-x-120">Greeter </span>requires a <span 
+class="pcrr8t-x-x-120">Console </span>to work
+properly.
+</p><!--l. 131--><p class="indent" >   Once a capsule definition declares such requirements, procedures of the required
+capsules can be called. For example, the <span 
+class="pcrr8t-x-x-120">write </span>procedure of the <span 
+class="pcrr8t-x-x-120">Console </span>capsule is
+called on lines <a 
+href="#x6-12002r9">9<!--tex4ht:ref: line:capsuleHelloWorldConsoleGreet1 --></a> and <a 
+href="#x6-12002r11">11<!--tex4ht:ref: line:capsuleHelloWorldConsoleGreet3 --></a> in the <span 
+class="pcrr8t-x-x-120">Greeter </span>capsule.
+</p><!--l. 137--><p class="indent" >   As you might notice the <span 
+class="pcrr8t-x-x-120">Console </span>and the the <span 
+class="pcrr8t-x-x-120">Greeter </span>capsules do not have a
+<span 
+class="pcrr8t-x-x-120">run </span>procedure, but the <span 
+class="pcrr8t-x-x-120">HelloWorld </span>does. The run procedure is optional and signals
+that the capsule can start computation without external stimuli (i.e. if said capsule is
+instantiated in a program, then the run procedure of that capsule will be executed as
+soon as program initialization finishes).
+</p><!--l. 144--><p class="indent" >   On lines&#x00A0;<a 
+href="#x6-12002r16">16<!--tex4ht:ref: line:capsuleHelloWorldDesignBegin --></a>-<a 
+href="#x6-12002r20">20<!--tex4ht:ref: line:capsuleHelloWorldDesignEnd --></a>, this program has a <span 
+class="ptmri8t-x-x-120">design declaration</span>, a new feature in Panini.
+The role of a design declaration is to define parts of a Panini program (typically
+capsules) and how these parts are connected. The design declaration on lines&#x00A0;<a 
+href="#x6-12002r16">16<!--tex4ht:ref: line:capsuleHelloWorldDesignBegin --></a>-<a 
+href="#x6-12002r20">20<!--tex4ht:ref: line:capsuleHelloWorldDesignEnd --></a>
+simply states that this capsule <span 
+class="pcrr8t-x-x-120">HelloWorld </span>will, as its internal parts, contain one
+<span 
+class="ptmri8t-x-x-120">instance </span>of capsule <span 
+class="pcrr8t-x-x-120">Console </span>(line&#x00A0;<a 
+href="#x6-12002r17">17<!--tex4ht:ref: line:capsuleHelloWorldDesignConsole --></a>), one <span 
+class="ptmri8t-x-x-120">instance </span>of capsule <span 
+class="pcrr8t-x-x-120">Greeter </span>(line&#x00A0;<a 
+href="#x6-12002r18">18<!--tex4ht:ref: line:capsuleHelloWorldDesignGreeter --></a>).
+On line&#x00A0;<a 
+href="#x6-12002r19">19<!--tex4ht:ref: line:capsuleHelloWorldDesignWire --></a>, the design declaration states that the <span 
+class="pcrr8t-x-x-120">Greeter </span>instance <span 
+class="pcrr8t-x-x-120">g </span>is connected to
+                                                                         
+
+                                                                         
+the <span 
+class="pcrr8t-x-x-120">Console </span>instance <span 
+class="pcrr8t-x-x-120">c</span>.
+</p>
+   <h3 class="sectionHead"><span class="titlemark">3.5    </span> <a 
+ id="x6-130003.5"></a>Implicit Concurrency in Capsule-oriented Programs</h3>
+<!--l. 159--><p class="noindent" >As mentioned previously, Panini does not use explicit concurrency features. Instead,
+the programmer modularizes a program using capsules, which implicitly specify
+boundaries outside of which concurrency can occur. The Panini runtime will
+automatically enable concurrency in between the boundaries of capsules when safe to
+do so.
+</p><!--l. 165--><p class="indent" >   When a procedure is called on an external capsule, e.g. call to <span 
+class="pcrr8t-x-x-120">write </span>procedure
+on line&#x00A0;<a 
+href="#x6-12002r9">9<!--tex4ht:ref: line:capsuleHelloWorldConsoleGreet1 --></a>, and if it is safe to do so, the call immediately returns allowing the caller
+capsule and the callee capsule to work independently. Here, the <span 
+class="pcrr8t-x-x-120">Greeter </span>capsule can
+immediately continue to obtain the current system time, while the <span 
+class="pcrr8t-x-x-120">Console </span>capsule
+prints first line of the greeting.
+</p><!--l. 171--><p class="indent" >   This is the main benefit of capsule-oriented programming and the Panini language.
+Implicit concurrency is achieved without having to introduce explicit concurrency
+features like threads, task pools, etc. This simplifies programming tasks. Not
+having to worry about concurrency is the main promise of capsule-oriented
+programming.
+</p><!--l. 177--><p class="indent" >   Now that you&#8217;ve written your first Panini program it is time to familiarize yourself
+with more complex features of the language in the next chapters.
+                                                                         
+
+                                                                         
+</p><!--l. 203--><p class="indent" >   <div class="page-nav"><a 
+href="indexch2.html" >&#x003C; PREVIOUS</a></div><div class="page-nav"><a 
+href="indexch3.html" >^ RETURN TO TOP</a></div><div class="page-nav"><a 
+href="indexch4.html" >NEXT &#x003E;</a></div>     
+</div><!--end-main-content-->  
+</div><!--end-content-->  
+</div> <!--end-body-container-->  
+ 
+<div class="footer-container">  
+<div class="footer">  
+<div class="bot-nav">  
+<nav>  
+<ul>  
+<li><a href="/about.shtml">About</a></li>  
+<li><a href="/people.shtml">People</a></li>  
+<li><a href="/download/">Downloads</a></li>  
+<li><a href="/papers.shtml">Research</a></li>  
+<li><a href="/man/">Documentation</a></li>  
+<li><a href="/faq.shtml" id="botlast">FAQs</a></li>  
+</ul>  
+</nav>  
+</div>  
+<div class="legal">  
+<div id="isu">Iowa State University</div>  
+<p id="copyright">  
+<script type="text/javascript">  
+copyright=new Date()  
+fullYear=copyright.getFullYear();  
+document.write("Copyright &copy; " + fullYear + " Iowa State University of Science and Technology. All rights reserved.")  
+</script>  
+</p>  
+<p id="credits">  
+These pages describe work carried out on the design  
+and the implementation of the Panini programming language.  
+The PI is  
+<a href="http://www.cs.iastate.edu/\protect \unhbox \voidb@x \penalty \@M \relax \unhbox \voidb@x \special {t4ht@+&{35}x00A0{59}}x{}hridesh/">Hridesh Rajan</a> from  
+<a href="http://www.cs.iastate.edu">Iowa State University</a>.  
+This work is supported in part by  
+the US <a href="http://www.nsf.gov">National Science Foundation</a> (NSF) under grants  
+<a href="http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=0846059">CCF-08-46059</a>,  
+<a href="http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=1017334">CCF-10-17334</a>,  
+<a href="http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=1117937">CCF-11-17937</a>, and  
+<a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1423370">CCF-14-23370</a> to Rajan.  
+Any opinions, findings, and conclusions or recommendations  
+expressed in this material are those of the author(s) and do not  
+necessarily reflect the views of the <a href="http://www.nsf.gov">NSF</a>.  
+</p>  
+</div>  
+<div class="links">  
+<h3>Related Sites</h3>  
+<ul>  
+<li><a href="http://www.cs.iastate.edu/\protect \unhbox \voidb@x \penalty \@M \relax \unhbox \voidb@x \special {t4ht@+&{35}x00A0{59}}x{}design/">Labratory for Software Design</a></li>  
+<li><a href="http://www.cs.iastate.edu/">Computer Science Department</a></li>  
+<li><a href="http://www.iastate.edu/">Iowa State University</a></li>  
+</ul>  
+</div>  
+</div>  
+</div>  
+ 
+<script type="text/javascript">  
+//Analytics account -- http://paninij.sourceforge.net  
+var _gaq = _gaq || [];  
+_gaq.push(['_setAccount', 'UA-15725511-1']);  
+_gaq.push(['_trackPageview']);  
+ 
+(function() {  
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;  
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';  
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);  
+})();  
+</script>  
+</body> 
+</html>

@@ -1,0 +1,116 @@
+<!--#include virtual="../includes/headtop.html"-->
+
+<!-- INSERT TITLE -->
+<title>Ptolemy Programming Guide</title>
+
+<!--#include virtual="../includes/headmiddle.html"-->
+
+<h1>Ptolemy Programming Guide</h1>
+
+<!--#include virtual="../includes/headbottom.html"-->
+
+<td id="b3" rowspan="2">
+<div class="maintext">
+
+<a href="/docs/">< Table of Contents</a><BR>
+
+<h2>Running Example</h2>
+
+<p>
+The code for this example is available from the Ptolemy compiler distribution
+in the examples directory. The reader is encouraged to consult our pages on 
+<a href="running.shtml">installing and running Ptolemy compiler</a> for 
+instructions on how to obtain the full example source code.
+</p>
+
+<p>
+As an example, consider a drawing editor which consists of objects such as
+Points, Lines, etc.  Each element is part of the overall figure and implements the
+FigureElement interface (for figure elements).  Other classes may be interested in 
+knowing when such figure
+elements change.  For example, there may be an Display class that updates the
+figure on the screen when any element changes. The interface FElement
+is shown in the listing below.
+</p>
+
+<pre class="brush: java;">
+public interface FigureElement {
+	void draw();
+}
+</pre>
+
+<p>
+The class Point is an example of an FigureElement.  Points have an x and a y
+location and setter methods setX and setY.  Points also have a method
+makeEqual, which will set the x and y location of its argument to that of the
+current instance.
+</p>
+
+<p>
+All three methods modify an instance of class Point and thus they all call
+the Update method of the class Display to refresh.  The first two methods 
+ask the Display to redraw the current instance while the makeEqual method 
+(since it modifies the other instance) asks the Display to redraw 
+the other instance.
+</p>
+
+<pre class="brush: java;">
+public class Point implements FigureElement {
+	int x;
+	int y;
+	public void setX(int x) {
+		this.x = x;
+		Display.Update(this);
+	}
+	public void setY(int y) {
+		this.y = y;
+		Display.Update(this);
+	}
+	public void makeEqual(Point other) {
+		other.x = this.x;
+		other.y = this.y;
+		Display.Update(other);
+	}
+}
+</pre>
+
+<p>
+One can see that all figure elements like Points, Lines, Circles, etc will
+need to call the Update method of the Display class whenever there is any 
+change in the figure elements. For example, this code is 
+present in methods setX, setY, and makeEqual of the class Point. There are 
+two main disadvantages of such implementation.
+<UL>
+<LI> First, it couples classes Point, Lines, Circles, etc with the class 
+Display. As a result, it becomes harder to reuse these classes without also 
+having the class Display in that program. Not all programs
+containing Points, Lines, Circles are necessarily required to have displays,
+however.</LI>
+<LI> Second, it is not easy to update such code to reuse the notifications
+to the Display class. For example, if a developer wishes to also log the 
+changes to figure elements, they will have to either insert calls to the 
+logger again in all of Points, Lines, Circles, etc or they can also insert
+code to log in the class Display. Both these situations are not satisfactory
+as the first requires &quot;exposing the change in figure element again&quot;
+and the second couples the class Display with the class Logger, which may not
+necessarily be related to each other.
+</LI>
+</UL>  
+</p>
+
+<p>
+Such requirements that cut across the object-oriented code are called 
+<EM>crosscutting concerns</EM>. Ptolemy and other languages aim to modularize
+these concerns, but Ptolemy aims to do so such that it preserves encapsulation
+of object-oriented parts such as classes Point, Line, Circle, etc and allow us to 
+understand and reason about object-oriented parts such as classes Point, Line, 
+Circle and the crosscutting parts such as the class Update one class at a 
+time. Being able to understand systems in that manner has distinct advantages.
+</p>
+
+
+<BR><BR> <p>Page last modified on $Date: 2011/10/17 17:55:45 $</p>
+</div>
+</td>
+
+<!--#include virtual="../includes/bottombar.html"-->

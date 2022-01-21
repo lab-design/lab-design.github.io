@@ -1,0 +1,502 @@
+<!DOCTYPE html> 
+<html> 
+<head><title>9 Master-Worker Pattern</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:light,regular,bold&amp;v1' rel='stylesheet' type='text/css' /> 
+<base href="/man/" /> 
+<link href="/style.css" rel="stylesheet" type="text/css" /> 
+<link href="/images/panini.ico" rel="shortcut icon" type="image/x-icon" /> 
+<!-- SYNTAX HIGHLIGHTING --> 
+<script type="text/javascript" src="/syntax/scripts/shCore.js"></script> 
+<script type="text/javascript" src="/syntax/scripts/shBrushBash.js"></script> 
+<script type="text/javascript" src="/syntax/scripts/shBrushJava.js"></script> 
+<script type="text/javascript" src="/syntax/scripts/shBrushPanini.js"></script> 
+<script type="text/javascript" src="/syntax/scripts/shBrushXml.js"></script> 
+<link type="text/css" rel="stylesheet" href="/syntax/styles/shCore.css"/> 
+<link type="text/css" rel="stylesheet" href="/syntax/styles/shThemeDefault.css"/> 
+<script type="text/javascript"> 
+//SyntaxHighlighter.config.clipboardSwf = 'scripts/clipboard.swf'; 
+SyntaxHighlighter.all(); 
+</script> 
+<!-- END SYTNAX HIGHLIGHTING --> 
+  
+<style type="text/css">  
+.col2-toc h2 {  
+margin: 0 0 10px;  
+}  
+</style>  
+ 
+<meta name="description"  
+content="The Panini Programming Guide helps introduce users to  
+the features and syntax of the Panini Programming Language.  
+Panini is a capsule-oriented programming language whose goals are  
+to ease development of correct, scalable, and portable software  
+for multicore and manycore, platforms.  
+Panini strives to reconcile modularity and concurrency goals  
+in software development." />  
+<meta name="keywords" content="panini, programming, guide, introduction, tutorial,  
+panini, capsule, capsules, capsule-oriented,  
+capsule-oriented programming, better modularity better concurrency,  
+concurrency, modularity, events, types, modules, implicit concurrency,  
+sequential consistency, data race freedom due to shared data, ease of use,  
+quantified, event, types, Hridesh Rajan, Yuheng Long,  
+Rex Fernando, Eric Lin, synergy between modularity and concurrency,  
+determinstic semantics, data race freedom, deadlock freedom,  
+multicore, multi-core, manycore, many-core, heterogeneous,  
+performance-asymmetric, platform portability, download, compiler,  
+download panini, concurrent, patterns, open effects, guarded effects,  
+explicit concurrency, pitfalls, data races, race conditions, deadlock  
+avoidance, race freedom, open effects, deterministic semantics, modules, actors" />  
+ 
+<!-- PAGE METADATA --> <link rel="stylesheet" type="text/css" href="index.css" /> 
+  
+<style type="text/css">  
+.lstlisting .label {  
+width: 100%;  
+font-size: 8pt;  
+}  
+</style>  
+  
+<style type="text/css">  
+.caption .content {  
+background-image: none;  
+background-position: left 12px;  
+background-repeat: no-repeat;  
+margin-left: 0;  
+margin-right: auto;  
+padding: 0 0 100px 50px;  
+width: 1070px;  
+}  
+</style>  
+  
+<style type="text/css">  
+.content {  
+width: 1070px;  
+}  
+</style>  
+  
+<style type="text/css">  
+.main-content {  
+background-image: url("/images/maincontent-right.png");  
+background-position:1028px 1px;  
+background-repeat: no-repeat;  
+width: 1021px;  
+}  
+</style>  
+  
+<style type="text/css">  
+.main-content .caption{  
+font-style: italic;  
+font-size: 8pt;  
+text-align: left;  
+width: 80 
+margin: 0 !important ;  
+}  
+</style>  
+</head>  
+<body>  
+<div class="body-container">  
+<header>  
+<h1><a href="index.html" name="pgtop">Panini Programming Language</a></h1>  
+<h2>PROGRAMMING LANGUAGE</h2>  
+</header>  
+<div class="content">  
+<div class="top-nav">  
+<nav>  
+<ul>  
+<li><a href="/about.shtml">About</a></li>  
+<li><a href="/people.shtml">People</a></li>  
+<li><a href="/download/">Downloads</a></li>  
+<li><a href="/papers.shtml">Research</a></li>  
+<li><a href="/man/">Manual</a></li>  
+<li><a href="/faq.shtml" id="toplast">FAQs</a></li>  
+</ul>  
+</nav>  
+</div>  
+<div class="main-content">  <h2 class="chapterHead"><span class="titlemark">Chapter&#x00A0;9</span><br /><a 
+ id="x15-470009"></a>Master-Worker Pattern</h2>
+   <h3 class="sectionHead"><span class="titlemark">9.1    </span> <a 
+ id="x15-480009.1"></a>Computing the constant Pi</h3>
+<!--l. 4--><p class="noindent" >To illustrate Panini&#8217;s new features in practice, consider the classic problem of
+computing the constant pi using a Monte Carlo approximation. The idea behind the
+method is that we use the ratio, R, between the area of an enclosing square
+and the area on an enclosed circle, R &#x00A0;= pi/4. We then proceed to randomly
+generating points within the above mentioned area of the square and count how
+many of them land in the enclosed circle. The ratio of points that land strictly
+withing the circle to the total number of points is a good approximation of the
+ratio R. We then multiply the result by 4 to get an estimate on the value of
+pi.
+</p><!--l. 13--><p class="noindent" >
+                                                                         
+
+                                                                         
+</p>
+   <h3 class="sectionHead"><span class="titlemark">9.2    </span> <a 
+ id="x15-490009.2"></a>Architecture and design</h3>
+<!--l. 16--><p class="noindent" >In capsule-oriented programming better design leads to better implicit concurrency,
+i.e. better designed programs often run faster, so it is valuable to start off with the
+architecture and design.
+</p><!--l. 21--><p class="indent" >
+      </p><ol  class="enumerate1" >
+      <li 
+  class="enumerate" id="x15-49002x1">Divide the problems into subproblems. In our case, the subproblems
+      are:
+           <ol  class="enumerate2" >
+           <li 
+  class="enumerate" id="x15-49004x1">randomly generate a point and test if it&#8217;s in the boundary of the circle
+           </li>
+           <li 
+  class="enumerate" id="x15-49006x2">agreggate the results</li></ol>
+      </li>
+      <li 
+  class="enumerate" id="x15-49008x2">The Panini programmer specifies a system as a collection of capsules and
+      ordinary object-oriented classes. A capsule is an abstraction for decomposing a
+      software into its parts and a design block is a mechanism for composing these
+      parts together. So the first order of business is to come up with this
+      capsule-oriented design. This involves creating capsules and assigning subtasks
+      to these capsules.
+      </li>
+      <li 
+  class="enumerate" id="x15-49010x3">Create capsules and assign responsibilities to capsules. In assigning
+      responsibility follow the information-hiding principle. We should have a capsule
+      that randomly generates points and tests whether or not they are within the
+      circle. A master capsule that gathers the results from all generative
+      capsules.
+      <!--l. 38--><p class="noindent" >This suggests capsules: Pi, Worker. For convenience we will be creating a
+      wrapper class Number that implicitely handles conversions from integers to
+      doubles and back.
+</p>
+      <!--l. 41-->
+<a 
+ id="x15-49011r1"></a>
+<a 
+ id="x15-49012"></a>
+      <br /> <div class="caption" 
+><span class="id">Listing&#x00A0;9.1: </span><span  
+class="content">Declaration of our capsules</span></div><!--tex4ht:label?: x15-49011r9.2 --><div class="lstlisting" id="listing-51"><span class="label"><a 
+ id="x15-49013r1"></a></span><span 
+class="ptmb8t-x-x-120">capsule</span>&#x00A0;Pi(String&#x00A0;args[])&#x00A0;{&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x15-49014r2"></a></span><span 
+class="ptmb8t-x-x-120">capsule</span>&#x00A0;Worker()&#x00A0;{&#x00A0;}
+                                                                         
+
+                                                                         
+      
+      </div>
+      <!--l. 46--><p class="noindent" >As you can see above, capsule Pi will be the one that receives command line
+      parameters.
+      </p></li>
+      <li 
+  class="enumerate" id="x15-49016x4">Integrate capsules to form a design block. We now know that this program
+      would require one Pi capsule, and multiple workers. At this time, we can
+      make a decision about how many workers we want in this program. In
+      this particular case we settle on a fixed number of Worker capsules,
+      10.
+      <!--l. 53--><p class="noindent" >Every capsule can have a design block, it effectively marks the capsule as a high
+      level component that is composed out of other capsules. In our case the best
+      choice would be to give the Pi capsule such a block. From the description of the
+      problem we can see that the Pi capsule needs to know about the Worker
+      capsules, but not the other way arround.
+      </p><!--l. 58--><p class="noindent" >Let us look at the public interfaces of each capsule and the design block:
+</p>
+      <!--l. 60-->
+<a 
+ id="x15-49017r2"></a>
+<a 
+ id="x15-49018"></a>
+      <br /> <div class="caption" 
+><span class="id">Listing&#x00A0;9.2: </span><span  
+class="content">Public interfaces of the capsules</span></div><!--tex4ht:label?: x15-49017r9.2 --><div class="lstlisting" id="listing-52"><span class="label"><a 
+ id="x15-49019r1"></a></span><span 
+class="ptmb8t-x-x-120">capsule</span>&#x00A0;Worker&#x00A0;(<span 
+class="ptmb8t-x-x-120">double</span>&#x00A0;batchSize)&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x15-49020r2"></a></span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">//</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">Computes</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">the</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">number</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">of</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">points</span><span 
+class="ptmri8t-x-x-120">,</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">from</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">a</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">total</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">of</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">batchSize</span><span 
+class="ptmri8t-x-x-120">,</span>&#x00A0;<br /><span class="label"><a 
+ id="x15-49021r3"></a></span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">//</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">that</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">fall</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">within</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">the</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">area</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">of</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">the</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">circle</span>&#x00A0;<br /><span class="label"><a 
+ id="x15-49022r4"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;Number&#x00A0;compute(<span 
+class="ptmb8t-x-x-120">double</span>&#x00A0;batchSize)&#x00A0;{&#x00A0;...&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x15-49023r5"></a></span>}&#x00A0;<br /><span class="label"><a 
+ id="x15-49024r6"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x15-49025r7"></a></span><span 
+class="ptmb8t-x-x-120">capsule</span>&#x00A0;Pi&#x00A0;(String[]&#x00A0;args)&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x15-49026r8"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">design</span>&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x15-49027r9"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;Worker&#x00A0;workers[10];&#x00A0;<br /><span class="label"><a 
+ id="x15-49028r10"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x15-49029r11"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">void</span>&#x00A0;run(){&#x00A0;...&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x15-49030r12"></a></span>}
+      
+      </div>
+      <!--l. 75--><p class="noindent" >This declarative design block(lines 10-12) states that the program should have a
+      set of 10 Worker capsules.</p></li></ol>
+<!--l. 79--><p class="noindent" >
+</p>
+   <h3 class="sectionHead"><span class="titlemark">9.3    </span> <a 
+ id="x15-500009.3"></a>Implementation</h3>
+                                                                         
+
+                                                                         
+<!--l. 82--><p class="noindent" ><span class="paragraphHead"><a 
+ id="x15-510009.3"></a>Capsule Worker.</span>
+   The behavior of capsule Worker is fairly straightforward: generate a given number
+of points and count whether or not they fall within the circle.
+</p><!--l. 87--><p class="indent" >   To allow other capsules to change its state, a capsule can provide capsule
+procedures, procedures for short. A capsule procedure is syntactically similar to
+methods in object-oriented languages, however, they are different semantically in two
+ways: first, a capsule procedures is by default public (although private helper
+procedures can be declared using the private keyword), and second a procedure
+invocation is guaranteed to be logically synchronous. In some cases, Panini may be
+able to run procedures in parallel to improve parallelism in Panini programs.
+In this particular case the only state of our capsule is the random number
+generator.
+</p>
+   <!--l. 96-->
+<a 
+ id="x15-51001r3"></a>
+<a 
+ id="x15-51002"></a>
+<br /> <div class="caption" 
+><span class="id">Listing&#x00A0;9.3: </span><span  
+class="content">Public interfaces of the capsules</span></div><!--tex4ht:label?: x15-51001r9.3 --><div class="lstlisting" id="listing-53"><span class="label"><a 
+ id="x15-51003r1"></a></span><span 
+class="ptmb8t-x-x-120">capsule</span>&#x00A0;Worker&#x00A0;()&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x15-51004r2"></a></span>&#x00A0;&#x00A0;Random&#x00A0;prng&#x00A0;=&#x00A0;<span 
+class="ptmb8t-x-x-120">new</span>&#x00A0;Random&#x00A0;();&#x00A0;<br /><span class="label"><a 
+ id="x15-51005r3"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x15-51006r4"></a></span>&#x00A0;&#x00A0;Number&#x00A0;compute(<span 
+class="ptmb8t-x-x-120">double</span>&#x00A0;num)&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x15-51007r5"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;Number&#x00A0;_circleCount&#x00A0;=&#x00A0;<span 
+class="ptmb8t-x-x-120">new</span>&#x00A0;Number(0);&#x00A0;<br /><span class="label"><a 
+ id="x15-51008r6"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">for</span>&#x00A0;(<span 
+class="ptmb8t-x-x-120">double</span>&#x00A0;j&#x00A0;=&#x00A0;0;&#x00A0;j&#x00A0;&#x003C;&#x00A0;num;&#x00A0;j++)&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x15-51009r7"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">double</span>&#x00A0;x&#x00A0;=&#x00A0;prng.nextDouble();&#x00A0;<br /><span class="label"><a 
+ id="x15-51010r8"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">double</span>&#x00A0;y&#x00A0;=&#x00A0;prng.nextDouble();&#x00A0;<br /><span class="label"><a 
+ id="x15-51011r9"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">if</span>&#x00A0;((x&#x00A0;<span 
+class="cmsy-10x-x-120">*</span>&#x00A0;x&#x00A0;+&#x00A0;y&#x00A0;<span 
+class="cmsy-10x-x-120">*</span>&#x00A0;y)&#x00A0;&#x003C;&#x00A0;1)&#x00A0;_circleCount.incr();&#x00A0;<br /><span class="label"><a 
+ id="x15-51012r10"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x15-51013r11"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">return</span>&#x00A0;_circleCount;&#x00A0;<br /><span class="label"><a 
+ id="x15-51014r12"></a></span>&#x00A0;&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x15-51015r13"></a></span>}
+   
+   </div>
+<!--l. 112--><p class="indent" >   The implementation of the compute procedure should be easily understood by any
+Java programmer, it has the same syntax. As for the semantics, a call to a non-void
+external capsule procedure immediately returns a "future" value, while the procedure
+that is called runs concurrently. That value behaves exactly like normal values, so you
+won&#8217;t need to modify your programs to make adjustments for it. When you need the
+actual value, and if the called procedure has completed running execution proceeds as
+usual, otherwise execution is blocked until the called procedure completes
+running.
+</p>
+<!--l. 120--><p class="noindent" ><span class="paragraphHead"><a 
+ id="x15-520009.3"></a>Capsule Pi.</span>
+   Line 5 declares a procedure run, every capsule can optionally declare such a
+method and it is implicitely invoked at the start of the program.
+</p>
+   <!--l. 125-->
+<a 
+ id="x15-52001r4"></a>
+                                                                         
+
+                                                                         
+<a 
+ id="x15-52002"></a>
+<br /> <div class="caption" 
+><span class="id">Listing&#x00A0;9.4: </span><span  
+class="content">Public interfaces of the capsules</span></div><!--tex4ht:label?: x15-52001r9.3 --><div class="lstlisting" id="listing-54"><span class="label"><a 
+ id="x15-52003r1"></a></span><span 
+class="ptmb8t-x-x-120">capsule</span>&#x00A0;Worker&#x00A0;()&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x15-52004r2"></a></span><span 
+class="ptmb8t-x-x-120">capsule</span>&#x00A0;Pi&#x00A0;(String[]&#x00A0;args)&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x15-52005r3"></a></span>&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">design</span>&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x15-52006r4"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;Worker&#x00A0;workers[10];&#x00A0;<br /><span class="label"><a 
+ id="x15-52007r5"></a></span>&#x00A0;&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x15-52008r6"></a></span>&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">void</span>&#x00A0;run(){&#x00A0;<br /><span class="label"><a 
+ id="x15-52009r7"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">if</span>(args.length&#x00A0;&#x003C;=&#x00A0;0)&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x15-52010r8"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;System.out.println("Usage:&#x2423;panini&#x2423;Pi&#x2423;[sample&#x2423;size],&#x2423;try&#x2423;several&#x2423;hundred&#x2423;thousand&#x2423;samples.");&#x00A0;<br /><span class="label"><a 
+ id="x15-52011r9"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">return</span>;&#x00A0;<br /><span class="label"><a 
+ id="x15-52012r10"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x15-52013r11"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x15-52014r12"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">double</span>&#x00A0;totalSamples&#x00A0;=&#x00A0;Integer.parseInt(args[0]);&#x00A0;<br /><span class="label"><a 
+ id="x15-52015r13"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">double</span>&#x00A0;startTime&#x00A0;=&#x00A0;System.currentTimeMillis();&#x00A0;<br /><span class="label"><a 
+ id="x15-52016r14"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;Number[]&#x00A0;results&#x00A0;=&#x00A0;foreach(Worker&#x00A0;w:&#x00A0;workers)&#x00A0;<br /><span class="label"><a 
+ id="x15-52017r15"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;w.compute(totalSamples/workers.length);&#x00A0;<br /><span class="label"><a 
+ id="x15-52018r16"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x15-52019r17"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">double</span>&#x00A0;total&#x00A0;=&#x00A0;0;&#x00A0;<br /><span class="label"><a 
+ id="x15-52020r18"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">for</span>&#x00A0;(<span 
+class="ptmb8t-x-x-120">int</span>&#x00A0;i=0;&#x00A0;i&#x00A0;&#x003C;&#x00A0;workers.length;&#x00A0;i++)&#x00A0;<br /><span class="label"><a 
+ id="x15-52021r19"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;total&#x00A0;+=&#x00A0;results[i].value();&#x00A0;<br /><span class="label"><a 
+ id="x15-52022r20"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x15-52023r21"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">double</span>&#x00A0;pi&#x00A0;=&#x00A0;4.0&#x00A0;<span 
+class="cmsy-10x-x-120">*</span>&#x00A0;total&#x00A0;/&#x00A0;totalSamples;&#x00A0;<br /><span class="label"><a 
+ id="x15-52024r22"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;System.out.println("Pi&#x2423;:&#x2423;"&#x00A0;+&#x00A0;pi);&#x00A0;<br /><span class="label"><a 
+ id="x15-52025r23"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">double</span>&#x00A0;endTime&#x00A0;=&#x00A0;System.currentTimeMillis();&#x00A0;<br /><span class="label"><a 
+ id="x15-52026r24"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;System.out.println("Time&#x2423;to&#x2423;compute&#x2423;Pi&#x2423;using&#x2423;"&#x00A0;+&#x00A0;totalSamples&#x00A0;+&#x00A0;<br /><span class="label"><a 
+ id="x15-52027r25"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;"&#x2423;samples&#x2423;was:"&#x00A0;+&#x00A0;(endTime&#x00A0;<span 
+class="zptmcm7y-x-x-120">-</span>&#x00A0;startTime)&#x00A0;+&#x00A0;"ms.");&#x00A0;<br /><span class="label"><a 
+ id="x15-52028r26"></a></span>&#x00A0;&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x15-52029r27"></a></span>}
+   
+   </div>
+<!--l. 155--><p class="noindent" >
+</p>
+   <h3 class="sectionHead"><span class="titlemark">9.4    </span> <a 
+ id="x15-530009.4"></a>Implicit concurrency</h3>
+<!--l. 158--><p class="noindent" >The implicit concurrency in this example is on line 12 in the capsule Pi, where calling
+an external capsule procedure immediately returns, the foreach is simply a sugar for
+calling the procedure on a capsule and storing the result in a cell of an array, one
+capsule at a time.
+</p><!--l. 163--><p class="indent" >   On lines 15-16, each indexing of the results array might wind up blocking due to
+the fact that the result has not been computed up until that point.
+</p><!--l. 166--><p class="indent" >   When it is safe to exploit these sources of implicit concurrency, Panini compiler
+will automatically introduce parallelism to speedup this program without intervention
+from the programmer.
+                                                                         
+
+                                                                         
+</p><!--l. 259--><p class="indent" >   <div class="page-nav"><a 
+href="indexch9.html" >^ RETURN TO TOP</a></div><div class="page-nav"><a 
+href="indexch10.html" >NEXT &#x003E;</a></div>     
+</div><!--end-main-content-->  
+</div><!--end-content-->  
+</div> <!--end-body-container-->  
+ 
+<div class="footer-container">  
+<div class="footer">  
+<div class="bot-nav">  
+<nav>  
+<ul>  
+<li><a href="/about.shtml">About</a></li>  
+<li><a href="/people.shtml">People</a></li>  
+<li><a href="/download/">Downloads</a></li>  
+<li><a href="/papers.shtml">Research</a></li>  
+<li><a href="/man/">Documentation</a></li>  
+<li><a href="/faq.shtml" id="botlast">FAQs</a></li>  
+</ul>  
+</nav>  
+</div>  
+<div class="legal">  
+<div id="isu">Iowa State University</div>  
+<p id="copyright">  
+<script type="text/javascript">  
+copyright=new Date()  
+fullYear=copyright.getFullYear();  
+document.write("Copyright &copy; " + fullYear + " Iowa State University of Science and Technology. All rights reserved.")  
+</script>  
+</p>  
+<p id="credits">  
+These pages describe work carried out on the design  
+and the implementation of the Panini programming language.  
+The PI is  
+<a href="http://www.cs.iastate.edu/\protect \unhbox \voidb@x \penalty \@M \relax \unhbox \voidb@x \special {t4ht@+&{35}x00A0{59}}x{}hridesh/">Hridesh Rajan</a> from  
+<a href="http://www.cs.iastate.edu">Iowa State University</a>.  
+This work is supported in part by  
+the US <a href="http://www.nsf.gov">National Science Foundation</a> (NSF) under grants  
+<a href="http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=0846059">CCF-08-46059</a>,  
+<a href="http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=1017334">CCF-10-17334</a>,  
+<a href="http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=1117937">CCF-11-17937</a>, and  
+<a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1423370">CCF-14-23370</a> to Rajan.  
+Any opinions, findings, and conclusions or recommendations  
+expressed in this material are those of the author(s) and do not  
+necessarily reflect the views of the <a href="http://www.nsf.gov">NSF</a>.  
+</p>  
+</div>  
+<div class="links">  
+<h3>Related Sites</h3>  
+<ul>  
+<li><a href="http://www.cs.iastate.edu/\protect \unhbox \voidb@x \penalty \@M \relax \unhbox \voidb@x \special {t4ht@+&{35}x00A0{59}}x{}design/">Labratory for Software Design</a></li>  
+<li><a href="http://www.cs.iastate.edu/">Computer Science Department</a></li>  
+<li><a href="http://www.iastate.edu/">Iowa State University</a></li>  
+</ul>  
+</div>  
+</div>  
+</div>  
+ 
+<script type="text/javascript">  
+//Analytics account -- http://paninij.sourceforge.net  
+var _gaq = _gaq || [];  
+_gaq.push(['_setAccount', 'UA-15725511-1']);  
+_gaq.push(['_trackPageview']);  
+ 
+(function() {  
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;  
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';  
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);  
+})();  
+</script>  
+</body> 
+</html>

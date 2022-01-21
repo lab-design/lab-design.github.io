@@ -1,0 +1,106 @@
+
+<!--#include virtual="../../includes/topbar.html"-->
+<!-- 2ND COLUMN. INSERT COPY -->
+
+<td id="b3" rowspan="2">
+<div class="maintext">
+
+<!-- INSERT TITLE OF THE PAPER BELOW.-->
+<h1>
+Predictive Thread-to-Core Assignment on a Heterogeneous Multi-core Processor
+</h1>
+
+<!-- INSERT AUTHOR NAME AS IT APPEARS BELOW -->
+<h2>
+By Tyler Sondag, Viswanath Krishnamurthy, and Hridesh Rajan
+</h2>
+
+<!-- INSERT ABSTRACT OF THE PAPER BELOW -->
+<h2 class="bar">Abstract</h2>
+<p>
+As multi-core processors are becoming common, vendors are
+starting to explore trade offs between the die size and the number of
+cores on a die, leading to heterogeneity among cores on a
+single chip. For efficient utilization of these processors,
+application threads must be assigned to cores such that
+the resource needs of a thread closely matches resource
+availability at the assigned core.
+Current methods of thread-to-core assignment often require
+application's execution trace to determine it's runtime properties.
+These traces are obtained by running the application on some
+representative input. A problem is that developing these
+representative input set is time consuming, and requires
+expertise that the user of a general-purpose processor
+may not have.
+In this position paper, we propose an approach
+for automatic thread-to-core assignment for
+heterogeneous multi-core processors to address
+this problem. The key insight behind our approach
+is simple -- if two phases of a program are similar,
+then the data obtained by dynamic monitoring of one
+phase can be used to make scheduling decisions about
+other similar phases. The technical underpinnings of our
+approach include: a preliminary static analysis-based approach
+for determining similarity among program sections,  and
+a thread-to-core assignment algorithm that utilizes the
+statically generated information as well as execution
+information obtained from monitoring a small fraction of
+the program to make scheduling decisions.
+</p>
+
+<!-- INSERT BIBLIOGRAPHIC INFORMATION BELOW, DON'T FORGET to END EACH LINE
+  WITH <BR> -->
+
+<h2 class="bar">Bibliographic Information</h2>
+<p>
+@inproceedings{Sondag-Krishnamurthy-Rajan07,<BR>
+author = {Tyler Sondag, Viswanath Krishnamurthy and Hridesh Rajan},<BR>
+title = {Predictive Thread-to-Core Assignment on a Heterogeneous Multi-core Processor},<BR>
+booktitle = {PLOS '07: ACM SIGOPS 4th Workshop on Programming Languages and Operating Systems},<BR>
+location = {Skamania Lodge, Stevenson, Washington, USA},<BR>
+month = {October},<BR>
+year = {2007},<BR>
+}<BR>
+</p>
+<!--- INSERT LINK TO THE FULL PAPER BELOW AND ADD THE PAPER TO THE CURRENT 
+  DIRECTORY -->
+<!-- <p>Most recent version: <a href="papers/PLOS-2007/skr-predictive-assignment.pdf">PDF</a></p> -->
+<p>Most recent version: <a href="plos07.pdf">PDF</a></p>
+
+<hr>
+
+<p>Previous version appeared as Technical Report 07-10, Computer
+Science, Iowa State University, June 29, 2007.  [<a
+href="http://archives.cs.iastate.edu/documents/disk0/00/00/05/47/00000547-00/mainTR.pdf">PDF
+Format</a>]</p>
+
+</div>
+
+</td>
+
+<!--#include virtual="../../includes/bottombar.html"-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

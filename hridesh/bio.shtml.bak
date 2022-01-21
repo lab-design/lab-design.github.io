@@ -1,0 +1,107 @@
+<!--#include virtual="includes/template/headTop.htm"-->  
+
+<!-- INSERT TITLE -->
+<title>Hridesh Rajan, Assistant Professor of Computer Science, Iowa State University</title>
+
+<!--#include virtual="includes/template/headBottom.htm"-->  
+
+<!-- Text for the actual webpage start -->
+<h2> Official Biographical Sketch </h2>
+<p>
+Hridesh Rajan is an Associate Professor of <a href="http://www.cs.iastate/edu">
+Computer Science</a> at <a href="http://www.iastate.edu">
+Iowa State University</a>, where he has been since August 2005.
+He received his PhD in
+<a href="http://www.cs.virginia.edu/">Computer Science</a>
+from the <a href="http://www.virginia.edu">University of Virginia</a>
+in 2005 under supervision of
+<a href="http://www.cs.virginia.edu/~sullivan">Kevin Sullivan</a>.
+He received his undergraduate degree from 
+<a href="http://itbhu.ac.in">Institute of Technology</a>, 
+Banaras Hindu University(IT-BHU) in 2000. 
+Before his graduate studies at UVA, he 
+worked for Lucent Technologies, India (Bell Labs, India)
+as a Member of Technical Staff. 
+Professor Rajan's research interests include
+programming language design and implementation
+and software engineering. 
+Professor Rajan is a recepient of the National Science Foundation CAREER award in 2009
+and LAS Award for Early Achievement in Research in 2010.
+</p>
+<!--<p>
+His best known work in the area is on Eos
+(see <a href="http://www.cs.iastate.edu/~eos/">http://www.cs.iastate.edu/~eos/</a>)
+with Professor <a href="http://www.cs.virginia.edu/~sullivan">Kevin J. Sullivan</a>,
+an aspect-oriented extension of C# that unifies aspect-and object-oriented
+programming language.
+His recent work on Nu (see <a href="http://www.cs.iastate.edu/~nu/">http://www.cs.iastate.edu/~nu/</a>)
+with Robert Dyer and Rakesh Setty is developing a novel aspect-oriented intermediate language design 
+to preserve design modularity in object code for efficient separate and incremental compilation
+and dynamic adaptation of aspect-oriented programs.
+His work on Sapha (see <a href="http://www.cs.iastate.edu/~design/projects/multicore/">
+http://www.cs.iastate.edu/~design/projects/multicore/</a>) 
+is designing, implementing and evaluating program analysis-based 
+automatic thread-to-core assignment techniques for heterogeneous 
+multi-core processors that will enhance the utilization of these 
+processors. 
+His work on Tisa (see <a href="http://www.cs.iastate.edu/~tisa">http://www.cs.iastate.edu/~tisa/</a>) with 
+Mahantesh Hosamani, Harish Narayanappa, Robert Dyer, and 
+John Altidor) explores more efficient techniques for enforcing 
+trust and security properties in truly decoupled architectures 
+such as web services. 
+His work on Slede (see <a href="http://www.cs.iastate.edu/~slede">http://www.cs.iastate.edu/~slede/</a>)
+with Youssef Hanna and Wensheng Zhang aims to improve the reliability
+of wireless sensor networks by formally specifying and verifying security
+protocols designed for them. 
+For more details about his work see 
+<a href="http://www.cs.iastate.edu/~hridesh/">http://www.cs.iastate.edu/~hridesh</a>.
+</p>-->
+
+<h2>Academic Background</h2>
+<p></p>
+<p>
+My advisor at <a href="http://www.virginia.edu">University of Virginia</a> 
+was <a href="http://www.cs.virginia.edu/~sullivan">Kevin Sullivan</a>, whose
+advisor was <a href="http://www.cs.washington.edu/homes/notkin/">David Notkin</a>.
+My <a href="http://www.csc.ncsu.edu/faculty/xie/sefamily.htm">academic genealogy</a>
+goes all the way to <a href="http://www.cs.utexas.edu/users/EWD">Edsger Dijkstra.</a>
+</p>
+
+<p>
+In prior life, I worked at <a href="http://www.bell-labs.com">Bell Labs</a> India,
+the R&amp;D organization of <a href="http://www.lucent.com">Lucent Technologies</a>.
+At the time, I was interested in bandwidth and power optimization issues in mobile
+ad hoc & sensor networks as they scale up. I still keep up with these topics.
+</p>
+
+<h2>Personal</h2>
+
+<p>
+I come from a small town called Mokama in <a href="http://gov.bih.nic.in/Profile/history.htm">Bihar</a>, 
+<a href="http://indiaimage.nic.in/">India</a>. I have had the pleasure to live within 
+50ft from the river Ganga, a major river in India, for most of my childhood. 
+If you are from Mokama, I will be glad to hear from you. Send me an e-mail and
+we can share stories :-).
+</p>
+
+<p>
+Beside computer science, I love
+<a href="http://virginiasports.collegesports.com/sports/m-footbl/va-m-footbl-body.html">
+cavaliers</a> (trying to grow into <a href="http://www.cyclones.com/">cyclones</a>),
+<a href="http://www.dreamworksanimation.com/">Dreamworks Animation Movies</a>,
+driving, racquet ball, paintball, chess, and pool (not necessarily in this order).
+Sometimes, I also pretend to be a handyman.
+</p>
+
+<h2>Etc,etc</h2>
+
+<p>A friend of mine who shall remain nameless writes comic strips 
+about online matrimonials <a href="http://www.shaadicomics.com">
+www.shaadicomics.com</a>. His comic strips are quite funny.</p>
+
+<p>Another colleague and long-time friend runs this job web-site
+geared towards <a href="http://www.iimjobs.com">MBA jobs</a>
+for IIM graduates. I find this forum particularly effective.</p> 
+
+<!-- Text for the actual webpage end -->
+<!--#include virtual="includes/template/footer.htm"--> 

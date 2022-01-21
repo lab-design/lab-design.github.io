@@ -1,0 +1,34 @@
+Requirements for the M.S. Degree in Computer Science
+
+These requirements are for preparing the program of study (POS) which must be approved by the POS committee and the Graduate College.  Departure from these requirements can be made provided appropriate approval is obtained from the departmental Graduate Committee.
+
+1.	Course and credit requirements for M.S. degree (a minimum of 31 credits) including:
+a.  15 credits:  Core courses 511, 531, and 3 courses from the following set:  
+512, 524, 526, 541, 542, 552, 561, 572, 586.
+b.	A breadth requirement to include two of the following areas (as long as the courses have not been used to satisfy the requirements in part a and at least one of the two is a 600 level course):  
+512, 518x, 524 (or 624), 526, 540 (or 542), 541 (or 641), 552 (or 652), 554 (or 586), 561 or (661), 572 (or 672 or 673), 576x, 582, 587x, 594x, 611 (or 612), 625, 631 (or 632 or 633)
+c.	ComS 591 (1 credit) must be taken in the student's first fall semester or be replaced with 3 credits of ComS 610.
+d.	3 credits of 599 (creative component) or 6 credits of 699 (thesis).
+e.	1 to 6 elective credits (depending on c and d).  Elective credits in Computer Science (500 level or above excluding 599 and 699) or other fields (must be available for graduate minor credit).  ComS 610 fits here unless used to fulfill item 1c above.
+2.	Grade requirements for M.S. degree
+a.	A grade of B- or better in each course in 1a.
+b.	An average grade point of 3.0 or above over all the courses in 1a and 1b.
+c.	A maximum of 2 C's (C, C+) and no grade below a C on the POS.
+3.	Creative Component of the M.S. degree
+a.	Non-thesis option: 3 credits identified as ComS 599 culminating in the preparation of a formal paper.  
+b.	Thesis option: 6 credits of research identified as ComS 699 culminating in the preparation of a thesis.
+Regardless of the option, a final oral examination is required.  The emphasis is on the creative component or thesis.
+4.	Guidelines for writing the M.S. creative component or thesis
+
+M.S. Creative Component:
+
+a.	Creative effort is reflected in 3 credits earned through ComS 599 (Graduate College requirement.)
+b.	The topic should be chosen in consultation with the Major Professor.  It should be developed in terms of the current literature and written so as to exhibit the student's understanding of the issues.
+c.	The paper should be in a form suitable for submission for publication.  Emphasis is placed upon clear writing, logical development, and significance of understanding.
+d.	One copy of the paper should be submitted to each member of the POS committee two weeks before the final M.S. examination, and the student's examination will include questions on the paper.  A bound copy of the paper must be filed with the department's graduate secretary before approval for graduation will be granted. 
+
+M.S. Thesis:
+
+a.	Effort involved should approximate 6 credit hours (ComS 699).
+b.	A research topic should be chosen in consultation with the Major Professor.  The result of the research is to be an original contribution to the field of Computer Science.  The thesis will include a thorough literature search and review. 
+c.	The thesis must be written in the form prescribed by the Graduate College Thesis Manual.  A first deposit needs to be submitted to the Graduate College Thesis Office five to six weeks (set date will be posted) before the last date for final oral exam.  Two weeks prior to the final examination, one copy is submitted to each member of the POS Committee.  Two final copies need to be submitted to the Graduate College Thesis Office, and one copy to the department's graduate secretary before graduation is approved.

@@ -1,0 +1,377 @@
+<!DOCTYPE html> 
+<html> 
+<head><title>13 Installing and Running the Panini Compiler</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:light,regular,bold&amp;v1' rel='stylesheet' type='text/css' /> 
+<base href="/man/" /> 
+<link href="/style.css" rel="stylesheet" type="text/css" /> 
+<link href="/images/panini.ico" rel="shortcut icon" type="image/x-icon" /> 
+<!-- SYNTAX HIGHLIGHTING --> 
+<script type="text/javascript" src="/syntax/scripts/shCore.js"></script> 
+<script type="text/javascript" src="/syntax/scripts/shBrushBash.js"></script> 
+<script type="text/javascript" src="/syntax/scripts/shBrushJava.js"></script> 
+<script type="text/javascript" src="/syntax/scripts/shBrushPanini.js"></script> 
+<script type="text/javascript" src="/syntax/scripts/shBrushXml.js"></script> 
+<link type="text/css" rel="stylesheet" href="/syntax/styles/shCore.css"/> 
+<link type="text/css" rel="stylesheet" href="/syntax/styles/shThemeDefault.css"/> 
+<script type="text/javascript"> 
+//SyntaxHighlighter.config.clipboardSwf = 'scripts/clipboard.swf'; 
+SyntaxHighlighter.all(); 
+</script> 
+<!-- END SYTNAX HIGHLIGHTING --> 
+  
+<style type="text/css">  
+.col2-toc h2 {  
+margin: 0 0 10px;  
+}  
+</style>  
+ 
+<meta name="description"  
+content="The Panini Programming Guide helps introduce users to  
+the features and syntax of the Panini Programming Language.  
+Panini is a capsule-oriented programming language whose goals are  
+to ease development of correct, scalable, and portable software  
+for multicore and manycore, platforms.  
+Panini strives to reconcile modularity and concurrency goals  
+in software development." />  
+<meta name="keywords" content="panini, programming, guide, introduction, tutorial,  
+panini, capsule, capsules, capsule-oriented,  
+capsule-oriented programming, better modularity better concurrency,  
+concurrency, modularity, events, types, modules, implicit concurrency,  
+sequential consistency, data race freedom due to shared data, ease of use,  
+quantified, event, types, Hridesh Rajan, Yuheng Long,  
+Rex Fernando, Eric Lin, synergy between modularity and concurrency,  
+determinstic semantics, data race freedom, deadlock freedom,  
+multicore, multi-core, manycore, many-core, heterogeneous,  
+performance-asymmetric, platform portability, download, compiler,  
+download panini, concurrent, patterns, open effects, guarded effects,  
+explicit concurrency, pitfalls, data races, race conditions, deadlock  
+avoidance, race freedom, open effects, deterministic semantics, modules, actors" />  
+ 
+<!-- PAGE METADATA --> <link rel="stylesheet" type="text/css" href="index.css" /> 
+  
+<style type="text/css">  
+.lstlisting .label {  
+width: 100%;  
+font-size: 8pt;  
+}  
+</style>  
+  
+<style type="text/css">  
+.caption .content {  
+background-image: none;  
+background-position: left 12px;  
+background-repeat: no-repeat;  
+margin-left: 0;  
+margin-right: auto;  
+padding: 0 0 100px 50px;  
+width: 1070px;  
+}  
+</style>  
+  
+<style type="text/css">  
+.content {  
+width: 1070px;  
+}  
+</style>  
+  
+<style type="text/css">  
+.main-content {  
+background-image: url("/images/maincontent-right.png");  
+background-position:1028px 1px;  
+background-repeat: no-repeat;  
+width: 1021px;  
+}  
+</style>  
+  
+<style type="text/css">  
+.main-content .caption{  
+font-style: italic;  
+font-size: 8pt;  
+text-align: left;  
+width: 80 
+margin: 0 !important ;  
+}  
+</style>  
+</head>  
+<body>  
+<div class="body-container">  
+<header>  
+<h1><a href="index.html" name="pgtop">Panini Programming Language</a></h1>  
+<h2>PROGRAMMING LANGUAGE</h2>  
+</header>  
+<div class="content">  
+<div class="top-nav">  
+<nav>  
+<ul>  
+<li><a href="/about.shtml">About</a></li>  
+<li><a href="/people.shtml">People</a></li>  
+<li><a href="/download/">Downloads</a></li>  
+<li><a href="/papers.shtml">Research</a></li>  
+<li><a href="/man/">Manual</a></li>  
+<li><a href="/faq.shtml" id="toplast">FAQs</a></li>  
+</ul>  
+</nav>  
+</div>  
+<div class="main-content">  <h2 class="chapterHead"><span class="titlemark">Chapter&#x00A0;13</span><br /><a 
+ id="x20-7100013"></a>Installing and Running
+the Panini Compiler</h2>
+   <h3 class="sectionHead"><span class="titlemark">13.1    </span> <a 
+ id="x20-7200013.1"></a>Downloading the Compiler</h3>
+<!--l. 3--><p class="noindent" >The Panini compiler can be obtained in the following forms:
+</p>
+      <ul class="itemize1">
+      <li class="itemize">Pre-built       binaries:       From       the       Panini       download       page
+      <a 
+href="#http://paninij.org/download" >http://paninij.org/download</a>
+      </li>
+      <li class="itemize">Source      code:      Available      via      Sourceforge      at      the      URL
+      <a 
+href="#http://sf.net/projects/paninij" >http://sf.net/projects/paninij</a></li></ul>
+                                                                         
+
+                                                                         
+<!--l. 12--><p class="indent" >   For starting out, we would recommend the pre-built binaries that account for all
+dependencies. The following instructions assume the use of the pre-built
+package.
+</p><!--l. 16--><p class="noindent" >
+</p>
+   <h3 class="sectionHead"><span class="titlemark">13.2    </span> <a 
+ id="x20-7300013.2"></a>Structure of Panini Distribution</h3>
+<!--l. 19--><p class="noindent" >The archive file contains the following: </p>
+      <ul class="itemize1">
+      <li class="itemize">bin: Executable versions of the Panini compiler for both *nix and WIN
+      environments.
+      </li>
+      <li class="itemize">lib: Jars files for panini.
+      </li>
+      <li class="itemize">examples: Some small examples of new Panini features.
+      </li>
+      <li class="itemize">license:   License   agreements   under   with   the   Panini   Compiler   and
+      associated tools are available.
+      </li>
+      <li class="itemize">README: A textual version of this page.</li></ul>
+<!--l. 30--><p class="noindent" >
+</p>
+   <h3 class="sectionHead"><span class="titlemark">13.3    </span> <a 
+ id="x20-7400013.3"></a>Requirements for Running Panini Compiler</h3>
+      <ul class="itemize1">
+      <li class="itemize">Java Runtime Environment(JRE) 1.6 or greater.
+                                                                         
+
+                                                                         
+      </li>
+      <li class="itemize">Apache   Ant   is   also   recommended.   It   available   from   the   URL
+      <a 
+href="http://ant.apache.org/" class="url" ><span 
+class="pcrr8t-x-x-120">http://ant.apache.org/</span></a></li></ul>
+<!--l. 38--><p class="noindent" >
+</p>
+   <h3 class="sectionHead"><span class="titlemark">13.4    </span> <a 
+ id="x20-7500013.4"></a>Running the Panini Compiler</h3>
+<!--l. 41--><p class="noindent" >The Panini compiler can be used in two ways:
+</p>
+      <ul class="itemize1">
+      <li class="itemize">like javac from the command-line
+      </li>
+      <li class="itemize">as a replacement builder for javac in the javac ant task.</li></ul>
+<!--l. 48--><p class="indent" >   The following sections describe usage.
+</p><!--l. 50--><p class="noindent" >
+</p>
+   <h3 class="sectionHead"><span class="titlemark">13.5    </span> <a 
+ id="x20-7600013.5"></a>Running the Panini Compiler from the command-line</h3>
+<!--l. 53--><p class="noindent" >The bin folder in this distribution contains scripts that can be used to run the Panini
+compiler and to start compiled Panini programs.
+</p>
+      <ul class="itemize1">
+      <li class="itemize">bin/panc and bin/panini : the command-line interfaces for *nix systems.
+      </li>
+      <li class="itemize">bin/panc.bat  and  bin/panini.bat  :  the  command-line  interface  for  WIN
+      systems.</li></ul>
+                                                                         
+
+                                                                         
+<!--l. 62--><p class="indent" >   The <span 
+class="pcrr8t-x-x-120">panc </span>and <span 
+class="pcrr8t-x-x-120">panc.bat </span>scripts have an interface like <span 
+class="pcrr8t-x-x-120">javac</span>, the standard Java
+compiler. The <span 
+class="pcrr8t-x-x-120">panini </span>and <span 
+class="pcrr8t-x-x-120">panini.bat </span>have an interface like <span 
+class="pcrr8t-x-x-120">java</span>, the standard
+Java virtual machine.
+</p><!--l. 68--><p class="noindent" >
+</p>
+   <h3 class="sectionHead"><span class="titlemark">13.6    </span> <a 
+ id="x20-7700013.6"></a>Compiling Examples from Command-Line</h3>
+<!--l. 71--><p class="noindent" >Examples of some small Panini programs are located in the examples folder. To
+compile an example, navigate to its directory and use Panini compiler just like javac.
+For example, to manually compile the Dining Philosophers example, navigate to the
+examples directory and type
+</p><!--l. 77--><p class="indent" >   <span 
+class="pcrr8t-x-x-120">../bin/panc Philosophers.java</span>
+</p><!--l. 79--><p class="indent" >   Running compiled Panini programs requires the panini runtime be on the JVM
+classpath. The required runtime classes are in <span 
+class="pcrr8t-x-x-120">$PANC_HOME/lib/panini_rt.jar</span>.
+The <span 
+class="pcrr8t-x-x-120">panini </span>script, packaged in the bin directory, automatically starts a JVM with the
+correct library on the classpath.
+</p><!--l. 85--><p class="indent" >   Use <span 
+class="pcrr8t-x-x-120">$PANC_HOME/bin/panini AppEntry </span>to run these programs.
+</p><!--l. 88--><p class="noindent" >
+</p>
+   <h3 class="sectionHead"><span class="titlemark">13.7    </span> <a 
+ id="x20-7800013.7"></a>Running the Panini Compiler from Within Ant</h3>
+<!--l. 91--><p class="noindent" >The panini compiler can be used in an ant build script by replacing the jar
+file used by the <span 
+class="pcrr8t-x-x-120">javac </span>task. See the OpenJDK notes in the Ant manual at
+<a 
+href="http://ant.apache.org/manual/Tasks/javac.html" class="url" ><span 
+class="pcrr8t-x-x-120">http://ant.apache.org/manual/Tasks/javac.html</span></a> for more
+information.
+</p>
+   <!--l. 97-->
+   <div class="lstlisting" id="listing-69"><span class="label"><a 
+ id="x20-78001r1"></a></span>&#x003C;pre&#x00A0;<span 
+class="ptmb8t-x-x-120">class</span>="brush:&#x2423;xml;}&#x00A0;<br /><span class="label"><a 
+ id="x20-78002r2"></a></span>&#x003C;property&#x2423;name="panc.dir"&#x00A0;<br /><span class="label"><a 
+ id="x20-78003r3"></a></span>&#x2423;&#x2423;&#x2423;&#x2423;&#x2423;&#x2423;&#x2423;&#x2423;&#x2423;&#x2423;value="path/to/panini/install}&#x003C;/property&#x003E;&#x00A0;<br /><span class="label"><a 
+ id="x20-78004r4"></a></span>&#x003C;property&#x00A0;name="panc.jar"&#x00A0;<br /><span class="label"><a 
+ id="x20-78005r5"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;value="${panc.dir}/lib/dist/lib/panc.jar}&#x003C;/property&#x003E;&#x00A0;<br /><span class="label"><a 
+ id="x20-78006r6"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x20-78007r7"></a></span>&#x003C;!<span 
+class="zptmcm7y-x-x-120">-</span><span 
+class="zptmcm7y-x-x-120">-</span>&#x2423;Create&#x2423;a&#x2423;version&#x2423;of&#x2423;javac,&#x2423;which&#x2423;uses&#x2423;the&#x2423;panini&#x2423;javac.jar.&#x2423;<span 
+class="zptmcm7y-x-x-120">-</span><span 
+class="zptmcm7y-x-x-120">-</span>&#x003E;&#x00A0;<br /><span class="label"><a 
+ id="x20-78008r8"></a></span>&#x003C;presetdef&#x2423;name="panc}&#x00A0;<br /><span class="label"><a 
+ id="x20-78009r9"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003C;javac&#x00A0;fork="yes}&#x00A0;<br /><span class="label"><a 
+ id="x20-78010r10"></a></span>&#x2423;&#x2423;&#x2423;&#x2423;&#x2423;&#x2423;&#x2423;&#x2423;&#x003C;compilerarg&#x2423;value="<span 
+class="zptmcm7y-x-x-120">-</span>J<span 
+class="zptmcm7y-x-x-120">-</span>Xbootclasspath/p:${panc.jar}}&#x003C;/compilerarg&#x003E;&#x00A0;<br /><span class="label"><a 
+ id="x20-78011r11"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003C;/javac&#x003E;&#x00A0;<br /><span class="label"><a 
+ id="x20-78012r12"></a></span>&#x003C;/presetdef&#x003E;&#x00A0;<br /><span class="label"><a 
+ id="x20-78013r13"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x20-78014r14"></a></span>&#x003C;target&#x00A0;name="build"&#x00A0;&#x003E;&#x00A0;<br /><span class="label"><a 
+ id="x20-78015r15"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x003C;panc&#x00A0;srcdir="src"&#x00A0;<br /><span class="label"><a 
+ id="x20-78016r16"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;destdir="bin}&#x00A0;<br /><span class="label"><a 
+ id="x20-78017r17"></a></span>&#x2423;&#x2423;&#x2423;&#x2423;&#x003C;/panc&#x003E;&#x00A0;<br /><span class="label"><a 
+ id="x20-78018r18"></a></span>&#x003C;/target&#x003E;
+   
+   </div>
+                                                                         
+
+                                                                         
+<!--l. 150--><p class="noindent" >
+</p>
+   <h3 class="sectionHead"><span class="titlemark">13.8    </span> <a 
+ id="x20-7900013.8"></a>Translating Panini into Java</h3>
+<!--l. 153--><p class="noindent" >The panini ant task can also translate Panini programs into pure Java programs. After
+translation, a Panini program can be compiled with any standard Java compiler.
+To translate a Panini program set the <span 
+class="pcrr8t-x-x-120">dotranslate </span>attribute to yes. For
+example:
+</p>
+   <!--l. 159-->
+   <div class="lstlisting" id="listing-70"><span class="label"><a 
+ id="x20-79001r1"></a></span>&#x003C;panc&#x00A0;dotranslate="yes"&#x00A0;srcdir="${source}"&#x00A0;destdir="${output}"&#x00A0;<br /><span class="label"><a 
+ id="x20-79002r2"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;include="<span 
+class="cmsy-10x-x-120">*</span>.java}&#x003C;/panc&#x003E;
+   
+   </div>
+<!--l. 164--><p class="indent" >   will translate all the Panini source files in the <span 
+class="pcrr8t-x-x-120">${source} </span>to Java files in the
+<span 
+class="pcrr8t-x-x-120">${output} </span>directory. The translation attribute does not support a nested package
+structure for the source files. If the translation option is used, all the source files must
+be in the default package. When compiling with javac, panini_rt.jar must be on the
+classpath. The build files for the included examples use the translation/javac strategy
+to produce runnable byte code.
+</p><!--l. 173--><p class="noindent" >
+</p>
+   <h3 class="sectionHead"><span class="titlemark">13.9    </span> <a 
+ id="x20-8000013.9"></a>Acknowledgments and Licensing</h3>
+<!--l. 176--><p class="noindent" >The Panini compiler builds on the OpenJDK java compiler available at the URL
+<a 
+href="http://openjdk.java.net/" class="url" ><span 
+class="pcrr8t-x-x-120">http://openjdk.java.net/</span></a>.
+</p><!--l. 179--><p class="indent" >   All necessary licenses are included in the license directory. The Panini compiler is
+licensed under the Mozilla Public License version 1.1 (MPL 1.1) license. You may
+obtain a copy of the license at the URL <a 
+href="http://www.mozilla.org/MPL/" class="url" ><span 
+class="pcrr8t-x-x-120">http://www.mozilla.org/MPL/</span></a>.
+                                                                         
+
+                                                                         
+</p><!--l. 282--><p class="indent" >   <div class="page-nav"><a 
+href="indexch13.html" >^ RETURN TO TOP</a></div><div class="page-nav"><a 
+href="indexch14.html" >NEXT &#x003E;</a></div>     
+</div><!--end-main-content-->  
+</div><!--end-content-->  
+</div> <!--end-body-container-->  
+ 
+<div class="footer-container">  
+<div class="footer">  
+<div class="bot-nav">  
+<nav>  
+<ul>  
+<li><a href="/about.shtml">About</a></li>  
+<li><a href="/people.shtml">People</a></li>  
+<li><a href="/download/">Downloads</a></li>  
+<li><a href="/papers.shtml">Research</a></li>  
+<li><a href="/man/">Documentation</a></li>  
+<li><a href="/faq.shtml" id="botlast">FAQs</a></li>  
+</ul>  
+</nav>  
+</div>  
+<div class="legal">  
+<div id="isu">Iowa State University</div>  
+<p id="copyright">  
+<script type="text/javascript">  
+copyright=new Date()  
+fullYear=copyright.getFullYear();  
+document.write("Copyright &copy; " + fullYear + " Iowa State University of Science and Technology. All rights reserved.")  
+</script>  
+</p>  
+<p id="credits">  
+These pages describe work carried out on the design  
+and the implementation of the Panini programming language.  
+The PI is  
+<a href="http://www.cs.iastate.edu/\protect \unhbox \voidb@x \penalty \@M \relax \unhbox \voidb@x \special {t4ht@+&{35}x00A0{59}}x{}hridesh/">Hridesh Rajan</a> from  
+<a href="http://www.cs.iastate.edu">Iowa State University</a>.  
+This work is supported in part by  
+the US <a href="http://www.nsf.gov">National Science Foundation</a> (NSF) under grants  
+<a href="http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=0846059">CCF-08-46059</a>,  
+<a href="http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=1017334">CCF-10-17334</a>,  
+<a href="http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=1117937">CCF-11-17937</a>, and  
+<a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1423370">CCF-14-23370</a> to Rajan.  
+Any opinions, findings, and conclusions or recommendations  
+expressed in this material are those of the author(s) and do not  
+necessarily reflect the views of the <a href="http://www.nsf.gov">NSF</a>.  
+</p>  
+</div>  
+<div class="links">  
+<h3>Related Sites</h3>  
+<ul>  
+<li><a href="http://www.cs.iastate.edu/\protect \unhbox \voidb@x \penalty \@M \relax \unhbox \voidb@x \special {t4ht@+&{35}x00A0{59}}x{}design/">Labratory for Software Design</a></li>  
+<li><a href="http://www.cs.iastate.edu/">Computer Science Department</a></li>  
+<li><a href="http://www.iastate.edu/">Iowa State University</a></li>  
+</ul>  
+</div>  
+</div>  
+</div>  
+ 
+<script type="text/javascript">  
+//Analytics account -- http://paninij.sourceforge.net  
+var _gaq = _gaq || [];  
+_gaq.push(['_setAccount', 'UA-15725511-1']);  
+_gaq.push(['_trackPageview']);  
+ 
+(function() {  
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;  
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';  
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);  
+})();  
+</script>  
+</body> 
+</html>

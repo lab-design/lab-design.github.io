@@ -1,0 +1,44 @@
+Requirements for the Co-major in Computer Science at the Ph.D. Level
+
+Some students may wish to earn a co-major in Computer Science and some other discipline.  This section defines Computer Science requirements for such a degree. 
+
+1.  Course and credit requirements in Computer Science:
+a.  Core courses (6 credits): 511, 531.
+b.	Elective courses -- At least 21 credits with one course taken from at least four of the following areas.
+1. Programming Languages and Software Engineering:  ComS 512, 540, 541, 542, 641.
+2. Operating Systems and Communication:  ComS 552, 554, 586, 587x, 652.
+3. Computer Architecture:  ComS 524, 583x, 624.
+4. Database Systems:  ComS 561, 661.
+5. Artificial Intelligence:  ComS 572, 576x, 672, 673.
+6. Parallel and Distributed Computing:  ComS 526x, 625.
+7. Theory of Computation:  ComS 531, 631, 632, 633.
+8. Algorithms and Data Structures:  ComS 511, 518, 611, 612.
+b.  ComS 591 and at least 3 credits of ComS 610.  (ComS591 must be taken in the student's first fall semester or be replaced with a 3-credit 600-level course other than 699.)
+
+The above choices are subject to the following additional restrictions:
+a. At least 36 credits, including dissertation research credits, must be earned under the supervision of the POS committee.
+b. The course credits (excluding 590, 591, 599, 610, 699) must add up to at least 36 credits.
+c. The course credits must include at least 6 credits of ComS 600-level courses, excluding 610 and 699.
+
+2.	Grade requirements for the Ph.D.
+No more than two C's (C, C+) and no grade below a C on the POS.
+
+3.	Required examinations
+The student must satisfy the proficiency requirements in two areas prior to the Preliminary Examination.  (See pags 6-7.)
+
+4.	Selection of Major Professor and POS
+The student will normally select a major professor and co-major professor one from each department.  Each must be a Graduate Faculty member.  The POS Committee will consist of at least two members from each department and one member outside of both departments.  At least one of the Computer Science members must be a Graduate Faculty member.
+
+5.	Creative Component for Ph.D. Degree
+Research culminating in a Ph.D. dissertation.  The research must show involvement in both major fields and normally be a significant contribution to knowledge in both disciplines.
+
+6.	Additional requirement
+The results of the Ph.D. research must be presented in a colloquium to the Computer Science faculty and graduate students.
+
+Special Consideration
+
+1.	Exceptions to regulations may be made with the approval of the Graduate Committee which acts for the department Graduate Faculty.  Requests for exception must clearly state the reasons why the student believes an exception should be made and what alternate procedure the student will follow to satisfy the requirements.  A request for an exception must be in writing by the student and approved by the student's POS committee.  The request is then sent to the department Graduate Committee for approval.  Any action on such requests will be published in the minutes of the Graduate Committee and will include the name of the student initiating the request.  A reasonable time limit will be specified during which any member of the Graduate Faculty may appeal the action.  Such appeals will be reviewed by the Graduate Committee and, in case of dispute, the appeal will be ruled on by the entire body of the Computer Science Graduate Faculty.
+
+2.	The proficiency and Preliminary Examinations will not generally be returned to a student. However, upon request by the student, the examinations may be reviewed to clear up any questions that may have arisen with respect to grading and the recommendation of the examining committee.  The examination will be kept in the student's file for future reference.
+
+

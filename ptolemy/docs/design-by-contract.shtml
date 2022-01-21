@@ -1,0 +1,455 @@
+<!--#include virtual="../includes/top.html"-->
+<title>Ptolemy Programming Guide : Design-by-Contract
+Methodology</title>
+<!-- PAGE SPECIFIC STYLING -->
+<style type="text/css">
+.col2-toc h2 {
+	margin: 0 0 10px;
+}
+</style>
+<!--#include virtual="../includes/header.html"-->
+
+<h1>The Ptolemy Programming Guide</h1>
+<script type="text/javascript">
+copyright=new Date()
+fullYear=copyright.getFullYear();
+document.write("<h5>Copyright &copy; 2006-" + fullYear + ", Iowa State University of Science and Technology. All rights reserved.</h5>")
+</script>
+
+<!-- TABLE OF CONTENTS -->
+<div class="col2-toc">
+<h2>Table of Contents</h2>
+<ol>
+	<li><a href="docs/index.shtml">Programming Guide Overview</a></li>
+	<li><a href="docs/starting.shtml">Getting Started with Ptolemy</a></li>
+	<li><a href="docs/running.shtml">Installing and Running the
+	Ptolemy compiler</a></li>
+	<li><a href="docs/lang.shtml">The Ptolemy Programming Language</a></li>
+	<li>Design-by-Contract Methodology in Ptolemy
+	<ul class="toc-currentpg">
+		<li><a href="docs/design-by-contract.shtml#intro">Why
+		Contracts?</a></li>
+		<li><a href="docs/design-by-contract.shtml#contract">Translucid
+		Contracts</a></li>
+		<li><a href="docs/design-by-contract.shtml#refinement">Satisfying a
+		Translucid Contract</a></li>
+	</ul>
+	</li>
+        <li><a href="papers/">Technical Publications</a></li>
+</ol>
+<hr />
+<h3>Examples</h3>
+<ul>
+	<li><a href="docs/example-genetic.shtml">Genetic Algorithm</a></li>
+</ul>
+</div>
+
+<!-- CONTENT -->
+<div class="col2-content">
+<h2><a name="intro">Why Contracts?</a></h2>
+
+<p><!-- Introduction --> Understanding aspect-oriented (AO) programs
+that use pointcuts and dynamic advice, as found in the AspectJ programs,
+often seems difficult, due to two fundamental problems:
+</p>
+<UL>
+	<LI>Join point shadows, i.e., places in the code where advice may
+	apply, occur very frequently. For example, a join point shadow occurs
+	at each method or constructor call, and each field read and write. And
+	at each join point shadow, reasoning about the effect of the code at
+	that place in the code must take into account the effects of all
+	applicable advice.</LI>
+	<LI>The control effects of advice must be understood in order to
+	reason about a program's control flow and how advice might interfere
+	with the execution of other advice.</LI>
+</UL>
+
+<h3>Density of Join Point Shadows</h3>
+
+<p>As an example of the first problem, consider the straight-line
+code below. In this listing, assuming that x and y are fields, there are
+at least 8 join point shadows, including the 5 method calls, the writes
+of x and y, and the read of x.</p>
+<pre class="brush: ptolemy;">
+x = o1.m1(a.e1(), b.e2()); 
+y = o2.m2(c.e3(), x); 
+</pre>
+
+<p>Knowing what advice applies where is amenable to tool support. An
+example is the Eclipse AspectJ Development Tools (AJDT). The idea of
+aspect-aware interfaces, is equivalent to such tool support since it
+shows what advice applies at each point of the code. However, the number
+of reasoning tasks grows with the number of join points and the amount
+of applicable advice.</p>
+
+<p>One way of avoiding this problem of frequent occurrence of join
+point shadows, is to limit where advice may apply, for example, by using
+some form of explicit base-advice interface (AO interface), e.g.
+crosscutting interfaces (XPIs), open modules, etc. This is the approach
+we adopt in the Ptolemy language. As we have discussed previously,
+Ptolemy introduces the notion of event types and limits the join points
+to explicit event announcements.</p>
+
+<p>To illustrate, consider the Ptolemy code in the listing below
+from our running example. In Ptolemy, events are explicitly announced,
+which mitigates the first problem, as reasoning about events only needs
+to happen at program points where events are explicitly announced such
+as lines 5-7 in the listing below.</p>
+
+<pre class="brush: ptolemy;">
+public class Point implements FigureElement {
+	int x;
+	int y;
+	public void setX(int x) {
+		announce FEChanged(this) {
+		 this.x = x;
+		}
+	}
+ ...
+}
+</pre>
+
+<h3>Reasoning about Control Effects</h3>
+
+<p>As an example of the second problem, understanding control
+effects of the advice, consider the Logging handler in the listing below
+that advises the same set of events advised by DisplayUpdate handler in 
+<a href="docs/lang.shtml#handler">our previous description</a>. To
+understand the control flow at these events matched by these handlers a
+developer must understand the control flow of both handlers.
+Furthermore, to understand the behavior at such events one must also
+understand the control flow of all other handlers that may advise the
+same events.</p>
+
+<pre class="brush: ptolemy;">
+class Logging{ 
+ . . .  
+ FigureElement log(FEChanged rest){ 
+  rest.invoke(); 
+  Log.logChanges(rest.fe());  
+ } 
+ when FEChanged do log; 
+}
+</pre>
+
+<p>The question then is whether we can use existing design by
+contract (DBC) methodologies to solve this problem. Most existing work
+on contracts relies on black box behavioral contracts. Such behavioral
+contracts specify, for each of the handler methods, the relationships
+between its inputs and outputs, and treat the implementation of the
+handler method as a black box, hiding all the method's internal states.
+To illustrate it we have added an example behavioral contract to the
+event type FEChanged in the listing below.</p>
+
+<pre class="brush: ptolemy;">
+	/***
+	 * This event is signaled when the state of a figure changes.
+	 */
+	public void event FEChanged {
+		FigureElement changedFE;
+		
+		requires changedFE != null
+		ensures changedFE == old(changedFE) 
+	}
+</pre>
+
+<p>As shown in the listing, event type FEChanged declares a black
+box contract on lines 7-8. Phrases &quot;behavioral contract&quot; and
+&quot;black box contract&quot; are used interchangeably throughout this
+document.</p>
+
+<p>However, the black box contract on lines 7-8 does not specify the
+control effects of the handler. For example, with just the black box
+contract of the event type FEChanged given, one cannot determine whether
+a call such as p.setX(3) (where p is a Point) will proceed to execute
+the body of setX, and thus whether such a call will always set the
+current x coordinate of p to its argument (3). If the expression <b>invoke</b>
+in the handler method update is forgotten inadvertently, the execution
+of the body of method setX will be skipped. This is equivalent to
+missing the call to <b>proceed</b> in an advice in AspectJ. Such
+assertions are important for reasoning, which depends on understanding
+the effect of composing the handler modules with the base code. That is,
+the contract does not specify whether the handler must always proceed.</p>
+
+<p>Even if programmers don't use formal techniques to reason about
+their programs, contracts for event types can serve as the programming
+guidelines for imposing design rules. But black box contracts for event
+types yield insufficiently specified design rules that leave too much
+room for interpretation, which may differ significantly from programmer
+to programmer. This may cause inadvertent inconsistencies in program
+designs and implementations, leading to hard to find errors.</p>
+
+<p>Another problem with such black box contracts is that they do not
+help with effectively reasoning about the effects of aspects on each
+other. Consider another example concern, say Logging, which writes a log
+file at the events specified by FEChanged. For this concern different
+orders of composition with the DisplayUpdate concern discussed
+previously could lead to different results. Suppose <b>invoke</b> call
+in DisplayUpdate was omitted. In that case, if DisplayUpdate were to run
+first, followed by Logging, then the evaluation of Logging would be
+skipped. Conversely, Logging would work (i.e., it would write the log
+file) if the handlers were composed in the opposite order. A handler
+developer cannot, by just looking at the black box contract of the event
+type, reason about the composition of such handlers. Rather a developer
+must be aware of the control effects of the code in all composed
+handlers. Furthermore, if any of these handlers changes (i.e., if their
+control effects change), one must reason about every other handler that
+applies at the same events.</p>
+
+<h2><a name="contract">Translucid Contracts</a></h2>
+
+<p>We have added a novel notion of lightweight contracts that we
+call <EM>translucid contracts</EM> to solve these problems. Translucid
+contracts are added to an event type. A translucid contract for an
+event type can be thought of as an abstract algorithm describing the
+behavior of aspects that apply to that AO interface. The algorithm is
+abstract in the sense that it may suppress many actual implementation
+details, only specifying their effects using specification
+expressions. This allows the specifier to decide to hide some details,
+while revealing others. A piece of code satisfies an abstract
+algorithm specification if the code refines the specification, but we
+use a restricted form of refinement that requires structural
+similarity, to allow specification of control effects.</p>
+
+<h3>An Example Translucid Contract</h3>
+
+<p>We have added an example translucid contract to the event type
+FEChanged, on lines 3-8 in the listing below.</p>
+
+<pre class="brush: ptolemy;">
+public void event FEChanged {
+	FigureElement changedFE;
+	requires changedFE != null
+	assumes {
+	 next.invoke();
+	 requires true ensures changedFE == old(changedFE) ;
+	}
+	ensures changedFE != null 
+}
+</pre>
+
+<p>Unlike a black box behavioral contract, internal states of the
+handler methods that run when the event FEChanged is announced are
+exposed in the translucid contract. In particular, any occurrence of the
+<b>invoke</b> expression (which is like AspectJ's proceed) in the
+handler method <EM>must</EM> be made explicit in the translucid
+contract, for example on line 5.</p>
+<p>The special name <b>next</b> is a specification placeholder for
+the event closure passed to the handlers.</p>
+<p>This in turn allows the developer of the class Point that
+announces the event FEChanged to understand the control effects of the
+handler methods by just inspecting the specification of FEChanged. For
+example, from line 5 one may conclude that, irrespective of the concrete
+handler methods, the body for the method setX in class Point will always
+be run. Such conclusions allow a client of the setX to make more
+expressive assertions about its control flow without considering every
+handler method that may potentially run when the event FEChanged is
+announced.</p>
+
+<p>Requiring the <b>invoke</b> expression to be made explicit also
+benefits other handlers that may run when the event FEChanged is
+announced. For example, consider the logging concern discussed earlier.
+Since the contract of FEChanged describes the control flow effects of
+the handlers, reasoning about the composition of the handler method for
+logging and other handler methods becomes possible without knowing about
+all explicit handler methods that may run when the event FEChanged is
+announced. Here we explicitly focus on the use of translucid contracts
+for describing and reasoning about control flow effects.</p>
+
+<h2><a name="refinement">Satisfying a Translucid Contract</a></h2>
+
+<p>To soundly reap these benefits, the translucid contract for the
+event type FEChanged must be refined by each conforming handler method.
+This is done automatically via a mixture of static type checking and runtime assertion
+checking by the Ptolemy compiler.</p>
+
+<p>To illustrate, consider the class DisplayUpdate below.</p>
+
+<pre class="brush: ptolemy;">
+public class DisplayUpdate {
+ public DisplayUpdate() {
+  register(this);
+ }
+
+ when FEChanged do update;
+ public void update(FEChanged rest) throws Throwable {
+  rest.invoke();
+  refining requires true ensures changedFE==old(changedFE) {
+   Display.update();
+  }
+ }
+}
+</pre>
+
+<p>Briefly the handler method update on lines 7-12 in this listing
+refines the contract of event type FEChanged on lines 4--7 because line
+8 in handler method textually matches line 5 in event type (structural similarity) and 
+lines 9-11 in the handler method claim to refine the specification expression on line 6.
+ The claim is checked by the insertion of runtime assertion probes before line 9 and after line 11.
+The pre- and postconditions of the method update are considered the same
+as the pre- and postconditions of event type specification on lines 3
+and 8, respectively and again are checked by runtime assertion checks.</p>
+
+<p> If, for example, the invoke expression on line 8 goes missing inadvertenly, the handler does not 
+refine the contract structurally and consequently the handler does not type check. Refining expressions could also
+violate their specification in the contract at runtime. Such violations are caught by the runtime assertions inserted by the compiler to assure 
+refinement of the specification by the implementation and an exception is thrown when the program execution reaches the violated assertion.
+<p>
+
+<h2><a name="reasoning-announce">Understanding Event Announcement (Subject's Side)</a></h2>
+
+<p>
+Translucid contracts enable modular reasoning about the subjects which
+announce events. Reasoning about event announcement is especially
+interesting because the number of event handlers responding to the
+event are not statically known.  To reason about event announcement
+(announce statement), only the subject implementation and the
+translucid contract is required.  Reasoning is carried out independent
+of the implementation, number and execution order of the handlers. To
+illustrate we merge the figures exepmlifying class Point and the event
+FEChanged from last sections, into the following figure.
+</p>
+
+<pre class="brush: ptolemy;">
+public class Point implements FigureElement {
+	int x;
+	int y;
+	public void setX(int x) {
+		announce FEChanged(this) {
+		 this.x = x;
+		}
+	}
+ ...
+}
+
+public void event FEChanged {
+	FigureElement changedFE;
+	requires changedFE != null
+	assumes {
+	 next.invoke();
+	 requires true ensures changedFE == old(changedFE) ;
+	}
+	ensures changedFE != null 
+}
+</pre>
+
+
+<p>
+Suppose we want to make sure the body of method setX() on line 6, in
+the class Point is executed. That is the handlers of event FEChanged don't
+skip the execution of the event body after the event is announced on
+line 5. The truth of this property could easily be verified by looking
+at the class Point and the translucid contract for FEChanged on lines 14--19.  The
+only way in which handlers of FEChanged could cause the body of method
+setX() not to execute, is by dropping the control and not return it
+back to the subject Point. Handlers could drop the control by not calling the
+invoke().  
+</p>
+
+<p>
+But line 16 in the translucid contract forces handlers to have the
+invoke() in their implementation otherwise they won't even type check and consequently
+won't satisfy the translcuid contract. So basically by looking only at
+the translucid contract we can make sure the handlers don't drop the control. And the control is 
+returned back to the subject and consequently the body of
+method setX() is executed (not skipped).
+
+<p>
+Translucid contracts not only enable us to understand the control
+effects of the event announcement as described above, but also give us
+the capability to reason about the behavior of the event announcement
+too. This is possible because of the translucid contract's pre- and
+post-conditions, lines 14 and 19. Translucid contract's pre- and post-conditions limit the
+behavior of each individual handler and also the whole event
+announcement.  So basically, the event announcement is guarded by the
+translucid contract's pre- and post-conditions.
+</p>
+
+
+<h2><a name="reasoning-invoke">Understanding Invoke Statements (Handler's Side)</a></h2>
+<p>
+Translucid contracts not only enable reasoning about the subjects of
+an event, but also allow understanding of the handlers of the
+event as well. Understanding the event handlers is tricky especially
+because of the invoke() expressions. Invoke() expressions could cause unknown number of
+handlers to run with an arbitrary order of execution.  To
+illustrate we merge the figures exepmlifying handler DisplayUpdate and the
+event FEChanged from last sections, into the following figure.
+</p>
+
+<pre class="brush: ptolemy;">
+public class DisplayUpdate {
+ public DisplayUpdate() {
+  register(this);
+ }
+
+ when FEChanged do update;
+ public void update(FEChanged rest) throws Throwable {
+  rest.invoke();
+  refining requires true ensures changedFE==old(changedFE) {
+   Display.update();
+  }
+ }
+}
+
+public void event FEChanged {
+	FigureElement changedFE;
+	requires changedFE != null
+	assumes {
+	 next.invoke();
+	 requires true ensures changedFE == old(changedFE);
+	}
+	ensures changedFE != null 
+}
+</pre>
+
+
+<p>
+Looking at the implementation of the handler DisplayUpdate and the
+translucid contract for FEChanged the following conclusions could be
+made about the behavior of the rest.invoke() expression on line 8 of
+DisplayUpdate.  The invoke() expression could cause unknown number of
+handlers and the event body to run. But the handlers are not free to do whatever
+they desire. All of the possibly executed handlers must respect the
+specification expression on line 20 of the contract and consequently
+assure that the context variable changedFE is not modified. Another restriction enforced by the
+translucid contract is that handlers and the event body
+must not nullify variable changedFE. This is according to the pre- and post-conditions
+on lines 17 and 22 of the translucid contract.
+</p>
+
+<p>
+Thus the behavior of invoke() expression on line 8 of the DisplayUpdate
+handler, could be understood in term of guarantees which translucid
+contract provides. That is i.e. the context variable changedFE is not null and
+its value is preserved. These guarantees are independent of the configuration of the system
+in terms of handlers, event body and their order of execution.
+</p>
+
+
+
+<h2><a name="summary">Summary</a></h2> 
+
+<p>
+We showed why black
+box contracts are not expressive enough to specify control effects of
+handlers in a configuration where subjects announce events and
+handlers handle the events. We also showed how translucid contracts
+enable us of doing so. Translucid contracts limit the structure and
+behavior of the handlers which satisfy them.  And consequently enable understanding of 
+event announcement and event handling on the
+subject and handler sides both in a modular fashion.
+</p>
+
+<p><!-- TODO:description --></p>
+<p><!-- Perhaps a bit more details are necessary here. --></p>
+
+<!-- PAGE UPDATE -->
+<p id="update">Page last modified on $Date: 2012/01/07 16:25:19 $</p>
+
+<!-- GUIDE NAVIGATION -->
+<div class="page-nav"><a href="docs/lang.shtml">&lt; PREVIOUS</a>
+<a href="docs/design-by-contract.shtml#pgtop">&#94; RETURN TO TOP</a> <!-- <a href="#.shtml">NEXT &gt;</a> -->
+</div>
+</div>
+<!--#include virtual="../includes/bottom.html"-->

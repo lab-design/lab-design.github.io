@@ -1,0 +1,200 @@
+<!--#include virtual="includes/header.html"-->
+<style>
+
+    @media only screen and (min-width: 2000px) {
+        .card-img-top {
+            width: 100%;
+            height: 15vw;
+            object-fit: cover;
+        }
+    }
+
+    @media only screen and (min-width: 1400px) and (max-width: 2000px) {
+        .card-img-top {
+            width: 100%;
+            height: 25vw;
+            object-fit: cover;
+        }
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 1400px) {
+        .card-img-top {
+            width: 100%;
+            height: 30vw;
+            object-fit: cover;
+        }
+    }
+
+</style>
+<div class="container">
+    <div class="row">
+		<h1 class="entry-title" style="text-align: center;">Organizers</h1>
+    </div>
+	<div class="row">
+		<p style="text-align: justify;">
+			The Midwest Big Data Summer School is hosted by <a href="http://www.iastate.edu/" target="_blank">Iowa State University.</a>
+		</p>
+	</div>
+    <div class="row">
+
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card" style="height: auto">
+                <img class="card-img-top img-fluid" height="auto" src="images/Rajan.jpg" alt="Hridesh Rajan">
+                <div class="card-body">
+                    <h5 class="card-title"><a href="http://www.cs.iastate.edu/~hridesh/">Hridesh Rajan</a></h5>
+                    <p class="card-text">Role: general arrangements, funding</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card" style="height: auto">
+                <img class="card-img-top img-fluid" height="auto" src="http://www.cs.iastate.edu/files/styles/people_thumb/public/people/profilepictures/aduri_0.jpg?itok=u6j9IvIB" alt="pavan">
+                <div class="card-body">
+                    <h5 class="card-title"><a href="http://www.cs.iastate.edu/~pavan">Pavan Aduri</a></h5>
+                    <p class="card-text">Co-chair: Foundations and Bigdata Analytics</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card" style="height: auto">
+                <img class="card-img-top img-fluid" height="auto" src="images/Hegde.jpg" alt="chinmoy">
+                <div class="card-body">
+                    <h5 class="card-title"><a href="http://home.engineering.iastate.edu/~chinmay/">Chinmay Hegde</a></h5>
+                    <p class="card-text">Co-chair: Foundations and Bigdata Analytics</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card" style="height: auto">
+                <img class="card-img-top img-fluid" height="auto" src="images/Weber.jpg" alt="Eric">
+                <div class="card-body">
+                    <h5 class="card-title"><a href="http://www.public.iastate.edu/~esweber/">Eric Weber</a></h5>
+                    <p class="card-text">Co-chair: Foundations and Bigdata Analytics</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card" style="height: auto">
+                <img class="card-img-top img-fluid" height="auto" src="images/sharif.png" alt="bonita">
+                <div class="card-body">
+                    <h5 class="card-title"><a
+                            href="https://www.shbonita.me/"> Bonita Sharif</a></h5>
+                    <p class="card-text">Co-chair: Software Analytics</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card" style="height: auto">
+                <img class="card-img-top img-fluid" height="auto" src="https://www.wichita.edu/academics/engineering/eecs/images/Huzefa_greyhair_20160921.jpg" alt="Huzefa">
+                <div class="card-body">
+                    <h5 class="card-title"><a
+                            href="https://www.wichita.edu/academics/engineering/eecs/faculty/Huzefa.php"> Huzefa Kagdi</a></h5>
+                    <p class="card-text">Co-chair: Software Analytics</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card" style="height: auto">
+                <img class="card-img-top img-fluid" height="auto" src="images/seeger.jpg" alt="Seeger">
+                <div class="card-body">
+                    <h5 class="card-title"><a
+                            href="https://www.design.iastate.edu/faculty/cjseeger/">Christopher J. Seeger </a></h5>
+                    <p class="card-text">Co-chair: Data Science for Social Good tracks</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card" style="height: auto">
+                <img class="card-img-top img-fluid" height="auto" src="https://www.datascience.iastate.edu/files/styles/people_thumb/public/people/profilepictures/cdorius.jpg?itok=riA4-TUD" alt="Cassandra">
+                <div class="card-body">
+                    <h5 class="card-title"><a
+                            href="https://www.datascience.iastate.edu/people/cassandra-dorius">Cassandra Dorius</a></h5>
+                    <p class="card-text">Co-chair: Data Science for Social Good tracks</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card" style="height: auto">
+                <img class="card-img-top img-fluid" height="auto" src="images/brittany.jpg" alt="Brittany">
+                <div class="card-body">
+                    <h5 class="card-title"><a
+                            href="https://cse.unl.edu/~bduncan/">Brittany A. Duncan</a></h5>
+                    <p class="card-text">Co-chair : Digital Agriculture track</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card" style="height: auto">
+                <img class="card-img-top img-fluid" height="auto" src="https://www.engineering.iastate.edu/people/files/2018/08/Peschel.jpg" alt="Joshua">
+                <div class="card-body">
+                    <h5 class="card-title"><a
+                            href="https://www.abe.iastate.edu/joshua-peschel">Joshua Peschel</a></h5>
+                    <p class="card-text">Co-chair : Digital Agriculture track</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card" style="height: auto">
+                <img class="card-img-top img-fluid" height="auto" src="https://www.stat.iastate.edu/files/styles/people_thumb/public/people/profilepictures/somakd.jpg?itok=J70GYEEb" alt="Somak">
+                <div class="card-body">
+                    <h5 class="card-title"><a
+                            href="https://www.stat.iastate.edu/people/somak-dutta">Somak Dutta</a></h5>
+                    <p class="card-text">Co-chair : Registration</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card" style="height: auto">
+                <img class="card-img-top img-fluid" height="auto" src="http://web.cs.iastate.edu/~jialiu/images/kevin_web.jpg" alt="Kevin">
+                <div class="card-body">
+                    <h5 class="card-title"><a
+                            href="http://web.cs.iastate.edu/~jialiu/">Kevin Liu</a></h5>
+                    <p class="card-text">Co-chair : Registration</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card" style="height: auto">
+                <img class="card-img-top img-fluid" height="auto" src="images/nichols.jpg" alt="Gina">
+                <div class="card-body">
+                    <h5 class="card-title"><a
+                            href="https://www.agron.iastate.edu/people/virginia-gina-nichols">Gina Nichols</a></h5>
+                    <p class="card-text">Publicity Chair</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card" style="height: auto">
+                <img class="card-img-top img-fluid" height="auto" src="https://www.cs.iastate.edu/files/styles/people_thumb/public/people/profilepictures/islam_md_johirul.jpg?itok=xJi4eB4u" alt="Johir">
+                <div class="card-body">
+                    <h5 class="card-title"><a
+                            href="http://design.cs.iastate.edu/">Md Johirul Islam</a></h5>
+                    <p class="card-text">Web Chair</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--#include virtual="includes/footer.html"-->

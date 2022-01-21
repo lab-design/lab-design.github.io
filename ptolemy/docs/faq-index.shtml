@@ -1,0 +1,155 @@
+<!--#include virtual="../includes/headtop.html"-->
+
+<!-- INSERT TITLE -->
+<title>Frequently Asked Questions about the Ptolemy language</title>
+     
+<!--#include virtual="../includes/headmiddle.html"-->
+
+<h1>Ptolemy: Frequently Asked Questions</h1>
+
+<!--#include virtual="../includes/headbottom.html"-->
+
+<td id="b3" rowspan="2">
+<div class="maintext">
+
+<h2>What is Ptolemy?</h2>
+
+<p>
+Ptolemy is a programming language whose goals are to improve a software engineer's 
+ability to separate conceptual concerns. In particular, Ptolemy's features are 
+useful towards modularization of crosscutting concerns.
+</p>
+
+<h2>Isn't Ptolemy just an OO language with native event handling?</h2>
+<p>
+At a first glance this is one of the distinctions between Ptolemy and 
+object-oriented languages such as Java. Programming languages such as 
+C# eliminate a bit more of these distinctions because they support 
+basic event handling as a language feature.  
+</p>
+<p>
+However, Ptolemy also provides event types as a mechanism to:
+<UL>
+<LI>Refer to a number of places in program where an event is triggered 
+using the name of the event type. This is done without having to name 
+the classes that trigger the event. In aspect-oriented terminology this 
+is called quantification. This distinction is important for implementing 
+crosscutting requirements (see below for more).
+</LI>
+<LI>
+Provide overriding behavior. This distinction is important for 
+implementing overriding features like exception handling, fault tolerance, etc.
+</LI>
+<LI>
+Achieve 2-way decoupling between subjects and observers (whereas 
+traditional event handling mechanisms only decouple subjects from 
+observers). This distinction is important for improving reuse of modules in 
+a software system.
+</LI>
+</UL>
+</p>
+
+<h2> What is implicit invocation (II) design style?</h2>
+
+<p>
+We have prepared a brief background on implicit-invocation (II) design
+style and its limitations see <a href="what-is-ii.shtml">here</a>.
+</p>
+
+<h2> What is Aspect-oriented Programming (AOP) ?</h2>
+
+<p>
+For a brief background on aspect-oriented programming
+see <a href="what-is-ao.shtml">here</a>.
+</p>
+
+<h2>Is the primary benefit to AOP that it automates 
+    adding the same lines of code to every method?</h2>
+<p>
+No, we elaborate below.
+</p>
+<p>
+With traditional object-oriented techniques, when we implement some 
+requirements (e.g. exception handling, synchronization, resource 
+sharing and other resource management protocols, logging, etc) such 
+implementation is typically scattered everywhere in the software and 
+tangled with implementation of other requirements. Such requirements 
+are called crosscutting requirements. As a result, when maintenance 
+requests arise in these type of requirements developers have to study 
+a large number of modules in the software system to identify changes 
+that are required to address maintenance request.
+</p>
+<p>
+Objective of aspect-oriented software development (AOSD) is to provide 
+programming language mechanisms that enable software developers to 
+implement these type of requirements (e.g. exception handling) in 
+separate modules.
+</p>
+
+<h2> Why was the Ptolemy language designed?</h2>
+
+<p>
+The Ptolemy language was designed to combine best ideas from implicit 
+invocation (II) design style and aspect-oriented (AO) languages in the 
+style of <a href="http://www.eclipse.org/aspectj">AspectJ</a> and to 
+not have the limitations of these styles. 
+Briefly, Ptolemy was designed to solve the following problems with AO and 
+II paradigms:
+</p>
+
+<UL>
+ <LI> AO: quantification failure, fragile pointcuts, limited context information</LI>
+ <LI> II: coupling of observers, no replacement of event code, no quantification </LI>
+</UL>
+
+<p>
+For a more detailed motivation of the language design, please see our web-page
+on this topic <a href="motivation.shtml">here</a>.
+</p>
+
+<h2>What are the design goals of the Ptolemy language?</h2>
+
+<p>
+Ptolemy has the following main design goals:
+</p>
+<UL>
+<LI> Preserve encapsulation of object-oriented code, while enabling modularization of crosscutting concerns, </LI>
+<LI> enable well-defined interfaces between object-oriented code and crosscutting code, and </LI>
+<LI> enable separate type-checking, separate compilation, and modular reasoning of both object-oriented and crosscutting code.</LI>
+</UL>
+
+<p>
+All these goals are important for scalability of software development processes but
+harder to achieve in current AO languages in the style of <a href="http://www.eclipse.org/aspectj">AspectJ</a>.
+</p>
+
+<h2>Do you have a compiler?</h2>
+
+<p>
+Yes. The Ptolemy compiler offers support for compiling and running programs 
+from command-line as well as from within Ant.
+To get started with setting up an environment for running Ptolemy 
+programs please see our page on <a href="running.shtml">installing and running the compiler</a>.
+</p>
+
+<p>
+Once you have downloaded and installed the compiler, you could look at 
+the examples included in the distribution. Or alternatively, you could also 
+consult our web-pages on <a href="starting.shtml">getting started with Ptolemy</a>.
+</p>
+
+<h2>Can I download the source code for the Ptolemy compiler and modify it?</h2>
+
+<p>
+Yes. The Ptolemy compiler for Java programs is an open source project on 
+<a href="http://sourceforge.net/projects/ptolemyj/">sourceforge.net</a>.
+</p>
+
+
+
+<BR><BR> <p>Page last modified on $Date: 2011/02/09 17:21:39 $</p>
+</div>
+
+</td>
+
+<!--#include virtual="../includes/bottombar.html"-->

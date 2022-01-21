@@ -1,0 +1,41 @@
+<!--#include virtual="../includes/topbar.html"-->
+<!-- 2ND COLUMN. INSERT COPY -->
+
+<td rowspan="2">
+<div class="maintext">
+<h1> Setting up Slede Eclipse plugin</h1>
+<br>
+<table>
+<tr>
+<td>
+1. Run Eclipse
+</td>
+</tr>
+<tr>
+<td>
+<br>
+</td>
+</tr>
+<tr>
+<td>
+2. Click on Windows -> Preferences
+</td>
+</tr>
+<tr>
+<td>
+<br>
+</td>
+</tr>
+<tr>
+<td>
+3. Under Slede, fill the fields with the required information and then press OK.
+<br>
+<br>
+<br>
+<a href=figures/setting-up-slede.png><img width=90% height=90% src=figures/setting-up-slede.png></a>
+</td>
+</tr>
+</table>
+</td>
+
+<!--#include virtual="../includes/bottombar.html"-->

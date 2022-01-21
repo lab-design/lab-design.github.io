@@ -1,0 +1,75 @@
+<!--#include virtual="../includes/headtop.html"-->
+
+<!-- INSERT TITLE -->
+<title>Ptolemy Programming Guide</title>
+
+<!--#include virtual="../includes/headmiddle.html"-->
+
+<h1>Ptolemy Programming Guide</h1>
+
+<!--#include virtual="../includes/headbottom.html"-->
+
+<td id="b3" rowspan="2">
+<div class="maintext">
+
+<a href="/docs/">< Table of Contents</a><BR>
+
+<h2>Introduction to the Ptolemy Language</h2>
+
+<p>
+With traditional object-oriented techniques, when we implement some
+requirements (e.g. exception handling, synchronization, resource sharing and
+other resource management protocols, logging, etc) code for such requirements is
+scattered everywhere in the software and tangled with code for
+other requirements. Such requirements are called <EM>crosscutting concerns</EM>.
+As a result, when maintenance requests arise in these type of requirements,
+developers have to study a large number of modules in their software system to
+identify changes that are required to address maintenance request. 
+</p>
+
+<p>
+The aim of the Ptolemy language is to provide
+programming language mechanisms that enable software developers to implement
+these type of requirements (e.g. exception handling) in separate
+modules called 
+<a href="/docs/lang-handler.shtml">handlers</a>. 
+This enables better separation of such concerns.
+In this sense, Ptolemy has the same goals as  
+<a href="http://aosd.net">aspect-oriented languages</a> like 
+<a href="http://eclipse.org/aspectj">AspectJ</a>.
+However, aspect-oriented languages also have certain 
+<a href="/docs/what-is-ao.shtml">limitations</a> that 
+Ptolemy doesn't have.
+</p>
+
+<p>
+Ptolemy's language design incorporates several good ideas from existing languages, e.g.
+<a href="http://eclipse.org/aspectj">AspectJ</a>,
+<a href="http://www.cs.iastate.edu/~eos">Eos</a>, Rapide, and CaeserJ.
+The novel features of Ptolemy are found in its event model and type system.
+Ptolemy provides full support for declarative event-based programming.
+</p>
+
+<p>
+Like <a href="http://www.cs.iastate.edu/~eos">Eos</a> and unlike 
+<a href="http://eclipse.org/aspectj">AspectJ</a>, Ptolemy does not have special 
+syntax for “aspects” or “advice”. Instead it has the capability to replace all 
+events in a specified set with a call to a 
+<a href="/docs/lang-handler.shtml">handlers</a>.
+</p>
+
+<h2>Compatibility</h2>
+
+<p>
+Ptolemy is backwards compatible with object-oriented languages. 
+For example, PtolemyJ that extends Java to add Ptolemy-specific features is compatible
+with existing Java programs. Every valid Java program is a valid PtolemyJ program.
+PtolemyJ compilers produce bytecode that runs on standard Java virtual machine.
+</p>
+
+
+<BR><BR> <p>Page last modified on $Date: 2011/10/17 17:55:45 $</p>
+</div>
+</td>
+
+<!--#include virtual="../includes/bottombar.html"-->

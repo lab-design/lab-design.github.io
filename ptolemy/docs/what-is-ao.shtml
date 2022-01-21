@@ -1,0 +1,128 @@
+<!--#include virtual="../includes/top.html"-->
+<title>About Aspect-Orientated Programming</title>
+<!-- PAGE SPECIFIC STYLING -->
+<style type="text/css">
+.col2-toc h2 {
+	margin: 0 0 10px;
+}
+</style>
+<!--#include virtual="../includes/header.html"-->
+<h1>Aspect-Oriented Programming</h1>
+
+<!-- TABLE OF CONTENTS -->
+<div class="col2-toc">
+<ul>
+	<li><a href="docs/what-is-ao.shtml#what">What is
+	Aspect-Orientation?</a></li>
+	<li><a href="docs/what-is-ao.shtml#example">Example of
+	Aspect-orientation</a></li>
+	<li><a href="docs/what-is-ao.shtml#limits">Limitations of
+	Aspect-oriented Languages</a></li>
+</ul>
+</div>
+
+<!-- CONTENTS -->
+<div class="col2-content">
+<h2><a name="what">What is Aspect-orientation?</a></h2>
+<p>The objective of aspect-oriented (AO) languages is to improve a
+software engineer's ability to separate conceptual concerns. The problem
+that they address is that all <em>dimensions of design decisions</em>,
+or <em>concerns</em>, are not amenable to modularization by a single
+dimension of decomposition. Instead, some concerns cut across the
+dominant dimension of decomposition. These languages aim to improve the
+separation of these types of concerns thereby enhancing modularity.</p>
+<p>In AO languages such as <a href="http://www.eclipse.org/aspectj">AspectJ</a>events
+(called ``join points'') are pre-defined by the language as certain
+kinds of standard actions (such as method calls) in a program's
+execution. AO events are all implicitly announced. <em>Pointcut
+descriptions (PCDs)</em> are used to declaratively register handlers (called
+&quot;advice&quot;) with sets of events. Using PCDs to register a
+handler with an entire set of events, called <em>quantification</em>, is
+a key idea in AO languages that has no counterpart in II languages. A
+language's set of PCDs and its set of events form its <em>event
+model</em> (in AO terms this is a &quot;join point model&quot;).</p>
+
+<h2><a name="example">An Example of Aspect-orientation</a></h2>
+<p>As an example, consider a drawing editor which consists of
+objects such as Points, Lines, etc. Each element is part of the overall
+figure and extends the FElement class. Other classes may be interested
+in knowing when such figure elements change. For example, there may be
+an Update class that updates the figure on the screen when any element
+changes.</p>
+
+<pre class="brush: java;">
+	public interface FElement {
+	}
+</pre>
+
+<p>The class Point is an example of an FElement. Points have an x
+and a y location and setter methods setX and setY. Points also have a
+method makeEqual, which will set the x and y location of its argument to
+that of the current instance.</p>
+
+<pre class="brush: java;">
+	public class Point implements FElement {
+		int x;
+		int y;
+		public void setX(int x) {
+			this.x = x;
+		}
+		public void setY(int y) {
+			this.y = y;
+		}
+		public void makeEqual(Point other) {
+			other.x = this.x;
+			other.y = this.y;
+		}
+	}
+</pre>
+
+<p>Finally consider the Update aspect, which is responsible for
+updating the figure elements on the screen. The aspect states that after
+a call to any method in a FElement instance with a name starting with
+either set or makeEq, the display is updated.</p>
+
+<pre class="brush: aspectj;">
+	aspect Update {
+		after() : call(FElement+.set*(..)) || call(FElement+.makeEq*(..)) {
+			Display.update();
+		}
+	}
+</pre>
+
+<h2><a name="limits">Limitations of Aspect-oriented Languages</a></h2>
+
+<p>AO languages have following three limitations, primarily because most
+current event models use lexical PCDs. Such PCDs use patterns of names;
+for example, <em>call(set*(..))</em> describes a set of call events in
+which the name of the called method starts with <em>set</em>.</p>
+
+<pre class="brush: aspectj;">
+	after() : call(FElement+.set*(..)) || call(FElement+.makeEq*(..))
+</pre>
+
+<UL>
+<LI><p>Lexical PCDs are fragile. Consider the PCD above, when the
+developer adds a method named "settled" to the Point class. The PCD will
+capture this point in the program's execution.</p>
+
+<pre class="brush: java;">
+	public void setX(int x) {
+		if (this.x != x)
+			this.x = x;
+	}
+</pre>
+</LI>
+
+<LI>Lexical PCDs exhibit quantification failures. Consider the code
+above, which only sets the value of x if it is different.</LI>
+
+<LI>Additionally, lexical PCDs make it unnecessarily hard to
+uniformly access information from an event's context.</LI>
+</UL>
+
+<!-- PAGE UPDATE -->
+<p id="update">Page last modified on $Date: 2011/07/29 10:45:47 $</p>
+</div>
+
+<!--#include virtual="../includes/bottom.html"-->

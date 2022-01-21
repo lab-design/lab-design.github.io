@@ -1,0 +1,89 @@
+<!--#include virtual="includes/headtop.html"-->
+
+<!-- INSERT TITLE -->
+<title>Mailing lists related to the Ptolemy programming language</title>
+
+<!--#include virtual="includes/headmiddle.html"-->
+
+<h1>The Ptolemy Programming Language</h1>
+
+<!--#include virtual="includes/headbottom.html"-->
+
+<td id="b3" rowspan="2">
+<div class="maintext">
+
+<h2>Mailing Lists Related to the Ptolemy Language</h2>
+
+
+<p>
+<h3>Ptolemy Users</h3>
+</p>
+
+<p>Current or potential Ptolemy users may seek clarifications
+on the language and its infrastructure by posting to ptolemyj-users 
+mailing list</p>
+
+<p>To post to this discussion list, send an email to:</p>
+
+<p> 
+   <a href="mailto:ptolemyj-users@lists.sourceforge.net">
+      ptolemyj-users@lists.sourceforge.net 
+   </a>
+</p>
+
+<p> General information about this mailing list is available at: </p>
+<p>
+  <a href="https://lists.sourceforge.net/lists/listinfo/ptolemyj-users">
+   https://lists.sourceforge.net/lists/listinfo/ptolemyj-users
+   </a>
+</p>
+<p> The link above also provides a web-based mechanism to subscribe to this mailing list.</p>
+
+<p> The archived discussion about Ptolemy is available at: </p>
+  <p>
+    <a href="http://sourceforge.net/mailarchive/forum.php?forum_name=ptolemyj-users">
+      http://sourceforge.net/mailarchive/forum.php?forum_name=ptolemyj-users
+    </a>
+  </p>
+
+<p>
+<h3>Ptolemy Developers</h3>
+</p>
+
+<p>To seek clarifications on the language implementation, to contribute to 
+the development of Ptolemy's infrastructure, or to simply follow the development
+of the Ptolemy programming language going forward please post to ptolemyj-commit 
+mailing list. Notifications for any changes in the repositories for the Ptolemy 
+project are also sent to this mailing list.</p>
+
+<p>To post to this discussion list, send an email to:</p>
+
+<p> 
+   <a href="mailto:ptolemyj-commit@lists.sourceforge.net">
+      ptolemyj-commit@lists.sourceforge.net 
+   </a>
+</p>
+
+<p> General information about this mailing list is available at: </p>
+<p>
+  <a href="https://lists.sourceforge.net/lists/listinfo/ptolemyj-commit">
+   https://lists.sourceforge.net/lists/listinfo/ptolemyj-commit
+   </a>
+</p>
+<p> The link above also provides a web-based mechanism to subscribe to this mailing list.</p>
+
+<p> An archive containing messages for this mailing list is available at: </p>
+  <p>
+    <a href="http://sourceforge.net/mailarchive/forum.php?forum_name=ptolemyj-commit">
+      http://sourceforge.net/mailarchive/forum.php?forum_name=ptolemyj-commit
+    </a>
+  </p>
+
+
+<BR><BR>
+<p>Page last modified on $Date: 2011/02/09 17:11:03 $</p>
+</div>
+
+</td>
+
+<!--#include virtual="includes/bottombar.html"-->

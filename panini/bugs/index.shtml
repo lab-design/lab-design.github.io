@@ -1,0 +1,26 @@
+<!--#include virtual="../includes/top.html"-->
+<title>Bugs and Feature Requests for the Panini Project</title>
+<!--#include virtual="../includes/header.html"-->
+
+
+<div class="col2-content">
+<div style="margin: 0 auto; width:100%; height:400px;">
+<!--<object type="text/html" data="http://sourceforge.net/p/paninij/bugs/" style="width:100%; height:100%; margin:1%;">
+<embed src="http://sourceforge.net/p/paninij/bugs/" style="width:100%; height:100%; margin:1%;"></embed>
+</object>-->
+<!-- <object data=http://www.yahoo.com width="100%" height="100%" margin="1%"> <embed src=http://www.yahoo.com width="100%" height="100%" margin="1%"></embed> Error: Embedded data could not be displayed. </object>
+
+<object data="http://www.google.com" style="width:100%; height:630px;">URL not found.</object>
+-->
+<object data=http://sourceforge.net/p/paninij/bugs width=”650″ height=”500″> 
+<embed src=http://sourceforge.net/p/paninij/bugs width=”650″ height=”500″> 
+</embed></object>
+</div> 
+</div>
+
+<div class="col2-toc">
+<p><b>Panini bugs also available @
+<a href="http://sourceforge.net/p/paninij/bugs/">sf.net</a></b>
+</p>
+</div>
+<!--#include virtual="../includes/bottom.html"-->

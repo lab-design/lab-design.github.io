@@ -1,0 +1,55 @@
+<!--#include virtual="includes/template/headTop.htm"-->  
+
+<!-- INSERT TITLE -->
+<title>Instructions for Authors using LaTeX for Preparing their Submissions by Hridesh Rajan</title>
+
+<!--#include virtual="includes/template/headBottom.htm"-->  
+
+<!-- Text for the actual webpage start -->
+<p>
+The instructions below only pertains to authors using LaTeX for 
+preparing their final submissions. 
+</p>
+
+<h2> PLoP 2007 Authors </h2>
+<p>
+To ease the task of preparing the camera-ready versions of your
+paper for ACM DL proceedings, I have prepared a variant of standard
+LaTeX class for ACM proceedings. These customizations are specific
+to PLoP 2007. Here are the simple steps necessary to get this to 
+work. 
+
+<UL>
+<LI> Get the modified class file from 
+<a href="http://www.cs.iastate.edu/~hridesh/files/plop07-camera-ready/sig-alternate.cls">
+here</a> and place it in the root folder of your LaTeX document. </LI>
+
+<LI>
+Add the following bit immediately after <code>\begin{document}</code> <BR>
+
+<pre>
+% --- Author Metadata here --- 
+\conferenceinfo{PLoP}{'07 Monticello, IL, USA}
+%\CopyrightYear{2007} % Allows default copyright year (2007) to be over-ridden - IF NEED BE.
+%\crdata{}  % Allows default copyright data (978-1-60558-411-9) to be over-ridden - IF NEED BE.
+% --- End of Author Metadata ---
+</pre>
+</LI>
+
+<LI>
+Your output should now look something similar to this 
+<a href="http://www.cs.iastate.edu/~hridesh/files/plop07-camera-ready/Rajan-PLoP-07.pdf">
+sample document</a>.
+</LI>
+
+<LI> Follow the PC chair's instructions about renaming the file and 
+submitting the camera-ready version</LI>
+</UL>
+</p>
+
+<h2>PLoP 2008 Authors </h2>
+<p>
+</p>
+
+<!-- Text for the actual webpage end -->
+<!--#include virtual="includes/template/footer.htm"--> 

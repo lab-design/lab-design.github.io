@@ -1,0 +1,513 @@
+<!--#include virtual="../includes/top.html"-->
+<title>Hridesh Rajan, "Building Scalable Software Systems in the Multicore Era," a position paper at the 2010 FoSER workshop.</title>
+<!--#include virtual="../includes/header.html"-->
+
+<h1>Building Scalable Software Systems in the Multicore Era</h1>
+
+<!-- TABLE OF CONTENTS -->
+<div class="col2-toc">
+ <ul>
+	<li><a href="position.shtml#abstract">Abstract</a></li>
+	<li><a href="position.shtml#problem">Problem</a></li>
+	<li><a href="position.shtml#solution">How to Solve It?</a></li>
+	<li><a href="position.shtml#events">Asynchronous Typed Events</a></li>
+	<li><a href="position.shtml#pattern">Implicitly Concurrent GOF Patterns</a></li>
+	<li><a href="position.shtml#conclusion">Conclusion</a></li>
+	<li><a href="papers/index.shtml">Publications</a></li>
+  </ul>
+</div>
+
+<!-- CONTENT -->
+     
+<div class="col2-content">
+
+<p>A position paper by 
+<a href="http://www.cs.iastate.edu/~hridesh">
+Hridesh Rajan</a>. This work was originally presented at the 
+<a href="http://fse18.cse.wustl.edu/foserprogram.html">
+2010 FoSER workshop</a>. 
+</p>
+<p>Cite as: Hridesh Rajan, &quot;Building Scalable Software Systems 
+in the Multicore Era,&quot; 2010 FSE/SDP Workshop on the Future of 
+Software Engineering, Santa Fe, NM, November 2010.</p>
+<p>Revised on $Date: 2012/05/22 17:20:47 $.</p>
+
+<h2><a name="abstract">Abstract</a></h2>
+
+<p>
+Software systems must face two challenges today: growing complexity and
+increasing parallelism in the underlying computational models. 
+The problem of increased complexity is often solved by dividing
+systems into modules in a way that permits analysis of these 
+modules in isolation. 
+</p>
+
+<p>
+The problem of lack of concurrency is often tackled by dividing 
+system execution into tasks that permits execution of these tasks
+in isolation. 
+</p>
+
+<p>
+The key challenge in software design is to manage the explicit 
+and implicit dependence between modules that decreases modularity. 
+The key challenge for concurrency is to manage the explicit and
+implicit dependence between tasks that decreases parallelism. 
+Even though these challenges appear to be strikingly similar, current
+software design practices and languages do not take
+advantage of this similarity. 
+</p>
+
+<p>
+The net effect is that the modularity and concurrency goals are 
+often tackled mutually exclusively. 
+Making progress towards one goal does not naturally contribute towards
+the other. 
+</p>
+
+<p>
+My position is that for programmers that are not formally and
+rigorously trained in the concurrency discipline the safest and most
+productive way to get scalability in their software is by improving
+modularity of their software using programming language features and
+design practices that reconcile modularity and concurrency goals. 
+I briefly discuss preliminary efforts of my group, but we have only
+touched the tip of the iceberg.
+</p>
+
+<h2><a name="problem">Problem and Their Importance</a></h2>
+
+<p>
+Scalability of software in the next decade crucially
+depends on its ability to effectively utilize multicore
+platforms.
+For scientific applications such scalability
+generally comes from invention and refinement of better algorithms and
+data structures, but that is not the case for non-scientific software
+that often exhibit irregular fine-grained parallelism. However,
+scalability of these applications is an equally important concern for
+society, defense, and the individual.
+</p>
+
+<p>
+Scalability of these applications faces two major hurdles. 
+A first and well-known hurdle is that writing correct and efficient
+concurrent software using <EM>concurrency-unsafe</EM> programming
+language features has remained a challenge.
+A language feature is
+concurrency-unsafe if its usage may give rise to program execution
+sequences that contains two or more memory accesses to the same
+location that are not ordered by a happens-before
+relation and at least one is a write to the memory. 
+Threads and processes are
+examples of such features as are <EM>Future</EM> and
+<EM>FutureTask</EM> as embodied in the 1.5 edition of the Java
+programming language. 
+Without strict design and implementation disciplines they are
+concurrency-unsafe. 
+Many of the features planned for 1.7 edition of the Java programming
+language are similarly concurrency-unsafe.
+</p>
+
+<p>
+A second and less explored hurdle is that unlike in scientific
+applications, in general-purpose programs potential concurrency isn't
+always obvious. A typical scientific application is generally
+data-parallel, whereas general-purpose programs typically exhibit
+irregular parallelism. As a result, techniques that have been
+remarkably successful in scientific domains have only seen modest
+success for general-purpose programs.
+</p>
+
+<p>
+I believe that both these hurdles persist, in part, because of a
+significant
+shortcoming of current software design practices.
+The basic problem is that modularity and concurrency are treated as
+two separate and orthogonal goals.
+As a result, concurrency goals are often tackled at a level of
+abstraction lower than modularity goals.
+Synchronization defects arise when developers work at low abstraction
+levels and are not aware of the behavior at a higher level of
+abstraction. This lack of awareness also
+limits the discovery of potentially available concurrency
+in the resulting systems.
+</p>
+
+<p>
+All of this is complicated by the fact that our current software
+development workforce is vastly under-prepared to develop correct,
+efficient and fair software systems for the emerging multicore hardware
+platforms using concurrency-unsafe features that are currently
+available in languages and libraries.
+</p>
+
+<h2><a name="solution">How to Solve it?</a></h2>
+
+<blockquote>
+Look at the unknown! And try to think of a familiar problem having
+ the same or a similar unknown. --- 
+<a href="http://en.wikipedia.org/wiki/George_P%C3%B3lya">George Pólya</a>, 1945. 
+</blockquote>
+
+<p>
+Are better software designs inherently more concurrent?
+In the following I will argue and present some evidence to
+my hypothesis that modularity and concurrency goals are
+intertwined and that by advances in programming language
+design and software design practices, it may be
+possible to achieve mutualism between them!
+</p>
+
+<p>
+To motivate conside a simple example shown in the listing below,
+which shows three versions of the parts of a telecommunication software.
+The class <EM>Call</EM> shown in this figure (left column) models a typical
+connection in such setting. It models the state of a phone call using
+enumeration <EM>State</EM> and the caller and the receiver
+with fields <EM>caller</EM> and <EM>receiver</EM> respectively.
+It also contains a <EM>timer</EM> object to monitor the duration of
+a call. This class provides two methods <EM>complete</EM> and
+<EM>drop</EM> that serve to connect and disconnect a call respectively.
+</p>
+
+<pre class="brush: panini;">
+class Call {
+ enum State { PENDING, COMPLETE, DROPPED }
+ Customer caller, receiver;
+ State state = PENDING;
+ Call(Customer a, Customer b) {
+    caller = a; receiver = b;
+  }
+ void complete() {
+   state = COMPLETE;
+   timer.start();
+  }
+ void drop() {
+  state = DROPPED;
+  timer.stop();
+  long time = timer.getTime();
+  long cost = 0.07 * time;
+  caller.addCharge(cost);
+  }
+ Timer timer = new Timer();
+}
+</pre>
+
+<p>
+An example requirement for such application would be to
+bill customers for the duration of the conversation.
+A simple implementation of such requirement could be done by adding its
+logic to the code for <EM>drop</EM> method (shown in the 
+listing above on lines 15-17).
+</p>
+
+<p>
+This solution works, however, it has
+several software engineering problems. For example, since the code for
+billing is mixed with the code for call logic, it would be harder to
+implement any changes to either requirement. This is primarily because
+the developer making changes to either requirement would have to
+understand the other requirement as well to ensure correctness. In
+addition, implementation of neither requirements is reusable. Last but
+not least, understanding billing and call logic in isolation is not
+possible because their implementations are mixed.
+</p>
+
+<p>
+This example demonstrates, at a small scale, the modularity problems
+faced by developers in building large software systems.
+</p>
+
+<p>
+To modularize the implementation of the billing requirements, a good software
+engineer would separate its implementation out in a new module, while ensuring
+that this new module communicates to the class <EM>Call</EM> via a
+well-defined interface (and vice-versa). The listing below shows the modularized
+version of the same system, where the implementation of the billing requirement is separated out as
+the class <EM>Billing</EM> using the 
+<a href="http://en.wikipedia.org/wiki/Observer_pattern">Observer design pattern</a>.
+</p>
+
+<pre class="brush: panini;">
+interface CallEndObserver {
+  void notify (Customer c, Timer t);
+}
+class Call {
+ enum State { PENDING, COMPLETE, DROPPED }
+ Customer caller, receiver;
+ State state = PENDING;
+ Call(Customer a, Customer b) {
+    caller = a; receiver = b;
+  }
+ void complete() {
+   state = COMPLETE;
+   timer.start();
+  }
+ void drop() {
+  state = DROPPED;
+  timer.stop();
+  for(CallEndObserver o : observers)
+   o.notify(caller,timer);
+ }
+ List&lt;CallEndObserver&gt; observers = new ArrayList&lt;CallEndObserver&gt;();
+ void addObserver(CallEndObserver o){ 
+  observers.add(o); 
+ }
+ void removeObserver(CallEndObserver o){ 
+  observers.remove(o); 
+ }
+}
+class Billing implements CallEndObserver {
+ void notify (Customer c, Timer t) {
+  long time = timer.getTime();
+  long cost = 0.07 * time;
+  caller.addCharge(cost);
+ } 
+}
+</pre>
+
+<p>
+This alternative solution in the listing above is modular and solves all the problems
+pointed out previously with the solution in the left column. In this
+version, the code for billing and call logic are separated via
+well-defined interface (the observer interface
+<EM>CallEndObserver</EM>). This makes it easier to change these
+independently, reuse them, and understand them. This design thus
+breaks the dependencies between the implementation of these two
+requirements.
+</p>
+
+<p>
+Quite interestingly, this design can facilitate the concurrent execution of the
+billing logic. For example, we could encapsulate the method <EM>notify</EM> in
+the middle column to run as a concurrent task. In other words, the modularization
+transformation from the left to the middle could also serve as an effective
+parallelization transformation. The key research question is whether the
+observation made in the context of this example holds for a large class of
+modularization transformations, i.e. do many techniques for modularity
+improvements increase potential concurrency in program design?
+</p>
+
+<p>
+This question rests on the observation that from the point of view of
+both concurrency and modularity, challenges are similar. For example,
+in order for the modular reasoning about the class <EM>Billing</EM>
+to succeed, it is important to understand the explicit and implicit
+dependencies of the billing concern. Similarly, in order for concurrent
+processing of billing to succeed one must also understand these
+dependencies to avoid data races and deadlocks in the solution that can
+potentially decrease parallelism. It is thus intuitive that the lack of
+modularity in design has direct ramifications on the available
+concurrency. However, it is not clear at this moment, whether
+improved modularity in a software design helps with concurrency in
+general. I now briefly discuss our preliminary efforts to further
+understand this duality. A detailed description of these ideas
+appear in our early papers, e.g. our GPCE 2010 paper entitled 
+<a href="http://www.cs.iastate.edu/~design/papers/GPCE-10/">Implicit Invocation Meets Safe, Implicit Concurrency</a>,
+and our SPLASH/Onward 2010 paper entitled 
+<a href="http://www.cs.iastate.edu/~design/papers/ONWARD-10/">Concurrency by Modularity: Design Patterns, a Case in Point</a>.
+</p>
+
+
+<h2><a name="events">Asynchronous, Typed Events</a></h2>
+
+<p>
+Along one direction, my students 
+<a href="http://www.cs.iastate.edu/~csgzlong">Yuheng Long</a>,
+<a href="http://www.cs.iastate.edu/~smooney">Sean Mooney</a>,
+<a href="http://www.cs.iastate.edu/~csgzlong">Tyler Sondag</a>,
+and I have developed the notion of
+asynchronous, typed events in our language Panini that
+reconciles the modularity goal promoted by the implicit invocation
+design style with concurrency goals.
+Panini's design is inspired from my previous work on
+<a href="http://www.cs.iastate.edu/~ptolemy">Ptolemy</a> 
+and <a href="http://www.cs.iastate.edu/~eos">Eos</a> languages.
+</p>
+
+<p>
+In implicit invocation design style, some modules (called subjects or
+publishers) signal events, e.g. reaching a program point, a condition
+becoming true, etc. Other modules (called observers or subscribers)
+express interest in receiving notifications when an event is signaled.
+The key advantage is that subjects can notify such observers without
+knowing about them (implicitly). Thus, implicit invocation design style
+decouples subjects and observers.
+</p>
+
+<p>
+Asynchronous, typed events provide implicit concurrency in program
+designs when events are signaled and consumed without the need for
+explicit locking of shared states.
+The semantics is similar to other proposals based on message-based
+communication between concurrent tasks such as in
+Erlang, however, unlike these actor-based/message-based
+languages, Panini does not require complete isolation of such tasks.
+Furthermore, the communication between implicitly concurrent tasks is
+not limited to value types or record of value types.
+</p>
+
+<p>
+The listing below shows an implementation of our billing example in Panini.
+</p>
+
+<pre class="brush: panini;">
+event CallEnd {
+  Customer c; Timer t; 
+}
+class Call {
+enum State { PENDING, COMPLETE, DROPPED }
+ Customer caller, receiver;
+ State state = PENDING;
+ Call(Customer a, Customer b) {
+    caller = a; receiver = b;
+  }
+ void complete() {
+   state = COMPLETE;
+   timer.start();
+  }
+ void drop() {
+  state = DROPPED;
+  timer.stop();
+  announce CallEnd(caller,timer);
+ }
+}
+class Billing {
+ when CallEnd do notify;
+ void update (Customer c, Timer t) {
+  long time = timer.getTime();
+  long cost = 0.07 * time;
+  caller.addCharge(cost);
+ } 
+}
+</pre>
+
+<p>
+The implementation in the listing above uses the features
+of the Panini language.
+The method <EM>drop</EM> in this implementation announces an event
+of type <EM>CallEnd</EM>. The declaration of the type of this event
+is shown at the top of the middle column on lines 1-2.
+This declaration says that this type of events makes two pieces 
+of contextual information available: a <EM>Customer c</EM> making the call 
+and a <EM>Timer t</EM> specifying duration of the telephone call. 
+Both of these are information pertinent to the event "a telephone call just ended."
+</p>
+
+<p>The class <EM>Billing</EM>
+features a new construct in Panini called <b>binding</b>
+(<EM><b>when</b> CallEnd <b>do</b> ...</EM>).
+This construct says to run the method <EM>update</EM> whenever any
+event of type <EM>CallEnd</EM> is announced in any class (for instance such event
+is announced in the class <EM>Call</EM>). As a result, whenever a
+call ends, the billing information is computed and updated
+concurrently. Note that the developers of the class <EM>Call</EM> and
+<EM>Billing</EM> didn't need to write even a single line of code to expose
+concurrency. Design efforts were needed, however, for managing implicit and
+explicit dependence between these two classes to maximize modularity.
+</p>
+
+<p>
+The language semantics of Panini provides race and deadlock freedom and a sequential 
+semantics while exposing potential implicit concurrency in program design.
+We have implemented a compiler and runtime system for Panini that is available for general
+distribution from the download links on this web-site.
+We have tried out several programs, where asynchronous, typed events
+improve both modularity in program design and potentially available concurrency.
+Our results show that Panini programs perform as well as their hand-tuned concurrent
+implementation.
+</p>
+
+
+<h2><a name="patterns">Implicitly Concurrent GOF Design Patterns</a></h2>
+
+<p>
+Along another direction, in collaboration with 
+<a href="http://www.cs.iastate.edu/~smkautz">Dr. Steven M. Kautz</a>,
+<a href="http://www.cs.iastate.edu/~wrowcliff">Wayne Rowcliffe</a>, and 
+<a href="http://www.cs.iastate.edu/~smooney">Sean Mooney</a>,
+I have developed a <a href="patterns/">framework</a> that provides implicitly concurrent versions 
+of the standard <a href="http://en.wikipedia.org/wiki/Design_Patterns">Gang-of-Four object-oriented design patterns</a>.
+This <a href="patterns/">framework</a> is attempting to 
+reconcile modularity and concurrency goals by enhancing Gang-of-Four (GOF) object-oriented design patterns.
+GOF patterns are commonly used to improve the modularity of object-oriented software.
+These patterns describe strategies to decouple components in design space and specify how these components should interact.
+</p>
+
+<p>
+We have enhanced these patterns to also decouple components in execution space,
+so applying them concomitantly improves the design and potentially available
+concurrency in software systems. For example,
+the decorator pattern organizes
+components in a chain in which each component adds behavior to the previous
+component in the chain. If the added behavior of components in this chain is
+independent or can be split into dependent and independent parts, our implicitly
+concurrent decorator pattern implementation allows processing of independent
+added behaviors to be performed concurrently.
+Similarly, the builder pattern decouples the creation logic of complex products
+from their usage. If object creation is expensive, e.g. creating an object based
+on the contents of a file on disk, our implicitly concurrent builder pattern
+implementation allows object creation to interleave with other computation in the
+program.
+</p>
+
+<p>
+For 18 out of the 23 GOF patterns, we have determined that, subject to
+appropriate usage, our hypothesis is true.
+For each of these 18 patterns we have created an
+enhanced version of the design pattern in which use of the pattern increases
+potential concurrency without additional, explicit effort on the part
+of the developer to do so. In every case but one, the
+concurrency-related concerns (such as thread creation and
+synchronization) are fully encapsulated in a library that we provide,
+and in no case is the developer ever required to explicitly create a
+thread or acquire a synchronization lock.
+</p>
+
+<p>
+This pattern framework is available for general distribution from the 
+download menu link on this web-page.
+A paper on this subject that appeared at the 2010 SPLASH/Onward Conference 
+contains more details and it is available from <a href="http://www.cs.iastate.edu/~design/papers/ONWARD-10/">here</a>.
+</p>
+
+<h2><a name="conclusion">Conclusion</a></h2>
+
+Introducing concurrency has become important for the scalability of today's
+software systems, however, writing correct, efficient, and fair concurrent
+programs remains hard. In this work, I have taken the position that building
+programming language features and design practices that reconcile concurrency and
+modularity has the potential to solve this problem. Our initial work on the
+Panini language and the implicitly concurrent GOF design patterns has demonstrated the
+feasibility of basic ideas, however much work remains to be done.
+We believe that investigating these ideas further is important for software
+engineering of correct, efficient and scalable software systems in the multicore
+era.
+
+<!--
+I hope that the discussion at the 2010 FSE/SDP workshop
+on the Future of Software Engineering Research will help shed further
+light on, and generate interest in, these research directions.
+-->
+
+
+
+<h2><a name="ack">Acknowledgments</a></h2>
+
+<p>
+This work was supported in part by the US <a href="http://www.nsf.gov">National Science Foundation</a> under grant CCF-08-46059.
+I am thankful to my students <a href="http://www.cs.iastate.edu/~csgzlong">Yuheng Long</a>, 
+<a href="http://www.cs.iastate.edu/~smooney">Sean Mooney</a>, 
+<a href="http://www.cs.iastate.edu/~sondag">Tyler N. Sondag</a>, 
+<a href="http://www.cs.iastate.edu/~rdyer">Robert E. Dyer</a>, 
+<a href="http://www.cs.iastate.edu/~wrowcliff">Wayne Rowcliffe</a> and collaborator
+<a href="http://www.cs.iastate.edu/~smkautz">Steven M. Kautz</a> 
+for countless discussions on this topic. 
+</p>
+
+<!-- PAGE UPDATE -->
+<p id="update">Page last modified on $Date: 2012/05/22 17:20:47 $</p>
+</div>
+
+<!--#include virtual="../includes/bottom.html"-->

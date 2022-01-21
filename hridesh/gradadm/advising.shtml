@@ -1,0 +1,83 @@
+<html>
+<head>
+<title>Undergraduate Advising</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<table border="0" cellspacing="8" cellpadding="2" width="95%">
+  <tr> 
+    <td colspan="2"> 
+      <table border="0" cellspacing="0" cellpadding="0" width="100%" align="left">
+        <tr> 
+          <td width="20" height="20"><img src="images/top-left.jpg" width="20" height="20"></td>
+          <td height="20" background="images/top.jpg">&nbsp;</td>
+          <td width="20" height="20"><img src="images/top-right.jpg" width="20" height="20"></td>
+        </tr>
+        <tr> 
+          <td width="20" background="images/left.jpg">&nbsp;</td>
+          <td><!--#include virtual="top.shtml"--></td>
+          <td width="20" background="images/right.jpg">&nbsp;</td>
+        </tr>
+        <tr> 
+          <td width="20" height="20"><img src="images/bottom-left.jpg" width="20" height="20"></td>
+          <td height="20" background="images/bottom.jpg">&nbsp;</td>
+          <td height="20" width="20"><img src="images/bottom-right.jpg" width="20" height="20"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td width="170" align="left" valign="top"> 
+      <table border="0" cellspacing="0" cellpadding="0" width="170" height="600" align="left">
+        <tr> 
+          <td width="20" height="20"><img src="images/top-left.jpg" width="20" height="20"></td>
+          <td height="20" background="images/top.jpg" width="160">&nbsp;</td>
+          <td width="20" height="20"><img src="images/top-right.jpg" width="20" height="20"></td>
+        </tr>
+        <tr> 
+          <td width="20" background="images/left.jpg">&nbsp;</td>
+          <td width="130" align="left" valign="top"><!--#include virtual="sidebar.shtml"--></td>
+          <td width="20" background="images/right.jpg">&nbsp;</td>
+        </tr>
+        <tr> 
+          <td width="20" height="20"><img src="images/bottom-left.jpg" width="20" height="20"></td>
+          <td height="20" background="images/bottom.jpg" width="160">&nbsp;</td>
+          <td height="20" width="20"><img src="images/bottom-right.jpg" width="20" height="20"></td>
+        </tr>
+      </table>
+    </td>
+    <td align="left" valign="top" width="100%">
+      <table border="0" cellspacing="0" cellpadding="0" width="100%" height="600">
+        <tr> 
+          <td width="20" height="20"><img src="images/top-left.jpg" width="20" height="20"></td>
+          <td height="20" background="images/top.jpg" width="100%">&nbsp;</td>
+          <td width="20" height="20"><img src="images/top-right.jpg" width="20" height="20"></td>
+        </tr>
+        <tr> 
+          <td width="20" background="images/left.jpg">&nbsp;</td>
+          <td width="100%" align="left" valign="top"> 
+		  <!--#include virtual="main-index.shtml"-->
+          </td>
+          <td width="20" background="images/right.jpg">&nbsp;</td>
+        </tr>
+        <tr> 
+          <td width="20" height="20"><img src="images/bottom-left.jpg" width="20" height="20"></td>
+          <td height="20" background="images/bottom.jpg" width="100%">&nbsp;</td>
+          <td height="20" width="20"><img src="images/bottom-right.jpg" width="20" height="20"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr align="center"> 
+    <td colspan="2"> <font size="2">Copyright&#169 2002, Department of Computer 
+      Science, Iowa State University. All rights reserved.<br>
+      </font><font size="2"><a href="http://www.iastate.edu/">Iowa State University</a><br>
+      <a href="http://www.cs.iastate.edu/">Department of Computer Science</a><br>
+      226 Atanasoff Hall, <a href="http://www.ames.ia.us/">Ames</a>, <a href="http://www.state.ia.us/">IA</a> 
+      50011-1040 USA<br>
+      phone: +1-515-294-4377, fax: +1-515-294-0258</font></td>
+  </tr>
+</table>
+</body>
+</html>

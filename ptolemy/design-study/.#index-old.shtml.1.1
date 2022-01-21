@@ -1,0 +1,347 @@
+<!--#include virtual="../includes/headtop.html"-->
+
+<!-- INSERT TITLE -->
+<title>Ptolemy: A Language with Quantified, Typed Events</title>
+     
+<!--#include virtual="../includes/headmiddle.html"-->
+
+<h1>Ptolemy: A Language with Quantified, Typed Events</h1>
+
+<!--#include virtual="../includes/headbottom.html"-->
+
+<td id="b3" rowspan="2">
+<div class="maintext">
+
+<h2>Quantified, Typed Events: A Design Impact Analysis</h2>
+
+
+<h3>Software Engineering Metrics</h3>
+
+<ul>
+	<li>Mobile Media</li>
+	<ul>
+		<li><a href="mm/ck-metrics.ods">CK Metrics</a></li>
+	</ul>
+	<ul>
+		<li><a href="mm/change-metrics.ods">Change Propagation</a></li>
+	</ul>
+	<li>Health Watcher</li>
+	<ul>
+		<li><a href="hw/ck-metrics.ods">CK Metrics</a></li>
+	</ul>
+	<ul>
+		<li><a href="hw/change-metrics.ods">Change Propagation</a></li>
+	</ul>
+</ul>
+
+
+<!--
+<h3>Design Analysis</h3>
+
+<table class="design">
+	<tr>
+		<th colspan="10">Mobile Media</th>
+	</tr>
+	<tr>
+		<th>&nbsp;</th>
+		<th>R1</th>
+		<th>R2</th>
+		<th>R3</th>
+		<th>R4</th>
+		<th>R5</th>
+		<th>R6</th>
+		<th>R7</th>
+		<th>R8</th>
+		<th>All</th>
+	</tr>
+	<tr>
+		<th>Java</th>
+		<td><a href="mm/nov_oo_01.xlsx">Download</a></td>
+		<td><a href="mm/nov_oo_02.xlsx">Download</a></td>
+		<td><a href="mm/nov_oo_03.xlsx">Download</a></td>
+		<td><a href="mm/nov_oo_04.xlsx">Download</a></td>
+		<td><a href="mm/nov_oo_05.xlsx">Download</a></td>
+		<td><a href="mm/nov_oo_06.xlsx">Download</a></td>
+		<td><a href="mm/nov_oo_07.xlsx">Download</a></td>
+		<td><a href="mm/nov_oo_08.xlsx">Download</a></td>
+		<td><a href="mm/nov_oo_all.tar.gz">Download</a></td>
+	</tr>
+	<tr>
+		<th>AspectJ</th>
+		<td>Same as Java</td>
+		<td><a href="mm/nov_ao_02.xlsx">Download</a></td>
+		<td><a href="mm/nov_ao_03.xlsx">Download</a></td>
+		<td><a href="mm/nov_ao_04.xlsx">Download</a></td>
+		<td><a href="mm/nov_ao_05.xlsx">Download</a></td>
+		<td><a href="mm/nov_ao_06.xlsx">Download</a></td>
+		<td><a href="mm/nov_ao_07.xlsx">Download</a></td>
+		<td><a href="mm/nov_ao_08.xlsx">Download</a></td>
+		<td><a href="mm/nov_ao_all.tar.gz">Download</a></td>
+	</tr>
+	<tr>
+		<th>Annotated AspectJ</th>
+		<td>Same as Java</td>
+		<td><a href="mm/nov_ao_ann_02.xlsx">Download</a></td>
+		<td><a href="mm/nov_ao_ann_03.xlsx">Download</a></td>
+		<td><a href="mm/nov_ao_ann_04.xlsx">Download</a></td>
+		<td><a href="mm/nov_ao_ann_05.xlsx">Download</a></td>
+		<td><a href="mm/nov_ao_ann_06.xlsx">Download</a></td>
+		<td><a href="mm/nov_ao_ann_07.xlsx">Download</a></td>
+		<td><a href="mm/nov_ao_ann_08.xlsx">Download</a></td>
+		<td><a href="mm/nov_ao_ann_all.tar.gz">Download</a></td>
+	</tr>
+	<tr>
+		<th>Open Modules</th>
+		<td>Same as Java</td>
+		<td><a href="mm/nov_om_02.xlsx">Download</a></td>
+		<td><a href="mm/nov_om_03.xlsx">Download</a></td>
+		<td><a href="mm/nov_om_04.xlsx">Download</a></td>
+		<td><a href="mm/nov_om_05.xlsx">Download</a></td>
+		<td><a href="mm/nov_om_06.xlsx">Download</a></td>
+		<td><a href="mm/nov_om_07.xlsx">Download</a></td>
+		<td><a href="mm/nov_om_08.xlsx">Download</a></td>
+		<td><a href="mm/nov_om_all.tar.gz">Download</a></td>
+	</tr>
+	<tr>
+		<th>Ptolemy</th>
+		<td>Same as Java</td>
+		<td><a href="mm/nov_ptl_02.xlsx">Download</a></td>
+		<td><a href="mm/nov_ptl_03.xlsx">Download</a></td>
+		<td><a href="mm/nov_ptl_04.xlsx">Download</a></td>
+		<td><a href="mm/nov_ptl_05.xlsx">Download</a></td>
+		<td><a href="mm/nov_ptl_06.xlsx">Download</a></td>
+		<td><a href="mm/nov_ptl_07.xlsx">Download</a></td>
+		<td><a href="mm/nov_ptl_08.xlsx">Download</a></td>
+		<td><a href="mm/nov_ptl_all.tar.gz">Download</a></td>
+	</tr>
+</table>
+-->
+
+
+<h3>Download Code Artifacts</h3>
+
+<p>
+All code artifacts are available for download.  The 'All' downloads
+contain the build system and compiler for that artifact.  The
+individual revision downloads only contain the source for that
+revision.
+</p>
+
+<h4>MobileMedia</h4>
+
+<p>
+Please note that the Java and AspectJ MobileMedia revisions were
+re-used (and un-altered) from
+<a href="http://www.lancs.ac.uk/postgrad/figueire/spl/icse08/">Figueiredo et al. (ICSE 08)</a>.
+The Annotated AspectJ and Open Modules revisions are based off the
+original AspectJ revisions.
+</p>
+
+<table class="design">
+	<tr>
+		<th>&nbsp;</th>
+		<th>R1</th>
+		<th>R2</th>
+		<th>R3</th>
+		<th>R4</th>
+		<th>R5</th>
+		<th>R6</th>
+		<th>R7</th>
+		<th>R8</th>
+		<th>All</th>
+	</tr>
+	<tr>
+		<th>Java</th>
+		<td><a href="mm/mp_oo_01.tar.gz">Download</a></td>
+		<td><a href="mm/mp_oo_02.tar.gz">Download</a></td>
+		<td><a href="mm/mp_oo_03.tar.gz">Download</a></td>
+		<td><a href="mm/mp_oo_04.tar.gz">Download</a></td>
+		<td><a href="mm/mp_oo_05.tar.gz">Download</a></td>
+		<td><a href="mm/mp_oo_06.tar.gz">Download</a></td>
+		<td><a href="mm/mp_oo_07.tar.gz">Download</a></td>
+		<td><a href="mm/mp_oo_08.tar.gz">Download</a></td>
+		<td><a href="mm/mp_oo_all.tar.gz">Download</a></td>
+	</tr>
+	<tr>
+		<th>AspectJ</th>
+		<td>Same as Java</td>
+		<td><a href="mm/mp_ao_02.tar.gz">Download</a></td>
+		<td><a href="mm/mp_ao_03.tar.gz">Download</a></td>
+		<td><a href="mm/mp_ao_04.tar.gz">Download</a></td>
+		<td><a href="mm/mp_ao_05.tar.gz">Download</a></td>
+		<td><a href="mm/mp_ao_06.tar.gz">Download</a></td>
+		<td><a href="mm/mp_ao_07.tar.gz">Download</a></td>
+		<td><a href="mm/mp_ao_08.tar.gz">Download</a></td>
+		<td><a href="mm/mp_ao_all.tar.gz">Download</a></td>
+	</tr>
+	<tr>
+		<th>Annotated AspectJ</th>
+		<td>Same as Java</td>
+		<td><a href="mm/mp_ao_ann_02.tar.gz">Download</a></td>
+		<td><a href="mm/mp_ao_ann_03.tar.gz">Download</a></td>
+		<td><a href="mm/mp_ao_ann_04.tar.gz">Download</a></td>
+		<td><a href="mm/mp_ao_ann_05.tar.gz">Download</a></td>
+		<td><a href="mm/mp_ao_ann_06.tar.gz">Download</a></td>
+		<td><a href="mm/mp_ao_ann_07.tar.gz">Download</a></td>
+		<td><a href="mm/mp_ao_ann_08.tar.gz">Download</a></td>
+		<td><a href="mm/mp_ao_ann_all.tar.gz">Download</a></td>
+	</tr>
+	<tr>
+		<th>Open Modules</th>
+		<td>Same as Java</td>
+		<td><a href="mm/mp_om_02.tar.gz">Download</a></td>
+		<td><a href="mm/mp_om_03.tar.gz">Download</a></td>
+		<td><a href="mm/mp_om_04.tar.gz">Download</a></td>
+		<td><a href="mm/mp_om_05.tar.gz">Download</a></td>
+		<td><a href="mm/mp_om_06.tar.gz">Download</a></td>
+		<td><a href="mm/mp_om_07.tar.gz">Download</a></td>
+		<td><a href="mm/mp_om_08.tar.gz">Download</a></td>
+		<td><a href="mm/mp_om_all.tar.gz">Download</a></td>
+	</tr>
+	<tr>
+		<th>Ptolemy</th>
+		<td>Same as Java</td>
+		<td><a href="mm/mp_ptl_02.tar.gz">Download</a></td>
+		<td><a href="mm/mp_ptl_03.tar.gz">Download</a></td>
+		<td><a href="mm/mp_ptl_04.tar.gz">Download</a></td>
+		<td><a href="mm/mp_ptl_05.tar.gz">Download</a></td>
+		<td><a href="mm/mp_ptl_06.tar.gz">Download</a></td>
+		<td><a href="mm/mp_ptl_07.tar.gz">Download</a></td>
+		<td><a href="mm/mp_ptl_08.tar.gz">Download</a></td>
+		<td><a href="mm/mp_ptl_all.tar.gz">Download</a></td>
+	</tr>
+</table>
+
+
+<h4>Health Watcher</h4>
+
+<p>
+Please note that the Java and AspectJ Health Watcher revisions were
+re-used (and un-altered) from
+<a href="http://www.comp.lancs.ac.uk/~greenwop/tao/implementation.htm">Greenwood et al.</a>.
+The Annotated AspectJ and Open Modules revisions are based off the
+original AspectJ revisions.
+</p>
+
+<table class="design">
+	<tr>
+		<th>&nbsp;</th>
+		<th>R1</th>
+		<th>R2</th>
+		<th>R3</th>
+		<th>R4</th>
+		<th>R5</th>
+		<th>R6</th>
+		<th>R7</th>
+		<th>R8</th>
+		<th>R9</th>
+		<th>R10</th>
+		<th>All</th>
+	</tr>
+	<tr>
+		<th>Java</th>
+		<td><a href="hw/HealthWatcherOO_01_Base.tar.gz">Download</a></td>
+		<td><a href="hw/HealthWatcherOO_02_Command.tar.gz">Download</a></td>
+		<td><a href="hw/HealthWatcherOO_03_State.tar.gz">Download</a></td>
+		<td><a href="hw/HealthWatcherOO_04_Observer.tar.gz">Download</a></td>
+		<td><a href="hw/HealthWatcherOO_05_Adapter.tar.gz">Download</a></td>
+		<td><a href="hw/HealthWatcherOO_06_Factory.tar.gz">Download</a></td>
+		<td><a href="hw/HealthWatcherOO_07_Adapter.tar.gz">Download</a></td>
+		<td><a href="hw/HealthWatcherOO_08_Factory.tar.gz">Download</a></td>
+		<td><a href="hw/HealthWatcherOO_09_Evolution.tar.gz">Download</a></td>
+		<td><a href="hw/HealthWatcherOO_10_ExceptionHandling.tar.gz">Download</a></td>
+		<td><a href="hw/HealthWatcherOO_all.tar.gz">Download</a></td>
+	</tr>
+	<tr>
+		<th>AspectJ</th>
+		<td><a href="hw/HealthWatcherAO_01_Base.tar.gz">Download</a></td>
+		<td><a href="hw/HealthWatcherAO_02_Command.tar.gz">Download</a></td>
+		<td><a href="hw/HealthWatcherAO_03_State.tar.gz">Download</a></td>
+		<td><a href="hw/HealthWatcherAO_04_Observer.tar.gz">Download</a></td>
+		<td><a href="hw/HealthWatcherAO_05_Adapter.tar.gz">Download</a></td>
+		<td><a href="hw/HealthWatcherAO_06_Factory.tar.gz">Download</a></td>
+		<td><a href="hw/HealthWatcherAO_07_Adapter.tar.gz">Download</a></td>
+		<td><a href="hw/HealthWatcherAO_08_Factory.tar.gz">Download</a></td>
+		<td><a href="hw/HealthWatcherAO_09_Evolution.tar.gz">Download</a></td>
+		<td><a href="hw/HealthWatcherAO_10_ExceptionHandling.tar.gz">Download</a></td>
+		<td><a href="hw/HealthWatcherAO_all.tar.gz">Download</a></td>
+	</tr>
+	<tr>
+		<th>Annotated AspectJ</th>
+		<td><a href="hw/HealthWatcherAOAnn_01_Base.tar.gz">Download</a></td>
+		<td><a href="hw/HealthWatcherAOAnn_02_Command.tar.gz">Download</a></td>
+		<td><a href="hw/HealthWatcherAOAnn_03_State.tar.gz">Download</a></td>
+		<td><a href="hw/HealthWatcherAOAnn_04_Observer.tar.gz">Download</a></td>
+		<td><a href="hw/HealthWatcherAOAnn_05_Adapter.tar.gz">Download</a></td>
+		<td><a href="hw/HealthWatcherAOAnn_06_Factory.tar.gz">Download</a></td>
+		<td><a href="hw/HealthWatcherAOAnn_07_Adapter.tar.gz">Download</a></td>
+		<td><a href="hw/HealthWatcherAOAnn_08_Factory.tar.gz">Download</a></td>
+		<td><a href="hw/HealthWatcherAOAnn_09_Evolution.tar.gz">Download</a></td>
+		<td><a href="hw/HealthWatcherAOAnn_10_ExceptionHandling.tar.gz">Download</a></td>
+		<td><a href="hw/HealthWatcherAOAnn_all.tar.gz">Download</a></td>
+	</tr>
+	<tr>
+		<th>Open Modules</th>
+		<td><a href="hw/HealthWatcherOM_01_Base.tar.gz">Download</a></td>
+		<td><a href="hw/HealthWatcherOM_02_Command.tar.gz">Download</a></td>
+		<td><a href="hw/HealthWatcherOM_03_State.tar.gz">Download</a></td>
+		<td><a href="hw/HealthWatcherOM_04_Observer.tar.gz">Download</a></td>
+		<td><a href="hw/HealthWatcherOM_05_Adapter.tar.gz">Download</a></td>
+		<td><a href="hw/HealthWatcherOM_06_Factory.tar.gz">Download</a></td>
+		<td><a href="hw/HealthWatcherOM_07_Adapter.tar.gz">Download</a></td>
+		<td><a href="hw/HealthWatcherOM_08_Factory.tar.gz">Download</a></td>
+		<td><a href="hw/HealthWatcherOM_09_Evolution.tar.gz">Download</a></td>
+		<td><a href="hw/HealthWatcherOM_10_ExceptionHandling.tar.gz">Download</a></td>
+		<td><a href="hw/HealthWatcherOM_all.tar.gz">Download</a></td>
+	</tr>
+	<tr>
+		<th>Ptolemy</th>
+		<td><a href="hw/HealthWatcherPTL_01_Base.tar.gz">Download</a></td>
+		<td><a href="hw/HealthWatcherPTL_02_Command.tar.gz">Download</a></td>
+		<td><a href="hw/HealthWatcherPTL_03_State.tar.gz">Download</a></td>
+		<td><a href="hw/HealthWatcherPTL_04_Observer.tar.gz">Download</a></td>
+		<td><a href="hw/HealthWatcherPTL_05_Adapter.tar.gz">Download</a></td>
+		<td><a href="hw/HealthWatcherPTL_06_Factory.tar.gz">Download</a></td>
+		<td><a href="hw/HealthWatcherPTL_07_Adapter.tar.gz">Download</a></td>
+		<td><a href="hw/HealthWatcherPTL_08_Factory.tar.gz">Download</a></td>
+		<td><a href="hw/HealthWatcherPTL_09_Evolution.tar.gz">Download</a></td>
+		<td><a href="hw/HealthWatcherPTL_10_ExceptionHandling.tar.gz">Download</a></td>
+		<td><a href="hw/HealthWatcherPTL_all.tar.gz">Download</a></td>
+	</tr>
+</table>
+
+
+<h3>Tools</h3>
+
+<ul>
+	<li>Ptolemy Compiler</li>
+	<ul>
+		<li><a href="http://www.cs.iastate.edu/~ptolemy/">Homepage</a></li>
+		<li><a href="ja-pyc.jar">Download</a> the version used in this study</li>
+		<ul>
+			<li>Contains support for measuring CK metrics</li>
+			<li>Contains support for generating input for the change propagation tool</li>
+		</ul>
+	</ul>
+	<li>ABC (AspectBench Compiler)</li>
+	<ul>
+		<li><a href="http://abc.comlab.ox.ac.uk/">Homepage</a></li>
+		<li><a href="abc-ja-complete.jar">Download</a> the (modified) version used in this study</li>
+		<ul>
+			<li>Contains support for measuring CK metrics</li>
+			<li>Contains support for generating input for the change propagation tool</li>
+			<li>Contains support for (only!) parsing pointcuts containing annotations (no typechecking/backend support)</li>
+		</ul>
+	</ul>
+	<li>Change Propagator</li>
+	<ul>
+		<li>Download</li>
+		<!--<li><a href="change-propagator.jar">Download</a></li>-->
+	</ul>
+</ul>
+
+
+</div>
+</td>
+
+<!--#include virtual="../includes/bottombar.html"-->

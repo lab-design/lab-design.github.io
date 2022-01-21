@@ -1,0 +1,46 @@
+<!--#include virtual="../includes/topbar-compact.html"-->
+
+<style type="text/csss">
+iframe {
+ zoom:80%;
+}
+</style>
+<script type="text/javascript">
+<!--//
+var i = 0;
+function sizeFrame() {
+  var F = document.getElementById("frances");
+  var X = document.getElementById("test");
+  X.innerHTML = i;
+  i = i + 1;
+  if(F.contentDocument) {
+    F.height = F.contentDocument.documentElement.scrollHeight+30; //FF 3.0.11, Opera 9.63, and Chrome
+  } else {
+    F.height = F.contentWindow.document.body.scrollHeight+30; //IE6, IE7 and Chrome
+  }
+}
+window.onload=sizeFrame;
+//-->
+</script>
+
+<td id="b2" rowspan="2">
+<div class="maintext" onclick="sizeFrame()">
+
+<!--#set var="tool_name" value="Frances" -->
+
+
+<iframe id="frances" name="frances" src="frances-a-redirect.html" 
+frameborder="0" scrolling="no" width="100%" height="850" marginwidth="5" marginheight="5"
+onload="sizeFrame('frances')"
+>
+</iframe>
+<p id="test">-1</p>
+<!-- <iframe id="frances" name="frances" src="http://jhelum.cs.iastate.edu/archit/frances-a.php"  -->
+<!-- frameborder="0" scrolling="auto" width="100%" height="850" marginwidth="5" marginheight="5" > -->
+
+
+</div>
+
+</td>
+
+<!--#include virtual="../includes/bottombar.html"-->

@@ -1,0 +1,75 @@
+<!--#include virtual="../includes/headtop.html"-->
+
+<!-- INSERT TITLE -->
+<title>The Panini project: Concurrent Object-oriented Design Patterns</title>
+
+<!--#include virtual="../includes/headmiddle.html"-->
+
+<h1>Concurrent Object-oriented Design Patterns</h1>
+
+<!--#include virtual="../includes/headbottom.html"-->
+<td id="b3" rowspan="2">
+<div class="maintext">
+<!--- ADD CONTENTS BELOW: DON'T EDIT ABOVE THIS LINE -->
+
+<h2>What is the Concurrent Design Pattern Framework?</h2>
+<p>
+The Concurrent Design Pattern Framework is a set of 
+<em>implicitly-concurrent</em> 
+versions of Gang-of-Four (GOF) object-oriented design patterns
+for which the use of the pattern in a system automatically introduces
+potential parallelism.
+</p>
+
+<h2>About the Concurrent Design Pattern Framework</h2>
+<p>
+The broad objective of the Panini project is to reconcile the 
+modularity goals promoted by good software design practices with the concurrency 
+goals of exposing potential parallelism between the execution of components. 
+The main idea is that if programmers improve the modularity of their
+programs they should get concurrency for free. 
+The Concurrent Design Pattern Framework is a work in progress
+representing one direction of our efforts
+to reconcile modularity and concurrency goals by enhancing
+Gang-of-Four (GOF) object-oriented design patterns. GOF patterns are
+commonly used to improve the modularity of object-oriented software.
+These patterns describe strategies to decouple components in design
+space and specify how these components should interact. Our hypothesis
+is that if these patterns are enhanced to also decouple components in
+execution space, applying them will concomitantly improve the design and
+potentially available concurrency in software systems. 
+For 18 out of the 23 GOF patterns, we have determined
+that, subject to appropriate usage, our hypothesis is true. For
+each of these 18 patterns we have created an enhanced version
+of the pattern in which use of the pattern increases potential
+concurrency without additional, explicit effort on the part of the 
+developer to do so.  
+In every case but one, the concurrency-related concerns (such as 
+thread creation and synchronization) are fully encapsulated in a library
+that we provide, and in no case is the developer ever required to 
+explicitly create a thread or acquire a synchronization lock.
+</p>
+
+
+<h2>Getting Started with the Concurrent Design Pattern Framework</h2>
+
+<p>
+For a detailed discussion and usage examples for
+the Concurrent Design Pattern Framework please see our 
+<a href="http://www.cs.iastate.edu/~design/papers/ONWARD-10/">technical report</a>.
+</p>
+
+<p>
+An archive including the libraries and examples of the 18 enhanced patterns
+is available 
+<a href="https://sourceforge.net/projects/paninij/files/patterns/">here</a>.
+
+</p>
+<p>
+You can browse the <a href="patterns/readme.html">README</a> file.
+</p>
+
+<!--- ADD CONTENTS ABOVE: DON'T EDIT BELOW THIS LINE -->
+</div>
+</td>
+<!--#include virtual="../includes/bottombar.html"-->

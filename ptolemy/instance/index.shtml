@@ -1,0 +1,66 @@
+<!--#include virtual="../includes/headtop.html"-->
+
+<!-- INSERT TITLE -->
+<title>
+Ptolemy: A Language with Quantified, Typed Events
+</title>
+
+<!--#include virtual="../includes/headmiddle.html"-->
+
+<h1>Ptolemy: A Language with Quantified, Typed Events</h1>
+
+<!--#include virtual="../includes/headbottom.html"-->
+
+<!-- 2ND COLUMN. INSERT COPY -->
+
+<td id="b3" rowspan="2">
+<div class="maintext">
+
+<h2>Instance-level Features in Ptolemy's Design</h2>
+
+<p>
+Integrated systems are those where components must behave together in
+order to fulfill overall requirements. In such systems, modularization
+of integration relationships is important for enabling separate
+component compilation, testing, and debugging, and for enhanced reuse.
+Existing languages and approaches for modularizing integration
+relationships work, but do not solve all problems. In particular, they
+either do not completely decouple components or require workarounds,
+which at a minimum incurs design and performance overheads. 
+</p>
+
+<p>
+This web-page provides materials describing an extension to Ptolemy 
+to support what we call <EM>instance-level quantified, typed events</EM>, 
+which solves all of the problems mentioned above. We call this extension
+Ptolemy-I (I for instance-level).
+<p>
+
+<p>
+<b>Detailed Technical Report:</b> The technical contributions of our 
+work on Ptolemy-I include: the design, semantics, and type system of 
+instance-level quantified, typed events and a proof of its soundness. 
+Our <a href="http://www.cs.iastate.edu/~design/papers/TR-08-15/">detailed technical report</a> 
+describes these.
+</p>
+
+<p>
+<B>Interpreter and Examples:</B> To demonstrate the feasibility of our 
+language design, we have implemented this design in an interpreter. 
+To provide an initial assessment of the language's benefits, we have 
+implemented canonical examples in the literature. These are also 
+available from <a href="ptolemyI-interpreter-and-examples.zip">here</a>.
+</p>
+
+<p>
+Our initial assessments show that
+instance-level quantified, typed events improve the separation of
+integration concerns over previous language design proposals. 
+</p>
+
+</div>
+
+
+</td>
+
+<!--#include virtual="../includes/bottombar.html"-->

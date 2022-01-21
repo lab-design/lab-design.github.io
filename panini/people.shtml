@@ -1,0 +1,219 @@
+<!--#include virtual="includes/top.html"-->
+<title>People Involved in Designing and Implementing the Panini
+Programming Language</title>
+<!-- PAGE SPECIFIC STYLING -->
+<style type="text/css">
+.main-content b a {
+	text-decoration: none;
+}
+
+.main-content b {
+	font-size: 13pt;
+	padding: 10px 5px 0 0;
+	display: inline-block;
+}
+</style>
+<!--#include virtual="includes/description-keywords.html"-->
+<!--#include virtual="includes/header.html"-->
+
+<h1>People Involved in the Panini Project</h1>
+
+<!-- TABLE OF CONTENTS -->
+<div class="col2-toc">
+<ul>
+	<li><a href="people.shtml#rajan">Hridesh Rajan</a></li>
+	<li><a href="people.shtml#kautz">Steven M. Kautz</a></li>
+	<li><a href="people.shtml#lin">Eric Lin</a></li>
+	<li><a href="people.shtml#upadhyaya">Ganesha Upadhyaya</a></li>
+	<li><a href="people.shtml#bagherzadeh">Mehdi Bagherzadeh</a></li>
+	<li><a href="people.shtml#pastMembers">Past Members</a></li>
+	<li>
+	<hr />
+	</li>
+	<li><a href="papers.shtml">Publications</a></li>
+</ul>
+</div>
+
+<!-- CONTENT -->
+<div class="col2-content">
+<table>
+<tr>
+<td>
+<img src="/images/hrajan.jpg"
+	width="127" alt="Hridesh Rajan" />
+</td><td><p>
+<a name="rajan"
+	href="http://www.cs.iastate.edu/~hridesh">Hridesh Rajan</a> </b> is 
+a Professor in the <a href="http://www.cs.iastate.edu">Department
+of Computer Science</a> at the <a href="http://www.iastate.edu">Iowa
+State University</a>. His research interests are in programming language
+design, semantics and implementation, and in software engineering.
+Hridesh leads the Panini project and has been designing the
+language, developing its semantics and implementation and conducting
+empirical evaluation to validate its design along with others. He can be
+reached at <a href="mailto:hridesh@iastate.edu">hridesh@iastate.edu</a>.
+</p></td></tr>
+
+<tr><td>
+<img src="/images/skautz.jpg"
+	width="127" alt="Steven M. Kautz" />
+</td><td><p>
+<b> <a name="kautz"
+	href="http://www.cs.iastate.edu/~smkautz">Steven M. Kautz</a> </b> is 
+a lecturer in the  <a href="http://www.cs.iastate.edu">
+Department of Computer Science</a> at the <a href="http://www.iastate.edu">
+Iowa State University</a>. His research interests are in 
+algorithmic and resource-bounded randomness, nanoscale self-assembly, 
+concurrency, design patterns. 
+Steve is a key senior collaborator on the Panini project and he has been
+helping with the design and implementation of the implicitly concurrent 
+design pattern framework.
+He can be reached via the e-mail address provided on his web-page.
+</p></td></tr>
+
+<tr><td>
+<img src="/images/elin.jpg"
+	width="127" alt="Eric Lin" /> 
+</td><td><p>
+<b> <a name="lin"
+	href="http://www.cs.iastate.edu/~design/students/">Eric Lin</a> </b> is
+	a PhD student in the Panini project. He earned his undergraduate 
+	degree in Computer science from <a href="http://www.iastate.edu">
+    Iowa State University</a> in 2012 and his M.S. degree also in Computer Science 
+    in Spring 2016. Eric has worked on frontend and 
+    the backend of the OpenJDK-based Panini compiler focusing on 
+    code transformation strategies and type-checking. Eric can be reached at 
+    <a href="mailto:eylin@iastate.edu">eylin@iastate.edu</a>.
+</p></td></tr>
+
+
+<tr><td>
+<img src="/images/gupadhyaya.gif"
+	width="127" alt="Ganesha Upadhayaya" /> 
+</td><td><p>
+<b> <a name="upadhyaya"
+	href="http://www.cs.iastate.edu/~ganeshau">Ganesha Upadhayaya</a></b> is a PhD student in the
+<a href="http://www.cs.iastate.edu">
+Department of Computer Science</a> at <a href="http://www.iastate.edu">
+Iowa State University</a>. He has been in the graduate program since August 2010.
+His interests are in parallel programming and implicitly concurrent programming languages. 
+He can be reached at <a href="mailto:spam@iastate.edu">ganeshau@iastate.edu</a>.
+</p></td></tr>
+
+<tr><td>
+<img src="/images/mbagherzadeh.jpg"
+	width="127" alt="Mehdi Bagherzadeh" /> 
+</td><td><p>
+<b><a name="bagherzadeh" href="http://www.cs.iastate.edu/~mbagherz">Mehdi Bagherzadeh</a></b> is a 
+PhD student in the <a href="http://www.cs.iastate.edu"> Department of Computer Science</a> 
+at <a href="http://www.iastate.edu"> Iowa State University</a>, where he works with  
+<a href="http://www.cs.iastate.edu/~hridesh">Dr. Hridesh Rajan</a>.  
+His research interests are in software specification and verification and in 
+programming language design and implementation.  
+Mehdi is currently working on the problems of 
+<a href="/papers/Modularity-15/">pervasive and oblivous interference</a> 
+in concurrent programming 
+in the context of <a href="http://paninij.org">the Panini programming language</a>. 
+He also contributes to the <a href="http://www.cs.iastate.edu/~ptolemy">Ptolemy</a> project. 
+He can be reached at <a href="mailto:mbagherz@iastate.edu">mbagherz@iastate.edu</a>.
+</p></td></tr>
+
+</table>
+
+<h1>
+<a name="pastMembers" href="http://paninij.org/people.shtml">Past Members</a>
+</h1>
+<table>
+
+<tr><td>
+<img src="/images/ylong.jpg"
+        width="127" alt="Yuheng Long" />
+</td><td><p>
+<b> <a name="long"
+        href="http://www.cs.iastate.edu/~csgzlong">Yuheng Long</a></b> earned 
+his PhD degree in Spring 2016 in the <a href="http://www.cs.iastate.edu">
+Department of Computer Science</a> at <a href="http://www.iastate.edu">
+Iowa State University</a>, where he worked with
+<a href="http://www.cs.iastate.edu/~hridesh">Dr. Hridesh Rajan</a>.
+His PhD and Masters thesis were both in the Panini project. 
+His research interests are in programming languages design and implementation,
+in particular concurrent programming languages and in program analysis.
+He is contributing to <a href="http://paninij.org">the Panini project</a>.
+Yuheng earned his M.S. degree in Fall 2010
+and his thesis title was &quot;Implicit invocation meets safe, implicit concurrency.&quot;
+He can be reached at <a href="mailto:spam@iastate.edu">
+csgzlong@iastate.edu</a>.
+</p></td></tr>
+
+
+<tr><td>
+<img src="/images/smooney.jpg"
+        width="127" alt="Sean Mooney" />
+</td><td><p>
+<b> <a name="mooney"
+        href="http://www.cs.iastate.edu/~smooney">Sean Mooney</a> </b>
+earned his Masters degree in the <a href="http://www.cs.iastate.edu">
+Department of Computer Science</a> at the <a href="http://www.iastate.edu">
+Iowa State University</a>, where he worked with Dr. Hridesh Rajan.
+His Masters thesis proposed a <a href="/papers/thesis/MooneyMS.pdf">unified design</a> 
+for <a href="/papers/ICSE-15a/">capsules</a>. 
+His research interests at the time were in programming languages and software
+engineering. Sean was mostly interested in compiler design and
+implementation and has been instrumental in the design and
+implementation of JastAddJ-based Panini compiler. He can be reached at
+<a href="mailto:smooney@iastate.edu">smooney@iastate.edu</a>.
+</p></td></tr>
+
+<tr><td>
+<img src="/images/rfernando.jpg"
+	width="127" alt="Rex Fernando" />
+</td><td><p>
+<b> <a name="fernando"
+	href="http://www.cs.iastate.edu/~design/students/">Rex Fernando</a></b> 
+	is a graduate student in the department of computer science at University 
+	of Wisconsin, Madison. He got
+his undergraduate degree in <a href="http://www.cs.iastate.edu">
+Computer Science</a> at the <a href="http://www.iastate.edu">
+Iowa State University</a>. At the time, he worked on the Ptolemy 
+and the Panini project with Dr. Hridesh Rajan. 
+Rex worked on a compiler for the Panini language based on OpenJDK. 
+He can be reached at <a	href="mailto:rex@cs.wisc.edu">rex@cs.wisc.edu</a>.
+</p></td></tr>
+
+<tr><td>
+<img src="/images/skabala.jpg"
+	width="127" alt="Sarah Kabala" />
+</td><td><p>
+<b> <a name="kabala"
+	href="http://www.cs.iastate.edu/~skabala">Sarah Kabala</a></b> was a
+graduate student in the <a href="http://www.cs.iastate.edu"> Department of Computer Science</a>
+at <a href="http://www.iastate.edu"> Iowa State University</a>, where she worked with
+<a href="http://www.cs.iastate.edu/~hridesh">Dr. Hridesh Rajan</a>.
+Her research interests at the time were in parallel heterogeneous computing and GPU programming.
+Sarah worked on conducting statistically rigorous evaluation
+of the runtime performance and overhead of Panini programs.
+She can be reached at <a href="mailto:skabala@iastate.edu">skabala@iastate.edu</a>.
+</p></td></tr>
+
+<tr><td>
+<img src="/images/lszakacs.jpg"
+	width="127" alt="Lorand Szakacs" />
+</td><td><p>
+<b> <a name="lorand"
+	href="http://www.cs.iastate.edu/~lorand">Lorand Szakacs</a> </b> was a
+graduate student in the <a href="http://www.cs.iastate.edu">
+Department of Computer Science</a> at the <a href="http://www.iastate.edu">
+Iowa State University</a>, where he briefly worked with Dr. Hridesh Rajan. His
+research interests at the time were in programming languages and software
+engineering. Lorand at the time was interested in software engineering and 
+programming languages with an emphasis on concurrency and parallelism. 
+He can be reached at
+<a href="mailto:lorand@iastate.edu">lorand@iastate.edu</a>.
+</p></td></tr>
+
+</table>
+
+<!-- PAGE UPDATE -->
+<p id="update">Page last modified on $Date: 2014/12/18 17:56:32 $</p>
+</div>
+<!--#include virtual="includes/bottom.html"-->

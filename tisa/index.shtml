@@ -1,0 +1,99 @@
+<!--#include virtual="includes/topbar.html"-->
+<!-- 2ND COLUMN. INSERT COPY -->
+
+<td id="b3" rowspan="2">
+<div class="maintext">
+
+<h2>Motivation</h2>
+<p>
+A paradigm shift that we have witnessed in the past 
+2-3 decades is that a significant amount of computation has 
+moved from local hosts (clients) to remote hosts (service providers).
+This model popularized initially by the notion of 
+remote procedure calls (RPC) and 
+remote objects has since evolved as 
+web-services and service-oriented architectures (SoA). 
+Web services such as <a href="http://www.google.com">Google</a> services, 
+<a href="http://www.ebay.com">E-Bay</a>, <a href="http://www.paypal.com">Paypal</a>, 
+<a href="http://www.facebook.com">Facebook</a>, 
+<a href="http://www.myspace.com">Myspace</a>, etc, 
+have become integral part of our day-to-day life.
+</p>
+
+<p>
+Web services promote abstraction, loose coupling 
+and interoperability of clients and services. 
+The key idea of web services is to introduce a published 
+interface (often a description written in an 
+XML-based language such as Web Services Description Language (WSDL)), for 
+communication between services and clients. 
+By allowing components to be decoupled using a specified 
+interface, web services enable platform-independent integration.
+These new integration possibilities are valuable for constructing
+today's interoperable, large-scale, complex software-intensive systems.
+</p>
+
+<p>
+A behavioral contract for a web service specifies, for each of the web
+service's methods the relationships between its inputs and outputs.
+Such a contract treats the implementation of the service as a black box, 
+hiding all the service's internal states from its clients.
+The benefit of this encapsulation is that clients do not depend upon 
+the service's changeable design decisions.
+</p>
+
+<p>
+However, the behavioral contract for a web service is insufficient 
+to reason about non-functional properties.
+These contracts alone do not provide sufficient details about the 
+internal state of the service, which is necessary to reason about
+most non-functional properties such as security and privacy.
+</p>
+
+<p>
+One may argue that making the web service implementation  
+available for such specification and verification will
+enable reasoning about the non-functional properties, however, there
+are two issues with that decision. 
+First, such specification and verification techniques 
+are tightly coupled with the implementation.  
+The implementation details are exposed to the clients resulting in loss of
+much of the modularity benefits that web services
+provide for system integration. Second, this often
+exposes the proprietary internal details of the service implementation
+and thus may not be a welcome approach from the intellectual property
+point of view.
+</p>
+
+<p>
+Last but not least, in SoAs services are often executed 
+on servers that are not owned or operated by the clients. 
+The validation for most non-functional requirements
+such as data integrity
+may only come from a monitor that is executing 
+in the same domain as the service implementation and that 
+can validate --- by observing the running service implementation ---
+that the requirements are indeed satisfied. 
+The design and development of these monitors is a widely 
+studied problem in the requirements monitoring literature.
+Nevertheless, the key question remains; 
+in a (possibly) untrusted domain who 
+guarantees the integrity of the monitor? In other 
+words, <EM>who monitors the  monitor?</EM>
+</p>
+
+<p>
+In the <EM>Tisa</EM> project, we are developing a specification
+language design and verification framework for web services 
+that will solve these problems. 
+We are also developing a prototype implementation of this 
+framework that demonstrate the potential practical value of the
+proposed approach in real-world software applications.
+</p> 
+
+</div>
+
+
+</td>
+
+<!--#include virtual="includes/bottombar.html"-->

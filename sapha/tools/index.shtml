@@ -1,0 +1,62 @@
+<!--#include virtual="../includes/topbar.html"-->
+<!-- 2ND COLUMN. INSERT COPY -->
+
+<td id="b3" rowspan="2">
+<div class="maintext">
+
+<h1>Tools developed for the SAPHA project</h1>
+
+<!-- <p> More information coming soon </p> -->
+<p>
+As part of the SAPHA project, we are developing several tools.
+The original purpose of these tools was to carry out our experiments.
+Along the way we have found other uses for these tools.
+</p>
+
+<h2>Frances: Control flow graph generator (web based)</h2>
+
+<p>
+This web tool generates a control flow graph from given source code.
+Each node in the graph is shown with its assembly code.
+Basic static analysis is done to color code the graph for simple control
+structures. 
+A <a href="sigcse10">paper</a> on this tool and its use was presented at 
+<a href="http://www.sigcse.org/sigcse2010/">SIGCSE 2010</a>
+and 
+<a href="http://www.ccsc.org/centralplains/">CCSC 2010 (central plains)</a>
+.
+For more details, see the <a href="frances"><b>Frances project website</b></a>.<br>
+[<a href="/papers/SIGCSE10">SIGCSE '10</a>]
+[<a href="/papers/CCSC10">CCSC '10</a>]
+</p>
+
+<p>
+<center>
+<img src="frances/pictures/smaller-while.png" alt="Example use of Frances tool" />
+</center>
+</p>
+</div>
+
+
+<h2>Frances-A: Architecture Level Program Simulator</h2>
+
+<p>
+This web tool builds upon the Frances tool to provide a simple and
+easy to use architecture level progrma simulator.
+A <a href="http://archives.cs.iastate.edu/documents/disk0/00/00/06/51/00000651-00/mainTR.pdf">technical report</a>
+regarding this tool and its use has been made available.
+This work will also appear at <a href="http://www.cs.iastate.edu/~design/papers/CCSC-11">CCSC 2011 central plains</a>.
+For more details, see the <a href="frances"><b>Frances project website</b></a>.
+</p>
+
+<p>
+<center>
+<img src="frances/frances-a/figures/example1.png" alt="Example use of Frances-A tool" />
+</center>
+</p>
+</div>
+
+
+</td>
+
+<!--#include virtual="../includes/bottombar.html"-->

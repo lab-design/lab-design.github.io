@@ -1,0 +1,20 @@
+
+{% assign name=include.event.title %}
+{% assign img = include.event.image %}
+{% assign about = include.event.description %}
+<div class="col-md-12 col-lg-12 col-sm-12 service wow fadeInUp" data-wow-delay="400ms">
+    <div>
+        <h1>{{name}}</h1>
+    </div>
+    <div>
+        <img src="{{img}}" alt="..." />
+    </div>
+    <br>
+    <br>
+    <hr>
+    <div>
+        <p>
+            {{about}}
+        </p>
+    </div>
+</div>

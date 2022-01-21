@@ -1,0 +1,79 @@
+<!--#include virtual="../includes/topbar.html"-->
+<!-- 2ND COLUMN. INSERT COPY -->
+
+<td id="b3" rowspan="2">
+<div class="maintext">
+<div class="title"><h1>Experimentation Results</h1></div>
+<p>
+Experimental results are from an actual quad core machine with two cores running at 2.4GHz and two cores running at 1.6GHz.
+Workloads are made up of 18 to 84 processes running simultaneously.
+Upon completion of a benchmark, another is immediately started to maintain constant workload size.
+Our technique is compared to the stock Linux scheduler.
+</p>
+
+<p>
+We measure three things: 
+<a href="overhead.shtml">overhead</a>,
+<a href="throughput.shtml">throughput</a>, and
+<a href="fairness.shtml">fairness</a>.
+Details for each of these are given separately.
+Here, we describe the overall performance for <a href="variations.shtml">variations</a> of our technique.
+</p>
+<BR>
+
+<h2>Speedup vs Fairness</h2>
+<p>
+<center>
+<!--
+<table width=80%>
+  <tr><td align=center>
+    <img src="../figures/speed_vs_fairness.png"><BR>
+  </td></tr>
+  <tr><td align=center>
+    Application <a href="fairness.shtml">speedup</a> vs <a href="fairness.shtml">fairness</a>. 
+    See our latest <a href="http://archives.cs.iastate.edu/documents/disk0/00/00/05/96/index.html">technical report</a> for thorough descriptions of these techniques.
+  </td></tr>
+  </table>
+-->
+  <img src="../figures/speed_vs_fairness.png"><BR>
+  <b>Figure 1:</b>
+  Application <a href="fairness.shtml">speedup</a> vs <a href="fairness.shtml">fairness</a> for <a href="variations.shtml">variations</a> of our technique. 
+</center>
+</p>
+<BR><BR>
+
+<h2>Speedup vs Throughput</h2>
+<p>
+<center>
+  <img src="../figures/speed_vs_thpt.png"><BR>
+  <b>Figure 2:</b>
+  Application <a href="fairness.shtml">speedup</a> vs <a href="throughput.shtml">throughput</a>
+  for <a href="variations.shtml">variations</a> of our technique. 
+</center>
+</p>
+<BR><BR>
+
+<h2>Throughput vs Fairness</h2>
+<p>
+<center>
+  <img src="../figures/thpt_vs_fairness.png"><BR>
+  <b>Figure 3:</b>
+  <a href="throughput.shtml">Throughput</a> vs <a href="fairness.shtml">fairness</a>
+  for <a href="variations.shtml">variations</a> of our technique. 
+</center>
+</p>
+<BR><BR>
+
+<!-- <center><img src="../figures/speed_vs_overhead.png"></center> -->
+
+<HR SIZE=1, WIDTH=95%, ALIGN=CENTER, NOSHADE>
+<ol>
+<li>These results are shown in our latest <a href="http://archives.cs.iastate.edu/documents/disk0/00/00/05/96/index.html">technical report</a>.
+</ol>
+
+</div>
+
+
+</td>
+
+<!--#include virtual="../includes/bottombar.html"-->

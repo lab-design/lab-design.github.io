@@ -1,0 +1,176 @@
+<!--#include virtual="../includes/headtop.html"-->
+
+<!-- INSERT TITLE -->
+<title>Ptolemy Programming Guide</title>
+
+<!--#include virtual="../includes/headmiddle.html"-->
+
+<h1>Ptolemy Programming Guide</h1>
+
+<!--#include virtual="../includes/headbottom.html"-->
+
+<td id="b3" rowspan="2">
+<div class="maintext">
+
+<a href="/docs/">< Table of Contents</a><BR>
+
+<h2>A Handler in the Ptolemy Language</h2>
+
+<p>
+An object-oriented class is called a handler class (or simply handler) in 
+Ptolemy's terminology if it reacts to events signalled by other classes
+in that software system.
+Handlers typically implement croscutting requirements.
+</p>
+
+<p>
+Handlers are declared using the keyword <B>class</B> so like the 
+<a href="http://www.cs.iastate.edu/~eos">Eos</a> programming language
+there is no distinction
+at the declaration level between standard object-oriented classes and handlers.
+</p>
+
+<p>
+An example of a handler declaration is shown below:
+</p>
+
+<pre class="brush: ptolemy;">
+public class DisplayUpdate {
+	...
+	when FEChanged do update;
+	public void update(FEChanged next) throws Throwable {
+		...
+	}
+}
+</pre>
+
+<p>
+This declaration has two parts: a standard object-oriented method 
+<EM>update</EM> on lines 4-6 and a new construct in Ptolemy called a
+<b>binding declaration</b> on line 3.
+</p>
+
+<a name="#binding"><h2>Binding Declaration</h2></a>
+
+<p>
+A binding declaration in Ptolemy associates a method in a class to a set of events
+identified by an event type. An example is shown above on line 3.
+In this binding declaration, the identifier <EM>FEChanged</EM> refers to the type of an 
+<a href="/docs/lang-evtype.shtml">
+event type declaration</a>.
+Briefly, an event type declaration gives a type for events that can be 
+signalled in that program.
+The identifier <EM>update</EM> refers to the name of a method.
+</p>
+
+<pre class="brush: ptolemy;">
+	...
+ 	...
+	when FEChanged do update;
+</pre>
+
+<p>
+Effectively, the binding declaration on line 3 says to run method <EM>update</EM>
+when events of type <EM>FEChanged</EM> are announced. 
+</p>
+
+<p>
+The use of the event type names in binding declarations simplifies these
+declarations and avoids coupling class DisplayUpdate to classes that may
+signal events of type <EM>FEChanged</EM>.
+This allows selecting a number of such event signalling with just
+one succinct binding declaration, without depending on the modules that
+announce events. 
+</p>
+
+<p>
+Both event type name and method name used in a binding declaration 
+must be visible in the scope of that binding declaration.
+</p>
+
+<a name="#annotationbinding"><h2>Annotation Form of Binding Declarations</h2></a>
+
+<p>An annotation form of binding declaration is also available. The listing below
+shows an example of such annotation.</p>
+
+<pre class="brush: ptolemy;">
+public class DisplayUpdate {
+	...
+	@When(FEChanged.class)
+	public void update(FEChanged next) throws Throwable {
+		...
+	}
+}
+</pre>
+
+<p>This form effectively achieves the same purpose as the previous (more explict)
+form of the binding declaration.</p>
+
+<p>
+In this binding declaration, a Ptolemy-specific annotation <EM>@When</EM> is used.
+The identifier <EM>FEChanged.class</EM> refers to the type of an 
+<a href="/docs/lang-evtype.shtml">
+event type declaration</a>.
+</p>
+
+<a name="#register"><h2>Activating All Bindings in a Class</h2></a>
+
+<p>Ptolemy allows bindings to be activated at runtime using <EM>register</EM> 
+expressions. An example is presented in the listing below.</p>
+
+<pre class="brush: ptolemy;">
+public class DisplayUpdate {
+	public DisplayUpdate() {
+	 register(this);
+	}
+
+	when FEChanged do update;
+	public void update(FEChanged next) throws Throwable {
+		...
+	}
+}
+</pre>
+
+<p>
+An example of register expression appear on line 3 for
+the constructor method of the class <EM>DisplayUpdate</EM>.
+The effect of this expression is to activate all 
+binding declarations in that class.
+</p>
+
+<p>In the listing above the register expression on line 3 
+says that whenever an instance of class <EM>DisplayUpdate</EM> is constructed 
+using the default constructor <EM>DisplayUpdate()</EM> it is activated such that 
+whenever event <EM>FEChanged</EM> is signalled method <EM>update</EM> is run.
+</p>
+
+<a name="#annotationregister"><h2>Annotation Form of Register Expressions</h2></a>
+
+<p>Similar to binding declarations, an annotation-based shorthand for 
+register expression is also available. The following listing demonstrates.</p>
+
+<pre class="brush: ptolemy;">
+public class DisplayUpdate {
+
+	@Register
+	public DisplayUpdate() {
+	}
+
+	@When(FEChanged.class)
+	public void update(FEChanged next) throws Throwable {
+		...
+	}
+}
+</pre>
+
+<p>In the listing above the annotation <EM>@Register</EM> on line 3 
+says that whenever an instance of class <EM>DisplayUpdate</EM> is constructed 
+using the default constructor <EM>DisplayUpdate()</EM> it is activated such that 
+whenever event <EM>FEChanged</EM> is signalled method <EM>update</EM> is run.
+</p>
+
+<BR><BR> <p>Page last modified on $Date: 2011/10/17 17:55:45 $</p>
+</div>
+</td>
+
+<!--#include virtual="../includes/bottombar.html"-->

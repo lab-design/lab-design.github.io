@@ -1,0 +1,80 @@
+Graduate Minor Requirements
+
+Computer Science courses have restricted enrollment.  The courses are available only to undergraduate major, graduate major, and graduate minor students.  Students from other disciplines of graduate study may wish to earn a graduate minor in Computer Science.  Following are the requirements and approved course work for a graduate minor. 
+
+A graduate minor in Computer Science consists of at least 12 credits chosen from ComS 309, 311, 321, 330, 331, 342, 352, 361, 401, 425, 430, 454, 461, 472, 474, 484, and ComS courses numbered 511 or above (excluding 590, 599, 610 and 699).  The course descriptions can be found at http://www.iastate.edu/~catalog/9799/coms.html. The course selection must also satisfy the following two conditions:
+
+1. Only one of the following may be included in the 12-credit minimum: ComS 321, 330, 361.
+2. At least 3 credits must be chosen from courses at or above the 400 level.
+
+Any exceptions must be petitioned by the Student's Program of Study (POS) Committee and approved by the Graduate Committee in Computer Science.
+
+When a student chooses to do a graduate minor in computer science, one member of his or her POS committee must be a faculty member from the Computer Science Department.  Faculty members follow this information. MS Word templates for the committee appointment, POS, and modifications can be downloaded from the Graduate College homepage.
+
+The student must complete their POS with the desired courses.  After the POS is completed, courses are added with an add slip signed by the Department Chair.  Courses should be added as soon as the student is able to register for their courses each semester.  If the courses are full, the student may have to wait until the next semester to take the desired course.  The department does not guarantee a student will be able to get the desired courses and the minor may need to be dropped so the student can graduate. Substitutions may be approved by the Department Chair, if necessary. Any course changes must be made with the "Modifications to the Program of Study" form and must be signed by all committee members and department officers and approved by the Graduate College.
+
+
+
+Computer Science Graduate Faculty for Minor Committees
+
+
+
+Albert L. Baker - Associate Professor.  Major Interests: Software Engineering (Specification Languages, CASE Tools), Natural Language Processing (Text Analysis).  On leave for Fall 1999 and Spring 2000 semesters.
+Internet:  baker@cs.iastate.edu
+
+John Peter Boysen - Adjunct Assistant Professor and Computer Science and Systems Analyst, Computation Center.  Major Interests: Instructional Use of Computers, Programming Languages, Object-Oriented Programming.
+Internet:  pboysen@iastate.edu
+
+Soma Chaudhuri - Associate Professor.  Major Interests: Theory of Distributed Computing, Parallel Algorithms and Complexity Theory.
+Internet:  chaudhur@cs.iastate.edu
+
+Hui-Hsien Chou  - Assistant Professor of Zoology & Genetics and Computer Science.  Major Interests:  Bioinformatics, Computational Biology, Cellular Automata, Self-organization Phenomena. 
+Internet:  hhchou@iastate.edu
+
+David F. Fernandez-Baca - Professor.  Major Interests: Design and Analysis of Algorithms, Combinatorial Optimization, Computational Biology.
+Internet:  fernande@cs.iastate.edu
+
+Shashi K. Gadia - Associate Professor.  Major Interests: Object-Oriented, Temporal, Spatial and Multilevel Security Databases, Access Methods.
+Internet:  gadia@cs.iastate.edu
+
+Don E. Heller - Adjunct Associate Professor.  Major Interests: Programming and Debugging Support Tools for Distributed Memory Systems, Performance Evaluation and Analysis, Parallel Algorithms.
+Internet:  heller@ameslab.gov
+
+Vasant Honavar - Associate Professor.  Research and Teaching Interests: Artificial Intelligence; Artificial Neural Networks; Autonomous Robots; Automata Induction; Biological Computation; Bioinformatics and Computational Biology; Cognitive Science; Complex Adaptive Systems; Computational Learning Theory; Computational Neuroscience; Data Mining, Knowledge Discovery, and Visualization; Decision Support Systems; Distributed Knowledge Networks; Distributed Databases, Mediators, and Data Warehouses; Evolutionary Computation; Intelligent Agents, Mobile Agents, and Multi-Agent Systems; Intelligent Design and Manufacturing Systems; Internet-Based Information Systems; Knowledge Representation, Automated Inference, and Knowledge-Based Systems; Machine Learning; Machine Perception; Parallel and Distributed Artificial Intelligence.
+Internet: honavar@cs.iastate.edu, http://www.cs.iastate.edu/~honavar/
+
+Jan-Bin Jia - Assistant Professor.  Major Interests: Robotics, computational geometry, artificial intelligence, planning, information requirements and retrieval, geometric modeling, nonlinear control and observation, robot sensing, manipulator kinematics and dynamics. 
+Internet:  jia@cs.iastate.edu
+
+Steven M. LaValle - Assistant Professor of Computer Science and Adjunct Assistant Professor of Electrical Engineering.  Major Interests: Robotics, virtual prototyping, graphical simulation and animation, motion strategy problems, geometric reasoning, computer vision, artificial intelligence, applied optimal control and game theory, computational geometry, computational chemistry and drug design,
+networked mobile robotics.
+Internet: lavalle@cs.iastate.edu; http://janowiec.cs.iastate.edu/~lavalle
+
+Gary T. Leavens - Associate Professor.  Major Interests: Programming and specification language design and semantics, formal methods (program specification and verification), object-oriented programming, functional programming, type theory, distributed programming languages.
+Internet:  leavens@cs.iastate.edu
+
+Jack H. Lutz - Professor.  Major Interests: Computational Complexity, including structure of complexity classes, resource-bounded measure, and probabilistic complexity.  Algorithmic Information and Randomness, including
+computational randomness, Kolmogorov complexity, computational depth, and games and prediction.
+Internet:  lutz@cs.iastate.edu 
+
+Robyn Lutz - Affiliate Assistant Professor. Major Interests: Software safety, fault detection and recovery, requirements engineering, formal methods, software engineering for spacecraft.
+Internet: rlutz@cs.iastate.edu
+
+Leslie L. Miller - Professor and Interim Chair.  Major Interests: Object-Oriented Databases, Organizational Decision Support Systems, Knowledge Management, Computational Biology, Data Warehouses.
+Internet:  lmiller@iastate.edu
+
+Simanta Mitra - Assistant Adjunct Professor.  Major Interests:  Programming Languages, Compilers, Operating Systems, Parallelizing Tools, Embedded and Real-Time Computing, Performance Evaluation of Computer Systems, and Software Engineering.
+Internet:  smitra@cs.iastate.edu
+
+G.M. Prabhu - Associate Professor. Major Interests:  Parallel Processing, Computer Architecture, Business Process Modeling and Analysis.
+Internet:  prabhu@cs.iastate.edu 
+
+Giora Slutzki - Professor.  Major Interests: Algorithms and Complexity, Game Theory and Computational Economics, Formal Languages, Automata Theory.
+Internet:  slutzki@cs.iastate.edu
+
+Wallapak Tavanapong, Assistant Professor of Computer Science.  Major Interests: Multimedia Systems, Parallel and Distributed Databases, Multimedia and Communications, Distributed Systems, Web Performance, Semi-Structure Data.
+Internet:  tavanapo@cs.iastate.edu
+
+Johnny S. K. Wong - Associate Professor.  Major Interests: Broadband Integrated Services Digital Networks (BISDN), Distributed Computing Environment (DCE), Distributed Operating Systems, Intelligent Mobile Agents, Intrusion Detection, Communication Protocols, Object-Oriented Systems and Databases, Common Object Request Broker Architecture (CORBA), Hypermedia Systems, Multimedia Information Systems.
+Internet:  wong@cs.iastate.edu
+

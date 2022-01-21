@@ -1,0 +1,28 @@
+<!--#include virtual="../includes/topbar.html"-->
+<!-- 2ND COLUMN. INSERT COPY -->
+
+<td id="b2">
+<div class="maintext">
+<h2>Hridesh Rajan</h2>
+<table width="90%">
+<!--#include virtual="hrajan.htm"-->
+</table>
+<h2>Kian Pokorny</h2>
+<table width="90%">
+<!--#include virtual="kpokorny.htm"-->
+</table>
+<h2>Tyler Sondag</h2>
+<table width="90%">
+<!--#include virtual="tsondag.htm"-->
+</table>
+<!--
+<h2 class="bar">Past Students</h2>
+<table "width=100%">
+</table> 
+-->
+</div>
+
+
+</td>
+
+<!--#include virtual="../includes/bottombar.html"-->

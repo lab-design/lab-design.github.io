@@ -1,0 +1,11 @@
+{% assign paper = include.paper %}
+
+<a href="{{ paper.url }}">
+  <div class="card home-page-highlighted-paper-card">
+    <div class="card-block">
+      <h5 class="card-title">{{ paper.title }}</h5>
+      <p class="card-subtitle text-muted">{{ paper.short_name }}</p>
+      <p class="card-text">{{ paper.abstract | truncatewords: 25 }}</p>
+    </div>
+  </div>
+</a>

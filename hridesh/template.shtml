@@ -1,0 +1,13 @@
+<!--#include virtual="includes/home/header.html"-->  
+
+<!--Title Begin-->
+<title> The title of this template page will be here. </title>
+<!--Title End-->
+
+<!--#include virtual="includes/home/menu.html"-->  
+
+<!--Contents Begin-->
+
+<!--Contents End-->
+
+<!--#include virtual="includes/home/copyright.html"-->

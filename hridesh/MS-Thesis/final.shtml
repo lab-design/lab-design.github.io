@@ -1,0 +1,119 @@
+<!--#include virtual="../includes/template/headTop.htm"-->  
+
+<!-- INSERT TITLE -->
+<title>Com S 541: Details About Final Project Reports</title>
+<base href="http://www.cs.iastate.edu/~cs541/" />
+<!--#include virtual="../includes/template/headBottom.htm"-->  
+
+<!-- Text for the actual webpage start -->
+
+<p class="heading">Final Report: Due Dec 11, 2008 at 12:40pm CST</p>
+
+<p><b>Format for Final Project Report:</b>
+Final project report must be prepared using LaTeX.
+We require you to use LaTeX as the operational
+semantics, type systems, and meta-theory can be
+easily typeset using this typesetting system.
+We provide a template for preparing these
+deliverables <a href="project/files/template-541.tar.gz">here</a>.
+</p>
+
+<p><b>Submission Instructions:</b>
+ project reports must be submitted via e-mail to
+<a href="mailto:hridesh@cs.iastate.edu?subject=[Fall-08-541-Final-Project-Report]
+&body=Please find attached my proposal for Com S 541 final project report as 
+[MyLastName]-541-final-report.tar.gz.">hridesh@cs.iastate.edu</a>.
+If you click the link above the subject will be filled automatically,
+otherwise please ensure that your subject is exactly
+&quot;[Fall-08-541-Final-Project-Report]&quot; (without the quotes).
+<UL>
+<LI>For preparing your project proposal you would have already
+downloaded the template for project report from
+<a href="project/files/template-541.tar.gz">here</a>.
+For preparing your final project report, please
+extend the LaTeX project that you already have.
+</LI>
+<LI>
+Modify the relevant tex file to contain the description
+of your final report. Please <U>DO NOT FORGET</U>
+to add relevant citations to the bibliography file
+refs.bib. </LI>
+<LI>Compile the files using the Makefile included
+in the template distribution and <U>ensure that there are
+no LaTeX errors in compilation</U>.</LI>
+<LI>
+Before creating an archive remove LaTeX intermediate files
+using &quot;make clean&quot;.
+</LI>
+<LI>
+Create an archive of your LaTeX project and name it
+[LastName]-541-final-report.tar.gz, e.g. rajan-541-final-report.tar.gz</LI>
+<LI>
+Please attach this archive file with your submission e-mail.
+</LI>
+</UL>
+</p>
+
+
+<p class="heading">How to write your submission and how it will be graded?</p>
+
+<p>Following are important parts of your final project report.
+
+<UL>
+<LI><b>Static Semantics aka. Type System (5%):</b> In 
+       this section, you should describe the type attributes
+       for your type systems, give type checking rules for 
+       your language design including definitions of all auxiliary 
+       functions used.
+       The rules in the static semantics should be 
+       described formally as in the form of an inference 
+       rule and informally.</LI>
+
+<LI><b>Proof of Type Soundness (2.5%):</b> In this section, you should 
+       prove the soundness of your type system.
+       The proof of soundness of your type system should
+       use the standard preservation and progress
+       argument originally made by Wright and Felleisen
+       and as discussed in the class.</LI>
+
+<LI><b>Proof of Project-specific Properties (5%):</b>
+       In this section, you should prove that your proposed 
+       language design has the property which is helpful 
+       towards solving the problem that you set out to 
+       solve in your project.
+       </LI>     
+       
+<LI><b>Future Work (Extra credit):</b>
+       In this section, you should discuss the problems in 
+       the project that remain to be solved. 
+       An ideal description would contain an itemized list of
+       tasks that can be undertaken in future to bring your 
+       project to a successful conclusions or to further 
+       enhance the properties of your language design.
+       It would also include a discussion of challenges that 
+       you foresee going forward in your project and
+       reflect on approaches to address these challenges.</LI>
+
+<LI><b>Addressing Feedback on Interim Project Report (varies): </b>
+       You should have received feedback on your
+       interim project reports. 
+       In some cases, the feedback were suggestions
+       for improvements and no points were deducted.
+       In other cases, points were deducted due to the fact 
+       that the interim project report did not meet the requirements. 
+       Please feel free to address those issues in the final 
+       report to get some of those points back.				   
+       However, please be sure to submit the printed version
+       of your interim project report with instructor's comments
+       along with the final report.</LI>
+</UL>
+</p>
+
+
+
+<!-- Text for the actual webpage end -->
+
+<!--#include virtual="../includes/template/footer.htm"--> 
+<!-- Text for the actual webpage end -->
+
+<!--#include virtual="../includes/template/footer.htm"--> 

@@ -1,0 +1,65 @@
+<!--#include virtual="../includes/top.html"-->
+<title>Panini Programming Guide : Overview</title>
+<style type="text/css">
+.col2-toc h2 {
+	margin: 0 0 10px;
+}
+</style>
+<!--<meta name="description"
+	content="The Panini Programming Guide helps introduce users to 
+			the features and syntax of the Panini Programming Language.
+  			Panini is a capsule-oriented programming language whose goals are 
+  			to ease development of correct, scalable, and portable software 
+  			for multicore and manycore, platforms. 
+  			Panini strives to reconcile modularity and concurrency goals 
+  			in software development." />
+<meta name="keywords" content="panini, programming, guide, introduction, tutorial, 
+	panini, capsule, capsules, capsule-oriented, 
+	capsule-oriented programming, better modularity better concurrency,
+	concurrency, modularity, events, types, modules, implicit concurrency, 
+	sequential consistency, data race freedom due to shared data, ease of use,
+	quantified, event, types, Hridesh Rajan, Yuheng Long, 
+	Rex Fernando, Eric Lin, synergy between modularity and concurrency,
+	determinstic semantics, data race freedom, deadlock freedom,
+	multicore, multi-core, manycore, many-core, heterogeneous, 
+	performance-asymmetric, platform portability, download, compiler, 
+	download panini, concurrent, patterns, open effects, guarded effects,
+	explicit concurrency, pitfalls, data races, race conditions, deadlock 
+	avoidance, race freedom, open effects, deterministic semantics, modules, actors" />
+
+-->
+<!-- PAGE SPECIFIC STYLING -->
+
+<!--#include virtual="../includes/header.html"-->
+
+<h1>The Panini Programming Guide</h1>
+<script type="text/javascript">
+copyright=new Date()
+fullYear=copyright.getFullYear();
+document.write("<h5>Copyright &copy; 2006-" + fullYear + ", Iowa State University of Science and Technology. All rights reserved.</h5>")
+</script>
+
+<!-- TABLE OF CONTENTS -->
+<!--#include virtual="./toc-manual.html"-->
+
+<div class="col2-content">
+<h2><a name="overview">Overview</a></h2>
+<!--<b><p>UNDER CONSTRUCTION FOR 0.9.2: Check back after 08/02/2013.</p></b> -->
+<p>This programming guide describes the motivation behind Panini
+language, the details about constructs and features in Panini and
+finally installing and running panini.</p>
+<p>If you are completely new to the Panini programming language, you may
+want to read our guide on
+<a href="docs/starting.shtml">how to get started</a> or 
+look at one of our examples.
+</p>
+
+<!-- PAGE UPDATE -->
+<p id="update">Page last modified on $Date: 2013/08/03 14:08:35 $</p>
+
+<!-- GUIDE NAVIGATION -->
+<div class="page-nav"><!-- <a href="#">&lt; PREVIOUS</a> --> <a
+	href="docs/index.shtml#pgtop">&#94; RETURN TO TOP</a> <a
+	href="docs/starting.shtml">NEXT &gt;</a></div>
+</div>
+<!--#include virtual="../includes/bottom.html"-->

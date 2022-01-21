@@ -1,0 +1,97 @@
+<!--#include virtual="../../includes/topbar.html"-->
+<!-- 2ND COLUMN. INSERT COPY -->
+
+<td id="b3" rowspan="2">
+<div class="maintext">
+
+
+<!-- INSERT TITLE OF THE PAPER BELOW -->
+<h2> 
+Monitoring the Monitor: An Approach Towards Trustworthiness in Service Oriented Architecture
+</h2>
+<!-- INSERT AUTHOR NAME AS IT APPEARS BELOW -->
+<h2>
+By Mahantesh Hosamani, Harish Narayanappa, and Hridesh Rajan 
+</h2>
+
+<!-- INSERT ABSTRACT OF THE PAPER BELOW -->
+<h2 class="bar">Abstract</h2>
+<p>
+The key notion in service-oriented architecture is decoupling
+clients and providers of a service based on an abstract
+service description, which is used by the service broker to
+point clients to a suitable service implementation. A client
+then sends service requests directly to the service implementation.
+A problem with the current architecture is that it does not provide
+trustworthy means for clients to specify, service brokers to verify, and
+service implementations to prove that certain desired
+non-functional properties are satisfied during service request
+processing. An example of such non-functional property is
+access and persistence restrictions on the data received as part
+of the service requests.
+In this work, we propose an extension of the service-oriented
+architecture that provides these facilities. We also discuss a
+prototype implementation of this architecture and report
+preliminary results that demonstrate the potential practical
+value of the proposed architecture in real-world software
+applications.
+
+</p>
+
+<!-- INSERT BIBLIOGRAPHIC INFORMATION BELOW, DON'T FORGET to END EACH LINE
+  WITH <BR> -->
+
+<h2 class="bar">Bibliographic Information</h2>
+<p>
+@inproceedings{hosamani07monitor,<BR>
+ author = {Mahantesh Hosamani and Harish Narayanappa and Hridesh Rajan},<BR>
+ title = {Monitoring the Monitor: An Approach Towards Trustworthiness in Service Oriented Architecture},<BR>
+ booktitle = {2nd International Workshop on Service Oriented Software Engineering (IW-SOSWE 2007)},<BR>
+ location = {Dubronovik, Croatia},<BR>
+ month = {September},<BR>
+ year = {2007},<BR>
+ }<BR>
+</p>
+<!--- INSERT LINK TO THE FULL PAPER BELOW AND ADD THE PAPER TO THE CURRENT 
+  DIRECTORY -->
+<p>Full Paper: <a href="main.pdf">PDF</a></p>
+
+<hr>
+
+<p>
+Previous version appeared as technical Report 07-07,
+Computer Science, Iowa State University,
+June 4, 2007.
+[<a href="http://archives.cs.iastate.edu/documents/disk0/00/00/05/42/00000542-00/main.pdf">PDF Format</a>]
+</p>
+
+</div>
+
+</td>
+
+<!--#include virtual="../../includes/bottombar.html"-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
