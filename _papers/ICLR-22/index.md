@@ -17,18 +17,18 @@ bib: |
       it generalizes the recursive prediction rules of many commonly used
       neural network architectures. Its prediction rule is provided implicitly
       based on the solution of an equilibrium equation. Although many recent
-      studies have experimentally demonstrates its superior performances, the 
+      studies have experimentally demonstrates its superior performances, the
       theoretical understanding of implicit neural networks is limited. In
       general, the equilibrium equation may not be well-posed during the training.
       As a result, there is no guarantee that a vanilla (stochastic) gradient
       descent (SGD) training nonlinear implicit neural networks can converge.
       This paper fills the gap by analyzing the gradient flow of Rectified Linear
       Unit (ReLU) activated implicit neural networks. For an m-width implicit
-      neural net- work with ReLU activation and n training samples, we show that
+      neural network with ReLU activation and n training samples, we show that
       a randomly initialized gradient descent converges to a global minimum at a
       linear rate for the square loss function if the implicit neural network is
       over-parameterized. It is worth noting that, unlike existing works on the
-      convergence of (S)GD on finite- layer over-parameterized neural networks,
+      convergence of (S)GD on finite layer over-parameterized neural networks,
       our convergence results hold for implicit neural networks, where the
       number of layers is infinite.
     }
