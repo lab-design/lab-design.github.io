@@ -31,6 +31,12 @@
   site: https://www.cs.iastate.edu/people/shibbir-ahmed
   img: sahmed.jpg
 
+- name: Muhammad Arshad
+  status: PhD
+  email: arbab@iastate.edu
+  site: https://www.cs.iastate.edu/people/arbab
+  img: arbab.jpg
+
 - name: Fraol Batole
   status: PhD
   email: fraol@iastate.edu
@@ -72,6 +78,12 @@
   email: rangeet@iastate.edu
   site: https://rangeetpan.github.io
   img: pan.jpg
+
+- name: Deepak-George Thomas
+  status: PhD
+  email: dgthomas@iastate.edu
+  site: https://www.cs.iastate.edu/deepak
+  img: deepak.jpg
 
 - name: Mojdeh Saadati
   status: PhD
