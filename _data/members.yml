@@ -14,7 +14,7 @@
 - name: Breno Dantas Cruz
   status: Postdoctoral Fellow
   email: bdantasc@iastate.edu
-  site: https://people.cs.vt.edu/bdantasc/
+  site: https://www.cs.iastate.edu/people/breno-dantas-cruz
   img: breno.jpg
 
 - name: Ali Ghanbari
@@ -100,12 +100,6 @@
   img: ruchira.jpg
 
 # Bachelor's Students:
-
-- name: Ian Gluesing
-  status: BS
-  email: ianmg@iastate.edu
-  site: https://www.linkedin.com/in/iangluesing
-  img: ian.jpg
 
 - name: Huaiyao Ma
   status: BS
