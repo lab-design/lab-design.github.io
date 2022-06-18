@@ -122,6 +122,12 @@
 
 # B.S. Graduates
 
+- name: Huaiyao Ma
+  status: BS
+  email: huaiyao@iastate.edu
+  site: https://www.info.iastate.edu/individuals/info/294581/Ma-Huaiyao
+  img: huaiyao.jpg
+
 - name: Nathaniel M Wernimont
   status: B.S. Spring'20
   email: natew@iastate.edu
