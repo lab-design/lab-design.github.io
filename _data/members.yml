@@ -42,13 +42,7 @@
   email: fraol@iastate.edu
   site: https://fraolbatole.github.io/
   img: fraol.jpg
-
-- name: Sumon Biswas
-  status: PhD
-  email: sumon@iastate.edu
-  site: https://sumonbis.github.io/
-  img: sbiswas.jpg
-
+  
 - name: Usman Gohar
   status: PhD
   email: ugohar@iastate.edu
@@ -73,11 +67,11 @@
   site: https://www.cs.iastate.edu/gnguyen
   img: giang.jpeg
 
-- name: Rangeet Pan
+- name: Astha Singh
   status: PhD
-  email: rangeet@iastate.edu
-  site: https://rangeetpan.github.io
-  img: pan.jpg
+  email: asthas@iastate.edu
+  site: https://sites.google.com/view/astha-singh/home
+  img: astha.jpg
 
 - name: Deepak-George Thomas
   status: PhD

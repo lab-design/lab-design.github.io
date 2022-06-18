@@ -1,16 +1,34 @@
 # Postdoctoral and PhD Graduates:
 
-- name: Dr. Hoan A. Nguyen
-  status: Postdoctoral Fellow
-  email: hoan@iastate.edu
-  site: https://sites.google.com/site/nguyenanhhoan/home
-  img: hnguyen.jpg
+- name: Dr. Sumon Biswas
+  status: PhD Fall'22
+  email: sumon@iastate.edu
+  site: https://sumonbis.github.io/
+  img: sbiswas.jpg
+
+- name: Dr. Rangeet Pan
+  status: PhD Fall'22
+  email: rangeet@iastate.edu
+  site: https://rangeetpan.github.io
+  img: pan.jpg
+
+- name: Dr. Samantha Khairunnesa
+  status: PhD Summer'21, MS Fall'17
+  email: sammy@iastate.edu
+  site: https://www.linkedin.com/in/samantha-syeda
+  img: skhairunnesa.jpg
 
 - name: Dr. Hamid Bagheri
   status: PhD Spring'21
   email: hbagheri@iastate.edu
   site: http://www.cs.iastate.edu/people/hamid-bagheri
   img: hbagheri.jpg
+
+- name: Dr. Hoan A. Nguyen
+  status: Postdoctoral Fellow
+  email: hoan@iastate.edu
+  site: https://sites.google.com/site/nguyenanhhoan/home
+  img: hnguyen.jpg
 
 - name: Dr. Zhen Yu
   status: Postdoctoral Fellow
@@ -23,12 +41,6 @@
   netid: mislam
   site: https://scholar.google.com/citations?user=HdY_VO4AAAAJ&hl=en
   img: jislam.jpg
-  
-- name: Dr. Samantha Khairunnesa
-  status: PhD Summer'21, MS Fall'17
-  email: sammy@iastate.edu
-  site: https://www.linkedin.com/in/samantha-syeda
-  img: skhairunnesa.jpg
 
 - name: Dr. Ganesha Upadhyaya
   status: PhD Fall'17, MS Spring'15
