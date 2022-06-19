@@ -1,7 +1,19 @@
 # Postdoctoral and PhD Graduates:
 
+- name: Dr. Hoan A. Nguyen
+  status: Postdoctoral Fellow
+  email: hoan@iastate.edu
+  site: https://sites.google.com/site/nguyenanhhoan/home
+  img: hnguyen.jpg
+
+- name: Dr. Zhen Yu
+  status: Postdoctoral Fellow
+  email: yuzhen3301@gmail.com
+  site: http://design.cs.iastate.edu
+  img: zyu.jpeg
+
 - name: Dr. Sumon Biswas
-  status: PhD Fall'22
+  status: PhD Fall'22, MS Spring'21
   email: sumon@iastate.edu
   site: https://sumonbis.github.io/
   img: sbiswas.jpg
@@ -23,18 +35,6 @@
   email: hbagheri@iastate.edu
   site: http://www.cs.iastate.edu/people/hamid-bagheri
   img: hbagheri.jpg
-
-- name: Dr. Hoan A. Nguyen
-  status: Postdoctoral Fellow
-  email: hoan@iastate.edu
-  site: https://sites.google.com/site/nguyenanhhoan/home
-  img: hnguyen.jpg
-
-- name: Dr. Zhen Yu
-  status: Postdoctoral Fellow
-  email: yuzhen3301@gmail.com
-  site: http://design.cs.iastate.edu
-  img: zyu.jpeg
 
 - name: Dr. Md. Johirul Islam
   status: PhD Summer'20, MS Fall'19
@@ -135,7 +135,7 @@
 # B.S. Graduates
 
 - name: Huaiyao Ma
-  status: BS
+  status: B.S. Fall'22
   email: huaiyao@iastate.edu
   site: https://www.info.iastate.edu/individuals/info/294581/Ma-Huaiyao
   img: huaiyao.jpg
