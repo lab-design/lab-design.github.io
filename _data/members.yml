@@ -42,7 +42,7 @@
   email: fraol@iastate.edu
   site: https://fraolbatole.github.io/
   img: fraol.jpg
-  
+
 - name: Usman Gohar
   status: PhD
   email: ugohar@iastate.edu
@@ -71,13 +71,13 @@
   status: PhD
   email: asthas@iastate.edu
   site: https://sites.google.com/view/astha-singh/home
-  img: astha.jpg
+  img: astha.png
 
 - name: Deepak-George Thomas
   status: PhD
   email: dgthomas@iastate.edu
   site: https://www.cs.iastate.edu/deepak
-  img: deepak.png
+  img: deepak.jpg
 
 - name: Mohammad Wardat
   status: PhD
