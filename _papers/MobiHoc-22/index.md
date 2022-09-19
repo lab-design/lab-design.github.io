@@ -9,7 +9,7 @@ bib: |
         title = {On Scheduling Ring-All-Reduce Learning Jobs in Multi-Tenan GPU Clusters with Communication Contention},  
         booktitle = {Proc. ACM MobiHoc},
         location = {Seoul, South Korea},
-        month = {Oct.},
+        month = {October},
         year = {2022},
         entrysubtype = {conference},
         abstract = {
@@ -17,7 +17,7 @@ bib: |
         }
     }
 kind: conference
-download_link: Communication_Contention_MobiHoc22.pdf
+download_link: MobiHoc22.pdf
 publication_year: 2022
 tags:
   - boa
