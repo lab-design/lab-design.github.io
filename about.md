@@ -19,4 +19,4 @@ infrastructure for mining software repositories, and
 [**Ptolemy**](http://ptolemy.cs.iastate.edu), a language that strives to balance
 expressiveness and modular reasoning for crosscutting concerns.
 
-Our research meetings are in 216 Atanasoff Hall on Wednesdays from 9am-1pm.
+Our research meetings are in 216 Atanasoff Hall on Tuesday and Friday from 3:00 pm - 5:30 pm.

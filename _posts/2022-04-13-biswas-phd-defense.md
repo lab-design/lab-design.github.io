@@ -1,0 +1,20 @@
+---
+title: Sumon Biswas defends Ph.D. thesis
+links:
+- {title: Event Link, link: "https://www.cs.iastate.edu/phd-final-oral-exam-sumon-biswas" }
+---
+
+
+
+Sumon Biswas has successfully defended his Ph.D. thesis entitled
+"*Understanding and Reasoning Fairness in Machine Learning Pipelines*". His research unravels several software engineering techniques towards ethical AI, which has been an area of concern in the recent past.
+The abstract of the thesis is as follows:
+
+<EM>
+``Machine learning (ML) algorithms are increasingly being used in critical decision making software such as criminal sentencing, hiring employees, approving bank loans, college admission systems, which affect human lives directly. Algorithmic fairness of these ML based software has become a major concern in the recent past. Many incidents have been reported where ML models discriminated people based on their protected attributes e.g., race, sex, age, religious belief, etc. Research has been conducted to test and mitigate unfairness in ML models. However, there is a large gap between the theory of ML fairness and how the property can be ensured in practice. Similar to analyzing traditional software defects, fairness has to be engineered in ML software to minimize and eventually guarantee bias-free decisions. In this dissertation, we are the first to introduce compositional reasoning of group fairness in ML pipeline and propose individual fairness verification technique for neural networks. Towards that goal, first, we conducted a large-scale empirical study to understand unfairness issues in open-source ML models. A number of definitions of algorithmic fairness have been proposed in the literature and many bias mitigation techniques have been proposed. Group fairness property ensures that the protected groups (e.g., male-vs-female, young-vs-old, etc.) get similar treatment in the prediction. On the other hand, individual fairness states that any two similar individuals should be predicted similarly irrespective of their protected attributes. Often an accuracy-fairness tradeoff is experienced when a mitigation algorithm is applied. We evaluated fairness of models collected from Kaggle and investigated their root causes, compared the performance of mitigation algorithms and their impacts on accuracy.
+
+For ML tasks, it is a common practice to build a pipeline that includes an ordered set of stages from acquisition, to preprocessing, to modeling, and so on. However, no research has been conducted to measure fairness of a specific stage or data transformer operators in the pipeline. The existing metrics measure the fairness of the pipeline holistically. We proposed causal reasoning in ML pipeline to measure and instrument fairness of data preprocessing stages. We leveraged existing metrics to define component-specific fairness and localize fairness issues in the pipeline. We also showed how the local fairness of a preprocessing stage composes in the global fairness of the pipeline. In addition, we used the fairness composition to choose appropriate downstream transformer that mitigates unfairness. Although we could identify and localize unfairness in the ML model, providing formal guarantees of fairness is challenging because of the complex decision-making process. Therefore, we proposed Fairify, an approach to verify individual fairness property in neural networks (NN). Fairify leverages white-box access and neural pruning to provide certification or counterexample. The key idea is that many neurons in the NN always remain inactive for certain smaller parts of the input domain. So, Fairify applies input partitioning and then prunes the NN for each partition to make them amenable to verification. In this work, we proposed the first SMT-based fairness verification that can answer targeted fairness queries with relaxations as well as provide counterexamples.''</EM>
+
+Biswas's MS theis committee consisted of Hridesh Rajan (major professor), Wei Le, Andrew Miner, Simanta Mitra, and Kevin Liu.
+
+Congratulations, Sumon Biswas!

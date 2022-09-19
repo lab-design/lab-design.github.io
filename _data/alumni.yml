@@ -6,29 +6,41 @@
   site: https://sites.google.com/site/nguyenanhhoan/home
   img: hnguyen.jpg
 
-- name: Hamid Bagheri
-  status: PhD Spring'21
-  email: hbagheri@iastate.edu
-  site: http://www.cs.iastate.edu/people/hamid-bagheri
-  img: hbagheri.jpg
-
 - name: Dr. Zhen Yu
   status: Postdoctoral Fellow
   email: yuzhen3301@gmail.com
   site: http://design.cs.iastate.edu
   img: zyu.jpeg
 
+- name: Dr. Sumon Biswas
+  status: PhD Spring'22, MS Spring'21
+  email: sumon@iastate.edu
+  site: https://sumonbis.github.io/
+  img: sbiswas.jpg
+
+- name: Dr. Rangeet Pan
+  status: PhD Spring'22
+  email: rangeet@iastate.edu
+  site: https://rangeetpan.github.io
+  img: pan.jpg
+
+- name: Dr. Samantha Khairunnesa
+  status: PhD Summer'21, MS Fall'17
+  email: sammy@iastate.edu
+  site: https://www.linkedin.com/in/samantha-syeda
+  img: skhairunnesa.jpg
+
+- name: Dr. Hamid Bagheri
+  status: PhD Spring'21
+  email: hbagheri@iastate.edu
+  site: http://www.cs.iastate.edu/people/hamid-bagheri
+  img: hbagheri.jpg
+
 - name: Dr. Md. Johirul Islam
   status: PhD Summer'20, MS Fall'19
   netid: mislam
   site: https://scholar.google.com/citations?user=HdY_VO4AAAAJ&hl=en
   img: jislam.jpg
-  
-- name: Samantha Khairunnesa
-  status: PhD Summer'21, MS Fall'17
-  email: sammy@iastate.edu
-  site: https://www.linkedin.com/in/samantha-syeda
-  img: skhairunnesa.jpg
 
 - name: Dr. Ganesha Upadhyaya
   status: PhD Fall'17, MS Spring'15
@@ -121,6 +133,12 @@
 
 
 # B.S. Graduates
+
+- name: Huaiyao Ma
+  status: B.S. Fall'22
+  email: huaiyao@iastate.edu
+  site: https://www.info.iastate.edu/individuals/info/294581/Ma-Huaiyao
+  img: huaiyao.jpg
 
 - name: Nathaniel M Wernimont
   status: B.S. Spring'20
