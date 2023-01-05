@@ -5,7 +5,7 @@ short_name: ICSE '23
 title: "Decomposing a Recurrent Neural Network into Modules for Enabling Reusability and Replacement"
 bib: |
   @inproceedings{imtiaz23rnn,
-    author = {Sayem Mohammad Imtiaz, Fraol Batole, Astha Singh, Rangeet Pan, Breno Dantas Cruz, and Hridesh Rajan},
+    author = {Sayem Mohammad Imtiaz and Fraol Batole and Astha Singh and Rangeet Pan and Breno Dantas Cruz and Hridesh Rajan},
     title = {Decomposing a Recurrent Neural Network into Modules for Enabling Reusability and Replacement},
     booktitle = {ICSE'23: The 45th International Conference on Software Engineering},
     location = {Melbourne, Australia},
