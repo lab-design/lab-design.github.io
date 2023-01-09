@@ -22,6 +22,49 @@ layout: page
 This is crazy. ToC currently doesn't strip out the formatting on the header, so the regular header would link to the website rather than the location on the page. What you see above is a workaround for that.
 {% endcomment %}
 
+
+{% include projects_page.html name="Boa" link="http://boa.cs.iastate.edu" %}
+
+[Boa](http://boa.cs.iastate.edu) project is applying big data analytics toward
+improving software engineering. It is developing a domain-specific language and
+its infrastructure whose goal is to significantly ease the experimental cost of
+mining ultra-large-scale open source repositories. Boa is a research
+infrastructure that consists of a domain-specific language, its compiler and
+data updating tools, terabytes (and growing) of raw data from open source
+repositories that contains hundreds of thousands of open source projects, a
+backend based on map-reduce to effectively analyze this dataset, a compute
+cluster, and a web-based frontend for writing analysis programs. Following
+research papers document progress on this project:
+
+<ul>
+{% for paper in papers reversed %}{% if paper.tags contains 'boa' and paper.kind != 'technical_report' %}
+<li><a href="{{ paper.url }}">{{ paper.short_name }}</a></li>
+{% endif %}{% endfor %}
+</ul>
+
+Boa project has been supported in part by the following grants.
+
+- US National Science Foundation, CI-EN: Boa: Enhancing Infrastructure for
+  Studying Software and its Evolution at a Large Scale. PI: Hridesh Rajan and
+  Co-I: Tien Nguyen, Robert Dyer (2015-2018), Total award amount: $1,559,806,
+  Links: [ISU](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1513263) and
+  [BGSU](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1512947).
+
+- US National Science Foundation, SHF: Large:Collaborative Research: Inferring
+  Software Specifications from Open Source Repositories by Leveraging Data and
+  Collective Community Expertise. PI: Hridesh Rajan and Co-I: Robert Dyer, Tien
+  Nguyen, Gary T. Leavens, and Vasant Honavar (2015-2018), Total award amount:
+  $1,604,843, Links: [ISU](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1518897),
+  [BGSU](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1518776),
+  [UCF](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1518789), and
+  [PSU](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1518732).
+
+- US National Science Foundation, [EAGER: Boa: A Community Research Infrastructure for Mining Software Repositories](https://www.nsf.gov/awardsearch/showAward.do?AwardNumber=1349153).
+  PI: Hridesh Rajan and Co-I: Tien Nguyen (2013-2015).
+
+[More information about the Boa project.](http://boa.cs.iastate.edu)
+
+
 {% include projects_page.html name="Panini" link="panini/" %}
 
 The Panini project is developing the capsule-oriented programming model.
@@ -71,47 +114,6 @@ Foundation for supporting our work under following grants:
 
 [More information about the Panini project](http://www.paninij.org)
 
-
-{% include projects_page.html name="Boa" link="http://boa.cs.iastate.edu" %}
-
-[Boa](http://boa.cs.iastate.edu) project is applying big data analytics toward
-improving software engineering. It is developing a domain-specific language and
-its infrastructure whose goal is to significantly ease the experimental cost of
-mining ultra-large-scale open source repositories. Boa is a research
-infrastructure that consists of a domain-specific language, its compiler and
-data updating tools, terabytes (and growing) of raw data from open source
-repositories that contains hundreds of thousands of open source projects, a
-backend based on map-reduce to effectively analyze this dataset, a compute
-cluster, and a web-based frontend for writing analysis programs. Following
-research papers document progress on this project:
-
-<ul>
-{% for paper in papers reversed %}{% if paper.tags contains 'boa' and paper.kind != 'technical_report' %}
-<li><a href="{{ paper.url }}">{{ paper.short_name }}</a></li>
-{% endif %}{% endfor %}
-</ul>
-
-Boa project has been supported in part by the following grants.
-
-- US National Science Foundation, CI-EN: Boa: Enhancing Infrastructure for
-  Studying Software and its Evolution at a Large Scale. PI: Hridesh Rajan and
-  Co-I: Tien Nguyen, Robert Dyer (2015-2018), Total award amount: $1,559,806,
-  Links: [ISU](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1513263) and
-  [BGSU](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1512947).
-
-- US National Science Foundation, SHF: Large:Collaborative Research: Inferring
-  Software Specifications from Open Source Repositories by Leveraging Data and
-  Collective Community Expertise. PI: Hridesh Rajan and Co-I: Robert Dyer, Tien
-  Nguyen, Gary T. Leavens, and Vasant Honavar (2015-2018), Total award amount:
-  $1,604,843, Links: [ISU](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1518897),
-  [BGSU](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1518776),
-  [UCF](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1518789), and
-  [PSU](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1518732).
-
-- US National Science Foundation, [EAGER: Boa: A Community Research Infrastructure for Mining Software Repositories](https://www.nsf.gov/awardsearch/showAward.do?AwardNumber=1349153).
-  PI: Hridesh Rajan and Co-I: Tien Nguyen (2013-2015).
-
-[More information about the Boa project.](http://boa.cs.iastate.edu)
 
 
 {% include projects_page.html name="Ptolemy" link="ptolemy/" %}
