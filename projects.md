@@ -23,7 +23,7 @@ This is crazy. ToC currently doesn't strip out the formatting on the header, so 
 {% endcomment %}
 
 
-{% include projects_page.html name="Modular Deep Learning" link="http://boa.cs.iastate.edu" %}
+{% include projects_page.html name="Modular Deep Learning" link="papers/ESEC-FSE-20b/" %}
 
 [Modular Deep Learning](http://boa.cs.iastate.edu) project is studying a class of 
 machine learning algorithms known as deep learning that has received much attention 
@@ -90,7 +90,7 @@ Modular Deep Learning project has been supported in part by the following grants
   (2022-2025), Total award amount: $580,000,
   Links: [ISU](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2223812).
 
-[More information about the Modular Deep Learning project.](http://boa.cs.iastate.edu)
+[More information about the Modular Deep Learning project.](papers/ESEC-FSE-20b/)
 
 
 
@@ -114,6 +114,13 @@ research papers document progress on this project:
 </ul>
 
 Boa project has been supported in part by the following grants.
+
+- US National Science Foundation, CCRI: ENS: Boa 2.0: Enhancing Infrastructure for
+  Studying Software and its Evolution at a Large Scale. PI: Hridesh Rajan and
+  Co-I: Tien Nguyen, Brian Nosek (2021-2024), Total award amount: $1,559,806,
+  Links: [ISU](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2120448), 
+  [UT Dallas](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2120386), and
+  [COS](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2120345).
 
 - US National Science Foundation, CI-EN: Boa: Enhancing Infrastructure for
   Studying Software and its Evolution at a Large Scale. PI: Hridesh Rajan and
