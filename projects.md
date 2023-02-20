@@ -23,6 +23,7 @@ This is crazy. ToC currently doesn't strip out the formatting on the header, so 
 {% endcomment %}
 
 
+
 {% include projects_page.html name="Modular Deep Learning" link="papers/ESEC-FSE-20b/" %}
 
 [Modular Deep Learning](http://boa.cs.iastate.edu) project is studying a class of 
@@ -194,6 +195,10 @@ Foundation for supporting our work under following grants:
 
 
 
+## Past Research Projects
+{: .research-header}
+
+
 {% include projects_page.html name="Ptolemy" link="ptolemy/" %}
 
 A software is created to satisfy user needs (also called concerns). These
@@ -231,9 +236,6 @@ PI: Hridesh Rajan (2010 - 2013).
 [More information about the Ptolemy project](http://ptolemy.cs.iastate.edu).
 
 
-
-## Past Research Projects
-{: .research-header}
 
 {% include projects_page.html name="Eos" link="eos/" %}
 
