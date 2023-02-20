@@ -20,5 +20,5 @@ kind: conference
 download_link: rnn.pdf
 publication_year: 2023
 tags:
-  - boa
+  - mdl
 ---

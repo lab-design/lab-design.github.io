@@ -23,6 +23,77 @@ This is crazy. ToC currently doesn't strip out the formatting on the header, so 
 {% endcomment %}
 
 
+{% include projects_page.html name="Modular Deep Learning" link="http://boa.cs.iastate.edu" %}
+
+[Modular Deep Learning](http://boa.cs.iastate.edu) project is studying a class of 
+machine learning algorithms known as deep learning that has received much attention 
+in academia and industry. 
+Deep learning has a large number of important societal applications, from self-driving 
+cars to question-answering systems such as Siri and Alexa. 
+A deep learning algorithm uses multiple layers of transformation functions to convert 
+inputs to outputs, each layer learning higher-level of abstractions in the data 
+successively. 
+The availability of large datasets has made it feasible to train deep learning models. 
+Since the layers are organized in the form of a network, such models are also referred 
+to as deep neural networks (DNN). 
+While the jury is still out on the impact of deep learning on the overall understanding 
+of software's behavior, a significant uptick in its usage and applications in wide-ranging 
+areas and safety-critical systems, e.g., autonomous driving, aviation system, 
+medical analysis, etc., combine to warrant research on software engineering practices 
+in the presence of deep learning. 
+One challenge is to enable the reuse and replacement of the parts of a DNN that has 
+the potential to make DNN development more reliable. 
+This project is investigating a comprehensive approach to systematically investigate the 
+decomposition of deep neural networks into modules to enable reuse, replacement, 
+and independent evolution of those modules. 
+A module is an independent part of a software system that can be tested, validated, 
+or utilized without a major change to the rest of the system. 
+Allowing the reuse of DNN modules is expected to reduce energy- and data-intensive 
+training efforts to construct DNN models. Allowing replacement is expected to help 
+replace faulty functionality in DNN models without needing costly retraining steps.
+
+Our preliminary work has shown that it is possible to decompose fully connected neural 
+networks and CNN models into modules and conceptualize the notion of modules. 
+The main goals of this project are to further expand this decomposition approach 
+along three dimensions: (1) extension to different classes of DNN models, 
+(2) gaining a better understanding of the decomposition criteria, and 
+(3) understanding the impact of decomposition on behavior of the DNN. 
+
+The project is expected to broadly impact society by informing the science and practice 
+of deep learning. 
+A serious problem facing the current software development workforce is that deep 
+learning is widely utilized in our software systems, but scientists and practitioners 
+do not yet have a clear handle on critical problems such as explainability of DNN models, 
+DNN reuse, replacement, independent testing, and independent development. 
+There was no apparent need to investigate the notions of modularity as neural network 
+models trained before the deep learning era were mostly small, trained on small datasets, 
+and were mostly used as experimental features. 
+The notion of DNN modules developed by this project, if successful, could help make 
+significant advances on a number of open challenges in this area. 
+DNN modules could enable the reuse of already trained DNN modules in another context. 
+Viewing a DNN as a composition of DNN modules instead of a black box could enhance the 
+explainability of a DNN's behavior. 
+This project, if successful, will thus have a large positive impact on the productivity 
+of these programmers, the understandability and maintainability of the DNN models that 
+they deploy, and the scalability and correctness of software systems that they produce. 
+Following research papers document progress on this project:
+
+<ul>
+{% for paper in papers reversed %}{% if paper.tags contains 'mdl' and paper.kind != 'technical_report' %}
+<li><a href="{{ paper.url }}">{{ paper.short_name }}</a></li>
+{% endif %}{% endfor %}
+</ul>
+
+Modular Deep Learning project has been supported in part by the following grants.
+
+- US National Science Foundation, SHF:Small: More Modular Deep Learning. PI: Hridesh Rajan
+  (2022-2025), Total award amount: $580,000,
+  Links: [ISU](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2223812).
+
+[More information about the Modular Deep Learning project.](http://boa.cs.iastate.edu)
+
+
+
 {% include projects_page.html name="Boa" link="http://boa.cs.iastate.edu" %}
 
 [Boa](http://boa.cs.iastate.edu) project is applying big data analytics toward

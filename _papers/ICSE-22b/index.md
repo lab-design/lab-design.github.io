@@ -20,5 +20,5 @@ kind: conference
 download_link: cnnmodularity.pdf
 publication_year: 2022
 tags:
-  - boa
+  - mdl
 ---
