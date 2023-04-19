@@ -93,7 +93,20 @@ Modular Deep Learning project has been supported in part by the following grants
 
 [More information about the Modular Deep Learning project.](papers/ESEC-FSE-20b/)
 
+{% include projects_page.html name="D4 (Dependable Data-Driven Discovery)" link="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1934884&HistoricalAwards=false" %}
 
+[D4](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1934884&HistoricalAwards=false) project will advance the theoretical foundations of data science by fostering foundational research to enable understanding of the risks to the dependability of data-science lifecycles, to formalize the rigorous mathematical basis of the measures of dependability for data-science lifecycles, and to identify mechanisms to create dependable data-science lifecycles. The project defines a risk to be a cause that can lead to failures in data-driven discovery and the processes that plan for, acquire, manage, analyze, and infer from data collectively as the data-science lifecycle. For instance, an inference procedure that is significantly expensive can deliver late information to a human operator facing a deadline (complexity as a risk); if the data-science lifecycle provides a recommendation without an uncertainty measure for the recommendation, a human operator has no means to determine whether to trust the recommendation (uncertainty as a risk). Compared to recent works that have focused on fairness, accountability, and trustworthiness issues for machine learning algorithms, this project will take a holistic perspective and consider the entire data science lifecycle. In phase I of the project, the investigators will focus on four measures: complexity, resource constraints, uncertainty, and data freshness. In developing a framework to study these measures, this work will prepare the investigators to scale up their activities to other measures in phase II as well as to address larger portions of the data-science lifecycle. The study of each measure brings about foundational challenges that will require expertise from multiple TRIPODS disciplines to address. Following research papers document progress on this project:
+
+<ul>
+{% for paper in papers reversed %}{% if paper.tags contains 'd4' and paper.kind != 'technical_report' %}
+<li><a href="{{ paper.url }}">{{ paper.short_name }}</a></li>
+{% endif %}{% endfor %}
+</ul>
+
+D4 project has been supported in part by the following grants.
+- US National Science Foundation, HDR TRIPODS: D4 (Dependable Data-Driven Discovery) Institute. PI: Hridesh Rajan and
+  Co-I: Pavan Aduri, Eric Weber, Daniel Nettleton, and Chinmay Hegde. Total award amount: $1,531,995.00
+  Links: [ISU](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1934884&HistoricalAwards=false),
 
 {% include projects_page.html name="Boa" link="http://boa.cs.iastate.edu" %}
 

@@ -20,5 +20,5 @@ kind: conference
 download_link: fairify.pdf
 publication_year: 2023
 tags:
-  - boa
+  - d4
 ---
