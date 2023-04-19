@@ -31,12 +31,6 @@
   site: https://www.cs.iastate.edu/people/shibbir-ahmed
   img: sahmed.jpg
 
-- name: Muhammad Arshad
-  status: PhD
-  email: arbab@iastate.edu
-  site: https://www.cs.iastate.edu/people/arbab
-  img: arbab.jpg
-
 - name: Fraol Batole
   status: PhD
   email: fraol@iastate.edu
@@ -51,21 +45,27 @@
 
 - name: Sayem Imtiaz
   status: PhD
-  email: liyp0095@iastate.edu
+  email: sayem@iastate.edu
   site: https://www.cs.iastate.edu/people/sayem-mohammad-imtiaz
   img: simtiaz.jpg
-
-- name: David OBrien
+  
+- name: Ruchira Manke
   status: PhD
-  email: dobrien@iastate.edu
-  site: https://davidmobrien.github.io/
-  img: david.png
+  email: rmanke@iastate.edu
+  site: https://tads.research.iastate.edu/people/ruchira-manke
+  img: ruchira.jpg
 
 - name: Giang Nguyen
   status: PhD
   email: gnguyen@iastate.edu
   site: https://www.cs.iastate.edu/gnguyen
   img: giang.jpeg
+  
+- name: David OBrien
+  status: PhD
+  email: dobrien@iastate.edu
+  site: https://davidmobrien.github.io/
+  img: david.png
 
 - name: Astha Singh
   status: PhD
@@ -86,11 +86,5 @@
   img: wardat.jpg
 
 # Master's Students:
-
-- name: Ruchira Manke
-  status: MS
-  email: rmanke@iastate.edu
-  site: https://tads.research.iastate.edu/people/ruchira-manke
-  img: ruchira.jpg
 
 # Bachelor's Students:

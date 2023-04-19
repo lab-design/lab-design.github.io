@@ -38,5 +38,5 @@ kind: conference
 download_link: modularity.pdf
 publication_year: 2020
 tags:
-  - boa
+  - mdl
 ---
