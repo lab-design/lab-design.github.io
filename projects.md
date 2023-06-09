@@ -26,7 +26,7 @@ This is crazy. ToC currently doesn't strip out the formatting on the header, so 
 
 {% include projects_page.html name="Modular Deep Learning" link="papers/ESEC-FSE-20b/" %}
 
-[Modular Deep Learning](http://boa.cs.iastate.edu) project is studying a class of 
+[Modular Deep Learning](papers/ESEC-FSE-20b/) project is studying a class of 
 machine learning algorithms known as deep learning that has received much attention 
 in academia and industry. 
 Deep learning has a large number of important societal applications, from self-driving 
