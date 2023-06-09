@@ -20,5 +20,5 @@ kind: conference
 download_link: deepdiagnosis.pdf
 publication_year: 2022
 tags:
-  - boa
+  - d4
 ---
