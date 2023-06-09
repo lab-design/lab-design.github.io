@@ -45,5 +45,5 @@ extra_download_links:
   - { link: dataset.zip , title: Dataset}
 publication_year: 2019
 tags:
-  - boa
+  - d4
 ---
