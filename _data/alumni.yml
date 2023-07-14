@@ -1,4 +1,10 @@
-# Postdoctoral and PhD Graduates:
+# Postdoctoral Graduates:
+
+- name: Dr. Breno Dantas Cruz
+  status: Postdoctoral Fellow
+  email: bdantasc@iastate.edu
+  site: https://www.cs.iastate.edu/people/breno-dantas-cruz
+  img: breno.jpg
 
 - name: Dr. Hoan A. Nguyen
   status: Postdoctoral Fellow
@@ -11,6 +17,14 @@
   email: yuzhen3301@gmail.com
   site: http://design.cs.iastate.edu
   img: zyu.jpeg
+
+# PhD Graduates:
+
+- name: Dr. Mohammad Wardat
+  status: PhD Summer'23
+  email: wardat@iastate.edu
+  site: https://www.cs.iastate.edu/people/mohammad-wardat
+  img: wardat.jpg
 
 - name: Dr. Sumon Biswas
   status: PhD Spring'22, MS Spring'21
