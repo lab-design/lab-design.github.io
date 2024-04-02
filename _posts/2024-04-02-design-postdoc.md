@@ -8,7 +8,7 @@ The Department of Computer Science in the College of Liberal Arts and Sciences
 at Iowa State University seeks outstanding applicants for a postdoctoral position 
 in the [Laboratory for Software Design](https://design.cs.iastate.edu) 
 supervised by [Dr. Hridesh Rajan](https://www.cs.iastate.edu/hridesh). 
-This position is expected to be filled as early as July 1, 2023. 
+This position is expected to be filled as early as June 10, 2024. 
 The candidate will be responsible for conducting research in broadly defined areas 
 of Programming Languages (PL) and Software Engineering (SE) with a specific focus 
 on SE/PL techniques for AI/ML systems.
@@ -37,8 +37,8 @@ Department/Program & College Description:
 The Department of Computer Science resides in the College of Liberal Arts and Sciences offering B.S., B.A., M.S., and Ph.D. degrees in Computer Science and a brand-new M.S. degree in Artificial Intelligence. The department is proud to be one of the founding departments for the B.S. in Software Engineering, B.S. in Data Science, Data Science Minor and Certificate along with the B.S. and Ph.D. degrees in Bioinformatics and Computational Biology. We are active in interdepartmental graduate programs in Bioinformatics and Computational Biology, Human-Computer Interactions, and Cybersecurity. The department participates in many interdisciplinary research collaborations, including partnerships with faculty in bio-sciences, mathematical sciences, and engineering. The Department of Computer Science has 38 faculty professionals, 146 Ph.D. students, 59 M.S. students, and approximately 900 B.S. students. All admitted Ph.D. students are offered a two-year teaching assistantship from the department, and almost all are supported by research or teaching assistantships after that. We have strong research and educational programs in Artificial Intelligence, Machine Learning and Data Science, Bioinformatics and Computational Biology, Human Computer Interaction, Robotics and Autonomous Systems, Software Engineering and Programming Languages, Systems and Networking, and Theoretical Foundations. Our department has over $16 million in active research grants, including the interdisciplinary activities mentioned, and we contribute to active research and training grants totaling approximately $25 million.
 
 
-To apply see [link](https://isu.wd1.myworkdayjobs.com/IowaStateJobs/job/Ames-IA/Postdoc-Research-Associate---Computer-Science_R12072). 
-For guaranteed consideration, apply on or before June 18, 2023.
+To apply see [link](https://isu.wd1.myworkdayjobs.com/IowaStateJobs/job/Ames-IA/Postdoc-Research-Associate---Computer-Science_R14368). 
+For guaranteed consideration, apply on or before April 26, 2024.
 
 
 All offers of employment, oral and written, are contingent upon the university’s verification of credentials and other information required by federal and state law, ISU policies/procedures, and may include the completion of a background check and/or a consumer credit check.
