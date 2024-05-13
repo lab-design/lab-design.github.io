@@ -1,5 +1,10 @@
 # Postdoctoral Graduates:
-
+- name: Dr. Ali Ghanbari
+  status: Postdoctoral Fellow
+  email: alig@iastate.edu
+  site: https://ali-ghanbari.github.io/
+  img: ali.jpg
+  
 - name: Dr. Breno Dantas Cruz
   status: Postdoctoral Fellow
   email: bdantasc@iastate.edu
