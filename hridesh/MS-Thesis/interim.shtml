@@ -1,0 +1,110 @@
+<!--#include virtual="../includes/template/headTop.htm"-->  
+
+<!-- INSERT TITLE -->
+<title>Com S 541: Details About Interim Project Report</title>
+<base href="http://www.cs.iastate.edu/~cs541/" />
+<!--#include virtual="../includes/template/headBottom.htm"-->  
+
+<!-- Text for the actual webpage start -->
+
+<p class="heading">Interim Project Report: Due Nov 3, 2008 at 11:59pm CST</p>
+
+<p><b>Format for Interim Report:</b>
+Interim report must be prepared using LaTeX. 
+We require you to use LaTeX as the operational 
+semantics, type systems, and meta-theory can be 
+easily typeset using this typesetting system. 
+We provide a template for preparing these 
+deliverables <a href="project/files/template-541.tar.gz">here</a>.
+</p>
+
+<p><b>Submission Instructions:</b>
+Interim project reports must be submitted via e-mail to
+<a href="mailto:hridesh@cs.iastate.edu?subject=[Fall-08-541-Interim-Project-Report]
+&body=Please find attached my proposal for Com S 541 interim project report as 
+[MyLastName]-541-interim-report.tar.gz.">hridesh@cs.iastate.edu</a>.
+If you click the link above the subject will be filled automatically,
+otherwise please ensure that your subject is exactly
+&quot;[Fall-08-541-Interim-Project-Report]&quot; (without the quotes).
+<UL>
+<LI>For preparing your project proposal you would have already
+downloaded the template for project report from
+<a href="project/files/template-541.tar.gz">here</a>.
+For preparing your interim project report, please 
+extend the LaTeX project that you already have.
+</LI>
+<LI>
+Modify the relevant tex file to contain the description
+of your interim report. Please <U>DO NOT FORGET</U> 
+to add relevant citations to the bibliography file
+refs.bib. </LI>
+<LI>Compile the files using the Makefile included
+in the template distribution and <U>ensure that there are
+no LaTeX errors in compilation</U>.</LI>
+<LI>
+Before creating an archive remove LaTeX intermediate files
+using &quot;make clean&quot;.
+</LI>
+<LI>
+Create an archive of your LaTeX project and name it
+[LastName]-541-interim-report.tar.gz, e.g. rajan-541-interim-report.tar.gz</LI>
+<LI>
+Please attach this archive file with your submission e-mail.
+</LI>
+</UL>
+</p>
+
+
+<p class="heading">How to write your submission and how it will be graded?</p>
+
+<p>Following are important parts of your interim project report.
+
+<UL>
+<LI><b>Abstract syntax, description of abstract syntax, and 
+       motivating examples (5%):</b> In this section
+       you should describe the abstract syntax of the language
+       that you are considering, describe your choices about 
+       selection (and omission) of features in your language, 
+       and present an example that (a) illustrates your language
+       design, and (b) serves to illustrate that your design 
+       solves the problem that your project set out to solve.
+       Make sure to cite and briefly discuss the work on which 
+       your language design builds upon.</LI>
+       
+<LI><b>Dynamic Semantics (5%):</b> In 
+       this section, you should describe the domains in your 
+       dynamic semantics, give a full dynamic semantics of your
+       language including definitions of all auxiliary 
+       functions used.
+       The rules in the dynamic semantics should be 
+       described formally as in the form of an inference 
+       rule and informally.</LI>
+       
+<LI><b>Detailed Discussion of Work that Remains to be Done (2.5%):</b>
+       In this section, you should discuss the problems in 
+       the project that remain to be solved. 
+       An ideal description would contain an itemized list of
+       tasks that will be undertaken between now and the end of 
+       the semester to bring your project to a successful 
+       conclusions.
+       It would also include a discussion of challenges that 
+       you foresee going forward in your project.</LI>
+
+<LI><b>Addressing Feedback on Project Proposal (varies): </b>
+       You should have received feedback on your project 
+       proposals. In some cases, these feedback were suggestions
+       for improvements and no points were deducted.
+       In other cases, points were deducted due to the fact 
+       that the project proposal did not meet the requirements. 
+       Please feel free to address those issues in the interim 
+       report to get some of those points back.
+       However, please be sure to submit the printed version
+       of your project proposal along with the interim report.</LI>
+</UL>
+</p>
+
+
+
+<!-- Text for the actual webpage end -->
+
+<!--#include virtual="../includes/template/footer.htm"--> 

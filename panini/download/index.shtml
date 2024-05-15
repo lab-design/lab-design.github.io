@@ -1,0 +1,101 @@
+<!--#include virtual="../includes/top.html"-->
+<title>Download the Compiler for Panini</title>
+<!--#include virtual="../includes/header.html"-->
+
+
+<div class="col2-content">
+
+<p><h1>Download Panini Compiler</h1></p>
+
+<p>
+May 21, 2014: The Panini compiler version 0.9.3 available below 
+provides capsule-oriented programming features. 
+This is a bug-fixing/performance improvement release which also adds 
+support for declaring methods that return final classes. As is usual, 
+bug fixes from previousrelease are also included. Note that you can 
+always write to us at the e-mail address panini@iastate.edu about 
+the language, compiler, and about the programming language manual. 
+</p>
+
+<p>
+August 14, 2013: The Panini compiler version 0.9.2 available below 
+provides capsule-oriented programming features. 
+This is a feature release and it includes two language features:
+implicitly parallel foreach expressions and capsule initializers.
+It also includes a more advanced sequential consistency analysis
+compared to previous versions. As is usual, bug fixes from previous
+release are also included. Note that you can always write to us at
+the e-mail address panini@iastate.edu about the language, compiler,
+and about the programming language manual. 
+</p>
+<!-- 
+<p>
+Mar 19, 2013: The Panini compiler version 0.9.0 available below 
+provides capsule-oriented programming features. 
+This is an alpha release and we will continue to improve upon this release.
+</p> -->
+
+<p>Panini is available for free for evaluation and usage subject to
+the following licensing agreement.</p>
+<p><script type="text/javascript">
+    copyright=new Date()
+    fullYear=copyright.getFullYear();
+    document.write("<EM>Copyright &copy; " + fullYear + " Iowa State University of Science and Technology. All rights reserved.</EM>")
+   </script></p>
+<p>Panini compiler, tools, libraries and sources are subject to the
+Mozilla Public License Version 1.1 (the "License"); you may not use them
+except in compliance with the License. You may obtain a copy of the
+License at http://www.mozilla.org/MPL/.</p>
+<p>Software distributed under the License is distributed on an "AS
+IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See
+the License for the specific language governing rights and limitations
+under the License.</p>
+<p>The Initial Developer of the Original Code is Iowa State
+University. Portions created by Iowa State University are <script
+	type="text/javascript">
+						    copyright=new Date()
+						    fullYear=copyright.getFullYear();
+						    document.write("Copyright &copy; " + fullYear + " Iowa State University of Science and Technology. All rights reserved.")
+					       </script></p>
+
+<!-- DOWNLOAD BUTTON -->
+<div class="button"><a href="download/compiler/panini-0.9.3.zip" 
+onclick="var that=this;_gaq.push(['_trackEvent','Download','PANC',this.href]);setTimeout(function(){location.href=that.href;},200);return false;">
+I AGREE, DOWNLOAD PANINI</a></div>
+
+<!-- DOWNLOAD TRACKER -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-15725511-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!--
+<div class="button"><a
+	href="http://sourceforge.net/projects/paninij/files/compiler/">I AGREE,
+DOWNLOAD PANINI</a></div>
+-->
+
+<!-- PACKAGE UPDATE -->
+<p id="update" style="text-align: center;">Version 0.9.3<br />
+Last modified on 2014/05/21</p>
+
+</div>
+<div class="col2-toc">
+<p><b>Panini compiler also available @
+<a href="http://sourceforge.net/projects/paninij/">sf.net</a></b>
+</p>
+<p><b>Panini GOF Pattern Framework available @
+<a href="http://sourceforge.net/projects/paninij/">sf.net</a></b>
+</p>
+</div>
+
+<!--#include virtual="../includes/bottom.html"-->

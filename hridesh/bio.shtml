@@ -1,0 +1,136 @@
+<!--#include virtual="includes/template/headTop.htm"-->  
+
+<!-- INSERT TITLE -->
+<title>Dr. Hridesh Rajan, Kingland Professor of Computer Science, Iowa State University</title>
+
+<!--#include virtual="includes/template/headBottom.htm"-->  
+
+<!-- Text for the actual webpage start -->
+<p class="heading">Official Biographical Sketch</p>
+<p>
+Hridesh Rajan is a professor and interim department chair
+of computer science at Iowa State University,
+where he has been since 2005.
+Professor Rajan earned his MS and Ph.D. from the University of Virginia
+in 2004 and 2005 respectively.
+Prof. Rajan's research interests are
+in programming languages, software engineering, and data science where he is most known
+for his design of the <a href="http://ptolemy.cs.iastate.edu">Ptolemy</a>
+programming language that showed how to
+modularly reason about crosscutting concerns and the
+<a href="http://boa.cs.iastate.edu">Boa</a> programming
+language and its infrastructure that decreases the barriers to
+data-driven software engineering.
+Professor Rajan’s recent research and educational activities are aimed at
+decreasing the barrier to entry to data-driven sciences to broaden participation.
+His work on the Boa project is aimed at invention and refinement of
+cyberinfrastructures that democratize data-driven science.
+His work on the Midwest Big Data Summer School is experimenting with broadly
+accessible data science curricula.
+Professor Rajan is the founding general chair of the annual
+<a href="http://mbds.cs.iastate.edu">Midwest Big Data Summer School</a>,
+and the founder of the <a href="https://2018.splashcon.org/series/vmil">VMIL workshop series</a>.
+</p>
+<p>
+Professor Rajan is the 
+interim department chair of 
+<a href="https://cs.iastate.edu">Department of Computer Science</a>,
+director of the
+<a href="http://design.cs.iastate.edu">Laboratory for Software Design</a> at
+Iowa State University, and
+Professor-In-Charge of the
+<a href="http://datascience.iastate.edu">Data Science</a> programs
+at Iowa State University.
+Professor Rajan also serves as an associate editor for the
+<a href="https://www.computer.org/web/tse">IEEE Transactions on Software Engineering</a>.
+Professor Rajan served on the steering committee of the
+<a href="http://midwestbigdatahub.org/">Midwest Big Data Hub</a>,
+a consortium of universities in the Midwest region of the United States
+focussed on promoting data science activities.
+Professor Rajan also served as the chair of the Faculty Senate 
+Information Technology committee during the transition of ERP systems.
+Professor Rajan is a recipient of the National Science Foundation CAREER
+award in 2009, LAS Award for Early Achievement in Research in 2010,
+a Big-12 Fellowship in 2012, and a Fulbright scholarship in 2018.
+He is a distinguished member of ACM, and a member of IEEE, and AAAS.
+He is also the inaugural holder of the Kingland professorship in the
+Department of Computer Science.
+</p>
+
+<p class="heading">Short bio (for talks, etc.)</p>
+<p>
+Hridesh Rajan is the Kingland professor and interim department chair
+in the Department of Computer
+Science at Iowa State University. Prof. Rajan's research interests are
+in programming languages, software engineering, and data science where he is most known
+for his design of the Ptolemy programming language that showed how to
+modularly reason about crosscutting concerns and the Boa programming
+language and its infrastructure that decreases the barriers to
+data-driven software engineering. He has been recognized by the US
+National Science Foundation (NSF) with a CAREER award, an Early
+Achievement in Research Award, a Big-12 Fellowship, the Kingland
+Professorship, and an exemplary mentor for Junior Faculty award.
+Prof. Rajan is a Fulbright scholar,
+distinguished member of the ACM, and serves
+as an associate editor for the IEEE Transactions on Software Engineering.
+</p>
+
+
+<p class="heading">Academic Background</p>
+<p>
+My advisor at <a href="http://www.virginia.edu">University of Virginia</a> 
+was <a href="http://www.cs.virginia.edu/~sullivan">Kevin Sullivan</a>, whose
+advisor was <a href="http://www.cs.washington.edu/homes/notkin/">David Notkin</a>.
+My <a href="http://www.csc.ncsu.edu/faculty/xie/sefamily.htm">academic genealogy</a>
+goes all the way to <a href="http://www.cs.utexas.edu/users/EWD">Edsger Dijkstra.</a>
+</p>
+
+<p>
+In prior life, I worked at <a href="http://www.bell-labs.com">Bell Labs</a> India,
+the R&amp;D organization of <a href="http://www.lucent.com">Lucent Technologies</a>.
+At the time, I was interested in bandwidth and power optimization issues in mobile
+ad hoc & sensor networks as they scale up. I still keep up with these topics.
+</p>
+
+<p class="heading">My Canine Children: Sheru &amp; Sarisha</p>
+<p></p>
+<p>
+<IMG SRC="http://www.cs.iastate.edu/~hridesh/images/ss.jpg" width="75%" align="left" alt="Canine Children">
+<IMG SRC="http://www.cs.iastate.edu/~hridesh/images/ss2.jpg" width="25%" align="left" alt="Canine Children">
+</p>
+
+<p class="heading">Personal Restoration Project (2005-2017): 1902 Victorian in Ames</p>
+<p></p>
+<p>
+<IMG SRC="http://www.cs.iastate.edu/~hridesh/images/house2.jpg" width="100%" align="left" alt="1902 Victorian">
+</p>
+<p>
+<IMG SRC="http://www.cs.iastate.edu/~hridesh/images/house.jpg" width="100%" align="left" alt="1902 Victorian">
+</p>
+
+<p class="heading">Fall At Night</p>
+<p></p>
+<p>
+<IMG SRC="http://www.cs.iastate.edu/~hridesh/images/fallrajan.jpg" width="100%" align="left" alt="Fall at Night">
+</p>
+
+<p class="heading">Personal</p>
+<p>
+I come from a small town called Mokama in <a href="http://gov.bih.nic.in/Profile/history.htm">Bihar</a>, 
+<a href="http://indiaimage.nic.in/">India</a>. I have had the pleasure to live within 
+50ft from the river Ganga, a major river in India, for most of my childhood. 
+If you are from Mokama, I will be glad to hear from you. Send me an e-mail and
+we can share stories :-).
+</p>
+
+<p>
+Beside computer science, I love
+<a href="http://virginiasports.collegesports.com/sports/m-footbl/va-m-footbl-body.html">
+cavaliers</a> and <a href="http://www.cyclones.com/">cyclones</a>,
+<a href="http://www.dreamworksanimation.com/">Dreamworks Animation Movies</a>,
+driving, and golf (not necessarily in this order).
+I also enjoy restoration work.
+</p>
+
+<!-- Text for the actual webpage end -->
+<!--#include virtual="includes/template/footer.htm"--> 

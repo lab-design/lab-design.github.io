@@ -1,0 +1,179 @@
+************************************************************
+** Structure of this Distribution **
+
+    This zip archive contains the following folders.
+
+    - bin : This folder contains the executable versions of 
+              Ptolemy compiler for both *nix and WIN environments.
+
+    - lib : This folder contains the run-time library for programs
+              compiled with the Ptolemy compiler.
+
+    - docs : This folder contains the usage manual for Ptolemy 
+              that describes the basic construct in Ptolemy.  
+              
+    - examples : This folder contains some small examples of 
+              new Ptolemy features.
+              
+    - license : This folder contains the licensing agreements under
+              which Ptolemy compiler and associated tools are available.
+              
+    - README : This file. 
+
+************************************************************
+** Requirements for Running Ptolemy Compiler **
+
+    Java Runtime Environment (JRE) 1.5 or greater.
+
+************************************************************
+** Running the Ptolemy Compiler **
+
+    The Ptolemy compiler can be used in two ways
+	 
+    - like javac from command-line 
+   
+    - as a replacement builder for javac in the javac ant task.
+    
+    The following sections describe these usage.
+ 
+************************************************************
+** Running the Ptolemy Compiler from Command-Line **
+
+    The bin folder in this distribution contains scripts that can 
+    be used to run the Ptolemy compiler.
+    
+    pyc : the command-line interface for *nix systems.
+    pyc.bat : the command-line interface for WIN systems.
+
+    java -jar path/to/pyc.jar -classpath .:path/to/pyc.jar files_to_compile.
+
+    * Unix-specific *   
+       
+    Before running these scripts, the PYC_HOME variable 
+    needs to be set to the full path of the pyc folder.  
+
+    For example, (on Linux) if the pyc folder is located at
+                              
+             /home/user/pyc
+                               
+    then the variable PYC_HOME in pyc/bin/pyc 
+    needs to to be set to /home/user/pyc by running   
+    
+             export PYC_HOME=/home/user/pyc
+    
+    on the command-line.
+
+    You could also add the export line above to your shell 
+    startup script such as .bashrc or .bash_profile. 
+
+    * Windows-specific *
+
+    If the PYC_HOME variable is not set, the script assumes
+    the pyc.jar file is in the same directory as the script
+    and set paths accordingly.  If the script is moved out of
+    the bin/ directory, the PYC_HOME will need to be set. 
+       
+    Windows users can set the environment variable 
+    PYC_HOME by running   
+    
+          set PYC_HOME=c:\home\user\pyc
+   
+    In Windows, there should not be any spaces in the PYC_HOME path.
+    For example, c:\Documents and Settings\user\pyc will probably
+    cause an error.   It is recommended to put the pyc folder in the
+    root of a drive, e.g. c:\pyc
+
+    Once PYC_HOME is set correctly, the Ptolemy compiler
+    pyc can used just like javac.  Invoke the script on the 
+    command line with the names of the files to compile.
+    
+    For more details see: http://en.wikipedia.org/wiki/Environment_variable
+
+************************************************************
+** Compiling Examples from Command-Line **
+        
+    Examples of some small Ptolemy programs are located in the 
+	examples folder. To compile an example, navigate to its directory 
+	and use Ptolemy compiler just like javac.
+    
+    For example, to manually compile the ObserverExample, 
+	navigate to the examples/ObserverExample directory and type 
+	../../bin/pyc *.java.
+
+    After compilation the programs run as normal Java programs. 
+    Use "java AppEntry" to run these programs.
+
+************************************************************
+** Running the Ptolemy Compiler from Within Ant **
+
+    Use the following to create a pyc ant task that can be used
+    like the javac task to compile projects.
+    
+    <property name="pyc.bin" value="path/to/bin/folder" />   
+        
+    <taskdef name="pyc" classname="edu.iastate.cs.ja_pyc.ant.JapycJavacAdaptor">
+        <classpath>
+            <pathelement location="${pyc.bin}/pyc.jar"/>
+        </classpath>
+    </taskdef>
+    
+    <pyc srcdir="${source}" destdir="${output}"
+                debuglevel="lines,source"
+                source="1.5"
+                target="1.5"
+            includes="*.java"
+            >
+            <classpath>
+                <pathelement location="${bin.dir}/pyc.jar"/>
+            </classpath>
+    </pyc>
+
+    Alternatively, the normal javac target can be overridden to use 
+	the Ptolemy compiler instead of the system java compiler.
+    
+	Create a build.properties files with the following line:
+	build.compiler=edu.iastate.cs.ja_pyc.ant.JapycCompilerAdapter
+	
+	Include the build.properties in build.xml file, either globally
+	or for specific targets.
+	
+	Use the javac ant target to compile the java files.  For example:
+    <property name="output" value="bin"/>
+    <property name="src" value="src" />
+    <target name="build" description="Compile">
+       <property file="build.properties"/>
+       <javac srcdir="${src}" destdir="${output}">
+             <classpath>
+              <pathelement location="path/to/pyc.jar"/>
+             </classpath>
+       </javac>
+    </target>
+    
+    Run ant with: ant -lib path/to/pyc.jar to start ant with 
+    the Ptolemy compiler on ant's classpath.  Note, pyc.jar 
+    is also added to the classpath in the javac task.  This is 
+    because the Ptolemy compiler needs some annotations defined
+    in the pyc.jar file to run.
+
+************************************************************
+** Compiling Examples from Using Ant **
+
+  Examples included in this distribution can also be compiled with their
+  included build.xml file using Apache Ant. 
+
+  Apache Ant (http://ant.apache.org/) needs to be installed before using 
+  these build.xml files
+
+************************************************************
+** Acknowledgments and Licensing **
+    
+The Ptolemy compiler builds on several different projects including:
+Beaver: http://beaver.sourceforge.net/
+JFlex: http://jflex.de/
+JastAdd: http://www.jastadd.org/
+
+All necessary licenses are included in the license directory.
+
+The Ptolemy compiler is licensed under the Mozilla Public License 
+version 1.1 (MPL 1.1) license. You may obtain a copy of the license at
+http://www.mozilla.org/MPL/.

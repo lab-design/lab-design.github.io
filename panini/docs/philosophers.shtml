@@ -1,0 +1,304 @@
+<!--#include virtual="../includes/top.html"-->
+<title>The Panini Programming Guide</title>
+<!-- PAGE SPECIFIC STYLING -->
+<style type="text/css">
+.col2-toc h2 {
+	margin: 0 0 10px;
+}
+</style>
+<!--#include virtual="../includes/header.html"-->
+<h1>Example</h1>
+
+<script type="text/javascript">
+copyright=new Date()
+fullYear=copyright.getFullYear();
+document.write("<h5>Copyright &copy; 2006-" + fullYear + ", Iowa State University of Science and Technology. All rights reserved.</h5>")
+</script>
+
+<!-- TABLE OF CONTENTS -->
+<!--#include virtual="./toc-examples.html"-->
+
+<!-- CONTENT -->
+
+<div class="col2-content">
+
+<h2><a name="histogram">DINING PHILOSOPHERS PROBLEM</a></h2>
+
+<p>
+
+This example is an illustration of the classic dining philosophers problem. The scenario is as follows: an equal amount of forks and philosophers are staggered along a round table, such that each philosopher is adjacent to exactly two forks (one on the immediate left and one on the immediate right). Each philosopher is always in one of three states: 'thinking', 'hungry', or 'eating'. All Philosophers are initially 'thinking'. When a philosopher becomes 'hungry', he attempts to take both adjacent forks and begin 'eating' (it is important to note that both forks are required to transition into the 'eating' state, thus implying that, when a philosopher is 'eating', the immediately adjacent philosophers cannot be). When a philosopher has finished 'eating', he returns both forks and resumes 'thinking'. The goal is to design a model, which prevents any of the philosophers from starving to death. There are a myriad of synchronization issues that must be taken into account when dealing with concurrent structures. This solution, provided in Panini, effectively addresses the relevant concerns.
+
+</p>
+
+<h2><a name="architecture">ARCHITECTURE and DESIGN</a></h2>
+
+<p>In capsule-oriented programming better design leads to better implicit concurrency,
+
+i.e. better designed programs often run faster,
+
+so it is valuable to start off with the architecture and design.
+
+</p>
+
+<ol>
+
+<li><p>
+
+    
+
+<EM>Divide the problems into subproblems.</EM>
+
+This problem can be divided into the following subproblems:
+
+<ul>
+
+<li> Simulate each philosopher's behavior</li>
+
+<li> Keep track of each fork's state</li>
+
+</ul>
+<p>
+
+It is our task to properly simulate the behavior of each philosopher (such that none starve), while simultaneously preserving the integrity of each fork i.e. we must assert that at most one philosopher is in possession of a fork at any given time.
+</p>
+    
+
+<EM>Create capsules and assign responsibilities to capsules.</EM>
+
+There are two distinct entity types in the problem (namely, forks and philosophers); therefore, we declare two respective capsules. The Philosopher capsule is responsible for simulating the behavior of a single philosopher, and the Fork capsule is responsible for keeping track of the state of a single fork
+
+    
+
+<pre class="brush: panini;">
+capsule Philosopher() { }
+capsule Fork() { }    
+</pre>
+
+    
+
+<p>
+
+Since the behavior of each philosopher depends upon the status of his two adjacent forks, it is fitting that the Philosopher capsule should require two instances of the Fork capsule. We also require each Philosopher to have a name of type String.
+
+
+</p>
+
+    
+
+<pre class="brush: panini;">
+capsule Philosopher(Fork left, Fork right, String name) { }
+capsule Fork() { }
+</pre>
+
+
+<EM>Integrate capsules to form a design block.</EM>
+
+    Here (in the design declaration) we effectively &quot;set the table&quot; (we have, in this example, arbitrarily chosen to &quot;invite three philosophers to dinner&quot;).
+
+
+    
+
+<pre class="brush: panini;">
+capsule Philosophers {
+    design {
+        Fork f1, f2, f3; Philosopher p1, p2, p3;
+        p1(f1,f2, "Aristotle");
+        p2(f2,f3, "Demosthenes");
+        p3(f3,f1, "Socrates");
+    }
+}
+</pre>
+
+    
+
+<p>
+
+    First, we set three Forks and prepare places for three Philosophers (line 3). We then seat Aristotle between the first and second Forks, Demosthenes between the second and third Forks, and Socrates between the third and first Forks (lines 4-6). After all three Philosophers have taken their seats, their behavior is observed (the 'run()' procedure of each Philosopher is invoked).
+
+    
+
+</p>
+
+    
+
+</li>
+
+</ol>
+
+<h2><a name="implementation">IMPLEMENTATION</a></h2>
+
+<ol>
+
+<li><p><EM>Capsule Fork.</EM>
+
+Each Fork is always in one of two states: 'taken' or 'not taken'; thus, we declare a state variable 'isTaken' of type boolean.
+
+</p>
+
+    
+
+<pre class="brush: panini;">
+
+capsule Fork () {
+	boolean isTaken = false;
+}    
+</pre>
+
+
+<p>
+
+We provide two procedures within the capsule. The first is 'take()', which attempts to take the Fork: if the Fork is not taken, 'isTaken' is set to 'true', and a value of 'true' is returned (effectively taking the Fork); otherwise, 'false' is returned. The second is 'giveBack()', which sets 'isTaken' to 'false'. It is assumed that this procedure is only ever called by the Philosopher currently in possession of the Fork.
+
+</p>
+
+
+<pre class="brush: panini;">
+capsule Fork () {
+  boolean isTaken = false;
+  Bool take() {
+    if (isTaken) return new Bool(false);
+    else {
+      isTaken = true; return new Bool(true);
+    }
+  }
+  void giveBack() { 
+    isTaken = false;
+  }
+}
+</pre>
+
+
+<p>
+
+Note that &quot;Bool&quot; is a wrapper class, representing a primitive, boolean value. <font color="red">In the current version of Panini, primitive and final return types for capsule procedures are not supported</font> <font color="grey">(as capsule procedures implicitly return futures that are subtypes of the explicitly specified return type)</font>.
+
+</p>
+
+</li>
+
+<li><p><EM>Capsule Philosopher.</EM>
+
+The aforementioned "state" of each Philosopher is implicitly determined by the operation it is currently performing: when 'think()' is in the process of execution, the Philosopher is 'thinking'; when the inner loop of 'tryEat()' is being executed (line 20), the Philosopher is 'eating'; otherwise, when 'tryEat()' is invoked, the Philosopher is 'hungry'. If a Philosopher calls 'take()' on a Fork, and 'true' is returned, then the Philosopher is now in in possession of said Fork.
+
+</p>
+
+<pre class="brush: panini;">
+capsule Philosopher (Fork left, Fork right, String name) {
+  void act() {
+    for (int count=3; count>0; count--) {
+      think();
+      tryEat();
+    }
+  }
+  private void think() {
+    System.out.println(name + " is thinking");
+    yield(1000);
+  }
+  private void tryEat() {
+    System.out.println(name + " is hungry so they are trying to take fork 1.");
+    boolean ate = false;
+    while (!ate) {
+      if (left.take().value()) {
+        System.out.println(name + " acquired fork 1 so now they are trying to take fork 2.");
+        if (right.take().value()) {
+          System.out.println(name + " acquired both forks so now they are eating.");
+          for (int eat = 0, temp=0; eat < 10000; eat++) 
+            temp = eat * eat * eat * eat;
+          ate = true;
+          right.giveBack();
+        }
+        left.giveBack();
+        if(!ate) yield(100);
+      } 
+    }
+  }
+}
+</pre>
+
+
+
+</p></li>
+
+<li><p><EM>Capsule Philosophers.</EM>
+  So far, none of our capsules have been designated as active, i.e. capsules with a 'run()' procedure.
+  We have two choices that would make sense. Either change the <em>act()</em> procedure from capsule
+  Philosopher to <em>run()</em> or add a <em>run()</em> procedure to capsule Philosophers. The former
+  has the advantage of being less verbose while the latter is easier to understand, see for yourself:
+<pre class="brush: panini;">
+capsule Philosophers {
+    design {
+        Fork f1, f2, f3; Philosopher p1, p2, p3;
+        p1(f1,f2, "Aristotle");
+        p2(f2,f3, "Demosthenes");
+        p3(f3,f1, "Socrates");
+    }
+
+    void run() {
+        p1.act();
+        p2.act();
+        p3.act();
+    }
+}
+</pre>
+<p>
+  Three Philosophers and three Forks are instantiated within the design declaration.
+  When the program executes, the 'run()' procedure of Philosophers is invoked, which
+  in turn invokes the act() procedure of each philosopher asynchronously, i.e. without blocking.
+  Each Philosopher thinks (by yielding for 1000 ms), and then tries to eat. When trying to eat,
+  the Philosopher first attempts to take the left Fork. If the Fork has already been taken,
+  he waits for 100 ms and tries again. If he succeeds in taking the left Fork, he then tries the right Fork.
+  If this fails, he returns the left Fork to its original position, waits for 100 ms, and tries again
+  (starting with the left Fork). Upon successful acquisition of both Forks, the Philosopher begins eating
+  (returning both Forks when finished). Each Philosopher repeats this process a total of three times, and
+  the program terminates.
+  </p> 
+  </li>
+
+</ol>
+
+<h2><a name="implementation">IMPLICIT CONCURRENCY</a></h2>
+  
+
+<p>
+
+    Each Philosopher capsule executes, concurrently making procedure calls on the two adjacent Forks (lines 16, 18, 23, and 25).
+   
+
+</p><p>
+
+    Since Panini guarantees that the state of each capsule is confined, we know that all procedures in the Fork capsule are thread-safe (no race conditions).
+
+
+</p><p>
+
+    It is also clear that deadlocks are avoided, since all Philosophers, upon failure to acquire the right Fork, return the left Fork, thereby giving adjacent Philosophers a fair opportunity to eat (Philosophers must begin thinking after eating, so no Philosopher can monopolize both Forks i.e. constantly be eating).
+
+
+</p><p>
+
+    One could argue that there exists the potential for livelock, where, for example, each Philosopher (simultaneously) takes the left Fork, fails to take the right Fork, returns the left Fork, and repeats this process indefinitely. This situation, however, is infinitely unlikely to occur (i.e. probability zero), as the likelihood that each Philosopher continues to execute in perfect unison decreases with each step. This implementation effectively avoids deadlocks and race conditions, and no Philosophers are starved.
+
+
+</p>
+<!--  
+<HR SIZE=1, WIDTH=95%, ALIGN=CENTER, NOSHADE>
+<b>References</b>
+<ol>
+	<li>A large part of this text is taken from our latest <a
+		href="http://www.cs.iastate.edu/~design/papers/TR-09-28">technical
+	report</a>.
+	<li>S. Russell and P. Norvig. Artificial Intelligence: A Modern
+	Approach. Prentice Hall, 2nd edition, 2003.
+</ol> -->
+
+<!-- PAGE UPDATE -->
+<p id="update">Page last modified on $Date: 2013/08/02 20:43:43 $</p>
+
+<!-- GUIDE NAVIGATION -->
+<div class="page-nav"><!-- <a href="#">&lt; PREVIOUS</a> --> <a
+	href="docs/starting-example.shtml#pgtop">&#94; RETURN TO TOP</a> <!-- <a href="#">NEXT &gt;</a> -->
+</div>
+</div>
+<!--#include virtual="../includes/bottom.html"-->
+
+

@@ -1,0 +1,87 @@
+<!--#include virtual="includes/top.html"-->
+<title>Forums & Mailing Lists for Ptolemy Programming Language Development</title>
+<!--#include virtual="includes/header.html"-->
+
+<h1>Forums & Mailing Lists</h1>
+                  
+                  	<!-- TABLE OF CONTENTS -->
+                    <div class="col2-toc">
+                        <ul>
+                            <li><a href="#users">User Mailing Lists</a></li>
+                            <li><a href="#dev">Developers Mailing Lists</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- CONTENT -->
+                    <div class="col2-content">
+                        <h2>
+                        	<a name="users">Ptolemy Users</a>
+                        </h2>
+
+						<p>
+							Current or potential Ptolemy users may seek clarifications on the language and its infrastructure by posting to ptolemyj-users mailing list.
+						</p>
+						
+						<p>
+							To post to this discussion list, send an email to:
+						</p>
+						
+						<p> 
+						   <a href="mailto:ptolemyj-users@lists.sourceforge.net">ptolemyj-users@lists.sourceforge.net 
+						   </a>
+						</p>
+						
+						<p>
+							General information about this mailing list is available at: 
+						</p>
+						<p>
+						  <a href="https://lists.sourceforge.net/lists/listinfo/ptolemyj-users">https://lists.sourceforge.net/lists/listinfo/ptolemyj-users</a>
+						</p>
+						<p> 
+							The link above also provides a web-based mechanism to subscribe to this mailing list.
+						</p>
+						<p> 
+							The archived discussion about Ptolemy is available at: 
+						</p>
+						<p>
+							<a href="http://sourceforge.net/mailarchive/forum.php?forum_name=ptolemyj-users">http://sourceforge.net/mailarchive/forum.php?forum_name=ptolemyj-users
+							</a>
+						</p>
+						
+						<h2>
+							<a name="dev">Ptolemy Developers</a>
+						</h2>
+						
+						<p>
+							To seek clarifications on the language implementation, to contribute to the development of Ptolemy's infrastructure, or to simply follow the development of the Ptolemy programming language going forward please post to ptolemyj-commit mailing list. Notifications for any changes in the repositories for the Ptolemy project are also sent to this mailing list.
+						</p>
+						
+						<p>
+							To post to this discussion list, send an email to:
+						</p>
+						
+						<p> 
+						   <a href="mailto:ptolemyj-commit@lists.sourceforge.net">ptolemyj-commit@lists.sourceforge.net</a>
+						</p>
+						
+						<p>
+							General information about this mailing list is available at:
+						</p>
+						<p>
+						  <a href="https://lists.sourceforge.net/lists/listinfo/ptolemyj-commit">https://lists.sourceforge.net/lists/listinfo/ptolemyj-commit</a>
+						</p>
+						<p> 
+							The link above also provides a web-based mechanism to subscribe to this mailing list.
+						</p>
+						
+						<p> 
+							An archive containing messages for this mailing list is available at: 
+						</p>
+						<p>
+							<a href="http://sourceforge.net/mailarchive/forum.php?forum_name=ptolemyj-commit">http://sourceforge.net/mailarchive/forum.php?forum_name=ptolemyj-commit</a>
+						</p>
+						
+						<!-- PAGE UPDATE -->
+                        <p id="update">Page last modified on  $Date: 2011/07/18 19:10:06 $</p>
+                    </div>                   
+<!--#include virtual="includes/bottom.html"-->

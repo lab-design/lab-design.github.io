@@ -1,0 +1,92 @@
+<!--#include virtual="includes/header.html"-->  
+				
+<article id="post-25" class="post-25 page type-page status-publish hentry">
+	<header class="entry-header">
+		<h1 class="entry-title">About</h1>
+	</header><!-- .entry-header -->
+
+<div class="entry-content">
+<p style="text-align: justify;">
+The 2017 Midwest Big Data Summer School for Early Career Researchers 
+will be held from July 10-14, 2017 in Ames, Iowa. 
+This summer school is designed as a one week, intensive curriculum 
+aimed at early career researchers to get them started in data-driven research. 
+The school will include full day lectures on topics ranging from: 
+data acquisition, data preprocessing, exploratory data analysis, 
+descriptive data analysis, data analysis tools and techniques, 
+visualization and communication, ethical issues in data science, 
+reproducibility and repeatability, and understanding of domain/context.</p>
+
+<p>The last two days of the summer school consists of tracks where each 
+individual track focuses on a subarea of big data analysis. 
+This years tracks include: Foundations of Data Science, Software 
+Analytics, and Digital Agriculture. Each track consist of tutorials 
+and invited lectures that highlight current research methodologies 
+and challenges. Participants can choose a track that they 
+wish to attend.</p>
+
+<p style="text-align: justify;"> <b>Venue:</b>
+The Midwest Big Data Summer School will be held at 
+<a href="http://www.mu.iastate.edu/parking--maps/maps--directions/directions-to-the-mu/">
+the Iowa State University Memorial Union</a> located at 
+<a href="https://maps.google.com/maps?ll=42.023586,-93.645579&z=16&t=m&hl=en-US&gl=US&mapclient=embed&daddr=Memorial%20Union%202229%20Lincoln%20Way%20Ames%2C%20IA%2050011@42.0235863,-93.6455794">2229 Lincoln Way, Ames, IA 50011</a>.
+Badges can be picked up at 8am on July 10, 2017, and school sessions 
+will start promptly at 8:30am on each of the school days (July 10-14, 2017).
+</p>
+
+
+<p style="text-align: justify;"> <b>Registration:</b> 
+The registration fee for the summer school is $75 for regular registration
+and $50 for student registration.
+There is limited space so send your registration soon. 
+If you are interested in attending the summer school go to 
+<a href="https://registration.extension.iastate.edu/emc00/register.aspx?OrgCode=10&EvtID=8126&AppCode=REG&CC=116111626516">online registration form</a>.
+</p>
+<UL>
+<LI><b>Early registration (Ends on June 9th)</b> -  
+    Early regular registration fee is $75 and early 
+    student registration fee is $50.</LI>
+<LI>Regular registration (June 10-30th) - Regular 
+    registration fee is $100 and student registration is $75.</LI>
+<LI>Late registration (July 1-7th) - Late registration 
+    fee is $150 and late student registration is $100.</LI>
+</UL>
+
+<p><b>Registration questions:</b>
+<UL>
+<LI>Email - <a href="mailto:registrations@iastate.edu">registrations@iastate.edu</a></LI>
+<LI>Fax - 515.232.6716</LI>
+<LI>Tel - 515.294.6222</LI>
+</UL>
+</p>
+
+<p><b>Change in plans:</b>
+If you cannot attend, you may send a substitute. 
+If you cancel your registration on or before June 15, 2017, 
+your registration fee will be refunded minus a $15 
+administration fee. All cancellations must be in writing 
+and sent to Registration Services at <a href="mailto:registrations@iastate.edu">registrations@iastate.edu</a>. 
+No refunds will be made after June 15.</p>
+
+<!--The registration is now closed, please contact 
+Dr. Hridesh Rajan (<a href="mailto:SPAMhridesh@iastateDOTedu">hridesh@iastate.edu</a>) and 
+Dr. Pavan Aduri (<a href="mailto:SPAMpavan@iastateDOTedu">pavan@iastate.edu</a>)
+to be put on the wait list for this summer school.-->
+
+<p style="text-align: justify;">
+<b>Travel Support:</b> 
+We have limited amount of travel support available for non-ISU participants.
+Travel support may include your registration fee, shared lodging and/or meals while attending the summer school.
+To be considered for travel support, please register by June 09, 2017 11:59pm and 
+apply for travel support while registering. See above for registration information. 
+<!--The travel support deadline has passed and funds have been allocated. Please contact
+Dr. Hridesh Rajan (<a href="mailto:SPAMhridesh@iastateDOTedu">hridesh@iastate.edu</a>) and
+Dr. Pavan Aduri (<a href="mailto:SPAMpavan@iastateDOTedu">pavan@iastate.edu</a>)
+to be put on the wait list for travel support.-->
+</p>
+
+ <!--Limited amount of funds are available for travel support, participants requesting travel support can fill out the <a href="http://goo.gl/forms/LwsWYDu28C">travel support</a> form.-->
+ 
+</article><!-- #post-25 -->
+
+<!--#include virtual="includes/footer.html"-->

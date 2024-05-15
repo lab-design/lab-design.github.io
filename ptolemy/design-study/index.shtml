@@ -1,0 +1,408 @@
+<!--#include virtual="../includes/top.html"-->
+<title>An Exploratory Study of the Design Impact of Language Features for Aspect-oriented Interfaces</title>
+<style type="text/css">
+	.col2-toc h2 {
+		margin:0 0 10px;
+	}
+</style>
+<meta name="description" content="The Ptolemy Programming Guide helps introduce users to the features and syntax of the Ptolemy Programming Language. The Ptolemy language adds quantified, typed events to object-oriented languages, producing a language that has many of the advantages of both implicit-invocation and aspect-oriented languages." />
+<meta name="keywords" content="ptolemy, programming, guide, introduction, tutorial, quantified, event, events, types, implicit, invocation, aspect, oriented, extension, java, C#, enhanced, reasoning, explict, declaration, Hridesh Rajan, Gary Leavens, modular reasoning aspects, pointcut fragility solution, separate compilation, incremental compilation, download, compiler, download ptolemy, translucid, contract, embedded contracts, greybox, specification, grey, box, gray, structural, refinement" />
+
+<!-- PAGE SPECIFIC STYLING -->
+
+<!--#include virtual="../includes/header.html"-->
+
+<h1>An Exploratory Study of the Design Impact of Language Features for Aspect-oriented Interfaces</h1>
+
+
+
+                    <!-- TABLE OF CONTENTS -->
+                    <div class="col2-toc">
+                        <h2>Table of Contents </h2>
+                        <ol>
+                            <li><a href="design-study/#abstract">Abstract</a></li>
+                            <li><a href="design-study/#metrics">Software Engineering Metrics</a></li>
+                            <li><a href="design-study/#code">Download Code Artifacts</a></li>
+                            <ul>
+                                <li><a href="design-study/#mobilemedia">MobileMedia</a></li>
+                                <li><a href="design-study/#healthwatcher">Health Watcher</a></li>
+                            </ul>
+                            <li><a href="design-study/#tools">Tools</a></li>
+                         </ol>
+                    </div>
+                    <div class="col2-content">
+                        <h2>
+                            <a name="abstract">Abstract</a>
+                        </h2>
+                        <p>
+                            A variety of language features to modularize crosscutting
+                            concerns have recently been discussed, e.g. open modules,
+                            annotation-based pointcuts, explicit join points, and quantified-typed
+                            events. All of these ideas are essentially a form of aspect-oriented
+                            interface between object-oriented and crosscutting modules, but the
+                            representation of this interface differs.
+                            While previous works have studied maintenance of AO programs versus OO
+                            programs, an empirical comparison of different AO interfaces to each
+                            other to investigate their benefits has not been performed.
+                            The main contribution of this work is a rigorous empirical study that
+                            evaluates the effectiveness of these proposals for AO interfaces
+                            towards software maintenance by applying them to 35 different releases
+                            of a software product line called MobileMedia and 50 different
+                            releases of a web application called Health Watcher.
+                            Our comparative analysis using quantitative metrics proposed by
+                            Chidamber and Kemerer shows the strengths and weaknesses of these
+                            AO interface proposals. Our change impact analysis shows the design
+                            stability provided by each of these recent proposals for AO interfaces.
+                        </p>
+                        <p>
+                            Read the paper <a href="http://www.cs.iastate.edu/~design/papers/AOSD-12/AOSD-12.pdf">paper</a>.
+                        </p>
+                        <p>
+                            View the <a href="http://www.cs.iastate.edu/~design/papers/AOSD-12/aosd12-slides.pdf">slides</a>.
+                        </p>
+
+
+
+                        <h2>
+                            <a name="metrics">Software Engineering Metrics</a>
+                        </h2>
+                        <ul>
+                            <li>MobileMedia</li>
+                            <ul>
+                                <li><a href="design-study/mm/ck-metrics.ods">CK Metrics</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="design-study/mm/change-metrics.ods">Change Propagation</a></li>
+                            </ul>
+                            <li>Health Watcher</li>
+                            <ul>
+                                <li><a href="design-study/hw/ck-metrics.ods">CK Metrics</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="design-study/hw/change-metrics.ods">Change Propagation</a></li>
+                            </ul>
+                        </ul>
+
+
+
+<!--
+                        <h2>
+                            <a name="design">Design Analysis</a>
+                        </h2>
+                        <table class="design">
+                            <tr>
+                                <th colspan="10">MobileMedia</th>
+                            </tr>
+                            <tr>
+                                <th>&nbsp;</th>
+                                <th>R1</th>
+                                <th>R2</th>
+                                <th>R3</th>
+                                <th>R4</th>
+                                <th>R5</th>
+                                <th>R6</th>
+                                <th>R7</th>
+                                <th>R8</th>
+                                <th>All</th>
+                            </tr>
+                            <tr>
+                                <th>Java</th>
+                                <td><a href="design-study/mm/nov_oo_01.xlsx">Get</a></td>
+                                <td><a href="design-study/mm/nov_oo_02.xlsx">Get</a></td>
+                                <td><a href="design-study/mm/nov_oo_03.xlsx">Get</a></td>
+                                <td><a href="design-study/mm/nov_oo_04.xlsx">Get</a></td>
+                                <td><a href="design-study/mm/nov_oo_05.xlsx">Get</a></td>
+                                <td><a href="design-study/mm/nov_oo_06.xlsx">Get</a></td>
+                                <td><a href="design-study/mm/nov_oo_07.xlsx">Get</a></td>
+                                <td><a href="design-study/mm/nov_oo_08.xlsx">Get</a></td>
+                                <td><a href="design-study/mm/nov_oo_all.tar.gz">Get</a></td>
+                            </tr>
+                            <tr>
+                                <th>AspectJ</th>
+                                <td>Same as Java</td>
+                                <td><a href="design-study/mm/nov_ao_02.xlsx">Get</a></td>
+                                <td><a href="design-study/mm/nov_ao_03.xlsx">Get</a></td>
+                                <td><a href="design-study/mm/nov_ao_04.xlsx">Get</a></td>
+                                <td><a href="design-study/mm/nov_ao_05.xlsx">Get</a></td>
+                                <td><a href="design-study/mm/nov_ao_06.xlsx">Get</a></td>
+                                <td><a href="design-study/mm/nov_ao_07.xlsx">Get</a></td>
+                                <td><a href="design-study/mm/nov_ao_08.xlsx">Get</a></td>
+                                <td><a href="design-study/mm/nov_ao_all.tar.gz">Get</a></td>
+                            </tr>
+                            <tr>
+                                <th>Annotated AspectJ</th>
+                                <td>Same as Java</td>
+                                <td><a href="design-study/mm/nov_ao_ann_02.xlsx">Get</a></td>
+                                <td><a href="design-study/mm/nov_ao_ann_03.xlsx">Get</a></td>
+                                <td><a href="design-study/mm/nov_ao_ann_04.xlsx">Get</a></td>
+                                <td><a href="design-study/mm/nov_ao_ann_05.xlsx">Get</a></td>
+                                <td><a href="design-study/mm/nov_ao_ann_06.xlsx">Get</a></td>
+                                <td><a href="design-study/mm/nov_ao_ann_07.xlsx">Get</a></td>
+                                <td><a href="design-study/mm/nov_ao_ann_08.xlsx">Get</a></td>
+                                <td><a href="design-study/mm/nov_ao_ann_all.tar.gz">Get</a></td>
+                            </tr>
+                            <tr>
+                                <th>Open Modules</th>
+                                <td>Same as Java</td>
+                                <td><a href="design-study/mm/nov_om_02.xlsx">Get</a></td>
+                                <td><a href="design-study/mm/nov_om_03.xlsx">Get</a></td>
+                                <td><a href="design-study/mm/nov_om_04.xlsx">Get</a></td>
+                                <td><a href="design-study/mm/nov_om_05.xlsx">Get</a></td>
+                                <td><a href="design-study/mm/nov_om_06.xlsx">Get</a></td>
+                                <td><a href="design-study/mm/nov_om_07.xlsx">Get</a></td>
+                                <td><a href="design-study/mm/nov_om_08.xlsx">Get</a></td>
+                                <td><a href="design-study/mm/nov_om_all.tar.gz">Get</a></td>
+                            </tr>
+                            <tr>
+                                <th>Ptolemy</th>
+                                <td>Same as Java</td>
+                                <td><a href="design-study/mm/nov_ptl_02.xlsx">Get</a></td>
+                                <td><a href="design-study/mm/nov_ptl_03.xlsx">Get</a></td>
+                                <td><a href="design-study/mm/nov_ptl_04.xlsx">Get</a></td>
+                                <td><a href="design-study/mm/nov_ptl_05.xlsx">Get</a></td>
+                                <td><a href="design-study/mm/nov_ptl_06.xlsx">Get</a></td>
+                                <td><a href="design-study/mm/nov_ptl_07.xlsx">Get</a></td>
+                                <td><a href="design-study/mm/nov_ptl_08.xlsx">Get</a></td>
+                                <td><a href="design-study/mm/nov_ptl_all.tar.gz">Get</a></td>
+                            </tr>
+                        </table>
+-->
+
+
+
+                        <h2>
+                            <a name="code">Download Code Artifacts</a>
+                        </h2>
+                        <p>
+                            All code artifacts are available for download.  The 'All' downloads
+                            contain the build system and compiler for that artifact.  The
+                            individual revision downloads only contain the source for that
+                            revision.
+                        </p>
+
+
+                        <h3>
+                            <a name="mobilemedia">MobileMedia</a>
+                        </h3>
+                        <p>
+                            Please note that the Java and AspectJ MobileMedia revisions were
+                            re-used (and un-altered) from
+                            <a href="http://homepages.dcc.ufmg.br/~figueiredo/spl/icse08/">Figueiredo et al. (ICSE 08)</a>.
+                            The Annotated AspectJ and Open Modules revisions are based off the
+                            original AspectJ revisions.
+                        </p>
+                        <table class="design">
+                            <tr>
+                                <th>&nbsp;</th>
+                                <th>R1</th>
+                                <th>R2</th>
+                                <th>R3</th>
+                                <th>R4</th>
+                                <th>R5</th>
+                                <th>R6</th>
+                                <th>R7</th>
+                                <th>R8</th>
+                                <th>All</th>
+                            </tr>
+                            <tr>
+                                <th>Java</th>
+                                <td><a href="design-study/mm/mp_oo_01.tar.gz">Get</a></td>
+                                <td><a href="design-study/mm/mp_oo_02.tar.gz">Get</a></td>
+                                <td><a href="design-study/mm/mp_oo_03.tar.gz">Get</a></td>
+                                <td><a href="design-study/mm/mp_oo_04.tar.gz">Get</a></td>
+                                <td><a href="design-study/mm/mp_oo_05.tar.gz">Get</a></td>
+                                <td><a href="design-study/mm/mp_oo_06.tar.gz">Get</a></td>
+                                <td><a href="design-study/mm/mp_oo_07.tar.gz">Get</a></td>
+                                <td><a href="design-study/mm/mp_oo_08.tar.gz">Get</a></td>
+                                <td><a href="design-study/mm/mp_oo_all.tar.gz">Get</a></td>
+                            </tr>
+                            <tr>
+                                <th>AspectJ</th>
+                                <td>Same as Java</td>
+                                <td><a href="design-study/mm/mp_ao_02.tar.gz">Get</a></td>
+                                <td><a href="design-study/mm/mp_ao_03.tar.gz">Get</a></td>
+                                <td><a href="design-study/mm/mp_ao_04.tar.gz">Get</a></td>
+                                <td><a href="design-study/mm/mp_ao_05.tar.gz">Get</a></td>
+                                <td><a href="design-study/mm/mp_ao_06.tar.gz">Get</a></td>
+                                <td><a href="design-study/mm/mp_ao_07.tar.gz">Get</a></td>
+                                <td><a href="design-study/mm/mp_ao_08.tar.gz">Get</a></td>
+                                <td><a href="design-study/mm/mp_ao_all.tar.gz">Get</a></td>
+                            </tr>
+                            <tr>
+                                <th>Annotated AspectJ</th>
+                                <td>Same as Java</td>
+                                <td><a href="design-study/mm/mp_ao_ann_02.tar.gz">Get</a></td>
+                                <td><a href="design-study/mm/mp_ao_ann_03.tar.gz">Get</a></td>
+                                <td><a href="design-study/mm/mp_ao_ann_04.tar.gz">Get</a></td>
+                                <td><a href="design-study/mm/mp_ao_ann_05.tar.gz">Get</a></td>
+                                <td><a href="design-study/mm/mp_ao_ann_06.tar.gz">Get</a></td>
+                                <td><a href="design-study/mm/mp_ao_ann_07.tar.gz">Get</a></td>
+                                <td><a href="design-study/mm/mp_ao_ann_08.tar.gz">Get</a></td>
+                                <td><a href="design-study/mm/mp_ao_ann_all.tar.gz">Get</a></td>
+                            </tr>
+                            <tr>
+                                <th>Open Modules</th>
+                                <td>Same as Java</td>
+                                <td><a href="design-study/mm/mp_om_02.tar.gz">Get</a></td>
+                                <td><a href="design-study/mm/mp_om_03.tar.gz">Get</a></td>
+                                <td><a href="design-study/mm/mp_om_04.tar.gz">Get</a></td>
+                                <td><a href="design-study/mm/mp_om_05.tar.gz">Get</a></td>
+                                <td><a href="design-study/mm/mp_om_06.tar.gz">Get</a></td>
+                                <td><a href="design-study/mm/mp_om_07.tar.gz">Get</a></td>
+                                <td><a href="design-study/mm/mp_om_08.tar.gz">Get</a></td>
+                                <td><a href="design-study/mm/mp_om_all.tar.gz">Get</a></td>
+                            </tr>
+                            <tr>
+                                <th>Ptolemy</th>
+                                <td>Same as Java</td>
+                                <td><a href="design-study/mm/mp_ptl_02.tar.gz">Get</a></td>
+                                <td><a href="design-study/mm/mp_ptl_03.tar.gz">Get</a></td>
+                                <td><a href="design-study/mm/mp_ptl_04.tar.gz">Get</a></td>
+                                <td><a href="design-study/mm/mp_ptl_05.tar.gz">Get</a></td>
+                                <td><a href="design-study/mm/mp_ptl_06.tar.gz">Get</a></td>
+                                <td><a href="design-study/mm/mp_ptl_07.tar.gz">Get</a></td>
+                                <td><a href="design-study/mm/mp_ptl_08.tar.gz">Get</a></td>
+                                <td><a href="design-study/mm/mp_ptl_all.tar.gz">Get</a></td>
+                            </tr>
+                        </table>
+
+
+                        <h3>
+                            <a name="healthwatcher">Health Watcher</a>
+                        </h3>
+                        <p>
+                            Please note that the Java and AspectJ Health Watcher revisions were
+                            re-used (and un-altered) from
+                            <a href="http://www.comp.lancs.ac.uk/~greenwop/tao/implementation.htm">Greenwood et al.</a>.
+                            The Annotated AspectJ and Open Modules revisions are based off the
+                            original AspectJ revisions.
+                        </p>
+                        <table class="design">
+                            <tr>
+                                <th>&nbsp;</th>
+                                <th>R1</th>
+                                <th>R2</th>
+                                <th>R3</th>
+                                <th>R4</th>
+                                <th>R5</th>
+                                <th>R6</th>
+                                <th>R7</th>
+                                <th>R8</th>
+                                <th>R9</th>
+                                <th>R10</th>
+                                <th>All</th>
+                            </tr>
+                            <tr>
+                                <th>Java</th>
+                                <td><a href="design-study/hw/HealthWatcherOO_01_Base.tar.gz">Get</a></td>
+                                <td><a href="design-study/hw/HealthWatcherOO_02_Command.tar.gz">Get</a></td>
+                                <td><a href="design-study/hw/HealthWatcherOO_03_State.tar.gz">Get</a></td>
+                                <td><a href="design-study/hw/HealthWatcherOO_04_Observer.tar.gz">Get</a></td>
+                                <td><a href="design-study/hw/HealthWatcherOO_05_Adapter.tar.gz">Get</a></td>
+                                <td><a href="design-study/hw/HealthWatcherOO_06_Factory.tar.gz">Get</a></td>
+                                <td><a href="design-study/hw/HealthWatcherOO_07_Adapter.tar.gz">Get</a></td>
+                                <td><a href="design-study/hw/HealthWatcherOO_08_Factory.tar.gz">Get</a></td>
+                                <td><a href="design-study/hw/HealthWatcherOO_09_Evolution.tar.gz">Get</a></td>
+                                <td><a href="design-study/hw/HealthWatcherOO_10_ExceptionHandling.tar.gz">Get</a></td>
+                                <td><a href="design-study/hw/HealthWatcherOO_all.tar.gz">Get</a></td>
+                            </tr>
+                            <tr>
+                                <th>AspectJ</th>
+                                <td><a href="design-study/hw/HealthWatcherAO_01_Base.tar.gz">Get</a></td>
+                                <td><a href="design-study/hw/HealthWatcherAO_02_Command.tar.gz">Get</a></td>
+                                <td><a href="design-study/hw/HealthWatcherAO_03_State.tar.gz">Get</a></td>
+                                <td><a href="design-study/hw/HealthWatcherAO_04_Observer.tar.gz">Get</a></td>
+                                <td><a href="design-study/hw/HealthWatcherAO_05_Adapter.tar.gz">Get</a></td>
+                                <td><a href="design-study/hw/HealthWatcherAO_06_Factory.tar.gz">Get</a></td>
+                                <td><a href="design-study/hw/HealthWatcherAO_07_Adapter.tar.gz">Get</a></td>
+                                <td><a href="design-study/hw/HealthWatcherAO_08_Factory.tar.gz">Get</a></td>
+                                <td><a href="design-study/hw/HealthWatcherAO_09_Evolution.tar.gz">Get</a></td>
+                                <td><a href="design-study/hw/HealthWatcherAO_10_ExceptionHandling.tar.gz">Get</a></td>
+                                <td><a href="design-study/hw/HealthWatcherAO_all.tar.gz">Get</a></td>
+                            </tr>
+                            <tr>
+                                <th>Annotated AspectJ</th>
+                                <td><a href="design-study/hw/HealthWatcherAOAnn_01_Base.tar.gz">Get</a></td>
+                                <td><a href="design-study/hw/HealthWatcherAOAnn_02_Command.tar.gz">Get</a></td>
+                                <td><a href="design-study/hw/HealthWatcherAOAnn_03_State.tar.gz">Get</a></td>
+                                <td><a href="design-study/hw/HealthWatcherAOAnn_04_Observer.tar.gz">Get</a></td>
+                                <td><a href="design-study/hw/HealthWatcherAOAnn_05_Adapter.tar.gz">Get</a></td>
+                                <td><a href="design-study/hw/HealthWatcherAOAnn_06_Factory.tar.gz">Get</a></td>
+                                <td><a href="design-study/hw/HealthWatcherAOAnn_07_Adapter.tar.gz">Get</a></td>
+                                <td><a href="design-study/hw/HealthWatcherAOAnn_08_Factory.tar.gz">Get</a></td>
+                                <td><a href="design-study/hw/HealthWatcherAOAnn_09_Evolution.tar.gz">Get</a></td>
+                                <td><a href="design-study/hw/HealthWatcherAOAnn_10_ExceptionHandling.tar.gz">Get</a></td>
+                                <td><a href="design-study/hw/HealthWatcherAOAnn_all.tar.gz">Get</a></td>
+                            </tr>
+                            <tr>
+                                <th>Open Modules</th>
+                                <td><a href="design-study/hw/HealthWatcherOM_01_Base.tar.gz">Get</a></td>
+                                <td><a href="design-study/hw/HealthWatcherOM_02_Command.tar.gz">Get</a></td>
+                                <td><a href="design-study/hw/HealthWatcherOM_03_State.tar.gz">Get</a></td>
+                                <td><a href="design-study/hw/HealthWatcherOM_04_Observer.tar.gz">Get</a></td>
+                                <td><a href="design-study/hw/HealthWatcherOM_05_Adapter.tar.gz">Get</a></td>
+                                <td><a href="design-study/hw/HealthWatcherOM_06_Factory.tar.gz">Get</a></td>
+                                <td><a href="design-study/hw/HealthWatcherOM_07_Adapter.tar.gz">Get</a></td>
+                                <td><a href="design-study/hw/HealthWatcherOM_08_Factory.tar.gz">Get</a></td>
+                                <td><a href="design-study/hw/HealthWatcherOM_09_Evolution.tar.gz">Get</a></td>
+                                <td><a href="design-study/hw/HealthWatcherOM_10_ExceptionHandling.tar.gz">Get</a></td>
+                                <td><a href="design-study/hw/HealthWatcherOM_all.tar.gz">Get</a></td>
+                            </tr>
+                            <tr>
+                                <th>Ptolemy</th>
+                                <td><a href="design-study/hw/HealthWatcherPTL_01_Base.tar.gz">Get</a></td>
+                                <td><a href="design-study/hw/HealthWatcherPTL_02_Command.tar.gz">Get</a></td>
+                                <td><a href="design-study/hw/HealthWatcherPTL_03_State.tar.gz">Get</a></td>
+                                <td><a href="design-study/hw/HealthWatcherPTL_04_Observer.tar.gz">Get</a></td>
+                                <td><a href="design-study/hw/HealthWatcherPTL_05_Adapter.tar.gz">Get</a></td>
+                                <td><a href="design-study/hw/HealthWatcherPTL_06_Factory.tar.gz">Get</a></td>
+                                <td><a href="design-study/hw/HealthWatcherPTL_07_Adapter.tar.gz">Get</a></td>
+                                <td><a href="design-study/hw/HealthWatcherPTL_08_Factory.tar.gz">Get</a></td>
+                                <td><a href="design-study/hw/HealthWatcherPTL_09_Evolution.tar.gz">Get</a></td>
+                                <td><a href="design-study/hw/HealthWatcherPTL_10_ExceptionHandling.tar.gz">Get</a></td>
+                                <td><a href="design-study/hw/HealthWatcherPTL_all.tar.gz">Get</a></td>
+                            </tr>
+                        </table>
+
+
+
+                        <h2>
+                            <a name="tools">Tools</a>
+                        </h2>
+                        <ul>
+                            <li>Ptolemy Compiler</li>
+                            <ul>
+                                <li><a href="/">Homepage</a></li>
+                                <li><a href="design-study/ja-pyc.jar">Download</a> the version used in this study</li>
+                                <ul>
+                                    <li>Contains support for measuring CK metrics</li>
+                                    <li>Contains support for generating input for the change propagation tool</li>
+                                </ul>
+                            </ul>
+                            <li>ABC (AspectBench Compiler)</li>
+                            <ul>
+                                <li><a href="http://abc.comlab.ox.ac.uk/">Homepage</a></li>
+                                <li><a href="design-study/abc-ja-complete.jar">Download</a> the (modified) version used in this study</li>
+                                <ul>
+                                    <li>Contains support for measuring CK metrics</li>
+                                    <li>Contains support for generating input for the change propagation tool</li>
+                                    <li>Contains support for (only!) parsing pointcuts containing annotations (no typechecking/backend support)</li>
+                                </ul>
+                            </ul>
+                            <li>Change Propagator</li>
+                            <ul>
+                            <li><a href="design-study/ChangePropagator.jar">Download</a></li>
+                            </ul>
+                        </ul>
+                         
+
+
+                        <!-- PAGE UPDATE -->
+                        <p id="update">Page last modified on $Date: 2012/03/26 10:27:11 $</p>
+                        
+                        <!-- GUIDE NAVIGATION -->
+                        <div class="page-nav">
+                        	<a href="design-study/#pgtop">&#94; RETURN TO TOP</a>
+                        </div>
+                    </div>          
+<!--#include virtual="../includes/bottom.html"-->

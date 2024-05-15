@@ -1,0 +1,250 @@
+<!--#include virtual="../includes/top.html"-->
+<title>Panini Programming Guide : Installing & Running the
+Paninij Compiler</title>
+<!-- PAGE SPECIFIC STYLING -->
+<style type="text/css">
+.col2-toc h2 {
+	margin: 0 0 10px;
+}
+</style>
+<!--#include virtual="../includes/header.html"-->
+
+<h1>The Panini Programming Guide</h1>
+<script type="text/javascript">
+copyright=new Date()
+fullYear=copyright.getFullYear();
+document.write("<h5>Copyright &copy; 2006-" + fullYear + ", Iowa State University of Science and Technology. All rights reserved.</h5>")
+</script>
+
+<!-- TABLE OF CONTENTS -->
+<div class="col2-toc">
+<h2>Table of Contents</h2>
+<ol>
+	<li><a href="docs/index.shtml">Programming Guide Overview</a></li>
+	<li><a href="docs/motivation.shtml">Motivation</a></li>
+	<li><a href="docs/starting.shtml">Getting Started with Panini</a></li>
+	<li>Installing and Running the Panini compiler
+	<ul>
+		<li><a href="docs/running.shtml#download">Downloading the
+		Compiler</a></li>
+		<li><a href="docs/running.shtml#structure">Structure of
+		Panini Distribution</a></li>
+		<li><a href="docs/running.shtml#requirements">Requirements
+		for Running Panini Compiler</a></li>
+		<li><a href="docs/running.shtml#running">Running the Panini
+		Compiler</a></li>
+		<li><a href="docs/running.shtml#commandline">Running the
+		Panini Compiler from Command-Line</a></li>
+		<li><a href="docs/running.shtml#unix">Unix-specific
+		Instructions for Command-line</a></li>
+		<li><a href="docs/running.shtml#examples">Compiling Examples
+		from Command-Line</a></li>
+		<li><a href="docs/running.shtml#runningant">Running the
+		Panini Compiler from Within Ant</a></li>
+		<li><a href="docs/running.shtml#translating">Translating
+		Panini into Java</a></li>
+		<li><a href="docs/running.shtml#acknowledgments">Acknowledgments
+		and Licensing</a></li>
+	</ul>
+	</li>
+	<li><a href="papers/">Technical Publications</a></li>
+</ol>
+<hr />
+<h3>Examples</h3>
+<ul>
+	<li><a href="docs/starting-examples.shtml">Genetic Algorithm</a></li>
+</ul>
+</div>
+
+<!-- CONTENT -->
+<div class="col2-content">
+<h2><a name="download">Downloading the Compiler</a></h2>
+<p>The Panini compiler can be obtained in the following forms:</p>
+<ul>
+	<li>Pre-built binaries: From the Panini <a href="download">download
+	page</a>
+	<li>Source code: From sourceforge.net by the URL <a
+		href="http://sourceforge.net/projects/paninij">http://sourceforge.net/projects/paninij</a>
+</ul>
+<p>For starting out, we would recommend the pre-built binaries that
+account for all dependencies. The following instructions assume the use
+of the pre-built package.
+<p>
+<h2><a name="structure">Structure of Panini Distribution</a></h2>
+<p>The archive file contains the following:</p>
+<ul>
+	<li>bin: Executable versions of the Panini compiler for both *nix
+	and WIN environments.</li>
+	<li>docs: Javadocs for the Panini compiler ant task.</li>
+	<li>examples: Some small examples of new Panini features.</li>
+	<li>license: License agreements under with the Panini Compiler and
+	associated tools are available.</li>
+	<li>README: A textual version of this page.</li>
+</ul>
+
+<h2><a name="requirements">Requirements for Running Panini
+Compiler</a></h2>
+<ul>
+	<li>Java Runtime Environment(JRE) 1.6 or greater.</li>
+	<li><a href="http://ant.apache.org/">Apache Ant</a> is also
+	recommended.</li>
+</ul>
+
+<h2><a name="running">Running the Panini Compiler</a></h2>
+<p>The Panini compiler can be used in two ways:</p>
+<ul>
+	<li>like javac from the command-line</li>
+	<li>as a replacement builder for javac in the javac ant task.</li>
+</ul>
+
+<p>The following sections describe usage.</p>
+
+<h2><a name="commandline">Running the Panini Compiler from
+command-line</a></h2>
+<p>The bin folder in this distribution contains scripts that can be
+used to run the Panini compiler.</p>
+<ul>
+	<li>panc : the command-line interface for *nix systems.</li>
+	<li>panc.bat : the command-line interface for WIN systems.</li>
+</ul>
+
+<p>Alternatively, the compiler can be invoked directly from the
+command-line using:</p>
+<pre>java -jar path/to/panc.jar -classpath .:path/to/panini_rt.jar files_to_compile.</pre>
+<h2><a name="unix">Unix-specific Instructions for Command-line</a>
+</h2>
+<p>Before running these scripts, the PANC_HOME variable needs to be
+set to the full path of the panc folder. For example, (on Linux) if the
+panc folder is located at</p>
+<pre>       /home/hridesh/panc</pre>
+<p>then the PANC_HOME needs to to be set to /home/hridesh/panc by
+running</p>
+<pre>       export PANC_HOME=/home/hridesh/panc</pre>
+<p>on the command-line. You could also add the above export line to
+your shell startup script such as .bashrc or .bash_profile.</p>
+<h2>Windows-specific instructions for the Command-line</h2>
+<p>If the PANC_HOME variable is not set, the script assumes the
+panc.jar file is in the same directory as the script and set paths
+accordingly. If the script is moved out of the bin/ directory, then
+PANC_HOME will need to be set.</p>
+<p>Windows users can set the environment variable PANC_HOME by
+running</p>
+<pre>       set PANC_HOME=c:\home\hridesh\panc</pre>
+<p>In Windows, there should not be any spaces in the PANC_HOME path.
+For example, c:\Documents and Settings\hridesh\panc will probably cause
+an error. It is recommended to put the panc folder in the root of a
+drive, e.g. c:\panc</p>
+<p>Once PANC_HOME is set correctly, the Panini compiler, panc, can
+used just like javac. Invoke the script on the command line with the
+names of the files to compile.</p>
+<p>For more details see:
+http://en.wikipedia.org/wiki/Environment_variable
+<h2><a name="examples">Compiling Examples from Command-Line</a></h2>
+<p>Examples of some small Panini programs are located in the
+examples folder. To compile an example, navigate to its directory and
+use Panini compiler just like javac.</p>
+<p>For example, to manually compile the Genetic Algorithm example,
+navigate to the examples/GeneticAlgorithm directory and type
+../../bin/panc *.java.</p>
+<p>Running compiled Panini programs requires the panini runtime be
+on the jvm classpath. The required runtime classes are in
+PANC_HOME/bin/panini_rt.jar</p>
+<p>Use <pre>java -cp .:../../bin/panini_rt.jar AppEntry</pre> to run
+these programs.</p>
+
+<h2><a name="runningant">Running the Panini Compiler from
+Within Ant</a></h2>
+<p>Use the following to create a panc ant task that can be used like
+the javac task to compile projects.</p>
+<pre class="brush: xml;">    
+<property name="panc.bin" value="path/to/bin/folder"></property>   
+<property name="panini.lib" value="${panc.bin}/panini_rt.jar"> </property>    
+        
+<taskdef name="panc"
+	classname="edu.iastate.cs.ja_pyc.ant.JapycJavacAdaptor">
+    <classpath>
+        <pathelement location="${panc.bin}/panc.jar"></pathelement>
+    </classpath>
+</taskdef>
+<target name="build">    
+    <panc srcdir="${source}" destdir="${output}"
+	debuglevel="lines,source" panini_rtpath="${panini.lib}"
+	includes="*.java">
+    </panc>
+</target>
+</pre>
+
+<p>A javadoc with explanations of the added attributes for
+JapycJavacAdaptor is included in docs/anttask.</p>
+
+<p>Alternatively, the normal javac target can be overridden to use
+the Panini compiler instead of the system Java compiler.</p>
+<p>Create a build.properties files with the following line: <tt>build.compiler=edu.iastate.cs.ja_pyc.ant.JapycJavacAdapter</tt>
+</p>
+<p>Include the build.properties in build.xml file, either globally
+or for specific targets.</p>
+<p>Use the javac ant target to compile the java files. For example:
+</p>
+<pre class="brush: xml;">
+<property name="output" value="bin"></property>
+<property name="src" value="src"></property>
+<target name="build" description="Compile">
+    <property file="build.properties"></property>
+    <javac srcdir="${src}" destdir="${output}">
+        <classpath>
+            <pathelement location="path/to/panini_rt.jar"></pathelement>
+        </classpath>
+    </javac>
+</target>
+</pre>
+<p>Run ant with: <tt>ant -lib path/to/panc.jar</tt> to start ant
+with the Panini compiler on ant's classpath. Note, panini_rt.jar is also
+added to the classpath in the javac task. This is because the Panini
+compiler needs some classes and annotations defined in the panini_rt.jar
+file to run.</p>
+
+<h2><a name="translating">Translating Panini into Java</a></h2>
+<p>The panini ant task can also translate Panini programs into pure
+Java programs. After translation, a Panini program can be compiled with
+any standard Java compiler. To translate a Panini program set the <tt>dotranslate</tt>
+attribute to yes.</p>
+For example: <pre class="brush: xml;">
+<panc dotranslate="yes" srcdir="${source}" destdir="${output}"
+	include="*.java"></panc>
+</pre>
+<p>will translate all the Panini source files in the <tt>${source}</tt>
+to Java files in the <tt>${output}</tt> directory. The translation
+attribute does not support a nested package structure for the source
+files. If the translation option is used, all the source files must be
+in the default package. When compiling with javac, panini_rt.jar must be
+on the classpath. The build files for the included examples use the
+translation/javac strategy to produce runnable byte code.</p>
+
+<!--The 2.0.0 release of Panini has some bugs with the class files it 
+emits.  Thus the translation option may work better right now. This needs to be said
+more diplomatically.
+-->
+
+
+<h2><a name="acknowledgments">Acknowledgments and Licensing </a></h2>
+<p>The Panini compiler builds on several different projects
+including:</p>
+<ul>
+	<li>Beaver: <a href="http://beaver.sourceforge.net">http://beaver.sourceforge.net/</a></li>
+	<li>JFlex: <a href="http://jflex.de">http://jflex.de/</a></li>
+	<li>JastAdd: <a href="http://jastadd.org">http://www.jastadd.org/</a></li>
+</ul>
+
+<p>All necessary licenses are included in the license directory.
+<p>The Panini compiler is licensed under the Mozilla Public License
+version 1.1 (MPL 1.1) license. You may obtain a copy of the license at <a
+	href="http://www.mozilla.org/MPL/">http://www.mozilla.org/MPL/.</a> <!-- PAGE UPDATE -->
+<p id="update">Page last modified on $Date: 2013/03/02 07:00:14 $</p>
+
+<!-- GUIDE NAVIGATION -->
+<div class="page-nav"><a href="docs/starting.shtml">&lt;
+PREVIOUS</a> <a href="docs/running.shtml#pgtop">&#94; RETURN TO TOP</a> <a
+	href="docs/lang.shtml">NEXT &gt;</a></div>
+</div>
+
+<!--#include virtual="../includes/bottom.html"-->

@@ -1,0 +1,32 @@
+<!--#include virtual="../../includes/topbar.html"-->
+<!-- 2ND COLUMN. INSERT COPY -->
+
+<td id="b3" rowspan="2">
+<div class="maintext">
+
+<h1>Lessons covering assembly and architecture using the Frances tool</h1><BR><BR>
+
+<p>
+<a href="FrancesA_Lab_01_Intro.pdf">Lesson 1: Intro</a>
+</p>
+<p>
+<a href="FrancesA_Lab_02_VarTypes.pdf">Lesson 2: Variable Types</a>
+</p>
+<p>
+<a href="FrancesA_Lab_03_Operands.pdf">Lesson 3: Operands</a>
+</p>
+<p>
+<a href="FrancesA_Lab_04_OpertationTypes.pdf">Lesson 4: Operation Types</a>
+</p>
+<p>
+<a href="FrancesA_Lab_05_AddressModes.pdf">Lesson 5: Addressing Modes</a>
+</p>
+<p>
+<a href="FrancesA_Lab_06_Flags.pdf">Lesson 6: Flags</a>
+</p>
+
+</div>
+
+</td>
+
+<!--#include virtual="../../includes/bottombar.html"-->

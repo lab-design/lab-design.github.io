@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/design.css">
+    <link rel="icon" href="/favicon.ico">
+    <title>Fairify: Fairness Verification of Neural Networks</title>
+  </head>
+
+  <body>
+    <!-- Load jQuery before the content in order to support the papers page sorting -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <header>
+
+  <div class="brand-bg-color">
+    <div class="container">
+      <div class="brand-navbar">
+        <div class="row">
+          <div class="flex-separate col-12">
+            <a href="/" class="nav-link">
+              <span id="isu-logo">Iowa State University</span>
+              <span class="d-none d-sm-block">Laboratory for Software Design</span>
+              <span class="small d-block d-sm-none">Laboratory for Software Design</span>
+            </a>
+            <button class="navbar-toggler d-block d-sm-none" type="button" data-toggle="collapse" data-target="#collapseNav">&#9776;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-bg-color">
+    <nav class="container navbar navbar-dark navbar-expand-sm">
+      <div class="collapse navbar-collapse" id="collapseNav">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="/projects.html">Projects</a>
+          <a class="nav-item nav-link" href="/papers/">Papers</a>
+          <a class="nav-item nav-link" href="/grants/">Grants</a>
+          <a class="nav-item nav-link" href="/news/">News</a>
+          <a class="nav-item nav-link" href="/people.html">People</a>
+          <a class="nav-item nav-link" href="/about/">About</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+</header>
+
+
+<main class="container">
+  <br />
+  <div class="row">
+  <div class="col-12">
+    <h2 class="page-title">Fairify: Fairness Verification of Neural Networks</h2>
+    
+
+<h4>
+By: 
+Sumon Biswas and Hridesh Rajan
+
+</h4>
+
+
+<a href="fairify.pdf" class="icon">
+  <img src="/img/pdf_icon.svg"/ alt="PDF Download">
+  <span>Download Paper</span>
+</a>
+
+<br/>
+
+
+
+<h4>Abstract</h4>
+<p>
+  <span id="biswas23fairify">
+    Fairness of machine learning (ML) software has become a major concern in the recent past. Although recent research on testing and improving fairness have demonstrated impact on real-world software, providing fairness guarantee in practice is still lacking. Certification of ML models is challenging because of the complex decision-making process of the models. In this paper, we proposed Fairify, an SMT-based approach to verify individual fairness property in neural network (NN) models. Individual fairness ensures that any two similar individuals get similar treatment irrespective of their protected attributes e.g., race, sex, age. Verifying this fairness property is hard because of the global checking and non-linear computation nodes in NN. We proposed sound approach to make individual fairness verification tractable for the developers. The key idea is that many neurons in the NN always remain inactive when a smaller part of the input domain is considered. So, Fairify leverages whitebox access to the models in production and then apply formal analysis based pruning. Our approach adopts input partitioning and then prunes the NN for each partition to provide fairness certification or counterexample. We leveraged interval arithmetic and activation heuristic of the neurons to perform the pruning as necessary. We evaluated Fairify on 25 real-world neural networks collected from four different sources, and demonstrated the effectiveness, scalability and performance over baseline and closely related work. Fairify is also configurable based on the domain and size of the NN. Our novel formulation of the problem can answer targeted verification queries with relaxations and counterexamples, which have practical implications.
+  </span>
+</p>
+
+
+
+
+
+<h4>ACM Reference</h4>
+<p>
+<span id="biswas23fairify">Biswas, S. and Rajan, H. 2023. Fairify: Fairness Verification of Neural Networks. <i>ICSE’23: The 45th International Conference on Software Engineering</i> (May 2023).</span>
+</p>
+
+<h4>BibTeX Reference</h4>
+<pre><code>@inproceedings{biswas23fairify,
+  author = {Sumon Biswas and Hridesh Rajan},
+  title = {Fairify: Fairness Verification of Neural Networks},
+  booktitle = {ICSE'23: The 45th International Conference on Software Engineering},
+  location = {Melbourne, Australia},
+  month = {May 14-May 20},
+  year = {2023},
+  entrysubtype = {conference},
+  abstract = {
+    Fairness of machine learning (ML) software has become a major concern in the recent past. Although recent research on testing and improving fairness have demonstrated impact on real-world software, providing fairness guarantee in practice is still lacking. Certification of ML models is challenging because of the complex decision-making process of the models. In this paper, we proposed Fairify, an SMT-based approach to verify individual fairness property in neural network (NN) models. Individual fairness ensures that any two similar individuals get similar treatment irrespective of their protected attributes e.g., race, sex, age. Verifying this fairness property is hard because of the global checking and non-linear computation nodes in NN. We proposed sound approach to make individual fairness verification tractable for the developers. The key idea is that many neurons in the NN always remain inactive when a smaller part of the input domain is considered. So, Fairify leverages whitebox access to the models in production and then apply formal analysis based pruning. Our approach adopts input partitioning and then prunes the NN for each partition to provide fairness certification or counterexample. We leveraged interval arithmetic and activation heuristic of the neurons to perform the pruning as necessary. We evaluated Fairify on 25 real-world neural networks collected from four different sources, and demonstrated the effectiveness, scalability and performance over baseline and closely related work. Fairify is also configurable based on the domain and size of the NN. Our novel formulation of the problem can answer targeted verification queries with relaxations and counterexamples, which have practical implications.
+  }
+}
+</code></pre>
+
+
+  </div>
+  </div>
+  <br />
+</main>
+
+
+<footer>
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      },
+      i[r].l = 1 * new Date();
+      a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-512574-3', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <div class="container">
+    <div>
+      <div class="row">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-xs-12 col-lg-3 isu-logo-wrapper">
+              <a href="http://www.iastate.edu">
+                <img src="/img/isu-stacked.svg" alt="Iowa State University" class="isu-logo">
+              </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4">
+              <p>
+                <b>Laboratory for Software Design</b>
+              </p>
+              <p>115-2 Atanasoff Hall</p>
+              <p>Ames, IA, 50011-1040, USA</p>
+              <p>Phone: (515) 294-6168</p>
+              <p>E-Mail: hridesh@iastate.edu</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+              <p>
+                Copyright &copy;
+                2024
+                Iowa State University of Science and Technology. All rights reserved.<BR>
+                <div class="d-none d-lg-block" style="margin-top: 0">
+                  The research and educational activities described on these pages has been supported in part by the
+                  <a href="http://www.nsf.gov">US National Science Foundation (NSF)</a>.
+                </div>
+              </p>
+            </div>
+            <div class="col-md-3 col-lg-1 d-none d-md-block project-logos">
+              <div>
+                <a href="http://web.cs.iastate.edu/~panini/">
+                  <img src="/img/panini-logo.svg" class="logo" alt="Boa Logo">
+                  Panini
+                </div>
+                <div>
+                  <a href="http://boa.cs.iastate.edu">
+                    <img src="/img/boa-logo.svg" class="logo" alt="Boa Logo">
+                    Boa
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="/js/design.js"></script>
+  </body>
+</html>

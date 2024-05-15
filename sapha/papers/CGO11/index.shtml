@@ -1,0 +1,70 @@
+
+
+<!--#include virtual="../../includes/topbar.html"-->
+<!-- 2ND COLUMN. INSERT COPY -->
+
+<td id="b3" rowspan="2">
+<div class="maintext">
+
+<!-- INSERT TITLE OF THE PAPER BELOW.-->
+<h1>
+Phase-based Tuning for Better Utilization of Performance-Asymmetric Multicore Processors
+</h1>
+
+
+<!-- INSERT AUTHOR NAME AS IT APPEARS BELOW -->
+<h2>
+Tyler Sondag and Hridesh Rajan
+</h2>
+
+<!-- INSERT ABSTRACT OF THE PAPER BELOW -->
+<h2 class="bar">Abstract</h2>
+<p>
+The latest trend towards performance asymmetry among cores on
+a single chip of a multicore processor is posing new challenges.
+For effective utilization of these
+performance-asymmetric multicore processors, code sections of a program
+must be assigned to cores such that the resource needs of code sections
+closely matches resource availability at the assigned core. Determining
+this assignment manually is tedious, error prone, and significantly
+complicates software development.
+To solve this problem, we contribute a transparent and fully-automatic process
+that we call phase-based tuning which adapts an application to
+effectively utilize performance-asymmetric multicores.
+Compared to the stock Linux scheduler we see a
+36% average process speedup, while maintaining fairness and with
+negligible overheads.
+</p>
+
+<!-- INSERT BIBLIOGRAPHIC INFORMATION BELOW, DON'T FORGET to END EACH LINE
+  WITH <BR> -->
+
+<h2 class="bar">Bibliographic Information</h2>
+<p>
+@inproceedings{Sondag-Rajan-11,<BR>
+author = {Tyler Sondag and Hridesh Rajan},<BR>
+title = {Phase-based Tuning for Better Utilization of Performance-Asymmetric Multicore Processors},<BR>
+booktitle = {International Symposium on Code Generation and Optimization (CGO)},<BR>
+location = {Chamonix, France},<BR>
+month = {April},<BR>
+year = {2011},<BR>
+}<BR>
+</p>
+<!--- INSERT LINK TO THE FULL PAPER BELOW AND ADD THE PAPER TO THE CURRENT 
+  DIRECTORY -->
+<!-- <p>Most recent version: <a href="papers/PLOS-2007/skr-predictive-assignment.pdf">PDF</a></p> -->
+<p>Most recent paper version: <a href="cgo11-paper.pdf">PDF</a></p>
+<p>Presentation: <a href="cgo11-pres.pdf">PDF</a></p>
+
+<hr>
+
+<p>Previous version appeared as Technical Report 08-14a, Computer
+Science, Iowa State University, March, 2010.  [<a
+href="http://archives.cs.iastate.edu/documents/disk0/00/00/05/96/00000596-00/mainTR.pdf">PDF</a>]</p>
+
+</div>
+
+</td>
+
+<!--#include virtual="../../includes/bottombar.html"-->
+

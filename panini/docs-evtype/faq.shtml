@@ -1,0 +1,31 @@
+<!--#include virtual="../includes/headtop.html"-->
+
+<!-- INSERT TITLE -->
+<title>Installing and Running the Panini Compiler</title>
+
+<style type="text/css">
+  <!--
+    .figure { text-align: center; margin-left: auto; margin-right: auto; }
+    .fig_graphic { text-align: center; }
+    .fig_caption { text-align: center; width: 400px; }
+  -->
+</style>
+     
+<!--#include virtual="../includes/headmiddle.html"-->
+
+<h1>Frequently Asked Questions about the Panini Compiler</h1>
+
+
+<!--#include virtual="../includes/headbottom.html"-->
+
+<td id="b3" rowspan="2">
+<div class="maintext">
+
+
+</div>
+
+
+</td>
+
+<!--#include virtual="../includes/bottombar.html"-->
+

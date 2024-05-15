@@ -1,0 +1,118 @@
+<!--#include virtual="../includes/top.html"-->
+<title>The Panini Programming Guide</title>
+<!-- PAGE SPECIFIC STYLING -->
+<style type="text/css">
+.col2-toc h2 {
+	margin: 0 0 10px;
+}
+</style>
+<!--#include virtual="../includes/header.html"-->
+<h1>Example</h1>
+
+<script type="text/javascript">
+copyright=new Date()
+fullYear=copyright.getFullYear();
+document.write("<h5>Copyright &copy; 2006-" + fullYear + ", Iowa State University of Science and Technology. All rights reserved.</h5>")
+</script>
+
+<!-- TABLE OF CONTENTS -->
+<div class="col2-toc">
+<h2>Table of Contents</h2>
+<ol>
+	<li><a href="docs/index.shtml">Programming Guide Overview</a></li>
+	<li><a href="docs/motivation.shtml">Motivation</a></li>
+	<li><a href="docs/starting.shtml">Getting Started with Ptolemy</a></li>
+	<li><a href="docs/running.shtml">Installing and Running the
+	Panini compiler</a></li>
+	<li><a href="papers/">Technical Publications</a></li>
+</ol>
+<hr />
+<h3>Examples</h3>
+<ul>
+	<li>Genetic Algorithm</li>
+</ul>
+</div>
+
+<!-- CONTENT -->
+<div class="col2-content">
+<h2><a name="geneticalgorithm">Example</a></h2>
+<p>To illustrate these new language features in practice, consider
+the implementation of a genetic algorithm presented in Figure 1. The
+idea behind a genetic algorithm is to mimic the process of natural
+selection[2]. Genetic algorithms are computationally intensive and are
+useful for many optimization problems[2]. The main concept is that
+searching for a desirable state is done by combining two <i>parent</i>
+states instead of modifying a single state[2]. An initial <i>generation</i>
+with <i>n</i> members is given to the algorithm. Next, a <i>cross
+over</i> function is used to combine different members of the generation in
+order to develop the next generation (lines 11-19 in Figure 1).
+Optionally, members of the offspring may randomly be <i>mutated</i>
+slightly (lines 27-35 in Figure 1). Finally, members of the generation
+(or an entire generation) are ranked using a <i>fitness function</i>
+(lines 45-51 in Figure 1).</p>
+
+<table class="figure">
+	<tr>
+		<td><img
+			src="http://www.cs.iastate.edu/~design/projects/panini/docs/pictures/genetic-panini.png"></td>
+	</tr>
+	<tr>
+		<td width=400px><b>Figure 1:</b> Panini implementation of a
+		genetic algorithm.</td>
+	</tr>
+</table>
+
+<p>The listing in Figure 1 has several examples of observers: <tt>CrossOver</tt>,
+<tt>Mutation</tt>, <tt>Logger</tt> and <tt>Fittest</tt>. A class can act
+as both subject and observer. For example, the classes <tt>CrossOver</tt>
+and <tt>Mutation</tt> are both subjects and observers for events of type
+<tt>GenAvailable</tt>.</p>
+
+<p>As discussed earlier, in Panini, classes statically express
+(potential) interest in an event by providing a <i>binding
+declaration</i>. For example, the <tt>Mutate</tt> concern (lines 20-35)
+wants to randomly mutate some of the population after it is created. So
+in the implementation of class <tt>Mutatation</tt> there is a binding
+declaration (line 26) that says to run the method <tt>mutate</tt> (lines
+27-35) when events of type <tt>GenAvailable</tt> are announced.</p>
+
+<p>Again, at runtime these interests in events can be made concrete
+using the <i>register</i> expressions. The class <tt>Mutatation</tt> has
+a method on lines 22-25 that when called registers the current instance
+<tt>this</tt> to listen for events. After registration, when any event
+of type <tt>GenAvailable</tt> is announced the method <tt>mutate</tt>
+(lines 27-35) will run with the registered instance <tt>this</tt> as the
+receiver object.</p>
+
+<p>Similarly, the method <tt>logit</tt> (line 39) will log each
+generation when events of type <tt>GenAvailable</tt> are announced.
+Finally, method <tt>check</tt> in class <tt>Fittest</tt> (lines 41-51)
+will determine the better fitness between the announced generation and
+the previously optimal generation when events of type <tt>GenAvailable</tt>
+are announced.</p>
+
+<p></p>
+<p></p>
+<p></p>
+
+<HR SIZE=1, WIDTH=95%, ALIGN=CENTER, NOSHADE>
+<b>References</b>
+<ol>
+	<li>A large part of this text is taken from our latest <a
+		href="http://www.cs.iastate.edu/~design/papers/TR-09-28">technical
+	report</a>.
+	<li>S. Russell and P. Norvig. Artificial Intelligence: A Modern
+	Approach. Prentice Hall, 2nd edition, 2003.
+</ol>
+
+<!-- PAGE UPDATE -->
+<p id="update">Page last modified on $Date: 2013/03/02 07:00:14 $</p>
+
+<!-- GUIDE NAVIGATION -->
+<div class="page-nav"><!-- <a href="#">&lt; PREVIOUS</a> --> <a
+	href="docs/example-genetic.shtml#pgtop">&#94; RETURN TO TOP</a> <!-- <a href="#">NEXT &gt;</a> -->
+</div>
+</div>
+<!--#include virtual="../includes/bottom.html"-->
+
+

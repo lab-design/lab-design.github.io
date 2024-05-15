@@ -1,0 +1,247 @@
+<!DOCTYPE html> 
+<html> 
+<head><title>1 Overview</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:light,regular,bold&amp;v1' rel='stylesheet' type='text/css' /> 
+<base href="/man/" /> 
+<link href="/style.css" rel="stylesheet" type="text/css" /> 
+<link href="/images/panini.ico" rel="shortcut icon" type="image/x-icon" /> 
+<!-- SYNTAX HIGHLIGHTING --> 
+<script type="text/javascript" src="/syntax/scripts/shCore.js"></script> 
+<script type="text/javascript" src="/syntax/scripts/shBrushBash.js"></script> 
+<script type="text/javascript" src="/syntax/scripts/shBrushJava.js"></script> 
+<script type="text/javascript" src="/syntax/scripts/shBrushPanini.js"></script> 
+<script type="text/javascript" src="/syntax/scripts/shBrushXml.js"></script> 
+<link type="text/css" rel="stylesheet" href="/syntax/styles/shCore.css"/> 
+<link type="text/css" rel="stylesheet" href="/syntax/styles/shThemeDefault.css"/> 
+<script type="text/javascript"> 
+//SyntaxHighlighter.config.clipboardSwf = 'scripts/clipboard.swf'; 
+SyntaxHighlighter.all(); 
+</script> 
+<!-- END SYTNAX HIGHLIGHTING --> 
+  
+<style type="text/css">  
+.col2-toc h2 {  
+margin: 0 0 10px;  
+}  
+</style>  
+ 
+<meta name="description"  
+content="The Panini Programming Guide helps introduce users to  
+the features and syntax of the Panini Programming Language.  
+Panini is a capsule-oriented programming language whose goals are  
+to ease development of correct, scalable, and portable software  
+for multicore and manycore, platforms.  
+Panini strives to reconcile modularity and concurrency goals  
+in software development." />  
+<meta name="keywords" content="panini, programming, guide, introduction, tutorial,  
+panini, capsule, capsules, capsule-oriented,  
+capsule-oriented programming, better modularity better concurrency,  
+concurrency, modularity, events, types, modules, implicit concurrency,  
+sequential consistency, data race freedom due to shared data, ease of use,  
+quantified, event, types, Hridesh Rajan, Yuheng Long,  
+Rex Fernando, Eric Lin, synergy between modularity and concurrency,  
+determinstic semantics, data race freedom, deadlock freedom,  
+multicore, multi-core, manycore, many-core, heterogeneous,  
+performance-asymmetric, platform portability, download, compiler,  
+download panini, concurrent, patterns, open effects, guarded effects,  
+explicit concurrency, pitfalls, data races, race conditions, deadlock  
+avoidance, race freedom, open effects, deterministic semantics, modules, actors" />  
+ 
+<!-- PAGE METADATA --> <link rel="stylesheet" type="text/css" href="index.css" /> 
+  
+<style type="text/css">  
+.lstlisting .label {  
+width: 100%;  
+font-size: 8pt;  
+}  
+</style>  
+  
+<style type="text/css">  
+.caption .content {  
+background-image: none;  
+background-position: left 12px;  
+background-repeat: no-repeat;  
+margin-left: 0;  
+margin-right: auto;  
+padding: 0 0 100px 50px;  
+width: 1070px;  
+}  
+</style>  
+  
+<style type="text/css">  
+.content {  
+width: 1070px;  
+}  
+</style>  
+  
+<style type="text/css">  
+.main-content {  
+background-image: url("/images/maincontent-right.png");  
+background-position:1028px 1px;  
+background-repeat: no-repeat;  
+width: 1021px;  
+}  
+</style>  
+  
+<style type="text/css">  
+.main-content .caption{  
+font-style: italic;  
+font-size: 8pt;  
+text-align: left;  
+width: 80 
+margin: 0 !important ;  
+}  
+</style>  
+</head>  
+<body>  
+<div class="body-container">  
+<header>  
+<h1><a href="index.html" name="pgtop">Panini Programming Language</a></h1>  
+<h2>PROGRAMMING LANGUAGE</h2>  
+</header>  
+<div class="content">  
+<div class="top-nav">  
+<nav>  
+<ul>  
+<li><a href="/about.shtml">About</a></li>  
+<li><a href="/people.shtml">People</a></li>  
+<li><a href="/download/">Downloads</a></li>  
+<li><a href="/papers.shtml">Research</a></li>  
+<li><a href="/man/">Manual</a></li>  
+<li><a href="/faq.shtml" id="toplast">FAQs</a></li>  
+</ul>  
+</nav>  
+</div>  
+<div class="main-content">  <h2 class="chapterHead"><span class="titlemark">Chapter&#x00A0;1</span><br /><a 
+ id="x4-30001"></a>Overview</h2>
+                                                                         <div class="flushright" 
+>
+<!--l. 133--><p class="noindent" >
+<span 
+class="ptmri8t-x-x-90">An ounce of prevention is worth a pound of cure. &#8211; De Legibus (c. 1240) by De Bracton (d.1268)</span></p></div>
+   Its a pity that engineering correct and efficient concurrent software remains a
+daunting task in this second decade of the 21st century. Programming language
+support for engineering concurrency-safe programs by construction in modern
+mainstream languages is inadequate at best. Even if we are to ignore the fact that
+deploying external tool support for verifying concurrency safety properties requires an
+additional step in the toolchain, such tools have had limited applicability due to the
+unbridled concurrency power of modern mainstream languages.
+<!--l. 144--><p class="indent" >   Prevailing dynamics has been that the research on and development of
+programming languages and that of tool support are in non-cooperative roles, which
+ultimately hurts productivity of software engineers.
+</p><!--l. 148--><p class="indent" >   The Panini programming language is an attempt to design concerted support for
+concurrency in both programming models and compile-time checking. Specifically,
+the project has four goals:
+                                                                         
+
+                                                                         
+      </p><ol  class="enumerate1" >
+      <li 
+  class="enumerate" id="x4-3002x1">Simplifying concurrency support, while interesting patterns of concurrent
+      program  design  are  of  significant  intellectual  interest  to  select  few,  we
+      believe that simple constructs suffice for most needs,
+      </li>
+      <li 
+  class="enumerate" id="x4-3004x2">ease the process of visualizing the interactions between the components,
+      in order to make design decisions about concurrency and synchronization,
+      </li>
+      <li 
+  class="enumerate" id="x4-3006x3">ease the process of producing safer concurrent programs by construction
+      by providing automated, in-built support for error checking, and
+      </li>
+      <li 
+  class="enumerate" id="x4-3008x4">ease the process of reasoning and understanding concurrent programs by
+      significantly decreasing the number of program locations that necessitate
+      reasoning about concurrent tasks.</li></ol>
+<!--l. 175--><p class="indent" >   To satisfy these goals, the Panini language proposes a programming model called
+<span 
+class="ptmri8t-x-x-120">capsule-oriented programming</span>, where programmers describe a system in
+terms of its modular structure and write sequential code to implement the
+operations of those modules using a new abstraction that we call <span 
+class="ptmri8t-x-x-120">capsule</span>.
+Capsule-oriented programs look like familiar sequential programs but they are
+implicitly concurrent. This programming guide describes Panini, the motivation
+behind the language in more detail, its main constructs and features, common
+programming patterns in the programming language, and finally installing and running
+Panini programs.
+</p><!--l. 189--><p class="indent" >   If you are completely new to the Panini programming language, you may want to
+read our guide on how to get started in chapter&#x00A0;<a 
+href="indexch3.html#x6-80003">3<!--tex4ht:ref: chap:started --></a> or look at one of our examples in
+part&#x00A0;<a 
+href="indexpa3.html#x14-46000III">III<!--tex4ht:ref: part:parallel --></a>.
+                                                                         
+
+                                                                         
+</p><!--l. 193--><p class="indent" >   <div class="page-nav"><a 
+href="indexch1.html" >^ RETURN TO TOP</a></div><div class="page-nav"><a 
+href="indexch2.html" >NEXT &#x003E;</a></div>    
+</div><!--end-main-content-->  
+</div><!--end-content-->  
+</div> <!--end-body-container-->  
+ 
+<div class="footer-container">  
+<div class="footer">  
+<div class="bot-nav">  
+<nav>  
+<ul>  
+<li><a href="/about.shtml">About</a></li>  
+<li><a href="/people.shtml">People</a></li>  
+<li><a href="/download/">Downloads</a></li>  
+<li><a href="/papers.shtml">Research</a></li>  
+<li><a href="/man/">Documentation</a></li>  
+<li><a href="/faq.shtml" id="botlast">FAQs</a></li>  
+</ul>  
+</nav>  
+</div>  
+<div class="legal">  
+<div id="isu">Iowa State University</div>  
+<p id="copyright">  
+<script type="text/javascript">  
+copyright=new Date()  
+fullYear=copyright.getFullYear();  
+document.write("Copyright &copy; " + fullYear + " Iowa State University of Science and Technology. All rights reserved.")  
+</script>  
+</p>  
+<p id="credits">  
+These pages describe work carried out on the design  
+and the implementation of the Panini programming language.  
+The PI is  
+<a href="http://www.cs.iastate.edu/\protect \unhbox \voidb@x \penalty \@M \relax \unhbox \voidb@x \special {t4ht@+&{35}x00A0{59}}x{}hridesh/">Hridesh Rajan</a> from  
+<a href="http://www.cs.iastate.edu">Iowa State University</a>.  
+This work is supported in part by  
+the US <a href="http://www.nsf.gov">National Science Foundation</a> (NSF) under grants  
+<a href="http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=0846059">CCF-08-46059</a>,  
+<a href="http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=1017334">CCF-10-17334</a>,  
+<a href="http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=1117937">CCF-11-17937</a>, and  
+<a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1423370">CCF-14-23370</a> to Rajan.  
+Any opinions, findings, and conclusions or recommendations  
+expressed in this material are those of the author(s) and do not  
+necessarily reflect the views of the <a href="http://www.nsf.gov">NSF</a>.  
+</p>  
+</div>  
+<div class="links">  
+<h3>Related Sites</h3>  
+<ul>  
+<li><a href="http://www.cs.iastate.edu/\protect \unhbox \voidb@x \penalty \@M \relax \unhbox \voidb@x \special {t4ht@+&{35}x00A0{59}}x{}design/">Labratory for Software Design</a></li>  
+<li><a href="http://www.cs.iastate.edu/">Computer Science Department</a></li>  
+<li><a href="http://www.iastate.edu/">Iowa State University</a></li>  
+</ul>  
+</div>  
+</div>  
+</div>  
+ 
+<script type="text/javascript">  
+//Analytics account -- http://paninij.sourceforge.net  
+var _gaq = _gaq || [];  
+_gaq.push(['_setAccount', 'UA-15725511-1']);  
+_gaq.push(['_trackPageview']);  
+ 
+(function() {  
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;  
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';  
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);  
+})();  
+</script>  
+</body> 
+</html>

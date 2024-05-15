@@ -1,0 +1,357 @@
+<!DOCTYPE html> 
+<html> 
+<head><title>Contents</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:light,regular,bold&amp;v1' rel='stylesheet' type='text/css' /> 
+<base href="/man/" /> 
+<link href="/style.css" rel="stylesheet" type="text/css" /> 
+<link href="/images/panini.ico" rel="shortcut icon" type="image/x-icon" /> 
+<!-- SYNTAX HIGHLIGHTING --> 
+<script type="text/javascript" src="/syntax/scripts/shCore.js"></script> 
+<script type="text/javascript" src="/syntax/scripts/shBrushBash.js"></script> 
+<script type="text/javascript" src="/syntax/scripts/shBrushJava.js"></script> 
+<script type="text/javascript" src="/syntax/scripts/shBrushPanini.js"></script> 
+<script type="text/javascript" src="/syntax/scripts/shBrushXml.js"></script> 
+<link type="text/css" rel="stylesheet" href="/syntax/styles/shCore.css"/> 
+<link type="text/css" rel="stylesheet" href="/syntax/styles/shThemeDefault.css"/> 
+<script type="text/javascript"> 
+//SyntaxHighlighter.config.clipboardSwf = 'scripts/clipboard.swf'; 
+SyntaxHighlighter.all(); 
+</script> 
+<!-- END SYTNAX HIGHLIGHTING --> 
+  
+<style type="text/css">  
+.col2-toc h2 {  
+margin: 0 0 10px;  
+}  
+</style>  
+ 
+<meta name="description"  
+content="The Panini Programming Guide helps introduce users to  
+the features and syntax of the Panini Programming Language.  
+Panini is a capsule-oriented programming language whose goals are  
+to ease development of correct, scalable, and portable software  
+for multicore and manycore, platforms.  
+Panini strives to reconcile modularity and concurrency goals  
+in software development." />  
+<meta name="keywords" content="panini, programming, guide, introduction, tutorial,  
+panini, capsule, capsules, capsule-oriented,  
+capsule-oriented programming, better modularity better concurrency,  
+concurrency, modularity, events, types, modules, implicit concurrency,  
+sequential consistency, data race freedom due to shared data, ease of use,  
+quantified, event, types, Hridesh Rajan, Yuheng Long,  
+Rex Fernando, Eric Lin, synergy between modularity and concurrency,  
+determinstic semantics, data race freedom, deadlock freedom,  
+multicore, multi-core, manycore, many-core, heterogeneous,  
+performance-asymmetric, platform portability, download, compiler,  
+download panini, concurrent, patterns, open effects, guarded effects,  
+explicit concurrency, pitfalls, data races, race conditions, deadlock  
+avoidance, race freedom, open effects, deterministic semantics, modules, actors" />  
+ 
+<!-- PAGE METADATA --> <link rel="stylesheet" type="text/css" href="index.css" /> 
+  
+<style type="text/css">  
+.lstlisting .label {  
+width: 100%;  
+font-size: 8pt;  
+}  
+</style>  
+  
+<style type="text/css">  
+.caption .content {  
+background-image: none;  
+background-position: left 12px;  
+background-repeat: no-repeat;  
+margin-left: 0;  
+margin-right: auto;  
+padding: 0 0 100px 50px;  
+width: 1070px;  
+}  
+</style>  
+  
+<style type="text/css">  
+.content {  
+width: 1070px;  
+}  
+</style>  
+  
+<style type="text/css">  
+.main-content {  
+background-image: url("/images/maincontent-right.png");  
+background-position:1028px 1px;  
+background-repeat: no-repeat;  
+width: 1021px;  
+}  
+</style>  
+  
+<style type="text/css">  
+.main-content .caption{  
+font-style: italic;  
+font-size: 8pt;  
+text-align: left;  
+width: 80 
+margin: 0 !important ;  
+}  
+</style>  
+</head>  
+<body>  
+<div class="body-container">  
+<header>  
+<h1><a href="index.html" name="pgtop">Panini Programming Language</a></h1>  
+<h2>PROGRAMMING LANGUAGE</h2>  
+</header>  
+<div class="content">  
+<div class="top-nav">  
+<nav>  
+<ul>  
+<li><a href="/about.shtml">About</a></li>  
+<li><a href="/people.shtml">People</a></li>  
+<li><a href="/download/">Downloads</a></li>  
+<li><a href="/papers.shtml">Research</a></li>  
+<li><a href="/man/">Manual</a></li>  
+<li><a href="/faq.shtml" id="toplast">FAQs</a></li>  
+</ul>  
+</nav>  
+</div>  
+<div class="main-content">  <h2 class="likechapterHead"><a 
+ id="x2-1000"></a>Contents</h2>  <div class="tableofcontents">
+   <span class="partToc" >I&#x00A0;&#x00A0;<a 
+href="indexpa1.html#x3-2000I">Introduction</a></span>
+<br />   <span class="chapterToc" >1 <a 
+href="indexch1.html#x4-30001">Overview</a></span>
+<br />   <span class="chapterToc" >2 <a 
+href="indexch2.html#x5-40002">Motivation</a></span>
+<br />   &#x00A0;<span class="sectionToc" >2.1 <a 
+href="indexch2.html#x5-50002.1">Concurrency: A Pressing Need</a></span>
+<br />   &#x00A0;<span class="sectionToc" >2.2 <a 
+href="indexch2.html#x5-60002.2">Running Example</a></span>
+<br />   &#x00A0;<span class="sectionToc" >2.3 <a 
+href="indexch2.html#x5-70002.3">Difficult Concurrency-related Design Decisions</a></span>
+<br />   <span class="chapterToc" >3 <a 
+href="indexch3.html#x6-80003">Getting Started</a></span>
+<br />   &#x00A0;<span class="sectionToc" >3.1 <a 
+href="indexch3.html#x6-90003.1">Panini&#8217;s Goals</a></span>
+<br />   &#x00A0;<span class="sectionToc" >3.2 <a 
+href="indexch3.html#x6-100003.2">Hello World!</a></span>
+<br />   &#x00A0;<span class="sectionToc" >3.3 <a 
+href="indexch3.html#x6-110003.3">Compiling and running Hello World!</a></span>
+<br />   &#x00A0;<span class="sectionToc" >3.4 <a 
+href="indexch3.html#x6-120003.4">Decomposing a Program into Capsules</a></span>
+<br />   &#x00A0;<span class="sectionToc" >3.5 <a 
+href="indexch3.html#x6-130003.5">Implicit Concurrency in Capsule-oriented Programs</a></span>
+<br />   <span class="chapterToc" >4 <a 
+href="indexch4.html#x8-140004">Capsule-oriented Design</a></span>
+<br />   &#x00A0;<span class="sectionToc" >4.1 <a 
+href="indexch4.html#x8-150004.1">Asteroids in Panini</a></span>
+<br />   &#x00A0;<span class="sectionToc" >4.2 <a 
+href="indexch4.html#x8-160004.2">Architecture and Design</a></span>
+<br />   &#x00A0;<span class="sectionToc" >4.3 <a 
+href="indexch4.html#x8-170004.3">Implementation</a></span>
+<br />   &#x00A0;<span class="sectionToc" >4.4 <a 
+href="indexch4.html#x8-180004.4">Analysis of Benefits</a></span>
+<br />   &#x00A0;<span class="sectionToc" >4.5 <a 
+href="indexch4.html#x8-190004.5">Compiling and running Asteroids!</a></span>
+<br />   <span class="partToc" >II&#x00A0;&#x00A0;<a 
+href="indexpa2.html#x9-20000II">Panini Language and its Features</a></span>
+<br />   <span class="chapterToc" >5 <a 
+href="indexch5.html#x10-210005">Capsule Declarations</a></span>
+<br />   &#x00A0;<span class="sectionToc" >5.1 <a 
+href="indexch5.html#x10-220005.1">Syntax of Capsule Declaration</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" ><a 
+href="indexch5.html#x10-230005.1" id="QQ2-10-40">Closed capsules</a></span>
+<br />   &#x00A0;<span class="sectionToc" >5.2 <a 
+href="indexch5.html#x10-240005.2">Capsule States</a></span>
+<br />   &#x00A0;<span class="sectionToc" >5.3 <a 
+href="indexch5.html#x10-250005.3">Capsule Initializer</a></span>
+<br />   &#x00A0;<span class="sectionToc" >5.4 <a 
+href="indexch5.html#x10-260005.4">Capsule Procedures</a></span>
+                                                                         
+
+                                                                         
+<br />   &#x00A0;<span class="sectionToc" >5.5 <a 
+href="indexch5.html#x10-270005.5">Autonomous Capsule Behavior</a></span>
+<br />   &#x00A0;<span class="sectionToc" >5.6 <a 
+href="indexch5.html#x10-280005.6">Capsule Procedure Calls</a></span>
+<br />   &#x00A0;<span class="sectionToc" >5.7 <a 
+href="indexch5.html#x10-290005.7">Shutdown and Exit Procedures</a></span>
+<br />   &#x00A0;<span class="sectionToc" >5.8 <a 
+href="indexch5.html#x10-300005.8">Example: Bank Account</a></span>
+<br />   &#x00A0;<span class="sectionToc" >5.9 <a 
+href="indexch5.html#x10-310005.9">Implicit concurrency</a></span>
+<br />   <span class="chapterToc" >6 <a 
+href="indexch6.html#x11-320006">Design Declarations</a></span>
+<br />   &#x00A0;<span class="sectionToc" >6.1 <a 
+href="indexch6.html#x11-330006.1">Capsule Instance Declarations</a></span>
+<br />   &#x00A0;<span class="sectionToc" >6.2 <a 
+href="indexch6.html#x11-340006.2">Wiring Capsule Instances</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" ><a 
+href="indexch6.html#x11-350006.2" id="QQ2-11-60">Arrays of Capsule Instances</a></span>
+<br />   &#x00A0;<span class="sectionToc" >6.3 <a 
+href="indexch6.html#x11-360006.3">Topology operators in design declarations</a></span>
+<br />   <span class="chapterToc" >7 <a 
+href="indexch7.html#x12-370007">Signature Declarations</a></span>
+<br />   <span class="chapterToc" >8 <a 
+href="indexch8.html#x13-380008">Capsule State Confinement</a></span>
+<br />   &#x00A0;<span class="sectionToc" >8.1 <a 
+href="indexch8.html#x13-390008.1">Confinement between Instances of a Capsule</a></span>
+<br />   &#x00A0;<span class="sectionToc" >8.2 <a 
+href="indexch8.html#x13-400008.2">Confinement Violation in Procedure Call</a></span>
+<br />   &#x00A0;<span class="sectionToc" >8.3 <a 
+href="indexch8.html#x13-410008.3">Confinement Violation in Return Statements</a></span>
+<br />   &#x00A0;<span class="sectionToc" >8.4 <a 
+href="indexch8.html#x13-420008.4">Resolving Confinement Violation</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" ><a 
+href="indexch8.html#x13-430008.4" id="QQ2-13-73">Resolving confinement violation using cloning</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" ><a 
+href="indexch8.html#x13-440008.4" id="QQ2-13-75">Resolving confinement violation by passing parts</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" ><a 
+href="indexch8.html#x13-450008.4" id="QQ2-13-77">Resolving confinement violation by creating shared capsules</a></span>
+<br />   <span class="partToc" >III&#x00A0;&#x00A0;<a 
+href="indexpa3.html#x14-46000III">Implicit Parallelism</a></span>
+<br />   <span class="chapterToc" >9 <a 
+href="indexch9.html#x15-470009">Master-Worker Pattern</a></span>
+<br />   &#x00A0;<span class="sectionToc" >9.1 <a 
+href="indexch9.html#x15-480009.1">Computing the constant Pi</a></span>
+<br />   &#x00A0;<span class="sectionToc" >9.2 <a 
+href="indexch9.html#x15-490009.2">Architecture and design</a></span>
+<br />   &#x00A0;<span class="sectionToc" >9.3 <a 
+href="indexch9.html#x15-500009.3">Implementation</a></span>
+<br />   &#x00A0;<span class="sectionToc" >9.4 <a 
+href="indexch9.html#x15-530009.4">Implicit concurrency</a></span>
+<br />   <span class="chapterToc" >10 <a 
+href="indexch10.html#x16-5400010">Leader-Follower Pattern</a></span>
+<br />   &#x00A0;<span class="sectionToc" >10.1 <a 
+href="indexch10.html#x16-5500010.1">Creating Server/Client applications in Panini</a></span>
+<br />   &#x00A0;<span class="sectionToc" >10.2 <a 
+href="indexch10.html#x16-5600010.2">Architecture and design</a></span>
+<br />   &#x00A0;<span class="sectionToc" >10.3 <a 
+href="indexch10.html#x16-5700010.3">Implementation</a></span>
+<br />   &#x00A0;<span class="sectionToc" >10.4 <a 
+href="indexch10.html#x16-6100010.4">Implicit concurrency</a></span>
+<br />   <span class="chapterToc" >11 <a 
+href="indexch11.html#x17-6200011">Pipeline Pattern</a></span>
+<br />   &#x00A0;<span class="sectionToc" >11.1 <a 
+href="indexch11.html#x17-6300011.1">Overview of pipeline parallelism implementation</a></span>
+<br />   &#x00A0;<span class="sectionToc" >11.2 <a 
+href="indexch11.html#x17-6400011.2">Architecture and design</a></span>
+<br />   &#x00A0;<span class="sectionToc" >11.3 <a 
+href="indexch11.html#x17-6500011.3">Implementation</a></span>
+<br />   &#x00A0;<span class="sectionToc" >11.4 <a 
+href="indexch11.html#x17-6800011.4">Implicit concurrency</a></span>
+<br />   <span class="chapterToc" >12 <a 
+href="indexch12.html#x18-6900012">Distributor Pattern</a></span>
+<br />   <span class="partToc" >IV&#x00A0;&#x00A0;<a 
+href="indexpa4.html#x19-70000IV">Appendix</a></span>
+<br />   <span class="chapterToc" >13 <a 
+href="indexch13.html#x20-7100013">Installing and Running the Panini Compiler</a></span>
+                                                                         
+
+                                                                         
+<br />   &#x00A0;<span class="sectionToc" >13.1 <a 
+href="indexch13.html#x20-7200013.1">Downloading the Compiler</a></span>
+<br />   &#x00A0;<span class="sectionToc" >13.2 <a 
+href="indexch13.html#x20-7300013.2">Structure of Panini Distribution</a></span>
+<br />   &#x00A0;<span class="sectionToc" >13.3 <a 
+href="indexch13.html#x20-7400013.3">Requirements for Running Panini Compiler</a></span>
+<br />   &#x00A0;<span class="sectionToc" >13.4 <a 
+href="indexch13.html#x20-7500013.4">Running the Panini Compiler</a></span>
+<br />   &#x00A0;<span class="sectionToc" >13.5 <a 
+href="indexch13.html#x20-7600013.5">Running the Panini Compiler from the command-line</a></span>
+<br />   &#x00A0;<span class="sectionToc" >13.6 <a 
+href="indexch13.html#x20-7700013.6">Compiling Examples from Command-Line</a></span>
+<br />   &#x00A0;<span class="sectionToc" >13.7 <a 
+href="indexch13.html#x20-7800013.7">Running the Panini Compiler from Within Ant</a></span>
+<br />   &#x00A0;<span class="sectionToc" >13.8 <a 
+href="indexch13.html#x20-7900013.8">Translating Panini into Java</a></span>
+<br />   &#x00A0;<span class="sectionToc" >13.9 <a 
+href="indexch13.html#x20-8000013.9">Acknowledgments and Licensing</a></span>
+<br />   <span class="chapterToc" >14 <a 
+href="indexch14.html#x21-8100014">Profiling Panini Programs</a></span>
+<br />   &#x00A0;<span class="sectionToc" >14.1 <a 
+href="indexch14.html#x21-8200014.1">Using Panini Profiler</a></span>
+<br />   &#x00A0;<span class="sectionToc" >14.2 <a 
+href="indexch14.html#x21-8300014.2">Configuring Panini Profiler</a></span>
+<br />   <span class="chapterToc" >15 <a 
+href="indexch15.html#x22-8400015">FAQs</a></span>
+<br />   &#x00A0;<span class="sectionToc" >15.1 <a 
+href="indexch15.html#x22-8500015.1">FAQs about the Language</a></span>
+<br />   &#x00A0;<span class="sectionToc" >15.2 <a 
+href="indexch15.html#x22-8600015.2">FAQs about the Compiler</a></span>
+<br />   <span class="chapterToc" > <a 
+href="indexli2.html#Q1-23-139">Bibliography</a></span>
+   </div>
+                                                                         
+
+                                                                         
+<!--l. 126--><p class="indent" >   <div class="page-nav"><a 
+href="indexli1.html" >^ RETURN TO TOP</a></div><div class="page-nav"><a 
+href="indexpa1.html" >NEXT &#x003E;</a></div>    
+</div><!--end-main-content-->  
+</div><!--end-content-->  
+</div> <!--end-body-container-->  
+ 
+<div class="footer-container">  
+<div class="footer">  
+<div class="bot-nav">  
+<nav>  
+<ul>  
+<li><a href="/about.shtml">About</a></li>  
+<li><a href="/people.shtml">People</a></li>  
+<li><a href="/download/">Downloads</a></li>  
+<li><a href="/papers.shtml">Research</a></li>  
+<li><a href="/man/">Documentation</a></li>  
+<li><a href="/faq.shtml" id="botlast">FAQs</a></li>  
+</ul>  
+</nav>  
+</div>  
+<div class="legal">  
+<div id="isu">Iowa State University</div>  
+<p id="copyright">  
+<script type="text/javascript">  
+copyright=new Date()  
+fullYear=copyright.getFullYear();  
+document.write("Copyright &copy; " + fullYear + " Iowa State University of Science and Technology. All rights reserved.")  
+</script>  
+</p>  
+<p id="credits">  
+These pages describe work carried out on the design  
+and the implementation of the Panini programming language.  
+The PI is  
+<a href="http://www.cs.iastate.edu/\protect \unhbox \voidb@x \penalty \@M \relax \unhbox \voidb@x \special {t4ht@+&{35}x00A0{59}}x{}hridesh/">Hridesh Rajan</a> from  
+<a href="http://www.cs.iastate.edu">Iowa State University</a>.  
+This work is supported in part by  
+the US <a href="http://www.nsf.gov">National Science Foundation</a> (NSF) under grants  
+<a href="http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=0846059">CCF-08-46059</a>,  
+<a href="http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=1017334">CCF-10-17334</a>,  
+<a href="http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=1117937">CCF-11-17937</a>, and  
+<a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1423370">CCF-14-23370</a> to Rajan.  
+Any opinions, findings, and conclusions or recommendations  
+expressed in this material are those of the author(s) and do not  
+necessarily reflect the views of the <a href="http://www.nsf.gov">NSF</a>.  
+</p>  
+</div>  
+<div class="links">  
+<h3>Related Sites</h3>  
+<ul>  
+<li><a href="http://www.cs.iastate.edu/\protect \unhbox \voidb@x \penalty \@M \relax \unhbox \voidb@x \special {t4ht@+&{35}x00A0{59}}x{}design/">Labratory for Software Design</a></li>  
+<li><a href="http://www.cs.iastate.edu/">Computer Science Department</a></li>  
+<li><a href="http://www.iastate.edu/">Iowa State University</a></li>  
+</ul>  
+</div>  
+</div>  
+</div>  
+ 
+<script type="text/javascript">  
+//Analytics account -- http://paninij.sourceforge.net  
+var _gaq = _gaq || [];  
+_gaq.push(['_setAccount', 'UA-15725511-1']);  
+_gaq.push(['_trackPageview']);  
+ 
+(function() {  
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;  
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';  
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);  
+})();  
+</script>  
+</body> 
+</html>

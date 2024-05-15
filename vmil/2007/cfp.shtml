@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<!-- INSERT TITLE -->
+<title>Virtual Machines and Intermediate Languages for emerging modularization mechanisms (VMIL 2007)</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<!-- INSERT PAGE CONTENT, KEYWORDS -->
+<meta name="description" content="Describe content of page here." />
+<meta name="keywords" content="keyword, keyword, keyword, keyword" />
+</head>
+
+<!-- CHANGE STYLESHEET LINK  -->
+<link rel="stylesheet" media="all" href="/vmil/styles/isuP.css" />
+
+<!-- INSERT ADDITIONAL STYLESHEET, IF DESIRED -->
+
+<!-- INSERT INLINE STYLES, IF DESIRED -->
+<style type="text/css">
+<!--
+.rphoto125 { float: right; width: 125px; border: 1px solid #000; }
+.lphoto60 { float: left; width: 60px; margin-right: 5px; border: 1px
+solid #000;}
+.lphoto250 { float: left; width: 250px; margin-right: 5px; border: 1px solid #000; }
+#b3 { width: 355px; }
+#c3 { width: 245px; }
+#hilite2 { font-size: x-small; padding: .5em .5em .5em 2.5em; }
+-->
+</style>
+
+<!--
+.mainphoto { float: left; width: 250px; padding: 0 5px 0 0; }
+-->
+
+<body>
+
+<div id="container">
+
+<!-- INSERT PAGE TITLE -->
+<div id="titlebar">
+<h1>Virtual Machines and Intermediate Languages for emerging modularization mechanisms (VMIL 2007)</h1>
+<h3>A one day workshop affiliated with AOSD 2007 in Vancouver, British Columbia, Canada, on March 13, 2007.</h3>
+</div>
+
+<table id="main" cellspacing="0">
+<tr>
+<td  id="a2" rowspan="2">
+<div id="mainlinks">
+
+
+<!-- INSERT LEFT COLUMN LINKS -->
+<div class="linkhead"><h3>Index</h3></div>
+<ul>
+<li><a href="index.shtml">Home</a></li>
+<li><a href="program.shtml">Program</a></li>
+<li><a href="cfp.shtml">Call for Papers</a></li>
+<li><a href="organization.shtml">Organization</a></li>
+</ul>
+<div class="linkhead"><h3>Quick Links</h3></div>
+<ul>
+<li><a href="http://www.aosd.net/2007/">AOSD 2007</a></li>
+</ul>
+</div>
+
+
+<!-- INSERT COPY OR DELETE -->
+<div class="maintext">
+<h3>Got a question?</h3>
+<p class="cutline">
+Got a question or comment? Contact us at
+(515) 294-6168 or <a href="mailto:hridesh@iastate.edu">hridesh@iastate.edu</a>.
+</p>
+</div>
+
+<div class="maintext">
+<h3>Join Us</h3>
+<table border=0 style="background-color: #fff; padding: 5px;" cellspacing=0>
+  <form action="http://groups.google.com/group/vmil/boxsubscribe">
+  <tr><td style="padding-left: 5px;">
+  Email: <input type=text name=email>
+  <input type=submit name="sub" value="Subscribe">
+  </td></tr>
+</form>
+<tr><td align=right>
+  <a href="http://groups.google.com/group/vmil">Visit this group</a>
+</td></tr>
+</table>
+</div>
+</td>
+
+<!-- 2ND COLUMN. INSERT COPY -->
+<td id="b2" rowspan="2">
+
+<div class="maintext">
+
+
+<h2 class="bar">Motivation and Objectives</h2>
+<p>
+Modularization Mechanisms such as mix-ins, units, open classes, hyper-slices, adaptive methods, roles, composition filters, pointcut-advice, and intertype declarations have shown significant potential. They provide software engineers with new capabilities to modularize concerns that were hard to separate previously. Support for these modularization mechanisms have so far been largely limited to high-level languages and their compilers. Recent research results have shown that deeper support, e.g. in virtual machines and intermediate languages, have far-reaching impacts. In particular, more optimization opportunities open up. Development processes such as incremental compilation, debugging, etc are radically simplified. Moreover, dynamic support becomes possible without compromising on efficiency. To that end, the objective of this workshop, first in the series, is to generate interest in this topic, to frame and refine research problem formulations, and to
+identify and encourage the pursuit of promising opportunities and approaches. We invite novel insights from within the programming language, compilers, virtual machine community and elsewhere.
+</p>
+
+<h2 class="bar">Topics of Interest</h2>
+<p>Topics of interest include, but are not limited to: </p>
+
+<UL>
+<LI>Compilation-based and interpreter-based virtual machine designs with better support for these modularization mechanisms</LI>
+
+<LI>Intermediate language constructs that better support these modularization mechanisms</LI>
+
+<LI>Compilation techniques from high-level languages to enhanced intermediate languages</LI>
+
+<LI>Optimization strategies for reduction of runtime overhead due to either compilation or interpretation</LI>
+
+<LI>Improved pattern matching techniques for fast matching</LI>
+
+<LI>Use cases for deeper support in the virtual machines and intermediate languages</LI>
+</UL>
+
+<h2 class="bar">Paper Categories</h2>
+
+<p>In these key areas, we invite high-quality papers in the following two categories.<p>
+
+<UL>
+<LI>Research and experience papers: These submissions should describe work that advances the current state of the art in support of advanced separation of concerns techniques in virtual machines and intermediate languages. Experience papers that are of broader interest and describe insights gained from practical applications. The page limit for these submissions is 10 pages. </LI>
+
+<LI>Position papers: These submissions present and defend the author/s position on a topic related to the broader area of the workshop. The page limit for these submissions is 6 pages. </LI>
+
+</UL>
+
+<h2 class="bar">Review Process</h2>
+
+<p>The program committee will evaluate each paper based on its relevance,
+significance, clarity and originality. Each submission will be
+reviewed by at least three PC members.</p>
+
+<h2 class="bar">Important Dates</h2>
+
+<center>
+<table>
+<tr>
+<td>Submission Deadline:</td>
+<td>Jan 15, 2007, 23:00 GMT <b>(Extended to Jan 26, 2007, 23:00 GMT)</b></td>
+</tr>
+
+<tr>
+<td>Notification of Acceptance:</td>
+<td>Feb 2, 2007</td>
+</tr>
+
+<tr>
+
+<td>Final Versions of Papers Due:</td>
+<td>March 1, 2007</td>
+</tr>
+
+<tr>
+<td>Workshop:</td>
+<td>March 13, 2007</td>
+</tr>
+</table>
+</center>
+
+<h2 class="bar">Paper Submission</h2>
+
+<p>Papers should be submitted in PDF format. The results described
+ must be unpublished and must not be under review for another workshop, conference or journal. Submissions must conform to ACM SIGPLAN format and must not exceed the page limit of the category in which it is classified by authors (including all text, figures, references and appendices). Submissions which do not conform to this will be rejected without reviews.</p>
+
+<p>Submission website for VMIL 2007 is available at:
+<a href="http://continue.cs.brown.edu/servlets/vmil07/continue.ss">
+http://continue.cs.brown.edu/servlets/vmil07/continue.ss</a></p>
+<p></p>
+
+<h2 class="bar">Program Committee</h2>
+
+<p>
+<UL>
+<LI>Samik Basu (Iowa State University, USA)</LI>
+<LI>Lodewijk Bergmans (University of Twente, The Netherlands)</LI>
+<LI>Christoph Bockisch (Darmstadt University of Technology, Germany)</LI>
+<LI>Johan Brichau (Universit� catholique de Louvain, Belgium)(tentative)</LI>
+<LI>Bruce Childers (University of Pittsburgh, USA)</LI>
+<LI>Yvonne Coady (University of Victoria, Canada)</LI>
+<LI>Michael Haupt (Hasso Plattner Institute, University of Potsdam, Germany)</LI>
+<LI>Hidehiko Masuhara (University of Tokyo, Japan)</LI>
+<LI>Mira Mezini (Darmstadt University of Technology, Germany) <b>[Co-Chair]</b></LI>
+<LI>Oege de Moor (University of Oxford, UK)</LI>
+<LI>Klaus Ostermann (Darmstadt University of Technology, Germany)</LI>
+<LI>Hridesh Rajan (Iowa State University, USA) <b>[Co-Chair]</b></LI>
+<LI>Therapon Skotiniotis (Northeastern University, USA)</LI>
+<LI>Eric Tanter (University of Chile, Chile)</LI>
+<LI>Eric Van Wyk (University of Minnesota, USA)</LI>
+<LI>Eric Wohlstadter (University of British Columbia, Canada)</LI>
+</UL>
+</p>
+
+<h2 class="bar">Organizers</h2>
+
+<UL>
+<LI><a href="http://www.cs.iastate.edu/~hridesh/">Hridesh Rajan</a>, Iowa State University</LI>
+<LI><a href="http://www.st.informatik.tu-darmstadt.de/staff/Mezini/">Mira Mezini</a>, Darmstadt University of Technology</LI>
+<LI><a href="http://www.st.informatik.tu-darmstadt.de/staff/Bockisch/">Christoph Bockisch</a>, Darmstadt University of Technology</LI>
+</UL>
+<p></p>
+
+
+</div>
+</td>
+</tr>
+</table>
+
+<!-- INSERT CONTACT INFO: UNIT, PHONE, E-MAIL  -->
+
+<div id="footer">
+<div id="copyright">
+<img src="/vmil/images/ISUbecoming.gif"
+alt="Becoming the Best" width="200"
+height="31" />
+
+
+<p><a href="http://design.cs.iastate.edu/">Laboratory for Software Design</a>, <a href="http://www.cs.iastate.edu/">Department of Computer Science</a>, <a href="http://www.iastate.edu/">Iowa State University</a><p>
+<p>226 Atanasoff Hall, Ames, IA, 50011-1040, USA</p>
+<p>Voice: (515) 294-6168 . Fax: (515) 294-0258 . E-Mail: hridesh@cs.iastate.edu</p>
+<p>Copyright &#169; 2006-2007, Iowa State University of Science and
+Technology. All rights reserved.</p>
+</div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+	var pageTracker = _gat._getTracker("UA-1547227-6");
+	pageTracker._trackPageview();
+} catch(err) {}</script>
+</div>
+</body>
+</html>
+

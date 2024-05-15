@@ -1,0 +1,101 @@
+body
+{
+	font: .8em arial, helvetica, verdana, sans-serif;
+}
+
+#header, #footer, #search, #titlebar, #nav, #sidebar, .skip, #index, #nameplate, #logo, #poll, .imagearea
+{
+	display: none; 
+}
+
+#titlebar h1
+{
+	color: #666;
+	font-size: 1.9em;
+}
+
+#footer
+{
+	font-size: .7em;
+	padding-top: 2em;
+}
+
+th
+{
+	text-align: left;
+}
+
+td
+{
+	vertical-align: top;
+}
+
+#left
+{
+	float: left;
+	width: 190px;
+	margin-top: 10px;
+	padding: 0px 10px;
+}
+
+#right
+{
+	float: left;
+	width: 190px;
+	margin-top: 10px;
+	padding: 0px 10px;
+}
+
+#left dt, #right dt
+{
+	font-weight: bold;
+	margin: 0;
+}
+
+#left dd, #right dd
+{
+	margin: 0;
+	padding: 0 0 0 10px;
+}
+
+#left dd.second, #right dd.second
+{
+	padding-left: 25px;
+}
+
+#question
+{
+	border-bottom: 1px solid #666;
+	border-top: 1px solid #666;
+	margin: 0;
+}
+
+#question p
+{
+	border-left: 20px solid #cc9;
+	padding: 5px;
+	margin: 0;
+}
+
+#printheader {
+  display:inline;
+}
+
+#printheader img {
+  height:36px;
+  width:220px;
+}
+
+h1, h2, h3, h4, h5 {
+  margin-bottom:0;
+}
+
+p {
+  margin-top:0;
+}
+
+table.grid td, table.grid th {
+  border-color:#000;
+  border-style:solid;
+  border-width:0 1px 1px 0;
+}

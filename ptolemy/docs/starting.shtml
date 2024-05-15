@@ -1,0 +1,410 @@
+<!--#include virtual="../includes/top.html"-->
+<title>Ptolemy Programming Guide : Getting Started</title>
+<!-- PAGE SPECIFIC STYLING -->
+<style type="text/css">
+.col2-toc h2 {
+	margin: 0 0 10px;
+}
+</style>
+<!--#include virtual="../includes/header.html"-->
+<h1>The Ptolemy Programming Guide</h1>
+
+<script type="text/javascript">
+copyright=new Date()
+fullYear=copyright.getFullYear();
+document.write("<h5>Copyright &copy; 2006-" + fullYear + ", Iowa State University of Science and Technology. All rights reserved.</h5>")
+</script>
+
+<!-- TABLE OF CONTENTS -->
+<div class="col2-toc">
+	<h2>Table of Contents</h2>
+	<ol>
+		<li><a href="docs/index.shtml">Programming Guide Overview</a>
+		</li>
+		<li>Getting Started with Ptolemy
+			<ul class="toc-currentpg">
+				<li><a href="docs/starting.shtml#goals">Ptolemy's Goals</a>
+				</li>
+				<li><a href="docs/starting.shtml#runningex">Running Example</a>
+				</li>
+				<li><a href="docs/starting.shtml#interface">Designing the
+						Interface between Object-oriented and Crosscutting Code</a>
+				</li>
+				<li><a href="docs/starting.shtml#eventexample">An Example
+						Event Type Declaration (FEChanged)</a>
+				</li>
+				<li><a href="docs/starting.shtml#quantification">Quantification
+						using Event Types and Bindings</a>
+				</li>
+				<li><a href="docs/starting.shtml#activating">Activating All
+						Bindings in a Class</a>
+				</li>
+				<li><a href="docs/starting.shtml#announcing">Announcing an
+						Event</a>
+				</li>
+				<li><a href="docs/starting.shtml#overriding">Overriding
+						Features in Ptolemy</a>
+				</li>
+			</ul></li>
+		<li><a href="docs/running.shtml">Installing and Running the
+				Ptolemy compiler</a>
+		</li>
+		<li><a href="docs/lang.shtml">The Ptolemy Programming
+				Language</a>
+		</li>
+		<li><a href="docs/design-by-contract.shtml">Design-by-Contract
+				Methodology in Ptolemy</a>
+		</li>
+		<li><a href="papers/">Technical Publications</a>
+		</li>
+	</ol>
+	<hr />
+	<h3>Examples</h3>
+	<ul>
+		<li><a href="docs/example-genetic.shtml">Genetic Algorithm</a>
+		</li>
+	</ul>
+</div>
+
+<!-- CONTENT -->
+<div class="col2-content">
+	<h2>
+		<a name="goals">Ptolemy's Goals</a>
+	</h2>
+	<p>Ptolemy's goals are to improve a software engineer's ability to
+		separate conceptual concerns. These goals are similar to that of
+		implicit invocation design style and aspect-oriented languages. In
+		addition to these goals Ptolemy aims to separate crosscutting concerns
+		in a manner that preserves the encapsulation of the object-oriented
+		code and allows programmers to reason about object-oriented code and
+		crosscutting code modularly.</p>
+
+	<h2>
+		<a name="runningex">Running Example</a>
+	</h2>
+	<p>
+		The code for this example is available from the Ptolemy compiler
+		distribution in the examples directory. The reader is encouraged to
+		consult our pages on <a href="docs/running.shtml">installing and
+			running Ptolemy compiler</a> for instructions on how to obtain the full
+		example source code.
+	</p>
+	<p>As an example, consider a drawing editor which consists of
+		objects such as Points, Lines, etc. Each element is part of the
+		overall figure and implements the FigureElement interface (for figure
+		elements). Other classes may be interested in knowing when such figure
+		elements change. For example, there may be an Display class that
+		updates the figure on the screen when any element changes. The
+		interface FElement is shown in the listing below.</p>
+<pre class="brush: java;">
+public interface FigureElement {
+	void draw();
+}
+</pre>
+	<p>The class Point is an example of an FigureElement. Points have
+		an x and a y location and setter methods setX and setY. Points also
+		have a method makeEqual, which will set the x and y location of its
+		argument to that of the current instance.</p>
+	<p>All three methods modify an instance of class Point and thus
+		they all call the Update method of the class Display to refresh. The
+		first two methods ask the Display to redraw the current instance while
+		the makeEqual method (since it modifies the other instance) asks the
+		Display to redraw the other instance.</p>
+	<pre class="brush: java;">
+public class Point implements FigureElement {
+	int x;
+	int y;
+	public void setX(int x) {
+		this.x = x;
+		Display.Update(this);
+	}
+	public void setY(int y) {
+		this.y = y;
+		Display.Update(this);
+	}
+	public void makeEqual(Point other) {
+		other.x = this.x;
+		other.y = this.y;
+		Display.Update(other);
+	}
+}
+                 </pre>
+	<p>One can see that all figure elements like Points, Lines,
+		Circles, etc will need to call the Update method of the Display class
+		whenever there is any change in the figure elements. For example, this
+		code is present in methods setX, setY, and makeEqual of the class
+		Point. There are two main disadvantages of such implementation.</p>
+	<ul>
+		<li>First, it couples classes Point, Lines, Circles, etc with the
+			class Display. As a result, it becomes harder to reuse these classes
+			without also having the class Display in that program. Not all
+			programs containing Points, Lines, Circles are necessarily required
+			to have displays, however.</li>
+		<li>Second, it is not easy to update such code to reuse the
+			notifications to the Display class. For example, if a developer
+			wishes to also log the changes to figure elements, they will have to
+			either insert calls to the logger again in all of Points, Lines,
+			Circles, etc or they can also insert code to log in the class
+			Display. Both these situations are not satisfactory as the first
+			requires &quot;exposing the change in figure element again&quot; and
+			the second couples the class Display with the class Logger, which may
+			not necessarily be related to each other.</li>
+	</ul>
+	<p>
+		Such requirements that cut across the object-oriented code are called
+		<em>crosscutting concerns</em>. Ptolemy and other languages aim to
+		modularize these concerns, but Ptolemy aims to do so such that it
+		preserves encapsulation of object-oriented parts such as classes
+		Point, Line, Circle, etc and allow us to understand and reason about
+		object-oriented parts such as classes Point, Line, Circle and the
+		crosscutting parts such as the class Update one class at a time. Being
+		able to understand systems in that manner has distinct advantages.
+	</p>
+
+	<h2>
+		<a name="interface">Designing the Interface between
+			Object-oriented and Crosscutting Code</a>
+	</h2>
+	<p>
+		To that end, first design and programming task in Ptolemy is to define
+		the interface between the object-oriented code and the crosscutting
+		code. This interface is expressed in the form of an <em>event
+			type declaration</em>.
+	</p>
+	<p>
+		The design of an <em>event type declaration</em> requires careful
+		considerations in a manner similar to the design of an application
+		programming interface (API). In particular, two questions are
+		important.
+	</p>
+	<ul>
+		<li>What are the important abstract events in my application?</li>
+		<li>What information must be available when these events occur?</li>
+	</ul>
+	<p>For example, for our drawing editor example, the abstract events
+		of interest are changes in figure elements. Furthermore, it would be
+		important to be able to identify the specific instance of the figure
+		element that is changing.</p>
+
+	<h2>
+		<a name="eventexample">An Example Event Type Declaration
+			(FEChanged)</a>
+	</h2>
+	<p>Upon arriving at such conclusion about the drawing editor
+		example, we can encode it in the form of the following event type
+		declaration.</p>
+	<pre class="brush: ptolemy;">
+public void event FEChanged {
+	FigureElement changedFE;
+}
+</pre>
+	<p>
+		As seen above an event type is declared with the keyword <b>event</b>.
+		An event type also has return type, here <b>void</b>, which allows
+		crosscutting code to return values to object-oriented code. Finally,
+		an event type declares zero or more context variables. These context
+		variables represent information available when a concrete event of
+		this type happens in the application. The event type <em>FEChanged</em>
+		here declares one context variable <em>changedFE</em> of type <em>FigureElement</em>
+		that represents the figure that is changing. The intention of this
+		event type declaration is to provide a named abstraction for a set of
+		events.
+	</p>
+
+	<h2>
+		<a name="quantification">Quantification using Event Types and
+			Bindings</a>
+	</h2>
+	<p>
+		Event type declarations are the key novel feature of Ptolemy. The name
+		of an event type allows programs to refer to a set of events and thus
+		to quantify over such a set of events. So for example, the name <em>FEChanged</em>
+		refers to a set of events thus it could be thought of as <B>for
+			all</B> events such that their type is <em>FEChanged</em>.
+	</p>
+	<p>
+		In Ptolemy, this can be used to write <em>binding declarations</em>. A
+		binding declaration in Ptolemy associates a method in a class to a set
+		of events identified by an event type. An example is shown below.
+	</p>
+<pre class="brush: ptolemy;">
+public class DisplayUpdate {
+	...
+	when FEChanged do update;
+	public void update(FEChanged next) throws Throwable {
+		...
+	}
+}
+</pre>
+	<p>
+		The binding declaration on line 3 says to run method <em>update</em>
+		when events of type <em>FEChanged</em> are announced.
+	</p>
+	<p>
+		The use of the event type names in binding declarations simplifies
+		these declarations and avoids coupling class DisplayUpdate to classes
+		that may signal events of type <em>FEChanged</em>. This allows
+		selecting a number of such event signalling with just one succinct
+		binding declaration, without depending on the modules that announce
+		events.
+	</p>
+	<h2>
+		<a name="activating">Activating All Bindings in a Class</a>
+	</h2>
+	<p>
+		Ptolemy allows bindings to be activated at runtime. This is done by
+		using the <em>register</em> expression as shown in the following
+		listing.
+	</p>
+<pre class="brush: ptolemy;">
+public class DisplayUpdate {	
+	public DisplayUpdate() {
+	 register(this);
+	}
+
+	when FEChanged do update;
+	public void update(FEChanged next) throws Throwable {
+		...
+	}
+}
+</pre>
+	<p>
+		An example of register expression appear on line 3 for the constructor
+		method of the class <em>DisplayUpdate</em>. The effect of running this
+		expression is to activate all binding declarations in that class.
+	</p>
+
+	<h2>
+		<a name="announcing">Announcing an Event</a>
+	</h2>
+	<p>Events are explicitly signalled in Ptolemy. Event signalling is
+		declarative, explicit and typed.</p>
+	<p>Event signalling is declarative in the sense that it doesn't
+		require specifying the mechanism used to signal it (unlike
+		implicit-invocation and idioms for observer patterns). This allows
+		Ptolemy compilers to optimize event signalling behind the scene, while
+		maintaining the intended semantics.</p>
+	<p>It is typed in that signalling an event requires mentioning the
+		name of an event type, which must be a valid event type declaration in
+		the program. This allows Ptolemy compilers to check the correctness of
+		signalling events and include such signals in the set of events for
+		that event type.</p>
+	<p>
+		The event signalling is done using the <em>announce expressions</em>.
+		Several example usage of announce expressions for our figure editor
+		examples appears in the listing below.
+	</p>
+<pre class="brush: ptolemy;">
+public class Point implements FigureElement {
+	int x;
+	int y;
+	public void setX(int x) {
+		announce FEChanged(this) {
+		 this.x = x;
+		}
+	}
+	public void setY(int y) {
+		announce FEChanged(this) {
+		 this.y = y;
+		}
+	}
+	public void makeEqual(Point other) {
+		announce FEChanged(other){
+		 other.x = this.x;
+		 other.y = this.y;
+		}
+	}
+}
+</pre>
+	<p>
+		In the listing above the announce expressions occurs three times on
+		lines 5-7, 10-12, and 15-18. At all these locations the event being
+		signalled is of type <em>FEChanged</em>.
+	</p>
+	<p>
+		The method class like syntax of announce expressions allows binding
+		local values at the site of event signalling to context variables of
+		event type declaration. This binding is such that i<sup>th</sup>
+		argument of the announce expression is bound to the i<sup>th</sup>
+		context variable of the event type declaration. Here, line 6 binds <em>this</em>
+		to context variable <em>changedFE</em> and line 15 binds <em>other</em>
+		to context variable <em>changedFE</em>. Notice that the same context
+		variable is receiving different bindings for different event
+		signalling sites. However, the class <em>DisplayUpdate</em> will be
+		able to access all of these uniformly using the name <em>changedFE</em>.
+	</p>
+
+	<h2>
+		<a name="overriding">Overriding Features in Ptolemy</a>
+	</h2>
+	<p>
+		In Ptolemy, multiple handlers could register to handle the same event.
+		These handlers execute in the order they are registered, but when it
+		comes to their execution, the next applicable handler <em>does
+			not</em> always run after the end of the execution of the preceding one. <em>Invoke</em>
+		expressions can override the way handlers are executed. Basically a
+		handler can transfer the control to the next applicable handler, or
+		event body if there are no more applicable handlers, using the invoke
+		expression. If the invoke expression is missing in one handler
+		execution of all the other applicable handlers after it is skipped. An
+		example is presented in the listing below.
+	</p>
+
+<pre class="brush: ptolemy;">
+public class DisplayUpdate {
+ public DisplayUpdate() {
+  register(this);
+ }
+				
+ when FEChanged do update;
+ public void update(FEChanged next) throws Throwable {
+  System.out.println("Inside display update:Before Invoke");
+  next.invoke();
+  Display.update();
+  System.out.println("Inside display update:After Invoke");
+ }
+}
+
+public class LogChange {
+ public LogChange() {
+  register(this);
+ }
+				
+ when FEChanged do log;
+ public void log(FEChanged next) throws Throwable {
+  System.out.println("Inside log:Before Invoke");
+  next.invoke();
+  Log.log(next.fe());
+  System.out.println("Inside log:After Invoke");
+ }
+}
+</pre>
+
+	<p>
+		Suppose having two handlers <em>LogChange</em> and <em>DisplayUpdate</em>
+		to log changes to the figure element and update the display such that
+		<em>LogChange</em> is registered after <em>DisplayUpdate</em>. Upon
+		event announcement and transfer of the control to <em>DisplayUpdate</em>,
+		invoke expression on line 9, causes the control to be transferred to
+		the <em>LogChange</em> handler and the invoke expression on line 23
+		passes the control to the event body. After the event body execution
+		returns, the body of <em>LogChange</em> is executed and finally in the
+		end the body of <em>DisplayUpdate</em> after the invoke expression on
+		line 9 is executed. As it can be seen, invoke expression overrides the
+		control such that, although the <em>DisplayUpdate</em> is the first
+		registered handler, it does run last. Interestingly, if the invoke
+		expression on line 9 goes missing, execution of the handler <em>LogChange</em>
+		and the event body is skipped.
+	</p>
+
+	<!-- PAGE UPDATE -->
+	<p id="update">Page last modified on $Date: 2012/01/07 16:25:19 $</p>
+
+	<!-- GUIDE NAVIGATION -->
+	<div class="page-nav">
+		<a href="docs/index.shtml">&lt; PREVIOUS</a> <a
+			href="docs/starting.shtml#pgtop">&#94; RETURN TO TOP</a> <a
+			href="docs/running.shtml">NEXT &gt;</a>
+	</div>
+</div>
+<!--#include virtual="../includes/bottom.html"-->

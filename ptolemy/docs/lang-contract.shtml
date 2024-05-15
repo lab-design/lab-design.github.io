@@ -1,0 +1,75 @@
+<!--#include virtual="../includes/headtop.html"-->
+
+<!-- INSERT TITLE -->
+<title>Ptolemy Programming Guide</title>
+
+<!--#include virtual="../includes/headmiddle.html"-->
+
+<h1>Ptolemy Programming Guide</h1>
+
+<!--#include virtual="../includes/headbottom.html"-->
+
+<td id="b3" rowspan="2">
+<div class="maintext">
+
+<a href="/docs/">< Table of Contents</a><BR>
+
+<h2>Writing Contracts in the Ptolemy Language (This page under construction!) </h2>
+
+<a name="contracts"><h3>Translucid Contracts</h3></a>
+
+<p>
+TODO: introduction
+</p>
+
+<h3>An Example Translucid Contract</h3>
+
+<p> 
+TODO:
+</p>
+
+<pre class="brush: ptolemy;">
+public void event FEChanged {
+	FigureElement changedFE;
+	requires changedFE != null
+	assumes {
+	 invoke ( next ) ;
+	 establishes changedFE == old ( changedFE ) ;
+	}
+	ensures changedFE != null 
+}
+</pre>
+
+<p>
+TODO:description
+</p>
+
+<a name="handlerRefine"><h3>Satisfying a Translucid Contracts</h3></a>
+
+<p>
+TODO: Following shows a handler that correctly refines the translucid 
+contract shown in the listing above.
+</p>
+
+<pre class="brush: ptolemy;">
+public class DisplayUpdate {
+	public DisplayUpdate() {
+	 register(this);
+	}
+
+	when FEChanged do update;
+	public void update(FEChanged next) throws Throwable {
+		invoke(next);
+		Display.update();
+	}
+}
+</pre>
+
+<p>
+</p>
+
+<BR><BR> <p>Page last modified on $Date: 2011/10/17 17:55:45 $</p>
+</div>
+</td>
+
+<!--#include virtual="../includes/bottombar.html"-->

@@ -1,0 +1,58 @@
+
+<!--#include virtual="../../includes/topbar.html"-->
+<!-- 2ND COLUMN. INSERT COPY -->
+
+<td id="b3" rowspan="2">
+<div class="maintext">
+
+<!-- INSERT TITLE OF THE PAPER BELOW.-->
+<h1>
+Frances: A Tool For Understanding Code Generation
+</h1>
+
+<!-- INSERT AUTHOR NAME AS IT APPEARS BELOW -->
+<h2>
+Tyler Sondag, Kian L. Pokorny, and Hridesh Rajan
+</h2>
+
+<!-- INSERT ABSTRACT OF THE PAPER BELOW -->
+<h2 class="bar">Abstract</h2>
+<p>
+Compiler and programming language implementation courses are integral parts of many computer science curricula. However, the range of topics necessary to teach in such a course are difficult for students to understand and time consuming to cover. In particular, code generation is a confusing topic for students unfamiliar with low level target languages. We present Frances, a tool for helping students understand code generation and low level languages. The key idea is to graphically illustrate the relationships between high level language constructs and low level (assembly) language code. By illustrating these relationships, we take advantage of the students existing understanding of some high level language. We have used Frances in a compiler design course and received highly positive feedback. Students conveyed to us that Frances significantly helped them to understand the concepts necessary to implement code generation in a compiler project.
+</p>
+
+<!-- INSERT BIBLIOGRAPHIC INFORMATION BELOW, DON'T FORGET to END EACH LINE
+  WITH <BR> -->
+
+<h2 class="bar">Bibliographic Information</h2>
+<p>
+@inproceedings{Sondag-Pokorny-Rajan-10,<BR>
+author = {Tyler Sondag and Kian L. Pokorny and Hridesh Rajan},<BR>
+title = {Frances: A Tool For Understanding Code Generation},<BR>
+booktitle = {SIGCSE '10: The 41st ACM Technical Symposium on Computer Science Education},<BR>
+location = {Milwaukee, WI},<BR>
+month = {March},<BR>
+year = {2010},<BR>
+}<BR>
+</p>
+<!--- INSERT LINK TO THE FULL PAPER BELOW AND ADD THE PAPER TO THE CURRENT 
+  DIRECTORY -->
+<!-- <p>Most recent version: <a href="papers/PLOS-2007/skr-predictive-assignment.pdf">PDF</a></p> -->
+<p>Most recent paper version: <a href="sigcse10.pdf">PDF</a></p>
+
+<p>Presentation: <a href="sigcse10-presentation.pdf">PDF</a></p>
+
+<hr>
+
+<p>Previous version appeared as Technical Report 09-21, Computer
+Science, Iowa State University, August 24, 2009.  [<a
+href="http://archives.cs.iastate.edu/documents/disk0/00/00/06/15/00000615-00/mainTR.pdf">PDF</a>]</p>
+
+<p>Link to the tool: <a href="/tools/frances">Frances</a></p>
+
+</div>
+
+</td>
+
+<!--#include virtual="../../includes/bottombar.html"-->
+

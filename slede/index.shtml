@@ -1,0 +1,119 @@
+<!--#include virtual="includes/topbar.html"-->
+<!-- 2ND COLUMN. INSERT COPY -->
+
+<td rowspan="2">
+<div class="maintext">
+
+<h1>About Slede</h1>
+
+<p>
+Flaws in security protocols are subtle and hard to find.
+Finding flaws in the security protocols for sensor networks
+is even harder because they operate under fundamentally
+different system design assumptions such as event-driven
+vs. imperative or message passing, resource and bandwidth
+constraints, hostile deployment scenarios, trivial physical
+capturing due to the lack of tamper resistance,
+group-oriented behavior, ad hoc and dynamic topologies,
+open-ended nature, etc. These assumptions lead to complex
+security protocols, which in turn makes them much harder to
+verify. Sensor networks are increasingly becoming an integral
+part of the nation's cyber infrastructure, making it vital
+to protect them against cryptographic errors in security
+protocols.
+</p>
+
+<p>
+Verifying sensor network security protocol implementations using
+testing/simulation might leave some flaws undetected. Formal verification
+techniques have been very successful in detecting faults in security protocol
+specifications; however, they generally require building a formal description
+(model) of the protocol. Building accurate models is hard, thus hindering the
+application of formal verification.
+</p>
+
+<p>
+Slede aims to solve this problem.
+It is a framework for automatic verification of sensor
+network security protocol implementations. Given an implementation
+of a security protocol in nesC, Slede extracts verifiable PROMELA
+models, generates protocol specific intruder models, composes them
+with the generated model and verifies the satisfaction of security properties
+against the composition of the models. In case of a propery violation, 
+Slede translates the counterexample back to domain language (nesC).
+Key components of Slede are shown in the following figure:
+</p>
+
+<img width=100% src=slede.png>
+
+<h1>Key Features of Slede</h1>
+<ul>
+<li>Ultra-lightweight protocol specification</li>
+<li>Completely automatic generation of verifiable model from NesC code
+of the sensor application</li>
+<li>Automatic generation of protocol-specific intrusion model and its
+composition with the verification model of the protocol</li>
+<li>Automated verification of the composed model</li>
+<li>User-friendly output, in case of protocol faults, and last but not least,</li>
+<li>Tight-integration with existing tool-set for NesC developers.</li>
+</ul>
+
+<!--
+</p>The Slede project is advancing the state of the art 
+in specification and verification of cryptographic protocols 
+for sensor networks. Applications of sensor networks are 
+numerous from military to environmental research. By 
+providing mechanisms to find cryptographic errors in the 
+security protocols for sensor networks this research program 
+is improving the reliability of these networks, making a 
+direct impact on all areas where these networks are utilized. 
+The activities in this research project are collectively 
+contributing to the development of innovative specification 
+and verification mechanisms for security protocols in sensor 
+networks, and training of a diverse cadre of young scientists 
+in programming languages, software engineering, computer 
+networks, and most importantly enhanced computer security.
+</p>
+-->
+
+<br/>
+<br/>
+
+<h2 class=bar> Recent Publications/Presentations</h2>
+<ul>
+<li>
+Youssef Hanna, Samik Basu, and Hridesh Rajan, "Behavioral Automata Composition for Automatic Topology 
+Independent Verification of Parameterized Systems", The 7th joint meeting of the European Software 
+Engineering Conference and the ACM SIGSOFT Symposium on the Foundations of Software Engineering (ESEC/FSE 09), 
+August 2009, Amsterdam, The Netherlands. [<a href="esec-fse-09.pdf">PDF Format</a>] 
+</li>
+
+<li>Youssef Hanna and Hridesh Rajan,
+"Slede: Framework for Automatic Verification of Sensor Network Security Protocol Implementations",
+informal demo in the Proceedings of the 31st International Conference on Software Engineering (ICSE 2009), 
+May 16-24 2009, Vancouver, Canada.
+[<a href="papers/ICSE-09-paper.pdf">PDF Format</a>] [<a href="papers/ICSE-09-poster.pdf">Poster</a>]
+</li>
+
+<li>Youssef Hanna, Hridesh Rajan, and Wensheng Zhang, "Slede: A Domain-Specific Verification 
+Framework for Sensor Network Security Protocol Implementations", in the Proceedings of the First 
+ACM Conference on Wireless Network Security (WiSec 2008), March 31 - April 2, 2008. Alexandria, VA. 
+<a href=/~slede/papers/slede-wisec-08.pdf>[PDF Format]</a>
+</li>
+
+<li>Youssef Hanna, "SLEDE: lightweight verification of sensor network security protocol implementations", 
+in the Proceedings of the doctoral symposium of the 6th Joint Meeting of the European Software Engineering 
+Conference and the ACM SIGSOFT Symposium on the Foundations of Software Engineering (ESEC/FSE 2007), 
+Dubrovnik, Croatia, September 2007, pp. 591-594. <a href=/~slede/papers/FSEslede07.pdf>[PDF Fromat]</a>
+</li>
+<li>
+<a href=/~slede/papers/index.shtml>See more ...</a>
+</li>
+</ul>
+			
+</div>
+
+
+</td>
+
+<!--#include virtual="includes/bottombar.html"-->

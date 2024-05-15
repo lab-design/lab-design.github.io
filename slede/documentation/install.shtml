@@ -1,0 +1,76 @@
+<!--#include virtual="../includes/topbar.html"-->
+<!-- 2ND COLUMN. INSERT COPY -->
+
+<td rowspan="2">
+<div class="maintext">
+<h1> Install Slede</h1>
+<BR>
+<table>
+<tr>
+<td>
+1. Install TinyOS 1.1.0 for Linux (<a href=http://www.tinyos.net/download.html target=_>http://www.tinyos.net/download.html</a>)
+</td>
+</tr>
+<tr>
+<td>
+<br>
+</td>
+</tr>
+<tr>
+<td>
+2. Install Spin Model Checker version 4.3.0 or later (<a href=http://spinroot.com/spin/Man/README.html#S1a target=_>http://spinroot.com/spin/Man/README.html#S1a</a>). 
+</td>
+</tr>
+<tr>
+<td>
+<br>
+</td>
+</tr>
+<tr>
+<td>
+3. Install eclipse plugin for TinyOS (<a href=http://tos-ide.ethz.ch/wiki/index.php target=_>http://tos-ide.ethz.ch/wiki/index.php</a>)
+</td>
+</tr>
+<tr>
+<td>
+<br>
+</td>
+</tr>
+<tr>
+<td>
+4. Unpack the Slede archive file. Copy <i>nesc1</i> file in the package into /usr/lib/ncc 
+<p>
+&nbsp;&nbsp;- There is already nesc1 in this directory. Back it up (i.e. nesc1-original).
+<p>
+&nbsp;&nbsp;- root permission required
+</td>
+</tr>
+<tr>
+<td>
+<br>
+</td>
+</tr>
+<tr>
+<td>
+5. From the extracted package of Slede, copy the <i>nesc-translator</i> file in /usr/bin/ (root permission required).
+</td>
+</tr>
+<tr>
+<td>
+<br>
+</td>
+</tr>
+<tr>
+<td>
+6. From the extracted package of Slede, copy <i>slede-plugin_1.0.0.jar</i> in the plugins folder of eclipse. 
+</td>
+</tr>
+<tr>
+<td>
+<br>
+<br>
+
+</td>
+</tr>
+</table>
+<!--#include virtual="../includes/bottombar.html"-->

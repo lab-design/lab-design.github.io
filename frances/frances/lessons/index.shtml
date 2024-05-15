@@ -1,0 +1,35 @@
+<!--#include virtual="../../includes/topbar.html"-->
+<!-- 2ND COLUMN. INSERT COPY -->
+
+<td id="b3" rowspan="2">
+<div class="maintext">
+
+<h1>Lessons (covering control flow, assembly, and code generation) using the Frances tool</h1><BR><BR>
+
+<p>
+<a href="Lab_01_Intro.pdf">Lesson 1: Intro</a>
+</p>
+<p>
+<a href="Lab_02_Expressions.pdf">Lesson 2: Expressions</a>
+</p>
+<p>
+<a href="Lab_03_Arrays.pdf">Lesson 3: Arrays</a>
+</p>
+<p>
+<a href="Lab_04_Decision.pdf">Lesson 4: Decisions</a>
+</p>
+<p>
+<a href="Lab_05_Loops.pdf">Lesson 5: Loops</a>
+</p>
+<p>
+<a href="Lab_06_Nested.pdf">Lesson 6: Nested Structures</a>
+</p>
+<p>
+<a href="Lab_07_Functions.pdf">Lesson 7: Functions</a>
+</p>
+
+</div>
+
+</td>
+
+<!--#include virtual="../../includes/bottombar.html"-->

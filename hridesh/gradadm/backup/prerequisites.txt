@@ -1,0 +1,32 @@
+ISU Computer Science Graduate Program
+Background Prerequisites
+
+
+Successful completion of the courses listed below (or their equivalent) is generally needed for entry into many of the graduate courses in our department.  Please note, however, that highly qualified students may be admitted into our graduate program even if they have not completed all of the prescribed background.  Satisfactory completion of these courses does not guarantee admission into the Computer Science graduate program.
+
+
+1.  Programming and Data Structures
+ISU equivalent is Com Sci 227 and 228
+
+2.  Discrete Structures
+ISU equivalent is Com Sci 330
+
+3.  Analysis of Algorithms
+ISU equivalent is Com Sci 311
+
+4.  Computer Architecture and Assembly Language Programming
+ISU equivalent is Com Sci 321
+
+5.  Programming Languages Concepts
+ISU equivalent is Com Sci 342
+
+6.  Operating Systems Concept
+ISU equivalent is Com Sci 352
+
+7.  Mathematics including differential and integral calculus and linear systems.
+
+
+
+
+
+

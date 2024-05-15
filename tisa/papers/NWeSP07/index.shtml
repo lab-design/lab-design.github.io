@@ -1,0 +1,89 @@
+<!--#include virtual="../../includes/topbar.html"-->
+<!-- 2ND COLUMN. INSERT COPY -->
+
+<td id="b3" rowspan="2">
+<div class="maintext">
+
+
+<!-- INSERT TITLE OF THE PAPER BELOW -->
+<h2> 
+How to Trust Web Services Monitor Executing in an Untrusted Environment?
+</h2>
+<!-- INSERT AUTHOR NAME AS IT APPEARS BELOW -->
+<h2>
+By Mahantesh Hosamani, Harish Narayanappa, and Hridesh Rajan
+</h2>
+
+<!-- INSERT ABSTRACT OF THE PAPER BELOW -->
+<h2 class="bar">Abstract</h2>
+<p>
+In a service oriented architecture, certain requirements
+can be tested by observing the interface of the service
+whereas other requirements such as data privacy, confidentiality
+and integrity cannot be tested in this way. After deployment,
+a requirements monitor is used to analyze the
+conformance of a web service to such requirements. The
+integrity of the reported conformance results is as good
+as of the integrity of the monitor especially when the requirements
+monitor is executing in an untrustworthy environment.
+In this paper, we propose a hardware-based dynamic
+attestation mechanism to validate the integrity of the
+requirements monitor. To evaluate our approach, we have
+conducted a case study using a commercial requirements
+monitor and a collection of web service implementations
+available with Apache Axis implementation. Our case study
+demonstrates the feasibility of verifying the conformance of
+a web service executing in an untrustworthy environment.
+</p>
+
+<!-- INSERT BIBLIOGRAPHIC INFORMATION BELOW, DON'T FORGET to END EACH LINE
+  WITH <BR> -->
+
+<h2 class="bar">Bibliographic Information</h2>
+<pre>
+@inproceedings{hosamani07nwesp,
+author={Mahantesh Hosamani and Harish Narayanappa and Hridesh Rajan},
+title = {How to Trust Web Services Monitor Executing in an Untrusted Environment?},
+booktitle = {3rd International Conference on Next Generation Web Services Practices},
+location = {Seoul, Korea},
+month = {Oct},
+year = {2007},
+publisher = {IEEE Computer Society},
+address = {Washington, DC},
+pages = {To appear},
+} 
+</pre>
+<!--- INSERT LINK TO THE FULL PAPER BELOW AND ADD THE PAPER TO THE CURRENT 
+  DIRECTORY -->
+<p>Full Paper: <a href="NWeSP07.pdf">PDF</a></p>
+
+</div>
+
+</td>
+
+<!--#include virtual="../../includes/bottombar.html"-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

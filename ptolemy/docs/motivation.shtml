@@ -1,0 +1,109 @@
+<!--#include virtual="../includes/headtop.html"-->
+
+<!-- INSERT TITLE -->
+<title>Ptolemy Programming Guide</title>
+
+<!--#include virtual="../includes/headmiddle.html"-->
+
+<h1>Ptolemy Programming Guide</h1>
+
+<!--#include virtual="../includes/headbottom.html"-->
+
+<td id="b3" rowspan="2">
+<div class="maintext">
+
+<h2>Motivation</h2>
+
+<p>
+The objective of both implicit invocation (II)
+and aspect-oriented (AO) languages is to improve
+a software engineer's ability to separate conceptual concerns.
+The problem that they address is that all
+<EM>dimensions of design decisions</EM>,
+or <EM>concerns</EM>, are not amenable to modularization by a single dimension
+of decomposition. Instead, some concerns cut across the dominant
+dimension of decomposition. These approaches aim to improve
+the separation of these types of concerns thereby enhancing modularity.
+</p>
+
+<p>
+The key idea in II languages is that some interfaces 
+declare <EM>events</EM>,
+allowing one set of modules to contain code that
+dynamically and explictly <EM>announces</EM> events,
+while a second set of modules dynamically <EM>registers</EM> methods,
+called <EM>handlers</EM>,
+to receive calls (the implicit invocations) when events are announced.
+The two sets of modules are independent of each other
+and need only share the event interface declarations.
+</p>
+<p>
+In AO languages such as 
+<a href="http://www.eclipse.org/aspectj">AspectJ</a> events
+(called ``join points'')
+are pre-defined by the language as certain kinds of standard
+actions (such as method calls) in a program's execution.
+AO events are all implicitly announced.
+<EM>Pointcut descriptions (PCDs)</EM>
+are used to declaratively register handlers (called &quot;advice&quot;)
+with sets of events.
+Using PCDs to register a handler with an entire set of events,
+called <EM>quantification</EM>,
+is a key idea in AO languages that has no counterpart in II languages.
+A language's set of PCDs and its set of events
+form its <EM>event model</EM>
+(in AO terms this is a &quot;join point model&quot;).
+</p> 
+
+<p>
+II Languages have three limitations. First, they
+require complex event declaration, announcement, and registration
+code scattered across the system. Second, the ability
+to replace the code for an event (what AO calls &quot;around advice&quot;),
+is not available, without unnecessarily complex emulation code
+(to simulate closures in languages such as Java and C#).
+Third, quantification is not easy,
+since no abstraction like PCDs is available.
+Instead, a non-trivial strategy,
+such as a subscription registry,
+is needed.
+</p>
+
+<p>
+AO languages also have limitations,
+primarily because most current event models use lexical PCDs.
+Such PCDs use patterns of names;
+for example, <EM>call(run*(..))</EM>
+describes a set of call events in which the name of the called method
+starts with <EM>run</EM>.
+Lexical PCDs are fragile,
+exhibit quantification failures,
+and make it unnecessarily hard to uniformly access information from
+an event's context.
+</p>
+
+<p> 
+<center>
+<img width="100%" src="/images/overview-ptl-obs-aj.png" alt="Overview of the coupling structure"><BR>
+<b>Figure 1:</b> Overview of the coupling structure in Observer design pattern, 
+aspect-oriented programming, and Ptolemy's quantified event types.
+</center>
+</p>
+
+<p>
+Ptolemy solves the problems with II and AO languages
+using quantified, typed events.
+Ptolemy's event types are named when they are declared,
+and these names can be used in quantification.
+An event type <EM>p</EM> also declares the types of information
+communicated between announcements of events of type <EM>p</EM> and
+handler methods.
+</p>
+
+
+
+<BR><BR> <p>Page last modified on $Date: 2011/10/17 17:55:45 $</p>
+</div>
+</td>
+
+<!--#include virtual="../includes/bottombar.html"-->

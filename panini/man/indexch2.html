@@ -1,0 +1,475 @@
+<!DOCTYPE html> 
+<html> 
+<head><title>2 Motivation</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:light,regular,bold&amp;v1' rel='stylesheet' type='text/css' /> 
+<base href="/man/" /> 
+<link href="/style.css" rel="stylesheet" type="text/css" /> 
+<link href="/images/panini.ico" rel="shortcut icon" type="image/x-icon" /> 
+<!-- SYNTAX HIGHLIGHTING --> 
+<script type="text/javascript" src="/syntax/scripts/shCore.js"></script> 
+<script type="text/javascript" src="/syntax/scripts/shBrushBash.js"></script> 
+<script type="text/javascript" src="/syntax/scripts/shBrushJava.js"></script> 
+<script type="text/javascript" src="/syntax/scripts/shBrushPanini.js"></script> 
+<script type="text/javascript" src="/syntax/scripts/shBrushXml.js"></script> 
+<link type="text/css" rel="stylesheet" href="/syntax/styles/shCore.css"/> 
+<link type="text/css" rel="stylesheet" href="/syntax/styles/shThemeDefault.css"/> 
+<script type="text/javascript"> 
+//SyntaxHighlighter.config.clipboardSwf = 'scripts/clipboard.swf'; 
+SyntaxHighlighter.all(); 
+</script> 
+<!-- END SYTNAX HIGHLIGHTING --> 
+  
+<style type="text/css">  
+.col2-toc h2 {  
+margin: 0 0 10px;  
+}  
+</style>  
+ 
+<meta name="description"  
+content="The Panini Programming Guide helps introduce users to  
+the features and syntax of the Panini Programming Language.  
+Panini is a capsule-oriented programming language whose goals are  
+to ease development of correct, scalable, and portable software  
+for multicore and manycore, platforms.  
+Panini strives to reconcile modularity and concurrency goals  
+in software development." />  
+<meta name="keywords" content="panini, programming, guide, introduction, tutorial,  
+panini, capsule, capsules, capsule-oriented,  
+capsule-oriented programming, better modularity better concurrency,  
+concurrency, modularity, events, types, modules, implicit concurrency,  
+sequential consistency, data race freedom due to shared data, ease of use,  
+quantified, event, types, Hridesh Rajan, Yuheng Long,  
+Rex Fernando, Eric Lin, synergy between modularity and concurrency,  
+determinstic semantics, data race freedom, deadlock freedom,  
+multicore, multi-core, manycore, many-core, heterogeneous,  
+performance-asymmetric, platform portability, download, compiler,  
+download panini, concurrent, patterns, open effects, guarded effects,  
+explicit concurrency, pitfalls, data races, race conditions, deadlock  
+avoidance, race freedom, open effects, deterministic semantics, modules, actors" />  
+ 
+<!-- PAGE METADATA --> <link rel="stylesheet" type="text/css" href="index.css" /> 
+  
+<style type="text/css">  
+.lstlisting .label {  
+width: 100%;  
+font-size: 8pt;  
+}  
+</style>  
+  
+<style type="text/css">  
+.caption .content {  
+background-image: none;  
+background-position: left 12px;  
+background-repeat: no-repeat;  
+margin-left: 0;  
+margin-right: auto;  
+padding: 0 0 100px 50px;  
+width: 1070px;  
+}  
+</style>  
+  
+<style type="text/css">  
+.content {  
+width: 1070px;  
+}  
+</style>  
+  
+<style type="text/css">  
+.main-content {  
+background-image: url("/images/maincontent-right.png");  
+background-position:1028px 1px;  
+background-repeat: no-repeat;  
+width: 1021px;  
+}  
+</style>  
+  
+<style type="text/css">  
+.main-content .caption{  
+font-style: italic;  
+font-size: 8pt;  
+text-align: left;  
+width: 80 
+margin: 0 !important ;  
+}  
+</style>  
+</head>  
+<body>  
+<div class="body-container">  
+<header>  
+<h1><a href="index.html" name="pgtop">Panini Programming Language</a></h1>  
+<h2>PROGRAMMING LANGUAGE</h2>  
+</header>  
+<div class="content">  
+<div class="top-nav">  
+<nav>  
+<ul>  
+<li><a href="/about.shtml">About</a></li>  
+<li><a href="/people.shtml">People</a></li>  
+<li><a href="/download/">Downloads</a></li>  
+<li><a href="/papers.shtml">Research</a></li>  
+<li><a href="/man/">Manual</a></li>  
+<li><a href="/faq.shtml" id="toplast">FAQs</a></li>  
+</ul>  
+</nav>  
+</div>  
+<div class="main-content">  <h2 class="chapterHead"><span class="titlemark">Chapter&#x00A0;2</span><br /><a 
+ id="x5-40002"></a>Motivation</h2>
+                                                                         <div class="flushright" 
+>
+<!--l. 4--><p class="noindent" >
+<span 
+class="ptmri8t-x-x-90">The Panini programming language is designed to enable implicit concurrency as a direct result of</span>
+<span 
+class="ptmri8t-x-x-90">modularization of a system into capsules and to maintain modular reasoning in the presence of</span>
+<span 
+class="ptmri8t-x-x-90">concurrency.</span></p></div>
+   <h3 class="sectionHead"><span class="titlemark">2.1    </span> <a 
+ id="x5-50002.1"></a>Concurrency: A Pressing Need</h3>
+<!--l. 8--><p class="noindent" >There is no escape: all programmers will soon be forced to consider concurrency
+decisions in software design. Most modern software systems tend to be distributed,
+event-driven, and asynchronous, often requiring components to maintain multiple
+threads for message and event handling. There is also increasing pressure on
+developers to introduce concurrency into applications in order to take advantage of
+multicore processors to improve performance.
+</p><!--l. 17--><p class="indent" >   Yet concurrent programming stubbornly remains difficult and error-prone. First, a
+programmer must partition the overall system workload into tasks. Second, tasks must
+be associated with threads of execution in a manner that improves utilization while
+minimizing overhead; note that this set of decisions is highly dependent on
+characteristics of the platform, such as the number of available cores. Finally, the
+programmer must manage the dependence, interaction, and potential interleaving
+between tasks to maintain the intended semantics and avoid concurrency hazards,
+often by using low-level primitives for synchronization. To address these issues, the
+invention and refinement of better abstractions is needed: that can hide the details of
+concurrency from the programmer and allow them to focus on the program
+logic.
+</p><!--l. 31--><p class="indent" >   The significance of better abstractions for concurrency is not lost on the research
+community. However, we believe that a major gap remains. There is an impedance
+mismatch between sequential and implicitly concurrent code written using existing
+abstractions that is hard for a sequentially trained programmer to overcome. These
+programmers typically rely upon the sequence of operations to reason about their
+programs.
+</p><!--l. 40--><p class="noindent" >
+</p>
+                                                                         
+
+                                                                         
+   <h3 class="sectionHead"><span class="titlemark">2.2    </span> <a 
+ id="x5-60002.2"></a>Running Example</h3>
+<!--l. 48--><p class="noindent" >To illustrate the challenges of concurrent program design, consider a simplified
+version of the classic arcade game <span 
+class="ptmri8t-x-x-120">Asteroids</span>. The game consists of five components: a
+ship (<span 
+class="pcrr8t-x-x-120">Ship</span>), game logic (<span 
+class="pcrr8t-x-x-120">Logic</span>), user input (<span 
+class="pcrr8t-x-x-120">Input</span>), controller (<span 
+class="pcrr8t-x-x-120">Asteroids</span>) and
+a UI. The user input listens to the keyboard, parses the input, and directs the ship to
+make corresponding moves. The logic component maintains the board configuration,
+generates new asteroids, computes whether any previously generated asteroids have
+been destroyed by the ship, and computes whether the ship has collided with an
+asteroid. The ship moves and fires rockets as directed. The controller mediates the
+model and the view.
+</p><!--l. 61--><p class="noindent" >
+</p>
+   <h3 class="sectionHead"><span class="titlemark">2.3    </span> <a 
+ id="x5-70002.3"></a>Difficult Concurrency-related Design Decisions</h3>
+<!--l. 64--><p class="noindent" >The modular structure of the system is clear from the description above, and it is not
+difficult to define five Java classes with appropriate methods corresponding
+to this design. However, the system will not yet work. The programmer is
+faced with a number of nontrivial decisions: Which of these components
+needs to be associated with an execution thread of its own? Which operations
+must be executed asynchronously? Where is synchronization going to be
+needed? A human expert might reach the following conclusions, shown in
+listing&#x00A0;<a 
+href="#x5-7001r1">2.1<!--tex4ht:ref: fig:asteroid-example --></a>.
+</p>
+      <ul class="itemize1">
+      <li class="itemize">A thread is needed to read the user input (line&#x00A0;<a 
+href="#x5-700049">49<!--tex4ht:ref: line:asteroid-example-java:input --></a>)
+      </li>
+      <li class="itemize">The UI, as usual, has its own event-handling thread. The calls on the UI
+      need to pass their data to the event handling thread via the UI event queue
+      (lines <a 
+href="#x5-700025">25<!--tex4ht:ref: line:asteroid-java:uicall1 --></a> and <a 
+href="#x5-700027">27<!--tex4ht:ref: line:asteroid-java:uicall2 --></a>)
+      </li>
+      <li class="itemize">The game logic needs to run in a separate thread; otherwise, calls to update
+                                                                         
+
+                                                                         
+      game state will "steal" the controller thread and cause the game to become
+      jittery
+      </li>
+      <li class="itemize">The <span 
+class="pcrr8t-x-x-120">Ship </span>class does not need a dedicated thread, however, its methods
+      need to be synchronized, since its data is accessed by both the user input
+      thread and the controller thread</li></ul>
+   <!--l. 2-->
+<a 
+ id="x5-7001r1"></a>
+<a 
+ id="x5-7002"></a>
+<br /> <div class="caption" 
+><span class="id">Listing&#x00A0;2.1: </span><span  
+class="content">Program for a simplified arcade game Asteroids.</span></div><!--tex4ht:label?: x5-7001r2.3 --><div class="lstlisting" id="listing-1"><span class="label"><a 
+ id="x5-7003r1"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">class</span>&#x00A0;Ship&#x00A0;{&#x00A0;&#x00A0;<br /><span class="label"><a 
+ id="x5-7004r2"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">private</span>&#x00A0;<span 
+class="ptmb8t-x-x-120">short</span>&#x00A0;state&#x00A0;=&#x00A0;0;&#x00A0;<br /><span class="label"><a 
+ id="x5-7005r3"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;
+<span class="texthl"><span id="textcolor1"><span 
+class="ptmb8t-x-x-120">synchronized</span></span></span>&#x00A0;<span 
+class="ptmb8t-x-x-120">void</span>&#x00A0;die()&#x00A0;{&#x00A0;state&#x00A0;=&#x00A0;2;&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x5-7006r4"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span class="texthl"><span id="textcolor2"><span 
+class="ptmb8t-x-x-120">synchronized</span></span></span>
+&#x00A0;<span 
+class="ptmb8t-x-x-120">void</span>&#x00A0;fire()&#x00A0;{&#x00A0;state&#x00A0;=&#x00A0;1;&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x5-7007r5"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span class="texthl"><span id="textcolor3"><span 
+class="ptmb8t-x-x-120">synchronized</span></span></span>&#x00A0;<span 
+class="ptmb8t-x-x-120">boolean</span>&#x00A0;alive()&#x00A0;{&#x00A0;<span 
+class="ptmb8t-x-x-120">return</span>&#x00A0;state&#x00A0;!=&#x00A0;2;&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x5-7008r6"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;
+<span class="texthl"><span id="textcolor4"><span 
+class="ptmb8t-x-x-120">synchronized</span></span></span>&#x00A0;<span 
+class="ptmb8t-x-x-120">boolean</span>&#x00A0;isFiring()&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x5-7009r7"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">if</span>(state&#x00A0;==&#x00A0;1)&#x00A0;{&#x00A0;state&#x00A0;=&#x00A0;0;&#x00A0;<span 
+class="ptmb8t-x-x-120">return</span>&#x00A0;<span 
+class="ptmb8t-x-x-120">true</span>;&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x5-7010r8"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">return</span>&#x00A0;<span 
+class="ptmb8t-x-x-120">false</span>;&#x00A0;<br /><span class="label"><a 
+ id="x5-7011r9"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x5-7012r10"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">private</span>&#x00A0;<span 
+class="ptmb8t-x-x-120">int</span>&#x00A0;x&#x00A0;=&#x00A0;5;&#x00A0;<br /><span class="label"><a 
+ id="x5-7013r11"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;
+<span class="texthl"><span id="textcolor5"><span 
+class="ptmb8t-x-x-120">synchronized</span></span></span>&#x00A0;<span 
+class="ptmb8t-x-x-120">int</span>&#x00A0;getPos()&#x00A0;{&#x00A0;<span 
+class="ptmb8t-x-x-120">return</span>&#x00A0;x;&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x5-7014r12"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span class="texthl"><span id="textcolor6"><span 
+class="ptmb8t-x-x-120">synchronized</span></span></span>
+&#x00A0;<span 
+class="ptmb8t-x-x-120">void</span>&#x00A0;moveLeft()&#x00A0;{&#x00A0;<span 
+class="ptmb8t-x-x-120">if</span>&#x00A0;(x&#x003E;0)&#x00A0;x<span 
+class="zptmcm7y-x-x-120">-</span><span 
+class="zptmcm7y-x-x-120">-</span>;&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x5-7015r13"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span class="texthl"><span id="textcolor7"><span 
+class="ptmb8t-x-x-120">synchronized</span></span></span>
+&#x00A0;<span 
+class="ptmb8t-x-x-120">void</span>&#x00A0;moveRight()&#x00A0;{&#x00A0;<span 
+class="ptmb8t-x-x-120">if</span>&#x00A0;(x&#x003C;10)&#x00A0;x++;&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x5-7016r14"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;}
+   
+   </div>
+   <!--l. 20-->
+   <div class="lstlisting" id="listing-2"><span class="label"><a 
+ id="x5-7017r15"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">public</span>&#x00A0;<span 
+class="ptmb8t-x-x-120">class</span>&#x00A0;Asteroids&#x00A0;<span 
+class="ptmb8t-x-x-120">extends</span>&#x00A0;Thread&#x00A0;{
+   
+   </div>
+   <!--l. 24-->
+   <div class="lstlisting" id="listing-3"><span class="label"><a 
+ id="x5-7018r16"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;Ship&#x00A0;s;&#x00A0;UI&#x00A0;ui;&#x00A0;Logic&#x00A0;l;&#x00A0;<br /><span class="label"><a 
+ id="x5-7019r17"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">public</span>&#x00A0;<span 
+class="ptmb8t-x-x-120">void</span>&#x00A0;run()&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x5-7020r18"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">int</span>&#x00A0;points&#x00A0;=&#x00A0;0;&#x00A0;<br /><span class="label"><a 
+ id="x5-7021r19"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">while</span>(s.alive())&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x5-7022r20"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">int</span>&#x00A0;shipPos&#x00A0;=&#x00A0;s.getPos();&#x00A0;<br /><span class="label"><a 
+ id="x5-7023r21"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">boolean</span>&#x00A0;isFiring&#x00A0;=&#x00A0;s.isFiring();&#x00A0;<br /><span class="label"><a 
+ id="x5-7024r22"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">int</span>&#x00A0;result&#x00A0;=&#x00A0;l.step(shipPos,&#x00A0;isFiring);&#x00A0;<br /><span class="label"><a 
+ id="x5-7025r23"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">if</span>(result&#x003E;0)&#x00A0;points&#x00A0;+=&#x00A0;result;&#x00A0;<br /><span class="label"><a 
+ id="x5-7026r24"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">else</span>&#x00A0;<span 
+class="ptmb8t-x-x-120">if</span>&#x00A0;(result&#x003C;0)&#x00A0;s.die();&#x00A0;<br /><span class="label"><a 
+ id="x5-7027r25"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;ui.repaint(shipPos,&#x00A0;isFiring,&#x00A0;points);&#x00A0;&#x00A0;<br /><span class="label"><a 
+ id="x5-7028r26"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x5-7029r27"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;ui.endgame();&#x00A0;&#x00A0;<br /><span class="label"><a 
+ id="x5-7030r28"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x5-7031r29"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">public</span>&#x00A0;<span 
+class="ptmb8t-x-x-120">static</span>&#x00A0;<span 
+class="ptmb8t-x-x-120">void</span>&#x00A0;main(String[]&#x00A0;args)&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x5-7032r30"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;Ship&#x00A0;s&#x00A0;=&#x00A0;<span 
+class="ptmb8t-x-x-120">new</span>&#x00A0;Ship();&#x00A0;<br /><span class="label"><a 
+ id="x5-7033r31"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;Input&#x00A0;i&#x00A0;=&#x00A0;<span 
+class="ptmb8t-x-x-120">new</span>&#x00A0;Input(s);&#x00A0;<br /><span class="label"><a 
+ id="x5-7034r32"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;Logic&#x00A0;l&#x00A0;=&#x00A0;<span 
+class="ptmb8t-x-x-120">new</span>&#x00A0;Logic();&#x00A0;<br /><span class="label"><a 
+ id="x5-7035r33"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;UI&#x00A0;ui&#x00A0;=&#x00A0;<span 
+class="ptmb8t-x-x-120">new</span>&#x00A0;UI(l);&#x00A0;<br /><span class="label"><a 
+ id="x5-7036r34"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;Asteroids&#x00A0;c&#x00A0;=&#x00A0;<span 
+class="ptmb8t-x-x-120">new</span>&#x00A0;Asteroids(s,&#x00A0;ui,&#x00A0;l);
+   
+   </div>
+   <!--l. 46-->
+   <div class="lstlisting" id="listing-4"><span class="label"><a 
+ id="x5-7037r35"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;c.start();&#x00A0;&#x00A0;<br /><span class="label"><a 
+ id="x5-7038r36"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;i.start();
+   
+   </div>
+   <!--l. 51-->
+   <div class="lstlisting" id="listing-5"><span class="label"><a 
+ id="x5-7039r37"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">try</span>&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x5-7040r38"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;i.join();&#x00A0;<br /><span class="label"><a 
+ id="x5-7041r39"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;c.join();&#x00A0;<br /><span class="label"><a 
+ id="x5-7042r40"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;}&#x00A0;<span 
+class="ptmb8t-x-x-120">catch</span>&#x00A0;(InterruptedException&#x00A0;e)&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x5-7043r41"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;e.printStackTrace();&#x00A0;<br /><span class="label"><a 
+ id="x5-7044r42"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;}&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;
+   
+   </div>
+   <!--l. 60-->
+                                                                         
+
+                                                                         
+   <div class="lstlisting" id="listing-6"><span class="label"><a 
+ id="x5-7045r43"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x5-7046r44"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">public</span>&#x00A0;Asteroids(Ship&#x00A0;s,&#x00A0;UI&#x00A0;ui;&#x00A0;Logic&#x00A0;l)&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x5-7047r45"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">this</span>.s&#x00A0;=&#x00A0;s;&#x00A0;<span 
+class="ptmb8t-x-x-120">this</span>.ui&#x00A0;=&#x00A0;ui;&#x00A0;<span 
+class="ptmb8t-x-x-120">this</span>.l&#x00A0;=&#x00A0;l;&#x00A0;<br /><span class="label"><a 
+ id="x5-7048r46"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x5-7049r47"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;}
+   
+   </div>
+   <!--l. 68-->
+   <div class="lstlisting" id="listing-7"><span class="label"><a 
+ id="x5-7050r48"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">class</span>&#x00A0;UI&#x00A0;{&#x00A0;<span 
+class="ptmri8t-x-x-120">/</span><span 
+class="cmsy-10x-x-120">*</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">provides</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">repaint</span><span 
+class="ptmri8t-x-x-120">,</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">endgame</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="cmsy-10x-x-120">*</span><span 
+class="ptmri8t-x-x-120">/</span>&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x5-7051r49"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">class</span>&#x00A0;Input&#x00A0;<span 
+class="ptmb8t-x-x-120">extends</span>&#x00A0;Thread&#x00A0;{&#x00A0;<span 
+class="ptmri8t-x-x-120">/</span><span 
+class="cmsy-10x-x-120">*</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">reads</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">player</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">input</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="cmsy-10x-x-120">*</span><span 
+class="ptmri8t-x-x-120">/</span>&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x5-7052r50"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">class</span>&#x00A0;Logic&#x00A0;{&#x00A0;<span 
+class="ptmri8t-x-x-120">/</span><span 
+class="cmsy-10x-x-120">*</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">provides</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">step</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="cmsy-10x-x-120">*</span><span 
+class="ptmri8t-x-x-120">/</span>&#x00A0;}&#x00A0;&#x00A0;&#x00A0;&#x00A0;
+   
+   </div>
+<!--l. 98--><p class="indent" >   None of the conclusions above, in itself, is difficult to implement in Java.
+Rather, in practice it is the process of visualizing the interactions between the
+components, in order to reach those conclusions, that is extremely challenging for
+programmers&#x00A0;<span class="cite">[<a 
+href="indexli2.html#XMeder2008">2</a>,&#x00A0;<a 
+href="indexli2.html#XCS2013">1</a>]</span>.
+                                                                         
+
+                                                                         
+</p><!--l. 198--><p class="indent" >   <div class="page-nav"><a 
+href="indexch1.html" >&#x003C; PREVIOUS</a></div><div class="page-nav"><a 
+href="indexch2.html" >^ RETURN TO TOP</a></div><div class="page-nav"><a 
+href="indexch3.html" >NEXT &#x003E;</a></div>     
+</div><!--end-main-content-->  
+</div><!--end-content-->  
+</div> <!--end-body-container-->  
+ 
+<div class="footer-container">  
+<div class="footer">  
+<div class="bot-nav">  
+<nav>  
+<ul>  
+<li><a href="/about.shtml">About</a></li>  
+<li><a href="/people.shtml">People</a></li>  
+<li><a href="/download/">Downloads</a></li>  
+<li><a href="/papers.shtml">Research</a></li>  
+<li><a href="/man/">Documentation</a></li>  
+<li><a href="/faq.shtml" id="botlast">FAQs</a></li>  
+</ul>  
+</nav>  
+</div>  
+<div class="legal">  
+<div id="isu">Iowa State University</div>  
+<p id="copyright">  
+<script type="text/javascript">  
+copyright=new Date()  
+fullYear=copyright.getFullYear();  
+document.write("Copyright &copy; " + fullYear + " Iowa State University of Science and Technology. All rights reserved.")  
+</script>  
+</p>  
+<p id="credits">  
+These pages describe work carried out on the design  
+and the implementation of the Panini programming language.  
+The PI is  
+<a href="http://www.cs.iastate.edu/\protect \unhbox \voidb@x \penalty \@M \relax \unhbox \voidb@x \special {t4ht@+&{35}x00A0{59}}x{}hridesh/">Hridesh Rajan</a> from  
+<a href="http://www.cs.iastate.edu">Iowa State University</a>.  
+This work is supported in part by  
+the US <a href="http://www.nsf.gov">National Science Foundation</a> (NSF) under grants  
+<a href="http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=0846059">CCF-08-46059</a>,  
+<a href="http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=1017334">CCF-10-17334</a>,  
+<a href="http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=1117937">CCF-11-17937</a>, and  
+<a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1423370">CCF-14-23370</a> to Rajan.  
+Any opinions, findings, and conclusions or recommendations  
+expressed in this material are those of the author(s) and do not  
+necessarily reflect the views of the <a href="http://www.nsf.gov">NSF</a>.  
+</p>  
+</div>  
+<div class="links">  
+<h3>Related Sites</h3>  
+<ul>  
+<li><a href="http://www.cs.iastate.edu/\protect \unhbox \voidb@x \penalty \@M \relax \unhbox \voidb@x \special {t4ht@+&{35}x00A0{59}}x{}design/">Labratory for Software Design</a></li>  
+<li><a href="http://www.cs.iastate.edu/">Computer Science Department</a></li>  
+<li><a href="http://www.iastate.edu/">Iowa State University</a></li>  
+</ul>  
+</div>  
+</div>  
+</div>  
+ 
+<script type="text/javascript">  
+//Analytics account -- http://paninij.sourceforge.net  
+var _gaq = _gaq || [];  
+_gaq.push(['_setAccount', 'UA-15725511-1']);  
+_gaq.push(['_trackPageview']);  
+ 
+(function() {  
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;  
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';  
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);  
+})();  
+</script>  
+</body> 
+</html>

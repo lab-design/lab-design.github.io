@@ -1,0 +1,107 @@
+<!--#include virtual="includes/topbar.html"-->
+
+<td id="b3" rowspan="2">
+<div class="maintext">
+
+
+<h2>About</h2>
+
+<p>
+Frances<sup>1</sup> is a web-based visualization tool for code 
+generation and execution.
+It graphically illustrates key differences between familiar
+high-level languages and unfamiliar low-level languages and also
+illustrates how familiar high-level programs behave
+on real architectures.
+Key to this tool is the use of a simple web
+interface that requires no setup, easing course adoption hurdles.
+We also include several features that further enhance its
+usefulness in a classroom setting.
+These features include graphical relationships between high-level code and
+machine code, clearly illustrated step by step machine state transitions,
+color coding to make instruction behavior clear, and illustration of
+pointers.
+</p>
+
+<p>
+Frances has already been used in classroom settings where it showed benefits.
+Most notably, in our experimental setting, students with no computer
+architecture course experience were able to complete lessons using
+Frances with no guidance.
+</p>
+
+<h2>How to Use?</h2>
+
+<p> You can start using Frances by just clicking the link on the 
+left that will take you to our web-based tool.
+No installation is necessary. When you follow these links you should 
+see an interface that looks similar to the figure below.
+We have also made some lessons available that make use of Frances.
+</p> 
+
+<p>
+<table class="figure">
+<tr><td>
+<p>
+<a href="/frances-a">
+<img src="frances-a/figures/example1.png" width="80%" alt="Example of Frances tool" />
+</a>
+</p>
+</td></tr>
+<tr><td width="80%">
+<p><b>Figure 1:</b> Example usage of Frances. 
+Left side shows user input code and legend.  
+Middle part shows the corresponding assembly code.  
+Right side shows the machine state.
+</p>
+</td></tr>
+</table>
+</p>
+
+<h2>Main Features</h2>
+<p>
+We have designed Frances to help students understand low-level
+languages, language translation (code generation), and computer architecture by
+showing how familiar high-level code maps to low-level code and how that
+low-level code behaves on a target architecture.
+To enable these goals, Frances
+<UL>
+<LI>presents a visualization of the low-level code that maintains actual
+        target <EM>code ordering</EM>,</LI>
+<LI>differentiates between <EM>types of run-time paths</EM> in the low-level code,</LI>
+<LI><EM>color codes</EM> instruction blocks by their high-level control constructs,</LI>
+<LI>shows how each individual machine <EM>instruction impacts the machine state</EM>,</LI>
+<LI>displays the components of the system state in a <EM>logical organization</EM>,
+    illustrating several important concepts,</LI>
+<LI>allows for both <EM>forward and backward stepping</EM> through program steps, 
+    which allows students to revisit complicated steps and processes,</LI>
+<LI><EM>color codes</EM> individual parts of the machine state making the
+    impact of each instruction clear, and </LI>
+<LI>clearly illustrates difficult concepts surrounding addresses (e.g.
+    pointers and stack) using <EM>color coded arrows</EM>.
+</UL>
+</p>
+
+<h2>Contact and Feedback</h2>
+
+<p>
+If you find any problems, would like to see any features added, 
+or just have general comments, please email us at 
+<a href="mailto:frances@iastate.edu">frances@iastate.edu</a>.
+Also, we are very interested to hear who is using our tool and 
+in what ways. This will help us develop future versions of this tool.
+</p>
+
+<p>
+<sup>1</sup> We named the tool Frances in honor of
+<a href="http://awards.acm.org/citation.cfm?id=1012327&srt=all&aw=140&ao=AMTURING">
+Frances E. Allen</a>.
+She received the Turning award for pioneering contributions to the theory and
+practice of optimizing compiler techniques that laid the foundation for modern
+optimizing compilers and automatic parallel execution.
+
+</div>
+
+</td>
+
+<!--#include virtual="includes/bottombar.html"-->

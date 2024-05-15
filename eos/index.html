@@ -1,0 +1,314 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>Eos: Aspect-oriented extension for C#</title>    
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<!-- INSERT PAGE CONTENT, KEYWORDS -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content = " Eos: aspect oriented extension of C#">
+<meta name="keywords" content="Eos, ilac#, ilacsc, .net, .NET, 
+framework, AOP , aop, aspect, oriented, programming, instance, level, 
+aspects, C#, hridesh,rajan, aspect oriented programming,
+instance-level, classpects, unified model, unification, class, aspect,
+simplication, aspect-oriented model, conceptual integrity">
+<base href="http://www.cs.iastate.edu/~eos/" />
+</head>
+
+<!-- CHANGE STYLESHEET LINK  -->
+<link rel="stylesheet" media="all" href="/css/design.css" />
+
+<!-- INSERT ADDITIONAL STYLESHEET, IF DESIRED -->
+
+<!-- INSERT INLINE STYLES, IF DESIRED -->
+<style type="text/css">
+<!--
+.rphoto125 { float: right; width: 125px; border: 1px solid #000; }
+.lphoto60 { float: left; width: 60px; margin-right: 5px; border: 1px
+solid #000;}
+.lphoto250 { float: left; width: 250px; margin-right: 5px; border: 1px solid #000; }
+#b3 { width: 355px; }
+#c3 { width: 245px; }
+#hilite2 { font-size: x-small; padding: .5em .5em .5em 2.5em; }
+-->
+</style>
+
+<!--
+.mainphoto { float: left; width: 250px; padding: 0 5px 0 0; }
+-->
+
+<body>
+
+<div id="container">
+
+<!-- BANNER. DO NOT CHANGE  -->
+<div id="mastheadni">
+ <div id="nameplate">
+ <a href="http://www.iastate.edu/">
+ <img src="http://www.cs.iastate.edu/~design/images/isu200.gif"
+ alt="Iowa State University" width="200" height="15" /></a>
+ </div>
+
+<!-- INSERT CONTACT, PHONE, SEARCH BOX -->
+  <div id="search">
+  <form method="get" action="http://www.google.com/u/iastate">
+  <a href="">Contact Us</a> |
+  <label for="search">Search CS</label>
+  <input type="text" name="q" id="isusearch" size="18" />
+  <INPUT type=hidden value=www.cs.iastate.edu name=domains> 
+  <INPUT type=hidden value=inurl:www.cs.iastate.edu name=hq> 
+  <INPUT type=hidden value=www.cs.iastate.edu name=sitesearch>
+  </form>
+  </div>
+</div>
+
+<!-- INSERT PAGE TITLE -->
+<div id="titlebar">
+<h3>Department of Computer Science</h3>
+<h3>Laboratory for Software Design</h3>
+<h1>Eos: A Unified Aspect-oriented Extension of C#</h1>
+</div>
+
+<table id="main" cellspacing="0">
+<tr>
+<td  id="a2" rowspan="2">
+<div id="mainlinks">
+
+
+<!-- INSERT LEFT COLUMN LINKS -->
+<div class="linkhead"><h3>Index</h3></div>
+<ul>
+<li><a href="http://www.cs.iastate.edu/~eos/">Home</a></li>
+<li><a href="http://www.cs.iastate.edu/~eos/People.shtml">People</a></li>
+<li><a href="http://www.cs.iastate.edu/~eos/papers/">Publications</a></li>
+<li><a href="http://www.cs.iastate.edu/~eos/download/">Download Eos</a></li>
+<li><a href="http://www.cs.iastate.edu/~eos/doc/">Documentation</a></li>
+</ul>
+<div class="linkhead"><h3>Quick Links</h3></div>
+<ul>
+<li><a href="http://www.cs.iastate.edu/~design/">Laboratory for Software Design</a></li>
+<li><a href="http://www.cs.iastate.edu">Computer Science</a></li>
+<li><a href="http://www.iastate.edu">Iowa State University</a></li>
+</ul>
+</div>
+
+
+<!-- INSERT COPY OR DELETE -->
+<div class="maintext">
+<h3>Got a question?</h3>
+<p class="cutline">
+Got a question or comment? Contact us at 
+(515) 294-6168 or <a href="mailto:hridesh@cs.iastate.edu">hridesh@cs.iastate.edu</a>.
+</p>
+</div>
+</td>
+
+<!-- 2ND COLUMN. INSERT COPY -->
+<td id="b2" rowspan="2">
+
+<div class="maintext">
+
+  <table width="100%" border="0">
+    <tr>
+      <td><p class="heading">What is Eos?</p></td>
+    </tr>
+    <tr> 
+      <td>
+        <blockquote> 
+          <p>Eos is a unified aspect-oriented extension for C# on Microsoft&reg; .NET Framework&#153;. 
+	  Eos unifies aspects and objects in three ways. First, it unifies aspects and classes as 
+	  <em>classpects</em>. A <em>classpect</em> has all the capabilities of classes, all of 
+	  essential capabilities of aspects in AspectJ--like languages, and the extensions to 
+	  aspects needed to make them first class objects. Second, the unified model eliminates 
+	  advice in favor of using methods only, with a separate and explicit join-point-method 
+	  binding construct. Third, it supports a generalized advising model. To the usual 
+	  object-oriented mechanisms of explicit or implicit method call and overriding based 
+	  on inheritance the unified model adds implicit invocation using before and after binding, 
+	  and overriding using around binding, respectively. Eos is simple and easy to understand 
+	  because it has fewer new language concepts and constructs.
+          </p>
+        </blockquote>
+      </td>
+    </tr>
+    <tr>
+      <td><p class="heading">Status of the Eos Language and its Compiler.</p></td>
+    </tr>
+    <tr>
+      <td>
+       <blockquote>
+              <p> The Eos language and its compiler are no longer actively maintained.
+	          It has been succeeded by the <a href="http://www.cs.iastate.edu/~ptolemy">Ptolemy programming language</a>.
+		  Ptolemy also provides all of the benefits of Eos such as a unified, simpler language model
+		  and a generalized advising model. In addition, Ptolemy also has benefits in terms of modular understanding
+		  and verification of separated concerns. For more information about Ptolemy see its
+		  <a href="http://www.cs.iastate.edu/~ptolemy/">web-page</a> that also makes download
+		  for the Ptolemy compiler available. 
+              </p>
+       </blockquote>
+      </td>
+    </tr>
+		 
+    <tr>
+      <td ><p class="heading">Latest News and Developments.</p></td>
+    </tr>
+    <tr> 
+      <td>
+        <blockquote>
+	        <p>
+		  <U>Jun 06</U>: Eos 0.3.4 is released and is available for download now. It contains fixed bugs and new examples. 
+		</p>
+	        <p>
+		  <U>Mar 06</U>: If you are interested in Eos, you might also want to look at <a href="http://www.cs.iastate.edu/~nu">Nu</a>
+		</p>
+	        <p>
+		  <U>Nov 05</U>: Eos implementation discussed at the <a href="http://research.microsoft.com/workshops/aop/">
+		  Microsoft Research Workshop AOP Goes .NET.</a>.
+		</p>
+                <p>
+                  <U>Aug 05</U>: Eos moved to the <a href="http://www.cs.iastate.edu">Department of Computer Science</a> 
+		   at the <a href="http://www.iastate.edu">Iowa State University</a>. Old Eos web-site is available from 
+		   the <a href="http://www.cs.virginia.edu">Department of Computer Science</a> at the 
+		   <a href="http://www.iastate.edu">University of Virginia</a> link 
+		   <a href="http://www.cs.virginia.edu/~eos">here</a>.
+                </p>
+		<p>
+		<U>July 05</U>: Eos is featured in an <a href="http://www.codeproject.com/csharp/aop2.asp">
+		                article on CodeProject by Shivprasad koirala</a>.
+		</p> 
+
+		<p>
+		<U>Jun 05</U>: Eos 0.3.3 is available now, contains more bug fixes.
+		</p>
+
+		<p>
+		<U>Jun 05</U>: Eos 0.3.2 is available now, contains more bug fixes.
+		</p>
+
+		<p>
+		<U>Apr 05</U>: Eos 0.3.1 is available now, contains bug fixes to Eos-0.3.
+		</p>
+
+		<p>
+		<U>Mar 05</U>: A new VS.NET Add-In for EOS is available for download  from 
+		   <a href="http://ect.jate.hu">here</a>.
+		</p>
+
+	        <p>
+				   <U>Mar 05</U>: Eos 0.3 Beta is available now, contains new features.
+	   </p>
+
+				   <p>
+				   <U>Oct 04</U>: A research variant of Eos, "Eos-T" and associated tool is available now from 
+				   <a href="download/AspectCov.zip">here</a>.
+				   </p>
+
+				   <p>
+				   <U>Sept 04</U>: Eos featured in an article by Igor Milovanovic 
+				   <a href="http://www.geekswithblogs.net/imilovanovic/articles/11584.aspx">here</a>.
+				   </p>
+
+				   <p>
+				   <U>Aug 04</U>: Eos featured on SharpToolBox 
+				   <a href="http://sharptoolbox.com/Toolda1748ae-355f-44f1-894d-fe8eb994de68.aspx">here</a>.
+				   </p>
+
+				   <p>
+				   <U>Jun 04</U>: Eos 0.2.2 is available now, contains more bug fixes.
+				   </p>
+
+				   <p>
+				   <U>May 04</U>: Eos 0.2.1 is available, this release contains bug fixes.
+				   </p>
+
+				   <p>
+				   <U>Feb 04</U>: After much wait Eos 0.2 Beta version is available from the <a href="download/">download page</A>.
+				   </p>
+				    
+				    <p>
+				    <U>Jan 04</U>: New discussion list for Eos. The List can be accessed from 
+				    <a href = "http://www.cs.virginia.edu/mailman/listinfo/eos-discuss"> e-mail list</a>
+				    or by sending an e-mail to eos-discuss@nospam.cs.virginia.edu.
+				    </p>
+				            
+					    <p>
+					    <U>Sept 03</U>: First and preliminary version of Eos (0.1) is available for free 
+					    for research and teaching purposes and for evaluation for commercial 
+					    purposes from the <a href="download/">download </a> page. Send us an e-mail [eos@nospam.cs.iastate.edu] 
+					    for more details.
+					    </p>
+        </blockquote>
+      </td>
+    </tr>
+    <tr>
+      <td><p class="heading"><font color="#ffffff" face="Arial,Helvetica"></font></p></td>
+    </tr>
+  </table>
+
+
+</div>
+</td>
+
+<!-- 3RD COLUMN. INSERT COPY -->
+<!--<td id="c3">
+
+<div class="maintext">
+<h2>News &amp; Updates</h2>
+
+<h3>Velit Esse</h3>
+<p>Et duis, blandit illum. Consequat dolore blandit. Suscipit nulla
+molestie. Nulla esse, deleni quis.</p>
+
+<img src="http://www.iastate.edu/guide/templates/05/img/grads13.jpg" width="125" 
+height="108" alt="" border="1" class="rphoto125"  />
+<h3> Feugait veniam</h3>
+<p>Praesent nibh at eros pr  magna 
+nonummy facilisi dignissim.</p>
+<div class="clear"></div>
+
+<h3>Vulputate tation</h3>
+<p>Auguelaoreet, autem et augue nulla. Adipiscing ut ut accumsan vero feugiat
+ut luptatum  eu iriure veniam.</p> 
+
+</div>
+</td>-->
+</tr>
+
+<!-- INSERT HIGHLIGHT OR "COMMENT OUT" -->
+<!--<tr>
+<td id="hilite">
+<div id="hilite2">
+Dolor Odio students took first place in a recent national competition.
+</div>
+</td>
+</tr>-->
+</table>
+
+<!-- INSERT CONTACT INFO: UNIT, PHONE, E-MAIL  -->
+
+<div id="footer">
+<div id="copyright">
+<img src="http://www.cs.iastate.edu/~design/images/ISUbecoming.gif" 
+alt="Becoming the Best" width="200"
+height="31" /> 
+
+
+<p>Laboratory for Software Design, Department of Computer Science, Iowa State University<p>
+<p>116A Atanasoff Hall, Ames, IA, 50011-1040, USA</p>
+<p>Voice: (515) 294-6168 . Fax: (515) 294-0258 . E-Mail: hridesh@cs.iastate.edu</p>
+<p>Copyright &#169; 2008, Iowa State University of Science and
+Technology. All rights reserved.</p>
+</div>
+</div>
+
+</div>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-512574-3";
+urchinTracker();
+</script>
+</body>
+</html>
+
+ 

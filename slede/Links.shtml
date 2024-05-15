@@ -1,0 +1,18 @@
+<!--#include virtual="includes/topbar.html"-->
+<!-- 2ND COLUMN. INSERT COPY -->
+
+<td id="b3" rowspan="2">
+<div class="maintext">
+<h2> Links to related projects </h2> <BR>
+<p>Please let us know if you know of any other projects that should have been linked here.</p>
+
+<h3> CAPSL </h3>
+
+<p> <a href="http://www.csl.sri.com/users/millen/capsl/">The CAPSL project at SRI.</a> </p>
+
+</div>
+
+
+</td>
+
+<!--#include virtual="includes/bottombar.html"-->

@@ -1,0 +1,37 @@
+<!--#include virtual="../includes/topbar.html"-->
+<!-- 2ND COLUMN. INSERT COPY -->
+
+<td id="b3" rowspan="2">
+<div class="maintext">
+<h1> People Involved in the SAPHA Project </h1> <BR>
+
+<h2 class="bar">Faculty</h2>
+<table "width=100%">
+<!--#include virtual="hrajan.htm"-->
+</table>
+
+<BR>
+<BR>
+<h2 class="bar">Current Students</h2>
+<table "width=100%">
+<!--#include virtual="skabala.htm"-->
+</table> 
+
+<BR>
+<BR>
+<h2 class="bar">Past Students</h2>
+<table "width=100%">
+<!--#include virtual="tsondag.htm"-->
+<!--#include virtual="pmurphy.htm"-->
+<!--#include virtual="pcarlson.htm"-->
+<!--#include virtual="vkrishnamurthy.htm"-->
+<!--#include virtual="jmueller.htm"-->
+</table> 
+
+
+</div>
+
+
+</td>
+
+<!--#include virtual="../includes/bottombar.html"-->

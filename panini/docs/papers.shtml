@@ -1,0 +1,208 @@
+<!--#include virtual="../includes/top.html"-->
+<title>Panini Programming Guide : Papers and Reports on the Panini Programming Language</title>
+<!-- PAGE SPECIFIC STYLING -->
+<style type="text/css">
+.col2-toc h2 {
+	margin: 0 0 10px;
+}
+</style>
+<!--#include virtual="../includes/header.html"-->
+
+<h1>The Panini Programming Guide</h1>
+<script type="text/javascript">
+copyright=new Date()
+fullYear=copyright.getFullYear();
+document.write("<h5>Copyright &copy; 2006-" + fullYear + ", Iowa State University of Science and Technology. All rights reserved.</h5>")
+</script>
+
+<!-- TABLE OF CONTENTS -->
+<div class="col2-toc">
+<h2>Table of Contents</h2>
+<ol>
+	<li><a href="docs/index.shtml">Programming Guide Overview</a></li>
+	<li><a href="docs/motivation.shtml">Motivation</a></li>
+	<li><a href="docs/starting.shtml">Getting Started with Panini</a></li>
+	<li><a href="docs/capsule-oriented.shtml">Capsule-oriented Design</a></li>
+	<li><a href="docs/language.shtml">Panini Language</a></li>
+	<li><a href="docs/parallel.shtml">Implicit Parallelism</a></li>
+	<li><a href="docs/running.shtml">Installing and Running the Panini compiler</a></li>
+	<li><a href="docs/profiling.shtml">Profiling Panini Programs</a></li>
+	<li>Technical Publications
+		<ul class="toc-currentpg">
+		<li><a href="docs/papers.shtml#2013">2013</a></li>
+		<li><a href="docs/papers.shtml#2012">2012</a></li>
+		<li><a href="docs/papers.shtml#2011">2011</a></li>
+		<li><a href="docs/papers.shtml#2010">2010</a></li>
+		<li><a href="docs/papers.shtml#2009">2009</a></li>
+	    </ul>
+	</li>
+	<li><a href="docs/faq.shtml">FAQ</a></li>
+</ol>
+<hr />
+<!--#include virtual="./toc-just-examples.html"-->
+</div>
+
+<!-- CONTENT -->
+<div class="col2-content">
+ <h2><a name="2013">2013</a></h2>
+ <ul>
+    <li>
+    <p>
+    <a href="http://www.cs.iastate.edu/~hridesh/">Hridesh Rajan</a>, 
+    <a href="http://www.cs.iastate.edu/~eylin/">Eric Lin</a>, 
+    <a href="http://www.cs.iastate.edu/~eylin/">Sean L. Mooney</a>, 
+    <a href="http://www.cs.iastate.edu/~csgzlong/">Yuheng Long</a>, 
+    <a href="http://www.cs.iastate.edu/~ganeshau/">Ganesha Upadhyaya</a>, 
+    <a href="http://www.cs.iastate.edu/~smkautz/">Steven M. Kautz</a>, 
+    <a href="http://www.cs.iastate.edu/~skabala/">Sarah Kabala</a>, 
+    <a href="http://www.cs.iastate.edu/~ganeshau/">Bryan Shrader</a>, 
+    <a href="http://www.cs.iastate.edu/~lorand/">Lorand Szakacs</a>, and 
+    <a href="http://www.cs.iastate.edu/~fernanre/">Rex Fernando</a>.
+    <a href="/papers/TR-13-01">Capsule-oriented Programming</a>,
+    Tech. Report 13-01, Computer Science, Iowa State University, July 25, 2013.
+    </p>
+    </li>
+ </ul>
+ <h2><a name="2012">2012</a></h2>
+ <ul>
+	<li>
+	<p>
+    <a href="http://www.cs.iastate.edu/~csgzlong/">Yuheng Long</a>, and
+    <a href="http://www.cs.iastate.edu/~hridesh/">Hridesh Rajan</a>.
+    <a href="/papers/TR-12-02">
+    Trust, but verify: Optimistic Effect Analysis for Reusable Code</a>, 
+    Technical Report 12-02, Computer Science, Iowa State University, April 2012.
+    </p>
+    <p>
+     This paper introduces <EM>open effects</EM>, an optimistic notion of
+     effects for reusable object-oriented code.
+    </p>
+    </li>
+ </ul>
+ <h2><a name="2011">2011</a></h2>
+ <ul>
+	<li>
+	<p>
+    <a href="http://www.cs.iastate.edu/~sondag/">Tyler Sondag</a>, and
+    <a href="http://www.cs.iastate.edu/~hridesh/">Hridesh Rajan</a>.
+    <a href="/papers/CGO-10">
+    Phase-based Tuning for Better Utilization of Performance-Asymmetric Multicore Processors</a>, 
+    in the proceedings of the International Symposium on Code Generation and Optimization (CGO), 
+    April 2011, Chamonix, France.
+    </p>
+    <p>
+     This paper introduces <EM>phase-based tuning</EM>, a technique for
+     improving the utilization of performance-asymmetric multicore processors.
+    </p>
+    </li>
+ </ul>
+ <h2><a name="2010">2010</a></h2>
+ <ul>
+	<li>
+	<p><a href="http://www.cs.iastate.edu/~hridesh/">Hridesh Rajan</a>. 
+    <a href="/papers/FoSER-10">Building Scalable Software Systems in the Multicore Era</a>,
+    in the proceedings of the
+    2010 FSE/SDP Workshop on the Future of Software Engineering, Santa Fe, NM, November 2010.</p>
+    <p> This paper describes the overall hypothesis of the Panini project and discusses
+    open issues and directions. </p>
+    </li>
+    
+   <li>
+   <p>
+    <a href="http://www.cs.iastate.edu/~hridesh/">Hridesh Rajan</a>,
+    <a href="http://www.cs.iastate.edu/~smkautz/">Steven M. Kautz</a>, and
+    <a href="http://www.cs.iastate.edu/~wrowcliff/">Wayne Rowcliffe</a>.
+    <a href="/papers/ONWARD-10">
+    Concurrency by Modularity: Design Patterns, a Case in Point</a>,
+    in the proceedings of the Onward! Conference, October 17-21, 2010,
+    Reno-Tahoe, USA.
+   </p>
+   <p>
+    This paper introduces <EM>implicitly-concurrent Gang-of-Four design
+     patterns</EM>. It describes the initial design and preliminary
+     evaluation of their software engineering and performance advantages.
+   </p>
+   </li>
+   
+   <li>
+    <p>
+    <a href="http://www.cs.iastate.edu/~csgzlong/">Yuheng Long</a>,
+    <a href="http://www.cs.iastate.edu/~smooney/">Sean Mooney</a>,
+    <a href="http://www.cs.iastate.edu/~sondag/">Tyler Sondag</a>, and
+    <a href="http://www.cs.iastate.edu/~hridesh/">Hridesh Rajan</a>.
+    <a href="/papers/GPCE-10">Implicit Invocation Meets Safe, Implicit Concurrency</a>, 
+    in the proceedings of the Ninth International Conference on Generative 
+    Programming and Component Engineering. (GPCE'10), October 10-13, 2010, 
+    Eindhoven, The Netherlands.
+    </p>
+    <p>
+     This paper introduces <EM>asynchronous, typed events</EM> in Panini. 
+     It describes the initial design and preliminary evaluation of their 
+     software engineering and performance benefits.
+    </p>
+   </li>
+   
+ </ul>
+
+ <h2><a name="2009">2009</a></h2>
+ <ul>
+   <li>
+   <p>
+   <a href="http://www.cs.iastate.edu/~csgzlong/">Yuheng Long</a>,
+   <a href="http://www.cs.iastate.edu/~smooney/">Sean Mooney</a>,
+   <a href="http://www.cs.iastate.edu/~sondag/">Tyler Sondag</a>, and
+   <a href="http://www.cs.iastate.edu/~hridesh/">Hridesh Rajan</a>.
+   <a href="/papers/TR-09-28">Panini: Reconciling Concurrency and Modularity in Design</a>.
+   Technical Report 09-28b, Computer Science, Iowa State University, March 25, 2010.
+   </p>
+   <p>
+   This technical report introduces <EM>asynchronous, typed events</EM> in Panini, 
+   formally defines its semantics via a core calculus, and gives a preliminary
+   evaluation of its design and performance benefits.
+   </p>
+   </li>
+   <p>
+   <a href="http://www.cs.iastate.edu/~sondag/">Tyler Sondag</a> and
+   <a href="http://www.cs.iastate.edu/~hridesh/">Hridesh Rajan</a>. 
+   <a href="/papers/IW-MSE-09">
+   Phase-guided Thread-to-core Assignment for Improved Utilization 
+   of Performance-Asymmetric Multi-Core Processors</a>. 
+   2nd International Workshop on Multicore Software Engineering (IWMSE '09), May 2009, Vancouver, Canada.
+   </p>
+   <p>
+   A preliminary paper on phase-based tuning, an automatic technique 
+   for improving utilization of performance-asymmetric multicore processors.
+   </p>
+   </li>
+ </ul>
+
+ <h2><a name="2007">2007</a></h2>
+ <ul>
+   <li>
+   <p>
+   <a href="http://www.cs.iastate.edu/~sondag/">Tyler Sondag</a>, 
+   <a href="http://www.cs.iastate.edu/">Viswanath Krishnamurthy</a>, and
+   <a href="http://www.cs.iastate.edu/~hridesh/">Hridesh Rajan</a>. 
+   <a href="/papers/PLOS-2007/">
+   Predictive Thread-to-Core Assignment on a Heterogeneous Multi-core 
+   Processor</a>. 
+   PLOS '07: ACM SIGOPS 4th Workshop on Programming Languages and 
+   Operating Systems, Skamania Lodge, Stevenson, Washington, USA, Oct 2007.
+   </p>
+   <p>
+   This position paper described the need for improving utilization of 
+   performance-asymmetric multicore processors.
+   </p>
+   </li>
+ </ul>
+
+<!-- PAGE UPDATE -->
+<p id="update">Page last modified on $Date: 2013/08/03 14:04:23 $</p>
+
+<!-- GUIDE NAVIGATION -->
+<div class="page-nav"><a href="docs/profiling.shtml">&lt;
+PREVIOUS</a> <a href="docs/papers.shtml#pgtop">&#94; RETURN TO TOP</a> <a
+	href="docs/faq.shtml">NEXT &gt;</a></div>
+</div>
+          
+<!--#include virtual="../includes/bottom.html"-->

@@ -1,0 +1,747 @@
+Faculty Research & Interests
+Department of Computer Science
+Iowa State University
+
+Following is information about each faculty member.  More information can be obtained from the individual faculty member's homepage.  
+
+
+ALBERT L. BAKER, Associate Professor of Computer Science
+
+	B.A. 1974, Mathematics, Drake University
+	M.S. 1976, Computer Science, The Ohio State University
+	Ph.D. 1979, Computer Science, The Ohio State University
+
+Major Interests:
+Software Engineering (Specification Languages, Software Testing, CASE Tools), Natural Language Text Analysis.
+
+Current Research: 
+Dr. Baker's recent work in Software Engineering is focused on formal specification languages.  He has developed a model-based, formal specification language for C++ classes - SPECS++.  This is a typical model-based specification language in that class values are modeled as discrete mathematical structures and operations are specified using first order pre-condition and post-condition assertions over the data models.  SPECS++ handles inheritance, templates and objects. Dr. Baker has also, along with Dr. Leavens, developed a similar model-based specification language for Java called JML (Java Modeling Language). JML retains the expression syntax of Java and includes expressively convenient features like specification examples and redundant assertions. Drs. Baker and Leavens are currently enhancing and extending JML to support the specification of Java threads, events and are developing a formal semantics for JML.
+
+A compiler for an executable subset of SPECS-C++ has been implemented. The more difficult challenge in this endeavor is the "execution" of post-condition assertions, since these assertions are written to define post-state values and may not directly express an approach to constructing these values. The SPECS-C++ compiler handles "constructive assertions," which are simply those assertions which can be executed using constraint resolution technique developed for this purpose (in collaboration with Dr. Tim Wahls). Thus, while SPECS-C++ retains the precision and level of abstraction achieved by other model-based specification languages, it has the added advantage of yielding an executable prototype directly from a class specification. Drs. Baker and Leavens are currently extending this assertion evaluation technology to the newer JML specification language for Java.
+
+Dr. Baker, along with his Ph.D. student, Marybeth Gurski, is enhancing the SPECS-C++ compiler and incorporating this technology in a prototype CASE tool that supports:
+* the testing of a specification of a C++ class through the automated generation of abstract test cases and use of the SPECS-C++ compiler to "execute" the specification,
+* the automated generation of implementation-level test cases, the automated execution of an implementation of the specified class using the generated implementation-level test cases, and
+* the automated use of the class specification as a test oracle to determine the correctness of each implementation-level test case.
+This Test Validation System integrates the use of formal, model-based specifications with with white-box testing techniques.
+
+Dr. Baker's research in Natural Language Text Analysis has led to software systems that support the analysis of verbatim responses to open-ended questions (as might be used in population survey research).  These systems allow for the efficient identification, coding and recognition of the significant concepts in verbatim responses.  His recent results support the identification of relations between concepts, and can be used as the basis of natural language database systems with natural language interfaces to large volumes of natural language text.
+
+Representative Publications:
+"Preliminary Design of JML: A Behavioral Interface Specification Language for Java", Baker, A.L., Leavens, G.T., & Ruby, C., Iowa State University Department of Computer Science Technical Report #TR98-06d, April 1999.
+
+"Formal Semantics for Structured Analysis Style Data Flow Diagram Specification Languages", G. T. Leavens, T. Wahls, and A. L. Baker, ACM SAC'99 -- 1999 ACM Symposium on Applied Computing.
+
+"Enhancing the Pre- and Postcondition Technique for More Expressive Specifications", Leavens, G.T., and Baker, A.L., to appear. Proceedings of the World Congress on Formal Methods in Development of Computing Systems (FM99), Toulouse, France, September 1999.
+
+"Programming is Writing: Why Programs need to be Carefully Read", G. T. Leavens, A. L. Baker, V. Honavar, S. M. LaValle and G. Prabhu, Mathematics and Computer Education, 32(3):284-295, Fall 1998.
+
+"Testing SPECS-C++: A First Step in Validating Distributed Systems Specification," Baker, A.L., & Gurski, M.  Proceedings of the ISMM International Conference on Intelligent Information Management Systems, Washington, D.C., June 1997, pp. 105-108.
+
+"Modelling and Simulating Computer Networks Using Formalized Data flow Diagrams," Baker, A.L., and  Haverdink, M.  IASTED International Conference on Modelling and Simulation, May 1997.
+
+"Synthesizing Structured Analysis and Object-Based Formal Specifications," Baker, A.L., & Coleman, D.L.  (1997). Annals of Software Engineering, 3: 221-254.
+
+"Content Analysis and Natural Language Data Base Systems," Baker, A.L., (1997). Invited chapter in Text Analysis for the Social Sciences: Methods for Drawing Statistical Inferences from Texts and Transcripts, C. Roberts ed., Lawrence Ehrlbaum and Associates.
+
+"Timed Data Flow Diagrams,"  Baker, A.L., & Symanzik, J., Iowa State University Department of Computer Science Technical Report #TR96-23.
+
+
+PETE BOYSEN, Senior Systems Analyst, Computation Center and Adjunct Assistant Professor, Computer Science.
+
+B.S. 1969, Physics, University of Florida
+M.S. 1976, Computer Science, Iowa State University
+Ph.D. 1979, Computer Science, Iowa State University
+
+Major Interests:
+Instructional use of computers, programming languages, object-oriented programming.
+
+Current Research:
+Current research involves the development of instructional applications for the Internet.  Projects include Java Instructional simulations in meterology and mathematics and the ClassNet system which is a database system for the management of Web-based instructional classes.
+
+Representative Publications:
+"ClassNet: Managing the Virtual Classroom" Boysen, P., & Van Gorp, M., (1997). International Journal of Educational Telecommunications, 3(2/3):279-292.
+
+"Reducing Object Storage Requirements in a Multi-user Environment," Boysen, P., & Shah, P., Software-Practice and Experience, 23(3):255-241, March 1993.
+
+ "Using Simulations to Fill Instructional Gaps," Boysen, P., & Thomas, R.  EDU, 40:8-11, Winter 1986.
+
+"A Taxonomy for the Instructional Use of Computers," Boysen, P., & Thomas, R., AEDS Monitor, 22(11):12, May/June 1984.
+
+"An Evaluation of the Instructional Effectiveness of a Computer Lesson in Biomechanics," Boysen, P., & Francis, P. (1982).  Research Quarterly for Exercise and Sport, 53(3):232-235.
+
+"Them Bones: The Use of Computer-Assisted Instructional Techniques in the Teaching of Human Anatomy," Boysen, P., Francis, P., Ciskey, M., & Seastrand, P. The Computing Teacher, 9(3):11-16, November 1981.
+
+"Measuring Computer Program Comprehension," Boysen, P., & Keller, R.  ACM SIGCSE Bulletin, 12:92-102, February 1980.
+
+"A Cost-Effective Method for the Reduction and Analysis of Film Data Using the PLATO System" Boysen, P., & Francis, P.  (1978). Journal of Biomechanics, 11:343-345.
+
+"Interactive Computer Graphics in the Study of Human Body Planar Motion Under Free Fall Conditions," Boysen, P., Francis, P., & Thomas, R.  (1997).  Journal of Biomechanics, 10:783-788.
+
+
+
+SOMA CHAUDHURI, Associate Professor of Computer Science
+
+B.S. 1984, Mathematics, Massachusetts Institute of Technology, Cambridge
+B.S. 1984, Computer Science, Massachusetts Institute of Technology, Cambridge
+M.S. 1987, Computer Science, University of Washington, Seattle
+Ph.D. 1990, Computer Science, University of Washington, Seattle
+
+Major Interests:
+Theory of Distributed Computing, Parallel Algorithms and Complexity Theory
+
+Current Research:
+Dr. Chaudhuri's research in distributed computing has focused on understanding the power of asynchronous distributed systems subject to various kinds of failures. A persistent question has been to determine the problems that are solvable in the presence of uncertainty due to processor asynchrony and failures. She used combinatorial techniques to prove that certain problems are impossible to solve in these systems. The current focus of her research has shifted to the study of systems that are semi-synchronous, i.e., that have partial but inexact information about timing. These systems are much more realistic and deserve further study.  Dr. Chaudhuri is using similar combinatorial techniques with the goal of obtaining time and space complexity characterizations for problems in semi-synchronous systems analogous to the fault-resiliency characterization obtained for problems in asynchronous systems.  The ultimate objective would be to understand in a formal sense the advantage that can be gained by considering timing-based models for distributed computing over asynchronous models, and the disadvantage they represent in relation to fully synchronous models.
+
+Dr. Chaudhuri has also been recently interested in the area of distributed ad hoc networks. In particular, it would be useful to develop algorithms that are specifically suited to solving problems in these networks. These networks are unpredictable due to frequent link failures when nodes drift apart and link formations when nodes drift closer to each other. Existing distributed algorithms that rely on static communication links cannot run in such networks. Instead, efficient algorithms would have to be designed that adjusts to the mobility of the network.
+
+Representative Publications:
+"Wait-Free Implementations in Message Passing Systems."  Chaudhuri, S., Herlihy, M., & Tuttle, M. (1998).  To appear in Theoretical Computer Science.
+
+"A Tight Lower Bound for "k"-Set Agreement." Chaudhuri, S., Herlihy, M., Lynch, N., & Tuttle, M. (1998). To appear in SIAM Journal on Computing.
+
+"One-Write Algorithms for Multi-Valued Regular and Atomic Registers," Chaudhuri, S., Kosa, M., & Welch, J.L. (1998). To appear in Acta Informatica.
+
+"Shared Memory Consistency Conditions for Non-Sequential Execution: Definitions and Programming Strategies," Chaudhuri, S., Attiya, H., Friedman, R., & Welch, J.L.  SIAM Journal on Computing, 27(1):65-89, February 1998. 
+
+"Understanding the Set Consensus Partial order Using the Borowsky-Gafni Simulation," Chaudhuri, S., & Reiners, P.  Proceedings of the Tenth International Workshop on Distributed Algorithms, 1996.  Lecture notes in Computer Science 1151, Springer-Verlag, pp. 362-379.
+ 
+"Using Adaptive Timeouts to Achieve At-Most-Once Message Delivery," Chaudhuri, S., Coan, B., & Welch, J. Distributed Computing, 9(3):109-117, September 1995.
+
+"Bounds on the Costs of Multi-Valued Register Implementations," Chaudhuri, S., & Welch, J. SIAM Journal on Computing, 23(2):335-354, April 1994.
+
+"Designing Algorithms for Distributed Systems with Partially Synchronized Clocks," Chaudhuri, S., Gawlick, R., & Lynch, N. Proceedings of the Twelfth Annual ACM Symposium on Principles of Distributed Computing, August 1993.
+
+"More Choices Allow More Faults: Set Consensus Problems in Totally Asynchronous Systems," Chaudhuri, S. Information and Computation, 105(1):132-158, July 1993.
+ 
+"Safety and Liveness of Context-Free Languages," Chaudhuri, S., & Ladner, R.E.  Information Processing Letters, 37(10):13-20, January 1991.
+
+
+
+HUI-HSIEN CHOU, Assistant Professor of Computer Science & Zoology and Genetics
+
+1996 Ph.D., Computer Science University of Maryland at College Park
+1989 BS, Computer Science National Taiwan University, Taipei, Taiwan
+1984 BS, Chemical Engineering Ming-Chih Institute of Technology, Taipei, Taiwan
+
+203 Science II, Iowa State University, Ames, IA 50011; email: hhchou@iastate.edu
+
+Major Interests:
+Bioinformatics, computational biology, cellular automata, and self-organization phenomena.
+
+Current Research
+Dr. Chou works on two front ends. For computational biology research, he has done a program (lucy) which processes DNA data before assembly. He has also done a protein alignment program (yasat) that is based on information distance measurement, unlike the tradition dynamic programming approaches. He is now planning to write a third generation sequence assembly program which will be based on delayed-decision making and graph algorithms, to come up with the best possible assembly consensus out of a set of DNA shotgun fragments.
+
+Dr. Chou also works on cellular automata self-replication research. Cellular automata are computer-theoretical models for self-organization and/or self-replication systems. They are used to grasp the idea of life, but in an information processing context without touching the details of implementation such as DNA and proteins. Research in this field may possibly shed some light in the future to questions such as "what is life?", "how does life emerge?", and "how does life evolve?".
+
+Representative Publications
+Hui-Hsien Chou, Granger G. Sutton, Anna Glodek, and John Scott. Lucy - A Sequence Cleanup Program. Proceedings of the Tenth Annual Genome Sequencing and Annotation Conference (GSAC X), Miami, Florida, September 1998.
+
+Hui-Hsien Chou and James A. Reggia. Problem Solving During Artificial Selection of Self-Replicating Loops. Physica, D 115, pp. 293-312, 1998.
+
+Hui-Hsien Chou and James A. Reggia. Emergency of Self-Replicating Structures in a Cellular Automata Space. Physica D 100, pp. 2520276, 1997.
+
+Hui-Hsien Chou, James A. Reggia, Rafael Navarro-Gonza lez, and Jayoung Wu. An Extended Cellular space Method for Simulating Autocatalytica Oligonucleotides. Computers and Chemistry, 18:1, pp. 33-43, 1994.
+
+James A. Reggia, Steven L. Armentrout, Hui-Hsien Chou, and Yun Peng. Simple Systems That Exhibit Self-Directed Replication. Science, 259, pp. 1282-1288, Feb. 26, 1993.
+
+
+DAVID FERNANDEZ-BACA, Professor of Computer Science
+
+	B.S. 1980, Electrical & Computer Engineering, National University of Mexico, Mexico City
+	M.S. 1983, Electrical & Computer Engineering, University of California, Davis
+	Ph.D. 1986, Computer Science, University of California, Davis
+
+Major Interests:
+Design and analysis of algorithms, combinatorial optimization, graph algorithms, computational geometry, computational biology.
+
+Current Research:
+Dr. Fernandez-Baca conducts research in the design and analysis of combinatorial algorithms.  One of his main areas of activity is parametric optimization, where his goal is to design efficient algorithms to analyze the sensitivity of the optimum solution to changes in the input data. Computational biology is another field to which Dr. Fernandez-Baca has devoted his attention. In particular he has studied some of the combinatorial problems arising in the comparison of sequences and the reconstruction of evolutionary trees for sets of species.
+
+Representative Publications:
+"Bounds for Parametric Sequence Comparison," Fernandez-Baca, D., Seppalainen, T., & Slutzki, G. (1999)  Proceedings of the Conference on String Processing and Information Retrieval (SPIRE 99).
+
+"On the Approximability of the Steiner Tree Problem in Phylogeny," Fernandez-Baca, D., & Lagergren, J. (1998). Discrete Applied Mathematics 88:129-145.  (Special issue on Computational Biology.)
+
+"Faster Nonlinear Parametric Search, with Applications to Optimization and Dynamic Geometry,"  Fernandez-Baca, D. (1998) Proc. 3rd Latin American Conference on Theoretical Informatics, Springer-Verlag LNCS,  Vol. 1380, 1998.  To appear in Algorithmica.
+
+"Linear-time Algorithms for Parametric Minimum Spanning Tree Problems on Planar Graphs," Fernandez-Baca, D., and Slutzki, G.  (1997).  Theoretical Computer Science, 181:57--74.
+"Optimal Parametric Search in Graphs of Bounded Tree-width," Fernandez-Baca, D., and Slutzki, G.  (1997). Journal of Algorithms, 22:212-240.
+
+"Using Sparsification for Parametric Minimum Spanning Tree Problems," Fernandez-Baca, D., Slutzki, G., and Eppstein, D. (1996).  Nordic Journal of Computing, 3(4):352--366.  (Special issue devoted to selected papers from the 5th Scandinavian Workshop on Algorithm Theory.)
+
+"Simple Algorithms for Perfect Phylogeny and Triangulating Colored Graphs,"  Fernandez-Baca, D., and Agarwala, R. International Journal of Foundations of Computer Science (invited paper to special issue on Computational Biology), 7(1):11-21, March 1996.
+
+"A Polynomial-Time Algorithm for Near-Perfect Phylogeny," Fernandez-Baca, D., and Lagergren, J.  (1996). Proceedings of the 23rd International Colloquium on Automata, Languages, and Programming, pp. 670-680, Springer-Verlag Lecture Notes in Computer Science.
+
+"Weighted Multidimensional Search and its Application to Convex Optimization,"  Fernandez-Baca, D., and Agarwala, R.  (1996). SIAM Journal on Computing, 25:83-99.
+
+"Fast Algorithms for Computing Evolutionary Trees," Fernandez-Baca, Agarwala, R., and Slutzki, G.  (1995). Journal of Computational Biology, 2(3):397-408.
+
+"A Polynomial-Time Algorithm for the Perfect Phylogeny Problem when the Number of Character States is Fixed," Fernandez-Baca, D., and Agarwala, R. (1994). SIAM J. Computing, 23:1216-1224.
+
+
+SHASHI K. GADIA, Associate Professor of Computer Science
+
+	B.S. (Hons), 1969, Mathematics, Birla Inst. of Tech. & Science
+	M.Sc. 1970, Mathematics, Birla Inst. of Tech. & Science
+	Ph.D. 1977, Mathematics, University of Illinois
+	M.S. 1980, Computer Science, Ohio State University
+
+Major Interests:
+Temporal, spatial, belief, security, statistical and incomplete data; database models, type hierarchy, languages, user interfaces, optimization, implementation and access methods; pattern matching in spatio-temporal data.
+
+Current Research:
+The term dimensional data covers databases for data over a dimensional space such as time, space and user beliefs.  A uniform approach for dimensional data assures upward compatibility.  Thus when one migrates from lower forms of dimensional data to higher forms, e.g. ordinary data to spatio-temporal data, the existing application software would not need to be redeveloped.  Such a framework necessitates careful study of pragmatic issues such as database optimization.
+
+Representative Publications:
+"A Pattern Matching Language for Spatio-Temporal Databases," Gadia, S., & Cheng, T. (1994). Proceedings of the Third International Conference on Information and Knowledge Management, pp. 288-295.
+
+"Object Identity and Dimension Alignment in Parametric Databases," Gadia, S., Cheng, T. & Nair, S.  (1993). Proceedings of the Second International Conference on Information and Knowledge Management, pp. 615-624. 
+
+"Relational Database Systems With Zero Information-Loss," Gadia, S., & Bhargava, G. (1993).  IEEE Transactions on Knowledge and Data Engineering, 5:76-87.
+
+"Incomplete Information in Relational Temporal Databases," Gadia, S., Nair, S., & Poon, Y. (1992).  Proceedings of the 18th International Conference on Very Large Databases, pp. 395-406.
+
+"Algebraic Optimization in a Relational Model for Temporal Databases," Gadia, S., & Nair, S.  (1992). Proceedings of the First International Conference on Information and Knowledge Management, pp 169-176.  
+"A Generalized Model for a Relational Temporal Database," Gadia, S., & Yeung, C.  (1988).  ACM SIGMOD Conference on Management of Data, pp. 251-259.
+
+"A Homogeneous Relational Model and Query Languages for Temporal Databases," Gadia, S.  (1988). ACM Transactions on Database Systems, 14:418-448.
+
+"A Query Language for a Homogeneous Temporal Database," Gadia, S., & Vaishnav, J.  (1985). Proc. Fourth Annual ACM SIGACT-SIGMOD Symposium on Principles of Database Systems, pp 51-56.
+
+
+DON E. HELLER, Adjunct Associate Professor of Computer Science
+
+	B.S. 1971, Mathematics, Carnegie Mellon University
+	Ph.D. 1977, Computer Science, Carnegie Mellon University
+
+Major Interests:
+Numerical Analysis, Parallel Computation, Computer Architecture (technology-oriented algorithm design and analysis).  Programming and debugging support tools for distributed memory systems, performance evaluation and analysis.
+
+Representative Publications:
+"A Communication Library Using Active Messages to Improve Performance of PVM," Subramaniam, K.R., Kothari, S.C., & Heller, D. (1996). Journal of Parallel and Distributed Computing, 39:146-152.
+
+"Issues of Running Code on Very Large Parallel Processing Systems," Heller, D. (1996). Debugging and Performance Tuning for Parallel Computer Systems, M.L. Simmons et al., eds., IEEE Computer Society.
+
+"Gordon Bell Prize Lectures 1993," Heller, D. Proc. Supercomputing '93, pp. 514-515.  Summary articles in IEEE Computer, Jan. 1994, pp. 69-75, and Jan. 1995, pp. 68-74.
+
+"Ten Steps for Managing Parallel Computing Projects," Heller, D. IEEE Parallel and Distributed Technology, Spring 1994, pp. 6-8.
+
+"Performance Measurements of the nCUBE/ten Multiprocessor," Heller, D. Shell Development Co., Houston, December 1988.
+
+"Partitioning Big Matrices for Small Systolic Arrays," Heller, D. (1985). VLSI and Modern Signal Processing" S.Y. Kung et al., eds., Prentice-Hall, pp. 185-199.
+
+"Mathematical Hardware - Design Issues and Responsibilities," Heller, D. (1985). Algorithmically Specialized Parallel Computers, L. Snyder et al., eds., Academic Press, pp. 233-241.
+
+"Systolic Networks for Orthogonal Decompositions," Heller, D., & Ipsen, I.C.F., (1983). SIAM J. Sci. Stat. Computing, 4:261-269.
+ "Minimal Parallelism for Associative Computations Under Time Constraints," Heller, D. (1979).  Computing, 22:101-118.
+
+"A Survey of Parallel Algorithms in Numerical Linear Algebra," Heller, D.  (1978). SIAM Review, 20:740-777.
+
+
+VASANT HONAVAR, Associate Professor of Computer Science and Neuroscience
+
+B.E. 1982, Electronics Engineering, Bangalore University, India.
+M.S. 1984, Electrical and Computer Engineering, Drexel University
+M.S. 1989, Computer Science, University of Wisconsin at Madison
+Ph.D. 1990, Computer Science and Cognitive Science, University of Wisconsin at Madison
+
+www:  http://www.cs.iastate.edu/~honavar/
+
+Current Affiliations:
+Associate Professor, Department of Computer Science
+Project Director, Bioinformatics, Computational Molecular Biology Training Group
+Faculty Member, Iowa Computational Biology Laboratory
+Faculty Member, Neuroscience Graduate Program
+Faculty Member, Bioinformatics and Computational Biology Graduate Program 
+Faculty Member, Complex Adaptive Systems Program
+Professor in Charge, Artificial Intelligence Research Laboratory
+Editor-in-Chief, Cognitive Systems Research.
+
+Research and Teaching Interests:
+Artificial Intelligence; Artificial Neural Networks; Autonomous Robots; Automata Induction; Biological Computation; Bioinformatics and Computational Biology; Cognitive Science; Complex Adaptive Systems; Computational Learning Theory; Computational Neuroscience; Data Mining, Knowledge Discovery, and Visualization; Decision Support Systems; Distributed Knowledge Networks; Distributed Databases, Mediators, and Data Warehouses; Evolutionary Computation; Intelligent Agents, Mobile Agents,and Multi-Agent Systems; Intelligent Design and Manufacturing Systems; Internet-Based Information Systems; Knowledge Representation, Automated Inference, and Knowledge-Based Systems; Machine Learning; Machine Perception;  Parallel and Distributed Artificial Intelligence.
+
+Current Research:
+Examples of current projects in Honavar's laboratory on Intelligent Agents, Mobile Agents, and Multi-Agent Systems include Distributed Knowledge Networks for information retrieval, extraction, organization and visualization; and data-driven knowledge discovery and theory refinement using heterogeneous, distributed knowledge and data sources with emphasis on Bioinformatics and Situation Assessment and Decision Support applications. In related work, topics in mobile agents, inter-agent negotiation protocols, rapid design and prototyping of intelligent agents, distributed problem solving, and coordination and control structures for multi-agent systems are being investigated.
+
+Current research in Honavar's lab in machine learning emphasizes the design, analysis, and implementation of algor-ithms for incremental data driven knowledge acquisition and theory refinement from distributed, dynamic data and knowledge sources, efficient and scalable algorithms for grammar induction, feature subset selection, induction of neural networks and other forms of classifiers for pattern recognition, spatial and temporal knowledge acquisition, and multi-task learning with emphasis on applications in bioinformatics, domain-specific automated program synthesis, decision support, customizable digital information assistants, diagnosis, monitoring and control of complex  distributed systems (e.g., computer systems, power systems) and related areas.
+
+Current research in Computational Neuroscience is focused on algorithmic models of memory and learning across multiple modalities, tasks, and timescales in biological systems (including interactions with motivational and reward systems) and computational models of acquisition and use of spatial, temporal, spatio-temporal cognitive maps.  
+
+Current research in Computational Biology and Bioinformatics emphasizes novel algorithms for information retrieval and organization, machine learning approaches to gene discovery, sub-secondary, secondary, and tertiary protein structure prediction, characterization of molecular structure-function relationships, scalable DNA chip design,
+information theoretic and grammatical analysis of DNA and protein sequences.
+
+Honavar's research is partially supported by grants from the National Science Foundation, the John Deere Foundation, IBM, Carver Foundation, Department of Energy, and the ISU Graduate College.
+
+Recent Representative Publications:
+"Machine Learning." Honavar, V.,  Parekh, R., & Yang, J. (1999). Invited article. In: Encyclopedia of Electrical and Electronics Engineering. Webster, J.G. (Ed.) New York: Wiley.
+
+"Simple DFA are Polynomially Probably Exactly Learnable from Simple Examples." Parekh, R. & Honavar, V. (1999). In: Proceedings of the Sixteenth International Conference on Machine Learning. Bled, Slovenia.
+
+"Data-Driven Theory Refinement Algorithms for Bioinformatics."  Yang, J., Parekh, R., Honavar, V. & Dobbs, D. (1999). In: Proceedings of the  International Joint Conference on Neural Networks. Washington, D.C.
+
+"Some Experiments in the Evolution of Robot Sensors". Balakrishnan, K. & Honavar, V. (1999). Invited chapter. In: Evolutionary Computing Techniques in System Design. Jain, L. (Ed.) New York: CRC Press. In press.
+
+"A Hybrid Computational Model of Place Learning and Localization." Bhatt, R., Balakrishnan, K., & Honavar, V. (1999). In: Proceedings of the International Joint Conference on Neural Networks. Washington, D.C.
+
+"Spatial Learning and Localization in Animals: A Computational Model and its Implications for Mobile Robots," Balakrishnan, K., Bousquet, O. & Honavar, V. (1999). Adaptive Behavior. In press.
+
+"A Neural Architecture for Syntax Analysis." Chen, C.-H., & Honavar, V. (1999). IEEE Transactions on Neural Networks. 10:11, pp. 94-114.
+
+"Constructive Learning / Structural Learning." Honavar, V., Yang, J. & Parekh, R. (1999). Invited article. In: Encyclopedia of Electrical and Electronics Engineering. Webster, J.G. (Ed.) Vol. 4. pp. 226-231. New York: Wiley.
+
+"Automata Induction, Grammar Inference, and Language Acquisition," Parekh, R. & Honavar, V. (1999). Invited chapter in Handbook of Natural Language Processing, Dale, Moisl and Somers (Ed). New York: Marcel Dekker. In press.
+
+"DistAl: An Inter-Pattern Distance Based Constructive Neural Network Learning Algorithm," Yang, J. & Honavar, V. (1999). Intelligent Data Analysis. In press.
+
+"Neural Architecture for Information Retrieval and Query Processing," Chen, C-H., & Honavar, V. (1999) Invited Chapter in: Handbook of Natural Language Processing. Dale, Moisl and Somers (Ed). New York: Marcel Dekker. In press.
+
+"Intelligent Agents," Honavar, V. (1999). Invited chapter in Encyclopedia of Information Technology. Williams, J.G. and Sochats, K. (ed). New York: Marcel Dekker. To appear.
+
+"Performance Comparison of Variants of Single-Layer Perceptron Algorithms on Non-Separable Data." Yang, J., Parekh, R. & Honavar, V. (1999). Neural, Parallel, and Scientific Computations. In press. 
+
+
+YAN-BIN JIA, Assistant Professor of Computer Science
+
+B.S. 1988, Computer Science, University of Science and Technology of China
+M.S. 1993, Robotics (and Computer Science), Carnegie Mellon University
+Ph.D. 1997, Robotics (and Computer Science), Carnegie Mellon University
+
+Major Research Interests:
+Robotics, computational geometry, artificial intelligence, planning, information requirements and retrieval, geometric modeling, nonlinear control and observation, robot sensing, manipulator kinematics and dynamics. 
+
+Current Research:
+"The hand is the cutting edge of the mind", and "The world can only be grasped by action, not by contemplation" says Bronowski in his book "The Ascent of Man". Dr. Jia's main research objective is to make the robot execute real world tasks intelligently and skillfully. He has endeavored to understand action and intelligence as they interact with each other, using techniques from computer science, artificial intelligence, geometry (computational and differential), mechanics, and control. 
+
+Inspired by the versatility and complexity of human perception, Dr. Jia's recent Ph.D. work focused on the design and analysis of robot sensing strategies that are efficient, reliable, easy to be integrated into manipulation, and yet simple in terms of hardware. A large part of this effort was on understanding the evolution and encoding of information in robot tasks subject to their geometry and mechanics so that their (minimum) information requirements for physical sensors can be determined.  
+
+While continuing his computational study of information structure and mechanical intelligence in robotics, Dr. Jia is also interested in applying machine learning techniques to tackle tasks that would be computationally expensive or intractable otherwise. The human hand learns skills through practice, so should the robot. He would like to program the robot so that it will be able to give performances that approach the human level. A long term goal will be to seek a clear understanding of the shares of load between purely computational methods and learning methods in the context of intelligent task execution. 
+
+Dr. Jia's other interests span areas including computational geometry, geometric modeling, physics-based animation, graphics, and human computer interaction. 
+
+Representative Publications: 
+"Pose and Motion from Contact," Yan-Bin Jia and Michael Erdmann, International Journal of Robotics Research, 18(5):466-490, 1999. 
+
+"Local Observability of Rolling," Yan-Bin Jia and Michael Erdmann, In Robotics: The Algorithmic Perspective, P.K. Agarwal et al. (eds.), pp. 251-263, A. K. Peters, Boston, 1998. Also Proc. 3rd Int'l Workshop on the Algorithmic Foundations of Robotics, Houston, TX, March 1998.  
+
+"Geometric and Dynamic Sensing: Observation of Pose and Motion through Contact," Yan-Bin Jia, Ph.D. thesis, CMU-RI-TR-97-50, The Robotics Institute, Carnegie Mellon University, December 1997.  
+
+"Geometric Sensing of Known Planar Shapes," Yan-Bin Jia and Michael Erdmann, International Journal of Robotics Research, 15(4): 365-392, 1996.  
+
+"On Computing Optimal Planar Grasps," Yan-Bin Jia. In Proceedings of the 1995 IEEE/RSJ International Conference on Intelligent Robots and Systems, pp. 3:427-434, Pittsburgh, PA, August 1995. 
+
+"The Complexity of Sensing by Point Sampling," Yan-Bin Jia and Michael Erdmann, In Algorithmic Foundations of Robotics, Ken Goldberg et al. (eds.), pp. 283-300, A. K. Peters, Boston, 1995. Also Proc. 1st Int'l Workshop on the Algorithmic Foundations of Robotics, San Francisco, CA, February 1994.  
+
+
+STEVEN M. LAVALLE, Assistant Professor of Computer Science
+
+	B.S. 1990, Computer Engineering, University of Illinois at Urbana-Champaign
+	M.S. 1993, Electrical Engineering, University of Illinois at Urbana-Champaign
+	Ph.D. 1995, Electrical Engineering, University of Illinois at Urbana-Champaign
+
+Web Page: http://janowiec.cs.iastate.edu/~lavalle
+
+Major Interests:
+Robotics, virtual prototyping, graphical simulation and animation, motion strategy problems, geometric reasoning, computer vision, artificial intelligence, applied optimal control and game theory, computational geometry, computational chemistry and drug design, networked mobile robotics.
+
+Current Research:
+These are exciting times as computer science and related engineering areas are rapidly advancing, leading to many new modeling challenges, paradigms for analysis, and opportunities to make contributions in emerging applications.  My current interests lie in the algorithmic, modeling, and analysis issues involved at the intersections of geometric reasoning, modern planning and control, and uncertainty, and my background is built on combinations of subjects from computer science (e.g., algorithms, computational geometry), electrical engineering (e.g., control, image processing), and applied math (e.g., analysis, topology, optimization).
+
+We are currently most excited about our development of Rapidly-exploring Random Trees (RRTs) for searching high-dimensional spaces tha arise from geometrically-complicated motion strategy problems.  With partial support from an NSF CAREER award, we are developing and analyzing planning algorithms that apply RRTs to a number of applications, such as evaluating vehicle performance in a graphical simulator, determining how to fire thrusters to navigate a spacecraft through a cluttered environment, and generating automatic motions for a digital actor in a movie or video game.
+
+Most of our research is conducted in the Algorithmic Robotics and Motion Strategy Lab, which contains several workstations and a Nomad XR4000 mobile robot base. This state-of-the-art robotics platform enables the group to perform a wide array of experiments such as target location and tracking, and network-based tele-embodiment.  We also collaborate with researchers at Stanford University, Rice University, and the University of Tokyo.
+
+Representative Publications:
+"Rapidly-Exploring Random Trees: A New Tool for Path Planning," by S. M. LaValle (available at http://janowiec.cs.iastate.edu/~lavalle)
+      
+"Randomized Kinodynamic Planning," by S. M. LaValle and J. J. Kuffner, Jr., Proc. 1999 International Conference on Robotics and Automation, 1999.
+
+"Visibility-Based Pursuit-Evasion: The Case of Curved Environments," by S. M. LaValle and J. Hinrichnsen, Proc. IEEE International Conference on Robotics and Automation, 1999.
+
+"A Probabilistic Roadmap Approach for Systems with Closed Kinematic Chains," by S. M. LaValle, J. H. Yakey, and L. E. Kavraki, 1999 IEEE International Conference on Robotics and Automation
+
+"Efficient Database Screening for Rational Drug Design Using Pharmacophore-Constrained Conformational Search" by S. M. LaValle, P. W. Finn, L. E. Kavraki, and J.-C. Latombe, Proc.  Third International Conference on Computational Molecular Biology (RECOMB), 1999.
+"Efficient Computation of Optimal Navigation Functions for Nonholonomic Planning," by P. Konkimalla and S. M. LaValle, Proc. IEEE International  Symposium on Robot Motion and Control, 1999.
+
+"Visibility-Based Pursuit-Evasion in a Polygonal Environment," S. M. LaValle, L. J. Guibas, J.-C. Latombe, D. Lin, & R. Motwani, International Journal of Computational Geometry and Applications.
+"An Objective-Based Framework for Motion Planning under Sensing and Control Uncertainties," S. M. LaValle, & S. A. Hutchinson, International Journal of Robotics Research, 17(1):19-42, January 1998.
+
+"Optimal Motion Planning of Multiple Robots Having Independent Goals." LaValle, S., & Hutchinson, S. A., IEEE Trans. on Robotics and Automation, December, 1998.
+
+"Motion Strategies for Maintaining Visibility of a Moving Target." S. M. LaValle, H. H.Gonzalez-Banos, C. Becker, & J.-C. Latombe, in Proc. 1997 IEEE International Conference on Robotics and Automation.
+
+"Robot Motion Planning: A Game-Theoretic Framework," LaValle, S. (1997). Algorithms for Robotic Motion and Manipulation, J.P. Laumond and M. Overmars, Eds., A.K. Peters, Boston, MA.
+
+"On Motion Planning in Changing, Partially-Predictable Environments," LaValle, S., & Sharma, R., International Journal of Robotics Research, 16(6), 775-805, December 1997.
+
+"Methods for Numerical Integration of High-Dimensional Probability Densities with Application to Statistical Image Models," S. M. LaValle, K. J. Moroney, & S. A. Hutchinson, IEEE Transactions on Image Processing, 6(12), 1659-1672, December 1997.
+
+
+GARY T. LEAVENS, Associate Professor of Computer Science.
+
+	B.S. 1978, Computer & Communication Sciences, The University of Michigan
+	M.S. 1980, Computer Science, The University of Southern California
+	Ph.D. 1989, Computer Science, Massachusetts Institute of Technology
+
+Major Interests:
+Programming and specification language design and semantics, formal methods (program specification and verification), object-oriented programming, functional programming, type theory, distributed programming languages.
+
+Current Research:
+The long term goal of my research is to understand better how to solve programming problems: how to specify such problems, methods for thinking about such problems, notations for expressing solutions, and ways to check that the solutions are correct. In pursuing this goal, I have worked in two main areas: formal methods and programming languages.
+
+Formal Methods: My work in formal methods has been focused on ways to specify and verify object-oriented (OO) soft-ware components. This specification work involves the design and formal description of a behavioral interface specifica-tion language (BISL) for C++ program modules, called Larch/C++, and, more recently, a BISL for Java program modules, called JML. From this work a key problem has emerged: how to make specification languages that are expressive enough for documenting existing code in ways that people will find helpful for reuse. We have made some progress with Larch/ C++ and JML towards solving this problem, but there is a lot of information that it cannot (yet) record. Examples include information about performance constraints, and details needed for deriving subclasses by inheritance. Our current work on JML funded by Rockwell and the National Science Foundation (NSF) tries to address some of these issues, as well as issues of practicality and how to deal with multimethods (see below). This recent work is joint with Professor Al Baker.
+
+An advantage of OO languages, such as C++ and Java, is that their message passing mechanism allows one to easily extend programs by adding new types whose objects behave like the objects of existing types; the existing types are supertypes of the new types which are called subtypes. A long term research interest has been to understand how to reason about programs that use subtyping and message passing. A criteria for judging specification and verification methods is that they should be modular in the sense that when subtypes are added to a program, unchanged modules would not have to be respecified or reverified. Modular reasoning is guaranteed by the technique of supertype abstraction. In this technique, one specifies and verifies code in terms of the static types of expressions written in a program (as usual), uses a type checker to ensure that the static types are supertypes of the run-time types, and then must prove that subtypes obey the specifications of their supertypes.
+
+Krishna Kishore Dhara, a recently graduated Ph.D. student, has extended the formal theory of behavioral subtyping to types whose instances have time-varying state. Professor Don Pigozzi (of the Mathematics Department at ISU) and I have found an exact algebraic characterization of behavioral subtyping for immutable types. Our joint research on the above topics has been funded by the National Science Foundation (NSF). A former Ph.D. student, Yoonsik Cheon, has also designed a specification language Larch/Smalltalk and its informal semantics to explore some of these ideas. I have also been working with Professor Al Baker and a former Ph.D. student, Tim Wahls, on executable specifications and improving syntax and semantics of data-flow diagrams.
+
+The potential impact of the work in formal methods is possibly great; it might lead to the engineering of software, instead of hacking. It also seems necessary for high quality software components and reuse. But more realistically, I view my research as trying to formally understand what one needs to think about when documenting and reasoning about a program or program component. This can be of great value for teaching and for the construction of tools, even if people do not use the formalism directly or on a daily basis.
+
+Programming Language Design and Semantics: The other main aspect of my work in the last few years has been on the design and semantics of object-oriented languages with generic functions. Such languages are known as multimethod programming languages, because method calls can dispatch a message send on all arguments, unlike a single-dispatching OO language, such as Smalltalk, C++, or Java. Multimethod languages are interesting because they can more easily express solutions to certain problems in OO programming (binary methods).
+
+My work on multimethod languages is joint with Craig Chambers of the University of Washington, his student Todd D. Millstein as well as Sevtap Karakoy, Jianbing Chen, and Professors Al Baker and Don Pigozzi of ISU. It focuses on the semantics and type systems for variants of the Cecil language. To date we have published papers about an algorithm for type checking such languages with very expressive features (orthogonal inheritance and subtyping), and about how to add multimethods to existing languages. One big problem is to get a language with both a (sound) static type system and a sensible module system. We have designed a langauge allows one to program abstract data types in two styles, one of which is easier to extend (as in standard OO languages) and the other of which is easier to reason about. Programmers can use both styles in the same program. The potential impact might be large if this leads to more flexible ways of supporting abstract data types in programming languages, as they are at the heart of modular, reusable coding practices. A recent NSF is starting to fund research on formal methods for such languages.
+
+See http://www.cs.iastate.edu/~leavens/ for details.
+
+Representative Publications
+Gary T. Leavens and Todd D. Millstein.  Multiple Dispatch as Dispatch on Tuples.  In OOPSLA '98 Conference Proceedings, pages 374-387, 33:10 of ACM SIGPLAN Notices, October 1998.
+
+Gary T. Leavens and Jeannette M. Wing.  Protective Interface Specifications.  Formal Aspects of Computing, 10:59-75, 1998.
+
+Gary T. Leavens and Don Pigozzi. The Behavior-Realization Adjunction and Generalized Homomorphic Relations.  Theoretical Computer Science, 177:183-216, 1997.
+
+Gary T. Leavens. An Overview of Larch/C++: Behavioral Specifications for C++ Modules. In Haim Kilov and William Harvey (editors), Specification of Behavioral Semantics in Object-Oriented Information Modeling (Kluwer Academic Publishers, 1996), Chapter 8, pp. 121-142.
+
+Krishna Kishore Dhara and Gary T. Leavens. Forcing Behavioral Subtyping Through Specification Inheritance. In Proceedings 18th International Conference on Software Engineering, Berlin, Germany, pp. 258-267. IEEE, 1996.
+
+Gary T. Leavens and William E. Weihl. Specification and Verification of Object-Oriented Programs Using Supertype Abstraction. Acta Informatica, 32(8):705-778, November 1995.
+
+Kim B. Bruce, Luca Cardelli, Giuseppe Castagna, The Hopkins Objects Group, Gary T. Leavens, and Benjamin Pierce. On Binary Methods. Theory and Practice of Object Systems 1(3):221-242, 1995.
+
+Craig Chambers and Gary T. Leavens. Typechecking and Modules for Multimethods. ACM Transactions on Programming Languages and Systems, 17(6):805-843, November 1995.
+
+Yoonsik Cheon and Gary T. Leavens. The Larch/Smalltalk Interface Specification Language. ACM Transactions on Software Engineering and Methodology, 3(3):221-253, July 1994.
+
+
+JACK H. LUTZ, Professor of Computer Science.
+
+	B.G.S. 1976, Mathematics, University of Kansas
+	M.A. 1979, Mathematics, University of Kansas
+	M.S. 1981, Computer Science, University of Kansas
+	Ph.D. 1987, Mathematics, California Institute of Technology
+
+Major Interests:
+Computational Complexity, including structure of complexity classes, resource-bounded measure, and probabilistic complexity.  Algorithmic Information and Randomness, including computational randomness, Kolmogorov complexity, computational depth, and games and prediction.
+
+Current Research:
+Dr. Lutz does most of his research in two areas: computational complexity theory and algorithmic information theory.  In computational complexity, he and his students are investigating the structure of complexity classes (deterministic, nondeterministic, probabilistic, and quantum) using resource-bounded measure, a complexity-theoretic generalization of Lebesgue measure that he has developed.  Current work focuses on weak completeness, circuit-size complexity, natural proofs, genericity, interactions between randomization and nondeterminisim, strong hypotheses, real-valued functions, and the foundations of resource-bounded measure.  In algorithmic information, he and his students are investigating randomness, resource-bounded randomness, Kolmogorov complexity, algorithmic prediction, feasible martingales, games, and computational depth.
+
+Representative Publications:
+"The Density of Weakly Complete Problems under Adaptive Reductions," Lutz, J., & Zhao, Y.  SIAM Journal on Computing, to appear.
+"Equivalence of Measures of Complexity Classes," Breutzmann, J., & Lutz, J. SIAM Journal on Computing, to appear.
+
+"Query Order and NP-Completeness," Dai, J., & Lutz, J. (1999).  Proceedings of the Fourteenth Annual IEEE Conference on Computational Complexity, IEEE Computer Society Press, pp. 142--148.
+
+"Genericity and Randomness over Feasible Probability Measures," Lorentz, A., & Lutz, J. (1998).  Theoretical Computer Science, 207:245-259.
+
+"Observations on Measure and Lowness for Delta-P-2," Lutz, J. (1997).  Theory of Computing Systems (formerly named Mathematical Systems Theory), 30:429-442.
+"The Quantitative Structure of Exponential Time," Lutz, J. (1997).  In Complexity Theory Retrospective II (Hemaspaandra, L.A., & Selman, A.L., eds.), Springer-Verlag, pp. 225-254.
+
+"Completeness and Weak Completeness under Polynomial-Size Circuits," Juedes, D., & Lutz, J. (1996). Information and Computation, 125:13-31.
+
+"The Complexity and Distribution of Hard Problems," Juedes, D., & Lutz, J. (1995). SIAM Journal on Computing 24:279-295.
+
+"Weakly Hard Problems," Lutz, J.  (1995). SIAM Journal on Computing, 24:1170-1189.
+"Computational Depth and Reducibility," Juedes, D., Lathrop, J., & Lutz, J. (1994). Theoretical Computer Science, 132:37-70.
+
+"Measure, Stochasticity, and the Density of Hard Languages," Lutz, J., & Mayordomo, E.  (1994). SIAM Journal on Computing, 23:762-779.
+
+
+ROBYN LUTZ, Affiliate Assistant Professor of Computer Science
+
+B.A. 1974, English, University of Kansas
+M.A. 1976, Spanish, University of Kansas
+Ph.D. 1980, Spanish, University of Kansas
+M.S. 1990, Computer Science, Iowa State University
+
+Major Interests:
+Software safety, fault detection and recovery, requirements engineering, formal methods, product lines, software engineering for spacecraft.
+
+Current Research:
+Current research involves integration of software and system safety techniques, safety analysis of product lines, and formal specification and verification of fault-handling software on spacecraft.
+
+Representative Publications:
+"Extending the Product Family Approach to Support Safe Reuse," The Journal of Systems and Software, to appear.
+
+"Using Immersive Virtual Environments for Certification," with C. Cruz-Neira, IEEE Software, to appear.
+
+"Experiences Using Lightweight Formal Methods for Requirements Modeling," with S. Easterbrook, R. Covington, J. Kelly, Y. Ampo, and D. Hamilton, IEEE Transactions on Software Engineering, 24(1):4-14, January 1998.
+
+"Failure Modes and Effects Analysis," with R. Woodhouse, Encyclopedia of Electrical and Electronics Engineering, ed. J. Webster, John Wiley and Sons Publishers, Vol. 7, 1999,p. 253-257.
+
+"Requirements Analysis Using Forward and Backward Search" with R. Woodhouse, Annals of Software Engineering, 3:459-475, 1997.
+
+"Targeting Safety-Related Errors During Software Requirements Analysis," The Journal of Systems and Software, 34:223-230, September 1996.
+
+"Detecting Unsafe Error Recovery Schedules" with J. Wong, IEEE Transactions on Software Engineering, 18(8):749-760, August 1992.
+
+"Toward Safe Reuse of Product Family Specifications,'' Proceedings of the Symposium on Software Reusability (SSR'99), May 21-23, 1999, Los Angeles, CA, 17-26.
+
+"Panel: Issues in Software Engineering for Survivable Systems,'' with N. Mead, J. Knight, R. Linger, and J. Voas, Proceedings of the 21st International Conference on Software Engineering (ICSE '99), May 16-22, 1999, 592-593.
+
+"Bi-directional Analysis for Certification of Safety-Critical Software," with R. Woodhouse, Proceedings of the First International Software Assurance Certification Conference (ISACC'99), March 1-3, 1999, Washington, D.C.
+
+"Safety Analysis of Requirements for a Product Family,'' with G.Helmer, M. Moseman, D. Statezni, and S. Tockey, Proceedings of the Third IEEE International Conference on Requirements Engineering (ICRE '98), April 6-10, 1998, Colorado Springs, CO, 24-31.
+
+"Panel: Issues in Requirements Definition for Survivabile Systems,'' with R. Linger, D. Fisher, J.Knight, and J. Voas, Proceedings of the Third IEEE International Conference on Requirements Engineering (ICRE '98), April 6-10, 1998, 198-199.
+
+"Reuse of a Formal Model for Requirements Validation,''Proceedings of the Fourth NASA Langley Formal Methods Workshop, 10-12 September, 1997, Hampton, VA, 75-85.
+
+"Experience Report: Contributions of SFMEA to Requirements Analysis,'' with R. Woodhouse, Proceedings of the Second IEEE International Conference on Requirements Engineering, Apr 15-18, 1996, 44-51.
+
+
+LES MILLER, Professor and Chair of Computer Science
+
+	B.A. 1967, Mathematics, University of South Dakota
+	M.A. 1974, Mathematics, University of South Dakota
+	Ph.D. 1980, Computer Science, Southern Methodist University
+
+Major Interests:
+Object oriented databases, Organizational decision support systems, Multi-agent systems, Knowledge management systems, Data warehouses, Computational Biology.
+
+Current Research:
+We are currently looking at multi-agent systems to provide the infrastructure for integrating heterogeneous data sources. In addition to the agent systems, we have developed an object-oriented data warehouse to serve as part of the integration infrastructure.  We have also been looking at tools for generating and populating data warehouse designs.  We are also concerned with applying database and machine learning techniques to problems in computational biology.
+
+Representative Publications:
+"Populating a data warehouse with mobile agents," Dandu, R., L. Miller, S. Nilakanta, and V. Honavar. (1999). To appear in The Tenth International Conference of the Information Resources Management Association.
+
+"Distributed Knowledge Networks," Honavar, V., L.L. Miller, and J. Wong. (1998). IEEE Information Technology Conference, pp. 87-90.
+
+"Object-oriented data warehouse for information fusion from heterogeneous distributed data and knowledge sources," Miller, L.L., V. Honavar, J. Wong, and S. Nilakanta. (1998).  IEEE Information Technology Conference, pp. 27-31.
+
+"Data Warehouse Modeler: A Case Tool for Warehouse Design," Miller, L.L., & Nilakanta, S.. (1998). Hawaiian International Conference on Systems Science, pp. 42-48.
+
+"Extending the Object-Relational Interface to Support an Extensible View System for Multidatabase Integration and Interoperation," Miller, L.L., Yen, D., Sirjani, A., & Tenner, J. (1998). International Journal of Computer Systems Science and Engineering. 13:4, pp. 227-240.
+
+"A Dynamic Approach for Finding the Join Sequence in a Universal Relation Interface," Miller, L.L., & Owrang, M. M.  (1998). To appear in the Journal of Integrated Computer-Aided Engineering, 4:310-318.
+
+"Warehousing Structured and Unstructured Data for Data Mining." Miller, L.L., Honavar, V., & Barta, T. (1997).  ASIS '97, pp. 215-224.
+
+
+SIMANTA MITRA, Adjunct Assistant Professor of Computer Science
+
+Ph.D 1997, Computer Science, Iowa State University
+M.S. 1991, Computer Science, Iowa State University
+B.E. 1987, Computer Science & Technology, Calcutta University, India
+
+Major Interests:
+Programming Languages, Compilers, Operating Systems, Parallelizing Tools, Embedded and Real-Time computing, Performance Evaluation of computer systems, and Software Engineering.
+
+Representative Work:
+U.S. Patent for "An apparatus and method for parallelizing legacy computer codes". Patent approved 04/14/99.
+
+U.S. Patent pending for "An incrementally copying, mark-and-sweep, garbage-collector".
+
+"A new approach to parallelization of scientific and engineering codes based on the use of high-level knowledge", PhD thesis.
+
+"A Scalable 2D Parallel Sparse Solver" (with Dr. S.C. Kothari), Proceedings of the 7th SIAM Conference on Parallel Processing for Scientific Computing, 1995.
+
+
+WAYNE O. OSTENDORF, Associate Professor of Computer Science, Director of the Administrative Data Processing Center.
+
+	B.S. 1960, Statistics, Iowa State University 
+
+Major Interests:
+Applied systems technology; computer based information systems; data center management, large data bases, interactive systems; hardware/software and people synergism.
+
+Representative Publications:
+"Iowa State University's Purchasing System: New Platform Leads to More Services, More Success," Ostendorf, W.O., Moats, L., & Diana, R.  Proceedings of the 39th Annual College and University Computer Users Conference, pp. 61-76, Ohio State University, May 1994.
+
+"Electronic Information - Image Processing:  A Step Toward an Electronic Information Environment at Iowa State University," Ostendorf, W.O., & Newhouse, L.  Proceedings of the 38th Annual College and University Computer Users Conference, May 1993, pp. 377-392.
+
+"Customized Tools, CAAD System (Computer Aided Application Development)," Ostendorf, W.O., & Maly, F.  Proceedings of the 1990 CAUSE National Conference, November 1990, pp. 481-485.
+
+
+GURPUR PRABHU, Associate Professor of Computer Science
+
+	B.Tech. 1975, Electrical Engineering, I.I.T., Madras, India 
+	M.Tech. 1978, Computer Science, I.I.T., Kanpur, India
+	Ph.D. 1983, Computer Science, Washington State University, Pullman
+
+Major Interests:
+Parallel processing, computer architecture, business process modeling and analysis.
+
+Current Research:
+Dr. Prabhu's current research focuses on performance issues of parallel programs and methods for business transformation.
+
+Representative Publications:
+"Programming is Writing: Why Programs must be Carefully Evaluated," Journal of Mathematics and Computer Education, 32:3, Fall 1998, pp. 284-295 (with Gary Leavens, Albert Baker, Vasant Honavar, and Steve LaValle).
+
+"Parallelizing a very high resolution climate model using clusters of workstations with PVM and performance and load balance analyses," (with Hao Wang and Eugene Takle), Proceedings of the International Conference on Parallel and Distributed Processing Techniques and Applications, 1998, pp. 1762-1765, CSREA Press.
+
+"Distribution-Independent Hierarchical Algorithms for the N-body problem," Journal of Supercomputing, 12, 1998, pp. 303-323 (with Srinivas Aluru, John Gustafson, and Fatih Sevilgen).
+
+"A Framework for Business Transformation," Journal of Microcomputer Applications, 17:1, 1998, pp. 1-7 (with Sree Nilakanta and Ashok Subramanian).
+
+"Enterprise Integration: Art or Science?"  Summer Conference of the Society for Enterprise Engineering, June 1995.
+ 
+"Truly Distribution-Independent Algorithms for the N-Body Problem," Prabhu, G., Aluru, S., & Gustafson, J.  Supercomputing '94, pp. 420-428.
+ 
+"A Methodology for Business Transformation," Prabhu, G., Nilakanta, S., & Subramanian, A.  (1994). Proceedings of the Third International Conference on Systems Integration, Brazil, pp. 403-411.
+
+"The Use of Microcontrollers in Mechatronics Education," Prabhu, G., & Wright, C. (1994). Proceedings of the Workshop on Mechatronics Education, Stanford, pp. 72-77.
+
+
+GIORA SLUTZKI, Professor of Computer Science
+
+	B.S. 1970, Mathematics & Physics, Hebrew University of Jerusalem, Israel
+	M.S. 1973, Computer Science, Weizmann Institute of Science, Rehovot, Israel
+	Ph.D. 1977, Computer Science, Tel-Aviv University, Tel-Aviv, Israel
+
+Major Interests: 
+Algorithms and Complexity, Game Theory and Computational Economics, Formal Languages, Automata Theory.
+
+Current Research: 
+Dr. Slutzki is currently working on complexity of some problems in abstract algebra and graph theory. He also works on parametric string alignment and problems in pursuit-evasion in polygons. 
+
+Representative Publications: 
+"Computational Complexity of Term-Equivalence," Slutzki, G., Bergman, C., & Juedes, D.; International Journal of Algebra and Computation, 9(1) (1999), pp. ???-???.
+
+"Using Sparsification for Parametric Minimum Spanning Tree Problems," Slutzki, G., Fernandez-Baca, D., & Eppstein, D.  Special SWAT Issue of the Nordic Journal of Computing, 3(4):352-366, Winter 1996.  Invited Paper.
+
+"Complexity of Some Problems in Universal Algebra," Slutzki, G., Bergman, C. 16th Symposium on Theoretical Aspects in Computer Science (SWAT '99), March 1999, Trier, Germany. Springer Verlag, LNCS 1563, pp. 163-172.
+
+"Duality Theory for Bilattices," Slutzki, G., Mobasher, B., Pigozzi, D., & Voutsadakis, G. to appear in Algebra Universalis.
+
+"Lower Bounds for Parametric Sequence Comparison," Slutzki, G., Fernandez-Baca, D., & Seppalainen, T. to be presented at the Symposium on String Processing and Information Retrieval (SPIRE '99), September 1999, Cancun, Mexico. 
+
+"Optimal Parametric Search on Graphs of Bounded Tree-width," Slutzki, G., & Fernandez-Baca, D.  (1997). Journal of Algorithms, 22:212-240.
+
+"Multi-valued Logic Programming Semantics: An Algebraic Approach," Slutzki, G., Mobasher, B., & Pigozzi, D. (1997). Theoretical Computer Science, 171:77-109.
+
+"A Hierarchy of Deterministic Top-down Tree Transformations," Slutzki, G., & Vagvolgyi, S. (1996). Mathematical Systems Theory, 29:169-188.
+
+
+WALLAPAK TAVANAPONG, Assistant Professor of Computer Science
+
+B.S. 1992, Computer Science, Thammasat University, Thailand
+M.S. 1995, Computer Science, University of Central Florida
+Ph.D. 1999, Computer Science, University of Central Florida
+
+Major Interests:
+Multimedia Systems, Parallel and Distributed Databases, Multimedia and Communications, Distributed Systems, Web Performance, Semi-Structure Data.
+
+Current Research:
+The information superhighway will consist of a collection of heterogeneous high-speed networks, offering a variety of services. Due to these infrastructures, multimedia data such as videos and audio will greatly increase its presence and significance far beyond those seen on the Internet today. Examples of the services are instructional management systems, digital libraries, tele-immersion, and virtual laboratories. 
+
+The following traits of multimedia data pose a great challenge to several research communities. Video and audio data demand both large storage space and high communication bandwidth. Furthermore, the data must be presented in a timely manner without interruptions or large jitters.  In addition, compression techniques introduce self-similarity patterns in encoded media streams and further complicate the design of storage, retrieval, and transport of the media data.
+Dr. Tavanapong's research addresses three critical aspects of multimedia computing: multimedia server design, media delivery techniques, and multimedia databases.  Her research in the server design involves developing novel algorithms for a high performance server or a cluster of workstations so that the system can serve a large number of concurrent users efficiently. Her interest in the media transmission includes efficient unicast and multicast of visual and audio data to various users equipped with different communication devices and a novel distributed interactive cache to reduce network traffics. Lastly, her research in multimedia databases concentrates on content-based search for desire video segments from a large video database. 
+
+Representative Publications:
+"2PSM: An Efficient Framework for Searching Video Information in a Limited-Bandwidth Environment," Hua, K.A., Tavanapong, W., & Wang, J.Z. To appear in ACM Multimedia Systems.
+
+"Performance of Load Balancing Techniques for Join Operations in Shared-Nothing Database Management Systems," Hua, K.A., Tavanapong, W., & Lo, Y. Journal of Parallel and Distributed Computing, 56, 17-46, 1999.
+
+"Reducing Web Browsing Delay using Profiled-Based Prefetching," Tavanapong, W., Hua, K.A., & Sheu, S. In Proc. of WebNet 98 - World Conference of the WWW, Internet & Intranet, pp. 879-884, Orlando, FL, November, 1998.
+
+"A Framework for Supporting Previewing and VCR Operations in a Low Bandwidth Environment," Tavanapong, W., Hua, K.A., & Wang, J.Z. In Proc. of ACM Multimedia '97, pp. 303-312, Seattle, WA, November, 1997. 
+
+"Pre-admission control for Movie-on-Demand," Tavanapong, W., Hua, K.A., & Sheu, S. In Proc. of Int'l Conference on Multimedia Information Systems, pp. 151-158, Schaumburg, IL, April, 1997.
+
+"Dynamic Grouping: An Efficient Buffer Management Scheme for Video-on-Demand Servers," Sheu, S., Hua, K.A., & Tavanapong, W. In Proc. of Int'l Conference on Multimedia Information Systems, pp. 135-142, Schaumburg, IL, April, 1997.
+
+"Chaining: A Generalized Batching Technique for Video-on-Demand Systems," Sheu, S., Hua, K.A., & Tavanapong, W. In Proc. of IEEE Int'l Conference on Multimedia Computing and Systems, pp. 110-117, Ottawa, Canada, June 1997.
+
+"Scheduling Queries for Parallel Execution on Multicomputer Database Management Systems," Lo, Y., Hua, K.A., & Tavanapong, W. In Proc. of Int'l Conference on Database and Expert Systems Applications, Zurich, Switzerland, 1996.
+
+"A Performance Evaluation of Load Balancing Techniques for Join Operations on Multicomputer Database Systems," Hua, K.A., Tavanapong, W., & Young H.C. In Proc. of IEEE Int'l Conference on Data Engineering, pp. 44-51, Taipei, Taiwan, 1995.
+
+
+AKHILESH TYAGI, Associate Professor (Major Appointment in Computer Engineering)
+
+	B.Tech. 1981, Electrical Engineering, Birla Institute of Technology & Science, Pilani, India.
+	M.Tech. 1983, Computer Engineering, Indian Institute of Technology, New Delhi, India.
+	Ph.D. 1988, Computer Science, University of Washington
+
+Major Interests:
+Computer Architecture, VLSI: Complexity Theory, Low Energy VLSI Design Synthesis.
+
+Current Research:
+My architecture research interests are in exploiting instruction-level-parallelism (ILP) both with the microarchitecture and compiler. One of the current projects uses branch decoupling to achieve that. In another thread, we are employing reconfigurable caches that can work both as on-chip memory and function units to speed up the processor.
+
+In VLSI research, we are developing a function-level model of energy consumption. We are also researching low power VLSI design issues particularly when applied to processor design.
+
+Representative Publications:
+"Dynamic Branch Decoupled Architecture'', {\it with} H.C. Ng and P. Mohapatra, {\it Proceedings of IEEE International Conference on Computer Design (ICCD)}, October 1999.
+
+"Hybrid Data/Configuration Caching for Striped FPGAs'', {\it with} D. Deshpande and A. Somani, in {\it Proceedings of
+IEEE International Symposium on Field Programmable Custom Computing  Machines},  April 1999.
+
+"On Reconfiguring Cache for Computing'', {\it with} H-S. Kim and A. Somani, in {\it Proceedings of IEEE International Symposium on Field Programmable Custom Computing Machines}, April 1999.
+
+"Configuration Caching Vs Data Caching for Striped FPGAs'', {\it with} D. Deshpande and A. Somani, in {\it Proceedings of ACM International Symposium on FPGAs}, pp 206-214, ACM Press, February 1999.
+
+"Reduced Address Bus Switching with Gray PC," with F. Jensen, in {\it Proceedings of Power Driven Microarchitecture Workshop at International Symposium on Computer Architecture}, ACM Press, June 1998.
+
+ "Entropic Limitations on Finite State Machine Switching'," Tyagi, A., IEEE Transactions on VLSI Systems, 5:4, pp. 456-464, December 1997.
+
+"Efficient Parallel Algorithms for Optical Computing with the DFT Primitive'," with J. Reif, in {\it Applied Optics}, 36:29, pp. 7327-9340, Optical Society of America, October 1997.
+
+"Branch Decoupled Architectures," Tyagi, A.  Proceedings of Workshop on Interaction Between Compilers and Computer Architectures at IEEE High Performance Computer Architecture Symposium.  A summary to appear in IEEE TC on Computer Architecture Newsletter, pp. 13-15, June 1997.
+
+"Statistical Module Level Area and Delay Estimation," VLSI Design, 5:2, pp. 141-153, April 1997, Gordon & Breach Publishers.
+
+"Configurable memory Queues/Computing Units Architecture," Tyagi, A., in Proceedings of Reconfigurable Architectures Workshop at International Parallel Processing Symposium,  April 1997.
+
+"Minimizing Interconnect Energy through Integrated Low-Power Placement and Combinational Logic Synthesis," with Tyagi, A., & Holt, G., in Proceedings of ACM International Symposium on Physical Design, ACM Press, April 1997.
+
+"Low-Power FSM Design using Huffman-Style Encoding," Tyagi, A., Surthi, P., & Chao, L.F., in Proceedings of European Design and Test Conference, IEEE Computer Society Press, March 1997.
+
+
+JOHNNY S. K. WONG, Professor of Computer Science
+
+	B.S. 1977, Mathematics & Computer Science, The University of Hong Kong
+	M.S. 1982, Mathematics, The University of Sydney, NSW, Australia
+	Ph.D. 1987, Computer Science, The University of Sydney, NSW, Australia
+
+Major Interests:
+Distributed Computing Environment (DCE), Distributed Operating Systems, Communication Protocols, Object-Oriented Systems and Databases, Common Object Request Broker Architecture (CORBA), Hypermedia Systems, Multimedia Information Systems, Intelligent Mobile Agents, Intrusion Detection.
+
+Current Research:
+Dr. Wong's research interests include design and implementation issues in operating systems, distributed systems and multimedia communications.  Current activities center around hypermedia, distributed multi-media database systems, and intelligent mobile agents, coordinated multimedia communications, distributed computing environment (DCE), and Common Object Request Broker Architecture (CORBA).
+
+The current research projects are funded by the Department of Defense on Intrusion Detection and Countermeasures (with Drs. Miller and Honavar) and by the Mayo Foundation on Database Generating and X-Ray Displaying using the
+World Wide Web.
+
+Representative Publications:
+"A Framework for a World Wide Web Based Data Mining System," Journal of Network and Computer Applications, Vol. 21, July 1998, pp.163-185.
+
+"A Multimedia Presentation Toolkit for the World Wide Web" Wong,J., Rao, S., & Ramaiah, N., Software: Practice and Experience, 27(4):425-446. April 1997.
+
+"Remote Access to Multimedia Databases: An object-Oriented Approach" Wong, J., & Parthasarathy, D., Software: Practice & Experience, 26(6):677-704, June 1996.
+
+"Design and Implementation of Heterogeneous Distributed Multimedia System using Mosaic GSQL," Wong, J., Magavi, S., & Bodla, P., Software: Practice & Experience, 25(11):1223-1242, November 1995.
+
+"Design and Implementation of National Engineering Education Delivery System (NEEDS)," Wong, J., Schmitz, D., & Nelson, R.  Software: Practice & Experience, 24(11):1051-1076, November 1994.
+
+"Remote Database Access in Distributed Computing Environment," Wong, J., Marshall, W., & Goodman, R.  Software: Practice & Experience, 24(4):421-434, April 1994.
+
+"Transaction Management in an Object-Oriented Database System," Wong, J., & Shah, P. The Journal of Systems and Software, 24(2):115-124, February 1994.
+
+"Transaction Management In Design Databases," Wong, J., & Kumar, M.  The Journal of Systems and Software, 22(1):3-15, July 1993.
+
+"Detecting Unsafe Error Recovery Schedules," Wong, J., & Lutz, R.  IEEE Transactions on Software Engineering, August 1992, pp. 749-760.
+
+"An Efficient Process Migration Algorithm in Distributed Systems," Wong, J., & Suen, T.  IEEE Transactions on Parallel and Distributed Systems, July 1992, pp. 488-499.
+
+
+
+
+
+
+
+
+11
+
+

@@ -1,0 +1,109 @@
+<!--#include virtual="../includes/topbar.html"-->
+
+  <table width="100%" border="0">
+    <tr>
+      <td ALIGN=left VALIGN=top COLSPAN="2" BGCOLOR="##0066CC"><b><font color="#ffffff" face="Arial,Helvetica">The Eos Programming Guide (Under Construction)</font></b></td>
+    </tr>
+    <tr> 
+      <td>
+        <blockquote> 
+          <p>
+
+Eos is an aspect-oriented extension to C# programming 
+language for Microsoft&reg; .NET Framework&#153;. Its 
+programming language model is based on AspectJ-like 
+languages. It supports modularization of crosscutting 
+concerns by adding three constructs to C#. A concern 
+is a dimension in which some design decision is made. 
+Some examples of concerns are execution trace policy, 
+use of common thread pool, security policy enforcement, caching etc. A concern is crosscutting if it cannot be 
+realized in traditional object-oriented designs in a 
+modular way – that is, if any implementation of the 
+concern involves scattered and tangled code. Scattered 
+means not localized in a module but fragmented across 
+a system.  Tangled means mingled with code for other 
+concerns. For example, the implementation of execution trace policy is scattered across all methods of the 
+system and tangled with the concerns implemented by the 
+methods.  
+<BR><BR>
+The language model of Eos adds three new constructs to 
+C#: pointcuts, bindings, and inter-type declarations. 
+The pointcut and inter-type declarations are similar to 
+their counterpart in AspectJ. The pointcut select points 
+in the execution of a program. These points are called 
+join points in aspect-oriented terminology. The binding 
+construct connects the join points to methods. Whenever 
+the join point is reached in the program execution, the 
+bound method is executed. The binding construct uses the 
+pointcut construct to select a set of join points to connect 
+a method. The inter-type declaration allows a third party type to add additional members and interfaces to a type 
+without involvement of the type itself.
+
+          </p>
+        </blockquote>
+      </td>
+    </tr>
+    <tr>
+      <td ALIGN=left VALIGN=top COLSPAN="2" BGCOLOR="##0066CC"><b><font color="#ffffff" face="Arial,Helvetica"> Pre-requisite Knowledge </font></b></td>
+    </tr>
+    <tr>
+      <td>
+       <blockquote>
+              <p> 
+
+This document assumes knowledge of aspect-oriented programming and the C# language and it uses the same terminology as the C# specification. Additional terminology is only added to explain new constructs.
+
+              </p>
+       </blockquote>
+      </td>
+    </tr>
+		 
+    <tr>
+      <td ALIGN=left VALIGN=top COLSPAN="2" BGCOLOR="##0066CC"><b><font color="#ffffff" face="Arial,Helvetica">What is new in Eos 0.3?</font></b></td>
+    </tr>
+    <tr> 
+      <td>
+        <blockquote>
+                <p>
+The current version of Eos, 0.3 beta 1, makes the following changes to the language specification of 0.2: <BR><BR>
+•	Aspects and classes are not two separate constructs. Instead, there is only one construct classpect that is declared using the keyword class. Besides all the class members such as methods, fields, events, indexers, etc, this new construct can declare aspect-oriented constructs as well. <BR><BR>
+•	Unlike Eos-0.2 there is no advice construct in the current model. The traditional advices are represented as a combination of bindings and object-oriented methods. <BR> <BR>
+
+</p>
+        </blockquote>
+      </td>
+    </tr>
+
+    <tr>
+      <td ALIGN=left VALIGN=top COLSPAN="2" BGCOLOR="##0066CC"><b><font color="#ffffff" face="Arial,Helvetica">Table of Contents</font></b></td>
+    </tr>
+    <tr> 
+      <td>
+        <blockquote>
+                <p>
+<ol>
+  <li><a href="preface.html#downloading">Downloading Eos.</a></li>
+  <li><a href="preface.html#gettingstarted">Getting Started</a>.</li>
+  <li><a href="preface.html#platforms">Supported platforms</a></li>
+  <li><a href="preface.html#limitations">Known limitations</a></li>
+  <li><a href="preface.html#license">License</a></li>
+  <li><a href="pointcuts.html#pointcuts">Pointcuts in Eos</a></li>
+  <li><a href="reflection.html">Reflective Information at the Join Point</a></li>
+</ol>
+
+</p>
+        </blockquote>
+      </td>
+    </tr>
+
+    <tr>
+      <td ALIGN=left VALIGN=top COLSPAN="2" BGCOLOR="##0066CC"><b><font color="#ffffff" face="Arial,Helvetica"></font></b></td>
+    </tr>
+  </table>
+
+
+<!--#include virtual="../includes/bottombar.html"-->
+
+
+
+ 

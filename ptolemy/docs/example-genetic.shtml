@@ -1,0 +1,284 @@
+<!--#include virtual="../includes/top.html"-->
+<title>Ptolemy Programming Guide : Genetic Algorithm Example</title>
+<!-- PAGE SPECIFIC STYLING -->
+<style type="text/css">
+.col2-toc h2 {
+	margin: 0 0 10px;
+}
+</style>
+<!--#include virtual="../includes/header.html"-->
+<h1>The Ptolemy Programming Guide</h1>
+<script type="text/javascript">
+copyright=new Date()
+fullYear=copyright.getFullYear();
+document.write("<h5>Copyright &copy; 2006-" + fullYear + ", Iowa State University of Science and Technology. All rights reserved.</h5>")
+</script>
+
+<!-- TABLE OF CONTENTS -->
+<div class="col2-toc">
+<h2>Table of Contents</h2>
+<ol>
+	<li><a href="docs/index.shtml">Programming Guide Overview</a></li>
+	<li><a href="docs/starting.shtml">Getting Started with Ptolemy</a></li>
+	<li><a href="docs/running.shtml">Installing and Running the
+	Ptolemy compiler</a></li>
+	<li><a href="docs/lang.shtml">The Ptolemy Programming Language</a></li>
+	<li><a href="docs/design-by-contract.shtml">Design-by-Contract
+	Methodology in Ptolemy</a></li>
+        <li><a href="papers/">Technical Publications</a></li>
+</ol>
+<hr />
+<h3>Examples</h3>
+<ul>
+	<li>Genetic Algorithm</li>
+</ul>
+</div>
+
+<!-- CONTENT -->
+<div class="col2-content">
+<h2><a name="geneticalgorithm">A Genetic Algorithm
+Implementation in Ptolemy</a></h2>
+<p>The code for this example is available from the Ptolemy compiler
+distribution in the examples directory. The reader is encouraged to
+consult our pages on <a href="docs/running.shtml">installing and
+running Ptolemy compiler</a> for instructions on how to obtain the full
+example source code.</p>
+
+<p>The idea behind a genetic algorithm is to mimic the process of
+natural selection. Genetic algorithms are computationally intensive and
+are useful for many optimization problems. The main concept is that
+searching for a desirable state is done by combining two <em>parent</em>
+states instead of modifying a single state. An initial <em>
+generation</em> with a fixed number (say <em>n</em>) members is given to the
+algorithm. Next, a <em>cross over</em> function is used to combine
+different members of the generation in order to develop the next
+generation. Optionally, members of the offspring may randomly be <em>mutated</em>
+slightly. Finally, members of the generation (or an entire generation)
+are ranked using a <em>fitness function</em>.</p>
+<p>In the rest of this section, we will show snippets from the
+implementation of a genetic algorithm in Ptolemy. First concept is that
+of a generation of individuals. This concept is modeled by the class <em>Generation</em>
+as shown below.</p>
+
+<pre class="brush: java;">
+import java.util.ArrayList;
+
+public class Generation extends ArrayList {
+ /***
+  * Creates a generation of size num with individuals 
+  * of type baseIndividual.
+  * @param num
+  * @param baseIndividual
+  */
+ public Generation(int num, 
+  Individual baseIndividual) {
+  super(num);
+  for (int i = 0; i &lt; num; i++) {
+   Individual ind = baseIndividual.getRandomIndividual();
+   this.add(ind);
+  }
+ }
+ public Fitness getFitness() { 
+  //returns fitness of this generation.
+ }
+ public Parents pickParents(){ 
+  //picks two individuals as parents. 
+ }
+ public boolean add(Individual[] individuals){ 
+  //Add a group of individuals to the generation.
+ }
+ public int getDepth(){ return depth; }
+ private int depth = 0;
+}
+</pre>
+
+<p>Various parts of a genetic algorithm produce and consume
+generation of individuals. For example, the cross over functionality
+consumes a generation and combines different members of this generation
+to produce a new generation. Similarly, the mutation functionality
+consumes a generation and may mutate some members of this generation to
+produce a new generation. So an event of interest in this system is
+&quot;when a generation is produced.&quot; When this abstract event
+occurs in the system, an information of interest may be the generation
+that is being produced. Furthermore, this event must be signaled
+whenever a new generation is created. This event is modeled by the
+following event type declaration in this implementation.</p>
+<pre class="brush: ptolemy;">
+public void event GenAvailable {
+ Generation g;
+}
+</pre>
+<p>In Ptolemy, an <em>event type</em> is seen as a decoupling
+mechanism that is used to interface two sets of modules, so that they
+can be independent of each other. Line 1 of the listing above declares
+the event type <em>GenAvailable</em>. This event type declares to have
+exactly one context variable. The type of this context variable is
+declared to be <em>Generation</em> and this context variable can be
+accessed using the name <em>g</em> in the code for handlers.</p>
+
+<h3>Cross over in genetic algorithm</h3>
+
+<p>Now let us look at the implementation of the cross over
+functionality. It is shown in the listing below.</p>
+<pre class="brush: ptolemy;">
+public class CrossOver {
+ protected final float probability;
+ protected final int max;
+	
+ public CrossOver(float probability, int max) {
+  this.probability = probability;
+  this.max = max;
+  register(this);
+ }
+	
+ when GenAvailable do compute;
+ public void compute(GenAvailable rest) throws Throwable {
+  rest.invoke();
+  int genSize = rest.g.size();
+  Generation g1 = new Generation(rest.g);
+  for (int i = 0; i &lt; genSize; i += 2) {
+   Parents p = rest.g.pickParents();
+   g1.add(p.tryCrossOver(probability));
+  }
+  System.out.println("Before: depth is:" +  g1.getDepth());
+  if (g1.getDepth() &lt; max)
+	announce GenAvailable(g1);
+  System.out.println("After: depth is:"+  g1.getDepth());
+  }
+}
+</pre>
+
+<p>There are two fields in this class <em>probability</em> and <em>max</em>
+that are used to model probability with which the &quot;cross over&quot;
+operation will be applied and the depth of the search for the desirable
+state. The constructor of this class initializes the two fields.</p>
+<p>An important Ptolemy-related construct <em>register</em> can be
+seen on line 9. This construct is used for registration in Ptolemy.
+This annotation on the constructor <em>CrossOver</em> has the effect of
+marking the method that can be used to activate the observer. The
+semantics is the following: when an object of that type, here <em>CrossOver</em>,
+is constructed using that method, here the constructor on lines 6-10,
+the receiver object of that method, here the constructed object <em>this</em>,
+is automatically registered to receive notifications for all events
+named in that class, here <em>GenAvailable</em>.</p>
+<p>Another Ptolemy-related construct <em>binding declaration</em> can 
+be seen on line 12. This construct is used for declaring handler methods for
+events in the Ptolemy language. The binding declaration on line 12 says that
+&quot;when events of type <em>GenAvailable</em> are announced and if the
+current instance of this type is registered to receive notifications,
+then the method <em>compute</em> (lines 13-25) will be run with the
+current instance as the receiver object.&quot;</p>
+
+<p>
+An interesting property of the implementation of CrossOver class is that
+it acts as both subject and observer for the event GenAvailable.
+Ptolemy's symmetric language model enables this flexibility in design.
+</p>
+
+<h3>Mutation in genetic algorithm</h3>
+
+<p>Another component of a genetic algorithm is mutation. The aim of this 
+component is to slightly modify a generation to create the next generation
+that is going to be explored by the algorithm. 
+</p>
+
+<pre class="brush: ptolemy;">
+public class Mutation {
+ protected final float probability;
+ protected final int max;
+
+ public Mutation(float probability, int maxDepth) {
+  this.probability = probability;
+  this.max = maxDepth;
+  register(this);
+ }
+
+ // a handler that mutates newly available generations
+ public void mutate(GenAvailable next) throws Throwable {
+  next.invoke();
+  int genSize = next.g().size();
+  Generation g2 = new Generation(next.g());
+  for (int i = 0; i &lt; genSize; i += 2) {
+   Parents p = next.g().pickParents();
+   g2.add( p.tryMutation(probability));
+  }
+  System.out.println("Before: depth is:" +  g2.getDepth());
+  if (g2.getDepth() &lt; max)
+  // announce the GenAvailable event to indicate availability 
+  // of a generation (g2)
+   announce GenAvailable(g2) {}
+  System.out.println("After: depth is:" +  g2.getDepth());
+ }
+ when GenAvailable do mutate;
+}
+</pre>
+
+<h3>Fitness in genetic algorithm</h3>
+
+<p>Finally, to determine the progress of the genetic algorithm we evaluate 
+the fitness of resulting generations. The algorithm keeps track of the 
+fittest generation seen so far. This functionality can also be implemented 
+as a handler in the Ptolemy language as shown below.</p>
+
+<pre class="brush: ptolemy;">
+public class Fittest {
+  Generation last;
+  public Fittest() {  register(this); }
+
+  // a handler that performs the fitness check on newly available generations
+  public void check(GenAvailable next) throws Throwable {
+  next.invoke();
+  if (last ==null)
+   last = next.g();
+  else {
+   Fitness f1 = next.g().getFitness();
+   Fitness f2 = last.getFitness();
+   if (f1.average() > f2.average())
+           last = next.g();
+   }
+  }
+ when GenAvailable do check
+}
+</pre>
+
+<h3>Logging in genetic algorithm</h3>
+
+<p>Logging of each generation is another concern added here,
+since it may be desirable to observe the space searched by the algorithm. 
+The code used for implementing logging is show below. 
+</p>
+
+<pre class="brush: ptolemy;">
+public class Logger {
+  public Logger() {
+   // register this instance as an event handler
+   register(this);
+  }
+
+  // a handler that logs newly available generations to the console
+  public void logit(GenAvailable next) throws Throwable {
+   next.invoke();
+   logGeneration(next.g());
+  }
+  when GenAvailable do logit;
+
+  static long generationNumber = 0;
+  public void logGeneration(Generation g) {
+   System.out.println("********************************************");
+   System.out.println("Generation #"+(generationNumber++));
+   Fitness f = g.getFitness();
+   System.out.println("Average fitness=" + f.average());
+   System.out.println("Maximum fitness="+f.maximum());
+  }
+}
+</pre>
+
+<!-- PAGE UPDATE -->
+<p id="update">Page last modified on $Date: 2012/01/07 16:18:40 $</p>
+
+<!-- GUIDE NAVIGATION -->
+<div class="page-nav"><!-- <a href="#">&lt; PREVIOUS</a> --> <a
+	href="docs/example-genetic.shtml#pgtop">&#94; RETURN TO TOP</a> <!-- <a href="#">NEXT &gt;</a> -->
+</div>
+</div>
+<!--#include virtual="../includes/bottom.html"-->

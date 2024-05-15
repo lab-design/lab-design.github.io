@@ -1,0 +1,38 @@
+Liquid Metal: Blurring the Hardware/Software Boundary
+
+David F. Bacon
+IBM Research
+
+Abstract:
+The goal of the Liquid Metal project is to allow a heterogeneous
+system of conventional processors and reconfigurable hardware (FPGAs)
+to be programmed in a single language with transparent, dynamic
+execution across the aggregate computing resources -- to "JIT the
+hardware".  Achieving this goal requires significant innovation
+across the entire system: language design, compiler technology,
+hardware synthesis, the run-time system, and hardware protocols.  I
+will give an overview of the Liquid Metal language and the tool chain
+we have built, present some initial results, and describe challenges
+for the future.
+
+About the Speaker:
+David F. Bacon is a Research Staff Member at IBM's T.J. Watson
+Research Center.  He leads the Metronome project which which
+pioneered hard real-time garbage collection, opening the use of
+high-level languages like Java for time-critical systems in financial
+trading, aerospace, defense, video gaming, and telecommunications.
+
+Dr. Bacon's algorithms are included in most compilers and run-time
+systems for modern object-oriented languages, and his work on Thin
+Locks was selected as one of the most influential contributions in
+the 20 years of the Programming Language Design and Implementation
+(PLDI) conference.  His recent work focuses on high-level real-time
+programming, embedded systems, programming language design, and
+reconfigurable hardware.  He received his Ph.D. in computer science
+from the University of California, Berkeley and his A.B. from
+Columbia University.  He holds 7 patents and has served on numerous
+program committees including POPL, OOPSLA, ECOOP, LCTES, and EMSOFT.
+He is a member of the IBM Academy of Technology, Distinguished
+Scientist of the ACM, and is on the governing boards of ACM SIGPLAN
+and SIGBED.
+

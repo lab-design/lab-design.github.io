@@ -1,0 +1,93 @@
+<!--#include virtual="../../includes/topbar.html"-->
+
+<td id="b3" rowspan="2">
+<div class="maintext">
+
+<!--#set var="tool_name" value="Frances" -->
+
+<h1><!--#echo var="tool_name" -->: A Tool For Understanding Code Generation</h1>
+
+<p>
+<center><BIG><a href="http://jhelum.cs.iastate.edu/cgi-bin/comp.cgi"><!--#echo var="tool_name" --> (x86 AT&T)</a></BIG>
+<a href="http://www.cs.iastate.edu/~sapha/cgi-bin/comp.cgi">(alternate link)</a>
+</center><BR>
+</p>
+<p>
+<center><BIG><a href="http://jhelum.cs.iastate.edu/cgi-bin/comp-mips.cgi"><!--#echo var="tool_name" --> (MIPS)</a></BIG>(experimental)
+</center><BR>
+</p>
+<p>
+<center><BIG><a href="http://jhelum.cs.iastate.edu/cgi-bin/comp-intel.cgi"><!--#echo var="tool_name" --> (x86 Intel)</a></BIG>(experimental)
+</center><BR>
+</p>
+
+
+<p>
+<center><BIG><a href="/feedback">Take a quick survey</a></BIG></center>
+</p>
+
+<br>
+
+<p>
+If you find any problems, would like to see any features added, or just have general comments, please take our survey or email us at <a href="mailto:sondag@cs.iastate.edu">sondag@cs.iastate.edu</a>.
+We are very interested to hear who is using our tool and in what ways.  
+This will help us develop future versions of this tool.
+</p>
+
+<!--#set var="color_comp" value="#00CC00" -->
+<!--#set var="color_inprog" value="#CCCC00" -->
+<!--#set var="color_ns" value="#CC0000" -->
+<!--#set var="color_easy" value="#00CC00" -->
+<!--#set var="color_interm" value="#CCCC00" -->
+<!--#set var="color_diff" value="#CC0000" -->
+<h2>Features currently under construction</h2>
+<p>
+<!--#echo var="tool_name" --> is an active project.
+If there are any features you would like to see added, or if you find any bugs, please <a href="mailto:sondag@cs.iastate.edu">notify us</a>.
+In the future, we plan to release the source code as an open source project.
+For now, please continue to use the web interface to the tool.
+Our current work and future plans for this tool are the following:
+</p>
+<ul class="features">
+  <li class="features"> <BIG><B>Multiple language support</B></BIG><br>
+       <b>Details:</b> Currently, the tool only supports C.  Add support for C++, Fortran 77, Fortran 90, Java, Python, etc.<br>
+       <b>Difficulty:</b> <font color=<!--#echo var="color_easy" -->><b>Easy</b></font><br>
+       <b>Status:</b> <font color=<!--#echo var="color_inprog" -->><b>In progress</b></font><br>
+       <b>Progress:</b> C++ and Fortran 90 work.  Fortran 90 still needs some fine tuning.  Also, further testing is needed for C++.  Other languages have not yet been implmented.
+  <li class="features"> <BIG><B>Target assembly language</B></BIG><br>
+       <b>Details:</b> Currently, the tool uses x86 AT&T syntax.  Add support for MIPS and x86 Intel syntax.<br>
+       <b>Difficulty:</b> <font color=<!--#echo var="color_easy" -->><b>Easy</b></font><br>
+       <b>Status:</b> <font color=<!--#echo var="color_comp" -->><b>Completed</b></font><br>
+       <b>Progress:</b> Currently, the tool uses x86 AT&T syntax.  Support for MIPS and x86 Intel syntax is now available experimentally.
+  <li class="features"> <BIG><B>Custom transofmrations</B></BIG><br>
+       <b>Details:</b> Add support for custom (user supplied) high level and low level langauge combinations.<br>
+       <b>Difficulty:</b> <font color=<!--#echo var="color_interm" -->><b>Intermediate</b></font><br>
+       <b>Status:</b> <font color=<!--#echo var="color_ns" -->><b>No progress</b></font><br>
+       <b>Progress:</b> Currently, the tool uses standard high level languages and standard low level languages. Support for custom languages is desired so the tool can be closely used with existing course langauges.
+  <li class="features"> <BIG><B>Program tracing</B></BIG><br>
+       <b>Details:</b> Trace an execution's behavior on the system with virtual stack, heap, registers, etc. <br>
+       <b>Difficulty:</b> <font color=<!--#echo var="color_diff" -->><b>Difficult</b></font><br>
+       <b>Status:</b> <font color=<!--#echo var="color_comp" -->><b>Completed</b></font><br>
+       <b>Progress:</b> Initial support as part of the <a href="http://www.cs.iastate.edu/~sapha/tools/frances-a">Frances-A project</a>.
+  <li class="features"> <BIG><B>Hot-spot finder</B></BIG><br>
+       <b>Details:</b> Find hot-spots in code via dynamic profile and static analysis where possible. <br>
+       <b>Difficulty:</b> <font color=<!--#echo var="color_interm" -->><b>Intermediate</b></font><br>
+       <b>Status:</b> <font color=<!--#echo var="color_ns" -->><b>No progress</b></font><br>
+  <li class="features"> <BIG><B>Analysis/Optimizations</B></BIG><br>
+       <b>Details:</b> Illustration for common static analysis and optimizations.<br>
+       <b>Difficulty:</b> <font color=<!--#echo var="color_diff" -->><b>Difficult</b></font><br>
+       <b>Status:</b> <font color=<!--#echo var="color_ns" -->><b>No progress</b></font><br>
+       <b>Progress:</b> Static analysis techniques are coded but need to be interfaced with interface.  Optimizations need to be coded and interfaced.
+       <!--
+  <li class="features"> <BIG><B>User input analysis/optimizations</B></BIG><br>
+       <b>Details:</b> Allow users to enter their own analysis and optimizations which are then interfaced with the front-end. <br>
+       <b>Difficulty:</b> <font color=<!--#echo var="color_diff" -->><b>Difficult</b></font><br>
+       <b>Status:</b> <font color=<!--#echo var="color_ns" -->><b>No progress</b></font><br>
+       -->
+</ul>
+
+</div>
+
+</td>
+
+<!--#include virtual="../../includes/bottombar.html"-->

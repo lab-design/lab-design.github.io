@@ -1,0 +1,41 @@
+<!--#include virtual="includes/headtop.html"-->
+
+<!-- INSERT TITLE -->
+<title>Mailing Lists related to Panini.</title>
+     
+<!--#include virtual="includes/headmiddle.html"-->
+
+<h1>Mailing Lists related to Panini</h1>
+
+<!--#include virtual="includes/headbottom.html"-->
+
+<td id="b3" rowspan="2">
+<div class="maintext">
+
+<h2>For Panini Users</h2>
+
+<p>
+Please use the mailing list: paninij-users@lists.sourceforge.net for questions 
+about Panini code and for help on examples, running the compiler and tools. 
+</p>
+
+<h2>For Panini Developers</h2>
+
+<p>
+Please use the mailing list: paninij-develop@lists.sourceforge.net for questions
+concerning Panini's implementation, for reporting bugs in the compiler and tools
+and for contributing to Panini's source code.
+</p>
+
+<h2>For Other Questions/Concerns</h2>
+<p>
+Please e-mail Hridesh Rajan at the e-mail address hridesh@iastate.edu 
+for more information on Panini's design and for other questions and 
+concerns. 
+</p>
+
+</div>
+
+</td>
+
+<!--#include virtual="includes/bottombar.html"-->

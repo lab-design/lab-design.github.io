@@ -1,0 +1,40 @@
+<!--#include virtual="../includes/topbar.html"-->
+<!-- 2ND COLUMN. INSERT COPY -->
+
+<td id="b3" rowspan="2">
+<div class="maintext">
+<div class="title"><h1>Fairness</h1>
+
+<p>
+Fairness is measured by looking at max-flow [2], max-stretch [2], and average process time.
+A brief description of each follows:
+<ul>
+  <li><b>max-flow:</b> longest measured execution time 
+  <li><b>max-stretch:</b> largest slowdown of an individual job
+  <li><b>average time:</b> average process run-time
+</ul>
+Compared to the stock Linux scheduler, variations of our technique improve upon all of these metrics.
+</p>
+
+  <BR>
+  <BR>
+  <center>
+    <img src="../figures/fairness_table.png"><BR>
+    <b>Figure 1:</b>
+    Fairness for <a href="variations.shtml">variations</a> of our technique. 
+    Shaded results show improvement.
+  </center>
+  <BR>
+
+  <HR SIZE=1, WIDTH=95%, ALIGN=CENTER, NOSHADE>
+  <ol>
+    <li>These results are shown in our latest <a href="http://archives.cs.iastate.edu/documents/disk0/00/00/05/96/index.html">technical report</a>.
+    <li> Michael A. Bender, Soumen Chakrabarti, and S. Muthukrishnan. Flow and stretch metrics for scheduling continuous job streams. In Annual symposium on Discrete algorithms, 1998.
+  </ol>
+
+</div>
+
+
+</td>
+
+<!--#include virtual="../includes/bottombar.html"-->

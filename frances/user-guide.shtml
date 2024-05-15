@@ -1,0 +1,21 @@
+<!--#include virtual="includes/topbar.html"-->
+<!-- 2ND COLUMN. INSERT COPY -->
+
+<td id="b3" rowspan="2">
+<div class="maintext">
+
+<h1>User guide</h2><BR><BR>
+
+<p>
+For a temporary user guide, see
+<a href="/frances-a/lessons/FrancesA_Lab_01_Intro.pdf">Frances lesson 1</a>.
+</p>
+
+
+
+
+</div>
+
+</td>
+
+<!--#include virtual="includes/bottombar.html"-->

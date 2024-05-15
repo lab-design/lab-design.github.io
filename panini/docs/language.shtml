@@ -1,0 +1,691 @@
+<!--#include virtual="../includes/top.html"-->
+<title>The Panini Programming Guide</title>
+<!-- PAGE SPECIFIC STYLING -->
+<style type="text/css">
+.col2-toc h2 {
+	margin: 0 0 10px;
+}
+</style>
+<!--#include virtual="../includes/header.html"-->
+<h1>The Panini Language</h1>
+<script type="text/javascript">
+copyright=new Date()
+fullYear=copyright.getFullYear();
+document.write("<h5>Copyright &copy; 2006-" + fullYear + ", Iowa State University of Science and Technology. All rights reserved.</h5>")
+</script>
+
+<!-- TABLE OF CONTENTS -->
+<div class="col2-toc">
+<h2>Table of Contents</h2>
+<ol>
+	<li><a href="docs/index.shtml">Programming Guide Overview</a></li>
+	<li><a href="docs/motivation.shtml">Motivation</a></li>
+	<li><a href="docs/starting.shtml">Getting Started with Panini</a></li>
+	<li><a href="docs/capsule-oriented.shtml">Capsule-oriented Design</a></li>
+	<li>Panini Language
+	<ul class="toc-currentpg">
+		<li><a href="docs/language.shtml#goals">Panini's Goals</a></li>
+		<li><a href="docs/language.shtml#capsules">Capsule Declaration</a></li>
+		<li><a href="docs/language.shtml#capsuleState">States</a></li>
+		<!-- <li><a href="docs/language.shtml#Classes">Classes</a></li> -->
+		<li><a href="docs/language.shtml#capsuleProcedures">Procedures</a></li>
+		<li><a href="docs/language.shtml#capsuleInitializer">Initializer</a></li>
+		<li><a href="docs/language.shtml#shutDown">Shutdown and Exit</a></li>
+		<li><a href="docs/language.shtml#signatures">Signatures</a></li>
+		<li><a href="docs/language.shtml#designDeclaration">Design Declarations</a></li>
+		<ul class="toc-currentpg">
+		  <li><a href="docs/language.shtml#instanceDeclaration">Capsule Instance Declarations</a></li>
+		  <li><a href="docs/language.shtml#wiringDeclaration">Capsule Instance Wiring</a></li>
+		  <li><a href="docs/language.shtml#capsuleArrays">Arrays of Capsule Instances</a></li>
+		  <li><a href="docs/language.shtml#topoOperators">Topology Operators</a></li>
+		</ul>
+		<li><a href="docs/language.shtml#implicitConcurrency">Implicit concurrency</a></li>
+	</ul>
+	</li>
+	<li><a href="docs/parallel.shtml">Implicit Parallelism</a></li>
+	<li><a href="docs/running.shtml">Installing and Running the Panini compiler</a></li>
+    <li><a href="docs/profiling.shtml">Profiling Panini Programs</a></li>
+	<li><a href="docs/papers.shtml">Technical Publications</a></li>
+	<li><a href="docs/faq.shtml">FAQ</a></li>
+</ol>
+<hr />
+<!--#include virtual="./toc-just-examples.html"-->
+
+</div>
+
+<!-- CONTENT -->
+<div class="col2-content">
+<h2><a name="goals">Panini's Goals</a></h2>
+
+<p>
+To recall from previous section, capsule-oriented programming and the Panini 
+language is designed to help programmers deal with the challenges of
+concurrent program design.
+The value proposition of the programming paradigm and the programming 
+language is twofold: 
+<ol>
+<li>to enable greater program modularity and in doing 
+so automatically enable greater program concurrency, and </li>  
+<li>improve reasoning about programs in the presence of concurrency.</li> 
+</ol>
+</p>
+<p>
+In fact, Panini does not use explicit concurrency features. 
+Instead, the programmer modularizes a program using capsules, 
+which implicitly specify boundaries outside of which concurrency can occur. 
+The Panini runtime will automatically enable concurrency in between the boundaries 
+of capsules when safe to do so.
+</p>
+
+<h2><a name="overview">Overview</a></h2>
+<p>
+The Panini programmer specifies a design as a collection 
+of <EM>capsules</EM> and ordinary object-oriented classes. 
+</p>
+<p>
+A <EM>capsule</EM> is an abstraction for decomposing a software
+into its parts.
+A capsule is like Parnas's information-hiding
+module in that it defines a set of public operations,
+hides the implementation details, and could serve as a work
+assignment for a developer or a team of developers.
+Beyond these standard responsibilities, a capsule also serves as a
+memory region, for some set of standard object instances and 
+behaves as an independent logical process.
+</p>
+<p>
+The notion of a capsule in the Panini programming language is designed to
+enable implicit concurrency at the interface of capsules as a direct result
+of the modularization of a design into capsules, and to
+maintain modular reasoning in the presence of implicit concurrency. 
+Here, by modular reasoning we mean our ability to understand a software one 
+module at a time by looking at the code for that module and only the 
+interfaces of other modules referenced by name.
+</p>
+<p>
+Inter-capsule calls look like ordinary method calls to the programmer.
+The object-oriented features are standard, but there are no explicit
+threads or synchronization locks in Panini.
+</p>
+
+<h2><a name="features">Language Features</a></h2>
+<p>Panini introduces three main features to extend the Java language. 
+A <EM>capsule</EM> declaration, in short capsule, that is designed 
+as a mechanism for decomposing a program into its parts, 
+a <EM>signature</EM> declaration that serves as an interface for capsules.
+A capsule declaration may optionally contain a <EM>design</EM> 
+declaration that is a mechanism
+for composing instances of <EM>capsules</EM> to form a subsystem or 
+even an entire program.
+These three features and their parts are described below as follows:
+<ul>
+		<li><a href="docs/language.shtml#capsules">Capsule Declaration</a></li>
+		<ul>
+			<li><a href="docs/language.shtml#capsuleState">States</a></li>
+			<!--<li><a href="docs/language.shtml#classes">Classes</a></li> -->
+			<li><a href="docs/language.shtml#capsuleProcedures">Procedures</a></li>
+			<li><a href="docs/language.shtml#capsuleInitializer">Initializer</a></li>
+			<li><a href="docs/language.shtml#shutDown">Shutdown and Exit Operations</a></li>
+		</ul>
+		<li><a href="docs/language.shtml#signatures">Signatures</a></li>
+		<li><a href="docs/language.shtml#designDeclaration">Design Declarations</a></li>
+		<ul>
+		  <li><a href="docs/language.shtml#instanceDeclaration">Capsule Instance Declarations</a></li>
+		  <li><a href="docs/language.shtml#wiringDeclaration">Capsule Instance Wiring</a></li>
+		  <li><a href="docs/language.shtml#capsuleArrays">Arrays of Capsule Instances</a></li>
+		  <li><a href="docs/language.shtml#topoOperators">Topology Operators</a></li>
+		</ul>
+		<li><a href="docs/language.shtml#implicitConcurrency">Implicit concurrency</a></li>
+</ul>
+</p>
+
+<p>
+A program in Panini can have zero or more signature declarations,
+zero or more class declarations, and zero or more capsule declarations.
+Panini classes are very similar to classes
+in other object oriented languages but with the restriction that they
+cannot contain any explicit concurrency constructs.
+</p>
+
+<h2><a name="capsuleDeclaration">Capsule Declaration</a></h2>
+<p>
+Capsules are designed to have the feel of ordinary
+classes, the intent being to capitalize on programmers' familiarity with object-oriented
+design and thus minimize the learning curve. Each capsule guarantees that its state is
+accessed by only one thread, thereby maintaining thread safety with respect to state
+mutations (by confinement in this case). 
+Implicitly concurrent procedure calls on capsules
+are structured to have the appearance of ordinary method calls.
+</p>
+<p>
+Capsules define a set of public operations as well as a memory region.
+They can have parameters, state declarations, inner class declarations,
+initializer, and procedure definitions. The abstract syntax of a capsule
+declaration is as follows.
+</p>
+
+<p>
+<pre class="brush: panini">
+capsule CapsuleName [(Param p1, ..., Param pn)] [implements SignatureName*]{
+  [Initializer]
+  [DesignDeclaration]
+  StateDeclaration*
+  ClassDeclaration*
+  procedure*
+ }
+</pre>
+Here, [something] means something is optional.
+</p>
+<p>
+A capsule declaration consists of the keyword `capsule',
+the name of the capsule, zero or more formal parameters 
+representing dependencies on other capsules, and zero 
+or more signatures representing services that the capsule provides,
+followed by the capsule's implementation.
+Each procedure declaration in every signature implemented by the capsule must match
+with exactly one capsule procedure.
+Panini does not have capsule inheritance but does have class inheritance.
+The primary mechanism for reuse of capsules is composition.
+</p>
+
+<p>
+We will describe  
+<a href="docs/language.shtml#designDeclaration">design</a>,
+<a href="docs/language.shtml#capsuleState">state</a>,
+<!-- <a href="docs/language.shtml#classes">class</a> --> and
+<a href="docs/language.shtml#capsuleProcedures">procedure</a> declarations 
+more precisely in a bit,
+but let us first look at a capsule declaration.
+</p>
+
+<p>
+As a concrete example consider this simple model of a bank account:
+
+<pre class="brush: panini">
+capsule BankAccount() {
+   //this declaration represents the state of the capsule
+  double balance = 0.0;
+  
+  /* Capsule procedures are defined in the same way object
+     methods are, and as far as the programmer is concerned
+     they behave largely like a normal class method */
+  void deposit(double money) {
+    balance += money;
+  }
+
+  void withdraw(double money) {
+    if(balance - money &lt; 0) {
+      throw new InvalidTransactionException();
+    }
+    balance -= money;
+  }
+}
+</pre>
+
+</p>
+
+<p><EM>Closed capsules</EM>
+A capsule is considered closed, if it does not require access 
+to external capsule instances. In our example, BankAccount
+is a closed capsule, whereas in the listing below capsule C is not
+because it requires access to another capsule instance of type D. 
+A closed capsule is a complete Panini program, and it can be executed.
+
+<pre class="brush: panini">
+capsule BankAccount(D d) {
+..
+}
+</pre>
+</p>
+ 
+<h3><a name="capsuleState">Capsule States</a></h3>
+<p>
+A state declaration has a type, a name, and
+optionally an initialization expression, so in that sense it is similar
+to a field in traditional class declarations, except that a capsule
+instance controls all accesses to the object graph reachable from
+its states, i.e., a capsule instance acts as a dominator for the object
+graph reachable from its states. All state declarations are
+private to a capsule, therefore, no visibility modifiers are necessary.
+Legal types for a state declaration are primitive types and reference types.
+</p>
+
+
+<h3><a name="capsuleProcedures">Capsule Procedures</a></h3>
+<p>
+A capsule procedure has a return type, a name, zero or more arguments,
+and a body. Helper procedures can be declared by qualifying
+them with a modifier private. All capsule procedures, except helper procedures,
+constitute the interface of the capsule. There is
+one designated optional capsule procedure <em>run</em> representing that
+the capsule can start computation without external stimuli.
+</p>
+<p>
+One goal in the design of Panini is that the programmer should
+not be forced to adapt to an asynchronous, message-passing style
+of programming. A call to a capsule procedure behaves like an ordinary
+method call. Calling a capsule procedure may have sideeffects
+on the state of the capsule instance, e.g., reading or writing
+state, and may also lead to external calls to other capsule procedures.
+For two consecutive procedure calls on the same capsule
+instance, the side-effects of the first procedure call are always visible
+to the second procedure call to provide sequential consistency.
+However, it is also possible that two calls on different capsules ultimately
+lead to effects within a single capsule, and we also ensure
+that effects of consecutive calls, as observable within a given capsule,
+are always seen in the order intended by the programmer.
+</p>
+
+<h3><a name="capsuleConfinement">Capsule State Confinement</a></h3>
+<p>
+As mentioned previously all capsule states are private to a capsule.
+This notion of privacy is a bit stricter compared to object-oriented 
+languages to promote stronger encapsulation. 
+Stronger encapsulation aids with safe concurrency in capsule-oriented programs.
+A capsule instance confines access to its state.
+</p>
+
+<p>
+For example, consider the listing below.
+
+<pre class="brush: panini">
+import java.util.ArrayList;
+capsule C(C other) {
+ ArrayList<Integer> privList = new ArrayList<Integer>();
+ void test() {
+  other.privList.add(42);
+ }
+}
+
+capsule TConfineInstance {
+ design {
+  C c1 ; C c2;
+  c1(c2); c2(c1);
+ }
+ void run() {
+  c1.test();
+ }
+}
+</pre>
+</p>
+
+<p>When compiled the Panini compiler will produce a compile-time error
+<pre class="brush: panini">
+[examples] $ ../bin/panc TConfineInstance.java 
+TConfineInstance.java:8: error: States of capsules cannot be accessed directly.
+  other.privList.add(42);
+       ^
+1 error
+</pre>
+</p>
+
+<p>This is because in the capsule C, internal encapsulated state 
+of the other capsule is directly accessed.</p>
+
+<h3><a name="capsuleInitializer">Capsule Initializer</a></h3>
+<p>
+A capsule initializer runs before any other external procedure calls
+on a capsule instance. It can setup the data structures of the capsule
+instance to prepare it for receiving external procedure calls. 
+</p>
+
+<p>
+As a concrete example, let us add a simple initializer to the capsule BankAccount
+that will set the balance to 100.0. 
+
+<pre class="brush: panini">
+capsule BankAccount() {
+   //this declaration represents the state of the capsule
+  double balance;
+  => {   //Start of an initializer
+   balance = 100.0;
+  }
+  ...
+}
+</pre>
+
+</p>
+
+<h3><a name="shutDown">Shutdown and Exit Operations</a></h3>
+<p>
+Each capsule implicitly supports two built-in procedures: 
+<EM>shutdown</EM> and <EM>exit</EM>. 
+</p>
+
+<p>
+When a capsule is requested to <EM>shutdown</EM>, and if it does not have 
+any pending work, it terminates.
+</p>
+
+<p>
+When a capsule is requested to <EM>shutdown</EM>, and if it has pending work, 
+it puts the shutdown request at the end of its work queue and 
+continues to serve other requests. 
+</p>
+
+<p>
+When a capsule is requested to <EM>exit</EM>, it terminates as soon as all of 
+the pending work (as of the exit request) is done.
+</p>
+  
+<h2><a name="signatures">Signature Declarations</a></h2>
+<p>
+A signature is to a capsule as an interface is to a class.
+A signature is the equivalent of an interface in object-oriented programming.
+It contains one or more abstract procedure signatures. Each procedure
+signature has a return type, a name, and zero or more formal parameters.
+This syntax is similar to interfaces in Java, except that for
+simplicity we do not allow signature inheritance. Capsules may implement
+multiple interfaces.
+</p>
+
+<p>
+Let us extract a signature from the BankAccount capsule from above:
+
+<pre class="brush: panini">
+signature BankAccountSig{
+  void withdraw(double money);
+  void deposit(double money);
+}
+</pre>
+</p> 
+
+<p>
+To have the BankAccount make use of this signature we write:
+</p>
+
+<p>
+<pre class="brush: panini">
+/* since both methods of declared in the signature where
+   already present in the original source code this is
+   the only line that needs modification. */
+capsule BankAccount implements BankAccountSig{
+  double balance;
+  => {
+   balance = 100.0;
+  }
+  
+  void deposit(double money) {
+    balance += money;
+  }
+
+  void withdraw(double money) {
+    if(balance - money &lt; 0) {
+      throw new InvalidTransactionException();
+    }
+    balance -= money;
+  }
+}
+</pre>
+</p>
+
+<h2><a name="designDeclaration">Design Declarations</a></h2>
+<p>
+A capsule declaration may optionally contain a design declaration.
+A design declaration is a declarative static specification of the topology
+of capsule instances that would be internal to that capsule.
+The topology of these capsule instances is fixed for a capsule declaration and
+does not change dynamically, which facilitates more precise static
+analysis of capsule interactions. Arrays of capsule instances of
+fixed length can also be declared.
+
+For our banking example a design declaration could look like:
+</p>
+<p>
+<pre class="brush: panini">
+capsule Bank {
+ design {
+  /* these two lines specify the capsule instances
+     that will be participating in the design */
+  BankAccount account;
+  BankClient client;
+  
+  /* this line describes how the capsule instances
+     are connected with each other */
+  client(account);
+ }
+}
+</pre>
+</p>
+
+<p>
+This design declaration spans lines 2-11. On line 5 and 6 this design 
+declaration specifies parts (or internal components) of the capsule Bank
+and on line 10 it says how these internal components are connected to each 
+other.
+</p>
+
+<h3><a name="instanceDeclaration">Capsule Instance Declarations</a></h3>
+<p>
+You have already seen capsule instance declaration in the previous design example,
+where we declared a <em>BankAccount</em> instance and a <em>BankClient</em> capsule instance
+on lines 5 and 6 respectively.
+We do not need to explicitely allocate memory for a capsule instance with a
+<em>new</em>-like operator as this is handled implicitely.
+</p>
+
+<h3><a name="wiringDeclaration">Wiring Capsule Instances</a></h3>
+<p>
+A capsule instance can neither be returned nor passed as arguments to class 
+methods (capsule instances are not first-class values); informally, capsule instances can
+only be &quot;<em>wired</em>&quot; or connected to other capsules. 
+</p>
+<p>
+Let us look at a BankClient capsule that wants to make use of a
+BankAccount:
+<pre class="brush: panini">
+//the BankClient depends on the signature BankAccountSig
+capsule BankClient (BankAccountSig account) {
+  void run() {
+    account.withdraw(10);
+  }
+}
+</pre>
+</p>
+
+<p>
+Two checks are performed on the design declaration to determine if all capsule 
+instances are being properly wired.
+</p>
+
+<p> First check disallows &quot;null&quot; values to be wired as capsule instances.
+For example, in the following capsule-oriented program the 
+wiring declaration on line 6 is illegal.</p>
+
+<pre class="brush: panini">
+	Capsule C (C c, int i){}
+	capsule Test {
+	 design {
+  	  C c;
+	  C c1;
+	  c(null, 0);   //is illegal
+	  c(c1, 0);  //legal
+	 }
+	}
+</pre>
+
+<p>
+The second check ensures that any capsule with arguments are properly wired.
+For example, in the following capsule-oriented program the wiring declarations 
+are incomplete.</p>
+
+<pre class="brush: panini">
+	Capsule C{}
+	Capsule D(int i){}
+	capsule Test {
+	 design {
+	  C c;
+	  D d;
+	 }
+	} 
+</pre>
+
+<p>
+So the compiler will report an error 
+&quot;<EM>error: Capsule instance d may not be correctly initialized.</EM>&quot; 
+since the capsule instance d on line 6 expects an initial integer value and 
+it has not been provided.
+</p>
+
+<h3><a name="capsuleArrays">Arrays of Capsule Instances</a></h3>
+<p>
+In effort to allow for even further code reuse, capsule arrays may be instantiated.
+The syntax is the same as Java's.
+</p>
+
+<p>
+<pre class="brush: panini">
+capsule Bank{
+ design {
+  BankAccount accounts[5];
+  BankClient client[5];
+  
+  for (int i = 0; i &lt; accounts.length; i++) {
+    client[i](accounts[i]);
+  }
+ }
+}
+</pre>
+</p>
+
+
+<h3><a name="topoOperators">Topology operators in design declarations</a></h3>
+
+<p>To make writing complex design declarations easier 
+and to decrease tedious, repetitive wiring declarations in large designs, 
+Panini provides some topology operators. These are: <EM>wireall</EM>,
+<EM>ring</EM>, <EM>assoc</EM>, and <EM>star</EM>.
+
+</p><p>
+  These operators simplify wiring some of the common type of 
+  connections between capsules.
+</p>
+
+<p>The wireall operator connects each element in a capsule array to the 
+same set of arguments. For example, if cs is an array of capsule instances, of length n
+writing 
+
+<pre class="brush: panini">
+  wireall(cs, arg1, arg2, ...);
+</pre>
+
+is the same as writing the following n wiring declarations.
+  
+<pre class="brush: panini">
+  cs[0](arg1, arg2, ...);
+  cs[1](arg1, arg2, ...);
+  ...
+  cs[n-1](arg1, arg2, ...);
+</pre>
+</p>
+
+<p>The ring operator connects each element 'N' in a capsule array to element 'N+1'.
+It also connects the last element in the capsule array to the first element in
+the array. For example, if cs is an array of capsule instances, of length n writing 
+
+<pre class="brush: panini">
+  ring(cs);
+</pre>
+
+is the same as writing the following n wiring declarations.
+
+<pre class="brush: panini">
+  cs[0](cs[1]);
+  cs[1](cs[2]);
+  ...
+  cs[n-1](cs[0]);
+</pre>
+</p>
+
+<p>The assoc (short for associate) operator connects elements of two
+capsule arrays from a starting index i, for a l items.
+For example, if cs and ds are arrays of capsule instances of length >=4 
+writing
+
+<pre class="brush: panini">
+  assoc(cs, 3, ds, 2, args);
+</pre>
+
+is the same as writing the following two wiring declarations.
+
+<pre class="brush: panini">
+  cs[3](ds[3], args);
+  cs[4](ds[4], args);
+</pre>
+</p>
+
+<p>The star operator connects a single capsule instance to all elements of a 
+capsule array. For example, if c is a capsule instance and cs is an array of 
+capsule instances following wires c to all elements of ds.</p>
+
+<pre class="brush: panini">
+  star(c, cs, args);
+</pre>
+
+
+<!--
+<h3><a name="forallExpressions">Forall Expressions</a></h3>
+<p>
+Given an array of a capsule each individual element of the capsule array may be wired by
+means of a Java-style enhanced foreach loop. So we can write an example where multiple clients
+have access to the same bank account:
+
+<pre class="brush: panini">
+design Bank{
+  BankAccount account;
+  BankClient clients[5];
+  
+  for(BankClient c : clients) {
+    c(account);
+  }
+}
+</pre>
+</p>-->
+
+<h2><a name="implicitConcurrency">Implicit concurrency</a></h2>
+<p>
+Now consider an example where you have two clients who have a joint
+bank account. At some point, both of them might try to withdraw
+money at the same time. In traditional programming languages,
+if no explicit synchronization is used, this would be a data-race.
+
+Here comes Panini's greatest strength, the programmer does not have
+to worry about any of that! He/she can write the out the logical design
+of the design and the concurrency related issues are dealt with behind
+the scenes.
+</p>
+
+<p>
+Below is an example of such a design where the potential for error
+is eliminated by the language itself: 
+</p>
+<p>
+<pre class="brush: panini">
+capsule Bank{
+ design {
+  BankClient client1;
+  BankClient client2;
+  BankAccount jointAccount;
+  
+  /* since client1 and client2 are both instantiations
+     of a capsule with a run procedure they will be
+     executed concurrently. And they will safely access 
+     the bank account with no need to modify the original
+     implmentation of either the BankClient or BankAccount
+     capsules. */
+  client1(jointAccount);
+  client2(jointAccount);
+ }
+}
+</pre>
+</p>
+
+<!-- PAGE UPDATE -->
+<p id="update">Page last modified on $Date: 2013/08/03 14:04:23 $</p>
+
+<!-- GUIDE NAVIGATION -->
+<div class="page-nav"><a href="docs/capsule-oriented.shtml">&lt; PREVIOUS</a>
+<a href="docs/language.shtml#pgtop">&#94; RETURN TO TOP</a> <a
+	href="docs/parallel.shtml">NEXT &gt;</a></div>
+</div>
+<!--#include virtual="../includes/bottom.html"-->

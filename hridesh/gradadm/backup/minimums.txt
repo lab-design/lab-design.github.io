@@ -1,0 +1,34 @@
+Minimum Guidelines for Application
+
+
+Thank you for your interest in Iowa State University.  We recognize the time and expense students must invest when they decide to apply for graduate study at a foreign university, and we would like to assist prospective students in determining whether it is worth their effort to apply to Iowa State University. Please keep in mind that these are MINIMUM guidelines only. Applicants who meet these guidelines are not guaranteed admission, but their application will be competitive and given serious consideration.  Those who cannot meet these standards are discouraged from applying. Applicants to the Department of Computer Science should present the following qualifications:
+
+Undergraduate background:	A bachelor's degree in computer science or computer engineering is recommended.  A complete background is very beneficial.  You should be able to fully complete the Computer Science Course Evaluation.
+
+Academic Performance:	A cumulative grade point average (GPA) comparable to a "B+" average or 3.30 out of a possible 4.00, and a rank of top quartile (25%) in undergraduate graduating class.
+
+Standardized tests:	Scores placing in the 90th percentile (%) on the Quantitative section and 85% on the Analytical section of the Graduate Records Examination (GRE).
+
+A score of 550 (paper test) or 213 (computer test) on the Test of English as a Foreign Language (TOEFL).
+	
+	The Test of Spoken English (TSE) is not required but is recommended.
+
+Each year a large numbers of applications are received from India, Korea, Taiwan, and China.  Specific guidelines for applicants from India, Korea and Taiwan are given below.  Guidelines for China are listed on a separate sheet included in the application packet.
+
+India:	4-year bachelor's degree (3-year degrees are not acceptable) or master's degree with a First Class degree classification, showing an overall average of 60%.
+
+Korea:	4-year bachelor's degree with a cumulative GPA of 85% or 3.30 out of 4.00, and top quartile rank.
+
+Taiwan:	4-year bachelor's degree (3- or 5-year diplomas not acceptable) with a cumulative GPA of 85%, and top quartile rank.
+
+Additional information about the graduate program can be obtained by sending electronic mail to our departmental Internet mail server,  almanac@cs.iastate.edu  with the following lines in the message:
+
+send gi pamphlet
+send gi faculty_interests
+send gi evaluation
+send gi catalog
+
+Electronic reply messages will contain the requested documents.  These documents can also be retrieved at www.cs.iastate.edu.
+
+
+

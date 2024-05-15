@@ -1,0 +1,43 @@
+<!--#include virtual="includes/home/header.html"-->  
+
+<!--Title Begin-->
+<title> Contact Information for Hridesh Rajan </title>
+<!--Title End-->
+
+<!--#include virtual="includes/home/menu.html"-->  
+
+<!--Contents Begin-->
+<p class="subtitle"> Best Way To Get in Touch </p>
+<p class="heading"> <a href="mailto:hridesh@cs.iastate.edu">
+hridesh@cs.iastate.edu</a></p>
+
+<p class="heading"> Prospective students: 
+Please read <a href="prospective.shtml">this advice</a> before sending an e-mail. I will know if you haven't.</p>
+<p> Acknowledgements: This advice is adopted from David Evans at University of Virginia </p>
+
+<p class="subtitle"> If you want to meet instead </p>
+<p> Please check my <a href="http://www.cs.iastate.edu/~hridesh/Calendar/">
+calendar</a> for a mutually convenient time.</p>
+
+<p class="subtitle"> Other More Traditional Mediums</p>
+
+<p class="heading">Mailing Address:</p>
+<p>Hridesh Rajan, <BR>
+Assistant Professor, <BR>
+<a href="http://www.cs.iastate.edu/"> Dept. of Computer Science </a>, <BR>
+226 Atanasoff Hall, <BR> 
+<a href="http://www.iastate.edu"> Iowa State University</a> <BR>
+ Ames, IA, 50011-1041, USA<BR> </p>
+
+<p class="heading">Phone: +1-515-294-6168 </p>
+
+<p class="heading">Fax:     +1-515-294-0258 </p>
+
+<p class="heading">Physical Address:</p>
+
+<p> 101 Atanasoff Hall </p>
+
+<!--(<a href="office_map.jpg">Map</a>|<a href="office_plan.jpg">Plan</a>)</p>-->
+
+<!--Contents End-->
+<!--#include virtual="includes/home/copyright.html"-->

@@ -1,0 +1,313 @@
+<!--#include virtual="../includes/top.html"-->
+<title>The Panini Programming Guide: Motivation</title>
+<!-- PAGE SPECIFIC STYLING -->
+<style type="text/css">
+.col2-toc h2 {
+	margin: 0 0 10px;
+}
+</style>
+<!--#include virtual="../includes/header.html"-->
+
+<h1>Motivation</h1>
+<script type="text/javascript">
+copyright=new Date()
+fullYear=copyright.getFullYear();
+document.write("<h5>Copyright &copy; 2006-" + fullYear + ", Iowa State University of Science and Technology. All rights reserved.</h5>")
+</script>
+
+<!-- TABLE OF CONTENTS -->
+<div class="col2-toc">
+<h2>Table of Contents</h2>
+<ol>
+	<li><a href="docs/index.shtml">Programming Guide Overview</a></li>
+	<li>Motivation	
+	<ul class="toc-currentpg">
+		<li><a href="docs/motivation.shtml#need">Need for Concurrency</a></li>
+		<li><a href="docs/motivation.shtml#example">Running Example</a></li>
+		<li><a href="docs/motivation.shtml#problem">Difficult Design Decisions</a></li>
+		<li><a href="docs/motivation.shtml#solution">Capsule-oriented Programming</a></li>
+	</ul>
+	</li>
+	<li><a href="docs/starting.shtml">Getting Started with Panini</a></li>
+	<li><a href="docs/capsule-oriented.shtml">Capsule-oriented Design</a></li>
+	<li><a href="docs/language.shtml">Panini Language</a></li>
+	<li><a href="docs/parallel.shtml">Implicit Parallelism</a></li>
+	<li><a href="docs/running.shtml">Installing and Running the Panini compiler</a></li>
+    <li><a href="docs/profiling.shtml">Profiling Panini Programs</a></li>
+	<li><a href="docs/papers.shtml">Technical Publications</a></li>
+	<li><a href="docs/faq.shtml">FAQ</a></li>
+</ol>
+<hr />
+<!--#include virtual="./toc-just-examples.html"-->
+</div>
+
+<!-- CONTENT -->
+<div class="col2-content">
+<p><b>The Panini programming language is designed to enable implicit concurrency
+as a direct result of modularization of a system into capsules and to maintain 
+modular reasoning in the presence of concurrency.</b></p>
+<!-- 
+<p><b>The notion of a <EM>capsule</EM> in the Panini programming language is designed to
+<ul>
+ <li>enable implicit concurrency at the interface of capsules as a direct result
+     of the modularization of a system into capsules, and 
+ </li>
+ <li>maintain modular reasoning in the presence of implicit concurrency. 
+ </li>
+</ul>
+Here, by modular reasoning we mean our ability to understand a software one 
+module at a time by looking at the code for that module and only the 
+interfaces of other modules referenced by name.
+</b><p> -->
+<!-- <p><b>The idea behind Panini's design is that if programmers
+structure their system to improve modularity in its design, they should
+get concurrency for free.</b></p> -->
+
+<h2><a name="need">Concurrency: A Pressing Need</a></h2>
+<p>
+There is no escape: all programmers will soon be forced to consider 
+concurrency decisions in software design.
+Most modern software systems tend to be distributed, 
+event-driven, and asynchronous, often requiring components to maintain 
+multiple threads for message and event handling.
+There is also increasing pressure on developers to introduce 
+concurrency into applications in order to take advantage of multicore 
+processors to improve performance.
+</p>
+<p>
+Yet concurrent programming stubbornly remains
+difficult and error-prone. First, a programmer must partition
+the overall system workload into tasks. Second, tasks must
+be associated with threads of execution in a manner that improves
+utilization while minimizing overhead; note that this set of decisions
+is highly dependent on characteristics of the platform, such as
+the number of available cores. Finally, the programmer must manage
+the dependence, interaction, and potential interleaving between
+tasks to maintain the intended semantics and avoid concurrency
+hazards, often by using low-level primitives for synchronization.
+To address these issues, the invention and refinement of better abstractions
+is needed: that can hide the details of concurrency from
+the programmer and allow them to focus on the program logic.
+</p>
+
+<p>
+The significance of better abstractions for concurrency is not lost
+on the research community. 
+However, we believe that a major gap remains.
+There is an impedance mismatch between sequential and implicitly
+concurrent code written using existing abstractions that is hard
+for a sequentially trained programmer to overcome. These programmers
+typically rely upon the sequence of operations to reason about their programs.
+</p>
+
+<h2><a name="example">Running Example</a></h2>
+<p>
+To illustrate the challenges of concurrent program design, 
+consider a simplified navigation system.  The system
+consists of four components: a route calculator, a maneuver generator,
+an interface to a GPS unit, and a UI.  The UI requests a new route by
+invoking a <em>calculate</em> operation on the route calculator,
+assumed to be computationally intensive.  When finished, the route is
+passed to the maneuver generator via method <em>setNewRoute</em>
+The GPS interface continually parses the data stream from the hardware
+and updates the maneuver generator with the current
+position via method <em>updatePosition</em>.
+The maneuver generator checks the position against the current route
+and generates a new turn instruction for the UI if needed 
+(not computationally intensive).
+</p>
+
+<h2><a name="problem">Difficult Concurrency-related Design Decisions</a></h2>
+<p>
+The modular structure of the system is
+clear from the description above, and it is not difficult
+to define four Java classes with appropriate
+methods corresponding to this design.
+</p>
+<p>
+However, the system will not yet work. 
+The programmer is faced with a number of nontrivial
+decisions: Which of these components needs to be associated
+with an execution thread of its own? Which operations must
+be executed asynchronously? Where is synchronization going to be
+needed? 
+</p>
+<p>
+A human expert might reach the following conclusions.
+<ol>
+<li>
+A thread is needed to read the GPS data
+</li>
+
+<li>
+The UI, as usual, has its own event-handling thread. The calls 
+on the UI need to pass their data to the event handling thread
+via the UI event queue
+</li>
+<li>
+The route calculation needs to run in a separate thread; otherwise,
+calls to calculateRoute will <em>steal</em> the UI event thread
+and cause the UI to become unresponsive.
+</li>
+<li>
+The maneuver generator class does not need a dedicated thread,
+however, its methods need to be synchronized, since its data
+is accessed by both the GPS thread and the thread doing route
+calculation
+</li>
+</ol>
+</p>
+
+<p>
+None of the conclusions above, in itself, is difficult to implement
+in Java. Rather, in practice it is the process of visualizing the
+interactions between the components, in order to reach those conclusions,
+that is extremely challenging for programmers [2, 3].
+For example, we recently gave the navigation system example to
+a class of 29 talented seniors. The students had just been exposed
+to roughly four weeks of instruction in concurrent programming,
+including detailed examples of all the issues raised in the bullet
+points above. Almost all students had previously taken an operating
+systems course, and roughly one-third of the students had had some
+prior experience using threads. Students were given the Java code in
+Figure 1, but with details of threading and synchronization removed
+except the thread for the GPS. Of the 29 students, 17 were able to
+identify the issue with the UI potentially blocking during a route
+calculation, 9 were able to recognize that there was data shared
+between threads in the <em>ManeuverGen</em> class, and only 7 were able
+to recognize the data sharing in the UI class. All in all, only two
+of the students described a fully correct solution. The outcome is
+consistent with the experience of one of the Panini designers when using
+a similar example in more than a dozen one-week workshops on
+concurrent programming for groups of telecom engineers.
+</p>
+
+
+<h2><a name="solution">Capsule-oriented Programming</a></h2>
+<p>
+Capsule-oriented programming is a programming paradigm that aims to 
+ease development of concurrent software systems by allowing abstraction
+from concurrency-related concerns.
+Capsule-oriented programming entails breaking down program logic into 
+distinct parts called <EM>capsule</EM> declarations and composing these parts to 
+form the complete program using <EM>system</EM> declaration.
+</p>
+
+<p>
+Compared to the explicitly concurrent Java program on
+the left in Figure 1, the Panini program on the right is
+an implicitly concurrent <EM>capsule-oriented</EM> program.
+Owing to the declarative nature of capsule-oriented programming features, 
+this program is shorter compared to the explicitly concurrent program. 
+Most importantly, this example
+illustrates some of the key advantages of capsule-oriented programming
+for a programmer. These are:
+<ol>
+<li>
+They don't need to specify whether a given capsule in a system
+needs, or could benefit from, its own thread of execution.
+</li>
+<li>
+They work within a familiar method-call style interface with
+a reasonable expectation of sequential consistency.
+</li>
+<li>
+All concurrency-related details are abstracted away and are
+fully transparent to them.
+</li>
+</ol>
+
+</p>
+
+<p>
+If you wish to learn more about how to write programs in Panini
+proceed to our guide on <a href="docs/starting.shtml">how to get started</a> followed by
+the the page on <a href="docs/starting.shtml">language semantics</a>.
+</p>
+
+<!--
+<p>
+<pre class="brush: java">
+capsule ManeuverGen (UI ui) {
+  Route currentRoute = null;
+  Position position = null;
+  
+  void setNewRoute(Route r) {
+  	currentRoute = r;
+  }
+  
+  void updatePosition(Position p) {
+     position = p;
+     ui.updatePosition(p);
+     Instruction inst = nextManeuver();
+     if ( inst != null) ui.announceNextTurn(inst);
+  }
+  
+   Position getCurrentPosition() {
+   	 return position;
+   }
+  
+   private Instruction nextManeuver() {/*... */}
+}
+ 
+signature Calculator{
+  void calculate(Position dst);
+}
+  
+capsule Shortest (ManeuverGen m) implements Calculator {
+   void calculate(Position dst) {
+     Route r = helper(m.getCurrentPosition(), dst) ;
+     m.setNewRoute(r);
+  }
+
+  private Route helper(Position src, Position dst) {/* ... */}
+}
+
+capsule GPS (ManeuverGen mg) {
+  void run() {
+    while (true) mg.updatePosition( readData() );
+  }
+    
+  private native Position readData();
+}
+
+capsule UI { / provides updatePosition, announceNextTurn / }
+
+system Navigation {
+  UI ui;
+  ManeuverGen m;
+  Shortest r;
+  GPS g ;
+  
+  m(ui);
+  r(m);
+  g(m);
+}
+
+</pre>
+</p>
+-->
+
+<HR SIZE=1, WIDTH=95%, ALIGN=CENTER, NOSHADE>
+<b>References</b>
+<ol>
+	<li>Hridesh Rajan, Steven M. Kautz, Eric Lin, Sarah Kabala, Ganesha Upadhyaya, Yuheng Long, Rex Fernando, and Lor��nd Szak��cs. 
+        <a href="/papers/TR-13-01">Capsule-oriented Programming</a>,
+        Tech. Report #13-01, Computer Science, Iowa State University, Feb 28, 2013.
+	<li>ACM/IEEE-CS Joint Task Force. Computer science curricula
+        2013 (CS2013). Technical report, ACM/IEEE, 2012.
+	 <li>D. Meder, V. Pankratius, and W. F. Tichy. Parallelism in
+         curricula an international survey. Technical report,
+         University of Karlsruhe, 2008.
+	
+</ol>
+<!-- PAGE UPDATE -->
+<p id="update">Page last modified on $Date: 2013/08/03 14:04:23 $</p>
+
+<!-- GUIDE NAVIGATION -->
+<div class="page-nav"><a href="docs/index.shtml">&lt;
+PREVIOUS</a> <a href="docs/lang.shtml#pgtop">&#94; RETURN TO TOP</a> <a
+	href="docs/starting.shtml">NEXT &gt;</a></div>
+</div>
+
+<!--#include virtual="../includes/bottom.html"-->

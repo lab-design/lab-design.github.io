@@ -1,0 +1,234 @@
+<!--#include virtual="../includes/headtop.html"-->
+
+<!-- INSERT TITLE -->
+<title>Ptolemy Programming Guide</title>
+
+<!--#include virtual="../includes/headmiddle.html"-->
+
+<h1>Ptolemy Programming Guide</h1>
+
+<!--#include virtual="../includes/headbottom.html"-->
+
+<td id="b3" rowspan="2">
+<div class="maintext">
+
+<a href="/docs/">< Table of Contents</a><BR>
+
+<h2>An Event Type Declaration in the Ptolemy Language</h2>
+
+<h3>Designing the Interface between Object-oriented and Crosscutting Code</h3>
+
+<p>
+First design and programming task in Ptolemy is to define the
+interface between the object-oriented code and the crosscutting code.
+This interface is expressed in the form of an <EM>event type declaration</EM>.
+An event type declaration in the code is marked with the keyword <b>event</b>.
+</p>
+
+<p>
+The design of an <EM>event type declaration</EM> requires careful considerations in a 
+manner similar to the design of an application programming interface (API).
+In particular, three questions are important.
+</p>
+<UL>
+<LI>What are the important abstract events in my application?</LI>
+<LI>When should such events occur in my application?</LI>
+<LI>What information must be available when these events occur?</LI>
+</UL>
+
+<p>
+For example, for our drawing editor example, the abstract events of 
+interest are changes in figure elements. 
+These events should occur in object-oriented code at places where the 
+state of a figure elements is modified, for example at places in the 
+class <EM>Point</EM> where a point's <EM>x</EM> or <EM>y</EM> coordinate changes
+or at places in the class <EM>Line</EM> where a line's end-points changes.
+Furthermore, it would be important
+to be able to identify the specific instance of the figure element that is 
+changing. 
+</p>
+
+<h3>An Example Event Type Declaration (FEChanged)</h3>
+
+<p> 
+Upon arriving at such conclusion about the drawing editor example, we can 
+encode it in the form of the following event type declaration.
+</p>
+
+<pre class="brush: ptolemy;">
+/***
+ * This event is signaled when the state of a figure element changes.
+ */
+public void event FEChanged {
+	FigureElement changedFE;
+}
+</pre>
+
+<p>
+As seen above an event type is declared with the keyword <B>event</B>.
+An event type also has return type, here <B>void</B>, which allows crosscutting
+code to return values to object-oriented code. 
+Finally, an event type declares zero or more context variables. 
+These context variables represent information available when a concrete event
+of this type happens in the application.
+The event type <EM>FEChanged</EM> here declares one context variable 
+<EM>changedFE</EM> of type <EM>FigureElement</EM> that represents the figure
+that is changing.
+The type name <EM>FigureElement</EM> must be visible in the scope 
+The intention of this event type declaration is to provide a named
+abstraction for a set of events.
+</p>
+
+<p>The type name of context variables must be visible in the scope of the event 
+type declaration.</p>
+
+<p>A top-level event type declaration can have the <EM>public</EM> visibility 
+modifier or no modifier (in which case it has package level visibility).</p>
+
+<p>A nested (inner) event type declaration can have one of <EM> private</EM>, 
+<EM>protected</EM>, <EM>public</EM> or no modifiers.</p>
+
+<p>Another example of an event type declaration can be seen below.</p>
+
+<pre class="brush: ptolemy;">
+/***
+ * This event is signaled when a figure element moves.
+ * When this event is signalled details of the movement along 
+ * the X and the Y co-ordinates is available.
+ */
+public FigureElement event FEMoved {
+	FigureElement movedFE;
+	int deltaX; 
+	int deltaY;
+}
+</pre>
+
+<p>
+The purpose of this event type declaration is to provide a named abstraction 
+for a set of events that correspond to a moving figure element. 
+It declares three context variables: <EM>movedFE</EM>, <EM>deltaX</EM>, 
+and <EM>deltaY</EM>. 
+It also declares a return type <EM>FigureElement</EM>. 
+The return type of an event type is used to check the type of an event 
+announcement and event handlers (described later).
+</p>
+
+<h3>Quantification using Event Types and Bindings</h3>
+
+<p>
+Event type declarations are the key novel feature of Ptolemy.
+The name of an event type allows programs to refer to a set of events
+and thus to quantify over such a set of events.
+An important benefit is that referring to elements in such a set of 
+events does not require explicitly enumerating them.
+So for example, the name <EM>FEChanged</EM> refers to a set of events
+thus it could be thought of as <B>for all</B> events such that their 
+type is <EM>FEChanged</EM>.
+</p>
+
+<a name="announce"><h2>Announcing an Event</h2></a>
+
+<p>Events are explicitly signalled in Ptolemy. Event signalling is 
+declarative, explicit and typed. 
+</p>
+
+<p>
+Event signalling is declarative in the sense that
+it doesn't require specifying the mechanism used to 
+signal it (unlike implicit-invocation and idioms for observer patterns). 
+This allows Ptolemy compilers to optimize event signalling behind
+the scene, while maintaining the intended semantics.
+</p>
+
+<p>
+It is typed in that signalling an event requires mentioning
+the name of an event type, which must be a valid event type declaration 
+in the program. This allows Ptolemy compilers to check the correctness
+of signalling events and include such signals in the set of events for
+that event type.
+</p>
+
+<p>The event signalling is done using the <EM>announce expressions</EM>. 
+There is a corresponding expression counterpart, but for this discussion
+we will focus on announce expressions. Several example usage of announce expressions
+for our figure editor examples appears in the listing below.
+</p>
+
+<pre class="brush: ptolemy;">
+public class Point implements FigureElement {
+	int x;
+	int y;
+	public void setX(int x) {
+		this.x = x;
+		announce FEChanged(this);
+	}
+	public void setY(int y) {
+		this.y = y;
+		announce FEChanged(this);
+	}
+	public void makeEqual(Point other) {
+		other.x = this.x;
+		other.y = this.y;
+		announce FEChanged(other);
+	}
+}
+</pre>
+
+<p>
+In the listing above the announce expression occurs three times on 
+lines 6, 10, and 15. At all these locations the event being signalled 
+is of type <EM>FEChanged</EM>. 
+</p>
+
+<p>
+The method class like syntax of announce expressions allows binding  
+local values at the site of event signalling to context variables of 
+event type declaration. This binding is such that i<sup>th</sup> argument of 
+the announce expression is bound to the i<sup>th</sup> context variable of the 
+event type declaration. Here, line 6 binds <EM>this</EM> to context 
+variable <EM>changedFE</EM> and line 15 binds <EM>other</EM> to context
+variable <EM>changedFE</EM>. Notice that the same context variable is 
+receiving different bindings for different event signalling sites.
+However, the class <EM>DisplayUpdate</EM> will be able to access all
+of these uniformly using the name <EM>changedFE</EM>.
+</p>
+
+<p>It is also possible to allow overriding of the original code by 
+explicitly enclosing that code in an announce expression. 
+In the listing below an example of such announce expression is shown.
+</p>
+
+<pre class="brush: ptolemy;">
+public class Point implements FigureElement {
+    ...
+	public FigureElement moveBy(int deltaX, int deltaY) {
+	 return announce FEMoved (this, deltaX, deltaY) { 
+	  this.x += deltaX;
+	  this.y += deltaY;
+	  return this;
+	 }
+	}
+}
+</pre>
+
+<p>The announce expression in the listing above allows overriding of 
+the code on lines 5-7 (for example to implement movement restriction
+as a separate concern).
+Notice that the type of the return value of the block enclosed by 
+the announce expressions (here <EM>Point</EM>) is a subtype of the 
+declared return type of event type declaration <EM>FEMoved</EM> 
+(here <EM>FigureElement</EM>).
+</p>
+
+<p>This form of announce expression is more general compared to the 
+previously shown nonblock form <EM>announce FEChanged(this);</EM>. 
+In fact, the nonblock form is implemented by translating 
+<EM>announce FEChanged(this)</EM> to <EM>announce FEChanged(this) { return null; }</EM>.
+Thus, it is just a syntactic sugar provided for convenience.
+</p>
+
+<BR><BR> <p>Page last modified on $Date: 2011/10/17 17:55:45 $</p>
+</div>
+</td>
+
+<!--#include virtual="../includes/bottombar.html"-->

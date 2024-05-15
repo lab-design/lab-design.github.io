@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/design.css">
+    <link rel="icon" href="/favicon.ico">
+    <title>Toward a Concurrent Programming Model with Modular Reasoning</title>
+  </head>
+
+  <body>
+    <!-- Load jQuery before the content in order to support the papers page sorting -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <header>
+
+  <div class="brand-bg-color">
+    <div class="container">
+      <div class="brand-navbar">
+        <div class="row">
+          <div class="flex-separate col-12">
+            <a href="/" class="nav-link">
+              <span id="isu-logo">Iowa State University</span>
+              <span class="d-none d-sm-block">Laboratory for Software Design</span>
+              <span class="small d-block d-sm-none">Laboratory for Software Design</span>
+            </a>
+            <button class="navbar-toggler d-block d-sm-none" type="button" data-toggle="collapse" data-target="#collapseNav">&#9776;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-bg-color">
+    <nav class="container navbar navbar-dark navbar-expand-sm">
+      <div class="collapse navbar-collapse" id="collapseNav">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="/projects.html">Projects</a>
+          <a class="nav-item nav-link" href="/papers/">Papers</a>
+          <a class="nav-item nav-link" href="/grants/">Grants</a>
+          <a class="nav-item nav-link" href="/news/">News</a>
+          <a class="nav-item nav-link" href="/people.html">People</a>
+          <a class="nav-item nav-link" href="/about/">About</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+</header>
+
+
+<main class="container">
+  <br />
+  <div class="row">
+  <div class="col-12">
+    <h2 class="page-title">Toward a Concurrent Programming Model with Modular Reasoning</h2>
+    
+
+<h4>
+By: 
+Mehdi Bagherzadeh
+
+</h4>
+
+
+<a href="/papers/thesis/BagherzadehPhDThesis.pdf" class="icon">
+  <img src="/img/pdf_icon.svg"/ alt="PDF Download">
+  <span>Download Paper</span>
+</a>
+
+<br/>
+
+
+
+<h4>Abstract</h4>
+<p>
+  <span id="bagherzadeh2016toward">
+    Modular reasoning and concurrent programming are both necessary for scalable
+    development of performant software. Modular reasoning improves scalability by
+    allowing a program to be understood one module at a time. Concurrent
+    programming improves the performance by allowing simultaneous executions of
+    multiple computations in a single program. However, modular reasoning about a
+    con- current program is difficult because of its thread interference, module
+    inheritance and nondeterministic message orders. The statement of this thesis
+    is that there exists a concurrent programming model that enables modular
+    reasoning about behaviors of its programs in the presence of interference,
+    inheritance and nondeterministic message orders using the following three
+    ideas.
+
+    The first idea is an interference control framework that enables modular
+    reasoning in the presence of interference. The technical innovations of the
+    interference control framework are its sparse interference and cognizant
+    interference properties that allow for standard Hoare-style modular reasoning
+    about a concurrent program. Sparse and cognizant interference guarantee that
+    interference happens only at explicitly specified program points and the
+    interference behavior is statically known, respectively.
+
+    The second idea is concurrent behavioral subtyping that enables modular
+    reasoning in the presence of inheritance. The technical innovations of
+    concurrent behavioral subtyping are a new definition of behavioral subtyping
+    for a concurrent program in terms of standard interface subtyping and a novel
+    interference subtyping and show that in the presence of encapsulated
+    inheritance the interface subtyping is sufficient to guarantee concurrent
+    behavioral subtyping.
+
+    The third and last idea is order types that enables modular reasoning in the
+    presence of nondeter- ministic message orders. The technical innovations of
+    order types are to disallow message races using existential types that capture
+    unknown module dependencies, abstraction that hides local messaging behavior
+    of the module in its order type and a blame assignment that properly blames
+    the module with bad expression composition or bad module composition and not
+    the module in which the race happens.
+
+    These three ideas have the potential to ease software engineering of
+    concurrent systems by improv- ing a developer’s ability to design, implement,
+    test and evolve their software one module at a time.
+  </span>
+</p>
+
+
+
+
+
+<h4>ACM Reference</h4>
+<p>
+<span id="bagherzadeh2016toward">Bagherzadeh, M. 2016. <i>Toward a Concurrent Programming Model with Modular Reasoning</i>. Iowa State University.</span>
+</p>
+
+<h4>BibTeX Reference</h4>
+<pre><code>@phdthesis{bagherzadeh2016toward,
+  title = {Toward a Concurrent Programming Model with Modular Reasoning},
+  author = {Bagherzadeh, Mehdi},
+  year = {2016},
+  school = {Iowa State University},
+  abstract = {
+    Modular reasoning and concurrent programming are both necessary for scalable
+    development of performant software. Modular reasoning improves scalability by
+    allowing a program to be understood one module at a time. Concurrent
+    programming improves the performance by allowing simultaneous executions of
+    multiple computations in a single program. However, modular reasoning about a
+    con- current program is difficult because of its thread interference, module
+    inheritance and nondeterministic message orders. The statement of this thesis
+    is that there exists a concurrent programming model that enables modular
+    reasoning about behaviors of its programs in the presence of interference,
+    inheritance and nondeterministic message orders using the following three
+    ideas.
+
+    The first idea is an interference control framework that enables modular
+    reasoning in the presence of interference. The technical innovations of the
+    interference control framework are its sparse interference and cognizant
+    interference properties that allow for standard Hoare-style modular reasoning
+    about a concurrent program. Sparse and cognizant interference guarantee that
+    interference happens only at explicitly specified program points and the
+    interference behavior is statically known, respectively.
+
+    The second idea is concurrent behavioral subtyping that enables modular
+    reasoning in the presence of inheritance. The technical innovations of
+    concurrent behavioral subtyping are a new definition of behavioral subtyping
+    for a concurrent program in terms of standard interface subtyping and a novel
+    interference subtyping and show that in the presence of encapsulated
+    inheritance the interface subtyping is sufficient to guarantee concurrent
+    behavioral subtyping.
+
+    The third and last idea is order types that enables modular reasoning in the
+    presence of nondeter- ministic message orders. The technical innovations of
+    order types are to disallow message races using existential types that capture
+    unknown module dependencies, abstraction that hides local messaging behavior
+    of the module in its order type and a blame assignment that properly blames
+    the module with bad expression composition or bad module composition and not
+    the module in which the race happens.
+
+    These three ideas have the potential to ease software engineering of
+    concurrent systems by improv- ing a developer’s ability to design, implement,
+    test and evolve their software one module at a time.
+  }
+}
+</code></pre>
+
+
+  </div>
+  </div>
+  <br />
+</main>
+
+
+<footer>
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      },
+      i[r].l = 1 * new Date();
+      a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-512574-3', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <div class="container">
+    <div>
+      <div class="row">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-xs-12 col-lg-3 isu-logo-wrapper">
+              <a href="http://www.iastate.edu">
+                <img src="/img/isu-stacked.svg" alt="Iowa State University" class="isu-logo">
+              </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4">
+              <p>
+                <b>Laboratory for Software Design</b>
+              </p>
+              <p>115-2 Atanasoff Hall</p>
+              <p>Ames, IA, 50011-1040, USA</p>
+              <p>Phone: (515) 294-6168</p>
+              <p>E-Mail: hridesh@iastate.edu</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+              <p>
+                Copyright &copy;
+                2024
+                Iowa State University of Science and Technology. All rights reserved.<BR>
+                <div class="d-none d-lg-block" style="margin-top: 0">
+                  The research and educational activities described on these pages has been supported in part by the
+                  <a href="http://www.nsf.gov">US National Science Foundation (NSF)</a>.
+                </div>
+              </p>
+            </div>
+            <div class="col-md-3 col-lg-1 d-none d-md-block project-logos">
+              <div>
+                <a href="http://web.cs.iastate.edu/~panini/">
+                  <img src="/img/panini-logo.svg" class="logo" alt="Boa Logo">
+                  Panini
+                </div>
+                <div>
+                  <a href="http://boa.cs.iastate.edu">
+                    <img src="/img/boa-logo.svg" class="logo" alt="Boa Logo">
+                    Boa
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="/js/design.js"></script>
+  </body>
+</html>

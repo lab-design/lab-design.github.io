@@ -1,0 +1,38 @@
+<!--#include virtual="includes/header.html"-->  
+
+<article width="100%" id="post-25" class="post-25 page type-page status-publish hentry">
+<header class="entry-header">
+		<h1 class="entry-title">Code of Conduct</h1>
+               <!-- <p>Click image below or this link for <a href="./coming.shtml">full program</a></p> -->
+</header> 
+
+<div class="entry-content" width="100%">
+<p>
+Midwest Big Data Summer School is dedicated to providing a harassment-free 
+experience for everyone, regardless of gender, gender identity and expression, 
+sexual orientation, disability, physical appearance, body size, race, age or religion. 
+We do not tolerate harassment of summer school participants in any form. 
+Sexual language and imagery is not appropriate for any summer school venue, 
+including talks. Summer school participants violating these rules may be 
+sanctioned or expelled from the summer school at the discretion of the school organizers.
+</p>
+
+<p>
+Midwest Big Data Summer School participants are also bound by Iowa State University 
+<a href="https://www.policy.iastate.edu/policy/discrimination">policies on discrimination 
+and harassment</a>.
+</p>
+
+<p>
+If you hear an inappropriate remark, intended or misjudged,
+<a href="http://geekfeminism.wikia.com/wiki/Good_sexism_comebacks">this list of comebacks</a>
+may prove useful.
+</p>
+
+<p>These policies have been adopted from <a href="http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy">
+Geek Feminism Wiki</a>, which includes models for public announcements and guidance for 
+event staff.</p>
+
+</article><!-- #post-25 -->
+
+<!--#include virtual="includes/footer.html"-->

@@ -1,0 +1,38 @@
+<!--#include virtual="../includes/topbar.html"-->
+<!-- 2ND COLUMN. INSERT COPY -->
+
+<td rowspan="2">
+<div class="maintext">
+<h1> Slede Documentation </h1>
+<BR>
+<table>
+<tr>
+<td>
+<a href=../download/index.shtml>1. Downloading Slede</a>
+</td>
+</tr>
+<tr>
+<td>
+<a href=../documentation/install.shtml>2. Installing Slede</a>
+</td>
+</tr>
+<tr>
+<td>
+<a href=../documentation/set-up-slede.shtml>3. Setting up Slede Eclipse Plugin</a>
+</td>
+</tr>
+<tr>
+<td>
+<a href=../documentation/run-examples.shtml>4. Running the Examples</a>
+</td>
+</tr>
+<tr>
+<td>
+<a href=../documentation/slede-manual.pdf>5. Annotation Language Manual (Beta)</a>
+</td>
+</tr>
+</table>
+
+</td>
+
+<!--#include virtual="../includes/bottombar.html"-->

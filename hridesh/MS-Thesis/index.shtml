@@ -1,0 +1,108 @@
+<!--#include virtual="../includes/template/headTop.htm"-->  
+
+<!-- INSERT TITLE -->
+<title>A Typical M.S. Thesis in Hridesh Rajan's Supervision</title>
+<base href="http://www.cs.iastate.edu/~cs541/" />
+
+<!--#include virtual="../includes/template/headBottom.htm"-->  
+
+<!-- Text for the actual webpage start -->
+
+<p>
+This webpage and the companion pages describes the timeline
+and the expectations for a typical M.S. thesis under 
+my supervision. 
+Note that a thesis option is <b>strongly preferred</b>
+over a M.S. creative component option. 
+Also note that this is a <u>suggested timeline and does
+not constitute a binding contract</u>.
+Furthermore, the information provided on these
+pages have no relationship to decisions about research
+assistantships. 
+For more information about the graduate program and 
+Masters degree requirements see the pages of the 
+<a href="http://www.cs.iastate.edu/gradadm/">
+ISU CS graduate program</a>.
+</p>
+
+<h2>Approximate Timeline</h2>
+<p>
+Much of this is also available in the 
+<a href="http://www.cs.iastate.edu/gradadm/2008-2009-COMPUTER-SCIENCE-HANDBOOK.pdf">
+graduate handbook</a>. 
+In case of conflicting information the graduate handbook 
+takes priority. 
+This is a suggested timeline and 
+other <a href="http://www.cs.iastate.edu/people/faculty.jsp">faculty</a> 
+in the <a href="http://www.cs.iastate.edu">computer science</a> department
+may follow a different guideline.
+This guideline is specific to students advised by 
+<a href="http://www.cs.iastate.edu/~hridesh">Hridesh Rajan</a>.
+Furthermore, this is customized for students entering in Fall, 
+as that is more common. Graduate students entering in Spring
+should just forward all due dates by a semester. 
+</p>
+
+<table id="schedule">
+<tr> <th> Year <th> Semester <th> Due Date <th> Deliverable </th></tr>
+<tr> <td> Year 1 <td> Fall <td> By the beginning of final's week <td> Informal exchange and project conception.
+<tr> <td> &nbsp; <td> &nbsp; <td> Same as Course Registration Deadline <td> Register for Com S 511, Com S 541, and Com S 515.
+<tr> <td> &nbsp; <td> Spring <td> Same as Course Registration Deadline <td> Register for Com S 531, Com S 540, and Com S 512.
+<tr> <td> &nbsp; <td> &nbsp; <td> Same as ISU Course Drop Deadline <td> POS Formation and Major Professor (adviser) selection.
+<tr> <td> &nbsp; <td> &nbsp; <td> Same as First Day of Finals Week <td> MS Project Idea Due.
+<tr> <td> &nbsp; <td> Summer <td> Same as First day of Summer Session I <td> MS Project Idea Revision Due.
+<tr> <td> &nbsp; <td> &nbsp; <td> Same as Final day of Summer Session I <td> MS Project Proposal Due.
+<tr> <td> &nbsp; <td> &nbsp; <td> Same as Final day of Summer Session II <td> MS Project Proposal Revision Due.
+<tr class="year"> <td> Year 2 <td> Fall <td> Same as Registration Deadline <td> Register for 3 credits Com S 699.
+<tr> <td> &nbsp; <td> &nbsp; <td> Same as Registration Deadline <td> Register for 3 credits Com S 699.
+<tr> <td> &nbsp; <td> &nbsp; <td> By 2nd Monday in the Semester <td> MS project proposal revision due (based on feedback).
+<tr> <td> &nbsp; <td> Spring <td> Same as Registration Deadline <td> Register for 3 credits Com S 699.
+<tr> <td> &nbsp; <td> Summer <td> Same as First day of Summer Session I <td> MS Project Idea Revision Due.
+<tr> <td> &nbsp; <td> &nbsp; <td> Same as Final day of Summer Session I <td> MS Project Proposal Due.
+<tr> <td> &nbsp; <td> &nbsp; <td> Same as Final day of Summer Session II <td> MS Project Proposal Revision Due.
+</table>
+
+
+<h2>Project Description</h2>
+<p>
+A term project is worth 40% of your grade in this course.
+The objective of the term project will be to reinforce the 
+knowledge of the formal tools that you will gain in this 
+course by applying it to a real-world research problem. 
+The output, and the graded deliverables, will thus be 
+expected to demonstrate the advance towards solving the
+problem that you have selected to work on. 
+Note that the magnitude of advance over the semester may
+vary based on the topic of your project.
+The interim and final papers will report on your progress
+towards solving the problem.
+The description of these deliverables will be made
+available below as the semester progresses. 
+</p>
+
+<p class="heading">Project Deliverables, Due Dates and Weight (% of class grade)</p>
+
+<UL>
+ <LI><a href="project/idea.shtml">Idea</a>: On or before Sept 4, 2008 at 11:59pm CST</LI>
+ <LI><a href="project/proposal.shtml">Proposal</a>: 10% (Due on Sep 18, 2008 at 11:59pm CST)</LI>
+ <LI><a href="project/interim.shtml">Interim Prototype and Report</a>: 12.5% (Due on Nov 3, 2008 at 11:59pm CST)</LI>
+ <LI><a href="project/final.shtml">Final Prototype and Report</a>: 12.5% (Due on Dec 11, 2008 at 12:40pm CST)</LI>
+ <LI><a href="project/">Project Presentation</a>: 5% (On Dec 11, 2008, 12:40 - 2:00pm CST)</LI>
+</UL>
+       
+</p>
+
+<p class="heading">Format for Proposal, Interim Report, and Final Report</p>
+
+<p>
+These deliverables must be prepared using LaTeX. 
+We require you to use LaTeX as the operational 
+semantics, type systems, and meta-theory can be 
+easily typeset using this typesetting system. 
+We provide a template for preparing these 
+deliverables <a href="project/files/template-541.tar.gz">here</a>.
+</p>
+
+<!-- Text for the actual webpage end -->
+
+<!--#include virtual="../includes/template/footer.htm"--> 

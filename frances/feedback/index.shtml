@@ -1,0 +1,68 @@
+<!--#include virtual="../includes/topbar.html"-->
+
+<td id="b3" rowspan="2">
+<div class="maintext">
+
+<!--#set var="tool_name" value="Frances" -->
+
+<h1>Feedback</h1>
+
+<p>
+We would like to hear from users of the Frances tool.
+Please fill out one of the following forms based on your use of Frances.
+Alternatively, you can send us an <a href="mailto:sondag@cs.iastate.edu">email</a>.
+</p>
+
+
+<p></p>
+<p></p>
+<p></p>
+<h2>Frances Tool</h2>
+<p></p>
+<p>
+  <table>
+  <tr width=480px>
+    <td width=160px>
+      <a href="frances-a-student.shtml">Student</a>
+    </td>
+    <td width=160px>
+      <a href="frances-a-teacher.shtml">Teacher</a>
+    </td>
+    <td width=160px>
+      <a href="frances-a-other.shtml">Other</a>
+    </td>
+  </tr>
+  </table>
+</p>
+
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<h2>Frances (Code generator) Tool</h2>
+<!-- <iframe src="https://spreadsheets.google.com/embeddedform?formkey=dG1yY0ZDZjdET2t5cmI0cHVHeThncUE6MA" width="760" height="1185" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>-->
+<p></p>
+<p>
+  <table>
+  <tr width=480px>
+    <td width=160px>
+      <a href="frances-student.shtml">Student</a>
+    </td>
+    <td width=150px>
+      <a href="frances-teacher.shtml">Teacher</a>
+    </td>
+    <td width=160px>
+      <a href="frances-other.shtml">Other</a>
+    </td>
+  </tr>
+  </table>
+</p>
+
+
+
+
+</div>
+
+</td>
+
+<!--#include virtual="../includes/bottombar.html"-->

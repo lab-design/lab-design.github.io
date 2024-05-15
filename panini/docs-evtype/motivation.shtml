@@ -1,0 +1,325 @@
+<!--#include virtual="../includes/top.html"-->
+<title>Panini Programming Guide : Language Features</title>
+<!-- PAGE SPECIFIC STYLING -->
+<style type="text/css">
+.col2-toc h2 {
+	margin: 0 0 10px;
+}
+</style>
+<!--#include virtual="../includes/header.html"-->
+
+<h1>Motivation</h1>
+<script type="text/javascript">
+copyright=new Date()
+fullYear=copyright.getFullYear();
+document.write("<h5>Copyright &copy; 2006-" + fullYear + ", Iowa State University of Science and Technology. All rights reserved.</h5>")
+</script>
+
+<!-- TABLE OF CONTENTS -->
+<div class="col2-toc">
+<h2>Table of Contents</h2>
+<ol>
+	<li><a href="docs/index.shtml">Programming Guide Overview</a></li>
+	<li>Motivation
+	<ul class="toc-currentpg">
+		<li><a href="docs/lang.shtml#oocf">Object-oriented (OO) Concurrency Features</a></li>
+		<li><a href="docs/lang.shtml#explicit-concurrency">Problems with Explicit Concurrency Features</a></li>
+		<li><a href="docs/lang.shtml#contributions">Contributions</a></li>
+	</ul>
+	</li>
+	<li><a href="docs/starting.shtml">Getting Started with Ptolemy</a></li>
+	<li><a href="docs/running.shtml">Installing and Running the
+	Panini compiler</a></li>
+	<li><a href="papers/">Technical Publications</a></li>
+</ol>
+<hr />
+<h3>Examples</h3>
+<ul>
+	<li><a href="docs/starting-examples.shtml">Genetic Algorithm</a></li>
+</ul>
+</div>
+
+<!-- CONTENT -->
+<div class="col2-content">
+<p><b>The idea behind Panini's design is that if programmers
+structure their system to improve modularity in its design, they should
+get concurrency for free.</b></p>
+
+<h2><a name="oocf">Object-oriented (OO) Concurrency Features</a></h2>
+<p>It is widely accepted that multicore computing is becoming the
+norm. However, writing correct and efficient concurrent programs using <i>concurrency-unsafe</i>
+features remains a challenge[3,4,5,6,7]. A language feature is
+concurrency-unsafe if its usage may give rise to program execution
+sequences containing two or more memory accesses to the same location
+that are not ordered by a happens-before relation[9]. Several such
+language features exist in common language libraries, for example,
+threads, processes, <tt>Futures</tt>, and <tt>FutureTask</tt> are all
+examples from the Java programming language's standard library[6,7]<sup>2</sup>.
+Using such language features has advantages, e.g. they can encapsulate
+complex synchronization code and allow its reuse.</p>
+
+<p>To illustrate, consider the implementation of a genetic algorithm
+in Java presented in Figure 1. The idea behind a genetic algorithm is to
+mimic the process of natural selection. Genetic algorithms are
+computationally intensive and are useful for many optimization
+problems[8]. The main concept is that searching for a desirable state is
+done by combining two <i>parent</i> states instead of modifying a single
+state[8]. An initial <i>generation</i> with <i>n</i> members is given to
+the algorithm. Next, a <i>cross over</i> function is used to combine
+different members of the generation in order to develop the next
+generation (lines 10-16 in Figure 1). Optionally, members of the
+offspring may randomly be <i>mutated</i> slightly (lines 18-23 in Figure
+1). Finally, members of the generation (or an entire generation) are
+ranked using a <i>fitness function</i> (lines 25-29 in Figure 1).</p>
+
+<p><b>Multiple Concerns of the Genetic Algorithm</b> In the OO
+implementation of the genetic algorithm in Figure 1 there are three
+concerns standard to the genetic algorithm: cross over (creating a new
+generation), mutation (random changes to children), and fitness
+calculation (how good is the new generation). Logging of each generation
+is another concern added here since it may be desirable to observe the
+space searched by the algorithm (lines 17 and 24). The final concern
+here is concurrency (lines 4, 7-9, and 30-33). In this example,
+production of a generation is run as a <tt>FutureTask</tt>. The
+different shading shows code corresponding to each concern as
+illustrated in the legend.</p>
+
+
+<h2><a name="explicit-concurrency">Problems with Explicit Concurrency Features</a></h2>
+<p><b>Explicit concurrency</b> With explicit concurrency, the
+programmer must divide the program into independent tasks. Next, the
+programmer must handle creating and managing the individual threads. A
+problem with the concurrency-unsafe language features described
+previously and illustrated in Figure 1 is that correctness is difficult
+to ensure since it relies on all objects obeying a usage policy[10].
+Since such policies cannot automatically be enforced by a library based
+approach[10], the burden on the programmer is increased and errors arise
+(ex: deadlock, data races, etc.). Also, the non-determinism introduced
+by such mechanisms makes debugging hard since errors are difficult to
+reproduce[19]. Furthermore, this style of explicit parallelism can hurt
+the design and maintainability of the resulting code[13].</p>
+
+<table class="figure">
+	<tr>
+		<td><img
+			src="http://www.cs.iastate.edu/~design/projects/panini/docs/pictures/genetic-oo.png"></td>
+	</tr>
+	<tr>
+		<td width=400px><b>Figure 1:</b> Genetic algorithm with Java
+		concurrency utilities.</td>
+	</tr>
+</table>
+
+
+<p><b>Separation of modular and concurrent design</b> Another
+significant shortcoming of these language features, or perhaps the
+discipline that they promote, is that they treat modular program design
+and concurrent program design as two separate and orthogonal goals.</p>
+
+<p>From a quick glance at Figure 1, it is quite clear that the five
+concerns are tangled. For example, the code for concurrency (lines 4,
+7-9, and 30-33) is interleaved with the logic of the algorithm (the
+other four concerns). Also, the code for logging occurs in two separate
+places (lines 17 and 24). This arises from implementing a standard well
+understood sequential approach and then afterward attempting to expose
+concurrency rather than pursuing modularity and concurrency
+simultaneously. Aside from this code having poor modularity, it is not
+immediately clear if there is any potential concurrency between the
+individual concerns (cross over, mutation, logging, and fitness
+calculation).</p>
+
+
+<h2><a name="contributions">Contributions</a></h2>
+
+<table class="figure">
+	<tr>
+		<td><img
+			src="http://www.cs.iastate.edu/~design/projects/panini/docs/pictures/genetic-panini.png"></td>
+	</tr>
+	<tr>
+		<td width=400px><b>Figure 2:</b> Panini's version of the Genetic
+		algorithm.</td>
+	</tr>
+</table>
+
+
+<p>Our language, Panini, addresses these problems. The key idea
+behind Panini's design is to provide programmers with mechanisms to
+utilize prevalent idioms in modular program design. These mechanisms for
+modularity in turn automatically provide concurrency in a safe
+predictable manner. This paper discusses the notion of <i>asynchronous,
+typed events</i> in Panini. An <i>asynchronous, typed event</i> exposes
+potential concurrency in programs which use behavioral design patterns
+for object-oriented languages, e.g. the observer pattern[11]. These
+patterns are widely adopted in software systems such as graphical user
+interface frameworks, middleware, databases, and Internet-scale
+distribution frameworks[11].</p>
+
+<p>In Panini, an <i>event type</i> is seen as a decoupling mechanism
+that is used to interface two sets of modules, so that they can be
+independent of each other. Below we briefly describe the syntax in the
+context of the genetic algorithm implementation in Panini shown in
+Figure 2 (a more detailed description appears in our <a
+	href="http://www.cs.iastate.edu/~design/papers/TR-09-28">technical
+report</a> ). In the listing we have omitted initializations of classes for
+brevity. In this listing an example of an event type appears on lines
+1-3, whose name is <tt>GenAvailable</tt> and that declares to make one
+context <tt>g</tt> of type <tt>Generation</tt> available.</p>
+
+<p>Certain classes, to which we refer to as <i>subjects</i> from
+here onward, declaratively and explicitly announce events. The class <tt>CrossOver</tt>
+(lines 4-19) is an example of such a subject. This class contains a
+probability for the cross over operation and a maximum depth at which
+the algorithm will quit producing offspring. The method <tt>cross</tt>
+for this class computes the new generation based on the current
+generation (lines 11-19). After the <tt>cross</tt> method creates a new
+generation, it <i>announces</i> an event of type <tt>GenAvailable</tt>
+(line 18) denoted by code <tt>announce GenAvailable(g1)</tt>.</p>
+
+<p>Another set of classes, which we refer to as observers from here
+onward, can provide methods, called <i>handlers</i> that are invoked
+(implicitly and <i>potentially concurrently</i>) when events are
+announced. The listing in Figure 2 has several examples of observers: <tt>CrossOver</tt>,
+<tt>Mutation</tt>, <tt>Logger</tt> and <tt>Fittest</tt>. A class can act
+as both subject and observer. For example, the classes <tt>CrossOver</tt>
+and <tt>Mutation</tt> are both subjects and observers for events of type
+<tt>GenAvailable</tt>.</p>
+
+<!--
+<p>
+In Panini, classes statically express (potential) interest in an event
+by providing a <i>binding declaration</i>. 
+For example, the <tt>Mutate</tt> concern (lines 20-35) wants to
+randomly mutate some of the population after it is created. 
+So in the implementation of class <tt>Mutatation</tt> there is a binding
+declaration (line 26)that says to run the method <tt>mutate</tt> (lines
+27-35) when events of type <tt>GenAvailable</tt> are announced.
+</p>
+ 
+<p>
+At runtime these interests in events can be made concrete using the
+<i>register</i> expressions.
+The class <tt>Mutatation</tt> has a method on lines 22-25 that
+when called registers the current instance <tt>this</tt> to listen
+for events. After registration, when any event of type
+<tt>GenAvailable</tt> is announced the method <tt>mutate</tt>
+(lines 27-35) will run with the registered instance <tt>this</tt>
+as the receiver object.
+</p>
+
+
+<p>
+Similarly, the method <tt>logit</tt> (line 39) will log each
+generation when events of type <tt>GenAvailable</tt> are announced.
+Finally, method <tt>check</tt> in class <tt>Fittest</tt> (lines
+41-51) will determine the better fitness between the announced
+generation and the previously optimal generation when events of type
+<tt>GenAvailable</tt> are announced.
+</p>
+-->
+
+<p><b>Benefits of Panini's Version of Genetic Algorithm</b> At a
+quick glance, we can see from the shading that the four remaining
+concerns are no longer tangled and they are separated into individual
+modules. This separation not only makes reasoning about their behavior
+simple but also allows us to expose potential concurrency between them.
+</p>
+
+<p>Furthermore, the concurrency concern has been removed entirely
+since the implementation of Panini encapsulates all the code for
+managing the concurrency. By not requiring users to write this code,
+Panini avoids any threat of incorrect or non-deterministic concurrency
+thus easing the burden on the programmer. This allows the programmer to
+focus on creating a good, maintainable modular design.</p>
+
+<p>Finally, additional concurrency between these four modules is now
+automatically exposed. Thus, Panini reconciles modular program design
+and concurrent program design.</p>
+
+<p><b>Advantages of Panini's Design over Related Ideas</b> Panini is
+most similar to our previous work on Ptolemy[12], but Panini's event
+types also have concurrency advantages.</p>
+
+<p>It is also similar to implicit invocation (II) languages[14,15]
+that also see <i>events</i> as a decoupling mechanism. The advantage of
+using Panini over an II language is that asynchronous, typed events in
+Panini allow developers to take advantage of the decoupling of subjects
+and observers to expose potential concurrency between their execution.</p>
+
+<p>These events also relieve programmers from the burden of
+explicitly creating and maintaining threads, managing locks, and shared
+memory. Thus Panini avoids the burden of reasoning about the usage of
+locks, which has several benefits. First, incorrect use of locks may
+have safety problems. Second, locks may degrade performance since
+acquiring and releasing a lock has overhead. Third, threads are
+cooperatively managed by the language runtime, thus thrashing due to
+excessive threading is avoided. These benefits make Panini an
+interesting point in the design space of concurrent languages.</p>
+
+<p></p>
+<p></p>
+<p></p>
+
+<HR SIZE=1, WIDTH=95%, ALIGN=CENTER, NOSHADE>
+<b>References</b>
+<ol>
+	<li>A large part of this text is taken from our latest <a
+		href="http://www.cs.iastate.edu/~design/papers/TR-09-28">technical
+	report</a>.
+	<li>Original proposal for futures in MultiLisp is
+	concurrency-safe[18].
+	<li>N. Benton, L. Cardelli, and C. Fournet. Modern concurrency
+	abstractions for C#. ACM Trans. Program. Lang. Syst., 26(5):769-804,
+	2004.
+	<li>J. Ousterhout. Why threads are a bad idea (for most purposes).
+	In ATEC, January 1996.
+	<li>V. Pankratius, C. Schaefer, A. Jannesari, and W. F. Tichy.
+	Software engineering for multicore systems: an experience report. In
+	IWMSE '08: Proceedings of the 1st international workshop on Multicore
+	software engineering, pages 53-60, New York, NY, USA, 2008. ACM.
+	<li>P. Pratikakis, J. Spacco, and M. Hicks. Transparent Proxies
+	for Java Futures. In OOPSLA, pages 206-223, 2004.
+	<li>A. Welc, S. Jagannathan, and A. Hosking. Safe Futures for
+	Java. In OOPSLA, pages 439-453, 2005.
+	<li>S. Russell and P. Norvig. Artificial Intelligence: A Modern
+	Approach. Prentice Hall, 2nd edition, 2003.
+	<li>L. Lamport. Time, Clocks, and the Ordering of Events in a
+	Distributed System. Commun. ACM, 21(7):558-565, 1978.
+	<li>D. Lea. Concurrent Programming in Java. Second Edition: Design
+	Principles and Patterns. Addison-Wesley Longman Publishing Co., Inc.,
+	Boston, MA, USA, 1999.
+	<li>E. Gamma, R. Helm, R. Johnson, and J. Vlissides. Design
+	Patterns: Elements of Reusable Object-Oriented Software. Addison-Wesley
+	Longman Publishing Co., Inc., 1995.
+	<li>H. Rajan and G. T. Leavens. Ptolemy: A language with
+	quantified, typed events. In ECOOP, pages 155-179, 2008.
+	<li>M. C. Rinard and M. S. Lam. The design, implementation, and
+	evaluation of Jade. ACM Trans. Program. Lang. Syst., 20(3):483-545,
+	1998.
+	<li>David C. Luckham et al.. Specification and Analysis of System
+	Architecture Using Rapide. IEEE Transactions on Software Engineering,
+	21(4):336-54, 1995.
+	<li>D. Notkin, D. Garlan, W. G. Griswold, and K. J. Sullivan.
+	Adding Implicit Invocation to Languages: Three Approaches. In JSSST
+	International Symposium on Object Technologies for Advanced Software,
+	pages 489-510, 1993.
+	<li>T. Ekman and G. Hedin. The JastAdd Extensible Java Compiler.
+	In OOPSLA, pages 1-18, 2007.
+	<li>D. Lea. A Java Fork/Join Framework. In Java Grande Conference,
+	pages 36-43, 2000.
+	<li>J. Robert H. Halstead. Multilisp: A Language for Concurrent
+	Symbolic Computation. ACM Trans. Program. Lang. Syst., 7(4):501-538,
+	1985.
+	<li>H. Sutter and J. Larus. Software and the concurrency
+	revolution. Queue, 3(7):54-62, 2005.
+</ol>
+<!-- PAGE UPDATE -->
+<p id="update">Page last modified on $Date: 2013/03/02 07:00:14 $</p>
+
+<!-- GUIDE NAVIGATION -->
+<div class="page-nav"><a href="docs/running.shtml">&lt;
+PREVIOUS</a> <a href="docs/lang.shtml#pgtop">&#94; RETURN TO TOP</a> <a
+	href="docs/design-by-contract.shtml">NEXT &gt;</a></div>
+</div>
+
+<!--#include virtual="../includes/bottom.html"-->

@@ -1,0 +1,169 @@
+<!--#include virtual="../includes/topbar.html"-->
+
+<td id="b3" rowspan="2">
+<div class="maintext">
+
+<!--#set var="tool_name" value="Frances" -->
+
+<h1><!--#echo var="tool_name" -->: A Tool For Understanding Code Generation</h1>
+
+<p>
+Compiler and programming language implementation courses are integral parts of many computer science curricula.
+However, the range of topics necessary to teach in such a course are difficult for students to understand and time consuming to cover.
+In particular, code generation is a confusing topic for students unfamiliar with low level target languages.
+We present Frances, a tool for helping students understand code generation and low level languages.
+The key idea is to graphically illustrate the relationships between high level language constructs and low level (assembly) language code.
+By illustrating these relationships, we take advantage of the students existing understanding of some high level language.
+We have used Frances in a compiler design course and received highly positive feedback.
+Students conveyed to us that Frances significantly helped them to understand the concepts necessary to implement code generation in a compiler project.
+</p>
+
+<!--
+<p>
+Control flow refers to the order in which instructions are executed.
+A control flow graph is a graphical representation of this that shows different paths that
+can be taken during execution.
+</p>
+
+<p>
+This web based tool generates control flow graphs from given source code.
+Nodes in the control flow graph are drawn with their corresponding assembly code.
+Additionally, colors are added to nodes based on what control structure they are a part of.
+</p> -->
+
+<!--
+<p>
+<center><BIG><a href="http://jhelum.cs.iastate.edu/cgi-bin/comp.cgi"><!--#echo var="tool_name" --> (x86)</a></BIG>
+<a href="http://www.cs.iastate.edu/~sapha/cgi-bin/comp.cgi">(alt)</a>
+</center><BR>
+</p>
+<p>
+<center><BIG><a href="http://jhelum.cs.iastate.edu/cgi-bin/comp-mips.cgi"><!--#echo var="tool_name" --> (MIPS)</a></BIG>
+</center><BR>
+</p>
+
+
+<p>
+<center><BIG><a href="/feedback">Take a quick survey</a></BIG></center>
+</p>
+-->
+
+<br>
+<div id="textbox">
+<BIG>
+<center>
+<table cellspacing="50">
+<tr><td>
+<a href="http://jhelum.cs.iastate.edu/cgi-bin/comp.cgi">Code Generator - x86 AT&T</a>
+</td><td>
+<a href="http://www.cs.iastate.edu/~sapha/cgi-bin/comp.cgi">Code Generator - At&T (alternate link)</a>
+</td></tr>
+<tr><td>
+<a href="http://jhelum.cs.iastate.edu/cgi-bin/comp-mips.cgi">Code Generator - MIPS</a>
+</td><td>
+<a href="http://jhelum.cs.iastate.edu/cgi-bin/comp-intel.cgi">Code Generator - x86 Intel</a>
+</td></tr>
+<!--
+<a href="/frances/web-int/">Frances-Code generator</a>
+</td><td>-->
+<tr><td colspan=2><center>
+<a href="lessons/">Lessons</a>
+</td></tr>
+</table>
+</center>
+<!-- <p class="alignleft">
+<a href="/frances/web-int/">Frances web tool</a>
+<p class="alignright">
+<a href="lessons/">Lessons</a>
+</p> -->
+</BIG>
+</div>
+<div style="clear: both;"></div>
+
+<p>
+<table class="figure">
+<tr><td><img src="figures/smaller-while.png" alt="Example of Frances tool" /></td></tr>
+<tr><td width=400px><b>Figure 1:</b> Example usage of Frances tool. Left side shows user input code and legend.  Right side shows example output.</td></tr>
+</table>
+</p>
+
+<br>
+
+<p>
+<b>Lessons</b> using the Frances tool are available:
+<a href="frances/lessons/">Code generation lessons</a>.
+</p>
+
+
+<p>
+If you have any comments, find any problems, 
+or would like to see any features
+added, please give us feedback through one of the following
+forms:
+      <a href="../feedback/frances-student.shtml">student</a>,
+      <a href="../feedback/frances-teacher.shtml">teacher</a>,
+      <a href="../feedback/frances-other.shtml">other</a>. 
+Alternatively, feel free to
+email us at <a href="mailto:sondag@iastate.edu">sondag@iastate.edu</a>.
+Also, we are very interested to hear who is using our tool and in what ways.  
+This will help us develop future versions of this tool.
+</p>
+
+<br>
+
+<h2>Why did we develop <!--#echo var="tool_name" -->?</h2>
+<p>
+<!--#echo var="tool_name" --> was developed originally for debugging as part of a larger framework.
+After using this tool, it was clear that it was extremely helpful with understand assembly language 
+and control flow.
+With this is mind, we aimed to develop this tool further with these ideas in mind.
+Furthermore, a major goal was to make the user interface as simple as possible.
+The main features of <!--#echo var="tool_name" --> are:
+<ul>
+  <li>Coloring based on control structures
+  <li>Edges drawn to denote types of control paths
+  <li>Layout of blocks same as assembly (list of instructions)
+  <li>Very simple web based interface
+</ul>
+To the best of our knowledge, <a href="../similar-tools.shtml">similar-tools</a> do not combine all of these.
+</p>
+
+<br>
+<br>
+
+<h2><!--#echo var="tool_name" --> Uses</h2>
+<p>
+<!--#echo var="tool_name" --> is currently being used for both research and in the classroom.
+In the classroom, these uses include learning and understanding the following concepts:
+<ul>
+  <li> Code generation
+  <li> Control flow
+  <li> Assembly language
+  <li> Code optimization
+</ul>
+</p>
+
+<br>
+
+<BR>
+<h3>Tool Name</h3>
+<p>
+We named the tool <!--#echo var="tool_name" --> in honor of
+<a href="http://awards.acm.org/citation.cfm?id=1012327&srt=all&aw=140&ao=AMTURING">
+Frances E. Allen
+</a>.
+She received the Turning award for pioneering contributions to the theory and
+practice of optimizing compiler techniques that laid the foundation for modern
+optimizing compilers and automatic parallel execution.
+
+<HR SIZE=1, WIDTH=95%, ALIGN=CENTER, NOSHADE>
+<ol>
+<li>A large part of this text is taken from our latest <a href="http://archives.cs.iastate.edu/documents/disk0/00/00/06/15/index.html">technical report</a> and our <a href="papers/">SIGCSE '10 paper</a>.
+</ol>
+
+
+</div>
+
+</td>
+
+<!--#include virtual="../includes/bottombar.html"-->

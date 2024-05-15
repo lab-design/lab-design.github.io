@@ -1,0 +1,111 @@
+<!--#include virtual="../includes/template/headTop.htm"-->  
+
+<!-- INSERT TITLE -->
+<title>Com S 541: Details About Project Ideas</title>
+<base href="http://www.cs.iastate.edu/~cs541/" />
+<!--#include virtual="../includes/template/headBottom.htm"-->  
+
+<!-- Text for the actual webpage start -->
+
+<p class="heading">Project Idea: On or before Sep 4, 2008 at 11:59pm CST</p>
+
+<p><b>Submission Instructions:</b>
+Project ideas must be submitted via e-mail to 
+<a href="mailto:hridesh@cs.iastate.edu?subject=[Fall-08-541-Project-Idea]&body=Please find attached my idea for Com S 541 Project as abstract.tex. The relevant keywords for my project are:">hridesh@cs.iastate.edu</a>.
+If you click the link above the subject will be filled automatically, 
+otherwise please ensure that your subject is exactly 
+&quot;[Fall-08-541-Project-Idea]&quot; (without the quotes).
+Please download the template for project report from 
+<a href="project/files/template-541.tar.gz">here</a> and 
+modify the abstract.tex file to contain the description
+of your idea. 
+Please attach the abstract.tex with your submission e-mail. 
+</p>
+
+<p><b>Keywords:</b> Along with the project idea, please also 
+include a list of 4-6 relevant keywords that pertain to your 
+topic in the submission e-mail. </p>
+
+<p class="heading">How to write your submission?</p>
+
+<p>
+Phil Koopman's Checklist for parts of an abstract
+should serve as a guide for you to write your idea.
+I am reproducing it verbatim here for your convenience.
+</p>
+
+<p>
+&quot;Despite the fact that an abstract is quite brief,
+it must do almost as much work as the multi-page
+paper that follows it. In a [..] paper, this
+means that it should in most cases include the
+following sections. Each section is typically a
+single sentence, although there is room for
+creativity. In particular, the parts may be
+merged or spread among a set of sentences. Use the
+following as a checklist for your next abstract:
+
+<UL>
+<LI> <B>Motivation:</B> Why do we care about the
+problem and the results? If the problem isn't
+obviously "interesting" it might be better to put
+motivation first; but if your work is incremental
+progress on a problem that is widely recognized as
+important, then it is probably better to put the
+problem statement first to indicate which piece of
+the larger problem you are breaking off to work on.
+This section should include the importance of your
+work, the difficulty of the area, and the impact
+it might have if successful.
+</LI>
+
+<LI> <B>Problem statement:</B> What problem are you
+trying to solve? What is the scope of your work
+(a generalized approach, or for a specific
+situation)? Be careful not to use too much jargon.
+In some cases it is appropriate to put the problem
+statement before the motivation, but usually this
+only works if most readers already understand why
+the problem is important.
+</LI>
+
+<LI> <B>Approach:</B> How did you go about solving or
+making progress on the problem? Did you use
+simulation, analytic models, prototype construction,
+or analysis of field data for an actual product?
+What was the extent of your work (did you look at
+one application program or a hundred programs in
+twenty different programming languages?) What
+important variables did you control, ignore, or
+measure?
+</LI>
+
+<LI> <B>Results:</B> What's the answer? Specifically,
+most good [..] papers conclude that something is so
+many percent faster, cheaper, smaller, or
+otherwise better than something else. Put the
+result there, in numbers. Avoid vague, hand-waving
+results such as "very", "small", or "significant."
+If you must be vague, you are only given license
+to do so when you can talk about
+orders-of-magnitude improvement. There is a
+tension here in that you should not provide numbers
+that can be easily misinterpreted, but on the
+other hand you don't have room for all the caveats.
+</LI>
+
+
+<LI> <B>Conclusions:</B> What are the implications of
+your answer? Is it going to change the world
+(unlikely), be a significant "win", be a nice hack,
+or simply serve as a road sign indicating that
+this path is a waste of time (all of the previous
+results are useful). Are your results general,
+potentially generalizable, or specific to a
+particular case? &quot; [Koopman]
+</LI>
+</p>
+
+<!-- Text for the actual webpage end -->
+
+<!--#include virtual="../includes/template/footer.htm"--> 

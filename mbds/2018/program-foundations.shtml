@@ -1,0 +1,129 @@
+<!--#include virtual="includes/header.html"-->	
+				
+<article width="100%" id="post-25" class="post-25 page type-page status-publish hentry">
+	<header class="entry-header">
+		<h1 class="entry-title">2018 Midwest Big Data Summer School Agenda - 
+                                        Foundations</h1> 
+
+		</header><!-- .entry-header -->
+
+	<div width="100%" class="entry-content">
+
+<table  style="border-collapse: collapse;" border="0"  width=“800” cellspacing="0" cellpadding="0">
+<tbody width="100%">
+<tr style="height: 25.5pt;"  width="100%">
+
+<tr style="height: 25.5pt;" >
+<td style="height: 25.5pt; font-size: x-large; font-weight: bold;" colspan="3" align="center" width="100%" height="34">Thursday, May 17 - Location: South Ballroom </td>
+<tr width="100%" >
+<td width="30%">8:00 - 8:45am <br> Location: South Ballroom</td><td> Registration</td>
+</tr>
+<tr><td></td><td></td></tr>
+               
+  
+               
+<tr width="100%" >
+<td width="30%" style="border:1px solid #ffffff ;">8:45 - 10:15am<br>Location: South Ballroom</td>
+<td style="border:1px solid #ffffff ;">Gradient Descent & Co.: Fundamental Building Blocks of Machine Learning and Data Analytics <br><b><i><a href="http://web.cs.iastate.edu/~jialiu/">Dr. Jia (Kevin) Liu</a></i></b></td>
+</tr>
+<tr width="100%" >
+<td width="30%" style="vertical-align:top">
+<a href="">      
+<img src="images/kevin.jpg" width="800" ></a></td>
+<td width="70%" style="vertical-align:top">
+<p> 
+Abstract: In this talk, we will focus on gradient descent, one of the most fundamental continuous optimization technique of all time, and its variants and applications in machine learning and data analytics. We will first go over the key elements of basic gradient descent in terms of algorithmic design and performance analysis. Then, we will examine its extensions to sub gradient optimization, stochastic gradient descent, and various acceleration techniques with applications in machine learning. Finally, we will end by discussing the parallel/distributed design and asynchronous implementations of gradient descent and its variants. Our goal in this talk is to provide a broad and unifying perspective on this fundamental algorithm, and hopefully inspire new insights and ideas in solving merging data analytics and machine learning problems.
+   
+</p>
+<p><EM>About Dr. Jia (Kevin) Liu:</EM>
+Jia (Kevin) Liu is currently an Assistant Professor in the Dept. of Computer Science at Iowa State University, where he joined in Aug. 2017. He received his Ph.D. degree from the Bradley Dept. of Electrical and Computer Engineering at Virginia Tech in 2010. He was a Postdoctoral Researcher from Feb. 2010 to Nov. 2014, and subsequently a Research Assistant Professor from Nov. 2014 to Jul. 2017, both in the Dept. of Electrical and Computer Engineering at The Ohio State University. His research areas include theoretical foundations of control and optimization for stochastic networked systems, distributed algorithms design, optimization of cyber-physical systems, Internet-of-things, data analytics infrastructure, and machine learning. Dr. Liu is a senior member of IEEE and a member of ACM. His work has received numerous awards at top venues, including IEEE INFOCOM'16 Best Paper Award, IEEE INFOCOM'13 Best Paper Runner-up Award, IEEE INFOCOM'11 Best Paper Runner-up Award, and IEEE ICC'08 Best Paper Award. He is a recipient of Bell Labs President Gold Award in 2001 and China National Award for Outstanding Ph.D. Students Abroad in 2008. His research has been supported by NSF, AFOSR, AFRL, and ONR. 
+<a href="http://web.cs.iastate.edu/~jialiu/">More</a></td>
+</p>
+</tr>
+          
+<tr width="100%" >
+<td width="30%">10:15 - 10:45am<br>Location: South Ballroom</td>
+<td>Break - refreshments provided</td>
+</tr>
+<tr><td></td><td></td></tr>
+               
+               
+                                                                  
+<tr width="100%" >
+<td width="30%" style="border:1px solid #ffffff ;">10:45 - 12:15pm<br>Location: South Ballroom</td>
+<td style="border:1px solid #ffffff ;">Robot-Assisted Data Collection in Cyber-Physical-Human Systems 
+ <br><b><i><a href="https://www.abe.iastate.edu/joshua-peschel/">Dr. Joshua Peschel</a></i></b></td>
+</tr>
+<tr width="100%" >
+<td width="30%" style="vertical-align:top">
+<a href="">      
+<img src="images/Peschel.jpg" width="800" ></a></td>
+<td width="70%" style="vertical-align:top">
+<p>
+Abstract: 
+Smart cyber-physical-human infrastructure has traditionally focused on the urban environment with applications related to water, energy, and transportation infrastructure. In this talk I will expand the definition of infrastructure to include agricultural and natural systems, and present a suite of new assistive technologies that leverage robotics and computer vision to broaden sensing and sensemaking across these three different types of environments. Demonstrative case studies in each type of system will be presented, including: rapid mobile phenotyping of row crops, robot-assisted hydrology, and applications for aerial telemanipulation. The material covered will illustrate how the strategic, user-focused design of robotics and automated systems to accomplish unique environmental data collection can enable better informed decision-making. This talk will be of interest to researchers and practitioners working in fields that include the agricultural sciences, civil and environmental engineering, and computer science.
+   
+</p>    
+<p><EM>About Dr. Joshua Peschel:</EM>
+Dr. Joshua Peschel is an Assistant Professor of Agricultural and Biosystems Engineering and Black & Veatch Faculty Fellow at Iowa State University; he also holds courtesy appointments in the departments of Electrical and Computer Engineering, and Civil, Construction and Environmental Engineering. Dr. Peschel conducts research in the field of study he has founded called Human-Infrastructure Interaction, which focuses on the understanding, design, and evaluation of co-evolving smart infrastructure systems. He broadly defines infrastructure to include agricultural, natural, and urban environments, and his work involves creating new technologies, data sets, and computational models for sensing and sensemaking in these three very different but often interconnected systems. His research program and students have been generously supported by the National Science Foundation, U.S. Departments of Defense and Energy, the Bill & Melinda Gates Foundation, and a number of private industry partners.
+ 
+<a href="https://www.abe.iastate.edu/joshua-peschel/">More</a></td>
+</p>
+</tr>
+          
+               
+<tr width="100%" >
+<td width="30%">12:15 - 1:30pm<br>Location: South Ballroom</td>
+<td>Lunch </td>
+</tr>
+<tr><td></td><td></td></tr>
+               
+               
+          
+<tr width="100%" >
+<td width="30%" style="border:1px solid #ffffff ;">1:30 - 3:00pm<br>Location: South Ballroom</td>
+<td style="border:1px solid #ffffff ;">Modern Developments in High-Dimensional Statistics <br><b><i><a href="https://www.engineering.uiowa.edu/faculty-staff/weiyu-xu">Dr. Weiyu Xu</a></i></b></td>
+</tr>
+<tr width="100%" >
+<td width="30%" style="vertical-align:top">
+<a href="">      
+<img src="images/weiyu_xu.jpg" width="800" ></a></td>
+<td width="70%" style="vertical-align:top">
+<p>
+<p><EM>About Dr. Weiyu Xu:</EM>
+TBD 
+<a href="https://www.engineering.uiowa.edu/faculty-staff/weiyu-xu">More</a></td>
+</p>
+</tr>
+
+<tr width="100%" >
+<td width="30%">3:00 - 3:30pm<br>Location: South Ballroom</td><td>Break</td>
+</tr>
+<tr><td></td><td></td></tr>
+              
+               
+<tr width="100%" >
+<td width="30%" style="border:1px solid #ffffff ;">3:30 - 5:00pm<br>Location: South Ballroom</td>
+<td style="border:1px solid #ffffff ;">Big Data and Streaming Algorithms <br><b><i><a href="https://www.ece.iastate.edu/snt/sri">Dr. Srikanta Tirthapura</a></i></b></td>
+</tr>
+<tr width="100%" >
+<td width="30%" style="vertical-align:top">
+<a href="">      
+<img src="images/sri.jpg" width="800" ></a></td>
+<td width="70%" style="vertical-align:top">
+<p>
+<p><EM>About Dr. Srikanta Tirthapura:</EM>
+TBD 
+<a href="https://www.ece.iastate.edu/snt/">More</a></td>
+</p>
+</tr>
+          
+                                                                                              
+                                                                                              
+               
+</tbody>
+</table>
+			<!-- </div> -->
+</article><!-- #post-25 -->
+
+<!--#include virtual="includes/footer.html"-->

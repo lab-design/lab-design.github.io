@@ -1,0 +1,119 @@
+<!--#include virtual="includes/template/headTop.htm"-->  
+
+<!-- INSERT TITLE -->
+<title>Hridesh Rajan, Professor of Computer Science, Iowa State University</title>
+
+<!--#include virtual="includes/template/headBottom.htm"-->  
+
+<!-- Text for the actual webpage start -->
+
+<table width="100%">
+<tr>
+<td align="left" width="198">
+<p><IMG SRC="http://www.cs.iastate.edu/~hridesh/images/hrajan.jpg" width="198" align="left" alt="picture"></p>
+</td>
+
+<td width="5%">
+<p></p>
+</td>
+
+<td align="right">
+<p> 
+Professor <BR>
+<a href="http://www.cs.iastate.edu/">Department of Computer Science</a>, <BR>
+<a href="http://se.iastate.edu/">Software Engineering Program</a>, <BR>
+<a href="http://iac.iastate.edu/">Information Assurance Program</a>, and<BR>
+<a href="http://www.vrac.iastate.edu/hci/">Human Computer Interaction (HCI) Program</a><BR>
+<a href="http://iastate.edu/">Iowa State University</a><BR>
+226 Atanasoff Hall, Ames, IA, 50011 <BR>
+</p>
+
+<p>
+phone: +1-515-294-6168 <BR>
+email: <a href="mailto:hridesh@iastate.edu">hridesh@iastate.edu</a><BR>
+office: <a href="http://www.fpm.iastate.edu/maps/closeup.asp?left=423&top=1577&xshow=663&yshow=1767">105 Atanasoff Hall</a><BR>
+</p>
+
+<p>Ph.D., <a href="http://www.virginia.edu">The University of Virginia</a>, 2005<BR>
+   M.S., <a href="http://www.virginia.edu">The University of Virginia</a>, 2004<BR>
+   B.Tech., <a href="http://www.itbhu.ac.in/">Indian Institute of Technology (BHU)</a>, 2000</p>
+</p>
+
+
+<p>
+<a href="http://design.cs.iastate.edu">Laboratory for Software Design</a>
+</p>
+
+</td>
+</tr>
+<tr>
+<td colspan="3">
+
+<p class="heading">Major Awards and Honors</p>
+<UL>
+<LI> 
+2009 Early CAREER Award, <a href="http://nsf.gov">US National Science Foundation</a>
+</LI>
+<LI> 
+2010 Early Achievement in Research Award, <a href="http://las.iastate.edu">College of Liberal Arts & Science</a>, 
+<a href="http://iastate.edu">Iowa State University</a>
+</LI>
+</UL>
+</p>
+
+<p class="heading">Former Graduate Students</p>
+<UL>
+ <LI><a href="www.cs.iastate.edu/~mbagherz/">Mehdi Bagherzadeh</a> (PhD Summer'16, MS Fall'10), Assistant Professor at Oakland University</LI>
+ <LI><a href="www.cs.iastate.edu/~csgzlong/">Yuheng Long</a> (PhD Spring'16, MS Spring'10), Google</LI>
+ <LI><a href="www.cs.bgsu.edu/rdyer/">Robert Dyer</a> (PhD Fall'13, MS Fall'08), Assistant Professor at Bowling Green State University</LI>
+ <LI><a href="https://www.linkedin.com/in/tyler-sondag-92b757b">Tyler Sondag</a> (PhD Fall'11, MS Fall'09), Intel R&D</LI> 
+ <LI><a href="http://www.cs.iastate.edu/~smooney/">Sean L. Mooney</a> (MS Summer'15), SourceAllies</LI>
+ <LI><a href="http://www.cs.iastate.edu/~harish">Harish Narayanappa</a> (MS Spring'10), eBay</LI>
+ <LI><a href="http://www.cs.iastate.edu/~ywhanna">Youssef W. Hanna</a> (MS Fall'08), Google</LI>
+ <LI><a href="http://www.cs.iastate.edu/~rsetty">Rakesh Setty</a> (MS Fall'08), eBay</LI>
+ <LI><a href="http://www.cs.iastate.edu/~mahantes">Mahantesh Hosamani</a> (MS Fall'07), Ericsson</LI>
+</UL>
+
+
+<p class="heading">Research Interests</p>
+<UL>
+     <LI>Programming languages, software engineering, and compilers</LI>
+     <LI>Data science (also popularly known as Big Data),
+         especially software engineering of Big Data software.</LI>
+     <LI>Concurrency, especially modular reasoning about concurrency
+         correctness and performance. Scalable support for modular verification
+         of concurrency properties in compilers. </LI>
+     <LI>Advanced separation of concerns mechanisms such as events, reactive signals, and aspects
+         and modular reasoning about such mechanisms.
+</UL>
+
+<p class="heading">Key Projects (for details, see links on the left)</p>
+
+<p></p>
+<p>
+<table>
+<tr>
+<td>
+<a href="http://mbds.cs.iastate.edu">
+<IMG SRC="http://hridesh.github.io/images/bigdatasummerschool.jpg" height="75" align="right" alt="Midwest Big Data Summer School"></a>
+</td>
+<td>&nbsp;</td>
+<td>
+<a href="http://boa.cs.iastate.edu">
+<IMG SRC="https://hridesh.github.io/images/boa.png" height="75" align="right" alt="Boa Project"></a>
+</td>
+<td>&nbsp;</td>
+<td>
+<a href="http://paninij.org"><IMG SRC="https://hridesh.github.io/images/paninilogo.png" height="75" align="right" alt="Panini Project"></a>
+</td>
+</tr>
+</table>
+</p>
+</td>
+</tr>
+
+</table>
+
+<!-- Text for the actual webpage end -->
+
+<!--#include virtual="includes/template/footer.htm"--> 

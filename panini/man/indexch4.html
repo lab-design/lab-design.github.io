@@ -1,0 +1,812 @@
+<!DOCTYPE html> 
+<html> 
+<head><title>4 Capsule-oriented Design</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:light,regular,bold&amp;v1' rel='stylesheet' type='text/css' /> 
+<base href="/man/" /> 
+<link href="/style.css" rel="stylesheet" type="text/css" /> 
+<link href="/images/panini.ico" rel="shortcut icon" type="image/x-icon" /> 
+<!-- SYNTAX HIGHLIGHTING --> 
+<script type="text/javascript" src="/syntax/scripts/shCore.js"></script> 
+<script type="text/javascript" src="/syntax/scripts/shBrushBash.js"></script> 
+<script type="text/javascript" src="/syntax/scripts/shBrushJava.js"></script> 
+<script type="text/javascript" src="/syntax/scripts/shBrushPanini.js"></script> 
+<script type="text/javascript" src="/syntax/scripts/shBrushXml.js"></script> 
+<link type="text/css" rel="stylesheet" href="/syntax/styles/shCore.css"/> 
+<link type="text/css" rel="stylesheet" href="/syntax/styles/shThemeDefault.css"/> 
+<script type="text/javascript"> 
+//SyntaxHighlighter.config.clipboardSwf = 'scripts/clipboard.swf'; 
+SyntaxHighlighter.all(); 
+</script> 
+<!-- END SYTNAX HIGHLIGHTING --> 
+  
+<style type="text/css">  
+.col2-toc h2 {  
+margin: 0 0 10px;  
+}  
+</style>  
+ 
+<meta name="description"  
+content="The Panini Programming Guide helps introduce users to  
+the features and syntax of the Panini Programming Language.  
+Panini is a capsule-oriented programming language whose goals are  
+to ease development of correct, scalable, and portable software  
+for multicore and manycore, platforms.  
+Panini strives to reconcile modularity and concurrency goals  
+in software development." />  
+<meta name="keywords" content="panini, programming, guide, introduction, tutorial,  
+panini, capsule, capsules, capsule-oriented,  
+capsule-oriented programming, better modularity better concurrency,  
+concurrency, modularity, events, types, modules, implicit concurrency,  
+sequential consistency, data race freedom due to shared data, ease of use,  
+quantified, event, types, Hridesh Rajan, Yuheng Long,  
+Rex Fernando, Eric Lin, synergy between modularity and concurrency,  
+determinstic semantics, data race freedom, deadlock freedom,  
+multicore, multi-core, manycore, many-core, heterogeneous,  
+performance-asymmetric, platform portability, download, compiler,  
+download panini, concurrent, patterns, open effects, guarded effects,  
+explicit concurrency, pitfalls, data races, race conditions, deadlock  
+avoidance, race freedom, open effects, deterministic semantics, modules, actors" />  
+ 
+<!-- PAGE METADATA --> <link rel="stylesheet" type="text/css" href="index.css" /> 
+  
+<style type="text/css">  
+.lstlisting .label {  
+width: 100%;  
+font-size: 8pt;  
+}  
+</style>  
+  
+<style type="text/css">  
+.caption .content {  
+background-image: none;  
+background-position: left 12px;  
+background-repeat: no-repeat;  
+margin-left: 0;  
+margin-right: auto;  
+padding: 0 0 100px 50px;  
+width: 1070px;  
+}  
+</style>  
+  
+<style type="text/css">  
+.content {  
+width: 1070px;  
+}  
+</style>  
+  
+<style type="text/css">  
+.main-content {  
+background-image: url("/images/maincontent-right.png");  
+background-position:1028px 1px;  
+background-repeat: no-repeat;  
+width: 1021px;  
+}  
+</style>  
+  
+<style type="text/css">  
+.main-content .caption{  
+font-style: italic;  
+font-size: 8pt;  
+text-align: left;  
+width: 80 
+margin: 0 !important ;  
+}  
+</style>  
+</head>  
+<body>  
+<div class="body-container">  
+<header>  
+<h1><a href="index.html" name="pgtop">Panini Programming Language</a></h1>  
+<h2>PROGRAMMING LANGUAGE</h2>  
+</header>  
+<div class="content">  
+<div class="top-nav">  
+<nav>  
+<ul>  
+<li><a href="/about.shtml">About</a></li>  
+<li><a href="/people.shtml">People</a></li>  
+<li><a href="/download/">Downloads</a></li>  
+<li><a href="/papers.shtml">Research</a></li>  
+<li><a href="/man/">Manual</a></li>  
+<li><a href="/faq.shtml" id="toplast">FAQs</a></li>  
+</ul>  
+</nav>  
+</div>  
+<div class="main-content">  <h2 class="chapterHead"><span class="titlemark">Chapter&#x00A0;4</span><br /><a 
+ id="x8-140004"></a>Capsule-oriented Design</h2>
+                                                                         <div class="flushright" 
+>
+<!--l. 206--><p class="noindent" >
+<span 
+class="ptmri8t-x-x-90">Simplicity is the ultimate sophistication. &#8211; Leonardo da Vinci</span></p></div>
+   <h3 class="sectionHead"><span class="titlemark">4.1    </span> <a 
+ id="x8-150004.1"></a>Asteroids in Panini</h3>
+<!--l. 4--><p class="noindent" >We will illustrate capsule-oriented program design and Panini&#8217;s new features using a
+simplified version of the classic arcade game <span 
+class="pcrr8t-x-x-120">Asteroids</span>. In this game objective of
+the player is to score as many points as possible by destroying asteroids. In the
+simplified game, the player controls a ship that can move left or right. The ship can
+also fire.
+</p><!--l. 12--><p class="indent" >   For our problem, the subproblems are modeling the ship, game logic, user input,
+controller, and UI. The user input component would listen to the keyboard, parse the
+input, and direct the ship to make corresponding moves. The logic component would
+maintain the board configuration, generate new asteroids, compute whether any
+previously generated asteroids have been destroyed by the ship, and compute whether
+the ship has collided with an asteroid. The ship would move and fire rockets as
+directed by player. Finally, the controller would mediate the model and the
+view.
+</p><!--l. 24--><p class="indent" >   The modular structure of the system is clear from the description above, and it is
+not difficult to define five modules with appropriate methods corresponding to this
+design. However, the system will not yet work. The programmer is faced with a
+number of nontrivial decisions related to concurrency: Which of these components
+needs to be associated with an execution thread of its own? Which operations must be
+executed asynchronously? Where is synchronization going to be needed? A human
+expert might reach the following conclusions.
+</p><!--l. 39--><p class="indent" >
+      </p><ol  class="enumerate1" >
+      <li 
+  class="enumerate" id="x8-15002x1">An independent thread of control is needed to read the user input
+      </li>
+      <li 
+  class="enumerate" id="x8-15004x2">The UI, as usual, has its own event-handling thread of control. The calls
+      on the UI need to pass their data to the event handling thread via the UI
+      event queue
+      </li>
+                                                                         
+
+                                                                         
+      <li 
+  class="enumerate" id="x8-15006x3">The game logic needs to run in a separate thread of control; otherwise,
+      calls to update game state will &#8220;steal&#8221; the controller thread of control and
+      cause the game to become jittery
+      </li>
+      <li 
+  class="enumerate" id="x8-15008x4">The Ship class does not need a dedicated thread of control, however, its
+      methods need to be synchronized, since its data is accessed by both the
+      user input thread and the controller thread</li></ol>
+<!--l. 55--><p class="indent" >   None of the conclusions above, in itself, is difficult to implement in existing
+programming languages. Rather, in practice it is the process of visualizing the
+interactions between the components, in order to reach those conclusions, that is
+extremely challenging for programmers.
+</p><!--l. 62--><p class="indent" >   <span 
+class="ptmri8t-x-x-120">Capsule-oriented programming paradigm and the Panini language removes</span>
+<span 
+class="ptmri8t-x-x-120">most of this burden so that the programmer can focus on their application&#8217;s</span>
+<span 
+class="ptmri8t-x-x-120">logic.</span>
+</p><!--l. 65--><p class="noindent" >
+</p>
+   <h3 class="sectionHead"><span class="titlemark">4.2    </span> <a 
+ id="x8-160004.2"></a>Architecture and Design</h3>
+<!--l. 68--><p class="noindent" >In capsule-oriented programming better design leads to better implicit concurrency, so
+it is valuable to start off with the architecture and design.
+</p><!--l. 71--><p class="indent" >   The Panini programmer specifies a system as a collection of <span 
+class="pcrr8t-x-x-120">capsules</span>,
+<span 
+class="pcrr8t-x-x-120">signatures</span>, and ordinary object-oriented classes. A <span 
+class="pcrr8t-x-x-120">capsule </span>is an abstraction
+for decomposing software into its parts, and a <span 
+class="pcrr8t-x-x-120">design </span>is a mechanism for
+composing these parts together. So the first order of business is to come up
+with this <span 
+class="pcrr8t-x-x-120">capsule-oriented design</span>. This involves creating capsules,
+assigning subtasks to these capsules, designing how these capsules could
+be connected to each other, and finally integrating them to form a complete
+program. Each of these steps is fairly straightforward and is done entirely in the
+program.
+</p><!--l. 83--><p class="indent" >
+      </p><ol  class="enumerate1" >
+      <li 
+  class="enumerate" id="x8-16002x1"><span 
+class="ptmri8t-x-x-120">Create  capsules  and  assign  responsibilities  to  capsules.  </span>In  assigning
+                                                                         
+
+                                                                         
+      responsibility,  follow  the  information-hiding  principle.  There  are  four
+      design  decisions  that  are  likely  to  change:  ship&#8217;s  representation,  game
+      logic,  UI design,  and how we get input from the player.  Therefore,  we
+      must  hide  these  responsibility  behind  interfaces  of  separate  capsules.
+      Finally, capsule Asteroids would encapsulate the design decisions related
+      to controller logic.
+      <!--l. 94-->
+<a 
+ id="x8-16003r1"></a>
+<a 
+ id="x8-16004"></a>
+      <br /> <div class="caption" 
+><span class="id">Listing&#x00A0;4.1: </span><span  
+class="content">Design skeleton for Asteroids</span></div><!--tex4ht:label?: x8-16003r4.2 --><div class="lstlisting" id="listing-10"><span class="label"><a 
+ id="x8-16005r1"></a></span>&#x00A0;<span 
+class="ptmb8t-x-x-120">capsule</span>&#x00A0;Ship()&#x00A0;{&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x8-16006r2"></a></span>&#x00A0;<span 
+class="ptmb8t-x-x-120">capsule</span>&#x00A0;Game()&#x00A0;{&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x8-16007r3"></a></span>&#x00A0;<span 
+class="ptmb8t-x-x-120">capsule</span>&#x00A0;UI()&#x00A0;{&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x8-16008r4"></a></span>&#x00A0;<span 
+class="ptmb8t-x-x-120">capsule</span>&#x00A0;Input()&#x00A0;{&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x8-16009r5"></a></span>&#x00A0;<span 
+class="ptmb8t-x-x-120">capsule</span>&#x00A0;Asteroids&#x00A0;()&#x00A0;{&#x00A0;}
+      
+      </div>
+      <!--l. 103--><p class="noindent" >This decision, to implement these components using the capsule abstraction,
+      automatically handles four concurrency concerns mentioned above. Each
+      capsule behaves as if it has an independent thread of control, which resolves
+      issues 1-3 above. Only a single thread of control can ever access a capsule&#8217;s
+      data, which resolves the fourth issue.
+      </p><!--l. 111--><p class="noindent" >This illustrates the value proposition of the programming paradigm and the
+      programming language: to enable greater program modularity and in doing so
+      automatically enable greater program concurrency. Observe that Panini does not
+      use explicit concurrency features. Instead, the programmer modularizes a
+      program using capsules, which implicitly specify boundaries outside of which
+      concurrency can occur. The Panini runtime will automatically enable
+      concurrency in between the boundaries of capsules when safe to do
+      so.
+      </p><!--l. 122--><p class="noindent" >Programmers familiar with the notion of actors may notice some similarities.
+      However, capsules differs from extant work on actors in three significant
+      ways that we believe is helpful for programmers. First, all inter-capsule
+      communication is logically synchronous. Second, capsules, by default,
+      provide confinement without requiring additional annotations from
+      programmers. Third, topology of a capsule-oriented program is fixed at
+      compile-time, which aids in static analysis of properties such as sequential
+      consistency and confinement and with some implementation algorithms, e.g.
+      garbage collection. Here, by topology we mean capsule instances and their
+      interconnections.
+                                                                         
+
+                                                                         
+      </p><!--l. 136--><p class="noindent" >Capsule-oriented programming eliminates two classes of concurrency errors by
+      construction: sequential inconsistency and race conditions due to shared
+      data.
+      </p></li>
+      <li 
+  class="enumerate" id="x8-16011x2"><span 
+class="ptmri8t-x-x-120">Design interconnection between capsules. </span>We do not yet know the
+      interconnection between these five capsules, but it seems to be the case that
+      Input ought to direct the ship to take actions, and UI might need information
+      from Game to present it. Finally, controller Ateroids would need to talk to all of
+      the capsules to be able to control their actions. We can use this knowledge to
+      refine our architecture and design.
+      <!--l. 153-->
+<a 
+ id="x8-16012r2"></a>
+<a 
+ id="x8-16013"></a>
+      <br /> <div class="caption" 
+><span class="id">Listing&#x00A0;4.2: </span><span  
+class="content">Interconnection between Capsules in Design for Asteroids</span></div><!--tex4ht:label?: x8-16012r4.2 --><div class="lstlisting" id="listing-11"><span class="label"><a 
+ id="x8-16014r1"></a></span>&#x00A0;<span 
+class="ptmb8t-x-x-120">capsule</span>&#x00A0;Ship()&#x00A0;{&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x8-16015r2"></a></span>&#x00A0;<span 
+class="ptmb8t-x-x-120">capsule</span>&#x00A0;Game()&#x00A0;{&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x8-16016r3"></a></span>&#x00A0;<span 
+class="ptmb8t-x-x-120">capsule</span>&#x00A0;UI(Game&#x00A0;g)&#x00A0;{&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x8-16017r4"></a></span>&#x00A0;<span 
+class="ptmb8t-x-x-120">capsule</span>&#x00A0;Input(Ship&#x00A0;s)&#x00A0;{&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x8-16018r5"></a></span>&#x00A0;<span 
+class="ptmb8t-x-x-120">capsule</span>&#x00A0;Asteroids&#x00A0;()&#x00A0;{&#x00A0;}
+      
+      </div>
+      <!--l. 162--><p class="noindent" >The third line says that the UI capsule could be connected with an external
+      Game capsule. Alternatively, we could read the third line as: &#8220;the UI capsule
+      requires a Game capsule.&#8221; The fourth line says that the Input capsule could be
+      connected with an external Ship capsule, and the first, the second, and the fifth
+      lines says that the Ship, the Game, and the Asteroids capsules may not be
+      connected to any other external capsules.
+      </p></li>
+      <li 
+  class="enumerate" id="x8-16020x3"><span 
+class="ptmri8t-x-x-120">Integrate capsules to form a complete program. </span>We now know that this program
+      would require one Ship, one UI, one Game, and an Input. These will be
+      co-ordinated by a controller. At this time, we can choose between two
+      alternative designs: have the controller capsule Astroid contain other capsules,
+      or create a new Capsule for that responsibility. We choose to assign this
+      responsibility to the Astroid example, but the other choice is certainly
+      feasible.
+      <!--l. 183--><p class="noindent" >The listing below shows this design of the Asteroids program.
+</p>
+      <!--l. 185-->
+                                                                         
+
+                                                                         
+<a 
+ id="x8-16021r3"></a>
+<a 
+ id="x8-16022"></a>
+      <br /> <div class="caption" 
+><span class="id">Listing&#x00A0;4.3: </span><span  
+class="content">Complete Capsule-oriented Design for Asteroids</span></div><!--tex4ht:label?: x8-16021r4.2 --><div class="lstlisting" id="listing-12"><span class="label"><a 
+ id="x8-16023r1"></a></span>&#x00A0;<span 
+class="ptmb8t-x-x-120">capsule</span>&#x00A0;Ship()&#x00A0;{&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x8-16024r2"></a></span>&#x00A0;<span 
+class="ptmb8t-x-x-120">capsule</span>&#x00A0;Game()&#x00A0;{&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x8-16025r3"></a></span>&#x00A0;<span 
+class="ptmb8t-x-x-120">capsule</span>&#x00A0;UI(Game&#x00A0;g)&#x00A0;{&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x8-16026r4"></a></span>&#x00A0;<span 
+class="ptmb8t-x-x-120">capsule</span>&#x00A0;Input(Ship&#x00A0;s)&#x00A0;{&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x8-16027r5"></a></span>&#x00A0;<span 
+class="ptmb8t-x-x-120">capsule</span>&#x00A0;Asteroids&#x00A0;()&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x8-16028r6"></a></span>&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">design</span>&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x8-16029r7"></a></span>&#x00A0;&#x00A0;&#x00A0;Ship&#x00A0;s;&#x00A0;UI&#x00A0;ui;&#x00A0;Game&#x00A0;g;&#x00A0;Input&#x00A0;i;&#x00A0;<br /><span class="label"><a 
+ id="x8-16030r8"></a></span>&#x00A0;&#x00A0;&#x00A0;ui(g);&#x00A0;i(s);&#x00A0;<br /><span class="label"><a 
+ id="x8-16031r9"></a></span>&#x00A0;&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x8-16032r10"></a></span>&#x00A0;}
+      
+      </div>
+      <!--l. 198--><p class="noindent" >Lines six to nine are the new parts of the design for this system. They define the
+      internal design for the Asteroids capsule. This declarative design says that this
+      capsule would have four internal components, one of each kind defined
+      previously. In other word, one <span 
+class="pcrr8t-x-x-120">capsule instance </span>s of kind Ship, another
+      instance ui of kind UI, an instance g of kind Game, and another instance i of
+      kind Input.
+      </p><!--l. 206--><p class="noindent" >Unlike object instances, capsules instances do not need to be created using
+      a <span 
+class="pcrr8t-x-x-120">new </span>expression. It is sufficient to just declare them like line seven
+      above.
+      </p><!--l. 211--><p class="noindent" >Line eight defines interconnections between capsule instances. Line eight says
+      that the capsule instance ui would be connected with the capsule instance g
+      and capsule instance i would be connected with the capsule instance
+      s.
+      </p></li>
+      <li 
+  class="enumerate" id="x8-16034x4"><span 
+class="ptmri8t-x-x-120">Check the design. </span>A nice property of Panini is that once you have written the
+      high-level design above, you can check it using the Panini compiler to find out
+      whether you got the capsule definitions and their interconnections right. Copy
+      and paste the code above in a file Asteroids.java and compile it using the Panini
+      compiler.
+      <!--l. 224--><p class="noindent" >To compile this program simply run:<br 
+class="newline" />&#x00A0;&#x00A0;        <span 
+class="pcrb8t-x-x-120">$</span><span 
+class="pcrb8t-x-x-120">&#x00A0;panc</span><span 
+class="pcrb8t-x-x-120">&#x00A0;Asteroids.java</span>
+      </p><!--l. 226--><p class="noindent" >This program is not yet executable, but with a small change we can
+      make it executable by adding a <span 
+class="pcrr8t-x-x-120">run </span>procedure in the <span 
+class="pcrr8t-x-x-120">Asteroids</span>
+      capsule.
+</p>
+      <!--l. 229-->
+<a 
+ id="x8-16035r4"></a>
+<a 
+ id="x8-16036"></a>
+      <br /> <div class="caption" 
+><span class="id">Listing&#x00A0;4.4: </span><span  
+class="content">Executable Capsule-oriented Design for Asteroids</span></div><!--tex4ht:label?: x8-16035r4.2 --><div class="lstlisting" id="listing-13"><span class="label"><a 
+ id="x8-16037r1"></a></span>&#x00A0;<span 
+class="ptmb8t-x-x-120">capsule</span>&#x00A0;Ship()&#x00A0;{&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x8-16038r2"></a></span>&#x00A0;<span 
+class="ptmb8t-x-x-120">capsule</span>&#x00A0;Game()&#x00A0;{&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x8-16039r3"></a></span>&#x00A0;<span 
+class="ptmb8t-x-x-120">capsule</span>&#x00A0;UI(Game&#x00A0;g)&#x00A0;{&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x8-16040r4"></a></span>&#x00A0;<span 
+class="ptmb8t-x-x-120">capsule</span>&#x00A0;Input(Ship&#x00A0;s)&#x00A0;{&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x8-16041r5"></a></span>&#x00A0;<span 
+class="ptmb8t-x-x-120">capsule</span>&#x00A0;Asteroids&#x00A0;()&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x8-16042r6"></a></span>&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">design</span>&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x8-16043r7"></a></span>&#x00A0;&#x00A0;&#x00A0;Ship&#x00A0;s;&#x00A0;UI&#x00A0;ui;&#x00A0;Game&#x00A0;g;&#x00A0;Input&#x00A0;i;&#x00A0;<br /><span class="label"><a 
+ id="x8-16044r8"></a></span>&#x00A0;&#x00A0;&#x00A0;ui(g);&#x00A0;i(s);&#x00A0;<br /><span class="label"><a 
+ id="x8-16045r9"></a></span>&#x00A0;&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x8-16046r10"></a></span>&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">void</span>&#x00A0;run()&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x8-16047r11"></a></span>&#x00A0;&#x00A0;&#x00A0;System.out.println("TODO:&#x2423;fill&#x2423;in&#x2423;implementation");&#x00A0;<br /><span class="label"><a 
+ id="x8-16048r12"></a></span>&#x00A0;&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x8-16049r13"></a></span>&#x00A0;}
+                                                                         
+
+                                                                         
+      
+      </div>
+      <!--l. 245--><p class="noindent" >To compile this program simply run:<br 
+class="newline" />&#x00A0;&#x00A0;        <span 
+class="pcrb8t-x-x-120">$</span><span 
+class="pcrb8t-x-x-120">&#x00A0;panc</span><span 
+class="pcrb8t-x-x-120">&#x00A0;Asteroids.java</span><br 
+class="newline" />&#x00A0;&#x00A0;        You can then run this panini program with:<br 
+class="newline" />&#x00A0;&#x00A0;        <span 
+class="pcrb8t-x-x-120">$</span><span 
+class="pcrb8t-x-x-120">&#x00A0;panini</span><span 
+class="pcrb8t-x-x-120">&#x00A0;Asteroids</span><br 
+class="newline" />&#x00A0;&#x00A0;&#x00A0;            <span 
+class="pcrro8t-x-x-120">TODO: fill in implementation</span><br 
+class="newline" />
+</p>
+      </li></ol>
+<!--l. 250--><p class="noindent" >
+</p>
+   <h3 class="sectionHead"><span class="titlemark">4.3    </span> <a 
+ id="x8-170004.3"></a>Implementation</h3>
+<!--l. 254--><p class="noindent" >
+      </p><ol  class="enumerate1" >
+      <li 
+  class="enumerate" id="x8-17002x1"><span 
+class="ptmri8t-x-x-120">Capsule  Ship.  </span>We  can  now  start  specifying  behavior  of  each  of  these
+      capsules. The behavior of capsule ship is fairly straightforward, it should
+      provide facilities to move left and right, to fire, to kill itself, and to check
+      its position and state.
+      <!--l. 261--><p class="noindent" >The  behavior  of  the  capsule  Ship  requires  keeping  track  of  its  position
+      and  its  condition.  In  Panini,  a  capsule  can  declare  states  to  keep  track
+      of  such  pieces  of  information.  A  state  declaration  is  syntactically  the
+      same as a field declaration in object-oriented languages, however, it differs
+      semantically in two ways: first, a state is private to a capsule (there are no
+      public, protected, or static modifiers.), second, all the memory locations
+      that can be reached via this state are uniquely owned by the containing
+      capsule instance. Other capsule instances may not directly access it.
+</p>
+      <!--l. 272-->
+                                                                         
+
+                                                                         
+<a 
+ id="x8-17003r5"></a>
+<a 
+ id="x8-17004"></a>
+      <br /> <div class="caption" 
+><span class="id">Listing&#x00A0;4.5: </span><span  
+class="content">Capsule Ship and its States</span></div><!--tex4ht:label?: x8-17003r4.3 --><div class="lstlisting" id="listing-14"><span class="label"><a 
+ id="x8-17005r1"></a></span>&#x00A0;<span 
+class="ptmb8t-x-x-120">capsule</span>&#x00A0;Ship&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x8-17006r2"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">short</span>&#x00A0;state&#x00A0;=&#x00A0;0;&#x00A0;<br /><span class="label"><a 
+ id="x8-17007r3"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">int</span>&#x00A0;x&#x00A0;=&#x00A0;5;&#x00A0;<br /><span class="label"><a 
+ id="x8-17008r4"></a></span>&#x00A0;}
+      
+      </div>
+      <!--l. 279--><p class="noindent" >The listing above shows two states on lines 2 and 3. You could also write state
+      initializers to give them initial values, or you could write a capsule initializer as
+      shown in the listing below.
+</p>
+      <!--l. 285-->
+<a 
+ id="x8-17009r6"></a>
+<a 
+ id="x8-17010"></a>
+      <br /> <div class="caption" 
+><span class="id">Listing&#x00A0;4.6: </span><span  
+class="content">Capsule Ship with an Initializer</span></div><!--tex4ht:label?: x8-17009r4.3 --><div class="lstlisting" id="listing-15"><span class="label"><a 
+ id="x8-17011r1"></a></span>&#x00A0;<span 
+class="ptmb8t-x-x-120">capsule</span>&#x00A0;Ship&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x8-17012r2"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">short</span>&#x00A0;state;&#x00A0;<br /><span class="label"><a 
+ id="x8-17013r3"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">int</span>&#x00A0;x;&#x00A0;<br /><span class="label"><a 
+ id="x8-17014r4"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;=&#x003E;&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x8-17015r5"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;state&#x00A0;=&#x00A0;0;&#x00A0;<br /><span class="label"><a 
+ id="x8-17016r6"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;x&#x00A0;=&#x00A0;5;&#x00A0;<br /><span class="label"><a 
+ id="x8-17017r7"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x8-17018r8"></a></span>&#x00A0;}
+      
+      </div>
+      <!--l. 297--><p class="noindent" >To allow other capsules to change its state, a capsule can provide capsule
+      procedures, procedures for short. A capsule procedure is syntactically similar to
+      methods in object-oriented languages, however, they are different semantically
+      in two ways: first, a capsule procedures is by default public (although private
+      helper procedures can be declared using the private keyword), and second a
+      procedure invocation is guaranteed to be logically synchronous. In some cases,
+      Panini may be able to run procedures in parallel to improve concurrency in
+      Panini programs. Several example procedures of the capsule Ship are shown
+      below.
+</p>
+      <!--l. 309-->
+<a 
+ id="x8-17019r7"></a>
+<a 
+ id="x8-17020"></a>
+      <br /> <div class="caption" 
+><span class="id">Listing&#x00A0;4.7: </span><span  
+class="content">Complete Implementation of the Capsule Ship</span></div><!--tex4ht:label?: x8-17019r4.3 --><div class="lstlisting" id="listing-16"><span class="label"><a 
+ id="x8-17021r1"></a></span>&#x00A0;<span 
+class="ptmb8t-x-x-120">capsule</span>&#x00A0;Ship&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x8-17022r2"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">short</span>&#x00A0;state&#x00A0;=&#x00A0;0;&#x00A0;<br /><span class="label"><a 
+ id="x8-17023r3"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">void</span>&#x00A0;die()&#x00A0;{&#x00A0;state&#x00A0;=&#x00A0;2;&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x8-17024r4"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">void</span>&#x00A0;fire()&#x00A0;{&#x00A0;state&#x00A0;=&#x00A0;1;&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x8-17025r5"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">boolean</span>&#x00A0;alive()&#x00A0;{&#x00A0;<span 
+class="ptmb8t-x-x-120">return</span>&#x00A0;state&#x00A0;!=&#x00A0;2;&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x8-17026r6"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">boolean</span>&#x00A0;isFiring()&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x8-17027r7"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">if</span>(state&#x00A0;==&#x00A0;1)&#x00A0;{&#x00A0;state&#x00A0;=&#x00A0;0;&#x00A0;<span 
+class="ptmb8t-x-x-120">return</span>&#x00A0;<span 
+class="ptmb8t-x-x-120">true</span>;&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x8-17028r8"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">return</span>&#x00A0;<span 
+class="ptmb8t-x-x-120">false</span>;&#x00A0;<br /><span class="label"><a 
+ id="x8-17029r9"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x8-17030r10"></a></span>&#x00A0;<br /><span class="label"><a 
+ id="x8-17031r11"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">int</span>&#x00A0;x&#x00A0;=&#x00A0;5;&#x00A0;<br /><span class="label"><a 
+ id="x8-17032r12"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">int</span>&#x00A0;getPos()&#x00A0;{&#x00A0;<span 
+class="ptmb8t-x-x-120">return</span>&#x00A0;x;&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x8-17033r13"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">void</span>&#x00A0;moveLeft()&#x00A0;{&#x00A0;<span 
+class="ptmb8t-x-x-120">if</span>&#x00A0;(x&#x003E;0)&#x00A0;x<span 
+class="zptmcm7y-x-x-120">-</span><span 
+class="zptmcm7y-x-x-120">-</span>;&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x8-17034r14"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">void</span>&#x00A0;moveRight()&#x00A0;{&#x00A0;<span 
+class="ptmb8t-x-x-120">if</span>&#x00A0;(x&#x003C;10)&#x00A0;x++;&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x8-17035r15"></a></span>&#x00A0;}
+      
+      </div>
+      <!--l. 327--><p class="noindent" ><span 
+class="ptmri8t-x-x-120">Concurrency concerns in Ship&#8217;s Design. </span>Recall from our previous discussion
+      that a ship&#8217;s data is accessed by both the user input component and the controller
+                                                                         
+
+                                                                         
+      component. Therefore, in an object-oriented design a human expert may
+      conclude that all of its procedures need to be synchronized. A capsule&#8217;s
+      semantics gives this behavior by default: it ensures that the ship&#8217;s data is
+      accessed only by a single thread of control, ever. Thus, this concurrency concern
+      is automatically addressed.
+      </p></li>
+      <li 
+  class="enumerate" id="x8-17037x2"><span 
+class="ptmri8t-x-x-120">Capsule Asteroids. </span>The behavior of the capsule Asteroids is specially
+      interesting. This capsule declares an autonomous capsule procedure run on line
+      six. Capsule Asteroids is a closed capsule
+      <!--l. 345--><p class="noindent" >A capsule is considered closed, if it does not require access to external capsule
+      instances. In our example, Asteroids is a closed capsule, whereas Input is not. A
+      closed capsule is a complete Panini program, and if it defines autonomous
+      behavior, it can be executed.
+</p>
+      <!--l. 352-->
+<a 
+ id="x8-17038r8"></a>
+<a 
+ id="x8-17039"></a>
+      <br /> <div class="caption" 
+><span class="id">Listing&#x00A0;4.8: </span><span  
+class="content">Capsule Asteroids</span></div><!--tex4ht:label?: x8-17038r4.3 --><div class="lstlisting" id="listing-17"><span class="label"><a 
+ id="x8-17040r1"></a></span><span 
+class="ptmb8t-x-x-120">capsule</span>&#x00A0;Asteroids&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x8-17041r2"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">design</span>&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x8-17042r3"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;Ship&#x00A0;s;&#x00A0;UI&#x00A0;ui;&#x00A0;Game&#x00A0;g;&#x00A0;Input&#x00A0;i;&#x00A0;<br /><span class="label"><a 
+ id="x8-17043r4"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;ui(l);&#x00A0;i(s);&#x00A0;<br /><span class="label"><a 
+ id="x8-17044r5"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x8-17045r6"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">void</span>&#x00A0;run()&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x8-17046r7"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">int</span>&#x00A0;points&#x00A0;=&#x00A0;0;&#x00A0;<br /><span class="label"><a 
+ id="x8-17047r8"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">while</span>(s.alive())&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x8-17048r9"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">int</span>&#x00A0;shipPos&#x00A0;=&#x00A0;s.getPos();&#x00A0;<br /><span class="label"><a 
+ id="x8-17049r10"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">boolean</span>&#x00A0;isFiring&#x00A0;=&#x00A0;s.isFiring();&#x00A0;<br /><span class="label"><a 
+ id="x8-17050r11"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">int</span>&#x00A0;result&#x00A0;=&#x00A0;g.step(shipPos,&#x00A0;isFiring);&#x00A0;<br /><span class="label"><a 
+ id="x8-17051r12"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">if</span>(result&#x003E;0)&#x00A0;points&#x00A0;+=&#x00A0;result;&#x00A0;<br /><span class="label"><a 
+ id="x8-17052r13"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">else</span>&#x00A0;<span 
+class="ptmb8t-x-x-120">if</span>&#x00A0;(result&#x003C;0)&#x00A0;s.die();&#x00A0;<br /><span class="label"><a 
+ id="x8-17053r14"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;ui.repaint(shipPos,&#x00A0;isFiring,&#x00A0;points);&#x00A0;<br /><span class="label"><a 
+ id="x8-17054r15"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;yield(1000);&#x00A0;<br /><span class="label"><a 
+ id="x8-17055r16"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x8-17056r17"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;ui.endGame();&#x00A0;<br /><span class="label"><a 
+ id="x8-17057r18"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x8-17058r19"></a></span>}
+      
+      </div>
+      <!--l. 374--><p class="noindent" >The execution of this program begins by allocating memory for all capsule
+      instances, and connecting them together as specified in the design declaration on
+      lines 2-5. Recall that capsule parameters define the other capsule instances
+      required for a capsule to function. A capsule listed in another capsule&#8217;s
+      parameter list can be sent messages from that capsule. Design declarations allow
+      a programmer to define the connections between individual capsule instances.
+      These connections are established before execution of any capsule instance
+      begins.
+      </p><!--l. 385--><p class="noindent" >Next, any capsule with a run procedure begins executing independently as soon
+      as the initialization and interconnection of all capsules is complete and
+      may generate calls to the procedures of other capsules. For example,
+      referring to the code above, capsule Asteroids will run code on 6-18.
+      Capsules without a run procedure, such as Ship, perform computation only
+      when their procedures are invoked. For example, on lines 8,9,10, and 13
+      procedures of the capsule Ship are invoked on the capsule instance
+                                                                         
+
+                                                                         
+      s.
+      </p></li>
+      <li 
+  class="enumerate" id="x8-17060x3"><span 
+class="ptmri8t-x-x-120">Capsule Input. </span>A simple implementation of the capsule Input is shown
+      below.
+      <!--l. 404-->
+<a 
+ id="x8-17061r9"></a>
+<a 
+ id="x8-17062"></a>
+      <br /> <div class="caption" 
+><span class="id">Listing&#x00A0;4.9: </span><span  
+class="content">Capsule Input in Asteroids</span></div><!--tex4ht:label?: x8-17061r4.3 --><div class="lstlisting" id="listing-18"><span class="label"><a 
+ id="x8-17063r1"></a></span><span 
+class="ptmb8t-x-x-120">capsule</span>&#x00A0;Input&#x00A0;(Ship&#x00A0;ship)&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x8-17064r2"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">void</span>&#x00A0;run(){&#x00A0;<br /><span class="label"><a 
+ id="x8-17065r3"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">try</span>&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x8-17066r4"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">while</span>(ship.alive())&#x00A0;<br /><span class="label"><a 
+ id="x8-17067r5"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">switch</span>(System.in.read())&#x00A0;{&#x00A0;<br /><span class="label"><a 
+ id="x8-17068r6"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">case</span>&#x00A0;106:&#x00A0;ship.moveLeft();&#x00A0;<span 
+class="ptmb8t-x-x-120">break</span>;&#x00A0;<span 
+class="ptmri8t-x-x-120">//</span><span 
+class="ptmri8t-x-x-120">Key</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">j</span>&#x00A0;<br /><span class="label"><a 
+ id="x8-17069r7"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">case</span>&#x00A0;108:&#x00A0;ship.moveRight();&#x00A0;<span 
+class="ptmb8t-x-x-120">break</span>;<span 
+class="ptmri8t-x-x-120">//</span><span 
+class="ptmri8t-x-x-120">Key</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">l</span>&#x00A0;<br /><span class="label"><a 
+ id="x8-17070r8"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;<span 
+class="ptmb8t-x-x-120">case</span>&#x00A0;105:&#x00A0;ship.fire();&#x00A0;<span 
+class="ptmb8t-x-x-120">break</span>;&#x00A0;<span 
+class="ptmri8t-x-x-120">//</span><span 
+class="ptmri8t-x-x-120">Key</span><span 
+class="ptmri8t-x-x-120">&#x00A0;</span><span 
+class="ptmri8t-x-x-120">k</span>&#x00A0;<br /><span class="label"><a 
+ id="x8-17071r9"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x8-17072r10"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;}&#x00A0;<span 
+class="ptmb8t-x-x-120">catch</span>&#x00A0;(IOException&#x00A0;ioe)&#x00A0;{}&#x00A0;<br /><span class="label"><a 
+ id="x8-17073r11"></a></span>&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;&#x00A0;}&#x00A0;<br /><span class="label"><a 
+ id="x8-17074r12"></a></span>}
+      
+      </div>
+      <!--l. 419--><p class="noindent" >This implementation continually checks for user input and directs the ship to
+      move left, right or fire based on the key pressed.
+      </p><!--l. 423--><p class="noindent" ><span 
+class="ptmri8t-x-x-120">Concurrency concerns in Input&#8217;s Design. </span>Note that the semantics of a capsule,
+      i.e. each capsule instance runs as if it has a logically, independent thread of
+      control, naturally satisfies the requirements of the Input capsule.
+      </p></li>
+      <li 
+  class="enumerate" id="x8-17076x4"><span 
+class="ptmri8t-x-x-120">Capsules Game and UI. </span>These capsules implement the game logic and a
+      user interface that shows position of the ship, and the asteroids. A full
+      implementation is available in the Panini distribution.
+      </li></ol>
+<!--l. 439--><p class="noindent" >
+</p>
+   <h3 class="sectionHead"><span class="titlemark">4.4    </span> <a 
+ id="x8-180004.4"></a>Analysis of Benefits</h3>
+<!--l. 442--><p class="noindent" >This example illustrates some of the key advantages of the capsule-oriented approach
+for programmers. These are: </p>
+      <ul class="itemize1">
+      <li class="itemize">They  don&#8217;t  need  to  create  explicit  threads  or  specify  whether  a  given
+      capsule needs its own thread of execution.
+                                                                         
+
+                                                                         
+      </li>
+      <li class="itemize">They don&#8217;t need to recognize or reason about potential data races due to
+      shared data.
+      </li>
+      <li class="itemize">They work within a familiar method-call style interface with a reasonable
+      expectation of sequential consistency.
+      </li>
+      <li class="itemize">All  synchronization-related  details  are  abstracted  away  and  are  fully
+      transparent to them.
+      </li></ul>
+<!--l. 463--><p class="noindent" >
+</p>
+   <h3 class="sectionHead"><span class="titlemark">4.5    </span> <a 
+ id="x8-190004.5"></a>Compiling and running Asteroids!</h3>
+<!--l. 466--><p class="noindent" >If you haven&#8217;t installed the Panini compiler yet then please see chapter&#x00A0;<a 
+href="indexch13.html#x20-7100013">13<!--tex4ht:ref: chap:running --></a> on
+installing and running the compiler.
+</p><!--l. 469--><p class="indent" >   You should have received a copy of the full <span 
+class="pcrr8t-x-x-120">Asteroids </span>program as part of the
+Panini distribution. This program is located in the directory <span 
+class="pcrr8t-x-x-120">examples </span>within the
+Panini distribution. Copy and save it, say, to the file <span 
+class="pcrr8t-x-x-120">Asteroids.java </span>in your local
+directory. If you have put the Panini compiler and the Panini executable in your path,
+you can compile the program by simply running:
+</p><!--l. 478--><p class="indent" >   To compile this program simply run:<br 
+class="newline" />&#x00A0;&#x00A0;        <span 
+class="pcrb8t-x-x-120">$</span><span 
+class="pcrb8t-x-x-120">&#x00A0;panc</span><span 
+class="pcrb8t-x-x-120">&#x00A0;Asteroids.java</span><br 
+class="newline" />&#x00A0;&#x00A0;        You can then run this panini program with:<br 
+class="newline" />&#x00A0;&#x00A0;        <span 
+class="pcrb8t-x-x-120">$</span><span 
+class="pcrb8t-x-x-120">&#x00A0;panini</span><span 
+class="pcrb8t-x-x-120">&#x00A0;Asteroids</span><br 
+class="newline" />&#x00A0;&#x00A0;&#x00A0;            <br 
+class="newline" />Where Asteroids is the name of the closed capsule that contains other capsule
+instances.
+</p><!--l. 482--><p class="indent" >   Now that you&#8217;ve done your first capsule-oriented design it is time to systematically
+familiarize yourself with different features of the Panini programming language.
+                                                                         
+
+                                                                         
+</p><!--l. 212--><p class="indent" >   <div class="page-nav"><a 
+href="indexch3.html" >&#x003C; PREVIOUS</a></div><div class="page-nav"><a 
+href="indexch4.html" >^ RETURN TO TOP</a></div>     
+</div><!--end-main-content-->  
+</div><!--end-content-->  
+</div> <!--end-body-container-->  
+ 
+<div class="footer-container">  
+<div class="footer">  
+<div class="bot-nav">  
+<nav>  
+<ul>  
+<li><a href="/about.shtml">About</a></li>  
+<li><a href="/people.shtml">People</a></li>  
+<li><a href="/download/">Downloads</a></li>  
+<li><a href="/papers.shtml">Research</a></li>  
+<li><a href="/man/">Documentation</a></li>  
+<li><a href="/faq.shtml" id="botlast">FAQs</a></li>  
+</ul>  
+</nav>  
+</div>  
+<div class="legal">  
+<div id="isu">Iowa State University</div>  
+<p id="copyright">  
+<script type="text/javascript">  
+copyright=new Date()  
+fullYear=copyright.getFullYear();  
+document.write("Copyright &copy; " + fullYear + " Iowa State University of Science and Technology. All rights reserved.")  
+</script>  
+</p>  
+<p id="credits">  
+These pages describe work carried out on the design  
+and the implementation of the Panini programming language.  
+The PI is  
+<a href="http://www.cs.iastate.edu/\protect \unhbox \voidb@x \penalty \@M \relax \unhbox \voidb@x \special {t4ht@+&{35}x00A0{59}}x{}hridesh/">Hridesh Rajan</a> from  
+<a href="http://www.cs.iastate.edu">Iowa State University</a>.  
+This work is supported in part by  
+the US <a href="http://www.nsf.gov">National Science Foundation</a> (NSF) under grants  
+<a href="http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=0846059">CCF-08-46059</a>,  
+<a href="http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=1017334">CCF-10-17334</a>,  
+<a href="http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=1117937">CCF-11-17937</a>, and  
+<a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1423370">CCF-14-23370</a> to Rajan.  
+Any opinions, findings, and conclusions or recommendations  
+expressed in this material are those of the author(s) and do not  
+necessarily reflect the views of the <a href="http://www.nsf.gov">NSF</a>.  
+</p>  
+</div>  
+<div class="links">  
+<h3>Related Sites</h3>  
+<ul>  
+<li><a href="http://www.cs.iastate.edu/\protect \unhbox \voidb@x \penalty \@M \relax \unhbox \voidb@x \special {t4ht@+&{35}x00A0{59}}x{}design/">Labratory for Software Design</a></li>  
+<li><a href="http://www.cs.iastate.edu/">Computer Science Department</a></li>  
+<li><a href="http://www.iastate.edu/">Iowa State University</a></li>  
+</ul>  
+</div>  
+</div>  
+</div>  
+ 
+<script type="text/javascript">  
+//Analytics account -- http://paninij.sourceforge.net  
+var _gaq = _gaq || [];  
+_gaq.push(['_setAccount', 'UA-15725511-1']);  
+_gaq.push(['_trackPageview']);  
+ 
+(function() {  
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;  
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';  
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);  
+})();  
+</script>  
+</body> 
+</html>

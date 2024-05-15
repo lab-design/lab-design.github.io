@@ -1,0 +1,62 @@
+<form method=POST action="../cgi-bin/comp-new.cgi" enctype="multipart/form-data">
+  <TABLE BORDER=0 CELLSPACING="0">
+  <TR><TD COLSPAN=2><!-- ERRORS --></TD></TR>
+  <TR><TD COLSPAN=2>&nbsp;</TD></TR>
+  <TR><TD ALIGN=RIGHT VALIGN=TOP>Code:</TD><TD><textarea cols="60" rows="25" name="code"><!-- default code --></textarea></TD></TR>
+  <TR><TD ALIGN=RIGHT>Language:</TD><TD><select name="lang">
+                      <option value="c">C</option>
+                      <option value="cpp">C++</option>
+                      <option value="f77">Fortran 77</option>
+                      <option value="f90">Fortran 90</option>
+                      </select></TD></TR>
+  <TR><TD ALIGN=RIGHT>File:</TD><TD><input name="codeFile" type="file"></TD></TR>
+  <TR><TD COLSPAN=2 ALIGN=CENTER><input name="uniqID" type="hidden" value=<!-- ID VALUE -->></TD></TR>
+  <TR><TD COLSPAN=2 ALIGN=CENTER><input name="prev" type="hidden" value=<!-- DEFAULT PREV -->><input type=reset>&nbsp;&nbsp;<input type=submit value=Send></TD></TR>
+  <TR><TD COLSPAN=2>&nbsp;</TD></TR>
+  <TR><TD COLSPAN=2>
+    <style type="text/css">
+      .legLoopBody { text-align: center; vertical-align: middle; border: 1px solid #000000; background-color: #fa8072; color: #FFFFFF; font-weight: bold; }
+      .legLoopCond { text-align: center; vertical-align: middle; border: 1px solid #000000; background-color: #98fb98; color: #FFFFFF; font-weight: bold; }
+      .legIfBody   { text-align: center; vertical-align: middle; border: 1px solid #000000; background-color: #add8e6; color: #FFFFFF; font-weight: bold; }
+      .legIfCond   { text-align: center; vertical-align: middle; border: 1px solid #000000; background-color: #d15fee; color: #FFFFFF; font-weight: bold; }
+      .legElseBody { text-align: center; vertical-align: middle; border: 1px solid #000000; background-color: #eeb422; color: #FFFFFF; font-weight: bold; }
+      .legSelfLoop { text-align: center; vertical-align: middle; border: 1px solid #000000; background-color: #c0c0c0; color: #FFFFFF; font-weight: bold; }
+    </style>
+
+    <TABLE BORDER=0 CELLSPACING="0">
+      <TR><TD COLSPAN=5><B><CENTER><H2>Legend</H2></CENTER></B></TD></TR>
+      <TR><TD COLSPAN=2><B>Block Types</B></TD><TD></TD><TD COLSPAN=2><B>Edge Types</B></TD></TR>
+      <TR><TD COLSPAN=5>&nbsp;</TD></TR>
+      <TR>
+        <TD CLASS="legLoopBody">&nbsp;&nbsp;&nbsp;&nbsp;</TD><TD>Loop Body</TD>
+        <TD>&nbsp;</TD>
+        <TD><img width=50px src="/solid-wide.png"></TD><TD>Conditional Jump</TD>
+      </TR>
+      <TR>
+        <TD CLASS="legLoopCond">&nbsp;&nbsp;&nbsp;&nbsp;</TD><TD>Loop Condition</TD>
+        <TD>&nbsp;</TD>
+        <TD><img width=50px src="/dash-wide.png"></TD><TD>Unconditional Jump</TD>
+      </TR>
+      <TR>
+        <TD CLASS="legSelfLoop">&nbsp;&nbsp;&nbsp;&nbsp;</TD><TD>Self Loop(do-while)</TD>
+        <TD>&nbsp;</TD>
+        <TD><img width=50px src="/narrow.png"></TD><TD>No Jump</TD>
+      </TR>
+      <TR>
+        <TD CLASS="legIfBody">&nbsp;&nbsp;&nbsp;&nbsp;</TD><TD>If Body</TD>
+        <TD>&nbsp;</TD>
+        <TD></TD><TD></TD>
+      </TR>
+      <TR>
+        <TD CLASS="legIfCond">&nbsp;&nbsp;&nbsp;&nbsp;</TD><TD>If Condition</TD>
+        <TD>&nbsp;</TD>
+        <TD></TD><TD></TD>
+      </TR>
+      <TR>
+        <TD CLASS="legElseBody">&nbsp;&nbsp;&nbsp;&nbsp;</TD><TD>Else Body</TD>
+        <TD>&nbsp;</TD>
+        <TD></TD><TD></TD>
+      </TR>
+    </TABLE>
+  </TABLE>
+</form>

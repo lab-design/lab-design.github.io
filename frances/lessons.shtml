@@ -1,0 +1,23 @@
+<!--#include virtual="includes/topbar.html"-->
+<!-- 2ND COLUMN. INSERT COPY -->
+
+<td id="b3" rowspan="2">
+<div class="maintext">
+
+<h1>Lessons using the Frances tools</h2><BR><BR>
+
+
+<p>
+<a href="frances-a/lessons/">Architecture lessons</a>
+</p>
+
+<p>
+<a href="frances/lessons/">Code generation lessons</a>
+</p>
+
+
+</div>
+
+</td>
+
+<!--#include virtual="includes/bottombar.html"-->
