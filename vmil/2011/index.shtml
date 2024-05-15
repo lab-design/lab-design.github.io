@@ -1,6 +1,13 @@
----
-layout: redirect
-sitemap: false
-permalink: /vmil/2011/index.shtml
-redirect_to: /vmil/2011/index.html
----
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="canonical" href="/vmil/2011/index.html"/>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="refresh" content="0;url=/vmil/2011/index.html" />
+</head>
+<body>
+    <h1>Redirecting...</h1>
+      <a href="/vmil/2011/index.html">Click here if you are not redirected.<a>
+      <script>location='/vmil/2011/index.html'</script>
+</body>
+</html>

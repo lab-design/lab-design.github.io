@@ -1,15 +1,162 @@
----
----
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
 
-{% include_relative includes/template/headTop.htm %}
+<!-- INSERT TITLE -->
+<title>Virtual Machines and Intermediate Languages (VMIL 2011)</title>
 
-{% include_relative includes/template/headBottom.htm %}  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<!-- INSERT PAGE CONTENT, KEYWORDS -->
+<meta name="description" content="The Workshop on Virtual Machines and Intermediate Languages"/>
+<meta name="keywords" content="VMIL 2011, virtual machine, intermediate languages, java, .NET, research
+      Hridesh Rajan, OOPSLA, Robert Dyer, Michael Haupt, Christoph Bockisch, Orlando, Florida,
+      improved support, language features, 2011"/>
+
+<!-- CHANGE STYLESHEET LINK  -->
+<link rel="stylesheet" media="all" href="/vmil/styles/isuP.css" />
+
+<!-- INSERT ADDITIONAL STYLESHEET, IF DESIRED -->
+
+<!-- INSERT INLINE STYLES, IF DESIRED -->
+<style type="text/css">
+<!--
+#titlebar { border-top: none; }
+.rphoto125 { float: right; width: 125px; border: 1px solid #000; }
+.lphoto60 { float: left; width: 60px; margin-right: 5px; border: 1px
+solid #000;}
+.lphoto250 { float: left; width: 250px; margin-right: 5px; border: 1px solid #000; }
+#b3 { width: 355px; }
+#c3 { width: 245px; }
+#hilite2 { font-size: x-small; padding: .5em .5em .5em 2.5em; }
+-->
+</style>
+
+<!--
+.mainphoto { float: left; width: 250px; padding: 0 5px 0 0; }
+-->
+</head>
+
+<body>
+
+<div id="container">
+
+<!-- INSERT PAGE TITLE -->
+<div id="titlebar">
+<h1>VMIL 2011</h1>
+<h3>The 5th workshop on Virtual Machines and Intermediate Languages</h3>
+<h3>A workshop at SPLASH 2011 in Portland, Oregon on October 24, 2011</h3>
+</div>
+
+<table id="main" cellspacing="0">
+<tr>
+<td  id="a2" rowspan="2">
+<div id="mainlinks">
+
+
+<!-- INSERT LEFT COLUMN LINKS -->
+<div class="linkhead"><h3>Index</h3></div>
+<ul>
+<li><a href="index.shtml">Home</a></li>
+<li><a href="program.shtml">Program</a></li>
+<li><a href="cfp.shtml">Call for Papers</a></li>
+<li><a href="organization.shtml">Organization</a></li>
+</ul>
+<!--
+<div class="linkhead"><h3>Important Dates</h3></div>
+<ul>
+<li><a href="cfp.shtml">Abstract: </a></li>
+<li><a href="cfp.shtml">Full Paper: </a></li>
+<li><a href="">Notification: </a></li>
+<li><a href="">Final version: </a></li>
+<li><a href="">Workshop: </a></li>
+</ul>
+-->
+<div class="linkhead"><h3>Past Workshops</h3></div>
+<ul>
+<li><a href="/vmil/2010/">VMIL'10</a></li>
+<li><a href="/vmil/2009/">VMIL'09</a></li>
+<li><a href="/vmil/2008/">VMIL'08</a></li>
+<li><a href="/vmil/2007/">VMIL'07</a></li>
+</ul>
+<div class="linkhead"><h3>Quick Links</h3></div>
+<ul>
+<li><a href="http://www.splashcon.org/">SPLASH 2011</a></li>
+</ul>
+</div>
+
+
+<!-- INSERT COPY OR DELETE -->
+<div class="maintext">
+<h3>Got a question?</h3>
+<p class="cutline">
+Got a question or comment? Contact us at
+(515) 294-6168 or <a href="mailto:hridesh@iastate.edu">hridesh@iastate.edu</a>.
+</p>
+</div>
+
+
+<div class="maintext">
+<h3>Join Us</h3>
+<table border=0 style="background-color: #fff; padding: 5px;" cellspacing=0>
+  <form action="http://groups.google.com/group/vmil/boxsubscribe">
+  <tr><td style="padding-left: 5px;">
+  Email: <input type=text name=email>
+  <input type=submit name="sub" value="Subscribe">
+  </td></tr>
+</form>
+<tr><td align=right>
+  <a href="http://groups.google.com/group/vmil">Visit this group</a>
+</td></tr>
+</table>
+</div>
+</td>
+
+<!-- 2ND COLUMN. INSERT COPY -->
+<td id="b2" rowspan="2">
+
+<div class="maintext">
+  
 
 <!-- Text for the actual webpage start -->
 
 <!-- Text for the actual webpage end -->
 
-{% include_relative includes/template/footer.htm %} 
+</div>
+</td>
+</tr>
+</table>
+
+<!-- INSERT CONTACT INFO: UNIT, PHONE, E-MAIL  -->
+
+<div id="footer">
+<div id="copyright">
+<img src="/vmil/images/ISUbecoming.gif" 
+alt="Becoming the Best" width="200"
+height="31" />
+
+
+<p><a href="http://design.cs.iastate.edu">Laboratory for Software Design</a>, <a href="http://www.cs.iastate.edu/">Department of Computer Science</a>, <a href="http://www.iastate.edu/">Iowa State University</a></p>
+<p>226 Atanasoff Hall, Ames, IA, 50011-1040, USA</p>
+<p>Voice: (515) 294-6168 . Fax: (515) 294-0258 . E-Mail: hridesh@iastate.edu</p>
+<p>Copyright &#169; 2011, Iowa State University of Science and
+Technology. All rights reserved.</p>
+</div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+	var pageTracker = _gat._getTracker("UA-1547227-6");
+	pageTracker._trackPageview();
+} catch(err) {}</script>
+</div>
+</body>
+</html>
+ 
 
 
 

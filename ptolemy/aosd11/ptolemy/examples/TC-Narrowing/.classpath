@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<classpath>
-	<classpathentry kind="src" path=""/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="/Users/hridesh/Desktop/ptolemy-aosd-11/lib/ptolemy_rt.jar"/>
-	<classpathentry kind="lib" path="/Users/hridesh/Desktop/ptolemy-aosd-11/bin/pyc.jar"/>
-	<classpathentry kind="output" path=""/>
-</classpath>

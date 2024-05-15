@@ -1,16 +1,146 @@
----
----
-
-{% include_relative includes/template/headTop.htm %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
 
 <!-- INSERT TITLE -->
 <title>Virtual Machines and Intermediate Languages for emerging modularization mechanisms (VMIL 2008)</title>
 
-{% include_relative includes/template/headBottom.htm %}
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<!-- INSERT PAGE CONTENT, KEYWORDS -->
+<meta name="description" content="Describe content of page here." />
+<meta name="keywords" content="keyword, keyword, keyword, keyword" />
+</head>
+
+<!-- CHANGE STYLESHEET LINK  -->
+<link rel="stylesheet" media="all" href="/vmil/styles/isuP.css" />
+
+<!-- INSERT ADDITIONAL STYLESHEET, IF DESIRED -->
+
+<!-- INSERT INLINE STYLES, IF DESIRED -->
+<style type="text/css">
+<!--
+#titlebar { border-top: none; }
+.rphoto125 { float: right; width: 125px; border: 1px solid #000; }
+.lphoto60 { float: left; width: 60px; margin-right: 5px; border: 1px
+solid #000;}
+.lphoto250 { float: left; width: 250px; margin-right: 5px; border: 1px solid #000; }
+#b3 { width: 355px; }
+#c3 { width: 245px; }
+#hilite2 { font-size: x-small; padding: .5em .5em .5em 2.5em; }
+-->
+</style>
+
+<!--
+.mainphoto { float: left; width: 250px; padding: 0 5px 0 0; }
+-->
+
+<body>
+
+<div id="container">
+
+<!-- INSERT PAGE TITLE -->
+<div id="titlebar">
+<h1>VMIL 2008</h1>
+<h3>A workshop on Virtual Machines and Intermediate Languages for emerging modularization mechanisms</h3>
+<h3>Co-located with OOPSLA 2008 in Nashville, Tennessee
+    on October 19, 2008</h3>
+</div>
+
+<table id="main" cellspacing="0">
+<tr>
+<td  id="a2" rowspan="2">
+<div id="mainlinks">
+
+
+<!-- INSERT LEFT COLUMN LINKS -->
+<div class="linkhead"><h3>Index</h3></div>
+<ul>
+<li><a href="index.shtml">Home</a></li>
+<li><a href="program.shtml">Program</a></li>
+<li><a href="cfp.shtml">Call for Papers</a></li>
+<li><a href="organization.shtml">Organization</a></li>
+</ul>
+<!--
+<div class="linkhead"><h3>Important Dates</h3></div>
+<ul>
+<li><a href="cfp.shtml">Abstract: </a></li>
+<li><a href="cfp.shtml">Full Paper: </a></li>
+<li><a href="">Notification: </a></li>
+<li><a href="">Final version: </a></li>
+<li><a href="">Workshop: </a></li>
+</ul>
+-->
+<div class="linkhead"><h3>Past Workshops</h3></div>
+<ul>
+<li><a href="/vmil/2007/">VMIL'07</a></li>
+</ul>
+<div class="linkhead"><h3>Quick Links</h3></div>
+<ul>
+<li><a href="http://www.oopsla.org/oopsla2008/">OOPSLA 2008</a></li>
+</ul>
+</div>
+
+<!-- INSERT COPY OR DELETE -->
+<div class="maintext">
+Supported by:<br/><br/>
+<a href="http://www.aosd-europe.net/"><img src="AOSDEuropeLogo2.jpg" width="124" height="57" border="0" alt="AOSD Europe"/></a><br/>
+<h3>Got a question?</h3>
+<p class="cutline">
+Got a question or comment? Contact us at
+(515) 294-6168 or <a href="mailto:hridesh@cs.iastate.edu">hridesh@cs.iastate.edu</a>.
+</p>
+</div>
+
+<div class="maintext">
+<h3>Join Us</h3>
+<table border=0 style="background-color: #fff; padding: 5px;" cellspacing=0>
+  <form action="http://groups.google.com/group/vmil/boxsubscribe">
+  <tr><td style="padding-left: 5px;">
+  Email: <input type=text name=email>
+  <input type=submit name="sub" value="Subscribe">
+  </td></tr>
+</form>
+<tr><td align=right>
+  <a href="http://groups.google.com/group/vmil">Visit this group</a>
+</td></tr>
+</table>
+</div>
+
+</td>
+
+<!-- 2ND COLUMN. INSERT COPY -->
+<td id="b2" rowspan="2">
+
+<div class="maintext">
+
 
 <!-- Text for the actual webpage start -->
 
-{% include_relative motivation.html %}
+<h2 class="bar">Motivation and Objectives</h2>
+<p>
+Modern programming languages are compiled to intermediate code preserving the
+intention of high-level language constructs. Emerging modularization
+mechanisms, however, lack such handling. Recent research results have shown
+that deeper support for these modularization mechanisms, e.g., in virtual
+machines and intermediate languages, is feasible; it allows applying tailored
+optimizations and radically improves development processes such as incremental
+compilation, debugging, etc.
+<p>
+</p>
+The VMIL workshop, second in the series, is a forum for research in virtual
+machines and intermediate languages with support for emerging modularization
+mechanisms such as mix-ins, units, open classes, hyper-slices, adaptive
+methods, roles, composition filters, layers, pointcuts-and-advice, and
+inter-type declarations. Topics of interest include, but are not limited to:
+compilation-based and interpreter-based virtual machines as well as
+intermediate language designs with dedicated support for emerging
+modularization mechanisms, compilation techniques, optimization strategies,
+improved techniques for fast predicate evaluation (e.g., of pointcuts) inside
+virtual machines, and advanced caching and memory management schemes.
+</p>
+
 <BR>
 <BR>
 <h2 class="bar">Invited Talks</h2>
@@ -28,7 +158,68 @@
 <i>IBM Watson Research Center</i></p>
 <BR>
 
-{% include_relative dates.html %}
+
+<h2 class="bar">Important Dates</h2>
+
+<center>
+<table>
+<tr>
+<td>Submission Deadline:</td>
+<td><span style="color: #aaaaaa;">Aug 15, 2008, 23:59 Samoan (<a href="http://www.timeanddate.com/worldclock/fixedtime.html?month=8&day=15&year=2008&hour=23&min=59&sec=59&p1=282">World Clock</a>)</span></td>
+</tr>
+
+<tr>
+<td>Notification of Acceptance:</td>
+<td><span style="color: #aaaaaa;">Sept 4, 2008</span></td>
+</tr>
+
+<tr>
+
+<td>Camera ready copy due:</td>
+<td><span style="color: #aaaaaa;">Oct 3, 2008</span></td>
+</tr>
+
+<tr>
+<td>Workshop:</td>
+<td>Oct 19, 2008</td>
+</tr>
+</table>
+</center>
+
+
 <!-- Text for the actual webpage end -->
 
-{% include_relative includes/template/footer.htm %}
+</div>
+</td>
+</tr>
+</table>
+
+<!-- INSERT CONTACT INFO: UNIT, PHONE, E-MAIL  -->
+
+<div id="footer">
+<div id="copyright">
+<img src="/vmil/images/ISUbecoming.gif"
+alt="Becoming the Best" width="200"
+height="31" />
+
+
+<p><a href="http://design.cs.iastate.edu/">Laboratory for Software Design</a>, <a href="http://www.cs.iastate.edu/">Department of Computer Science</a>, <a href="http://www.iastate.edu/">Iowa State University</a><p>
+<p>226 Atanasoff Hall, Ames, IA, 50011-1040, USA</p>
+<p>Voice: (515) 294-6168 . Fax: (515) 294-0258 . E-Mail: hridesh@cs.iastate.edu</p>
+<p>Copyright &#169; 2008, Iowa State University of Science and
+Technology. All rights reserved.</p>
+</div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+	var pageTracker = _gat._getTracker("UA-1547227-6");
+	pageTracker._trackPageview();
+} catch(err) {}</script>
+</div>
+</body>
+</html>
+
