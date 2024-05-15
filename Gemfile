@@ -21,4 +21,5 @@ group :jekyll_plugins do
   gem "jekyll-paginate"
   gem 'html-proofer', '3.4'
   gem 'jekyll-scholar'
+  gem 'faraday-retry'
 end
