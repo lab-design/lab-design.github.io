@@ -56,8 +56,8 @@ scholar:
 # Plugins
 plugins:
   - jekyll-paginate
-  - jekyll-scholar
+  - jekyll/scholar
 
 whitelist:
   - jekyll-paginate
-  - jekyll-scholar
+  - jekyll/scholar
