@@ -10,7 +10,7 @@ name: Lab design website deploy handler
 
 on:
   push:
-    branches: [master]
+    branches: [development]
 
 jobs:
   build:
@@ -37,5 +37,6 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./_site
+        publish_branch: master
         enable_jekyll: true
         cname: lab-design.github.io
