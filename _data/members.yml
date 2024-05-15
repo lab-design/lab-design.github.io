@@ -11,18 +11,6 @@
 
 # Postdocs:
 
-- name: Breno Dantas Cruz
-  status: Postdoctoral Fellow
-  email: bdantasc@iastate.edu
-  site: https://www.cs.iastate.edu/people/breno-dantas-cruz
-  img: breno.jpg
-
-- name: Ali Ghanbari
-  status: Postdoctoral Fellow
-  email: alig@iastate.edu
-  site: https://ali-ghanbari.github.io/
-  img: ali.jpg
-
 # PhD Candidates:
 
 - name: Shibbir Ahmed
@@ -36,13 +24,7 @@
   email: fraol@iastate.edu
   site: https://fraolbatole.github.io/
   img: fraol.jpg
-
-- name: Usman Gohar
-  status: PhD
-  email: ugohar@iastate.edu
-  site: https://www.cs.iastate.edu/ugohar
-  img: usman.jpg
-
+  
 - name: Sayem Imtiaz
   status: PhD
   email: sayem@iastate.edu
@@ -78,12 +60,6 @@
   email: dgthomas@iastate.edu
   site: https://deepakgthomas.github.io/
   img: deepak.jpg
-
-- name: Mohammad Wardat
-  status: PhD
-  email: wardat@iastate.edu
-  site: https://www.cs.iastate.edu/people/mohammad-wardat
-  img: wardat.jpg
 
 # Master's Students:
 

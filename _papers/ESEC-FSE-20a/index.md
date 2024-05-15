@@ -41,5 +41,5 @@ kind: conference
 download_link: ml-fairness.pdf
 publication_year: 2020
 tags:
-  - boa
+  - d4
 ---
