@@ -4,7 +4,7 @@ body {
 }
 
 .news-card .card-title, .home-page-highlighted-paper-card .card-title {
-  color: #c00;
+  color: #006747;  /* Tulane dark green */
 }
 
 .card {
@@ -26,7 +26,7 @@ body {
   }
 }
 .brand-bg-color {
-  background-color: #c00;
+  background-color: #006747;  /* Tulane dark green */
   padding-top: 0.5rem;
 }
 
@@ -40,7 +40,8 @@ body {
 }
 
 #isu-logo {
-  background-image: url("/img/isu-logo.svg");
+  /* Will need to be updated once we have the new Tulane logo */
+  background-image: url("/img/tulane-logo.png");
   background-position: left center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -188,31 +189,31 @@ nav .navbar {
 .paper-btn {
   color: #444;
   background-color: #e6e6e6;
-  border-color: #c00;
+  border-color: #006747;  /* Change from #c00 */
   transition: all 0.3s ease;
 }
 
 .paper-btn:active, .paper-btn:focus, .paper-btn.active, .paper-btn:active:focus, .paper-btn:active:hover {
-  background-color: #c00;
-  border-color: #c00;
+  background-color: #006747;  /* Change from #c00 */
+  border-color: #006747;
   font-weight: bold;
   color: #fff;
   box-shadow: none;
 }
 
 .paper-btn.active:hover, .paper-btn.focus:hover, .paper-btn:active:hover, .paper-btn:focus:hover {
-  background-color: #b30000;
-  border-color: #c00;
+  background-color: #004830;
+  border-color: #006747;
 }
 
 .paper-btn:hover {
   background-color: #ccc;
-  border-color: #c00;
+  border-color: #006747;  /* Change from #c00 */
 }
 
 .paper-btn.active.focus {
-  background-color: #c00;
-  border-color: #c00;
+  background-color: #006747;  /* Change from #c00 */
+  border-color: #006747;
 }
 
 .card {
@@ -241,7 +242,7 @@ nav .navbar {
 }
 
 .paper_card_header .paper_card_header_name:hover, .grant_card_header .grant_card_header_name:hover {
-  color: #c00;
+  color: #006747;  /* Change from #c00 */
 }
 
 .paper_card .padded-inner-card-block {
