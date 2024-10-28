@@ -1,3 +1,4 @@
+# Open Gemfile in your preferred editor and replace the content with:
 source "https://rubygems.org"
 
 # Hello! This is where you manage which Jekyll version is used to run.

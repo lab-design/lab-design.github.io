@@ -14,11 +14,11 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Laboratory for Software Design
-email: hridesh@iastate.edu
+email: hrajan@tulane.edu  # Updated to Tulane email
 description: >
   TODO
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://lab-design.github.io/"
+url: "https://lab-design.github.io/"  # Keep the GitHub Pages URL
 
 # Build settings
 markdown: kramdown
@@ -29,7 +29,6 @@ exclude:
   - _scripts
   - _citation_styles
   - README.md
-
 
 collections:
   papers:  # Declare the `papers` collection, and output a page for every item.
@@ -53,7 +52,8 @@ static_files:
 
 scholar:
   source: .
-# Plugins
+
+# Plugins (using the modern approach instead of 'gems')
 plugins:
   - jekyll-paginate
   - jekyll-scholar
