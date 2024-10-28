@@ -6,7 +6,7 @@ body {
 }
 
 .news-card .card-title, .home-page-highlighted-paper-card .card-title {
-  color: #c00;
+  color: #006747;
 }
 
 .card {
@@ -29,7 +29,7 @@ body {
 }
 
 .brand-bg-color {
-  background-color: #c00;
+  background-color: #006747;
   padding-top: 0.5rem;
 }
 
@@ -44,7 +44,7 @@ body {
 }
 
 #isu-logo {
-  background-image: url("/img/isu-logo.svg");
+  background-image: url("/img/tulane-logo.png");
   background-position: left center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -187,7 +187,7 @@ nav .navbar {
   list-style-type: none;
 }
 
-$button-active-color: #c00;
+$button-active-color: #006747;
 
 .paper-btns.btn-group {
   display: flex;
@@ -249,7 +249,7 @@ $button-active-color: #c00;
 }
 
 .paper_card_header .paper_card_header_name:hover, .grant_card_header .grant_card_header_name:hover {
-  color: #c00;
+  color: #006747;
 }
 
 .paper_card .padded-inner-card-block {
@@ -306,11 +306,11 @@ footer {
   vertical-align: top;
 }
 
-footer .isu-logo {
+footer .tulane-logo {
   width: 170px;
 }
 
-footer .isu-logo-wrapper {
+footer .tulane-logo-wrapper {
   text-align: center;
 }
 
