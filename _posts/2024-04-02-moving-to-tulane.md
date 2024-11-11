@@ -1,6 +1,5 @@
 ---
-title: "Prof. Hridesh Rajan named new dean of Tulane University School of Science and Engineering.
-"
+title: "Prof. Hridesh Rajan named new dean of Tulane University School of Science and Engineering."
 ---
 
 
