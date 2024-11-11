@@ -25,6 +25,30 @@
 
 # PhD Graduates:
 
+- name: Dr. Sayem Imtiaz
+  status: PhD Fall'24
+  email: sayem@iastate.edu
+  site: https://www.cs.iastate.edu/people/sayem-mohammad-imtiaz
+  img: simtiaz.jpg
+
+- name: Giang Nguyen
+  status: PhD Fall'24
+  email: gnguyen@iastate.edu
+  site: https://www.cs.iastate.edu/gnguyen
+  img: giang.jpeg
+
+- name: Dr. David OBrien
+  status: PhD Fall'24
+  email: dobrien@iastate.edu
+  site: https://davidmobrien.github.io/
+  img: david.png
+
+- name: Dr. Shibbir Ahmed
+  status: PhD Summer'24
+  email: shibbir@iastate.edu
+  site: https://www.cs.iastate.edu/people/shibbir-ahmed
+  img: sahmed.jpg
+
 - name: Dr. Mohammad Wardat
   status: PhD Summer'23
   email: wardat@iastate.edu

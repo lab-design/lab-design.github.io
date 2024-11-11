@@ -13,47 +13,17 @@
 
 # PhD Candidates:
 
-- name: Shibbir Ahmed
-  status: PhD
-  email: shibbir@iastate.edu
-  site: https://www.cs.iastate.edu/people/shibbir-ahmed
-  img: sahmed.jpg
-
 - name: Fraol Batole
   status: PhD
   email: fraol@iastate.edu
   site: https://fraolbatole.github.io/
   img: fraol.jpg
   
-- name: Sayem Imtiaz
-  status: PhD
-  email: sayem@iastate.edu
-  site: https://www.cs.iastate.edu/people/sayem-mohammad-imtiaz
-  img: simtiaz.jpg
-  
 - name: Ruchira Manke
   status: PhD
   email: rmanke@iastate.edu
   site: https://tads.research.iastate.edu/people/ruchira-manke
   img: ruchira.jpg
-
-- name: Giang Nguyen
-  status: PhD
-  email: gnguyen@iastate.edu
-  site: https://www.cs.iastate.edu/gnguyen
-  img: giang.jpeg
-  
-- name: David OBrien
-  status: PhD
-  email: dobrien@iastate.edu
-  site: https://davidmobrien.github.io/
-  img: david.png
-
-- name: Astha Singh
-  status: PhD
-  email: asthas@iastate.edu
-  site: https://www.astha-singh.com/
-  img: astha.png
 
 - name: Deepak-George Thomas
   status: PhD
