@@ -34,6 +34,16 @@ body {
   background-color: rgba(230, 230, 230, 0.95);
 }
 
+.nav-horizontal {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.nav-horizontal .nav-item {
+  margin-left: 15px;
+}
+
 .brand-navbar {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
