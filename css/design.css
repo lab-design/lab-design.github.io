@@ -34,30 +34,31 @@ body {
   background-color: rgba(230, 230, 230, 0.95);
 }
 
+/* These styles will force the links to be inline */
 .nav-horizontal {
   display: flex;
   justify-content: flex-end;
-  width: auto; /* Changed from 100% to auto */
+  width: 100%;
   align-items: center;
 }
 
 .nav-horizontal .nav-item {
+  display: inline-flex; /* Change to inline-flex */
   margin-left: 15px;
-  width: auto !important; /* Override any width settings */
-}
-
-/* Override any conflicting styles */
-.navbar-nav.nav-horizontal .nav-link {
   width: auto !important;
-  text-align: center;
-  white-space: nowrap;
 }
 
-/* Ensure flex-separate works correctly */
-.flex-separate {
-  display: flex;
-  justify-content: space-between;
+/* Make sure nav-links are also inline */
+.nav-horizontal .nav-item.nav-link {
+  display: inline-flex;
   align-items: center;
+  width: auto !important;
+  padding: 0.5rem 1rem;
+}
+
+/* Override any Bootstrap default behaviors */
+.navbar-nav.nav-horizontal {
+  flex-direction: row !important;
 }
 
 .brand-navbar {
