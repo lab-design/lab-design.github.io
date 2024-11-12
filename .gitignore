@@ -6,4 +6,5 @@
 /.bundle
 /vendor
 .DS_Store
+*_site
 *~
