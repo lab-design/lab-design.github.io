@@ -40,12 +40,28 @@ body {
 .nav-horizontal {
   display: flex;
   justify-content: flex-end;
-  width: 100%;
+  width: auto;  /* Changed from 100% to auto */
+  align-items: center;
 }
 
 .nav-horizontal .nav-item {
   margin-left: 15px;
+  width: auto !important;  /* Override any width settings */
 } 
+
+/* Override any conflicting styles */
+.navbar-nav.nav-horizontal .nav-link {
+  width: auto !important;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* Ensure flex-separate works correctly */
+.flex-separate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .brand-navbar {
 //   border-bottom: 6px solid #DFBD00;
