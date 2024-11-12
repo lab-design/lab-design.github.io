@@ -1,14 +1,22 @@
 <header>
-
   <div class="brand-bg-color">
     <div class="container">
       <div class="brand-navbar">
         <div class="row">
           <div class="flex-separate col-12">
             <a href="/" class="nav-link">
-<img src="/img/tulane-sse-logo.png" alt="Tulane School of Science and Engineering" id="header-logo"
-     style="height: 60px; margin: 10px 0; background-color: white; padding: 5px; border-radius: 4px;"/>
+              <img src="/img/tulane-sse-logo.png" alt="Tulane School of Science and Engineering" id="header-logo"
+                   style="height: 60px; margin: 10px 0; background-color: white; padding: 5px; border-radius: 4px;"/>
             </a>
+            <!-- Move the navigation links here -->
+            <div class="navbar-nav d-none d-sm-flex" style="color: white;">
+              <a class="nav-item nav-link" href="/projects.html">Projects</a>
+              <a class="nav-item nav-link" href="/papers/">Papers</a>
+              <a class="nav-item nav-link" href="/grants/">Grants</a>
+              <a class="nav-item nav-link" href="/news/">News</a>
+              <a class="nav-item nav-link" href="/people.html">People</a>
+              <a class="nav-item nav-link" href="/about/">About</a>
+            </div>
             <button class="navbar-toggler d-block d-sm-none" type="button" data-toggle="collapse" data-target="#collapseNav">&#9776;</button>
           </div>
         </div>
@@ -16,7 +24,8 @@
     </div>
   </div>
 
-  <div class="nav-bg-color">
+  <!-- Mobile navigation menu (only shows when collapsed) -->
+  <div class="nav-bg-color d-sm-none">
     <nav class="container navbar navbar-dark navbar-expand-sm">
       <div class="collapse navbar-collapse" id="collapseNav">
         <div class="navbar-nav">
@@ -30,5 +39,4 @@
       </div>
     </nav>
   </div>
-
 </header>
