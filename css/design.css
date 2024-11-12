@@ -26,7 +26,7 @@ body {
   }
 }
 .brand-bg-color {
-  background-color: #006747;
+  background-color: #21543E;
   padding-top: 0.5rem;
 }
 
@@ -67,11 +67,11 @@ body {
 
 .navbar .navbar-nav .nav-link {
   margin: 0;
-  color: #444;
   font-weight: lighter;
   text-align: left;
   width: 100%;
-  padding-left: 1em;
+  color: white !important;
+  padding: 0 15px;
 }
 
 /* Note: Update width when changing the nav links */
