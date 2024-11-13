@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-The Laboratory for Software Design at Iowa State University conducts research in
+The Laboratory for Software Design at Tulane University conducts research in
 programming languages, compilers and software engineering.
 
 Our overarching goal is to develop tools and techniques that enable better
@@ -19,4 +19,4 @@ infrastructure for mining software repositories, and
 [**Ptolemy**](http://ptolemy.cs.iastate.edu), a language that strives to balance
 expressiveness and modular reasoning for crosscutting concerns.
 
-Our research meetings are in 216 Atanasoff Hall on Tuesday and Friday from 3:00 pm - 5:30 pm.
+Our research meetings are held virtually on Tuesday and Friday from 3:00 pm - 5:30 pm.
