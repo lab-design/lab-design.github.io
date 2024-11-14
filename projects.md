@@ -22,9 +22,7 @@ layout: page
 This is crazy. ToC currently doesn't strip out the formatting on the header, so the regular header would link to the website rather than the location on the page. What you see above is a workaround for that.
 {% endcomment %}
 
-
-
-{% include projects_page.html name="Modular Deep Learning" link="papers/ESEC-FSE-20b/" %}
+{% include projects_page.html name="Modular Deep Learning" link="modularity/" %}
 
 [Modular Deep Learning](papers/ESEC-FSE-20b/) project is studying a class of 
 machine learning algorithms known as deep learning that has received much attention 
