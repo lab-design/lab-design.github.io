@@ -3,13 +3,17 @@
     <div class="container">
       <div class="brand-navbar">
         <div class="row">
-          <div class="flex-separate col-12">
+          <div class="flex-separate col-12 d-flex justify-content-between align-items-center">
             <a href="/" class="nav-link">
               <img src="/img/tulane-sse-logo.png" alt="Tulane School of Science and Engineering" id="header-logo"
                    style="height: 60px; margin: 10px 0; padding: 5px; border-radius: 4px;"/>
             </a>
-            <!-- Move the navigation links here -->
-            <div class="navbar-nav nav-horizontal">
+            <!-- Navbar toggle button for mobile -->
+            <button class="navbar-toggler d-block d-sm-none" type="button" data-toggle="collapse" data-target="#collapseNav" aria-controls="collapseNav" aria-expanded="false" aria-label="Toggle navigation">
+              &#9776;
+            </button>
+            <!-- Desktop navigation links -->
+            <div class="navbar-nav nav-horizontal d-none d-sm-flex">
               <a class="nav-item nav-link" href="/projects.html">Projects</a>
               <a class="nav-item nav-link" href="/papers/">Papers</a>
               <a class="nav-item nav-link" href="/grants/">Grants</a>
@@ -17,7 +21,6 @@
               <a class="nav-item nav-link" href="/people.html">People</a>
               <a class="nav-item nav-link" href="/about/">About</a>
             </div>
-            <button class="navbar-toggler d-block d-sm-none" type="button" data-toggle="collapse" data-target="#collapseNav">&#9776;</button>
           </div>
         </div>
       </div>

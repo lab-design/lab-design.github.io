@@ -6,7 +6,7 @@ body {
 }
 
 .news-card .card-title, .home-page-highlighted-paper-card .card-title {
-  color: #006747;
+  color: #21543E;
 }
 
 .card {
@@ -24,7 +24,7 @@ body {
 
 @media screen and (min-width:576px){//This messes with extra small sizes
   .container {
-    width: 1140px;//This is the maximum width a container can ever be
+    width: 100% !important;//This is the maximum width a container can ever be
   }
 }
 
@@ -34,7 +34,7 @@ body {
 }
 
 .nav-bg-color {
-  background-color: rgba(230,230,230,0.95);
+  background-color: #21543E
 }
 
 /* These styles will force the links to be inline */
@@ -119,6 +119,19 @@ body {
   }
 }
 
+.navbar-collapse {
+  background-color: #21543E; /* Match the header background color */
+  padding: 10px;
+  border-top: 2px solid rgba(255, 255, 255, 0.3); /* Subtle white line for visual separation */
+  width: 100%;
+  position: relative;
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link:focus {
   color: rgb(245, 184, 90);
@@ -146,22 +159,61 @@ nav .navbar {
   margin-right: 2.0rem;
 }
 
-#home-page-carousel .carousel-indicators li {
-  background-color: #999;
-  background-color: rgba(70,70,70,.25);
-}
-
-#home-page-carousel .carousel-indicators .active {
-  background-color: #444;
-}
-
 .carousel-control {
   font-size: 50pt;
   color: black;
 }
 
+#home-page-carousel .carousel-indicators li {
+  background-color: rgba(70, 70, 70, 0.25);
+  width: 15px; /* Increase size */
+  height: 15px;
+  border-radius: 50%; /* Make it a perfect circle */
+  margin: 5px;
+}
+
+#home-page-carousel .carousel-indicators .active {
+  background-color: #444;
+  transform: scale(1.3); /* Enlarge the active indicator slightly */
+}
+
+#home-page-carousel .carousel-indicators li:hover {
+  background-color: rgba(0, 0, 0, 0.684);
+}
+
+/* Default styles for larger screens (e.g., desktops) */
+#home-page-carousel {
+  height: 400px; /* Fixed height for larger screens */
+  overflow: hidden;
+}
+
 .carousel-inner > .carousel-item > a > img {
   width: 100%;
+  height: 350px; /* Same height as the carousel for desktops */
+  object-fit: cover; /* Ensures the image fills the container without distortion */
+  object-position: center;
+}
+
+/* Responsive adjustments for smaller screens (e.g., tablets, mobile devices) */
+@media (max-width: 768px) {
+  #home-page-carousel {
+    height: 150px; /* Reduced height for mobile and tablets */
+  }
+
+  .carousel-inner > .carousel-item > a > img {
+    height: 100px; /* Adjusted height to match the carousel container */
+  }
+}
+
+/* Very small screens (e.g., phones) */
+@media (max-width: 480px) {
+  #home-page-carousel {
+    height: 150px; /* Further reduced height for very small screens */
+  }
+
+  .carousel-inner > .carousel-item > a > img {
+    height: 100px; /* Adjusted height to maintain visual consistency */
+  }
 }
 
 .no-padding {
@@ -216,7 +268,7 @@ nav .navbar {
   list-style-type: none;
 }
 
-$button-active-color: #006747;
+$button-active-color: #21543E;
 
 .paper-btns.btn-group {
   display: flex;
@@ -278,7 +330,7 @@ $button-active-color: #006747;
 }
 
 .paper_card_header .paper_card_header_name:hover, .grant_card_header .grant_card_header_name:hover {
-  color: #006747;
+  color: #21543E;
 }
 
 .paper_card .padded-inner-card-block {
