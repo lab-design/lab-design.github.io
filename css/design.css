@@ -189,19 +189,21 @@ nav .navbar {
 /* Responsive adjustments for smaller screens (e.g., tablets, mobile devices) */
 @media (max-width: 768px) {
   #home-page-carousel {
-    height: 150px; /* Reduced height for mobile and tablets */
+    height: auto;
   }
   .carousel-inner > .carousel-item > a > img {
-    height: 100px; /* Adjusted height to match the carousel container */
+    width: 100%;
+    height: auto;
   }
 }
 /* Very small screens (e.g., phones) */
 @media (max-width: 480px) {
   #home-page-carousel {
-    height: 150px; /* Further reduced height for very small screens */
+    height: auto;
   }
   .carousel-inner > .carousel-item > a > img {
-    height: 100px; /* Adjusted height to maintain visual consistency */
+    width: 100%;
+    height: auto;
   }
 }
 .no-padding {
