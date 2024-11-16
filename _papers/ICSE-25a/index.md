@@ -1,6 +1,6 @@
 ---
 key: ICSE-25a
-permalink: /papers/ICSE-25-a/
+permalink: /papers/ICSE-25a/
 short_name: ICSE '25
 title: "µPRL: A Mutation Testing Pipeline for Deep Reinforcement Learning based on Real Faults"
 bib: |
