@@ -8,7 +8,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/design.css">
     <link rel="icon" href="/favicon.ico">
-    <title>Modular Deep Learning Project</title>
+    <title>Modular Deep Learning</title>
   </head>
 
   <body>
@@ -65,29 +65,86 @@
   <br />
   <div class="row">
   <div class="col-12">
-    <h2 class="page-title">Modular Deep Learning Project</h2>
+    <h2 class="page-title">Modular Deep Learning</h2>
     <div class="card">
   <div class="card-body">
     <h2 class="card-title">Overview of the project</h2>
-    <ul class="card-text">
-      <li>1st.</li>
-      <li>2nd.</li>
-    </ul>
+    <p class="card-text">
+        The <strong>Modular Deep Learning project</strong> explores a class of machine learning algorithms known as deep learning, which has gained significant attention in academia and industry. Traditional deep learning models are typically monolithic, with layers arranged sequentially to transform input data into high-level, interpretable output. This monolithic nature of deep neural networks (DNNs) limits their fine-grained reusability and adaptability. This project adopts a groundbreaking approach by decomposing DNN models into self-contained, independent modules, facilitating reusability and adaptability. Such modularization enables fine-grained reuse and replacement of components, potentially eliminating the need for complete retraining or coarse-grained reuse in building new AI solutions or repairing faulty system parts. This approach not only promises cost savings by reducing retraining requirements but also translates into energy efficiency, which is especially relevant for maintaining today’s ultra-large AI models, such as large language models (LLMs). This is particularly relevant in the era of ultra-large AI models, such as large language models (LLMs), which are reported to consume excessive amounts of water, leave a huge carbon footprint, and draw vast amounts of energy to operate. The modular approach envisioned by this project has the potential to streamline the use of such large-scale AI systems, paving the way for greater energy efficiency in their creation and upkeep.
+    </p>
   </div>
 </div>
 
 <div class="card">
     <div class="card-body">
-      <h2 class="card-title">Motivation</h2>
-      <p class="card-text">... </p>
+      <h2 class="card-title">Preliminary Investigation</h2>
+      <p class="card-text">   
+        Our preliminary work has shown that it is possible to decompose various neural architectures effectively and conceptualize the notion of modules.
+        Specifically, we found that fully connected neural networks, CNNs, and RNNs can be decomposed into modules, allowing for the reuse of existing components and potentially avoiding costly retraining in certain scenarios.
+        We explored: 
+      </p>
+      <ul>
+      <li> How AI models can be constructed by combining existing modules and</li>
+      <li> How large, costly-to-train AI models can be repaired rather than discarded and retrained from scratch.</li>
+    </ul>
     </div>
   </div>
 
 <div class="card">
   <div class="card-body">
-    <h2 class="card-title">Recent Publications</h2>
-    <p class="card-text"> ... </p>
+    <h2 class="card-title">Current Focus</h2>
+    <p class="card-text">   
+      The main goal of this project is to expand these initial findings along <strong>three dimensions</strong> further.
+    </p>
+    <ul> 
+    <li>
+      <strong>First,</strong> we aim to explore the role of modularity in the dual context of
+      <em>AI for Energy</em> and <em>Energy for AI</em>—examining how AI can optimize energy systems and how energy constraints shape AI development and deployment.  By applying modular design principles, we aim to reduce both the costs and energy demands of training deep neural networks, making AI technologies more sustainable and efficient.
+    </li>
+    <li>
+      <strong>Second,</strong> we aim to develop standardized communication interfaces for seamlessly integrating AI modules or models to facilitate their independent evolution. Interfaces, as they do in traditional software engineering, define a boundary or contract that encapsulates functionality and promotes the decoupling of system components. With carefully defined interfaces, DNN modules can evolve independently as long as they adhere to the established interface contract.
+        Such a methodology would dramatically reduce the overhead associated with training and integrating new DNN models, much like how libraries and APIs have streamlined software development.
+    </li>
+    <li>
+      <strong>Third,</strong> we aim to introduce contracts or specifications into the modular AI landscape, which could facilitate better error diagnosis, blame assignment, and modular validation, allowing for the creation of more reliable and robust DNN models. Contracts, in a software context, set clear expectations for the behavior of a module, dictating what it should accomplish given specific inputs. In the DNN realm, this idea can be applied to individual DNN modules within a model, defining what kind of output should be produced given certain inputs.
+    </li>
+  </ul>
+
+    <li>
+      This project is expected to have a broad societal impact by advancing the science and practice of deep learning. A critical challenge facing the software development workforce today is that while deep learning is widely used in software systems, scientists and practitioners still lack effective solutions for key issues such as explainability, reuse, replacement, independent testing, and independent development of deep neural networks (DNNs). Historically, the need to explore modularity in neural networks was minimal, as pre-deep learning models were small, trained on limited datasets, and primarily experimental.
+    </li>
+    <li>
+      The notion of DNN modules introduced by this project, if successful, could address several open challenges in this field. Modular DNNs could enable the reuse of pre-trained components across different contexts, with standardized interfaces ensuring seamless communication between modules and supporting their independent evolution. Contracts could define expected module behaviors, simplifying error diagnosis and enabling effective blame assignment. By conceptualizing a DNN as a composition of modular components rather than a monolithic black box, this approach could significantly enhance explainability, making it easier to interpret a model’s behavior. If successful, this project will substantially improve programmer productivity, enhance the understandability and maintainability of deployed DNN models, and contribute to the scalability and reliability of software systems built on deep learning.
+    </li>
 </div>
+</div>
+
+
+<div class="card">
+  <div class="card-body">
+    <h2 class="card-title">Relevant Publications</h2>
+    Following research papers document progress on this project:
+
+    <li><a href="/papers/ICSE-24a/">ICSE '24</a></li>
+
+    <li><a href="/papers/ICSE-23b/">ICSE '23</a></li>
+  
+    <li><a href="/papers/ESEC-FSE-23a/">ESEC-FSE '23</a></li>
+  
+    <li><a href="/papers/EMSE-23/">EMSE '23</a></li>
+  
+    <li><a href="/papers/ICSE-22b/">ICSE '22</a></li>
+  
+    <li><a href="/papers/ESEC-FSE-20b/">ESEC-FSE '20</a></li>
+  </div>
+</div>
+
+<p>Modular Deep Learning project has been supported in part by the following grants.</p>
+
+<ul>
+  <li><a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2223812">US National Science Foundation, SHF:Small: More Modular Deep Learning. PI: Hridesh Rajan
+    (2022-2025), Total award amount: $580,000</a></li>
+</ul>
 
 </div>
 
