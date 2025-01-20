@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/design.css">
+    <link rel="icon" href="/favicon.ico">
+    <title>IRepair: An Intent-Aware Approach to Repair Data-Driven Errors in Large Language Models</title>
+  </head>
+
+  <body>
+    <!-- Load jQuery before the content in order to support the papers page sorting -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <header>
+  <div class="brand-bg-color">
+    <div class="container">
+      <div class="brand-navbar">
+        <div class="row">
+          <div class="flex-separate col-12 d-flex justify-content-between align-items-center">
+            <a href="/" class="nav-link">
+              <img src="/img/tulane-sse-logo.png" alt="Tulane School of Science and Engineering" id="header-logo"
+                   style="height: 60px; margin: 10px 0; padding: 5px; border-radius: 4px;"/>
+            </a>
+            <!-- Navbar toggle button for mobile -->
+            <button class="navbar-toggler d-block d-sm-none" type="button" data-toggle="collapse" data-target="#collapseNav" aria-controls="collapseNav" aria-expanded="false" aria-label="Toggle navigation">
+              &#9776;
+            </button>
+            <!-- Desktop navigation links -->
+            <div class="navbar-nav nav-horizontal d-none d-sm-flex">
+              <a class="nav-item nav-link" href="/projects.html">Projects</a>
+              <a class="nav-item nav-link" href="/papers/">Papers</a>
+              <a class="nav-item nav-link" href="/grants/">Grants</a>
+              <a class="nav-item nav-link" href="/news/">News</a>
+              <a class="nav-item nav-link" href="/people.html">People</a>
+              <a class="nav-item nav-link" href="/about/">About</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile navigation menu (only shows when collapsed) -->
+  <div class="nav-bg-color d-sm-none">
+    <nav class="container navbar navbar-dark navbar-expand-sm">
+      <div class="collapse navbar-collapse" id="collapseNav">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="/projects.html">Projects</a>
+          <a class="nav-item nav-link" href="/papers/">Papers</a>
+          <a class="nav-item nav-link" href="/grants/">Grants</a>
+          <a class="nav-item nav-link" href="/news/">News</a>
+          <a class="nav-item nav-link" href="/people.html">People</a>
+          <a class="nav-item nav-link" href="/about/">About</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <br />
+  <div class="row">
+  <div class="col-12">
+    <h2 class="page-title">IRepair: An Intent-Aware Approach to Repair Data-Driven Errors in Large Language Models</h2>
+    
+
+<h4>
+By: 
+Sayem Mohammad Imtiaz, Astha Singh, Fraol Batole, and Hridesh Rajan
+
+</h4>
+
+
+<a href="IREPAIR.pdf" class="icon">
+  <img src="/img/pdf_icon.svg"/ alt="PDF Download">
+  <span>Download Paper</span>
+</a>
+
+<br/>
+
+
+
+<h4>Abstract</h4>
+<p>
+  <span id="imtiaz2025irepair">
+    Not a day goes by without hearing about the impressive feats of large language models (LLMs), and equally, not a day passes without hearing about their challenges. LLMs are notoriously vulnerable to biases in their dataset, leading to issues such as toxicity, harmful responses, and factual inaccuracies. While domain-adaptive training has been employed to mitigate these issues, these techniques often address all model parameters indiscriminately during the repair process, resulting in poor repair quality and reduced model versatility. In this paper, drawing inspiration from fault localization via program slicing, we introduce a novel dynamic slicing-based intent-aware LLM repair strategy, IRepair. This approach selectively targets the most error-prone sections of the model for repair. Specifically, we propose dynamically slicing the model’s most sensitive layers that require immediate attention, concentrating repair efforts on those areas. This method enables more effective repairs with potentially less impact on the model’s overall versatility by altering a smaller portion of the model. Furthermore, dynamic selection allows for a more nuanced and precise model repair compared to a fixed selection strategy. We evaluated our technique on three models from the GPT2 and GPT-Neo families, with parameters ranging from 800M to 1.6B, in a toxicity mitigation setup. Our results show that IRepair repairs errors 43.6% more effectively while causing 46% less disruption to general performance compared to the closest baseline, direct preference optimization. Our empirical analysis also reveals that errors are more concentrated in a smaller section of the model, with the top 20% of layers exhibiting 773% more error density than the remaining 80%. This highlights the need for selective repair. Additionally, we demonstrate that a dynamic selection approach is essential for addressing errors dispersed throughout the model, ensuring a robust and efficient repair.
+  </span>
+</p>
+
+
+
+
+
+<h4>ACM Reference</h4>
+<p>
+<span id="imtiaz2025irepair">Imtiaz, S.M. et al. 2025. IRepair: An Intent-Aware Approach to Repair Data-Driven Errors in Large Language Models. <i>ESEC/FSE’2025: The 33st ACM Foundations of Software Engineering</i> (Jun. 2025).</span>
+</p>
+
+<h4>BibTeX Reference</h4>
+<pre><code>@inproceedings{imtiaz2025irepair,
+  author = {Sayem Mohammad Imtiaz and Astha Singh and Fraol Batole and Hridesh Rajan},
+  title = {IRepair: An Intent-Aware Approach to Repair Data-Driven Errors in Large Language Models},
+  booktitle = {ESEC/FSE'2025: The 33st ACM Foundations of Software Engineering},
+  location = {Trondheim, Norway},
+  month = {June 23-June 27},
+  year = {2025},
+  entrysubtype = {conference},
+  abstract = {
+    Not a day goes by without hearing about the impressive feats of large language models (LLMs), and equally, not a day passes without hearing about their challenges. LLMs are notoriously vulnerable to biases in their dataset, leading to issues such as toxicity, harmful responses, and factual inaccuracies. While domain-adaptive training has been employed to mitigate these issues, these techniques often address all model parameters indiscriminately during the repair process, resulting in poor repair quality and reduced model versatility. In this paper, drawing inspiration from fault localization via program slicing, we introduce a novel dynamic slicing-based intent-aware LLM repair strategy, IRepair. This approach selectively targets the most error-prone sections of the model for repair. Specifically, we propose dynamically slicing the model’s most sensitive layers that require immediate attention, concentrating repair efforts on those areas. This method enables more effective repairs with potentially less impact on the model’s overall versatility by altering a smaller portion of the model. Furthermore, dynamic selection allows for a more nuanced and precise model repair compared to a fixed selection strategy. We evaluated our technique on three models from the GPT2 and GPT-Neo families, with parameters ranging from 800M to 1.6B, in a toxicity mitigation setup. Our results show that IRepair repairs errors 43.6% more effectively while causing 46% less disruption to general performance compared to the closest baseline, direct preference optimization. Our empirical analysis also reveals that errors are more concentrated in a smaller section of the model, with the top 20% of layers exhibiting 773% more error density than the remaining 80%. This highlights the need for selective repair. Additionally, we demonstrate that a dynamic selection approach is essential for addressing errors dispersed throughout the model, ensuring a robust and efficient repair.
+  }
+}
+</code></pre>
+
+
+  </div>
+  </div>
+  <br />
+</main>
+
+
+<footer>
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      },
+      i[r].l = 1 * new Date();
+      a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-512574-3', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <div class="container">
+    <div>
+      <div class="row">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-xs-12 col-lg-3 tulane-logo-wrapper">
+              <a href="http://www.iastate.edu">
+                <img src="/img/tulane-logo.png" alt="Tulane University" class="tulane-logo">
+              </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4">
+              <p>
+                <b>Laboratory for Software Design</b>
+              </p>
+              <p>201 Lindy Claiborne Boggs Center</p>
+              <p>6823 St. Charles Avenue</p>
+              <p>New Orleans, LA 70118-5698</p>
+              <p>Phone: (504) 865-5764</p>
+              <p>E-Mail: hrajan@tulane.edu</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+              <p>
+              Copyright &copy;
+              2025
+              Tulane University. All rights reserved.
+                <div class="d-none d-lg-block" style="margin-top: 0">
+                  The research and educational activities described on these pages has been supported in part by the
+                  <a href="http://www.nsf.gov">US National Science Foundation (NSF)</a>.
+                </div>
+              </p>
+            </div>
+            <div class="col-md-3 col-lg-1 d-none d-md-block project-logos">
+              <div>
+                <a href="http://web.cs.iastate.edu/~panini/">
+                  <img src="/img/panini-logo.svg" class="logo" alt="Boa Logo">
+                  Panini
+                </div>
+                <div>
+                  <a href="http://boa.cs.iastate.edu">
+                    <img src="/img/boa-logo.svg" class="logo" alt="Boa Logo">
+                    Boa
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="/js/design.js"></script>
+  </body>
+</html>
