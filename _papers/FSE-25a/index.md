@@ -17,7 +17,7 @@ bib: |
     }
   }
 kind: conference
-download_link: IREPAIR.pdf
+download_link: IRepair.pdf
 publication_year: 2025
 tags:
   - d4
