@@ -22,7 +22,7 @@ bib: |
     }
   }
 kind: journal
-download_link: https://dl.acm.org/doi/abs/10.1145/3708473
+download_link: 3708473.pdf
 publication_year: 2024
 tags:
   - boa
