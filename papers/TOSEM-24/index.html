@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/design.css">
+    <link rel="icon" href="/favicon.ico">
+    <title>Leveraging Data Characteristics for Bug Localization in Deep Learning Programs</title>
+  </head>
+
+  <body>
+    <!-- Load jQuery before the content in order to support the papers page sorting -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <header>
+  <div class="brand-bg-color">
+    <div class="container">
+      <div class="brand-navbar">
+        <div class="row">
+          <div class="flex-separate col-12 d-flex justify-content-between align-items-center">
+            <a href="/" class="nav-link">
+              <img src="/img/tulane-sse-logo.png" alt="Tulane School of Science and Engineering" id="header-logo"
+                   style="height: 60px; margin: 10px 0; padding: 5px; border-radius: 4px;"/>
+            </a>
+            <!-- Navbar toggle button for mobile -->
+            <button class="navbar-toggler d-block d-sm-none" type="button" data-toggle="collapse" data-target="#collapseNav" aria-controls="collapseNav" aria-expanded="false" aria-label="Toggle navigation">
+              &#9776;
+            </button>
+            <!-- Desktop navigation links -->
+            <div class="navbar-nav nav-horizontal d-none d-sm-flex">
+              <a class="nav-item nav-link" href="/projects.html">Projects</a>
+              <a class="nav-item nav-link" href="/papers/">Papers</a>
+              <a class="nav-item nav-link" href="/grants/">Grants</a>
+              <a class="nav-item nav-link" href="/news/">News</a>
+              <a class="nav-item nav-link" href="/people.html">People</a>
+              <a class="nav-item nav-link" href="/about/">About</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile navigation menu (only shows when collapsed) -->
+  <div class="nav-bg-color d-sm-none">
+    <nav class="container navbar navbar-dark navbar-expand-sm">
+      <div class="collapse navbar-collapse" id="collapseNav">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="/projects.html">Projects</a>
+          <a class="nav-item nav-link" href="/papers/">Papers</a>
+          <a class="nav-item nav-link" href="/grants/">Grants</a>
+          <a class="nav-item nav-link" href="/news/">News</a>
+          <a class="nav-item nav-link" href="/people.html">People</a>
+          <a class="nav-item nav-link" href="/about/">About</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <br />
+  <div class="row">
+  <div class="col-12">
+    <h2 class="page-title">Leveraging Data Characteristics for Bug Localization in Deep Learning Programs</h2>
+    
+
+<h4>
+By: 
+Ruchira Manke, Mohammad Wardat, Foutse Khomh, and Hridesh Rajan
+
+</h4>
+
+
+<a href="3708473.pdf" class="icon">
+  <img src="/img/pdf_icon.svg"/ alt="PDF Download">
+  <span>Download Paper</span>
+</a>
+
+<br/>
+
+
+
+<h4>Abstract</h4>
+<p>
+  <span id="manke2024buglocalization">
+    Deep Learning (DL) is a class of machine learning algorithms that are used in a wide variety of applications. Like any software system, DL programs can have bugs. To support bug localization in DL programs, several tools have been proposed in the past. As most of the bugs that occur due to improper model structure known as structural bugs lead to inadequate performance during training, it is challenging for developers to identify the root cause and address these bugs. To support bug detection and localization in DL programs, in this paper, we propose Theia, which detects and localizes structural bugs in DL programs. Unlike the previous works, Theia considers the training dataset characteristics to automatically detect bugs in DL programs developed using two deep learning libraries, Keras and PyTorch. Since training the DL models is a time-consuming process, Theia detects these bugs at the beginning of the training process and alerts the developer with informative messages containing the bug’s location and actionable fixes which will help them to improve the structure of the model. We evaluated Theia on a benchmark of 40 real-world buggy DL programs obtained from Stack Overflow. Our results show that Theia successfully localizes 57/75 structural bugs in 40 buggy programs, whereas NeuraLint, a state-of-the-art approach capable of localizing structural bugs before training localizes 17/75 bugs.
+  </span>
+</p>
+
+
+
+
+
+<h4>ACM Reference</h4>
+<p>
+<span id="manke2024buglocalization">Manke, R. et al. 2024. Leveraging Data Characteristics for Bug Localization in Deep Learning Programs. <i>ACM Trans. Softw. Eng. Methodol.</i> (Dec. 2024). DOI:https://doi.org/10.1145/3708473.</span>
+</p>
+
+<h4>BibTeX Reference</h4>
+<pre><code>@article{manke2024buglocalization,
+  author = {Manke, Ruchira and Wardat, Mohammad and Khomh, Foutse and Rajan, Hridesh},
+  title = {Leveraging Data Characteristics for Bug Localization in Deep Learning Programs},
+  journal = {ACM Trans. Softw. Eng. Methodol.},
+  month = dec,
+  year = {2024},
+  issn = {1049-331X},
+  url = {https://doi.org/10.1145/3708473},
+  doi = {10.1145/3708473},
+  acmid = {2803171},
+  publisher = {ACM},
+  address = {New York, NY, USA},
+  keywords = {deep learning bugs, bug localization, debugging, program analysis},
+  abstract = {
+    Deep Learning (DL) is a class of machine learning algorithms that are used in a wide variety of applications. Like any software system, DL programs can have bugs. To support bug localization in DL programs, several tools have been proposed in the past. As most of the bugs that occur due to improper model structure known as structural bugs lead to inadequate performance during training, it is challenging for developers to identify the root cause and address these bugs. To support bug detection and localization in DL programs, in this paper, we propose Theia, which detects and localizes structural bugs in DL programs. Unlike the previous works, Theia considers the training dataset characteristics to automatically detect bugs in DL programs developed using two deep learning libraries, Keras and PyTorch. Since training the DL models is a time-consuming process, Theia detects these bugs at the beginning of the training process and alerts the developer with informative messages containing the bug’s location and actionable fixes which will help them to improve the structure of the model. We evaluated Theia on a benchmark of 40 real-world buggy DL programs obtained from Stack Overflow. Our results show that Theia successfully localizes 57/75 structural bugs in 40 buggy programs, whereas NeuraLint, a state-of-the-art approach capable of localizing structural bugs before training localizes 17/75 bugs.
+  }
+}
+</code></pre>
+
+
+  </div>
+  </div>
+  <br />
+</main>
+
+
+<footer>
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      },
+      i[r].l = 1 * new Date();
+      a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-512574-3', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <div class="container">
+    <div>
+      <div class="row">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-xs-12 col-lg-3 tulane-logo-wrapper">
+              <a href="http://www.iastate.edu">
+                <img src="/img/tulane-logo.png" alt="Tulane University" class="tulane-logo">
+              </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4">
+              <p>
+                <b>Laboratory for Software Design</b>
+              </p>
+              <p>201 Lindy Claiborne Boggs Center</p>
+              <p>6823 St. Charles Avenue</p>
+              <p>New Orleans, LA 70118-5698</p>
+              <p>Phone: (504) 865-5764</p>
+              <p>E-Mail: hrajan@tulane.edu</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+              <p>
+              Copyright &copy;
+              2025
+              Tulane University. All rights reserved.
+                <div class="d-none d-lg-block" style="margin-top: 0">
+                  The research and educational activities described on these pages has been supported in part by the
+                  <a href="http://www.nsf.gov">US National Science Foundation (NSF)</a>.
+                </div>
+              </p>
+            </div>
+            <div class="col-md-3 col-lg-1 d-none d-md-block project-logos">
+              <div>
+                <a href="http://web.cs.iastate.edu/~panini/">
+                  <img src="/img/panini-logo.svg" class="logo" alt="Boa Logo">
+                  Panini
+                </div>
+                <div>
+                  <a href="http://boa.cs.iastate.edu">
+                    <img src="/img/boa-logo.svg" class="logo" alt="Boa Logo">
+                    Boa
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="/js/design.js"></script>
+  </body>
+</html>
