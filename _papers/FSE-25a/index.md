@@ -7,7 +7,7 @@ bib: |
   @inproceedings{imtiaz2025irepair,
     author = {Sayem Mohammad Imtiaz and Astha Singh and Fraol Batole and Hridesh Rajan},
     title = {IRepair: An Intent-Aware Approach to Repair Data-Driven Errors in Large Language Models},
-    booktitle = {ESEC/FSE'2025: The 33st ACM Foundations of Software Engineering},
+    booktitle = {FSE'2025: The ACM International Conference on the Foundations of Software Engineering},
     location = {Trondheim, Norway},
     month = {June 23-June 27},
     year = {2025},
