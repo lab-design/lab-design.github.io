@@ -8,7 +8,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/design.css">
     <link rel="icon" href="/favicon.ico">
-    <title>IRepair: An Intent-Aware Approach to Repair Data-Driven Errors in Large Language Models</title>
+    <title>Sayem Imtiaz defends Ph.D. thesis</title>
   </head>
 
   <body>
@@ -65,55 +65,28 @@
   <br />
   <div class="row">
   <div class="col-12">
-    <h2 class="page-title">IRepair: An Intent-Aware Approach to Repair Data-Driven Errors in Large Language Models</h2>
+    <h2 class="page-title">Sayem Imtiaz defends Ph.D. thesis</h2>
+    <p class="mb-2 text-muted">October 11, 2024</p>
+
+  <span class="news-link">Links: </span>
+  
+    <a href="https://www.cs.iastate.edu/event/2024/phd-final-oral-exam-sayem-mohammad-imtiaz" class="news-link">Event Link</a>
     
+  
 
-<h4>
-By: 
-Sayem Mohammad Imtiaz, Astha Singh, Fraol Batole, and Hridesh Rajan
+<p>Sayem Imtiaz has successfully defended his Ph.D. thesis entitled
+“<em>Modularity-inspired Techniques for Patching the Weak Components in Deep Learning</em>”.
+His research focused on addressing data-driven errors in deep learning, particularly NLP models, in an isolated and targeted fashion by employing the principles of modularity.
+The abstract of the thesis is as follows:</p>
 
-</h4>
+<p>``<em>Modularity, a core principle in software engineering, involves breaking down software into independent modules that can be reused, replaced, or repaired in isolation. This approach ensures that weak components can be effectively repaired without impacting the rest of the system, thereby maintaining system reliability and reducing maintenance costs through module reusability. The concept has been adapted to deep learning models, offering similar benefits such as reusability and replaceability. However, existing modular approaches are limited in their applicability, particularly to natural language processing models, and struggle with composing modules trained on different data distributions. To address these concerns, our first approach demonstrates that recurrent neural network-based (RNN) NLP models can be effectively decomposed into modules for direct replacement and repair of weaker components, with only a 0.6% average loss in accuracy. We introduce a temporal-order preserving technique by unrolling the feedback loop within RNNs, which enhances modular benefits such as reusability. Our demonstration illustrates that RNNs can be augmented with new natural language capabilities, and issues such as faulty behavior can be addressed through module replacement. In the second approach, we address the limitations of state-of-the-art methods for composing modules across different datasets. Existing voting-based techniques often perform poorly in inter-dataset scenarios. We propose three novel methods that significantly improve module reusability and performance, as shown in our evaluation of 92 convolutional neural network-based modules. This work shows that composition is key to facilitating the effective reuse of DL modules, which is essential for successfully repairing weak models by integrating replaced modules with existing ones. Finally, we present a modularity-inspired technique for repairing weak components in large language models. By isolating and targeting the most error-prone modules within transformer architectures, our method improves repair effectiveness by 43.6% and reduces performance disruption by 46%. Specifically, we treat each layer block within the transformer architecture as a distinct module and identify the weakest module for focused repair. This targeted approach effectively addresses biases and inaccuracies in large language models, as demonstrated in our results. Lastly, this dissertation presents an in-depth analysis and assessment of our proposed techniques, highlighting their effectiveness, efficiency, and limitations. It also offers suggestions for future research in the evolving field of modularity for deep learning.</em>’’</p>
 
+<p>The increasing reliance of modern foundational models on vast volumes of data available on the web makes them susceptible to biases and issues in the unfiltered corpus. This is particularly relevant for large language models (LLMs), which are trained in a semi-supervised fashion with data sourced from the internet primarily. Sayem’s research draws from the principles of modularity in enabling targeted and precise repair of software while limiting the impact on unrelated parts of the software. It aims to address such data-driven errors in deep learning (DL) systems in a targeted fashion. To this end, his first work introduced the notion of modularity in the context of recurrent neural networks (RNNs), where he decomposed RNNs into independent modules. The work demonstrated that weak RNN models can be patched by replacing modules with stronger modules and can augment the capability of existing neural machine translation systems. His second work introduced three fusion strategies for addressing the distribution shift among DL modules, which significantly enhance module reusability in new contexts. His third work proposed an isolated and targeted intervention method for repairing the toxicity in LLMs, which has been shown to be very effective compared to traditional blanket fix methods.</p>
 
-<a href="IRepair.pdf" class="icon">
-  <img src="/img/pdf_icon.svg"/ alt="PDF Download">
-  <span>Download Paper</span>
-</a>
+<p>Sayem’s Ph.D. theis committee consisted of Hridesh Rajan (major professor), Wei Le, Myra Cohen, Hongyang Gao, and Pavan Aduri.</p>
 
-<br/>
+<p>Congratulations, Sayem Imtiaz!</p>
 
-
-
-<h4>Abstract</h4>
-<p>
-  <span id="imtiaz2025irepair">
-    Not a day goes by without hearing about the impressive feats of large language models (LLMs), and equally, not a day passes without hearing about their challenges. LLMs are notoriously vulnerable to biases in their dataset, leading to issues such as toxicity, harmful responses, and factual inaccuracies. While domain-adaptive training has been employed to mitigate these issues, these techniques often address all model parameters indiscriminately during the repair process, resulting in poor repair quality and reduced model versatility. In this paper, drawing inspiration from fault localization via program slicing, we introduce a novel dynamic slicing-based intent-aware LLM repair strategy, IRepair. This approach selectively targets the most error-prone sections of the model for repair. Specifically, we propose dynamically slicing the model’s most sensitive layers that require immediate attention, concentrating repair efforts on those areas. This method enables more effective repairs with potentially less impact on the model’s overall versatility by altering a smaller portion of the model. Furthermore, dynamic selection allows for a more nuanced and precise model repair compared to a fixed selection strategy. We evaluated our technique on three models from the GPT2 and GPT-Neo families, with parameters ranging from 800M to 1.6B, in a toxicity mitigation setup. Our results show that IRepair repairs errors 43.6% more effectively while causing 46% less disruption to general performance compared to the closest baseline, direct preference optimization. Our empirical analysis also reveals that errors are more concentrated in a smaller section of the model, with the top 20% of layers exhibiting 773% more error density than the remaining 80%. This highlights the need for selective repair. Additionally, we demonstrate that a dynamic selection approach is essential for addressing errors dispersed throughout the model, ensuring a robust and efficient repair.
-  </span>
-</p>
-
-
-
-
-
-<h4>ACM Reference</h4>
-<p>
-<span id="imtiaz2025irepair">Imtiaz, S.M. et al. 2025. IRepair: An Intent-Aware Approach to Repair Data-Driven Errors in Large Language Models. <i>FSE’2025: The ACM International Conference on the Foundations of Software Engineering</i> (Jun. 2025).</span>
-</p>
-
-<h4>BibTeX Reference</h4>
-<pre><code>@inproceedings{imtiaz2025irepair,
-  author = {Sayem Mohammad Imtiaz and Astha Singh and Fraol Batole and Hridesh Rajan},
-  title = {IRepair: An Intent-Aware Approach to Repair Data-Driven Errors in Large Language Models},
-  booktitle = {FSE'2025: The ACM International Conference on the Foundations of Software Engineering},
-  location = {Trondheim, Norway},
-  month = {June 23-June 27},
-  year = {2025},
-  entrysubtype = {conference},
-  abstract = {
-    Not a day goes by without hearing about the impressive feats of large language models (LLMs), and equally, not a day passes without hearing about their challenges. LLMs are notoriously vulnerable to biases in their dataset, leading to issues such as toxicity, harmful responses, and factual inaccuracies. While domain-adaptive training has been employed to mitigate these issues, these techniques often address all model parameters indiscriminately during the repair process, resulting in poor repair quality and reduced model versatility. In this paper, drawing inspiration from fault localization via program slicing, we introduce a novel dynamic slicing-based intent-aware LLM repair strategy, IRepair. This approach selectively targets the most error-prone sections of the model for repair. Specifically, we propose dynamically slicing the model’s most sensitive layers that require immediate attention, concentrating repair efforts on those areas. This method enables more effective repairs with potentially less impact on the model’s overall versatility by altering a smaller portion of the model. Furthermore, dynamic selection allows for a more nuanced and precise model repair compared to a fixed selection strategy. We evaluated our technique on three models from the GPT2 and GPT-Neo families, with parameters ranging from 800M to 1.6B, in a toxicity mitigation setup. Our results show that IRepair repairs errors 43.6% more effectively while causing 46% less disruption to general performance compared to the closest baseline, direct preference optimization. Our empirical analysis also reveals that errors are more concentrated in a smaller section of the model, with the top 20% of layers exhibiting 773% more error density than the remaining 80%. This highlights the need for selective repair. Additionally, we demonstrate that a dynamic selection approach is essential for addressing errors dispersed throughout the model, ensuring a robust and efficient repair.
-  }
-}
-</code></pre>
 
 
   </div>
