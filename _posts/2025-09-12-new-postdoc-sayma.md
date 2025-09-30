@@ -3,7 +3,7 @@ title: Dr. Sayma Sultana has joined the Laboratory of Software Design at Tulane 
 links:
 ---
 
-### Dr. Raisa Sultana
+### Dr. Sayma Sultana
 
 She earned her Ph.D. in Computer Science from Wayne State University under the supervision of Dr. Amiangshu Bosu. Her research focuses on identifying and developing interventions to mitigate gender bias among software professionals, bridging **Software Engineering**, **Human-Computer Interaction**, and **Natural Language Processing**.
 
