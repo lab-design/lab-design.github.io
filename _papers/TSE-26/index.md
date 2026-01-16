@@ -5,7 +5,7 @@ short_name: TSE '26
 title: Typestate-based Fault Localization of API Usage Violations in a Deep Learning Program
 bib: |
   @article{batole2026neuralstate,
-    author = {Fraol Batole, Ruchira Manke, Robert Dyer, Tien N. Nguyen, and Hridesh Rajan},
+    author = {Fraol Batole and Ruchira Manke and Robert Dyer and Tien N. Nguyen and Hridesh Rajan},
     title = {Typestate-based Fault Localization of API Usage Violations in a Deep Learning Program},
     journal = {IEEE Transactions on Software Engineering},
     month = {January},
