@@ -8,7 +8,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/design.css">
     <link rel="icon" href="/favicon.ico">
-    <title>On Accelerating Source Code Analysis At Massive Scale</title>
+    <title>Typestate-based Fault Localization of API Usage Violations in a Deep Learning Program</title>
   </head>
 
   <body>
@@ -65,17 +65,17 @@
   <br />
   <div class="row">
   <div class="col-12">
-    <h2 class="page-title">On Accelerating Source Code Analysis At Massive Scale</h2>
+    <h2 class="page-title">Typestate-based Fault Localization of API Usage Violations in a Deep Learning Program</h2>
     
 
 <h4>
 By: 
-Ganesha Upadhyaya and Hridesh Rajan
+
 
 </h4>
 
 
-<a href="AccelerationTSE18.pdf" class="icon">
+<a href="NeuralState.pdf" class="icon">
   <img src="/img/pdf_icon.svg"/ alt="PDF Download">
   <span>Download Paper</span>
 </a>
@@ -86,8 +86,8 @@ Ganesha Upadhyaya and Hridesh Rajan
 
 <h4>Abstract</h4>
 <p>
-  <span id="upadhyaya2018acceleration">
-    Encouraged by the success of data-driven software engineering (SE) techniques that have found numerous applications e.g. in defect prediction, specification inference, the demand for mining and analyzing source code repositories at scale has significantly increased. However, analyzing source code at scale remains expensive to the extent that data-driven solutions to certain SE problems are beyond our reach today. Extant techniques have focused on leveraging distributed computing to solve this problem, but with a concomitant increase in computational resource needs. This work proposes a technique that reduces the amount of computation performed by the ultra-large-scale source code mining task, especially those that make use of control and data flow analyses. Our key idea is to analyze the mining task to identify and remove the irrelevant portions of the source code, prior to running the mining task. We show a realization of our insight for mining and analyzing massive collections of control flow graphs of source codes. Our evaluation using 16 classical control-/data-flow analyses that are typical components of mining tasks and 7 Million CFGs shows that our technique can achieve on average a 40% reduction in the task computation time. Our case studies demonstrates the applicability of our technique to massive scale source code mining tasks.
+  <span id="batole2026neuralstate">
+    Deep Learning (DL) applications have become essential in numerous domains, yet they remain plagued by subtle bugs that cause 66% of crashes in production systems. These failures primarily stem from API usage violations in complex frameworks like TensorFlow, Keras, and PyTorch, where APIs lack formal specifications and interdependencies between operations remain undocumented. Traditional static analysis tools fail to address DL-specific constraints, such as data dependency between layers. To bridge this critical gap, we propose NEURALSTATE, an approach to detect performance and program crash bugs in a DL program. NEURALSTATE follows a four-step process: (i) gather specifications for Deep Learning operations from different sources; (ii) introduce abstract states to represent these Deep Learning operations; (iii) design formal rules for transitioning between states based on the specifications; (iv) utilize a combination of standard analysis techniques (i.e., typestate and value propagation) to identify bugs in a DL program. Our evaluation on real-world benchmarks demonstrates NEURALSTATE’s effectiveness, achieving a 25% improvement in precision and 63% improvement in recall compared to state-of-the-art tools. Most importantly, NEURALSTATE successfully detects 18 subtle bugs in 45 real-world programs that existing techniques miss entirely. 
   </span>
 </p>
 
@@ -97,26 +97,21 @@ Ganesha Upadhyaya and Hridesh Rajan
 
 <h4>ACM Reference</h4>
 <p>
-<span id="upadhyaya2018acceleration">Upadhyaya, G. and Rajan, H. 2018. On Accelerating Source Code Analysis At Massive Scale. <i>IEEE Transactions on Software Engineering</i>. 44, 7 (July 2018), 669–688. https://doi.org/10.1109/TSE.2018.2828848.</span>
+<span id="batole2026neuralstate">2026. Typestate-based Fault Localization of API Usage Violations in a Deep Learning Program. <i>IEEE Transactions on Software Engineering</i>. (Jan. 2026).</span>
 </p>
 
 <h4>BibTeX Reference</h4>
-<pre><code>@article{upadhyaya2018acceleration,
-  author = {Ganesha Upadhyaya and Hridesh Rajan},
-  title = {On Accelerating Source Code Analysis At Massive Scale},
+<pre><code>@article{batole2026neuralstate,
+  author = {Fraol Batole, Ruchira Manke, Robert Dyer, Tien N. Nguyen, and Hridesh Rajan},
+  title = {Typestate-based Fault Localization of API Usage Violations in a Deep Learning Program},
   journal = {IEEE Transactions on Software Engineering},
-  volume = {44},
-  number = {7},
-  pages = {669-688},
-  month = {July},
-  year = {2018},
+  month = {January},
+  year = {2026},
   publisher = {IEEE},
   address = {New York, NY, USA},
   abstract = {
-    Encouraged by the success of data-driven software engineering (SE) techniques that have found numerous applications e.g. in defect prediction, specification inference, the demand for mining and analyzing source code repositories at scale has significantly increased. However, analyzing source code at scale remains expensive to the extent that data-driven solutions to certain SE problems are beyond our reach today. Extant techniques have focused on leveraging distributed computing to solve this problem, but with a concomitant increase in computational resource needs. This work proposes a technique that reduces the amount of computation performed by the ultra-large-scale source code mining task, especially those that make use of control and data flow analyses. Our key idea is to analyze the mining task to identify and remove the irrelevant portions of the source code, prior to running the mining task. We show a realization of our insight for mining and analyzing massive collections of control flow graphs of source codes. Our evaluation using 16 classical control-/data-flow analyses that are typical components of mining tasks and 7 Million CFGs shows that our technique can achieve on average a 40% reduction in the task computation time. Our case studies demonstrates the applicability of our technique to massive scale source code mining tasks.
+    Deep Learning (DL) applications have become essential in numerous domains, yet they remain plagued by subtle bugs that cause 66% of crashes in production systems. These failures primarily stem from API usage violations in complex frameworks like TensorFlow, Keras, and PyTorch, where APIs lack formal specifications and interdependencies between operations remain undocumented. Traditional static analysis tools fail to address DL-specific constraints, such as data dependency between layers. To bridge this critical gap, we propose NEURALSTATE, an approach to detect performance and program crash bugs in a DL program. NEURALSTATE follows a four-step process: (i) gather specifications for Deep Learning operations from different sources; (ii) introduce abstract states to represent these Deep Learning operations; (iii) design formal rules for transitioning between states based on the specifications; (iv) utilize a combination of standard analysis techniques (i.e., typestate and value propagation) to identify bugs in a DL program. Our evaluation on real-world benchmarks demonstrates NEURALSTATE’s effectiveness, achieving a 25% improvement in precision and 63% improvement in recall compared to state-of-the-art tools. Most importantly, NEURALSTATE successfully detects 18 subtle bugs in 45 real-world programs that existing techniques miss entirely. 
   },
-  doi={10.1109/TSE.2018.2828848}, 
-  ISSN={0098-5589}, 
 }
 </code></pre>
 
