@@ -5,11 +5,17 @@
 
 - name: Dr. Hridesh Rajan
   status: Director
-  email: hridesh@iastate.edu
-  site: http://web.cs.iastate.edu/~hridesh/
+  email: hrajan@tulane.edu
+  site: https://sse.tulane.edu/cs/faculty/rajan
   img: hrajan.jpg
 
 # Postdocs:
+- name: Dr. Breno Dantas Cruz
+  status: Postdoctoral Fellow
+  email: bdantascruz@tulane.edu
+  site: https://www.cs.iastate.edu/people/breno-dantas-cruz
+  img: breno.jpg
+
 - name: Dr. Sayma Sultana
   status: Postdoctoral Fellow
   email: Ssultana1@tulane.edu
@@ -20,19 +26,19 @@
 
 - name: Fraol Batole
   status: PhD
-  email: fraol@iastate.edus
+  email: fbatole@tulane.edu
   site: https://fraolbatole.github.io/
   img: fraol.jpg
   
 - name: Ruchira Manke
   status: PhD
-  email: rmanke@iastate.edu
+  email: rmanke@tulane.edu
   site: https://tads.research.iastate.edu/people/ruchira-manke
   img: ruchira.jpg
 
 - name: Deepak-George Thomas
   status: PhD
-  email: dgthomas@iastate.edu
+  email: dgthomas23@tulane.edu
   site: https://deepakgthomas.github.io/
   img: deepak.jpg
 
