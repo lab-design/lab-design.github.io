@@ -87,7 +87,7 @@ Modular Deep Learning project has been supported in part by the following grants
 
 - US National Science Foundation, SHF:Small: More Modular Deep Learning. PI: Hridesh Rajan
   (2022-2025), Total award amount: $580,000,
-  Links: [ISU](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2223812).
+  Links: [NSF](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2223812).
 
 [More information about the Modular Deep Learning project.](papers/ESEC-FSE-20b/)
 
