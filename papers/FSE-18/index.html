@@ -5,61 +5,49 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="The Laboratory for Software Design at Tulane University researches programming languages, compilers, and software engineering for dependable software and AI.">
+    <meta name="theme-color" content="#006747">
+    <meta property="og:title" content="Large-scale Study of Substitutability in the Presence of Effects">
+    <meta property="og:description" content="Laboratory for Software Design at Tulane University, School of Science and Engineering.">
+    <meta property="og:type" content="website">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/design.css">
     <link rel="icon" href="/favicon.ico">
-    <title>Large-scale Study of Substitutability in the Presence of Effects</title>
+    <title>Large-scale Study of Substitutability in the Presence of Effects | Laboratory for Software Design</title>
   </head>
 
   <body>
     <!-- Load jQuery before the content in order to support the papers page sorting -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 
-    <header>
-  <div class="brand-bg-color">
-    <div class="container">
-      <div class="brand-navbar">
-        <div class="row">
-          <div class="flex-separate col-12 d-flex justify-content-between align-items-center">
-            <a href="/" class="nav-link">
-              <img src="/img/tulane-sse-logo.png" alt="Tulane School of Science and Engineering" id="header-logo"
-                   style="height: 60px; margin: 10px 0; padding: 5px; border-radius: 4px;"/>
-            </a>
-            <!-- Navbar toggle button for mobile -->
-            <button class="navbar-toggler d-block d-sm-none" type="button" data-toggle="collapse" data-target="#collapseNav" aria-controls="collapseNav" aria-expanded="false" aria-label="Toggle navigation">
-              &#9776;
-            </button>
-            <!-- Desktop navigation links -->
-            <div class="navbar-nav nav-horizontal d-none d-sm-flex">
-              <a class="nav-item nav-link" href="/projects.html">Projects</a>
-              <a class="nav-item nav-link" href="/papers/">Papers</a>
-              <a class="nav-item nav-link" href="/grants/">Grants</a>
-              <a class="nav-item nav-link" href="/news/">News</a>
-              <a class="nav-item nav-link" href="/people.html">People</a>
-              <a class="nav-item nav-link" href="/about/">About</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+    <header class="site-header">
+  <div class="container site-header__inner">
+    <a href="/" class="site-brand">
+      <img src="/img/tulane-sse-logo.png" alt="Tulane University, School of Science and Engineering" class="site-brand__logo">
+      <span class="site-brand__text">
+        <span class="site-brand__lab">Laboratory for Software Design</span>
+        <span class="site-brand__school">Tulane University &middot; School of Science &amp; Engineering</span>
+      </span>
+    </a>
 
-  <!-- Mobile navigation menu (only shows when collapsed) -->
-  <div class="nav-bg-color d-sm-none">
-    <nav class="container navbar navbar-dark navbar-expand-sm">
-      <div class="collapse navbar-collapse" id="collapseNav">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link" href="/projects.html">Projects</a>
-          <a class="nav-item nav-link" href="/papers/">Papers</a>
-          <a class="nav-item nav-link" href="/grants/">Grants</a>
-          <a class="nav-item nav-link" href="/news/">News</a>
-          <a class="nav-item nav-link" href="/people.html">People</a>
-          <a class="nav-item nav-link" href="/about/">About</a>
-        </div>
-      </div>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle-cb">
+    <label for="nav-toggle" class="nav-toggle" aria-label="Toggle navigation"><span></span></label>
+
+    <nav class="site-nav">
+      
+      <a href="/projects.html" class="">Projects</a>
+      <a href="/papers/" class="is-active">Papers</a>
+      <a href="/grants/" class="">Grants</a>
+      <a href="/news/" class="">News</a>
+      <a href="/people.html" class="">People</a>
+      <a href="/about/" class="">About</a>
     </nav>
   </div>
 </header>
+
 
 <main class="container">
   <br />
@@ -172,72 +160,53 @@ Jackson Maddox, Yuheng Long, and Hridesh Rajan
 
 
 <footer>
-  <script>
-    (function (i, s, o, g, r, a, m) {
-      i['GoogleAnalyticsObject'] = r;
-      i[r] = i[r] || function () {
-        (i[r].q = i[r].q || []).push(arguments)
-      },
-      i[r].l = 1 * new Date();
-      a = s.createElement(o),
-      m = s.getElementsByTagName(o)[0];
-      a.async = 1;
-      a.src = g;
-      m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-    ga('create', 'UA-512574-3', 'auto');
-    ga('send', 'pageview');
-  </script>
   <div class="container">
-    <div>
-      <div class="row">
-        <div class="col-12">
-          <div class="row">
-            <div class="col-xs-12 col-lg-3 tulane-logo-wrapper">
-              <a href="http://www.iastate.edu">
-                <img src="/img/tulane-logo.png" alt="Tulane University" class="tulane-logo">
-              </a>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4">
-              <p>
-                <b>Laboratory for Software Design</b>
-              </p>
-              <p>201 Lindy Claiborne Boggs Center</p>
-              <p>6823 St. Charles Avenue</p>
-              <p>New Orleans, LA 70118-5698</p>
-              <p>Phone: (504) 865-5764</p>
-              <p>E-Mail: hrajan@tulane.edu</p>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-              <p>
-              Copyright &copy;
-              2026
-              Tulane University. All rights reserved.
-                <div class="d-none d-lg-block" style="margin-top: 0">
-                  The research and educational activities described on these pages has been supported in part by the
-                  <a href="http://www.nsf.gov">US National Science Foundation (NSF)</a>.
-                </div>
-              </p>
-            </div>
-            <div class="col-md-3 col-lg-1 d-none d-md-block project-logos">
-              <div>
-                <a href="http://web.cs.iastate.edu/~panini/">
-                  <img src="/img/panini-logo.svg" class="logo" alt="Boa Logo">
-                  Panini
-                </div>
-                <div>
-                  <a href="http://boa.cs.iastate.edu">
-                    <img src="/img/boa-logo.svg" class="logo" alt="Boa Logo">
-                    Boa
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-brand__name">Laboratory for Software Design</div>
+        <div class="footer-school">Tulane University &middot; School of Science &amp; Engineering</div>
+        <p>We build tools and techniques for programming languages, compilers, and software engineering, so software is easier to create, verify, and sustain.</p>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>201 Lindy Claiborne Boggs Center<br>6823 St. Charles Avenue<br>New Orleans, LA 70118</p>
+        <p>Phone: (504) 865-5764</p>
+        <p><a href="mailto:hrajan@tulane.edu">hrajan@tulane.edu</a></p>
+      </div>
+
+      <div class="footer-explore">
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="/projects.html">Projects</a></li>
+          <li><a href="/papers/">Papers</a></li>
+          <li><a href="/people.html">People</a></li>
+          <li><a href="/news/">News</a></li>
+          <li><a href="https://sse.tulane.edu">School of Science &amp; Engineering</a></li>
+        </ul>
       </div>
     </div>
-  </footer>
+
+    <div class="footer-bottom">
+      <div>&copy; 2026 Tulane University. All rights reserved.</div>
+      <div>Research supported in part by the <a href="https://www.nsf.gov">US National Science Foundation</a>.</div>
+    </div>
+  </div>
+
+  <!--
+    Analytics note: the previous Universal Analytics (analytics.js, UA-512574-3)
+    was retired by Google in 2023 and has been removed. To enable Google
+    Analytics 4, set your Measurement ID below and uncomment this block.
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  -->
+</footer>
 
 
 
