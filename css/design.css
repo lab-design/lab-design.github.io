@@ -146,13 +146,19 @@ hr {
   color: #fff;
 }
 
-.site-brand__logo {
-  height: 58px;
-  width: auto;
+.site-brand__chip {
   background: #fff;
-  padding: 5px 8px;
+  padding: 6px 9px;
   border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
   box-shadow: var(--shadow-sm);
+}
+
+.site-brand__shield {
+  height: 42px;
+  width: auto;
+  display: block;
 }
 
 .site-brand__text {
@@ -964,6 +970,30 @@ h2.research-header {
 
 h2.research-header:first-of-type {
   margin-top: 1rem;
+}
+
+/* ---------- Footer socials ---------- */
+.footer-social {
+  display: flex;
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.footer-social a {
+  color: rgba(255, 255, 255, 0.85);
+  display: inline-flex;
+  transition: color 0.18s ease, transform 0.15s ease;
+}
+
+.footer-social a:hover {
+  color: var(--tulane-blue);
+  transform: translateY(-2px);
+}
+
+.footer-social svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
 
 /*# sourceMappingURL=design.css.map */
