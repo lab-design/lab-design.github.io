@@ -5,7 +5,7 @@ title: Research & Projects
 
 {% assign papers = site.papers | sort: 'publication_year' %}
 
-<p class="lead">We design tools and techniques that make software-intensive systems, including modern AI, easier to build, verify, and sustain. Our current work spans three areas.</p>
+<p class="lead">We design tools and techniques that make software-intensive systems, including modern AI, easier to build, verify, and sustain. Our current work spans two areas.</p>
 
 <div class="area-grid">
   <a class="area-card" href="#dependable-trustworthy-ai" style="--accent: var(--tulane-green);">
@@ -13,19 +13,15 @@ title: Research & Projects
     <p>Making deep learning modular, debuggable, and dependable across its lifecycle.</p>
     <span class="area-card__projects">Modular Deep Learning &middot; Fault Localization for Deep Learning &middot; D4</span>
   </a>
-  <a class="area-card" href="#ai-for-software-engineering" style="--accent: var(--tulane-blue);">
-    <h3>AI for Software Engineering</h3>
-    <p>Using large language models and program analysis to understand, localize, and repair software.</p>
-    <span class="area-card__projects">LLM-based analysis &amp; repair</span>
-  </a>
-  <a class="area-card" href="#mining-software-repositories" style="--accent: var(--kelly);">
-    <h3>Mining Software Repositories</h3>
-    <p>Studying software at massive scale, turning millions of projects into questions we can answer.</p>
-    <span class="area-card__projects">Boa</span>
+  <a class="area-card" href="#ai-data-science-for-software-engineering" style="--accent: var(--tulane-blue);">
+    <h3>AI/Data Science for Software Engineering</h3>
+    <p>Large language models, program analysis, and data science to localize, repair, and improve software at scale.</p>
+    <span class="area-card__projects">LLM-based analysis &amp; repair &middot; Boa</span>
   </a>
 </div>
 
-## Dependable & Trustworthy AI {#dependable-trustworthy-ai .research-header}
+## Dependable & Trustworthy AI
+{: #dependable-trustworthy-ai .research-header}
 
 {% include projects_page.html name="Modular Deep Learning" link="modularity/" %}
 
@@ -76,7 +72,10 @@ D4 has been supported in part by the following grant.
   Co-I: Pavan Aduri, Eric Weber, Daniel Nettleton, and Chinmay Hegde. Total award amount: $1,531,995.00,
   Links: [NSF](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1934884&HistoricalAwards=false).
 
-## AI for Software Engineering {#ai-for-software-engineering .research-header}
+## AI/Data Science for Software Engineering
+{: #ai-data-science-for-software-engineering .research-header}
+
+We use large language models, program analysis, and large-scale data science to understand, localize, repair, and improve software. This work ranges from agent-oriented and analysis-driven techniques built on modern language models to the Boa infrastructure for mining millions of software projects at once.
 
 {% include projects_page.html name="LLM-based Program Analysis and Repair" link="/papers/" %}
 
@@ -92,11 +91,9 @@ Selected papers from this thread:
 
 [See all of our papers.](/papers/)
 
-## Mining Software Repositories {#mining-software-repositories .research-header}
-
 {% include projects_page.html name="Boa" link="http://boa.cs.iastate.edu" %}
 
-[Boa](http://boa.cs.iastate.edu) applies big data analytics to software engineering. It is a domain-specific language and infrastructure whose goal is to significantly lower the experimental cost of mining ultra-large-scale open source repositories. Boa consists of a language, its compiler and data updating tools, terabytes of raw data drawn from hundreds of thousands of open source projects, a map-reduce backend to analyze that data, a compute cluster, and a web-based frontend for writing analyses. The following papers document progress on this project:
+[Boa](http://boa.cs.iastate.edu) applies big data analytics and data science to software engineering. It is a domain-specific language and infrastructure whose goal is to significantly lower the experimental cost of mining ultra-large-scale open source repositories. Boa consists of a language, its compiler and data updating tools, terabytes of raw data drawn from hundreds of thousands of open source projects, a map-reduce backend to analyze that data, a compute cluster, and a web-based frontend for writing analyses. By turning millions of projects into data we can query, Boa lets researchers ask and answer empirical questions about software at a scale that would otherwise be out of reach. The following papers document progress on this project:
 
 <ul>
 {% for paper in papers reversed %}{% if paper.tags contains 'boa' and paper.kind != 'technical_report' %}
@@ -130,7 +127,8 @@ Boa has been supported in part by the following grants.
 
 [More information about the Boa project.](http://boa.cs.iastate.edu)
 
-## Past Projects {#past-projects .research-header}
+## Past Projects
+{: #past-projects .research-header}
 
 {% include projects_page.html name="Panini" link="panini/" %}
 

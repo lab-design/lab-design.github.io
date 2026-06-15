@@ -10,11 +10,10 @@ Our goal is to make software-intensive systems, including modern AI, easier and 
 
 ## What we work on
 
-Our current research spans three areas:
+Our current research spans two areas:
 
 - [**Dependable & Trustworthy AI**](/projects.html#dependable-trustworthy-ai): decomposing deep neural networks into reusable modules ([Modular Deep Learning](/projects.html#modular-deep-learning)), localizing faults in deep learning ([Fault Localization for Deep Learning](/projects.html#fault-localization-for-deep-learning)), and understanding risk across data-science lifecycles ([D4](/projects.html#d4-dependable-data-driven-discovery)).
-- [**AI for Software Engineering**](/projects.html#ai-for-software-engineering): using large language models and program analysis to localize design issues and repair software.
-- [**Mining Software Repositories**](/projects.html#mining-software-repositories): studying software at massive scale with [Boa](/projects.html#boa).
+- [**AI/Data Science for Software Engineering**](/projects.html#ai-data-science-for-software-engineering): using large language models, program analysis, and large-scale data science to localize, repair, and improve software, including the [Boa](/projects.html#boa) infrastructure for mining software at scale.
 
 See our [projects](/projects.html) and [recent papers](/papers/) for the full picture.
 
