@@ -1,45 +1,24 @@
-<header>
-  <div class="brand-bg-color">
-    <div class="container">
-      <div class="brand-navbar">
-        <div class="row">
-          <div class="flex-separate col-12 d-flex justify-content-between align-items-center">
-            <a href="/" class="nav-link">
-              <img src="/img/tulane-sse-logo.png" alt="Tulane School of Science and Engineering" id="header-logo"
-                   style="height: 60px; margin: 10px 0; padding: 5px; border-radius: 4px;"/>
-            </a>
-            <!-- Navbar toggle button for mobile -->
-            <button class="navbar-toggler d-block d-sm-none" type="button" data-toggle="collapse" data-target="#collapseNav" aria-controls="collapseNav" aria-expanded="false" aria-label="Toggle navigation">
-              &#9776;
-            </button>
-            <!-- Desktop navigation links -->
-            <div class="navbar-nav nav-horizontal d-none d-sm-flex">
-              <a class="nav-item nav-link" href="/projects.html">Projects</a>
-              <a class="nav-item nav-link" href="/papers/">Papers</a>
-              <a class="nav-item nav-link" href="/grants/">Grants</a>
-              <a class="nav-item nav-link" href="/news/">News</a>
-              <a class="nav-item nav-link" href="/people.html">People</a>
-              <a class="nav-item nav-link" href="/about/">About</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a href="/" class="site-brand">
+      <img src="/img/tulane-sse-logo.png" alt="Tulane University, School of Science and Engineering" class="site-brand__logo">
+      <span class="site-brand__text">
+        <span class="site-brand__lab">Laboratory for Software Design</span>
+        <span class="site-brand__school">Tulane University &middot; School of Science &amp; Engineering</span>
+      </span>
+    </a>
 
-  <!-- Mobile navigation menu (only shows when collapsed) -->
-  <div class="nav-bg-color d-sm-none">
-    <nav class="container navbar navbar-dark navbar-expand-sm">
-      <div class="collapse navbar-collapse" id="collapseNav">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link" href="/projects.html">Projects</a>
-          <a class="nav-item nav-link" href="/papers/">Papers</a>
-          <a class="nav-item nav-link" href="/grants/">Grants</a>
-          <a class="nav-item nav-link" href="/news/">News</a>
-          <a class="nav-item nav-link" href="/people.html">People</a>
-          <a class="nav-item nav-link" href="/about/">About</a>
-        </div>
-      </div>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle-cb">
+    <label for="nav-toggle" class="nav-toggle" aria-label="Toggle navigation"><span></span></label>
+
+    <nav class="site-nav">
+      {% assign p = page.url %}
+      <a href="/projects.html" class="{% if p contains '/projects' or p contains '/modularity' or p contains '/panini' or p contains '/ptolemy' %}is-active{% endif %}">Projects</a>
+      <a href="/papers/" class="{% if p contains '/papers' %}is-active{% endif %}">Papers</a>
+      <a href="/grants/" class="{% if p contains '/grants' %}is-active{% endif %}">Grants</a>
+      <a href="/news/" class="{% if p contains '/news' %}is-active{% endif %}">News</a>
+      <a href="/people.html" class="{% if p contains '/people' %}is-active{% endif %}">People</a>
+      <a href="/about/" class="{% if p contains '/about' %}is-active{% endif %}">About</a>
     </nav>
   </div>
 </header>

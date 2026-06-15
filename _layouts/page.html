@@ -6,7 +6,7 @@ layout: default
   <br />
   <div class="row">
   <div class="col-12">
-    <h2 class="page-title">{{ page.title }}</h2>
+    {% if page.title %}<h2 class="page-title">{{ page.title }}</h2>{% endif %}
     {{ content }}
   </div>
   </div>

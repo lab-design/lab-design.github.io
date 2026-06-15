@@ -7,7 +7,7 @@ highlighted_papers:
   - ICSE-25b
   - ICSE-25c
   - TOSEM-24
-  - ICSE-24a 
+  - ICSE-24a
   - ICSE-23a
   - ICSE-23b
   - ICSE-23c
@@ -27,29 +27,20 @@ highlighted_papers:
   - ICSE-18a
 ---
 
-<main class="container">
-  <br />
-  <br />
-  <div class="row">
-    <div class="col-xs-12">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 mb-4">
-            {% include home_page/carousel.html %}
-          </div>
-          <br />
+{% include home_page/hero.html %}
 
-          <div class="col-12 col-md-6">
-            {% include home_page/highlighted_papers.html
-                       highlighted_papers=page.highlighted_papers %}
-          </div>
+{% include home_page/pillars.html %}
 
-          <div class="col-12 col-md-6">
-            {% include home_page/recent_news.html %}
-          </div>
-        </div>
+<section class="section section--tint home-columns">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-6">
+        {% include home_page/highlighted_papers.html
+                   highlighted_papers=page.highlighted_papers %}
+      </div>
+      <div class="col-12 col-lg-6">
+        {% include home_page/recent_news.html %}
       </div>
     </div>
   </div>
-  <br />
-</main>
+</section>

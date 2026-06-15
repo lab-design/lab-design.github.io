@@ -1,494 +1,354 @@
 ---
 ---
 
-body {
-  font-family: Helvetica, Arial, sans-serif;
-}
-
-.news-card .card-title, .home-page-highlighted-paper-card .card-title {
-  color: #21543E;
-}
-
-.card {
-  margin-bottom: 12px;
-}
-
-.card-block {
-  padding: 20px 20px 20px 20px;
-}
-
-.card-link, .news-link {
-  color: rgb(68, 68, 68);
-  font-weight: bold;
-}
-
-@media screen and (min-width:576px){//This messes with extra small sizes
-  .container {
-    width: 100% !important;//This is the maximum width a container can ever be
-  }
-}
-
-.brand-bg-color {
-  background-color: #21543E;
-  padding-top: 0.5rem;
-}
-
-.nav-bg-color {
-  background-color: #21543E
-}
-
-/* These styles will force the links to be inline */
-.nav-horizontal {
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
-  align-items: center;
-}
-
-.nav-horizontal .nav-item {
-  display: inline-flex; /* Change to inline-flex */
-  margin-left: 15px;
-  width: auto !important;
-} 
-
-/* Make sure nav-links are also inline */
-.nav-horizontal .nav-item.nav-link {
-  display: inline-flex;
-  align-items: center;
-  width: auto !important;
-  padding: 0.5rem 1rem;
-}
-
-/* Override any Bootstrap default behaviors */
-.navbar-nav.nav-horizontal {
-  flex-direction: row !important;
-}
-
-.brand-navbar {
-//   border-bottom: 6px solid #DFBD00;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
-#isu-logo {
-  background-image: url("/img/tulane-logo.png");
-  background-position: left center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  color: rgba(0,0,0,0);
-  display: block;
-}
-
-.brand-navbar .nav-link > span {
-  font-size: 1.15rem;
-}
-
-.brand-navbar .nav-link {
-  padding: 0;
-}
-
-.brand-navbar .nav-link > .small {
-  font-size: 1rem;
-}
-
-.navbar {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-.navbar .navbar-nav .nav-link {
-  margin: 0;
-  // color: #444;
-  font-weight: lighter;
-  text-align: left;
-  width: 100%;
-  // padding-left: 1em;
-  color: white !important;
-  padding: 0 15px;
-}
-
-/* Note: Update width when changing the nav links */
-@media screen and (min-width: 544px) {
-  .navbar .navbar-nav .nav-link {
-    width: calc(100% / 6);
-    text-align: center;
-    padding-left: 0;
-  }
-  .navbar-nav {
-    width: 100%;
-  }
-}
-
-.navbar-collapse {
-  background-color: #21543E; /* Match the header background color */
-  padding: 10px;
-  border-top: 2px solid rgba(255, 255, 255, 0.3); /* Subtle white line for visual separation */
-  width: 100%;
-  position: relative;
-}
-
-.container-fluid {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.navbar .navbar-nav .nav-link:hover,
-.navbar .navbar-nav .nav-link:focus {
-  color: rgb(245, 184, 90);
-}
-
-.flex-separate {
-  display: flex;
-  justify-content: space-between;
-}
-
-/* Header and Navigation CSS */
-.brand-navbar a,
-.brand-navbar button {
-  color: #FFF;
-  font-weight: bold;
-}
-
-nav .navbar {
-  padding-top: 0.1rem;
-  padding-bottom: 0.1rem;
-}
-
-// Add some extra space between the nav bar's nav items.
-.navbar-nav .nav-item {
-  margin-right: 2.0rem;
-}
-
-.carousel-control {
-  font-size: 50pt;
-  color: black;
-}
-
-#home-page-carousel .carousel-indicators li {
-  background-color: rgba(70, 70, 70, 0.25);
-  width: 15px; /* Increase size */
-  height: 15px;
-  border-radius: 50%; /* Make it a perfect circle */
-  margin: 5px;
-}
-
-#home-page-carousel .carousel-indicators .active {
-  background-color: #444;
-  transform: scale(1.3); /* Enlarge the active indicator slightly */
-}
-
-#home-page-carousel .carousel-indicators li:hover {
-  background-color: rgba(0, 0, 0, 0.684);
-}
-
-/* Default styles for larger screens (e.g., desktops) */
-#home-page-carousel {
-  height: 400px; /* Fixed height for larger screens */
-  overflow: hidden;
-}
-
-.carousel-inner > .carousel-item > a > img {
-  width: 100%;
-  height: 350px; /* Same height as the carousel for desktops */
-  object-fit: cover; /* Ensures the image fills the container without distortion */
-  object-position: center;
-}
-
-/* Responsive adjustments for smaller screens (e.g., tablets, mobile devices) */
-@media (max-width: 768px) {
-  #home-page-carousel {
-    height: auto;
-  }
-
-  .carousel-inner > .carousel-item > a > img {
-    width: 100%;
-    height: auto; 
-  }
-}
-
-/* Very small screens (e.g., phones) */
-@media (max-width: 480px) {
-  #home-page-carousel {
-    height: auto;
-  }
-
-  .carousel-inner > .carousel-item > a > img {
-    width: 100%;
-    height: auto; 
-  }
-}
-
-.no-padding {
-  padding: 0 0 0 0;
-}
-
-.no-display {
-  display: none;
-}
-
-#markdown-toc, #papers-toc {
-  border: 1px solid black;
-  padding: 0px;
-  padding-bottom: .5rem;
-  margin-top: 1.5rem;
-  background: #F3F3F3;
-  color: #444;
-  display: table;
-  list-style-position: inside;
-  list-style-type: disc;
-}
-
-#markdown-toc li, #papers-toc li {
-  padding: 0rem 1.5rem 0rem 1.5rem
-}
-
-#markdown-toc:first-of-type li, #papers-toc:first-of-type li {
-  padding-top: .5rem;
-}
-
-#papers-toc {
-  margin-top: 0rem;
-}
-
-#papers-toc li {
-  list-style-type: none;
-}
-
-#papers-toc li::before {
-  content: "\21D2";
-}
-
-#markdown-toc a, #papers-toc a {
-  font-weight: lighter;
-}
-
-#projects-markdown-toc ol > li > ol > li {
-  list-style-type: disc;
-}
-
-#projects-markdown-toc ol > li {
-  list-style-type: none;
-}
-
-$button-active-color: #21543E;
-
-.paper-btns.btn-group {
-  display: flex;
-}
-
-.paper-btn {
-  color: #444;
-  background-color: #e6e6e6;
-  border-color: $button-active-color;
-  transition: all .3s ease;
-}
-
-.paper-btn:active, .paper-btn:focus, .paper-btn.active, .paper-btn:active:focus, .paper-btn:active:hover {
-  background-color: $button-active-color;
-  border-color: $button-active-color;
-  font-weight: bold;
-  color: #fff;
-  box-shadow: none;
-}
-
-.paper-btn.active:hover, .paper-btn.focus:hover, .paper-btn:active:hover, .paper-btn:focus:hover {
-  background-color: #b30000;
-  border-color: $button-active-color;
-}
-
-.paper-btn:hover {
-  background-color: #ccc;
-  border-color: $button-active-color;
-}
-
-.paper-btn.active.focus {
-  background-color: $button-active-color;
-  border-color: $button-active-color;
-}
-
-.card {
-  transition: all .5s ease;
-}
-
-.card:hover {
-  transform: scale(1.01);
-}
-
-.paper_card_header, .grant_card_header {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 0.2rem 0.2rem 0.2rem 0.2rem;
-}
-
-.paper_card_header > a > img {
-  height: 1.4rem;
-  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
-}
-
-.paper_card_header .paper_card_header_name, .grant_card_header .grant_card_header_name {
-  color: rgb(68, 68, 68);
-  flex-grow: 1;
-}
-
-.paper_card_header .paper_card_header_name:hover, .grant_card_header .grant_card_header_name:hover {
-  color: #21543E;
-}
-
-.paper_card .padded-inner-card-block {
-  padding: 0.8rem 0.8rem 0.8rem 0.8rem;
-}
-
-.paper_card .card-block {
-  padding: 0;
-}
-
-.space-above {
-  margin-top: 2rem;
-}
-
-.space-below {
-  margin-bottom: 2rem;
-}
-
-.icon {
-  display: flex;
-  align-items: center;
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
-}
-
-.icon > img {
-  height: 1.6rem;
-}
-
-.icon > span {
-  margin-left: 0.5rem;
-  font-size: 1.4rem;
-}
+/* ==========================================================================
+   Laboratory for Software Design  —  Tulane design system
+   Primary: Tulane Green #006747   Accent: Fontainebleau Blue #418FDE
+   ========================================================================== */
+
+:root {
+  --tulane-green: #006747;
+  --tulane-green-700: #00543a;
+  --tulane-green-800: #013f2c;
+  --tulane-green-900: #07301f;
+  --tulane-blue: #418fde;
+  --tulane-blue-600: #2f74c0;
+  --kelly: #43b02a;
+  --willow: #99cc66;
+
+  --ink: #15211c;
+  --body: #2d3a34;
+  --muted: #5f6f68;
+  --line: #e3ebe6;
+  --surface: #f4f8f6;
+  --surface-2: #e9f1ec;
+  --white: #ffffff;
+
+  --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --sans: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+  --radius: 14px;
+  --radius-sm: 10px;
+  --maxw: 1180px;
+  --shadow-sm: 0 1px 2px rgba(7,48,31,.05), 0 2px 6px rgba(7,48,31,.06);
+  --shadow-md: 0 8px 24px rgba(7,48,31,.10);
+  --shadow-lg: 0 20px 45px rgba(7,48,31,.16);
+}
+
+/* ---------- Base ---------- */
+* { box-sizing: border-box; }
 
 html {
   min-width: 320px;
   height: 100%;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
-  height: 100%;
+  min-height: 100%;
+  margin: 0;
   display: flex;
   flex-flow: column;
+  font-family: var(--sans);
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--body);
+  background: var(--white);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
-footer {
-  margin-top: auto;
-  padding-top: 5px;
-  background-color: #f3f3f3;
-  color: #444;
-  font-size: 14px;
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--serif);
+  color: var(--ink);
+  font-weight: 700;
+  line-height: 1.18;
+  letter-spacing: -.01em;
+  margin-top: 0;
+}
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
+p { margin-top: 0; }
+
+a { color: var(--tulane-blue-600); text-decoration: none; transition: color .18s ease; }
+a:hover, a:focus { color: var(--tulane-green); text-decoration: underline; }
+
+img { max-width: 100%; }
+hr { border: 0; border-top: 1px solid var(--line); }
+::selection { background: rgba(65,143,222,.22); }
+
+/* ---------- Container ---------- */
+.container {
   width: 100%;
-  line-height: 24px;
-  vertical-align: top;
+  max-width: var(--maxw);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 22px;
+  padding-right: 22px;
+}
+.container-fluid { padding-left: 0; padding-right: 0; }
+
+/* ---------- Header / nav ---------- */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: linear-gradient(180deg, var(--tulane-green), var(--tulane-green-700));
+  box-shadow: 0 2px 12px rgba(1,63,44,.18);
+}
+.site-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  min-height: 78px;
+  position: relative;
+}
+.site-brand { display: flex; align-items: center; gap: 14px; color: #fff; text-decoration: none; }
+.site-brand:hover { text-decoration: none; color: #fff; }
+.site-brand__logo {
+  height: 54px; width: auto;
+  background: #fff; padding: 5px 8px; border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+}
+.site-brand__text { display: flex; flex-direction: column; line-height: 1.15; }
+.site-brand__lab { font-family: var(--serif); font-weight: 700; font-size: 1.2rem; color: #fff; letter-spacing: -.01em; }
+.site-brand__school { font-size: .82rem; color: rgba(255,255,255,.8); font-weight: 400; }
+
+.site-nav { display: flex; align-items: center; gap: 4px; }
+.site-nav a {
+  color: rgba(255,255,255,.92);
+  font-weight: 600; font-size: 1rem;
+  padding: 10px 14px; border-radius: 8px;
+  text-decoration: none; position: relative;
+  transition: background .18s ease, color .18s ease;
+}
+.site-nav a:hover, .site-nav a:focus { background: rgba(255,255,255,.12); color: #fff; text-decoration: none; }
+.site-nav a.is-active { color: #fff; }
+.site-nav a.is-active::after {
+  content: ""; position: absolute; left: 14px; right: 14px; bottom: 5px;
+  height: 3px; border-radius: 3px; background: var(--tulane-blue);
 }
 
-footer .tulane-logo {
-  width: 170px;
-}
+.nav-toggle { display: none; }
+.nav-toggle-cb { position: absolute; opacity: 0; pointer-events: none; }
 
-footer .tulane-logo-wrapper {
-  text-align: center;
-}
-
-footer .project-logos {
-  text-align: left;
-  padding: 0 30px;
-  margin: 0;
-}
-
-@media screen and (max-width:543px){
-  footer .isu-logo-wrapper {
-    text-align: left;
+@media (max-width: 860px) {
+  .site-brand__school { display: none; }
+  .site-brand__lab { font-size: 1.02rem; }
+  .nav-toggle {
+    display: flex; flex-direction: column; justify-content: center; gap: 5px;
+    width: 46px; height: 40px; padding: 9px 11px; border-radius: 8px;
+    cursor: pointer; background: rgba(255,255,255,.14);
   }
-}
-
-@media screen and (min-width:992px){
-  footer .isu-logo-wrapper {
-    text-align: left;
+  .nav-toggle span, .nav-toggle::before, .nav-toggle::after {
+    content: ""; display: block; height: 2px; background: #fff; border-radius: 2px;
   }
-  footer .project-logos {
-    text-align: center;
-    padding: 0 15px;
+  .site-nav {
+    display: none;
+    position: absolute; left: 0; right: 0; top: 100%;
+    flex-direction: column; align-items: stretch; gap: 0;
+    background: var(--tulane-green-700);
+    padding: 8px 16px 16px; box-shadow: var(--shadow-md);
   }
+  .nav-toggle-cb:checked ~ .site-nav { display: flex; }
+  .site-nav a { padding: 12px 10px; border-radius: 6px; }
+  .site-nav a.is-active::after { display: none; }
+  .site-nav a.is-active { background: rgba(255,255,255,.14); }
 }
 
-footer hr {
-  margin-top: 4px;
-  margin-bottom: 4px;
+/* ---------- Hero ---------- */
+.hero {
+  position: relative; overflow: hidden; color: #fff;
+  padding: 86px 0 94px;
+  background:
+    radial-gradient(1100px 480px at 82% -12%, rgba(65,143,222,.30), transparent 60%),
+    linear-gradient(135deg, var(--tulane-green) 0%, var(--tulane-green-800) 68%, var(--tulane-green-900) 100%);
+}
+.hero::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 6px;
+  background: linear-gradient(90deg, var(--tulane-blue), var(--kelly));
+}
+.hero__inner { max-width: 820px; position: relative; z-index: 1; }
+.hero__eyebrow {
+  text-transform: uppercase; letter-spacing: .15em; font-size: .8rem; font-weight: 700;
+  color: rgba(255,255,255,.8); margin-bottom: 18px;
+}
+.hero__title { color: #fff; font-size: 3.15rem; line-height: 1.07; margin: 0 0 20px; }
+.hero__lede { font-size: 1.28rem; line-height: 1.55; color: rgba(255,255,255,.92); margin-bottom: 30px; max-width: 670px; }
+.hero__actions { display: flex; flex-wrap: wrap; gap: 14px; }
+
+/* ---------- Buttons ---------- */
+.btn-primary-tulane, .btn-ghost-tulane {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-family: var(--sans); font-weight: 700; font-size: 1.02rem;
+  padding: 13px 26px; border-radius: 999px;
+  text-decoration: none !important; cursor: pointer;
+  transition: transform .15s ease, box-shadow .15s ease, background .18s ease, color .18s ease;
+}
+.btn-primary-tulane { background: #fff; color: var(--tulane-green-800); box-shadow: var(--shadow-md); border: 0; }
+.btn-primary-tulane:hover { transform: translateY(-2px); color: var(--tulane-green-900); box-shadow: var(--shadow-lg); }
+.btn-ghost-tulane { background: rgba(255,255,255,.08); color: #fff; border: 1.5px solid rgba(255,255,255,.55); }
+.btn-ghost-tulane:hover { background: rgba(255,255,255,.18); color: #fff; transform: translateY(-2px); }
+
+@media (max-width: 600px) {
+  .hero { padding: 58px 0 66px; }
+  .hero__title { font-size: 2.2rem; }
+  .hero__lede { font-size: 1.12rem; }
 }
 
-footer a {
-  color: inherit;
+/* ---------- Section heads ---------- */
+.section { padding: 62px 0; }
+.section--tint { background: var(--surface); }
+.section-head { margin-bottom: 30px; }
+.section-head .eyebrow {
+  text-transform: uppercase; letter-spacing: .14em; font-size: .8rem; font-weight: 700;
+  color: var(--tulane-green); margin-bottom: 8px;
+}
+.section-head h2 { margin: 0; }
+.section-head p { color: var(--muted); margin: 10px 0 0; max-width: 640px; }
+
+/* ---------- Research pillars ---------- */
+.pillar-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.pillar {
+  display: flex; flex-direction: column; position: relative; overflow: hidden;
+  background: #fff; border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 28px 24px 22px; box-shadow: var(--shadow-sm);
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+.pillar::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: var(--accent, var(--tulane-green)); }
+.pillar:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: transparent; }
+.pillar__tag { font-size: .76rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; color: var(--accent, var(--tulane-green)); margin-bottom: 4px; }
+.pillar h3 { font-size: 1.28rem; margin: 4px 0 10px; }
+.pillar p { color: var(--muted); font-size: .98rem; flex-grow: 1; margin-bottom: 16px; }
+.pillar__link { font-weight: 700; color: var(--tulane-green); display: inline-flex; align-items: center; gap: 6px; }
+.pillar__link:hover { color: var(--tulane-blue-600); text-decoration: none; }
+@media (max-width: 900px) { .pillar-grid { grid-template-columns: 1fr; } }
+
+/* ---------- Home: papers + news columns ---------- */
+.home-columns h3 {
+  font-size: 1.55rem; padding-bottom: 12px; margin-bottom: 18px;
+  border-bottom: 2px solid var(--line); position: relative;
+}
+.home-columns h3::after { content: ""; position: absolute; left: 0; bottom: -2px; width: 56px; height: 2px; background: var(--tulane-green); }
+
+/* ---------- Cards ---------- */
+.card {
+  margin-bottom: 16px; border: 1px solid var(--line); border-radius: var(--radius-sm);
+  background: #fff; box-shadow: var(--shadow-sm);
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border-color: rgba(0,103,71,.25); }
+.card-block { padding: 18px 20px; }
+
+.news-card .card-title, .home-page-highlighted-paper-card .card-title {
+  color: var(--ink); font-size: 1.12rem; margin-bottom: 6px; transition: color .18s ease;
+}
+a:hover .news-card .card-title, a:hover .home-page-highlighted-paper-card .card-title { color: var(--tulane-green); }
+.home-page-highlighted-paper-card, .news-card { color: var(--body); }
+.card-subtitle { color: var(--muted) !important; font-size: .85rem; font-weight: 600; }
+.card-text { color: var(--body); font-size: .96rem; margin-bottom: 0; }
+.card-link, .news-link { color: var(--tulane-blue-600); font-weight: 700; }
+
+#home-page-more-papers, #home-page-more-news, #home-page-more-projects { text-align: center; margin: 10px 0 0; }
+#home-page-more-papers a, #home-page-more-news a, #home-page-more-projects a {
+  display: inline-block; font-weight: 700; color: var(--tulane-green);
+  padding: 8px 18px; border: 1.5px solid var(--line); border-radius: 999px;
+}
+#home-page-more-papers a:hover, #home-page-more-news a:hover, #home-page-more-projects a:hover {
+  border-color: var(--tulane-green); text-decoration: none; background: var(--surface);
 }
 
-footer img {
-  margin-bottom: .3rem;
+/* ---------- Page titles ---------- */
+.page-title {
+  font-size: 2.2rem; margin: 30px 0 18px; padding-bottom: 14px;
+  border-bottom: 2px solid var(--line); position: relative;
+}
+.page-title::after { content: ""; position: absolute; left: 0; bottom: -2px; width: 64px; height: 3px; background: var(--tulane-green); border-radius: 3px; }
+
+/* ---------- Papers / projects pages ---------- */
+#markdown-toc, #papers-toc {
+  border: 1px solid var(--line); padding: 6px 10px 10px; margin-top: 1.5rem;
+  background: var(--surface); border-radius: var(--radius-sm); color: var(--body);
+  display: table; list-style-position: inside;
+}
+#papers-toc { margin-top: 0; }
+#markdown-toc li, #papers-toc li { padding: 2px 18px; }
+#papers-toc li { list-style: none; }
+#papers-toc li::before { content: "\21D2"; color: var(--tulane-green); margin-right: 6px; }
+#markdown-toc a, #papers-toc a { font-weight: 600; }
+
+.paper-btns.btn-group { display: flex; flex-wrap: wrap; gap: 8px; }
+.paper-btn {
+  color: var(--body); background: var(--surface);
+  border: 1.5px solid var(--line); border-radius: 999px !important;
+  padding: 6px 16px; font-weight: 600; transition: all .2s ease;
+}
+.paper-btn:hover { background: var(--surface-2); border-color: var(--tulane-green); }
+.paper-btn:active, .paper-btn:focus, .paper-btn.active, .paper-btn.active.focus, .paper-btn:active:focus {
+  background: var(--tulane-green); border-color: var(--tulane-green); color: #fff; font-weight: 700; box-shadow: none;
+}
+.paper-btn.active:hover, .paper-btn:focus:hover, .paper-btn:active:hover {
+  background: var(--tulane-green-700); border-color: var(--tulane-green-700); color: #fff;
 }
 
-footer p {
-  margin-bottom: 0;
-  padding: 0 0 0 0;
-}
+.paper_card_header, .grant_card_header { display: flex; align-items: center; gap: 8px; padding: 6px 8px; }
+.paper_card_header > a > img { height: 1.4rem; margin: 6px; }
+.paper_card_header .paper_card_header_name, .grant_card_header .grant_card_header_name { color: var(--ink); flex-grow: 1; font-weight: 600; }
+.paper_card_header .paper_card_header_name:hover, .grant_card_header .grant_card_header_name:hover { color: var(--tulane-green); }
+.paper_card .padded-inner-card-block { padding: 14px 16px; }
+.paper_card .card-block { padding: 0; }
 
-footer div {
-  margin-top: .5rem;
-  margin-bottom: .5rem;
-}
+.bibliography { list-style: none; padding-left: 0; }
+.icon { display: flex; align-items: center; margin: 1rem 0 .5rem; }
+.icon > img { height: 1.6rem; }
+.icon > span { margin-left: .5rem; font-size: 1.3rem; font-family: var(--serif); color: var(--ink); }
 
-footer .logo {
-  width: 42px;
-}
+.project-header { border-bottom: 1px solid var(--line); margin-bottom: 12px; padding-bottom: 4px; }
+.project-header h3 { margin-bottom: 0; }
+.project-header h3 a, .project-header a { color: var(--ink); }
+.project-header h3 a:hover { color: var(--tulane-green); text-decoration: none; }
+.project-header ~ .research-header { padding-top: 16px; border-top: 4px solid var(--tulane-green); }
+.research-header + .project-header { margin-top: 0; }
+#projects-markdown-toc ol > li > ol > li { list-style: disc; }
+#projects-markdown-toc ol > li { list-style: none; }
 
-.home-page-highlighted-paper-card {
-  // TODO: @extend .card;
-  color: black;
+/* ---------- People ---------- */
+.memberimg { height: 200px; }
+.crop-image {
+  max-height: 150px; object-fit: cover; max-width: 100%;
+  border: 1px solid var(--line); border-radius: 10px; box-shadow: var(--shadow-sm);
+  transition: transform .2s ease, box-shadow .2s ease;
 }
+.crop-image:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
 
-.news-card, .home-page-highlighted-paper-card {
-  // TODO: @extend .card
-  color: black;
+/* ---------- Footer ---------- */
+footer {
+  margin-top: auto; background: var(--tulane-green-900);
+  color: rgba(255,255,255,.82); font-size: .92rem; line-height: 1.6;
+  padding: 46px 0 26px; width: 100%;
 }
+footer a { color: #fff; }
+footer a:hover { color: var(--tulane-blue); text-decoration: none; }
+.footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 36px; align-items: start; }
+.footer-brand__name { font-family: var(--serif); font-weight: 700; color: #fff; font-size: 1.18rem; margin-bottom: 6px; }
+.footer-school { color: rgba(255,255,255,.7); margin-bottom: 14px; }
+footer h4 { color: #fff; font-family: var(--sans); font-size: .82rem; text-transform: uppercase; letter-spacing: .12em; margin: 0 0 12px; font-weight: 700; }
+.footer-links { list-style: none; padding: 0; margin: 0; }
+.footer-links li { margin-bottom: 8px; }
+.footer-contact p { margin: 0 0 6px; }
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,.16); margin-top: 30px; padding-top: 18px;
+  display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px;
+  font-size: .82rem; color: rgba(255,255,255,.62);
+}
+.footer-bottom a { color: rgba(255,255,255,.85); }
+@media (max-width: 820px) { .footer-grid { grid-template-columns: 1fr; gap: 26px; } }
 
-.memberimg
-{
-  //width: 200px;
-  height: 200px;
-}
-
-div#home-page-more-projects,
-div#home-page-more-papers,
-div#home-page-more-news {
-  text-align: center;
-  font-weight: light;
-  font-size: small;
-  margin-bottom: 1rem;
-}
-
-.bibliography {
-  list-style-type: none;
-}
-
-.project-header {
-  border-bottom: 1px solid #444;
-  margin-bottom: 10px;
-}
-
-.project-header h3 {
-  margin-bottom: 0px;
-}
-
-.project-header ~ .research-header {
-  padding-top: 16px;
-  border-top: 5px solid #444;
-}
-
-.research-header + .project-header {
-  margin-top: 0rem;
-}
+/* ---------- Utilities ---------- */
+.space-above { margin-top: 2rem; }
+.space-below { margin-bottom: 2rem; }
+.no-padding { padding: 0; }
+.no-display { display: none; }
+.flex-separate { display: flex; justify-content: space-between; }
