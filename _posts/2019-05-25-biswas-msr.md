@@ -1,7 +1,7 @@
 ---
 title: Biswas Presenting Python Dataset at MSR 2019
 links:
-  - {title: Papers, link: "https://design.cs.iastate.edu/papers/MSR-19/" }
+  - {title: Papers, link: "https://lab-design.github.io/papers/MSR-19/" }
 ---
 
 Sumon Biswas will describe our brand new dataset at the

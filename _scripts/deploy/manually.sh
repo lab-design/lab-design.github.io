@@ -1,6 +1,6 @@
 #! /bin/bash
 # This script uses rsync to manually deploy the built site to pyrite so that
-# this site build will be served from `http://design.cs.iastate.edu`. It is
+# this site build will be served from `http://lab-design.github.io`. It is
 # expected to be invoked from the root of the repository once the site has been
 # built.
 

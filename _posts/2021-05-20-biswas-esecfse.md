@@ -1,7 +1,7 @@
 ---
 title: Our paper on Fair Preprocessing is selected for ESEC/FSE'21 Research Track
 links:
-- {title: Papers, link: "https://design.cs.iastate.edu/papers/ESEC-FSE-21/fair-preprocessing-fse21.pdf" }
+- {title: Papers, link: "https://lab-design.github.io/papers/ESEC-FSE-21/fair-preprocessing-fse21.pdf" }
 ---
 
 

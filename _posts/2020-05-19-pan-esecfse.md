@@ -1,7 +1,7 @@
 ---
 title: Our paper on decomposing a Deep Neural Network into Modules is selected for ESEC/FSE'20
 links:
-- {title: Papers, link: "https://design.cs.iastate.edu/papers/ESEC-FSE-20b/modularity.pdf" }
+- {title: Papers, link: "https://lab-design.github.io/papers/ESEC-FSE-20b/modularity.pdf" }
 ---
 
 

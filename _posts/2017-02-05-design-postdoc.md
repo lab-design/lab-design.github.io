@@ -4,7 +4,7 @@ links:
   - { title: "Boa", link: "http://boa.cs.iastate.edu" }
 ---
 
-The <a href="http://design.cs.iastate.edu">Laboratory for Software Design</a> in the
+The <a href="http://lab-design.github.io">Laboratory for Software Design</a> in the
 Department of Computer Science at Iowa State University is seeking a
 postdoctoral fellow to work on the Boa project. The Boa project is developing
 an infrastructure for big code mining and using the infrastructure for such

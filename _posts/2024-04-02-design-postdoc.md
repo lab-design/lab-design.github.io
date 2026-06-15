@@ -1,12 +1,12 @@
 ---
 title: "Laboratory for Software Design Recruiting a Postdoctoral Fellow"
 links:
-  - { title: "Projects", link: "https://design.cs.iastate.edu/projects.html" }
+  - { title: "Projects", link: "https://lab-design.github.io/projects.html" }
 ---
 
 The Department of Computer Science in the College of Liberal Arts and Sciences 
 at Iowa State University seeks outstanding applicants for a postdoctoral position 
-in the [Laboratory for Software Design](https://design.cs.iastate.edu) 
+in the [Laboratory for Software Design](https://lab-design.github.io) 
 supervised by [Dr. Hridesh Rajan](https://www.cs.iastate.edu/hridesh). 
 This position is expected to be filled as early as June 10, 2024. 
 The candidate will be responsible for conducting research in broadly defined areas 

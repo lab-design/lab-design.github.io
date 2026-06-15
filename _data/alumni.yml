@@ -14,7 +14,7 @@
 - name: Dr. Zhen Yu
   status: Postdoctoral Fellow
   email: yuzhen3301@gmail.com
-  site: http://design.cs.iastate.edu
+  site: http://lab-design.github.io
   img: zyu.jpeg
 
 # PhD Graduates:
@@ -22,13 +22,13 @@
 - name: Dr. Sayem Imtiaz
   status: PhD Fall'24
   email: sayem@iastate.edu
-  site: https://www.cs.iastate.edu/people/sayem-mohammad-imtiaz
+  site: https://sayemimtiaz.github.io/
   img: simtiaz.jpg
 
 - name: Dr. Giang Nguyen
   status: PhD Fall'24
   email: gnguyen@iastate.edu
-  site: https://www.cs.iastate.edu/gnguyen
+  site: https://www.linkedin.com/in/giang-nguyen-b6945914b/
   img: giang.jpeg
 
 - name: Dr. David OBrien
@@ -40,7 +40,7 @@
 - name: Dr. Shibbir Ahmed
   status: PhD Summer'24
   email: shibbir@iastate.edu
-  site: https://www.cs.iastate.edu/people/shibbir-ahmed
+  site: https://shibbirtanvin.github.io/
   img: sahmed.jpg
 
 - name: Dr. Mohammad Wardat
@@ -70,7 +70,7 @@
 - name: Dr. Hamid Bagheri
   status: PhD Spring'21
   email: hbagheri@iastate.edu
-  site: http://www.cs.iastate.edu/people/hamid-bagheri
+  site: https://cse.unl.edu/~hbagheri/
   img: hbagheri.jpg
 
 - name: Dr. Md. Johirul Islam
@@ -82,7 +82,7 @@
 - name: Dr. Ganesha Upadhyaya
   status: PhD Fall'17, MS Spring'15
   netid: ganeshau
-  site: http://web.cs.iastate.edu/~ganeshau/
+  site: https://www.linkedin.com/in/gupadhyaya/
   img: gupadhyaya.jpg
 
 - name: Dr. Yuheng Long
@@ -102,12 +102,12 @@
     programming language. He also contributes to the Tisa project. He can be
     reached at mbagherz@iastate.edu
   netid: mbagherz
-  site: https://mbagherz.bitbucket.io
+  site: https://www.oakland.edu/secs/directory/bagherzadeh/
   img: mbagherzadeh.jpg
 
 - name: Dr. Robert Dyer
   status: PhD Fall'13, MS Fall'08
-  site: http://www.cs.bgsu.edu/rdyer/
+  site: https://cse.unl.edu/~rdyer/
   email: rdyer@bgsu.edu
   img: rdyer.png
 
@@ -128,19 +128,19 @@
 - name: Jackson L Maddox
   status: MS Summer'18
   email: jlmaddox@iastate.edu
-  site: http://design.cs.iastate.edu
+  site: http://lab-design.github.io
   img: jmaddox.jpg
 
 - name: Ramanathan Ramu
   status: MS Fall'17
   email: rramu@iastate.edu
-  site: http://www.cs.iastate.edu/people/ramanathan-ramu
+  site: https://www.linkedin.com/in/ramrm1991/
   img: rramu.jpg
 
 - name: Nitin M. Tiwari
   status: MS Spring'17
   email: nmtiwari@iastate.edu
-  site: http://www.cs.iastate.edu/people/nitin-tiwari
+  site: https://github.com/nmtiwari
   img: ntiwari.jpg
 
 - name: Eric Y Lin
@@ -155,7 +155,7 @@
 
 - name: Harish Narayanappa
   status: MS Spring'10
-  site: http://web.cs.iastate.edu/~harish/
+  site: https://www.linkedin.com/in/harish-narayanappa-4920b35/
   netid: harish
   img: hnarayanappa.jpg
 
@@ -186,13 +186,13 @@
 - name: Nathaniel M Wernimont
   status: B.S. Spring'20
   email: natew@iastate.edu
-  site: http://design.cs.iastate.edu
+  site: http://lab-design.github.io
   img: nwernimont.jpg
 
 - name: Robert H Schmidt
   status: B.S. Spring'19
   email: robert2@iastate.edu
-  site: http://design.cs.iastate.edu
+  site: http://lab-design.github.io
   img: rschmidt.jpg
 
 - name: David Johnston

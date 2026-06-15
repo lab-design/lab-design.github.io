@@ -1,7 +1,7 @@
 ---
 title: Our paper on Data Science Pipeline is selected for ICSE'22 Research Track
 links:
-- {title: Papers, link: "https://design.cs.iastate.edu/papers/ICSE-22a/ds-pipeline-icse22.pdf" }
+- {title: Papers, link: "https://lab-design.github.io/papers/ICSE-22a/ds-pipeline-icse22.pdf" }
 ---
 
 

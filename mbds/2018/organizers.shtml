@@ -229,13 +229,13 @@
 
 						<div class="views-field views-field-field-people-image">
 							<div class="field-content">
-								<a href="http://design.cs.iastate.edu"> 
+								<a href="http://lab-design.github.io"> 
 								<img border="0" src="images/Khairunnesa.jpg" height="180"></a>
 							</div>
 						</div>
 						<div class="views-field views-field-title profile-title h2">
 							<span class="field-content"><a
-								href="http://design.cs.iastate.edu">Samantha Khairunnesa</a>
+								href="http://lab-design.github.io">Samantha Khairunnesa</a>
 							</span>
 						</div>
 						<div class="views-field views-field-field-people-position">
@@ -249,7 +249,7 @@
 						<div style="border: 1px solid #ffffff;"
 							class="views-field views-field-field-people-image">
 							<div class="field-content">
-								<a href="http://design.cs.iastate.edu"> <img
+								<a href="http://lab-design.github.io"> <img
 									typeof="foaf:Image"
 									src="images/Bagheri.jpg"
 									height="180" alt=""></a>

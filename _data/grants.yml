@@ -519,7 +519,7 @@
   primary: true
   title: "Bridging the Digital Divide in Data Science: Invention and Refinement of Shared Data Science Infrastructures"
   start_date: 2016-09-20 #Roughly
-  url: "http://design.cs.iastate.edu/sdsi/"
+  url: "http://lab-design.github.io/sdsi/"
   amount: $450,000
   PI: Hridesh Rajan
   coPIs:
@@ -674,3 +674,29 @@
     computer scientists, incorporation of research results into courses at Iowa State University 
     as well as facilitating the integration of modularity research-related topics, and increased 
     opportunities for the participation of underrepresented groups in research-based training.
+
+- key: grant-nsf-2419882
+  agency: NSF
+  primary: true
+  title: "Collaborative Research: SHF: Small: Fault Localization for Deep Learning"
+  start_date: 2025-09-01
+  url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2419882"
+  amount: "$600,000 (Tulane and Oakland combined)"
+  PI: Hridesh Rajan
+  coPIs:
+  end_date: 2028-08-31
+  abstract: >
+    A collaborative NSF award led at Tulane by Hridesh Rajan with Mohammad Wardat
+    at Oakland University, totaling roughly $600,000 over three years (Tulane award
+    #2419882 and Oakland award #2419883), supported by NSF's Directorate for
+    Computer and Information Science and Engineering. Deep neural networks now sit
+    behind decisions in healthcare, transportation, and many other areas, yet they
+    can carry faults that undermine their safety and reliability. The fault
+    localization techniques software engineers have refined over decades do not
+    transfer cleanly to neural networks, because traditional software and deep
+    learning rest on different computational models. This project watches how a
+    model behaves while it trains, designs compact abstractions of that behavior to
+    pinpoint where things go wrong, and cuts the cost of retraining so that
+    debugging deep learning becomes faster and more accessible. The work builds on
+    DeepLocalize, the team's first approach for bug localization in deep neural
+    networks.

@@ -4,7 +4,7 @@ links:
   - { title: "Panini", link: "http://paninij.org" }
 ---
 
-The <a href="http://design.cs.iastate.edu">Laboratory for Software Design</a> in the
+The <a href="http://lab-design.github.io">Laboratory for Software Design</a> in the
 Department of Computer Science at Iowa State University is seeking a
 graduate student to work on the <a href="http://paninij.org">Panini project</a>.
 The Panini project is developing programming languages and tools for improving
