@@ -7,7 +7,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="The Laboratory for Software Design at Tulane University researches programming languages, compilers, and software engineering for dependable software and AI.">
     <meta name="theme-color" content="#006747">
-    <meta property="og:title" content="Laboratory for Software Design">
+    <meta property="og:title" content="Research & Projects">
     <meta property="og:description" content="Laboratory for Software Design at Tulane University, School of Science and Engineering.">
     <meta property="og:type" content="website">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/design.css">
     <link rel="icon" href="/favicon.ico">
-    <title>Laboratory for Software Design</title>
+    <title>Research & Projects | Laboratory for Software Design</title>
   </head>
 
   <body>
@@ -25,12 +25,8 @@
 
     <header class="site-header">
   <div class="container site-header__inner">
-    <a href="/" class="site-brand">
-      <img src="/img/tulane-sse-logo.png" alt="Tulane University, School of Science and Engineering" class="site-brand__logo">
-      <span class="site-brand__text">
-        <span class="site-brand__lab">Laboratory for Software Design</span>
-        <span class="site-brand__school">Tulane University &middot; School of Science &amp; Engineering</span>
-      </span>
+    <a href="/" class="site-brand" aria-label="Laboratory for Software Design, Tulane University">
+      <img src="/img/tulane-sse-logo1.png" alt="Tulane University, School of Science and Engineering, Laboratory for Software Design" class="site-brand__logo">
     </a>
 
     <input type="checkbox" id="nav-toggle" class="nav-toggle-cb">
@@ -53,33 +49,29 @@
   <br />
   <div class="row">
   <div class="col-12">
+    <h2 class="page-title">Research & Projects</h2>
     
-    
-<div id="projects-markdown-toc">
-<ol id="markdown-toc">
-  <li><a href="#active-research-projects" id="markdown-toc-active-research-projects">Active Research Projects</a>    <ol>
-      <li><a href="#modular-deep-learning" id="markdown-toc-modular-deep-learning">Modular Deep Learning</a></li>
-      <li><a href="#d4-dependable-data-driven-discovery" id="markdown-toc-d4-dependable-data-driven-discovery">D4 (Dependable Data-Driven Discovery)</a></li>
-      <li><a href="#boa" id="markdown-toc-boa">Boa</a></li>
-      <li><a href="#panini" id="markdown-toc-panini">Panini</a></li>
-    </ol>
-  </li>
-  <li><a href="#past-research-projects" id="markdown-toc-past-research-projects">Past Research Projects</a>    <ol>
-      <li><a href="#ptolemy" id="markdown-toc-ptolemy">Ptolemy</a></li>
-      <li><a href="#eos" id="markdown-toc-eos">Eos</a></li>
-      <li><a href="#frances" id="markdown-toc-frances">Frances</a></li>
-      <li><a href="#nu" id="markdown-toc-nu">Nu</a></li>
-      <li><a href="#sapha" id="markdown-toc-sapha">Sapha</a></li>
-      <li><a href="#slede" id="markdown-toc-slede">Slede</a></li>
-      <li><a href="#tisa" id="markdown-toc-tisa">Tisa</a></li>
-      <li><a href="#osiris" id="markdown-toc-osiris">Osiris</a></li>
-    </ol>
-  </li>
-</ol>
+<p class="lead">We design tools and techniques that make software-intensive systems, including modern AI, easier to build, verify, and sustain. Our current work spans three areas.</p>
 
+<div class="area-grid">
+  <a class="area-card" href="#dependable-trustworthy-ai" style="--accent: var(--tulane-green);">
+    <h3>Dependable &amp; Trustworthy AI</h3>
+    <p>Making deep learning modular, debuggable, and dependable across its lifecycle.</p>
+    <span class="area-card__projects">Modular Deep Learning &middot; Fault Localization for Deep Learning &middot; D4</span>
+  </a>
+  <a class="area-card" href="#ai-for-software-engineering" style="--accent: var(--tulane-blue);">
+    <h3>AI for Software Engineering</h3>
+    <p>Using large language models and program analysis to understand, localize, and repair software.</p>
+    <span class="area-card__projects">LLM-based analysis &amp; repair</span>
+  </a>
+  <a class="area-card" href="#mining-software-repositories" style="--accent: var(--kelly);">
+    <h3>Mining Software Repositories</h3>
+    <p>Studying software at massive scale, turning millions of projects into questions we can answer.</p>
+    <span class="area-card__projects">Boa</span>
+  </a>
 </div>
 
-<h2 class="research-header" id="active-research-projects">Active Research Projects</h2>
+<h2 id="dependable--trustworthy-ai-dependable-trustworthy-ai-research-header">Dependable &amp; Trustworthy AI {#dependable-trustworthy-ai .research-header}</h2>
 
 <div id="link-modular-deep-learning" class="project-header space-above">
   <a class="no_toc" href="modularity/" id="modular-deep-learning">
@@ -92,58 +84,11 @@
   <h3 id="modular-deep-learning" class="no-display">Modular Deep Learning</h3>
 </div>
 
-<p><a href="papers/ESEC-FSE-20b/">Modular Deep Learning</a> project is studying a class of 
-machine learning algorithms known as deep learning that has received much attention 
-in academia and industry. 
-Deep learning has a large number of important societal applications, from self-driving 
-cars to question-answering systems such as Siri and Alexa. 
-A deep learning algorithm uses multiple layers of transformation functions to convert 
-inputs to outputs, each layer learning higher-level of abstractions in the data 
-successively. 
-The availability of large datasets has made it feasible to train deep learning models. 
-Since the layers are organized in the form of a network, such models are also referred 
-to as deep neural networks (DNN). 
-While the jury is still out on the impact of deep learning on the overall understanding 
-of software’s behavior, a significant uptick in its usage and applications in wide-ranging 
-areas and safety-critical systems, e.g., autonomous driving, aviation system, 
-medical analysis, etc., combine to warrant research on software engineering practices 
-in the presence of deep learning. 
-One challenge is to enable the reuse and replacement of the parts of a DNN that has 
-the potential to make DNN development more reliable. 
-This project is investigating a comprehensive approach to systematically investigate the 
-decomposition of deep neural networks into modules to enable reuse, replacement, 
-and independent evolution of those modules. 
-A module is an independent part of a software system that can be tested, validated, 
-or utilized without a major change to the rest of the system. 
-Allowing the reuse of DNN modules is expected to reduce energy- and data-intensive 
-training efforts to construct DNN models. Allowing replacement is expected to help 
-replace faulty functionality in DNN models without needing costly retraining steps.</p>
+<p><a href="papers/ESEC-FSE-20b/">Modular Deep Learning</a> studies a class of machine learning algorithms known as deep learning. A deep learning algorithm uses multiple layers of transformation functions to convert inputs to outputs, each layer learning higher-level abstractions in the data. Because the layers are organized as a network, such models are also called deep neural networks (DNN). Deep learning now appears in wide-ranging and safety-critical systems, from autonomous driving to medical analysis, which makes software engineering practices for deep learning an urgent need.</p>
 
-<p>Our preliminary work has shown that it is possible to decompose fully connected neural 
-networks and CNN models into modules and conceptualize the notion of modules. 
-The main goals of this project are to further expand this decomposition approach 
-along three dimensions: (1) extension to different classes of DNN models, 
-(2) gaining a better understanding of the decomposition criteria, and 
-(3) understanding the impact of decomposition on behavior of the DNN.</p>
+<p>One challenge is to enable the reuse and replacement of the parts of a DNN, which has the potential to make DNN development more reliable. This project investigates a comprehensive approach to decompose deep neural networks into modules so those modules can be reused, replaced, and evolved independently. A module is an independent part of a system that can be tested, validated, or used without a major change to the rest of the system. Reusing DNN modules is expected to cut the energy- and data-intensive cost of training, and replacing them is expected to fix faulty functionality without costly retraining.</p>
 
-<p>The project is expected to broadly impact society by informing the science and practice 
-of deep learning. 
-A serious problem facing the current software development workforce is that deep 
-learning is widely utilized in our software systems, but scientists and practitioners 
-do not yet have a clear handle on critical problems such as explainability of DNN models, 
-DNN reuse, replacement, independent testing, and independent development. 
-There was no apparent need to investigate the notions of modularity as neural network 
-models trained before the deep learning era were mostly small, trained on small datasets, 
-and were mostly used as experimental features. 
-The notion of DNN modules developed by this project, if successful, could help make 
-significant advances on a number of open challenges in this area. 
-DNN modules could enable the reuse of already trained DNN modules in another context. 
-Viewing a DNN as a composition of DNN modules instead of a black box could enhance the 
-explainability of a DNN’s behavior. 
-This project, if successful, will thus have a large positive impact on the productivity 
-of these programmers, the understandability and maintainability of the DNN models that 
-they deploy, and the scalability and correctness of software systems that they produce. 
-Following research papers document progress on this project:</p>
+<p>Our preliminary work showed that it is possible to decompose fully connected and convolutional networks into modules. The project expands this approach along three dimensions: extension to more classes of DNN models, a better understanding of the decomposition criteria, and an understanding of how decomposition affects DNN behavior. Viewing a DNN as a composition of modules rather than a black box can also improve the explainability of its behavior. The following papers document progress on this project:</p>
 
 <ul>
 
@@ -161,7 +106,7 @@ Following research papers document progress on this project:</p>
 
 </ul>
 
-<p>Modular Deep Learning project has been supported in part by the following grants.</p>
+<p>Modular Deep Learning has been supported in part by the following grant.</p>
 
 <ul>
   <li>US National Science Foundation, SHF:Small: More Modular Deep Learning. PI: Hridesh Rajan
@@ -170,6 +115,28 @@ Links: <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2223812">NSF</a
 </ul>
 
 <p><a href="papers/ESEC-FSE-20b/">More information about the Modular Deep Learning project.</a></p>
+
+<div id="link-fault-localization-for-deep-learning" class="project-header space-above">
+  <a class="no_toc" href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2419882" id="fault-localization-for-deep-learning">
+    <h3>
+      Fault Localization for Deep Learning
+    </h3>
+  </a>
+</div>
+<div>
+  <h3 id="fault-localization-for-deep-learning" class="no-display">Fault Localization for Deep Learning</h3>
+</div>
+
+<p>Deep neural networks now sit behind decisions in healthcare, transportation, and many other areas, yet they can carry faults that undermine their safety and reliability. The fault localization techniques that software engineers have refined over decades do not transfer cleanly to neural networks, because traditional software and deep learning rest on very different computational models, and a bug means something different in each. This project takes on that gap. We watch how a model behaves while it trains, design compact abstractions of that behavior to pinpoint where things go wrong, and cut the cost of retraining so that debugging deep learning becomes faster and more accessible. The work builds on DeepLocalize, our first approach for bug localization in deep neural networks.</p>
+
+<p>This is a collaborative award led at Tulane with Mohammad Wardat at Oakland University, who earned his PhD with our group.</p>
+
+<ul>
+  <li>US National Science Foundation, Collaborative Research: SHF: Small: Fault Localization for Deep Learning.
+PI: Hridesh Rajan (Tulane) with Mohammad Wardat (Oakland), total award amount approximately $600,000,
+Links: <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2419882">NSF Tulane</a> and
+<a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2419883">NSF Oakland</a>.</li>
+</ul>
 
 <div id="link-d4-dependable-data-driven-discovery" class="project-header space-above">
   <a class="no_toc" href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1934884&amp;HistoricalAwards=false" id="d4-dependable-data-driven-discovery">
@@ -182,7 +149,7 @@ Links: <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2223812">NSF</a
   <h3 id="d4-dependable-data-driven-discovery" class="no-display">D4 (Dependable Data-Driven Discovery)</h3>
 </div>
 
-<p><a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1934884&amp;HistoricalAwards=false">D4</a> project will advance the theoretical foundations of data science by fostering foundational research to enable understanding of the risks to the dependability of data-science lifecycles, to formalize the rigorous mathematical basis of the measures of dependability for data-science lifecycles, and to identify mechanisms to create dependable data-science lifecycles. The project defines a risk to be a cause that can lead to failures in data-driven discovery and the processes that plan for, acquire, manage, analyze, and infer from data collectively as the data-science lifecycle. For instance, an inference procedure that is significantly expensive can deliver late information to a human operator facing a deadline (complexity as a risk); if the data-science lifecycle provides a recommendation without an uncertainty measure for the recommendation, a human operator has no means to determine whether to trust the recommendation (uncertainty as a risk). Compared to recent works that have focused on fairness, accountability, and trustworthiness issues for machine learning algorithms, this project will take a holistic perspective and consider the entire data science lifecycle. In phase I of the project, the investigators will focus on four measures: complexity, resource constraints, uncertainty, and data freshness. In developing a framework to study these measures, this work will prepare the investigators to scale up their activities to other measures in phase II as well as to address larger portions of the data-science lifecycle. The study of each measure brings about foundational challenges that will require expertise from multiple TRIPODS disciplines to address. Following research papers document progress on this project:</p>
+<p><a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1934884&amp;HistoricalAwards=false">D4</a> advances the theoretical foundations of data science by enabling an understanding of the risks to the dependability of data-science lifecycles, formalizing the rigorous mathematical basis of the measures of dependability, and identifying mechanisms to create dependable data-science lifecycles. The project defines a risk as a cause that can lead to failures in the processes that plan for, acquire, manage, analyze, and infer from data. For instance, an inference procedure that is significantly expensive can deliver late information to a human operator facing a deadline (complexity as a risk); a recommendation without an uncertainty measure leaves an operator no means to decide whether to trust it (uncertainty as a risk). Compared with work that focuses narrowly on fairness or accountability for machine learning algorithms, this project takes a holistic perspective across the entire data-science lifecycle. In phase I, the investigators focus on four measures: complexity, resource constraints, uncertainty, and data freshness. The following papers document progress on this project:</p>
 
 <ul>
 
@@ -216,12 +183,40 @@ Links: <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2223812">NSF</a
 
 </ul>
 
-<p>D4 project has been supported in part by the following grants.</p>
+<p>D4 has been supported in part by the following grant.</p>
+
 <ul>
   <li>US National Science Foundation, HDR TRIPODS: D4 (Dependable Data-Driven Discovery) Institute. PI: Hridesh Rajan and
-Co-I: Pavan Aduri, Eric Weber, Daniel Nettleton, and Chinmay Hegde. Total award amount: $1,531,995.00
-Links: <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1934884&amp;HistoricalAwards=false">ISU</a>,</li>
+Co-I: Pavan Aduri, Eric Weber, Daniel Nettleton, and Chinmay Hegde. Total award amount: $1,531,995.00,
+Links: <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1934884&amp;HistoricalAwards=false">NSF</a>.</li>
 </ul>
+
+<h2 id="ai-for-software-engineering-ai-for-software-engineering-research-header">AI for Software Engineering {#ai-for-software-engineering .research-header}</h2>
+
+<div id="link-llm-based-program-analysis-and-repair" class="project-header space-above">
+  <a class="no_toc" href="/papers/" id="llm-based-program-analysis-and-repair">
+    <h3>
+      LLM-based Program Analysis and Repair
+    </h3>
+  </a>
+</div>
+<div>
+  <h3 id="llm-based-program-analysis-and-repair" class="no-display">LLM-based Program Analysis and Repair</h3>
+</div>
+
+<p>Large language models and program analysis are changing how developers understand and improve code. We design agent-oriented and analysis-driven techniques that localize design issues, repair data-driven errors, and test modern AI systems, so that the benefits of large models reach real engineering tasks without sacrificing reliability. Recent results include an intent-aware approach to repairing data-driven errors in large language models, an LLM-based agent for automated code design issue localization, and mock deep testing for separating the development of data and models in deep learning.</p>
+
+<p>Selected papers from this thread:</p>
+
+<ul>
+<li><a href="/papers/FSE-25a/">IRepair: An Intent-Aware Approach to Repair Data-Driven Errors in Large Language Models (FSE 2025)</a></li>
+<li><a href="/papers/ICSE-25b/">An LLM-Based Agent-Oriented Approach for Automated Code Design Issue Localization (ICSE 2025)</a></li>
+<li><a href="/papers/ICSE-25c/">Mock Deep Testing: Toward Separate Development of Data and Models for Deep Learning (ICSE 2025)</a></li>
+</ul>
+
+<p><a href="/papers/">See all of our papers.</a></p>
+
+<h2 id="mining-software-repositories-mining-software-repositories-research-header">Mining Software Repositories {#mining-software-repositories .research-header}</h2>
 
 <div id="link-boa" class="project-header space-above">
   <a class="no_toc" href="http://boa.cs.iastate.edu" id="boa">
@@ -234,16 +229,7 @@ Links: <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1934884&amp;His
   <h3 id="boa" class="no-display">Boa</h3>
 </div>
 
-<p><a href="http://boa.cs.iastate.edu">Boa</a> project is applying big data analytics toward
-improving software engineering. It is developing a domain-specific language and
-its infrastructure whose goal is to significantly ease the experimental cost of
-mining ultra-large-scale open source repositories. Boa is a research
-infrastructure that consists of a domain-specific language, its compiler and
-data updating tools, terabytes (and growing) of raw data from open source
-repositories that contains hundreds of thousands of open source projects, a
-backend based on map-reduce to effectively analyze this dataset, a compute
-cluster, and a web-based frontend for writing analysis programs. Following
-research papers document progress on this project:</p>
+<p><a href="http://boa.cs.iastate.edu">Boa</a> applies big data analytics to software engineering. It is a domain-specific language and infrastructure whose goal is to significantly lower the experimental cost of mining ultra-large-scale open source repositories. Boa consists of a language, its compiler and data updating tools, terabytes of raw data drawn from hundreds of thousands of open source projects, a map-reduce backend to analyze that data, a compute cluster, and a web-based frontend for writing analyses. The following papers document progress on this project:</p>
 
 <ul>
 
@@ -317,14 +303,14 @@ research papers document progress on this project:</p>
 
 </ul>
 
-<p>Boa project has been supported in part by the following grants.</p>
+<p>Boa has been supported in part by the following grants.</p>
 
 <ul>
   <li>
     <p>US National Science Foundation, CCRI: ENS: Boa 2.0: Enhancing Infrastructure for
 Studying Software and its Evolution at a Large Scale. PI: Hridesh Rajan and
 Co-I: Tien Nguyen, Brian Nosek (2021-2024), Total award amount: $1,559,806,
-Links: <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2120448">ISU</a>, 
+Links: <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2120448">ISU</a>,
 <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2120386">UT Dallas</a>, and
 <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2120345">COS</a>.</p>
   </li>
@@ -336,7 +322,7 @@ Links: <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1513263">ISU</a
 <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1512947">BGSU</a>.</p>
   </li>
   <li>
-    <p>US National Science Foundation, SHF: Large:Collaborative Research: Inferring
+    <p>US National Science Foundation, SHF: Large: Collaborative Research: Inferring
 Software Specifications from Open Source Repositories by Leveraging Data and
 Collective Community Expertise. PI: Hridesh Rajan and Co-I: Robert Dyer, Tien
 Nguyen, Gary T. Leavens, and Vasant Honavar (2015-2018), Total award amount:
@@ -345,13 +331,11 @@ $1,604,843, Links: <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=151
 <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1518789">UCF</a>, and
 <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1518732">PSU</a>.</p>
   </li>
-  <li>
-    <p>US National Science Foundation, <a href="https://www.nsf.gov/awardsearch/showAward.do?AwardNumber=1349153">EAGER: Boa: A Community Research Infrastructure for Mining Software Repositories</a>.
-PI: Hridesh Rajan and Co-I: Tien Nguyen (2013-2015).</p>
-  </li>
 </ul>
 
 <p><a href="http://boa.cs.iastate.edu">More information about the Boa project.</a></p>
+
+<h2 id="past-projects-past-projects-research-header">Past Projects {#past-projects .research-header}</h2>
 
 <div id="link-panini" class="project-header space-above">
   <a class="no_toc" href="panini/" id="panini">
@@ -364,25 +348,7 @@ PI: Hridesh Rajan and Co-I: Tien Nguyen (2013-2015).</p>
   <h3 id="panini" class="no-display">Panini</h3>
 </div>
 
-<p>The Panini project is developing the capsule-oriented programming model.
-This model is aimed at making concurrent software
-development easier by providing two properties: (1) given a module it ought to
-be possible to statically, and modularly identify all points in its code where
-other modules might interfere (interference points), and (2) given a module and
-the interfaces of other modules, that the subject module interacts with, it
-ought to be possible to statically and modularly construct an upper bound on the
-behavior of all potentially interferring tasks at each interference point. We
-show that if a programming model has these two properties, then it is possible
-to modularly reason about concurrent programs in that model. By the first
-property, humans and tools can identify points where interference from other
-concurrent tasks must be considered. By the second property, the computed upper
-bound can be used for reasoning instead of needing the implementation of
-interferring modules. Compared to alternatives, where reasoning either becomes a
-global process or entails a global step, modular reasoning afforded by this
-programming model makes both manual and automated reasoning about concurrent
-software more scalable.</p>
-
-<p>Following research papers document progress on this project:</p>
+<p>The Panini project developed the capsule-oriented programming model, aimed at making concurrent software development easier through two properties: given a module, it should be possible to statically and modularly identify all points where other modules might interfere (interference points); and given a module and the interfaces of the modules it interacts with, it should be possible to statically and modularly construct an upper bound on the behavior of all potentially interfering tasks at each interference point. Together these properties enable modular reasoning about concurrent programs. We created two systems that support this model: an extension of Java and its reference compiler that we call <a href="http://web.cs.iastate.edu/~panini/">PaniniJ</a>, and an annotation-based framework, <a href="https://paninij.github.io">@PaniniJ</a>.</p>
 
 <ul>
 
@@ -424,37 +390,6 @@ software more scalable.</p>
 
 </ul>
 
-<p>We have created two software systems that support this programming model so far:</p>
-
-<ul>
-  <li>an extension of Java (and the reference compiler <code class="language-plaintext highlighter-rouge">javac</code>) that we call
-<a href="http://web.cs.iastate.edu/~panini/">PaniniJ</a>, and</li>
-  <li>an annotation-based framework that uses annotation processing facilities,
-instead of syntax extensions, that we call <a href="https://paninij.github.io">@PaniniJ</a>.</li>
-</ul>
-
-<p>PI Rajan and students on the Panini project thank the US National Science
-Foundation for supporting our work under following grants:</p>
-
-<ul>
-  <li>
-    <p>US National Science Foundation, <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1423370">SHF:Small: Capsule-oriented Programming</a>.
-PI: Hridesh Rajan (2014-2017), Award amount: $450,098.</p>
-  </li>
-  <li>
-    <p>US National Science Foundation, <a href="https://www.nsf.gov/awardsearch/showAward.do?AwardNumber=0846059">CAREER:On Mutualism of Modularity and Concurrency Goals</a>.
-PI: Hridesh Rajan (2009-2016), Award amount: $565,935.</p>
-  </li>
-  <li>
-    <p>US National Science Foundation, <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1117937">SHF:Small:Phase-Based Tuning for Better Utilization of Performance-Asymmetric Multicores</a>. PI: Hridesh Rajan
-(2011-2016), Award amount: $416,000.</p>
-  </li>
-</ul>
-
-<p><a href="http://www.paninij.org">More information about the Panini project</a></p>
-
-<h2 class="research-header" id="past-research-projects">Past Research Projects</h2>
-
 <div id="link-ptolemy" class="project-header space-above">
   <a class="no_toc" href="ptolemy/" id="ptolemy">
     <h3>
@@ -466,26 +401,7 @@ PI: Hridesh Rajan (2009-2016), Award amount: $565,935.</p>
   <h3 id="ptolemy" class="no-display">Ptolemy</h3>
 </div>
 
-<p>A software is created to satisfy user needs (also called concerns). These
-concerns may change often and unanticipatedly. On a concern change, the parts of
-the software called modules, responsible for that concern must also be revised.
-A module revision incurs costs and may introduce new errors. It is thus
-desirable to minimize module revisions. Some concerns, called crosscutting
-concerns e.g. security, fault tolerance, accountability, etc; have systemic
-effect. If many modules are responsible for such a concern, a change in it could
-trigger costly and error-prone systemic module revisions. Advanced separation of
-concerns mechanisms help avert these systemic revisions.</p>
-
-<p><a href="ptolemy/">Ptolemy</a> project is designing an event-based
-language whose goal is to enable more modular reasoning about advanced
-separation of concerns mechanisms such as implicit invocation and aspects.
-Ptolemy provides quantified-typed events that act as an interface between
-modules. A key benefit of quantified-typed events is that they allow programmers
-to write new kinds of contracts that we call translucid contracts, which enables
-modular reasoning about modules that announce events and those that listen to
-events.</p>
-
-<p>Following research papers document progress on this project:</p>
+<p><a href="ptolemy/">Ptolemy</a> designed an event-based language whose goal is to enable more modular reasoning about advanced separation of concerns mechanisms such as implicit invocation and aspects. Ptolemy provides quantified, typed events that act as an interface between modules, and translucid contracts that enable modular reasoning about modules that announce events and those that listen to them.</p>
 
 <ul>
 
@@ -523,13 +439,6 @@ events.</p>
 
 </ul>
 
-<p>Ptolemy project has been supported in part by the following grant.</p>
-
-<p>US National Science Foundation, <a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1017334">SHF:Small:Balancing Expressiveness and Modular Reasoning for Aspect-oriented Programming</a>.
-PI: Hridesh Rajan (2010 - 2013).</p>
-
-<p><a href="http://ptolemy.cs.iastate.edu">More information about the Ptolemy project</a>.</p>
-
 <div id="link-eos" class="project-header space-above">
   <a class="no_toc" href="eos/" id="eos">
     <h3>
@@ -541,11 +450,7 @@ PI: Hridesh Rajan (2010 - 2013).</p>
   <h3 id="eos" class="no-display">Eos</h3>
 </div>
 
-<p>Eos is a unified aspect-oriented extension for C# on Microsoft® .NET Framework™.
-Eos unifies aspects and objects as classpects. The unified language model
-improves the conceptual integrity of the language design and the
-compositionality of aspect modules to better support hierarchical advising
-structures.</p>
+<p>Eos is a unified aspect-oriented extension for C# on the Microsoft .NET Framework. Eos unifies aspects and objects as classpects, which improves the conceptual integrity of the language and the compositionality of aspect modules to better support hierarchical advising structures.</p>
 
 <ul>
 
@@ -565,27 +470,6 @@ structures.</p>
 
 </ul>
 
-<div id="link-frances" class="project-header space-above">
-  <a class="no_toc" href="frances/" id="frances">
-    <h3>
-      Frances
-    </h3>
-  </a>
-</div>
-<div>
-  <h3 id="frances" class="no-display">Frances</h3>
-</div>
-
-<p>The Frances project produces tools for teaching topics related to code
-generation and mapping high-level languages to low-level langages. First,
-Frances is designed to help teach code generation and assembly language. Second,
-Frances-A is designed to help teach computer architecture, assembly language,
-and how high-level code actually executes on a system.</p>
-
-<ul>
-
-</ul>
-
 <div id="link-nu" class="project-header space-above">
   <a class="no_toc" href="nu/" id="nu">
     <h3>
@@ -597,12 +481,7 @@ and how high-level code actually executes on a system.</p>
   <h3 id="nu" class="no-display">Nu</h3>
 </div>
 
-<p>The Nu (pronounced new) project is exploring intermediate language design and
-corresponding virtual machine extensions to better support new features of
-aspect-oriented languages. The potential impacts of this project include better
-compatibility with the existing tool chain, better run-time performance, cross
-AO language compatibility, improved pointcut expressivity, efficient run-time
-weaving support, etc.</p>
+<p>The Nu project explored intermediate language design and corresponding virtual machine extensions to better support features of aspect-oriented languages, with the goals of better tool-chain compatibility, better runtime performance, cross-language compatibility, improved pointcut expressivity, and efficient runtime weaving.</p>
 
 <ul>
 
@@ -635,19 +514,7 @@ weaving support, etc.</p>
   <h3 id="sapha" class="no-display">Sapha</h3>
 </div>
 
-<p>As multi-core processors are becoming common, vendors are starting to explore
-trade offs between the die size and the number of cores on a die, leading to
-heterogeneity among cores on a single chip. For efficient utilization of these
-processors, application threads must be assigned to cores such that the resource
-needs of a thread closely matches resource availability at the assigned core.
-Current methods of thread-to-core assignment often require an application’s
-execution trace to determine it’s runtime properties. These traces are obtained
-by running the application on some representative input. A problem is that
-developing these representative input sets is time consuming, and requires
-expertise that the user of a general-purpose processor may not have. In this
-project, we are designing, implementing and evaluating automatic thread-to-core
-assignment techniques for heterogeneous multi-core processors that will enhance
-the utilization of these processors.</p>
+<p>As multi-core processors became common, heterogeneity among cores on a single chip created a need to assign application threads to cores so that a thread’s resource needs match resource availability at its core. Sapha designed, implemented, and evaluated automatic thread-to-core assignment techniques for heterogeneous multi-core processors to improve their utilization without requiring hand-built representative input sets.</p>
 
 <ul>
 
@@ -684,13 +551,7 @@ the utilization of these processors.</p>
   <h3 id="slede" class="no-display">Slede</h3>
 </div>
 
-<p>The Slede project is looking at specification language design and supporting
-verification mechanisms for specifying and verifying cryptographic protocols for
-sensor networks. Applications of sensor networks are numerous from military to
-environmental research. By providing mechanisms to find cryptographic errors in
-the security protocols for sensor networks this research program is improving
-the reliability of these networks, making a direct impact on all areas where
-these networks are utilized.</p>
+<p>Slede looked at specification language design and verification mechanisms for specifying and verifying cryptographic protocols for sensor networks. By helping find cryptographic errors in security protocols for sensor networks, the project improved the reliability of these networks across the many areas where they are used.</p>
 
 <ul>
 
@@ -717,20 +578,7 @@ these networks are utilized.</p>
   <h3 id="tisa" class="no-display">Tisa</h3>
 </div>
 
-<p>The key notion in service-oriented architecture is decoupling clients and
-providers of a service based on an abstract service description, which is used
-by the service broker to point clients to a suitable service implementation. A
-client then sends service requests directly to the service implementation. A
-problem with the current architecture is that it does not provide trustworthy
-means for clients to specify, service brokers to verify, and service
-implementations to prove that certain desired non-functional properties are
-satisfied during service request processing. An example of such non-functional
-property is access and persistence restrictions on the data received as part of
-the service requests. In this project, we are developing an extension of the
-service-oriented architecture that provides these facilities. We are also
-developing a prototype implementation of this architecture that demonstrate the
-potential practical value of the proposed architecture in real-world software
-applications.</p>
+<p>Tisa extended service-oriented architecture with trustworthy means for clients to specify, brokers to verify, and implementations to prove that desired non-functional properties, such as access and persistence restrictions on the data in a service request, are satisfied during request processing. The project also built a prototype implementation to demonstrate the practical value of the approach.</p>
 
 <ul>
 
@@ -750,8 +598,25 @@ applications.</p>
 
 </ul>
 
+<div id="link-frances" class="project-header space-above">
+  <a class="no_toc" href="frances/" id="frances">
+    <h3>
+      Frances
+    </h3>
+  </a>
+</div>
+<div>
+  <h3 id="frances" class="no-display">Frances</h3>
+</div>
+
+<p>The Frances project produced tools for teaching code generation and the mapping of high-level languages to low-level languages. Frances helps teach code generation and assembly language, and Frances-A helps teach computer architecture, assembly language, and how high-level code actually executes on a system.</p>
+
+<ul>
+
+</ul>
+
 <div id="link-osiris" class="project-header space-above">
-  <a class="no_toc" href="http://design.cs.iastate.edu/projects/osiris/" id="osiris">
+  <a class="no_toc" href="/papers/" id="osiris">
     <h3>
       Osiris
     </h3>
@@ -761,12 +626,7 @@ applications.</p>
   <h3 id="osiris" class="no-display">Osiris</h3>
 </div>
 
-<p>Comprehending software is hard. As system complexity and size increases,
-existing approaches for program comprehension become less usable. Ironically,
-the need for these approaches increases with the size of the system. In the
-Osiris project, we are looking at approaches and tools for
-automatic/semi-automatic generation of concerns models from source code for
-better comprehension of large software systems.</p>
+<p>Comprehending software is hard, and the need for help grows with system size. In the Osiris project we looked at approaches and tools for automatic and semi-automatic generation of concern models from source code, to support comprehension of large software systems.</p>
 
   </div>
   </div>

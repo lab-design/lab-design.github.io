@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="The Laboratory for Software Design at Tulane University researches programming languages, compilers, and software engineering for dependable software and AI.">
+    <meta name="theme-color" content="#006747">
+    <meta property="og:title" content="Graduate Seminar on Modularity">
+    <meta property="og:description" content="Laboratory for Software Design at Tulane University, School of Science and Engineering.">
+    <meta property="og:type" content="website">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/design.css">
+    <link rel="icon" href="/favicon.ico">
+    <title>Graduate Seminar on Modularity | Laboratory for Software Design</title>
+  </head>
+
+  <body>
+    <!-- Load jQuery before the content in order to support the papers page sorting -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <header class="site-header">
+  <div class="container site-header__inner">
+    <a href="/" class="site-brand" aria-label="Laboratory for Software Design, Tulane University">
+      <img src="/img/tulane-sse-logo1.png" alt="Tulane University, School of Science and Engineering, Laboratory for Software Design" class="site-brand__logo">
+    </a>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle-cb">
+    <label for="nav-toggle" class="nav-toggle" aria-label="Toggle navigation"><span></span></label>
+
+    <nav class="site-nav">
+      
+      <a href="/projects.html" class="">Projects</a>
+      <a href="/papers/" class="">Papers</a>
+      <a href="/grants/" class="">Grants</a>
+      <a href="/news/" class="is-active">News</a>
+      <a href="/people.html" class="">People</a>
+      <a href="/about/" class="">About</a>
+    </nav>
+  </div>
+</header>
+
+
+<main class="container">
+  <br />
+  <div class="row">
+  <div class="col-12">
+    <h2 class="page-title">Graduate Seminar on Modularity</h2>
+    <p class="mb-2 text-muted">October 07, 2020</p>
+
+<p>This Fall 2020 semester, I am teaching an advanced topics seminar on 
+the idea of Modularity in Software Engineering.
+The goal of this seminar is to discuss some classic and recent papers 
+on modularity in software engineering and programming languages.</p>
+
+<p>We will be reading the following papers.</p>
+
+<ol>
+  <li>Early ideas: Separation of Concerns, Information Hiding
+    <ul>
+      <li>E. Dijkstra, “<a href="https://www.cs.utexas.edu/users/EWD/transcriptions/EWD04xx/EWD447.html">On the role of scientific thought</a>”, 
+From Edsger W. Dijkstra, Selected Writings on Computing: A Personal Perspective, Springer-Verlag, 1982.</li>
+      <li>Parnas, D.L., “<a href="https://dl.acm.org/doi/10.1145/361598.361623">On the Criteria To Be Used in Decomposing Systems Into Modules</a>” 
+Communications of the ACM, Vol. 15, No. 12, pp. 1053-1058, December, 1972</li>
+      <li>Edsger W. Dijkstra, “<a href="http://www.acm.org/classics/oct95/">Go To Statement Considered Harmful</a>”, 
+Communications of the ACM, Vol. 11, No. 3, March 1968, pp. 147-148.</li>
+    </ul>
+  </li>
+  <li>Peri Tarr, Harold Ossher, William Harrison, Stanley M. Sutton, Jr., 
+“<a href="https://ieeexplore.ieee.org/document/841000">N degrees of separation: multi-dimensional separation of concerns</a>”, 
+ICSE ‘99: Proceedings of the 21st international conference on Software engineering, Los Angeles, California, USA, 1999.</li>
+  <li>Luca Cardelli, “<a href="http://lucacardelli.name/Papers/Linking.A4.pdf">Program fragments, linking, and modularization</a>”, In Proceedings of the 24th ACM SIGPLAN-SIGACT 
+symposium on Principles of programming languages (POPL ‘97). Association for Computing Machinery, New York, NY, USA, 266–277. DOI:https://doi.org/10.1145/263699.263735</li>
+  <li>Pierre America, “<a href="https://www.researchgate.net/profile/Pierre_America/publication/221501695_Designing_an_Object-Oriented_Programming_Language_with_Behavioural_Subtyping/links/00b7d52e0f188abba4000000.pdf">Designing an object-oriented programming language with behavioural subtyping</a>”,
+In Foundations of Object-Oriented Languages. Lecture Notes in Computer Science, Vol. 489. Springer, 60–90.</li>
+  <li>Matthew Flatt and Matthias Felleisen, “<a href="https://dl.acm.org/doi/abs/10.1145/277650.277730">Units: cool modules for HOT languages</a>”, 
+In Proceedings of the ACM SIGPLAN 1998 conference on Programming language design and implementation (PLDI ‘98).
+Association for Computing Machinery, New York, NY, USA, 236–248. DOI:https://doi.org/10.1145/277650.277730</li>
+  <li>Krishna Kishore Dhara and Gary T. Leavens, “<a href="https://ieeexplore.ieee.org/abstract/document/493421/">Forcing behavioral subtyping through specification inheritance</a>”, 
+In Proceedings of the 18th international conference on Software engineering (ICSE ‘96). IEEE Computer Society, USA, 258–267.</li>
+  <li>Hridesh Rajan and Gary Leavens, “<a href="https://lab-design.github.io/papers/ECOOP-2008/">Ptolemy: A Language with Quantified, Typed Events</a>” 
+ECOOP ’08: 22nd European Conference on Object-Oriented Programming (Jul. 2008).</li>
+  <li>Mehdi Bagherzadeh and Hridesh Rajan, “<a href="https://lab-design.github.io/papers/MODULARITY-15/">Panini: A Concurrent Programming Model 
+for Solving Pervasive and Oblivious Interference</a>”, 
+Modularity’15: 14th International Conference on Modularity (Mar. 2015).</li>
+  <li>Gary T. Leavens and David A. Naumann. “<a href="https://dl.acm.org/doi/abs/10.1145/2766446">Behavioral Subtyping, Specification Inheritance, and Modular Reasoning</a>” 
+ACM Trans. Program. Lang. Syst. 37, 4, Article 13 (August 2015), 88 pages. DOI:https://doi.org/10.1145/2766446</li>
+</ol>
+
+
+
+  </div>
+  </div>
+  <br />
+</main>
+
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-brand__name">Laboratory for Software Design</div>
+        <div class="footer-school">Tulane University &middot; School of Science &amp; Engineering</div>
+        <p>We build tools and techniques for programming languages, compilers, and software engineering, so software is easier to create, verify, and sustain.</p>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>201 Lindy Claiborne Boggs Center<br>6823 St. Charles Avenue<br>New Orleans, LA 70118</p>
+        <p>Phone: (504) 865-5764</p>
+        <p><a href="mailto:hrajan@tulane.edu">hrajan@tulane.edu</a></p>
+      </div>
+
+      <div class="footer-explore">
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="/projects.html">Projects</a></li>
+          <li><a href="/papers/">Papers</a></li>
+          <li><a href="/people.html">People</a></li>
+          <li><a href="/news/">News</a></li>
+          <li><a href="https://sse.tulane.edu">School of Science &amp; Engineering</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>&copy; 2026 Tulane University. All rights reserved.</div>
+      <div>Research supported in part by the <a href="https://www.nsf.gov">US National Science Foundation</a>.</div>
+    </div>
+  </div>
+
+  <!--
+    Analytics note: the previous Universal Analytics (analytics.js, UA-512574-3)
+    was retired by Google in 2023 and has been removed. To enable Google
+    Analytics 4, set your Measurement ID below and uncomment this block.
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  -->
+</footer>
+
+
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="/js/design.js"></script>
+  </body>
+</html>

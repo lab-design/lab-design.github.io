@@ -283,7 +283,7 @@
 					<div style="border: 1px solid #ffffff;"
 						 class="views-field views-field-field-people-image">
 						<div class="field-content">
-							<a href="http://design.cs.iastate.edu/"> <img
+							<a href="http://lab-design.github.io/"> <img
 									typeof="foaf:Image"
 									src="https://www.cs.iastate.edu/files/styles/people_thumb/public/people/profilepictures/islam_md_johirul.jpg?itok=xJi4eB4u"
 									height="180" alt=""></a>
@@ -291,7 +291,7 @@
 					</div>
 					<div class="views-field views-field-title profile-title h2">
                                                         <span class="field-content"><a
-																href="http://design.cs.iastate.edu/">Md Johirul Islam</a></span>
+																href="http://lab-design.github.io/">Md Johirul Islam</a></span>
 					</div>
 					<div class="views-field views-field-field-people-position">
 						<div class="field-content">Web Chair</div>

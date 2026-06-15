@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="The Laboratory for Software Design at Tulane University researches programming languages, compilers, and software engineering for dependable software and AI.">
+    <meta name="theme-color" content="#006747">
+    <meta property="og:title" content="RNN (Recurrent Neural Networks) Can be Decomposed Too, Our ICSE 2023 Paper Shows">
+    <meta property="og:description" content="Laboratory for Software Design at Tulane University, School of Science and Engineering.">
+    <meta property="og:type" content="website">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/design.css">
+    <link rel="icon" href="/favicon.ico">
+    <title>RNN (Recurrent Neural Networks) Can be Decomposed Too, Our ICSE 2023 Paper Shows | Laboratory for Software Design</title>
+  </head>
+
+  <body>
+    <!-- Load jQuery before the content in order to support the papers page sorting -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <header class="site-header">
+  <div class="container site-header__inner">
+    <a href="/" class="site-brand" aria-label="Laboratory for Software Design, Tulane University">
+      <img src="/img/tulane-sse-logo1.png" alt="Tulane University, School of Science and Engineering, Laboratory for Software Design" class="site-brand__logo">
+    </a>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle-cb">
+    <label for="nav-toggle" class="nav-toggle" aria-label="Toggle navigation"><span></span></label>
+
+    <nav class="site-nav">
+      
+      <a href="/projects.html" class="">Projects</a>
+      <a href="/papers/" class="">Papers</a>
+      <a href="/grants/" class="">Grants</a>
+      <a href="/news/" class="is-active">News</a>
+      <a href="/people.html" class="">People</a>
+      <a href="/about/" class="">About</a>
+    </nav>
+  </div>
+</header>
+
+
+<main class="container">
+  <br />
+  <div class="row">
+  <div class="col-12">
+    <h2 class="page-title">RNN (Recurrent Neural Networks) Can be Decomposed Too, Our ICSE 2023 Paper Shows</h2>
+    <p class="mb-2 text-muted">May 17, 2023</p>
+
+  <span class="news-link">Links: </span>
+  
+    <a href="" class="news-link">Papers</a>
+    
+  
+
+<p>My students and I have continued to make progress on exploring decomposing of 
+neural networks into modules.
+Starting with our pioneering work on this topic that appeared at 
+<a href="https://design.cs.iastate.edu/papers/ESEC-FSE-20b/">ESEC/FSE 2020</a>
+and subsequent work that showed the virtue of and methods for decomposing Convolutional 
+Neural Networks at <a href="https://lab-design.github.io/papers/ICSE-22b/">ICSE 2022</a>, 
+we have expanded our results to Recurrent Neural Networks (RNNs).
+During our recent research project, titled “<a href="https://design.cs.iastate.edu/papers/ICSE-23b/">Decomposing a Recurrent Neural Network into Modules for Enabling Reusability and Replacement</a>,” 
+my students and I introduced a groundbreaking method for reengineering recurrent neural networks (RNNs).Our findings, which my PhD student <a href="https://www.cs.iastate.edu/sayem">Sayem Imtiaz</a> 
+presented at the <a href="https://conf.researchr.org/home/icse-2023">45th International Conference on Software Engineering</a>, highlight a novel technique to decompose RNNs into reusable and replaceable components, eliminating the need for retraining the entire model in some cases.</p>
+
+<p>Throughout our investigation, we aimed to address two critical questions: Could we enhance the capabilities of a trained RNN to support a new natural language without starting from scratch? Can we resolve issues in the RNN’s behavior by selectively replacing specific parts responsible for the faulty behavior? While prior studies have explored module decomposition in fully connected neural networks (FCNNs) and convolutional neural networks (CNNs), our research marks the first attempt at applying this concept to RNNs.</p>
+
+<p>Recognizing the unique challenges posed by RNNs compared to FCNNs and CNNs—such as distinct layer structures, loop structures, various input-output architectures, and the use of both nonlinear and logistic activation functions—we devised an innovative approach to decompose RNNs into reusable and replaceable modules.</p>
+
+<p>Our investigation encompassed three types of RNNs: Vanilla, Long Short-Term Memory (LSTM), and Gated Recurrent Units (GRU). By decomposing these models into modules, we demonstrated the potential for reusability and replacement in various scenarios. To evaluate our approach, we conducted extensive experiments using five canonical datasets: Math QA, Brown Corpus, Wiki-toxicity, Clinc OOS, and Tatoeba. We also considered four different model variants for each dataset.</p>
+
+<p>Our findings revealed that decomposing a trained RNN incurs minimal costs. The decomposed model experienced only a slight decrease in accuracy by 0.6%, while the BLEU score, a metric used for evaluating machine translation quality, improved by 0.10%. These results highlight the promise of module decomposition in enhancing RNNs without compromising performance.</p>
+
+<p>Moreover, we successfully demonstrated that the decomposed modules can be reused and replaced without requiring the retraining of the entire model. This approach offers significant advantages in terms of flexibility and efficiency, eliminating the time-consuming retraining process typically associated with deep learning models.</p>
+
+<p>The implications of our research are far-reaching. By enabling reusability and replacement in RNNs, our study opens up new avenues for efficient and scalable development in the field of deep learning. The ability to enhance RNNs for new natural languages or address faulty behavior through module replacement represents a significant step forward.</p>
+
+<p>Introducing module decomposition techniques from traditional software engineering into the realm of deep learning models has the potential to revolutionize the field. We anticipate that our work will inspire further exploration and advancements in engineering deep models, fostering a deeper understanding of their inner workings.</p>
+
+<p>As the field of artificial intelligence continues to evolve, studies like ours provide valuable insights into improving and enhancing existing models. By combining the principles of software engineering with deep learning, we are paving the way for more robust, adaptable, and efficient neural networks in the future.</p>
+
+
+
+
+  </div>
+  </div>
+  <br />
+</main>
+
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-brand__name">Laboratory for Software Design</div>
+        <div class="footer-school">Tulane University &middot; School of Science &amp; Engineering</div>
+        <p>We build tools and techniques for programming languages, compilers, and software engineering, so software is easier to create, verify, and sustain.</p>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>201 Lindy Claiborne Boggs Center<br>6823 St. Charles Avenue<br>New Orleans, LA 70118</p>
+        <p>Phone: (504) 865-5764</p>
+        <p><a href="mailto:hrajan@tulane.edu">hrajan@tulane.edu</a></p>
+      </div>
+
+      <div class="footer-explore">
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="/projects.html">Projects</a></li>
+          <li><a href="/papers/">Papers</a></li>
+          <li><a href="/people.html">People</a></li>
+          <li><a href="/news/">News</a></li>
+          <li><a href="https://sse.tulane.edu">School of Science &amp; Engineering</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>&copy; 2026 Tulane University. All rights reserved.</div>
+      <div>Research supported in part by the <a href="https://www.nsf.gov">US National Science Foundation</a>.</div>
+    </div>
+  </div>
+
+  <!--
+    Analytics note: the previous Universal Analytics (analytics.js, UA-512574-3)
+    was retired by Google in 2023 and has been removed. To enable Google
+    Analytics 4, set your Measurement ID below and uncomment this block.
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  -->
+</footer>
+
+
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="/js/design.js"></script>
+  </body>
+</html>
