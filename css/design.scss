@@ -107,11 +107,11 @@ hr { border: 0; border-top: 1px solid var(--line); }
 }
 .site-brand { display: flex; align-items: center; gap: 14px; color: #fff; text-decoration: none; }
 .site-brand:hover { text-decoration: none; color: #fff; }
-.site-brand__logo {
-  height: 58px; width: auto;
-  background: #fff; padding: 5px 8px; border-radius: 8px;
-  box-shadow: var(--shadow-sm);
+.site-brand__chip {
+  background: #fff; padding: 6px 9px; border-radius: 8px;
+  display: inline-flex; align-items: center; box-shadow: var(--shadow-sm);
 }
+.site-brand__shield { height: 42px; width: auto; display: block; }
 .site-brand__text { display: flex; flex-direction: column; line-height: 1.15; }
 .site-brand__lab { font-family: var(--serif); font-weight: 700; font-size: 1.2rem; color: #fff; letter-spacing: -.01em; }
 .site-brand__school { font-size: .82rem; color: rgba(255,255,255,.8); font-weight: 400; }
@@ -372,3 +372,10 @@ footer h4 { color: #fff; font-family: var(--sans); font-size: .82rem; text-trans
 /* section headers on the projects page */
 h2.research-header { margin-top: 2.6rem; padding-bottom: 10px; border-bottom: 2px solid var(--line); }
 h2.research-header:first-of-type { margin-top: 1rem; }
+
+
+/* ---------- Footer socials ---------- */
+.footer-social { display: flex; gap: 14px; margin-top: 16px; }
+.footer-social a { color: rgba(255,255,255,.85); display: inline-flex; transition: color .18s ease, transform .15s ease; }
+.footer-social a:hover { color: var(--tulane-blue); transform: translateY(-2px); }
+.footer-social svg { width: 20px; height: 20px; fill: currentColor; }

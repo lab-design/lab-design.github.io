@@ -4,16 +4,19 @@ title: About
 permalink: /about/
 ---
 
-The Laboratory for Software Design at Tulane University conducts research in programming languages, compilers, and software engineering. We are part of the [School of Science and Engineering](https://sse.tulane.edu) and led by Dr. Hridesh Rajan, Dean of the School and Professor of Computer Science.
+The Laboratory for Software Design at Tulane University conducts research in programming languages, compilers, and software engineering. We are part of the [Department of Computer Science](https://sse.tulane.edu/cs) in the [School of Science and Engineering](https://sse.tulane.edu), and led by Dr. Hridesh Rajan, Dean of the School and Professor of Computer Science.
 
 Our goal is to make software-intensive systems, including modern AI, easier and cheaper to build, verify, and sustain, and more portable across computing platforms. We pursue that goal through a mix of foundational research, practical tools, and large-scale empirical study.
 
 ## What we work on
 
-Our current research spans two areas:
+Much of our work advances dependable and trustworthy AI, with three active thrusts:
 
-- [**Dependable & Trustworthy AI**](/projects.html#dependable-trustworthy-ai): decomposing deep neural networks into reusable modules ([Modular Deep Learning](/projects.html#modular-deep-learning)), localizing faults in deep learning ([Fault Localization for Deep Learning](/projects.html#fault-localization-for-deep-learning)), and understanding risk across data-science lifecycles ([D4](/projects.html#d4-dependable-data-driven-discovery)).
-- [**AI/Data Science for Software Engineering**](/projects.html#ai-data-science-for-software-engineering): using large language models, program analysis, and large-scale data science to localize, repair, and improve software, including the [Boa](/projects.html#boa) infrastructure for mining software at scale.
+- [**Modular Deep Learning**](/projects.html#modular-deep-learning): decomposing deep neural networks into modules that can be reused, replaced, and evolved on their own.
+- [**Fault Localization for Deep Learning**](/projects.html#fault-localization-for-deep-learning): finding where models go wrong and making deep learning faster and cheaper to debug.
+- [**Dependable Data Science**](/projects.html#dependable-data-science): understanding and reducing risk across the entire data-science lifecycle through the D4 project.
+
+We also work on [**AI/Data Science for Software Engineering**](/projects.html#ai-data-science-for-software-engineering), using large language models, program analysis, and large-scale data science to localize, repair, and improve software, including the [Boa](/projects.html#boa) infrastructure for mining software at scale.
 
 See our [projects](/projects.html) and [recent papers](/papers/) for the full picture.
 
