@@ -1,314 +1,154 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-    <title>Eos: Aspect-oriented extension for C#</title>    
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="The Laboratory for Software Design at Tulane University researches programming languages, compilers, and software engineering for dependable software and AI.">
+    <meta name="theme-color" content="#006747">
+    <meta property="og:title" content="Eos">
+    <meta property="og:description" content="Laboratory for Software Design at Tulane University, School of Science and Engineering.">
+    <meta property="og:type" content="website">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/design.css">
+    <link rel="icon" href="/favicon.ico">
+    <title>Eos | Laboratory for Software Design</title>
+  </head>
 
-<!-- INSERT PAGE CONTENT, KEYWORDS -->
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<meta name="description" content = " Eos: aspect oriented extension of C#">
-<meta name="keywords" content="Eos, ilac#, ilacsc, .net, .NET, 
-framework, AOP , aop, aspect, oriented, programming, instance, level, 
-aspects, C#, hridesh,rajan, aspect oriented programming,
-instance-level, classpects, unified model, unification, class, aspect,
-simplication, aspect-oriented model, conceptual integrity">
-<base href="http://www.cs.iastate.edu/~eos/" />
-</head>
+  <body>
+    <!-- Load jQuery before the content in order to support the papers page sorting -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 
-<!-- CHANGE STYLESHEET LINK  -->
-<link rel="stylesheet" media="all" href="/css/design.css" />
+    <header class="site-header">
+  <div class="container site-header__inner">
+    <a href="/" class="site-brand">
+      <span class="site-brand__chip">
+        <img src="/img/tulane-shield.png" alt="Tulane University" class="site-brand__shield">
+      </span>
+      <span class="site-brand__text">
+        <span class="site-brand__lab">Laboratory for Software Design</span>
+        <span class="site-brand__school">Department of Computer Science &middot; School of Science &amp; Engineering</span>
+      </span>
+    </a>
 
-<!-- INSERT ADDITIONAL STYLESHEET, IF DESIRED -->
+    <input type="checkbox" id="nav-toggle" class="nav-toggle-cb">
+    <label for="nav-toggle" class="nav-toggle" aria-label="Toggle navigation"><span></span></label>
 
-<!-- INSERT INLINE STYLES, IF DESIRED -->
-<style type="text/css">
-<!--
-.rphoto125 { float: right; width: 125px; border: 1px solid #000; }
-.lphoto60 { float: left; width: 60px; margin-right: 5px; border: 1px
-solid #000;}
-.lphoto250 { float: left; width: 250px; margin-right: 5px; border: 1px solid #000; }
-#b3 { width: 355px; }
-#c3 { width: 245px; }
-#hilite2 { font-size: x-small; padding: .5em .5em .5em 2.5em; }
--->
-</style>
-
-<!--
-.mainphoto { float: left; width: 250px; padding: 0 5px 0 0; }
--->
-
-<body>
-
-<div id="container">
-
-<!-- BANNER. DO NOT CHANGE  -->
-<div id="mastheadni">
- <div id="nameplate">
- <a href="http://www.iastate.edu/">
- <img src="http://www.cs.iastate.edu/~design/images/isu200.gif"
- alt="Iowa State University" width="200" height="15" /></a>
- </div>
-
-<!-- INSERT CONTACT, PHONE, SEARCH BOX -->
-  <div id="search">
-  <form method="get" action="http://www.google.com/u/iastate">
-  <a href="">Contact Us</a> |
-  <label for="search">Search CS</label>
-  <input type="text" name="q" id="isusearch" size="18" />
-  <INPUT type=hidden value=www.cs.iastate.edu name=domains> 
-  <INPUT type=hidden value=inurl:www.cs.iastate.edu name=hq> 
-  <INPUT type=hidden value=www.cs.iastate.edu name=sitesearch>
-  </form>
+    <nav class="site-nav">
+      
+      <a href="/projects.html" class="">Projects</a>
+      <a href="/papers/" class="">Papers</a>
+      <a href="/grants/" class="">Grants</a>
+      <a href="/news/" class="">News</a>
+      <a href="/people.html" class="">People</a>
+      <a href="/about/" class="">About</a>
+    </nav>
   </div>
-</div>
-
-<!-- INSERT PAGE TITLE -->
-<div id="titlebar">
-<h3>Department of Computer Science</h3>
-<h3>Laboratory for Software Design</h3>
-<h1>Eos: A Unified Aspect-oriented Extension of C#</h1>
-</div>
-
-<table id="main" cellspacing="0">
-<tr>
-<td  id="a2" rowspan="2">
-<div id="mainlinks">
+</header>
 
 
-<!-- INSERT LEFT COLUMN LINKS -->
-<div class="linkhead"><h3>Index</h3></div>
+<main class="container">
+  <br />
+  <div class="row">
+  <div class="col-12">
+    <h2 class="page-title">Eos</h2>
+    <p>Eos is a unified aspect-oriented extension for C# on the Microsoft .NET Framework. Eos unifies aspects and objects as classpects, which improves the conceptual integrity of the language and the compositionality of aspect modules to better support hierarchical advising structures.</p>
+
+<p>This project concluded during the lab’s time at Iowa State University.</p>
+
+<h2 class="research-header" id="publications">Publications</h2>
+
 <ul>
-<li><a href="http://www.cs.iastate.edu/~eos/">Home</a></li>
-<li><a href="http://www.cs.iastate.edu/~eos/People.shtml">People</a></li>
-<li><a href="http://www.cs.iastate.edu/~eos/papers/">Publications</a></li>
-<li><a href="http://www.cs.iastate.edu/~eos/download/">Download Eos</a></li>
-<li><a href="http://www.cs.iastate.edu/~eos/doc/">Documentation</a></li>
+
+<li><a href="/papers/TOSEM-08/">TOSEM '08 &middot; Unifying Aspect- and Object-Oriented Design</a></li>
+
+<li><a href="/papers/PLOP-2007/">PLoP '07 &middot; Design Pattern Implementations in Eos</a></li>
+
+<li><a href="/papers/ICSE-2005/">ICSE '05 &middot; Classpects: Unifying Aspect- and Object-Oriented Language Design</a></li>
+
+<li><a href="/papers/AOSD-2005/">AOSD '05 &middot; Aspect Language Features for Concern Coverage Profiling</a></li>
+
+<li><a href="/papers/ICSE-2004/">ICSE '04 - DS &middot; One More Step in the Direction of Modularized Integration Concerns</a></li>
+
+<li><a href="/papers/ASE-04/">ASE '04 &middot; Understanding Aspects via Implicit Invocation</a></li>
+
+<li><a href="/papers/ESEC-FSE-2003/">ESEC/FSE '03 &middot; Eos: Instance-Level Aspects for Integrated System Design</a></li>
+
 </ul>
-<div class="linkhead"><h3>Quick Links</h3></div>
-<ul>
-<li><a href="http://www.cs.iastate.edu/~design/">Laboratory for Software Design</a></li>
-<li><a href="http://www.cs.iastate.edu">Computer Science</a></li>
-<li><a href="http://www.iastate.edu">Iowa State University</a></li>
-</ul>
-</div>
+
+<p><a href="/projects.html">← Back to all projects</a></p>
+
+  </div>
+  </div>
+  <br />
+</main>
 
 
-<!-- INSERT COPY OR DELETE -->
-<div class="maintext">
-<h3>Got a question?</h3>
-<p class="cutline">
-Got a question or comment? Contact us at 
-(515) 294-6168 or <a href="mailto:hridesh@cs.iastate.edu">hridesh@cs.iastate.edu</a>.
-</p>
-</div>
-</td>
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-brand__name">Laboratory for Software Design</div>
+        <div class="footer-school">Department of Computer Science &middot; School of Science &amp; Engineering &middot; Tulane University</div>
+        <p>We build tools and techniques for programming languages, compilers, and software engineering, so software is easier to create, verify, and sustain.</p>
+        <div class="footer-social">
+          <a href="https://twitter.com/hridesh" aria-label="Twitter / X" title="Twitter / X"><svg viewBox="0 0 24 24" role="img" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+          <a href="https://github.com/hridesh" aria-label="GitHub" title="GitHub"><svg viewBox="0 0 24 24" role="img" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+          <a href="https://www.linkedin.com/in/hrideshrajan" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" role="img" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+          <a href="mailto:hridesh@acm.org" aria-label="Email" title="Email"><svg viewBox="0 0 24 24" role="img" aria-hidden="true"><path d="M0 3v18h24V3H0zm21.518 2L12 12.713 2.482 5h19.036zM2 19V7.183l10 8.104 10-8.104V19H2z"/></svg></a>
+        </div>
+      </div>
 
-<!-- 2ND COLUMN. INSERT COPY -->
-<td id="b2" rowspan="2">
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>201 Lindy Claiborne Boggs Center<br>6823 St. Charles Avenue<br>New Orleans, LA 70118</p>
+        <p>Phone: (504) 865-5764</p>
+        <p><a href="mailto:hrajan@tulane.edu">hrajan@tulane.edu</a></p>
+      </div>
 
-<div class="maintext">
+      <div class="footer-explore">
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="/projects.html">Projects</a></li>
+          <li><a href="/papers/">Papers</a></li>
+          <li><a href="/people.html">People</a></li>
+          <li><a href="/news/">News</a></li>
+          <li><a href="https://sse.tulane.edu/cs">Department of Computer Science</a></li>
+        </ul>
+      </div>
+    </div>
 
-  <table width="100%" border="0">
-    <tr>
-      <td><p class="heading">What is Eos?</p></td>
-    </tr>
-    <tr> 
-      <td>
-        <blockquote> 
-          <p>Eos is a unified aspect-oriented extension for C# on Microsoft&reg; .NET Framework&#153;. 
-	  Eos unifies aspects and objects in three ways. First, it unifies aspects and classes as 
-	  <em>classpects</em>. A <em>classpect</em> has all the capabilities of classes, all of 
-	  essential capabilities of aspects in AspectJ--like languages, and the extensions to 
-	  aspects needed to make them first class objects. Second, the unified model eliminates 
-	  advice in favor of using methods only, with a separate and explicit join-point-method 
-	  binding construct. Third, it supports a generalized advising model. To the usual 
-	  object-oriented mechanisms of explicit or implicit method call and overriding based 
-	  on inheritance the unified model adds implicit invocation using before and after binding, 
-	  and overriding using around binding, respectively. Eos is simple and easy to understand 
-	  because it has fewer new language concepts and constructs.
-          </p>
-        </blockquote>
-      </td>
-    </tr>
-    <tr>
-      <td><p class="heading">Status of the Eos Language and its Compiler.</p></td>
-    </tr>
-    <tr>
-      <td>
-       <blockquote>
-              <p> The Eos language and its compiler are no longer actively maintained.
-	          It has been succeeded by the <a href="http://www.cs.iastate.edu/~ptolemy">Ptolemy programming language</a>.
-		  Ptolemy also provides all of the benefits of Eos such as a unified, simpler language model
-		  and a generalized advising model. In addition, Ptolemy also has benefits in terms of modular understanding
-		  and verification of separated concerns. For more information about Ptolemy see its
-		  <a href="http://www.cs.iastate.edu/~ptolemy/">web-page</a> that also makes download
-		  for the Ptolemy compiler available. 
-              </p>
-       </blockquote>
-      </td>
-    </tr>
-		 
-    <tr>
-      <td ><p class="heading">Latest News and Developments.</p></td>
-    </tr>
-    <tr> 
-      <td>
-        <blockquote>
-	        <p>
-		  <U>Jun 06</U>: Eos 0.3.4 is released and is available for download now. It contains fixed bugs and new examples. 
-		</p>
-	        <p>
-		  <U>Mar 06</U>: If you are interested in Eos, you might also want to look at <a href="http://www.cs.iastate.edu/~nu">Nu</a>
-		</p>
-	        <p>
-		  <U>Nov 05</U>: Eos implementation discussed at the <a href="http://research.microsoft.com/workshops/aop/">
-		  Microsoft Research Workshop AOP Goes .NET.</a>.
-		</p>
-                <p>
-                  <U>Aug 05</U>: Eos moved to the <a href="http://www.cs.iastate.edu">Department of Computer Science</a> 
-		   at the <a href="http://www.iastate.edu">Iowa State University</a>. Old Eos web-site is available from 
-		   the <a href="http://www.cs.virginia.edu">Department of Computer Science</a> at the 
-		   <a href="http://www.iastate.edu">University of Virginia</a> link 
-		   <a href="http://www.cs.virginia.edu/~eos">here</a>.
-                </p>
-		<p>
-		<U>July 05</U>: Eos is featured in an <a href="http://www.codeproject.com/csharp/aop2.asp">
-		                article on CodeProject by Shivprasad koirala</a>.
-		</p> 
+    <div class="footer-bottom">
+      <div>&copy; 2026 Tulane University. All rights reserved.</div>
+      <div>Research supported in part by the <a href="https://www.nsf.gov">US National Science Foundation</a>.</div>
+    </div>
+  </div>
 
-		<p>
-		<U>Jun 05</U>: Eos 0.3.3 is available now, contains more bug fixes.
-		</p>
+  <!--
+    Analytics note: the previous Universal Analytics (analytics.js, UA-512574-3)
+    was retired by Google in 2023 and has been removed. To enable Google
+    Analytics 4, set your Measurement ID below and uncomment this block.
 
-		<p>
-		<U>Jun 05</U>: Eos 0.3.2 is available now, contains more bug fixes.
-		</p>
-
-		<p>
-		<U>Apr 05</U>: Eos 0.3.1 is available now, contains bug fixes to Eos-0.3.
-		</p>
-
-		<p>
-		<U>Mar 05</U>: A new VS.NET Add-In for EOS is available for download  from 
-		   <a href="http://ect.jate.hu">here</a>.
-		</p>
-
-	        <p>
-				   <U>Mar 05</U>: Eos 0.3 Beta is available now, contains new features.
-	   </p>
-
-				   <p>
-				   <U>Oct 04</U>: A research variant of Eos, "Eos-T" and associated tool is available now from 
-				   <a href="download/AspectCov.zip">here</a>.
-				   </p>
-
-				   <p>
-				   <U>Sept 04</U>: Eos featured in an article by Igor Milovanovic 
-				   <a href="http://www.geekswithblogs.net/imilovanovic/articles/11584.aspx">here</a>.
-				   </p>
-
-				   <p>
-				   <U>Aug 04</U>: Eos featured on SharpToolBox 
-				   <a href="http://sharptoolbox.com/Toolda1748ae-355f-44f1-894d-fe8eb994de68.aspx">here</a>.
-				   </p>
-
-				   <p>
-				   <U>Jun 04</U>: Eos 0.2.2 is available now, contains more bug fixes.
-				   </p>
-
-				   <p>
-				   <U>May 04</U>: Eos 0.2.1 is available, this release contains bug fixes.
-				   </p>
-
-				   <p>
-				   <U>Feb 04</U>: After much wait Eos 0.2 Beta version is available from the <a href="download/">download page</A>.
-				   </p>
-				    
-				    <p>
-				    <U>Jan 04</U>: New discussion list for Eos. The List can be accessed from 
-				    <a href = "http://www.cs.virginia.edu/mailman/listinfo/eos-discuss"> e-mail list</a>
-				    or by sending an e-mail to eos-discuss@nospam.cs.virginia.edu.
-				    </p>
-				            
-					    <p>
-					    <U>Sept 03</U>: First and preliminary version of Eos (0.1) is available for free 
-					    for research and teaching purposes and for evaluation for commercial 
-					    purposes from the <a href="download/">download </a> page. Send us an e-mail [eos@nospam.cs.iastate.edu] 
-					    for more details.
-					    </p>
-        </blockquote>
-      </td>
-    </tr>
-    <tr>
-      <td><p class="heading"><font color="#ffffff" face="Arial,Helvetica"></font></p></td>
-    </tr>
-  </table>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  -->
+</footer>
 
 
-</div>
-</td>
 
-<!-- 3RD COLUMN. INSERT COPY -->
-<!--<td id="c3">
-
-<div class="maintext">
-<h2>News &amp; Updates</h2>
-
-<h3>Velit Esse</h3>
-<p>Et duis, blandit illum. Consequat dolore blandit. Suscipit nulla
-molestie. Nulla esse, deleni quis.</p>
-
-<img src="http://www.iastate.edu/guide/templates/05/img/grads13.jpg" width="125" 
-height="108" alt="" border="1" class="rphoto125"  />
-<h3> Feugait veniam</h3>
-<p>Praesent nibh at eros pr  magna 
-nonummy facilisi dignissim.</p>
-<div class="clear"></div>
-
-<h3>Vulputate tation</h3>
-<p>Auguelaoreet, autem et augue nulla. Adipiscing ut ut accumsan vero feugiat
-ut luptatum  eu iriure veniam.</p> 
-
-</div>
-</td>-->
-</tr>
-
-<!-- INSERT HIGHLIGHT OR "COMMENT OUT" -->
-<!--<tr>
-<td id="hilite">
-<div id="hilite2">
-Dolor Odio students took first place in a recent national competition.
-</div>
-</td>
-</tr>-->
-</table>
-
-<!-- INSERT CONTACT INFO: UNIT, PHONE, E-MAIL  -->
-
-<div id="footer">
-<div id="copyright">
-<img src="http://www.cs.iastate.edu/~design/images/ISUbecoming.gif" 
-alt="Becoming the Best" width="200"
-height="31" /> 
-
-
-<p>Laboratory for Software Design, Department of Computer Science, Iowa State University<p>
-<p>116A Atanasoff Hall, Ames, IA, 50011-1040, USA</p>
-<p>Voice: (515) 294-6168 . Fax: (515) 294-0258 . E-Mail: hridesh@cs.iastate.edu</p>
-<p>Copyright &#169; 2008, Iowa State University of Science and
-Technology. All rights reserved.</p>
-</div>
-</div>
-
-</div>
-<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
-</script>
-<script type="text/javascript">
-_uacct = "UA-512574-3";
-urchinTracker();
-</script>
-</body>
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="/js/design.js"></script>
+  </body>
 </html>
-
- 
