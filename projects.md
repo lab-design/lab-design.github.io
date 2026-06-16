@@ -138,7 +138,7 @@ Boa has been supported in part by the following grants.
 ## Past Projects
 {: #past-projects .research-header}
 
-{% include projects_page.html name="Panini" link="panini/" %}
+{% include projects_page.html name="Panini" link="http://design.cs.iastate.edu/panini/" %}
 
 The Panini project developed the capsule-oriented programming model, aimed at making concurrent software development easier through two properties: given a module, it should be possible to statically and modularly identify all points where other modules might interfere; and given a module and the interfaces of the modules it interacts with, it should be possible to statically and modularly construct an upper bound on the behavior of all potentially interfering tasks. Together these properties enable modular reasoning about concurrent programs. We created two systems that support this model: [PaniniJ](http://web.cs.iastate.edu/~panini/), an extension of Java and its reference compiler, and [@PaniniJ](https://paninij.github.io), an annotation-based framework.
 
@@ -148,9 +148,9 @@ The Panini project developed the capsule-oriented programming model, aimed at ma
 {% endif %}{% endfor %}
 </ul>
 
-{% include projects_page.html name="Ptolemy" link="ptolemy/" %}
+{% include projects_page.html name="Ptolemy" link="http://design.cs.iastate.edu/ptolemy/" %}
 
-[Ptolemy](ptolemy/) designed an event-based language whose goal is to enable more modular reasoning about advanced separation of concerns mechanisms such as implicit invocation and aspects. Ptolemy provides quantified, typed events that act as an interface between modules, and translucid contracts that enable modular reasoning about modules that announce events and those that listen to them.
+[Ptolemy](http://design.cs.iastate.edu/ptolemy/) designed an event-based language whose goal is to enable more modular reasoning about advanced separation of concerns mechanisms such as implicit invocation and aspects. Ptolemy provides quantified, typed events that act as an interface between modules, and translucid contracts that enable modular reasoning about modules that announce events and those that listen to them.
 
 <ul>
 {% for paper in papers reversed %}{% if paper.tags contains 'ptolemy' and paper.kind != 'technical_report' %}
@@ -178,7 +178,7 @@ The Nu project explored intermediate language design and corresponding virtual m
 {% endif %}{% endfor %}
 </ul>
 
-{% include projects_page.html name="Sapha" link="sapha/" %}
+{% include projects_page.html name="Sapha" link="http://design.cs.iastate.edu/sapha/" %}
 
 Sapha designed, implemented, and evaluated automatic thread-to-core assignment techniques for heterogeneous multi-core processors, improving their utilization without requiring hand-built representative input sets.
 
@@ -188,7 +188,7 @@ Sapha designed, implemented, and evaluated automatic thread-to-core assignment t
 {% endif %}{% endfor %}
 </ul>
 
-{% include projects_page.html name="Slede" link="slede/" %}
+{% include projects_page.html name="Slede" link="http://design.cs.iastate.edu/slede/" %}
 
 Slede looked at specification language design and verification mechanisms for cryptographic protocols in sensor networks, helping find cryptographic errors and improving the reliability of these networks.
 
@@ -198,7 +198,7 @@ Slede looked at specification language design and verification mechanisms for cr
 {% endif %}{% endfor %}
 </ul>
 
-{% include projects_page.html name="Tisa" link="tisa/" %}
+{% include projects_page.html name="Tisa" link="http://design.cs.iastate.edu/tisa/" %}
 
 Tisa extended service-oriented architecture with trustworthy means for clients to specify, brokers to verify, and implementations to prove that desired non-functional properties are satisfied during request processing, with a prototype implementation demonstrating its practical value.
 
@@ -208,7 +208,7 @@ Tisa extended service-oriented architecture with trustworthy means for clients t
 {% endif %}{% endfor %}
 </ul>
 
-{% include projects_page.html name="Frances" link="frances/" %}
+{% include projects_page.html name="Frances" link="http://design.cs.iastate.edu/frances/" %}
 
 The Frances project produced tools for teaching code generation and the mapping of high-level languages to low-level languages, including Frances-A for teaching computer architecture and how high-level code executes on a system.
 
