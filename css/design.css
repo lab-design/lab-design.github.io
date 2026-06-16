@@ -996,4 +996,151 @@ h2.research-header:first-of-type {
   fill: currentColor;
 }
 
+/* ---------- Research page ---------- */
+.scholar-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--tulane-green);
+  color: #fff;
+  font-weight: 700;
+  padding: 11px 22px;
+  border-radius: 999px;
+  text-decoration: none !important;
+  margin: 0 0 1.5rem;
+}
+
+.scholar-btn:hover {
+  background: var(--tulane-green-700);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.pub-label {
+  font-weight: 700;
+  color: var(--ink);
+  margin: 0.5rem 0 0.2rem;
+  font-size: 0.95rem;
+}
+
+.flagship {
+  list-style: none;
+  padding: 0;
+  margin: 0.2rem 0 0;
+}
+
+.flagship li {
+  padding: 7px 0 7px 18px;
+  border-bottom: 1px solid var(--line);
+  position: relative;
+}
+
+.flagship li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 15px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--tulane-green);
+}
+
+.flagship a {
+  color: var(--body);
+}
+
+.flagship a:hover {
+  color: var(--tulane-green);
+}
+
+.more-pubs {
+  margin-top: 8px;
+}
+
+.more-pubs summary {
+  cursor: pointer;
+  color: var(--tulane-green);
+  font-weight: 700;
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 6px 0;
+}
+
+.more-pubs summary::-webkit-details-marker {
+  display: none;
+}
+
+.more-pubs summary::before {
+  content: "+";
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border: 1.5px solid var(--tulane-green);
+  border-radius: 50%;
+  font-weight: 700;
+  line-height: 1;
+  font-size: 0.95rem;
+}
+
+.more-pubs[open] summary::before {
+  content: "−";
+}
+
+.more-pubs summary:hover {
+  color: var(--tulane-green-700);
+}
+
+.rec {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0;
+  column-count: 2;
+  column-gap: 36px;
+}
+
+.rec li {
+  padding: 7px 0;
+  border-bottom: 1px solid var(--line);
+  break-inside: avoid;
+}
+
+.rec a, .svc a {
+  color: var(--body);
+}
+
+.rec a:hover, .svc a:hover {
+  color: var(--tulane-green);
+}
+
+.svc {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0;
+  color: var(--muted);
+}
+
+.svc li {
+  padding: 5px 0;
+}
+
+.bridge {
+  background: var(--surface);
+  border-left: 4px solid var(--tulane-blue);
+  padding: 12px 16px;
+  border-radius: 0 10px 10px 0;
+  color: var(--body);
+  margin-top: 14px;
+}
+
+@media (max-width: 700px) {
+  .rec {
+    column-count: 1;
+  }
+}
+
 /*# sourceMappingURL=design.css.map */
