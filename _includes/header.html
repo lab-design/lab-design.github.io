@@ -15,8 +15,7 @@
 
     <nav class="site-nav">
       {% assign p = page.url %}
-      <a href="/research/" class="{% if p contains '/research' %}is-active{% endif %}">Research</a>
-      <a href="/projects.html" class="{% if p contains '/projects' or p contains '/modularity' or p contains '/panini' or p contains '/ptolemy' %}is-active{% endif %}">Projects</a>
+      <a href="/research/" class="{% if p contains '/research' or p contains '/modularity' or p contains '/panini' or p contains '/ptolemy' or p contains '/eos' or p contains '/nu' or p contains '/sapha' or p contains '/slede' or p contains '/tisa' or p contains '/frances' %}is-active{% endif %}">Research</a>
       <a href="/papers/" class="{% if p contains '/papers' %}is-active{% endif %}">Papers</a>
       <a href="/grants/" class="{% if p contains '/grants' %}is-active{% endif %}">Grants</a>
       <a href="/news/" class="{% if p contains '/news' %}is-active{% endif %}">News</a>

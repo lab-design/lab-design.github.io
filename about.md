@@ -10,11 +10,11 @@ Our goal is to make software-intensive systems, including AI-enabled systems, ea
 
 ## What we work on
 
-- [**Modularity and Modular Reasoning**](/projects.html#modularity-and-modular-reasoning): languages, interfaces, and contracts that let engineers reason about complex software one module at a time.
-- [**Software at Scale, with Boa**](/projects.html#software-at-scale): expressing software-analysis tasks modularly so they run across the world's open-source code.
-- [**Modular and Dependable AI**](/projects.html#modular-and-dependable-ai): decomposing learned models into modules and bringing software-engineering rigor to AI-enabled systems.
+- [**Modularity and Modular Reasoning**](/research/#modularity-and-modular-reasoning): languages, interfaces, and contracts that let engineers reason about complex software one module at a time.
+- [**Software at Scale, with Boa**](/research/#software-at-scale): expressing software-analysis tasks modularly so they run across the world's open-source code.
+- [**Modular and Dependable AI**](/research/#modular-and-dependable-ai): decomposing learned models into modules and bringing software-engineering rigor to AI-enabled systems.
 
-See our [research](/research/) for the thrusts in depth, and our [projects](/projects.html) and [papers](https://lab-design.github.io/papers/) for the full record.
+See our [research](/research/) for the thrusts in depth and our [papers](https://lab-design.github.io/papers/) for the full record.
 
 ## Join us
 

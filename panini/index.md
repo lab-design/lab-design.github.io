@@ -19,4 +19,4 @@ This project concluded during the lab's time at Iowa State University.
 {% endif %}{% endfor %}
 </ul>
 {% endif %}
-[&larr; Back to all projects](/projects.html)
+[&larr; Back to research](/research/)
