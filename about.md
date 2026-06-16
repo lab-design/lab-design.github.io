@@ -22,7 +22,7 @@ See our [projects](/projects.html) and [recent papers](/papers/) for the full pi
 
 ## Past projects
 
-Our earlier work in programming languages and modularity includes [Panini](http://design.cs.iastate.edu/panini/), [Ptolemy](http://design.cs.iastate.edu/ptolemy/), [Eos](/eos/), [Nu](/nu/), [Sapha](http://design.cs.iastate.edu/sapha/), [Slede](http://design.cs.iastate.edu/slede/), [Tisa](http://design.cs.iastate.edu/tisa/), and [Frances](http://design.cs.iastate.edu/frances/). Active work is not ongoing on these, though interested students may propose related ideas we would be glad to consider.
+Our earlier work in programming languages and modularity includes [Panini](/panini/), [Ptolemy](/ptolemy/), [Eos](/eos/), [Nu](/nu/), [Sapha](/sapha/), [Slede](/slede/), [Tisa](/tisa/), and [Frances](/frances/). Active work is not ongoing on these, though interested students may propose related ideas we would be glad to consider.
 
 ## Join us
 
