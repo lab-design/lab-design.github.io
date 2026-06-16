@@ -6,23 +6,15 @@ permalink: /about/
 
 The Laboratory for Software Design at Tulane University conducts research in programming languages, compilers, and software engineering. We are part of the [Department of Computer Science](https://sse.tulane.edu/cs) in the [School of Science and Engineering](https://sse.tulane.edu), and led by Dr. Hridesh Rajan, Dean of the School and Professor of Computer Science.
 
-Our goal is to make software-intensive systems, including modern AI, easier and cheaper to build, verify, and sustain, and more portable across computing platforms. We pursue that goal through a mix of foundational research, practical tools, and large-scale empirical study.
+Our goal is to make software-intensive systems, including AI-enabled systems, easier and cheaper to build, verify, and sustain. A single principle runs through the work: modular reasoning, the ability to understand and change one part of a system without grappling with the whole.
 
 ## What we work on
 
-Much of our work advances dependable and trustworthy AI, with three active thrusts:
+- [**Modularity and Modular Reasoning**](/projects.html#modularity-and-modular-reasoning): languages, interfaces, and contracts that let engineers reason about complex software one module at a time.
+- [**Software at Scale, with Boa**](/projects.html#software-at-scale): expressing software-analysis tasks modularly so they run across the world's open-source code.
+- [**Modular and Dependable AI**](/projects.html#modular-and-dependable-ai): decomposing learned models into modules and bringing software-engineering rigor to AI-enabled systems.
 
-- [**Modular Deep Learning**](/projects.html#modular-deep-learning): decomposing deep neural networks into modules that can be reused, replaced, and evolved on their own.
-- [**Fault Localization for Deep Learning**](/projects.html#fault-localization-for-deep-learning): finding where models go wrong and making deep learning faster and cheaper to debug.
-- [**Dependable Data Science**](/projects.html#dependable-data-science): understanding and reducing risk across the entire data-science lifecycle through the D4 project.
-
-We also work on [**AI/Data Science for Software Engineering**](/projects.html#ai-data-science-for-software-engineering), using large language models, program analysis, and large-scale data science to localize, repair, and improve software, including the [Boa](/projects.html#boa) infrastructure for mining software at scale.
-
-See our [projects](/projects.html) and [recent papers](/papers/) for the full picture.
-
-## Past projects
-
-Our earlier work in programming languages and modularity includes [Panini](/panini/), [Ptolemy](/ptolemy/), [Eos](/eos/), [Nu](/nu/), [Sapha](/sapha/), [Slede](/slede/), [Tisa](/tisa/), and [Frances](/frances/). Active work is not ongoing on these, though interested students may propose related ideas we would be glad to consider.
+See our [research](/research/) for the thrusts in depth, and our [projects](/projects.html) and [papers](https://lab-design.github.io/papers/) for the full record.
 
 ## Join us
 
