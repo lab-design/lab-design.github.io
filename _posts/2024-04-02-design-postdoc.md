@@ -1,7 +1,7 @@
 ---
 title: "Laboratory for Software Design Recruiting a Postdoctoral Fellow"
 links:
-  - { title: "Projects", link: "https://lab-design.github.io/projects.html" }
+  - { title: "Projects", link: "https://lab-design.github.io/research/" }
 ---
 
 The Department of Computer Science in the College of Liberal Arts and Sciences 
