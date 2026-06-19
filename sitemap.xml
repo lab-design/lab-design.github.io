@@ -1,0 +1,14 @@
+---
+layout: null
+permalink: /sitemap.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{% assign base = "https://lab-design.github.io" %}
+{% for p in site.html_pages %}{% unless p.url contains "404" %}  <url><loc>{{ base }}{{ p.url }}</loc></url>
+{% endunless %}{% endfor %}
+{% for post in site.posts %}  <url><loc>{{ base }}{{ post.url }}</loc><lastmod>{{ post.date | date_to_xmlschema }}</lastmod></url>
+{% endfor %}
+{% for paper in site.papers %}  <url><loc>{{ base }}{{ paper.url }}</loc></url>
+{% endfor %}
+</urlset>

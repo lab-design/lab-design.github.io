@@ -1,6 +1,7 @@
 ---
 layout: page
 ---
+{% if page.title %}<script type="application/ld+json">{"@context":"https://schema.org","@type":"ScholarlyArticle","name":{{ page.title | jsonify }},"headline":{{ page.title | jsonify }},{% if page.publication_year %}"datePublished":"{{ page.publication_year }}",{% endif %}"author":{"@type":"Person","name":"Hridesh Rajan"},{% if page.short_name %}"isPartOf":{"@type":"Periodical","name":{{ page.short_name | jsonify }}},{% endif %}"url":"https://lab-design.github.io{{ page.url }}"}</script>{% endif %}
 
 {% capture author %}
 {% bibtex --style /_citation_styles/author.csl %}

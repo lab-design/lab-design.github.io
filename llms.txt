@@ -1,0 +1,22 @@
+# Laboratory for Software Design, Tulane University
+
+> The Laboratory for Software Design, led by Dr. Hridesh Rajan (Dean of the School of Science and Engineering and Professor of Computer Science at Tulane University), works on programming languages and software engineering, with current emphasis on the modularity and trustworthiness of AI-enabled systems. The work is unified by modular reasoning: being able to understand and change one part of a system without having to understand all of it.
+
+## Research thrusts
+- Modularity and Modular Reasoning: languages, interfaces, and contracts for reasoning about software one part at a time (aspect-oriented design, Classpects, the Ptolemy language, capsule-oriented Panini): https://lab-design.github.io/research/#modularity-and-modular-reasoning
+- Software at Scale, with Boa: a language and infrastructure for writing a software analysis once and running it across hundreds of thousands of open-source projects: https://lab-design.github.io/research/#software-at-scale
+- Modular and Dependable AI: decomposing deep neural networks into reusable modules, locating and repairing faults in deep learning, fairness across machine-learning pipelines, and the dependability of data-science lifecycles: https://lab-design.github.io/research/#modular-and-dependable-ai
+
+## Key pages
+- Research: https://lab-design.github.io/research/
+- Publications: https://lab-design.github.io/papers/
+- People: https://lab-design.github.io/people.html
+- News: https://lab-design.github.io/news/
+- Google Scholar: https://scholar.google.com/citations?user=aiFvpucAAAAJ&hl=en
+
+## Selected works
+- Boa: A Language and Infrastructure for Analyzing Ultra-Large-Scale Software Repositories (ICSE 2013): https://lab-design.github.io/papers/ICSE-13/
+- A Comprehensive Study on Deep Learning Bug Characteristics (ESEC/FSE 2019): https://lab-design.github.io/papers/ESEC-FSE-19/
+- Modular Software Design with Crosscutting Interfaces (IEEE Software 2006): https://lab-design.github.io/papers/Software-2006/
+- Classpects: Unifying Aspect- and Object-Oriented Language Design (ICSE 2005): https://lab-design.github.io/papers/ICSE-2005/
+- Fair Preprocessing: Compositional Fairness of Data Transformers in ML Pipelines (ESEC/FSE 2021): https://lab-design.github.io/papers/ESEC-FSE-21/
