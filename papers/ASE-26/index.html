@@ -7,15 +7,15 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="The Laboratory for Software Design at Tulane University researches programming languages, compilers, and software engineering for dependable software and AI.">
     <meta name="theme-color" content="#006747">
-    <meta property="og:title" content="Laboratory for Software Design">
+    <meta property="og:title" content="RefineAct: Automatic Runtime Verification of LLM Agent Actions">
     <meta property="og:description" content="Laboratory for Software Design at Tulane University, School of Science and Engineering.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://lab-design.github.io/papers/ASE-26/index.html">
+    <meta property="og:url" content="https://lab-design.github.io/papers/ASE-26/">
     <meta property="og:site_name" content="Laboratory for Software Design">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Laboratory for Software Design">
+    <meta name="twitter:title" content="RefineAct: Automatic Runtime Verification of LLM Agent Actions">
     <meta name="twitter:description" content="Laboratory for Software Design at Tulane University, School of Science and Engineering.">
-    <link rel="canonical" href="https://lab-design.github.io/papers/ASE-26/index.html">
+    <link rel="canonical" href="https://lab-design.github.io/papers/ASE-26/">
     <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://lab-design.github.io/#hridesh","name":"Hridesh Rajan","jobTitle":"Dean of the School of Science and Engineering and Professor of Computer Science","affiliation":{"@type":"CollegeOrUniversity","name":"Tulane University"},"sameAs":["https://scholar.google.com/citations?user=aiFvpucAAAAJ","https://github.com/hridesh","https://www.linkedin.com/in/hrideshrajan/"]},{"@type":"Organization","@id":"https://lab-design.github.io/#lab","name":"Laboratory for Software Design","url":"https://lab-design.github.io/","parentOrganization":{"@type":"CollegeOrUniversity","name":"Tulane University School of Science and Engineering, Department of Computer Science"},"founder":{"@id":"https://lab-design.github.io/#hridesh"}},{"@type":"WebSite","url":"https://lab-design.github.io/","name":"Laboratory for Software Design","publisher":{"@id":"https://lab-design.github.io/#lab"}}]}</script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +23,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/design.css">
     <link rel="icon" href="/favicon.ico">
-    <title>Laboratory for Software Design</title>
+    <title>RefineAct: Automatic Runtime Verification of LLM Agent Actions | Laboratory for Software Design</title>
   </head>
 
   <body>
@@ -62,17 +62,22 @@
   <br />
   <div class="row">
   <div class="col-12">
-    
-    
+    <h2 class="page-title">RefineAct: Automatic Runtime Verification of LLM Agent Actions</h2>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"ScholarlyArticle","name":"RefineAct: Automatic Runtime Verification of LLM Agent Actions","headline":"RefineAct: Automatic Runtime Verification of LLM Agent Actions","datePublished":"2026","author":{"@type":"Person","name":"Hridesh Rajan"},"isPartOf":{"@type":"Periodical","name":"ASE '26"},"url":"https://lab-design.github.io/papers/ASE-26/"}</script>
 
 
 
 <h4>
 By: 
-
+Fraol Batole, Foutse Khomh, and Hridesh Rajan
 
 </h4>
 
+
+<a href="ase26.pdf" class="icon">
+  <img src="/img/pdf_icon.svg"/ alt="PDF Download">
+  <span>Download Paper</span>
+</a>
 
 <br/>
 
@@ -80,12 +85,32 @@ By:
 
 <h4>Abstract</h4>
 <p>
-  
+  <span id="BatoleKhomhRajan2026">LLM-based agents that invoke external tools can cause irreversible harm when their actions diverge from user intent, from deleting critical files to exposing private data or executing untrusted code. Unlike traditional software, where test suites and contracts define expected behavior, LLM agents operate without a specification: there is no artifact against which to check their actions before execution. Existing safeguards rely on prompt engineering or post-hoc evaluation, neither of which closes this gap. We present RefineAct, a runtime verification framework that automatically derives a task-specific specification from the user’s natural-language instruction and enforces it during agent execution. RefineAct operates in three stages: (1) intent formalization translates instructions into first-order Prolog predicates capturing the user’s goal and safety requirements; (2) refinement-based planning decomposes the specification into a concrete action plan with pre-/postcondition chains and risky-action patterns; and (3) runtime verification intercepts each agent-proposed action, queries the Prolog knowledge base to verify precondition satisfaction and constraint compliance, and returns a disposition state that determines whether the action proceeds, requires user confirmation, or is blocked with corrective feedback. We evaluate RefineAct on 144 agent tasks across five domains from the ToolEmu benchmark. RefineAct reduces failure incidence from 77% to 39% while improving task completion quality from 1.0 to 1.9 on a 0–3 scale, demonstrating that deriving and enforcing specifications at runtime can improve both safety and helpfulness of LLM agent behavior.
+  </span>
 </p>
 
 
 
 
+
+<h4>ACM Reference</h4>
+<p>
+<span id="BatoleKhomhRajan2026">Batole, F. et al. 2026. RefineAct: Automatic Runtime Verification of LLM Agent Actions. <i>ASE’2026: the 41st IEEE/ACM International Conference on Automated Software Engineering</i> (Oct. 2026).</span>
+</p>
+
+<h4>BibTeX Reference</h4>
+<pre><code>@inproceedings{BatoleKhomhRajan2026,
+  author = {Batole, Fraol and Khomh, Foutse and Rajan, Hridesh},
+  title = {RefineAct: Automatic Runtime Verification of LLM Agent Actions},
+  booktitle = {ASE'2026: the 41st IEEE/ACM International Conference on Automated Software Engineering},
+  location = {Munich, Germany},
+  month = {October 12--16},
+  year = {2026},
+  entrysubtype = {conference},
+  abstract = {LLM-based agents that invoke external tools can cause irreversible harm when their actions diverge from user intent, from deleting critical files to exposing private data or executing untrusted code. Unlike traditional software, where test suites and contracts define expected behavior, LLM agents operate without a specification: there is no artifact against which to check their actions before execution. Existing safeguards rely on prompt engineering or post-hoc evaluation, neither of which closes this gap. We present RefineAct, a runtime verification framework that automatically derives a task-specific specification from the user’s natural-language instruction and enforces it during agent execution. RefineAct operates in three stages: (1) intent formalization translates instructions into first-order Prolog predicates capturing the user’s goal and safety requirements; (2) refinement-based planning decomposes the specification into a concrete action plan with pre-/postcondition chains and risky-action patterns; and (3) runtime verification intercepts each agent-proposed action, queries the Prolog knowledge base to verify precondition satisfaction and constraint compliance, and returns a disposition state that determines whether the action proceeds, requires user confirmation, or is blocked with corrective feedback. We evaluate RefineAct on 144 agent tasks across five domains from the ToolEmu benchmark. RefineAct reduces failure incidence from 77% to 39% while improving task completion quality from 1.0 to 1.9 on a 0–3 scale, demonstrating that deriving and enforcing specifications at runtime can improve both safety and helpfulness of LLM agent behavior.
+  }
+}
+</code></pre>
 
 
   </div>
