@@ -1,6 +1,10 @@
 # Open Gemfile in your preferred editor and replace the content with:
 source "https://rubygems.org"
 
+# Pin i18n: 1.15.0 uses the Ruby 3.2 Fiber[] API and breaks `jekyll build`
+# on the CI runner (Ruby 3.1). The 1.14 series is compatible.
+gem "i18n", "< 1.15"
+
 # Hello! This is where you manage which Jekyll version is used to run.
 # When you want to use a different version, change it below, save the
 # file and run `bundle install`. Run Jekyll with `bundle exec`, like so:
