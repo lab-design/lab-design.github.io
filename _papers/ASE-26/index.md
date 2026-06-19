@@ -2,7 +2,7 @@
 key: ASE-26
 permalink: /papers/ASE-26/
 short_name: ASE '26
-title: RefineAct: Automatic Runtime Verification of LLM Agent Actions
+title: "RefineAct: Automatic Runtime Verification of LLM Agent Actions"
 bib: |
   @inproceedings{BatoleKhomhRajan2026,
     author = {Batole, Fraol and Khomh, Foutse and Rajan, Hridesh},
@@ -20,5 +20,5 @@ kind: conference
 download_link: ase26.pdf
 publication_year: 2026
 tags:
-  - boa
+  - d4
 ---
