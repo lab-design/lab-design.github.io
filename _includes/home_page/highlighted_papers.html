@@ -1,12 +1,10 @@
 
-<h3>Selected Papers</h3>
+<h3>Recent Papers</h3>
 
-{% for highlighted_paper in include.highlighted_papers %}
-  {% for paper in site.papers %}
-    {% if paper.key == highlighted_paper %}
-      {% include home_page/highlighted_paper_card.html paper=paper%}
-    {% endif %}
-  {% endfor %}
+{% assign topvenue = site.papers | where_exp: "p", "p.key contains 'ICSE-' or p.key contains 'FSE-' or p.key contains 'ASE-' or p.key contains 'ISSTA-'" %}
+{% assign recent = topvenue | sort: "publication_year" | reverse %}
+{% for paper in recent limit: 15 %}
+  {% include home_page/highlighted_paper_card.html paper=paper %}
 {% endfor %}
 
 <div id="home-page-more-papers">
