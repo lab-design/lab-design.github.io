@@ -5,7 +5,18 @@
   {% assign download_link_prefix = key | append : "/" %}
 {% endif %}
 
-<div class="card paper_card {{paper.tags}} {{paper.kind}}" data-year="{{paper.publication_year}}">
+{% assign _tag = include.paper.tags | first %}
+{% assign _k = include.paper.key %}
+{% assign _aiboa = "ASE-23,ESEC-FSE-21,ESEC-FSE-22,ICSE-20a,ICSE-21,ICSE-24b,TOSEM-24,TSE-26" | split: "," %}
+{% assign _aikeys = "ICLR-22" | split: "," %}
+{% assign _modkeys = "AOPLE-06,AOSD-14,SAVCBS-2008" | split: "," %}
+{% assign _modtags = "ptolemy,panini,nu,eos,sapha,tisa,slede,osiris,frances,golok" | split: "," %}
+{% if _aikeys contains _k or _tag == "d4" or _tag == "mdl" %}{% assign thrust_class = "thrust-ai" %}
+{% elsif _tag == "boa" %}{% if _aiboa contains _k %}{% assign thrust_class = "thrust-ai" %}{% else %}{% assign thrust_class = "thrust-scale" %}{% endif %}
+{% elsif _modkeys contains _k or _modtags contains _tag %}{% assign thrust_class = "thrust-mod" %}
+{% else %}{% assign thrust_class = "thrust-other" %}{% endif %}
+
+<div class="card paper_card {{paper.tags}} {{paper.kind}} {{ thrust_class }}" data-year="{{paper.publication_year}}">
   <div class="card-header paper_card_header" id="head-{{ key }}">
     <div>
       <button class="navbar-toggler" type="button" href="#coll-{{ key }}" data-toggle="collapse" data-parent="#{{ include.accordionKey }}" aria-expanded="false" aria-controls="coll-{{ key }}">

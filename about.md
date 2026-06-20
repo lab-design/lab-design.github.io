@@ -11,7 +11,7 @@ Our aim is to make software, including AI-enabled systems, easier to build and m
 ## What we work on
 
 - [**Modularity and Modular Reasoning**](/research/#modularity-and-modular-reasoning): languages and interfaces that let developers reason about one part of a program at a time.
-- [**Software at Scale, with Boa**](/research/#software-at-scale): writing a software analysis once and running it across very large collections of open-source code.
+- [**Analyzing Software at Scale, with Boa**](/research/#software-at-scale): writing a software analysis once and running it across very large collections of open-source code.
 - [**Modular and Dependable AI**](/research/#modular-and-dependable-ai): decomposing trained models into modules, and using software engineering to make AI-enabled systems more reliable.
 
 See our [research](/research/) for the thrusts in depth and our [papers](https://lab-design.github.io/papers/) for the full record.

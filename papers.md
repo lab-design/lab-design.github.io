@@ -25,7 +25,7 @@ permalink: /papers/
 
 <script language="javascript">
 //Frances is merged with Sapha
-var projects = ["panini", "boa", "ptolemy", "eos", "nu", "sapha", "slede", "tisa", "osiris", "no_project"];
+var projects = ["thrust-mod", "thrust-scale", "thrust-ai", "thrust-other"];
 var paper_types_venue = ["conference", "journal", "workshop", "thesis", "technical_report", "other"];
 var paper_types_date = ["general", "thesis", "technical_report"];
 var general_types = ["conference", "journal", "workshop", "other", "poster"];
@@ -158,7 +158,7 @@ function hideDateSort(){
 }
 </script>
 
-{% assign paper_types_project = "panini boa ptolemy eos nu sapha slede tisa osiris no_project" | split: ' ' %}
+{% assign paper_types_project = "thrust-mod thrust-scale thrust-ai thrust-other" | split: ' ' %}
 {% assign paper_types_venue = "conference journal workshop thesis technical_report other" | split: ' ' %}
 {% assign paper_types_date = "general thesis technical_report" | split: ' ' %}
 
@@ -189,11 +189,12 @@ function hideDateSort(){
       {% for paper_type in paper_types_project %}
         <li id="{{paper_type}}-project-toc">
           <a href="#{{paper_type}}-project-title">
-            {% if paper_type == "no_project" %}
-              Other
-            {% else %}
-              {{ paper_type | capitalize }}
-            {% endif %}
+            {% case paper_type %}
+              {% when 'thrust-mod' %}Modularity and Modular Reasoning
+              {% when 'thrust-scale' %}Analyzing Software at Scale, with Boa
+              {% when 'thrust-ai' %}Modular and Dependable AI
+              {% else %}Other
+            {% endcase %}
           </a>
         </li>
       {% endfor %}
@@ -209,7 +210,7 @@ function hideDateSort(){
         <input type="radio" name="options" id="option1" autocomplete="off" checked>Venue
       </label>
       <label id="project-btn" class="btn btn-primary paper-btn project-btn" onclick="sort('project')">
-        <input type="radio" name="options" id="option1" autocomplete="off" checked>Project
+        <input type="radio" name="options" id="option1" autocomplete="off" checked>Research Thrusts
       </label>
     </div>
   </div>
@@ -236,11 +237,12 @@ function hideDateSort(){
 
     {% for paper_type in paper_types_project %}
       <h2 id="{{paper_type}}-project-title" class="space-above">
-        {% if paper_type == "no_project" %}
-          Other
-        {% else %}
-          {{ paper_type | capitalize }}
-        {% endif %}
+        {% case paper_type %}
+          {% when 'thrust-mod' %}Modularity and Modular Reasoning
+          {% when 'thrust-scale' %}Analyzing Software at Scale, with Boa
+          {% when 'thrust-ai' %}Modular and Dependable AI
+          {% else %}Other
+        {% endcase %}
       </h2>
     {% endfor %}
 

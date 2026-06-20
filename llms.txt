@@ -4,7 +4,7 @@
 
 ## Research thrusts
 - Modularity and Modular Reasoning: languages, interfaces, and contracts for reasoning about software one part at a time (aspect-oriented design, Classpects, the Ptolemy language, capsule-oriented Panini): https://lab-design.github.io/research/#modularity-and-modular-reasoning
-- Software at Scale, with Boa: a language and infrastructure for writing a software analysis once and running it across hundreds of thousands of open-source projects: https://lab-design.github.io/research/#software-at-scale
+- Analyzing Software at Scale, with Boa: a language and infrastructure for writing a software analysis once and running it across hundreds of thousands of open-source projects: https://lab-design.github.io/research/#software-at-scale
 - Modular and Dependable AI: decomposing deep neural networks into reusable modules, locating and repairing faults in deep learning, fairness across machine-learning pipelines, and the dependability of data-science lifecycles: https://lab-design.github.io/research/#modular-and-dependable-ai
 
 ## Key pages
