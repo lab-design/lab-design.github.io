@@ -1,6 +1,5 @@
 ---
-title: "Can you guarantee a neural network treats similar people the same?"
-venue: "ICSE 2023"
+title: "Can you guarantee a neural network treats similar people the same? Our ICSE 2023 paper proves it."
 ---
 
 Testing a model for fairness can reveal problems, but it cannot promise their absence. For high-stakes uses, developers want a guarantee that a model treats similar individuals alike regardless of protected attributes such as race, sex, or age. Proving this is hard, because a neural network reaches its decisions through many non-linear computations.

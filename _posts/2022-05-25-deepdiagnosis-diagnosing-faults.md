@@ -1,6 +1,5 @@
 ---
-title: "When a model fails, what is the error and how do you fix it?"
-venue: "ICSE 2022"
+title: "When a model fails, what is the error and how do you fix it? We tackled it at ICSE 2022."
 ---
 
 Knowing that a deep neural network is faulty is only half the problem. A developer still has to work out what went wrong and what to change, and a failed training run offers little guidance on either. Two models that fail for very different reasons can look the same from the outside, and there are usually many possible fixes with no clear way to choose among them, from adjusting the learning rate to rescaling the data.

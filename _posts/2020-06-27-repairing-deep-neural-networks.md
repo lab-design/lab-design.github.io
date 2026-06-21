@@ -1,6 +1,5 @@
 ---
-title: "How do developers actually fix a broken neural network?"
-venue: "ICSE 2020"
+title: "How do developers actually fix a broken neural network? We studied it for ICSE 2020."
 ---
 
 When a deep learning model misbehaves, the fix is rarely obvious, and until recently there was little systematic knowledge of how developers repair these models in practice. Building an automated repair tool depends on that knowledge: which problems occur, which fixes work, and which are common enough to be worth automating.

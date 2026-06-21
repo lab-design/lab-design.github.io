@@ -1,6 +1,5 @@
 ---
-title: "When a model will not learn, where is the bug?"
-venue: "ICSE 2021"
+title: "When a model will not learn, where is the bug? Our ICSE 2021 paper tracks it down."
 ---
 
 A deep neural network that will not train, or that stalls at poor accuracy, is one of the harder things to debug in modern software. Deep learning now sits inside many software systems, and like any other software these models contain bugs. A deep neural network (DNN) resists the usual tools, though: its structure as a sequence of layers is visible, but the model behaves as a single monolithic component, so when training goes wrong there is no line of code and no stack trace to blame. The symptoms, a loss that will not fall or an accuracy that stays low, tell you that something is wrong without telling you where.
