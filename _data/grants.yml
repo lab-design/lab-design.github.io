@@ -114,10 +114,11 @@
   agency: NSF
   primary: true
   title: "CI-EN: Boa: Enhancing Infrastructure for Studying Software and its Evolution at a Large Scale"
+  credit: "Hridesh Rajan (ISU PI) and Robert Dyer (BGSU PI)"
   start_date: 2015-06-01
   url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1513263"
   amount: $1,559,806
-  share: "ISU share: $1,426,917"
+  share: "ISU share: $1,426,917; BGSU: $132,889"
   PI: Hridesh Rajan
   coPIs:
     - Tien Nguyen
@@ -309,7 +310,7 @@
   start_date: 2010-08-15
   url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1017334"
   amount: $514,758
-  share: "ISU share: $273,729"
+  share: "ISU share: $273,729; UCF: $241,029"
   PI: Hridesh Rajan
   coPIs:
   end_date: 2013-07-31
@@ -354,10 +355,11 @@
   agency: NSF
   primary: true
   title: "SHF: Large:Collaborative Research: Inferring Software Specifications from Open Source Repositories by Leveraging Data and Collective Community Expertise"
+  credit: "Hridesh Rajan (ISU PI), Gary T. Leavens (UCF PI), Vasant Honavar (Penn State PI), and Robert Dyer (BGSU PI)"
   start_date: 2015-07-01
   url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1518897"
   amount: $1,604,479
-  share: "ISU share: $750,125"
+  share: "ISU share: $750,125; UCF: $320,000; Penn State: $319,511; BGSU: $214,843"
   PI: Hridesh Rajan
   coPIs:
     - Tien Nguyen
@@ -687,8 +689,8 @@
   start_date: 2025-09-01
   url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2419882"
   amount: $600,000
-  share: "Tulane share: $376,008"
-  credit: "Hridesh Rajan (Lead PI) and Mohammad Wardat (Oakland PI)"
+  share: "Tulane share: $376,008; Oakland: $223,992"
+  credit: "Hridesh Rajan (Tulane PI) and Mohammad Wardat (Oakland PI)"
   PI: Hridesh Rajan
   coPIs:
   end_date: 2028-08-31
