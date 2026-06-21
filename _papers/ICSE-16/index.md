@@ -18,6 +18,8 @@ bib: |
 kind: conference
 download_link: https://doi.org/10.1145/2889160.2892662
 publication_year: 2016
+award: "Distinguished Poster Award, ICSE 2016"
+award_year: 2016
 tags:
   - boa
 ---

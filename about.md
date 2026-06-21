@@ -16,33 +16,31 @@ Our aim is to make software, including AI-enabled systems, easier to build and m
 </ul>
 <p>See our <a href="/research/">research</a> for the thrusts in depth and our <a href="/papers/">papers</a> for the full record.</p>
 
+{%- assign pubs = site.papers | where_exp:"p","p.kind != 'thesis' and p.kind != 'technical_report'" -%}
+{%- assign flag = 0 -%}{%- for p in pubs -%}{%- if p.key contains "ICSE-" or p.key contains "FSE-" or p.key contains "ASE-" or p.key contains "ISSTA-" -%}{%- assign flag = flag | plus: 1 -%}{%- endif -%}{%- endfor -%}
+{%- assign awardpapers = site.papers | where_exp:"p","p.award" -%}
+{%- assign gt = 0 -%}{%- assign gc = 0 -%}{%- for g in site.data.grants -%}{%- if g.primary -%}{%- assign gc = gc | plus: 1 -%}{%- assign a = g.amount | remove:"$" | remove:"," | plus: 0 -%}{%- assign gt = gt | plus: a -%}{%- endif -%}{%- endfor -%}
 <div class="stats">
-<div class="stat"><div class="num">125+</div><div class="lbl">papers and articles, 68 in highly selective venues</div></div>
-<div class="stat"><div class="num">$9.3M</div><div class="lbl">research funding as PI, across 16 grants</div></div>
+<div class="stat"><div class="num">{{ pubs | size }}</div><div class="lbl">papers and articles, {{ flag }} at ICSE, FSE, ASE, and ISSTA</div></div>
+<div class="stat"><div class="num">${{ gt | divided_by: 1000000.0 | round: 1 }}M</div><div class="lbl">in research grants, across {{ gc }} awards</div></div>
 <div class="stat"><div class="num">8</div><div class="lbl">software systems, used by researchers worldwide</div></div>
-<div class="stat"><div class="num">5</div><div class="lbl">paper and poster awards, two ACM SIGSOFT Distinguished</div></div>
+<div class="stat"><div class="num">{{ awardpapers | size }}</div><div class="lbl">paper and poster awards, two ACM SIGSOFT Distinguished</div></div>
 </div>
 <a class="scholar-btn" href="https://scholar.google.com/citations?user=aiFvpucAAAAJ&hl=en">View our work on Google Scholar &rarr;</a>
 
 <h2 class="research-header">Recognition</h2>
 <p class="pub-label">Honors and fellowships</p>
 <ul class="rec">
-<li><a href="https://www.aaas.org/fellows">AAAS Fellow (2021)</a></li>
-<li><a href="https://research.facebook.com/">Facebook Probability and Programming Award (2020)</a></li>
-<li><a href="https://fulbrightscholars.org/">US–UK Fulbright Scholar (2018)</a></li>
-<li><a href="https://www.acm.org/">ACM Distinguished Member (2017)</a></li>
-<li>Kingland Professorship (2016)</li>
-<li>Big-12 Faculty Fellowship (2012)</li>
-<li>Early Achievement in Research Award, Iowa State University (2010)</li>
-<li><a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=0846059">NSF Early CAREER Award (2009)</a></li>
+{%- for h in site.data.honors %}
+<li>{% if h.url %}<a href="{{ h.url }}">{{ h.name }} ({{ h.year }})</a>{% else %}{{ h.name }} ({{ h.year }}){% endif %}</li>
+{%- endfor %}
 </ul>
 <p class="pub-label" style="margin-top:1.4rem">Paper and poster awards</p>
+{%- assign aw = site.papers | where_exp:"p","p.award" | sort: "award_year" | reverse -%}
 <ul class="rec">
-<li><a href="/papers/ASE-23/">ACM SIGSOFT Distinguished Paper Award, ASE 2023</a></li>
-<li><a href="/papers/ESEC-FSE-20b/">ACM SIGSOFT Distinguished Paper Award, ESEC/FSE 2020</a></li>
-<li><a href="/papers/ICSE-16/">Distinguished Poster Award, ICSE 2016</a></li>
-<li><a href="/papers/MODULARITY-15/">Best Paper of Modularity (2015)</a></li>
-<li>Best Paper of Modularity (2015), modular reasoning in the presence of event subtyping</li>
+{%- for p in aw %}
+<li><a href="{{ p.url }}">{{ p.award }}</a></li>
+{%- endfor %}
 </ul>
 
 <h2 class="research-header">Students and scholars</h2>

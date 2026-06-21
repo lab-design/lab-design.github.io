@@ -31,6 +31,8 @@ bib: |
 kind: conference
 download_link: event-subtyping-reasoning.pdf
 publication_year: 2016
+award: "Best Paper of Modularity (2015)"
+award_year: 2015
 tags:
   - ptolemy
 ---

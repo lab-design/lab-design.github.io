@@ -18,6 +18,8 @@ bib: |
 kind: conference
 download_link: ase23.pdf
 publication_year: 2023
+award: "ACM SIGSOFT Distinguished Paper Award, ASE 2023"
+award_year: 2023
 tags:
   - boa
 ---

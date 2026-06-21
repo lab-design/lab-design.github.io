@@ -602,7 +602,7 @@
   title: "Collaborative Research: CCRI: ENS: Boa 2.0: Enhancing Infrastructure for Studying Software and its Evolution at a Large Scale"
   start_date: 2021-10-01 #Roughly
   url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2120448&HistoricalAwards=false"
-  amount: $824,474.00
+  amount: $1,499,999
   PI: Hridesh Rajan
   coPIs:
   end_date: 2024-09-30 #Roughly
@@ -616,7 +616,7 @@
   title: "SHF:Small: More Modular Deep Learning"
   start_date: 2022-10-01 #Roughly
   url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2223812&HistoricalAwards=false"
-  amount: $580,000.00
+  amount: $580,000
   PI: Hridesh Rajan
   coPIs:
   end_date: 2025-09-30 #Roughly
@@ -681,7 +681,7 @@
   title: "Collaborative Research: SHF: Small: Fault Localization for Deep Learning"
   start_date: 2025-09-01
   url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2419882"
-  amount: "$600,000 (Tulane and Oakland combined)"
+  amount: $376,008
   credit: "Hridesh Rajan (Lead PI) and Mohammad Wardat (Oakland PI)"
   PI: Hridesh Rajan
   coPIs:

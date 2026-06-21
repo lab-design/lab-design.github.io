@@ -36,6 +36,8 @@ bib: |
 kind: conference
 download_link: modularity.pdf
 publication_year: 2020
+award: "ACM SIGSOFT Distinguished Paper Award, ESEC/FSE 2020"
+award_year: 2020
 tags:
   - mdl
 ---

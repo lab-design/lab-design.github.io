@@ -38,6 +38,8 @@ bib: |
 kind: conference
 download_link: panini-reasoning.pdf
 publication_year: 2015
+award: "Best Paper of Modularity (2015)"
+award_year: 2015
 tags:
   - panini
 ---
