@@ -14,6 +14,7 @@ bib: |
     year = {2016},
     editor = {Tiziana Margaria and Bernhard Steffen},
     doi = {10.1007/978-3-319-47169-3_7},
+    abstract = {Advances in programming often revolve around key design patterns, which programming languages embody as new control features. These control features, such as higher-order functions, advice, and context dependence, use indirection to decrease coupling and enhance modularity. However, this indirection makes them difficult to verify, because it hides actions (and their effects) behind an abstraction barrier. Such abstraction barriers can be overcome in a modular way using greybox specification techniques, provided the programming language supports interfaces as a place to record specifications. These techniques have previously allowed specification and modular verification of higher-order functional and object-oriented programs, as well as aspect-oriented and context-oriented programs.},
   }
 kind: conference
 download_link: https://doi.org/10.1007/978-3-319-47169-3_7
