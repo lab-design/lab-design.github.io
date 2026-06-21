@@ -2,34 +2,34 @@
 key: ICSE-15a
 permalink: /papers/ICSE-15a/
 short_name: ICSE '15 (NIER)
-title: Capsule-Oriented Programming
+title: "Capsule-oriented Programming"
 bib: |
   @inproceedings{Rajan2015a,
     author = {Hridesh Rajan},
     title = {Capsule-oriented Programming},
-    booktitle = {ICSE'15: The 37th International Conference on Software Engineering: NIER Track},
-    location = {Florence, Italy},
-    month = {May},
+    booktitle = {37th {IEEE/ACM} International Conference on Software Engineering, {ICSE} 2015, Florence, Italy, May 16-24, 2015, Volume 2},
+    pages = {611--614},
     year = {2015},
-    entrysubtype = {conference},
+    publisher = {{IEEE} Computer Society},
+    editor = {Antonia Bertolino and Gerardo Canfora and Sebastian G. Elbaum},
+    doi = {10.1109/ICSE.2015.205},
     abstract = {
-      "Explicit concurrency should be abolished from all higher-level programming
-      languages (i.e. everything except -perhaps- plain machine code.). Dijkstra [1]
-      (paraphrased)." A promising class of concurrency abstractions replaces
-      explicit concurrency mechanisms with a single linguistic mechanism that
-      combines state and control and uses asynchronous messages for communications,
-      e.g. active objects or actors, but that doesn’t remove the hurdle of
-      understanding non-local control transfer. What if the programming model
-      enabled programmers to simply do what they do best, that is, to describe a
-      system in terms of its modular structure and write sequential code to
-      implement the operations of those modules and handles details of concurrency?
-      In a recently sponsored NSF project we are developing such a model that we
-      call capsule-oriented programming and its realization in the Panini project.
-      This model favors modularity over explicit concurrency, forbids use of
-      explicit threads and locks, encourages concurrency correctness by
-      construction, and exploits modular structure of programs to expose implicit
-      concurrency.
-    }
+    "Explicit concurrency should be abolished from all higher-level programming
+    languages (i.e. everything except -perhaps- plain machine code.). Dijkstra [1]
+    (paraphrased)." A promising class of concurrency abstractions replaces
+    explicit concurrency mechanisms with a single linguistic mechanism that
+    combines state and control and uses asynchronous messages for communications,
+    e.g. active objects or actors, but that doesn’t remove the hurdle of
+    understanding non-local control transfer. What if the programming model
+    enabled programmers to simply do what they do best, that is, to describe a
+    system in terms of its modular structure and write sequential code to
+    implement the operations of those modules and handles details of concurrency?
+    In a recently sponsored NSF project we are developing such a model that we
+    call capsule-oriented programming and its realization in the Panini project.
+    This model favors modularity over explicit concurrency, forbids use of
+    explicit threads and locks, encourages concurrency correctness by
+    construction, and exploits modular structure of programs to expose implicit
+    concurrency.},
   }
 kind: conference
 download_link: Rajan-Capsule-Oriented.pdf

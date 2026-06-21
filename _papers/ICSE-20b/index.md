@@ -5,36 +5,36 @@ short_name: ICSE '20
 title: "BCFA: Bespoke Control Flow Analysis for CFA at Scale"
 bib: |
   @inproceedings{RamuUpadhyayaNguyenRajan2020,
-    author = {Ramanathan Ramu and Ganesha Upadhyaya and Hoan Nguyen and Hridesh Rajan},
+    author = {Ramanathan Ramu and Ganesha B. Upadhyaya and Hoan Anh Nguyen and Hridesh Rajan},
     title = {BCFA: Bespoke Control Flow Analysis for CFA at Scale},
-    booktitle = {ICSE'20: The 42nd International Conference on Software Engineering},
-    location = {Seoul, South Korea},
-    month = {May 23-May 29, 2020},
+    booktitle = {{ICSE} '20: 42nd International Conference on Software Engineering, Seoul, South Korea, 27 June - 19 July, 2020},
+    pages = {1037--1048},
     year = {2020},
-    entrysubtype = {conference},
+    publisher = {{ACM}},
+    editor = {Gregg Rothermel and Doo{-}Hwan Bae},
+    doi = {10.1145/3377811.3380435},
     abstract = {
-      Many data-driven software engineering tasks such as discovering
-      programming patterns, mining API specifications, etc.,
-      perform source code analysis over control flow graphs (CFGs) at scale.
-      Analyzing millions of CFGs can be expensive and
-      performance of the analysis heavily depends on the underlying CFG
-      traversal strategy. State-of-the-art analysis frameworks
-      use a fixed traversal strategy. We argue that a single traversal strategy
-      does not fit all kinds of analyses and CFGs and propose
-      bespoke control flow analysis (BCFA). Given a control flow analysis (CFA)
-      and a large number of CFGs, BCFA selects the most
-      efficient traversal strategy for each CFG. BCFA extracts a set of
-      properties of the CFA by analyzing the code of the CFA and
-      combines it with properties of the CFG, such as branching factor and
-      cyclicity, for selecting the optimal traversal strategy. We
-      have implemented BCFA in Boa, and evaluated BCFA using a set of
-      representative static analyses that mainly involve traversing
-      CFGs and two large datasets containing 287 thousand and 162 million CFGs.
-      Our results show that BCFA can speedup the
-      large scale analyses by 1%-28%. Further, BCFA has low overheads; less
-      than 0.2%, and low misprediction rate; less than
-      0.01%.
-    }
+    Many data-driven software engineering tasks such as discovering
+    programming patterns, mining API specifications, etc.,
+    perform source code analysis over control flow graphs (CFGs) at scale.
+    Analyzing millions of CFGs can be expensive and
+    performance of the analysis heavily depends on the underlying CFG
+    traversal strategy. State-of-the-art analysis frameworks
+    use a fixed traversal strategy. We argue that a single traversal strategy
+    does not fit all kinds of analyses and CFGs and propose
+    bespoke control flow analysis (BCFA). Given a control flow analysis (CFA)
+    and a large number of CFGs, BCFA selects the most
+    efficient traversal strategy for each CFG. BCFA extracts a set of
+    properties of the CFA by analyzing the code of the CFA and
+    combines it with properties of the CFG, such as branching factor and
+    cyclicity, for selecting the optimal traversal strategy. We
+    have implemented BCFA in Boa, and evaluated BCFA using a set of
+    representative static analyses that mainly involve traversing
+    CFGs and two large datasets containing 287 thousand and 162 million CFGs.
+    Our results show that BCFA can speedup the
+    large scale analyses by 1%-28%. Further, BCFA has low overheads; less
+    than 0.2%, and low misprediction rate; less than
+    0.01%.},
   }
 kind: conference
 download_link: bcfaMain.pdf

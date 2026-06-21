@@ -5,20 +5,20 @@ short_name: SPLASH '12 (Poster)
 title: "Boa: Analyzing Ultra-Large-Scale Code Corpus"
 bib: |
   @inproceedings{DyerNguyenRajanNguyen2012,
-    author = {Robert Dyer and Hoan Nguyen and Hridesh Rajan and Tien Nguyen},
+    author = {Robert Dyer and Hoan Nguyen and Hridesh Rajan and Tien N. Nguyen},
     title = {Boa: Analyzing Ultra-Large-Scale Code Corpus},
-    booktitle = {SPLASH 2012},
-    location = {Tucson, AZ, USA},
-    month = {October},
+    booktitle = {SPLASH'12 - Proceedings of the 2012 {ACM} Conference on Systems, Programming, and Applications: Software for Humanity, Tucson, AZ, USA, October 21-25, 2012},
+    pages = {87--88},
     year = {2012},
-    entrysubtype = {poster},
+    publisher = {{ACM}},
+    editor = {Gary T. Leavens},
+    doi = {10.1145/2384716.2384752},
     abstract = {
-      Software repositories contain an enormous amount of information such as
-      revisions and bugs. Analyzing this data requires knowledge in mining software
-      repositories and a large amount of infrastructure. We present our
-      infrastructure to ease such analyses. Our results show writing analyses with
-      our framework is simpler and executes faster.
-    }
+    Software repositories contain an enormous amount of information such as
+    revisions and bugs. Analyzing this data requires knowledge in mining software
+    repositories and a large amount of infrastructure. We present our
+    infrastructure to ease such analyses. Our results show writing analyses with
+    our framework is simpler and executes faster.},
   }
 kind: poster
 download_link: http://dl.acm.org/authorize?N95825
