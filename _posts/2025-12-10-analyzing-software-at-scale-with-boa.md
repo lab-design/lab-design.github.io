@@ -1,0 +1,11 @@
+---
+title: "What you can learn by reading all the world's open-source code at once"
+---
+
+Open-source repositories hold a record of how software is really written, by millions of developers over many years. Reading that record at scale can answer questions no single project could, but it demands infrastructure: a way to express an analysis once and run it across hundreds of thousands of projects without managing a cluster by hand. For more than a decade our lab has built that infrastructure and used it to study software, and to make large-scale analysis faster and more useful. This page collects that work.
+
+The foundation is [Boa](/news/2013/05/20/boa-icse/) (ICSE 2013), a language and infrastructure that lets a researcher write a software-mining task once and run it across an enormous corpus. On top of that foundation we worked on making the analysis itself scale: [Collective Program Analysis](/news/2018/05/30/collective-program-analysis/) (ICSE 2018) shares redundant work across similar artifacts, [BCFA](/news/2020/06/27/bcfa-control-flow-analysis-at-scale/) (ICSE 2020) tailors control-flow traversal to each analysis, and an earlier [new-ideas paper](/news/2017/05/23/accelerating-ultra-large-scale-mining/) (ICSE 2017) first proposed clustering artifacts to cut redundant work.
+
+We also used analysis at scale to answer concrete questions about how software is written and used. [API misuse on Stack Overflow](/news/2018/05/31/api-misuse-on-stack-overflow/) (ICSE 2018) measured how reliable popular code examples are, [substitutability in the presence of effects](/news/2018/11/06/substitutability-in-the-presence-of-effects/) (ESEC/FSE 2018) asked when one component can safely replace another, and [data-driven syntactic sugar design](/news/2024/04/16/data-driven-syntactic-sugar-design/) (ICSE 2024) turned language evolution into an evidence-based decision. This direction has been supported by NSF awards including [Boa: Enhancing Infrastructure for Studying Software at Scale](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1513263) and its successor [Boa 2.0](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2120448).
+
+This work is part of [Analyzing Software at Scale, with Boa](/research/#software-at-scale). For the complete record, see our [list of papers](https://lab-design.github.io/papers/).
