@@ -1,5 +1,6 @@
 ---
 title: "Would your tests catch a real bug in a reinforcement-learning agent?"
+venue: "ICSE 2025"
 ---
 
 Reinforcement learning trains agents for tasks such as driving a vehicle or controlling a robot, and before such an agent reaches production its tests need to be good enough to catch real problems. Mutation testing offers a way to measure that, by injecting faults and checking whether the tests notice, but it only works if the injected faults resemble the ones that actually occur.

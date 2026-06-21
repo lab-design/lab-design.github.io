@@ -1,10 +1,9 @@
 
 <h3>Recent Papers</h3>
 
-{% assign topvenue = site.papers | where_exp: "p", "p.key contains 'ICSE-' or p.key contains 'FSE-' or p.key contains 'ASE-' or p.key contains 'ISSTA-'" %}
-{% assign recent = topvenue | sort: "publication_year" | reverse %}
-{% for paper in recent limit: 15 %}
-  {% include home_page/highlighted_paper_card.html paper=paper %}
+{% assign spotlights = site.posts | where_exp: "p", "p.venue" %}
+{% for paper in spotlights limit: 15 %}
+  <p class="home-paper-item"><a href="{{ paper.url }}">{{ paper.title }}</a> Our {{ paper.venue }} paper explains.</p>
 {% endfor %}
 
 <div id="home-page-more-papers">
