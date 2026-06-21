@@ -4,7 +4,7 @@ permalink: /papers/PLOS-2007/
 short_name: PLOS '07
 title: Predictive Thread-to-Core Assignment on a Heterogeneous Multi-core Processor
 bib: |
-  @inproceedings{sondag2007predictive,
+  @inproceedings{TylerSondag2007,
     author = {Tyler Sondag, Viswanath Krishnamurthy, Hridesh Rajan},
     title = {Predictive Thread-to-Core Assignment on a Heterogeneous Multi-core Processor},
     booktitle = {PLOS '07: ACM SIGOPS 4th Workshop on Programming Languages and Operating Systems},

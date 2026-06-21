@@ -4,7 +4,7 @@ permalink: /papers/FASE-11/
 short_name: FASE '11
 title: "Analyzing Software Updates: Should You Build a Dynamic Updating Infrastructure?"
 bib: |
-  @inproceedings{gharaibeh2011analyzing,
+  @inproceedings{GharaibehRajanChang2011,
     author = {Bashar Gharaibeh and Hridesh Rajan and J. Morris Chang},
     title = {Analyzing Software Updates: Should You Build a Dynamic Updating Infrastructure?},
     booktitle = {Fundamental Approaches to Software Engineering (FASE)},

@@ -4,7 +4,7 @@ permalink: /papers/TR-07-11/
 short_name: TR-07-11
 title: Verifying Fault-Tolerance of Sensor Network Applications Using Auto-generated Fault Injection Mechanisms
 bib:  |
-  @techreport{hanna2007verifying,
+  @techreport{HannaRajan2007,
     title = {Verifying Fault-Tolerance of Sensor Network Applications Using Auto-generated Fault Injection Mechanisms},
     author = {Hanna, Youssef Wasfy and Rajan, Hridesh},
     year = {2007},

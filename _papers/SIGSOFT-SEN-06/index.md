@@ -4,7 +4,7 @@ permalink: /papers/SIGSOFT-SEN-06/
 short_name: SIGSOFT SEN '06
 title: "SLEDE: event-based specification of sensor network security protocols"
 bib: |
-  @article{hanna2006slede,
+  @article{HannaRajan2006,
     author = {Youssef Hanna and Hridesh Rajan},
     title = {SLEDE: event-based specification of sensor network security protocols},
     journal = {SIGSOFT Softw. Eng. Notes},

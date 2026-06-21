@@ -4,7 +4,7 @@ permalink: /papers/ESEC-FSE-22/
 short_name: ESEC-FSE '22
 title: "23 Shades of Self-Admitted Technical Debt: An Empirical Study on Machine Learning Software"
 bib: |
-    @inproceedings{obrien23shades,
+    @inproceedings{OBrienETAL2022,
         author = {David OBrien and Sumon Biswas and Sayem Mohammad Imtiaz and Rabe Abdalkareem and Emad Shihab and Hridesh Rajan},
         title = {23 Shades of Self-Admitted Technical Debt: An Empirical Study on Machine Learning Software},
         booktitle = {Proceedings of the 30th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering},

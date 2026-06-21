@@ -4,7 +4,7 @@ permalink: /papers/TSE-18/
 short_name: TSE '18
 title: On Accelerating Source Code Analysis At Massive Scale
 bib: |
-  @article{upadhyaya2018acceleration,
+  @article{UpadhyayaRajan2018b,
     author = {Ganesha Upadhyaya and Hridesh Rajan},
     title = {On Accelerating Source Code Analysis At Massive Scale},
     journal = {IEEE Transactions on Software Engineering},

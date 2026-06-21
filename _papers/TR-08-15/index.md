@@ -4,7 +4,7 @@ permalink: /papers/TR-08-15/
 short_name: TR-08-15
 title: Instance-level Quantified, Typed Events for Integrated System Design
 bib: |
-  @techreport{bagherzadeh2008instance,
+  @techreport{MehdiBagherzadehRajan2008,
     author = {Mehdi Bagherzadeh, Robert Dyer, Yuheng Long and Hridesh Rajan},
     title = {Instance-level Quantified, Typed Events for Integrated System Design},
     institution = {Iowa State University, Dept. of Computer Science},

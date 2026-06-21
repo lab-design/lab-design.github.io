@@ -4,7 +4,7 @@ permalink: /papers/ESOP-2009/
 short_name: ESOP '09
 title: "Tisa: A Language Design and Modular Verification Technique for Temporal Policies in Web Services"
 bib: |
-  @inproceedings{rajan2009tisa,
+  @inproceedings{RajanTaoShanerLeavens2009a,
     author = {Hridesh Rajan and Jia Tao and Steve M. Shaner and Gary T. Leavens},
     title = {Tisa: A Language Design and Modular Verification Technique for Temporal Policies in Web Services},
     booktitle = {18th European Symposium on Programming ({ESOP '09})},

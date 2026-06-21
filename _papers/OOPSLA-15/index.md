@@ -4,7 +4,7 @@ permalink: /papers/OOPSLA-15/
 short_name: OOPSLA '15
 title: Effectively Mapping Linguistic Abstractions for Message-passing Concurrency to Threads on the Java Virtual Machine
 bib: |
-  @inproceedings{upadhyaya2015effectively,
+  @inproceedings{UpadhyayaRajan2015,
     author = {Ganesha Upadhyaya and Hridesh Rajan},
     title = {Effectively Mapping Linguistic Abstractions for Message-passing Concurrency to Threads on the Java Virtual Machine},
     booktitle = {OOPSLA'15: The ACM SIGPLAN conference on Systems, Programming, Languages and Applications: Software for Humanity (SPLASH)},

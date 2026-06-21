@@ -4,7 +4,7 @@ permalink: /papers/TOSEM-09/
 short_name: TOSEM '09
 title: Modular Aspect-Oriented Design with XPIs
 bib: |
-  @article{sullivan2009modular,
+  @article{SullivanETAL2009,
     author = {Kevin J. Sullivan and William G. Griswold and Hridesh Rajan and Yuanyuan Song and Yuanfang Cai and Macneil Shonle and Nishit Tewari},
     title = {Modular Aspect-Oriented Design with XPIs},
     journal = {ACM Transactions on Software Engineering and Methodology (TOSEM)},

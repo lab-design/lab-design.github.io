@@ -4,7 +4,7 @@ permalink: /papers/RTSS-10/
 short_name: RTSS '10
 title: A More Precise Abstract Domain for Multi-level Caches for Tighter WCET Analysis
 bib: |
-  @inproceedings{sondag2010precise,
+  @inproceedings{SondagRajan2010,
     author = {Tyler Sondag and Hridesh Rajan},
     title = {A More Precise Abstract Domain For Multi-level Caches for Tighter {WCET} Analysis},
     booktitle = {RTSS '10: The 31st IEEE Real Time Systems Symposium},

@@ -4,7 +4,7 @@ permalink: /papers/EMSE-23/
 short_name: EMSE '23
 title: "What Kinds of Contracts Do ML APIs Need?"
 bib: |
-  @article{Khairunnesa2023,
+  @article{KhairunnesaETAL2023,
     author = {Samantha Syeda Khairunnesa and Shibbir Ahmed and Sayem Mohammad Imtiaz and Hridesh Rajan and Gary T. Leavens},
     title = {What Kinds of Contracts Do ML APIs Need?},
     journal = {Empirical Software Engineering},

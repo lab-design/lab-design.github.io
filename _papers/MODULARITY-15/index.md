@@ -4,7 +4,7 @@ permalink: /papers/MODULARITY-15/
 short_name: Modularity '15
 title: "Panini: A Concurrent Programming Model for Solving Pervasive and Oblivious Interference"
 bib: |
-  @inproceedings{bagherzadeh2015panini,
+  @inproceedings{BagherzadehRajan2015,
     author = {Mehdi Bagherzadeh and Hridesh Rajan},
     title = {Panini: A Concurrent Programming Model for Solving Pervasive and Oblivious Interference},
     booktitle = {Modularity'15: 14th International Conference on Modularity},

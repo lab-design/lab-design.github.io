@@ -4,7 +4,7 @@ permalink: /papers/ESEC-FSE-23b/
 short_name: ESEC-FSE '23
 title: "Fix Fairness, Don’t Ruin Accuracy: Performance Aware Fairness Repair using AutoML"
 bib: |
-  @inproceedings{nguyen23fix,
+  @inproceedings{NguyenBiswasRajan2023,
     author = {Giang Nguyen and Sumon Biswas and Hridesh Rajan},
     title = {Fix Fairness, Don’t Ruin Accuracy: Performance Aware Fairness Repair using AutoML},
     booktitle = {ESEC/FSE'2023: The 31st ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering},

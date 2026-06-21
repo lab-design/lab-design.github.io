@@ -4,7 +4,7 @@ permalink: /papers/TAOSD-13/
 short_name: TAOSD '13
 title: "Language Features for Software Evolution and Aspect-oriented Interfaces: An Exploratory Study"
 bib: |
-  @article{dyer2013language,
+  @article{DyerRajanCai2013,
     author = {Robert Dyer and Hridesh Rajan and Yuanfang Cai},
     title = {Language Features for Software Evolution and Aspect-oriented
              Interfaces: An Exploratory Study},

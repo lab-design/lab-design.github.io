@@ -4,7 +4,7 @@ permalink: /papers/TR-07-14d/
 short_name: TR-07-14d
 title: Quantified, Typed Events for Improved Separation of Concerns
 bib:  |
-  @techreport{rajan2008quantified,
+  @techreport{RajanLeavens2008b,
     title = {Quantified, typed events for improved separation of concerns},
     author = {Rajan, Hridesh and Leavens, Gary T},
     month = {May},

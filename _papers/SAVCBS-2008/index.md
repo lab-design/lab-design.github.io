@@ -4,7 +4,7 @@ permalink: /papers/SAVCBS-2008/
 short_name: SAVCBS '08
 title: Model Programs for Preserving Composite Invariants
 bib:  |
-  @inproceedings{shaner2008model,
+  @inproceedings{ShanerRajanLeavens2008,
     title = {Model Programs for Preserving Composite Invariants},
     author = {Shaner, Steve M and Rajan, Hridesh and Leavens, Gary T},
     booktitle = {Seventh International Workshop on Specification and Verification of Component-Based Systems (SAVCBS 2008)},

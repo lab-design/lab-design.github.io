@@ -4,7 +4,7 @@ permalink: /papers/SPLAT-06/
 short_name: SPLAT '06
 title: Preserving Separation of Concerns through Compilation
 bib:  |
-  @inproceedings{rajan2006preserving-b,
+  @inproceedings{RajanDyerHannaNarayanappa2006a,
     title={Preserving separation of concerns through compilation},
     author={Rajan, Hridesh and Dyer, Robert and Hanna, Youssef Wasfy and Narayanappa, Harish},
     year={2006},

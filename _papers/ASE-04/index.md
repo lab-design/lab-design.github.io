@@ -4,7 +4,7 @@ permalink: /papers/ASE-04/
 short_name: ASE '04
 title: Understanding Aspects via Implicit Invocation
 bib:  |
-  @inproceedings{xu2004understanding,
+  @inproceedings{XuRajanSullivan2004,
     author = {Xu, Jia and Rajan, Hridesh and Sullivan, Kevin},
     title = {Understanding Aspects via Implicit Invocation},
     booktitle = {Proceedings of the 19th IEEE International Conference on Automated Software Engineering},

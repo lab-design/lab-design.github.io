@@ -4,7 +4,7 @@ permalink: /papers/ICSE-15b/
 short_name: ICSE '15 (NIER)
 title: Inferring Behavioral Specifications from Large-scale Repositories by Leveraging Collective Intelligence
 bib: |
-  @inproceedings{rajan2015inferring,
+  @inproceedings{RajanNguyenLeavensDyer2015,
     author = {Hridesh Rajan and Tien N. Nguyen and Gary T. Leavens and Robert Dyer},
     title = {Inferring Behavioral Specifications from Large-scale Repositories by Leveraging Collective Intelligence},
     booktitle = {ICSE'15: The 37th International Conference on Software Engineering: NIER Track},

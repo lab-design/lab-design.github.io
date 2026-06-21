@@ -4,7 +4,7 @@ permalink: /papers/ICSE-25c/
 short_name: ICSE '25
 title: "Mock Deep Testing: Toward Separate Development of Data and Models for Deep Learning"
 bib: |
-  @inproceedings{manke2025mockdeeptesting,
+  @inproceedings{MankeWardatKhomhRajan2025,
     author = {Ruchira Manke and Mohammad Wardat and Foutse Khomh and Hridesh Rajan},
     title = {Mock Deep Testing: Toward Separate Development of Data and Models for Deep Learning},
     booktitle = {ICSE'2025: The 47th International Conference on Software Engineering},

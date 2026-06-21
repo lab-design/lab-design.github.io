@@ -4,7 +4,7 @@ permalink: /papers/MobiHoc-22/
 short_name: MobiHoc '22
 title: "On Scheduling Ring-All-Reduce Learning Jobs in Multi-Tenan GPU Clusters with Communication Contention"
 bib: |
-    @inproceedings{Yu22:SJF-BOC,
+    @inproceedings{YuJiRajanLiu2022,
         author = { Menglu Yu and Bo Ji and Hridesh Rajan and Jia Liu},
         title = {On Scheduling Ring-All-Reduce Learning Jobs in Multi-Tenan GPU Clusters with Communication Contention},  
         booktitle = {Proc. ACM MobiHoc},

@@ -5,7 +5,7 @@ short_name: Modularity '16
 title: A Type-and-Effect System for Asynchronous, Typed Events
 authors: Yuheng Long and Hridesh Rajan
 bib: |
-  @inproceedings{long2016type,
+  @inproceedings{LongRajan2016,
     author = {Yuheng Long and Hridesh Rajan},
     title = {A Type-and-Effect System for Asynchronous, Typed Events},
     booktitle = {Modularity'16: 15th International Conference on Modularity},

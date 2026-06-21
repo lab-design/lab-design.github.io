@@ -4,7 +4,7 @@ permalink: /papers/SOC-08/
 short_name: IEEE SOC '08
 title: "Tisa: Towards Trustworthy Services in a Service-oriented Architecture"
 bib: |
-  @article{rajan2008tisa,
+  @article{RajanHosamani2008,
     author = {Hridesh Rajan and Mahantesh Hosamani},
     title = {Tisa: Towards Trustworthy Services in a Service-oriented Architecture},
     journal = {IEEE Transactions on Services Computing (SOC)},

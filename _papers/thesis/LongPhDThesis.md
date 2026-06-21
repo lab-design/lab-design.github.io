@@ -4,7 +4,7 @@ permalink: /papers/thesis/LongPhDThesis.html
 short_name: Long PhD Thesis
 title: Formal Foundations for Hybrid Effect Analysis
 bib:  |
-  @phdthesis{long2016formal,
+  @phdthesis{Long2016,
     title={Formal foundations for hybrid effect analysis},
     author={Long, Yuheng},
     year={2016},

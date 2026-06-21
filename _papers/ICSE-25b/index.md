@@ -4,7 +4,7 @@ permalink: /papers/ICSE-25b/
 short_name: ICSE '25
 title: "An LLM-Based Agent-Oriented Approach for Automated Code Design Issue Localization"
 bib: |
-  @inproceedings{batole2025localizeAgent,
+  @inproceedings{BatoleETAL2025,
     author = {Fraol Batole and David OBrien and Tien N. Nguyen and Robert Dyer and Hridesh Rajan},
     title = {An LLM-Based Agent-Oriented Approach for Automated Code Design Issue Localization},
     booktitle = {ICSE'2025: The 47th International Conference on Software Engineering},

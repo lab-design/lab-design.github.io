@@ -2,9 +2,9 @@
 key: CCSC-11
 permalink: /papers/CCSC-11/
 short_name: CCSC '11
-title: "Frances-A: A Tool For Architecture Level Software Visualization"
+title: "Frances-A: A Tool for Architecture Level Program Visualization"
 bib: |
-  @article{sondag2011frances,
+  @article{SondagPokornyRajan2011,
     author = {Sondag, Tyler and Pokorny, Kian L. and Rajan, Hridesh},
     title = {Frances-A: A Tool for Architecture Level Program Visualization},
     journal = {J. Comput. Small Coll.},

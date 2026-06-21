@@ -4,7 +4,7 @@ permalink: /papers/TR-15-07/
 short_name: TR-15-07
 title: "Gang-of-Four Design Patterns: A Case Study of the Unified Model and the Eos Programming Language"
 bib:  |
-  @techreport{rajan2015gang,
+  @techreport{Rajan2015b,
     title = {Gang-of-Four Design Patterns: A Case Study of the Unified Model and the Eos Programming Language},
     author = {Rajan, Hridesh},
     year = {2015},

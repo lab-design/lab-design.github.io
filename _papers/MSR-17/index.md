@@ -5,7 +5,7 @@ short_name: MSR '17
 title: "Candoia: A Platform for Building and Sharing Mining Software Repositories Tools as Apps"
 abstract: >
 bib: |
-  @inproceedings{tiwari2017candoia,
+  @inproceedings{TiwariUpadhyayaNguyenRajan2017,
     author = {Nitin Mukesh Tiwari and Ganesha Upadhyaya and Hoan Anh Nguyen and Hridesh Rajan},
     title = {Candoia: A Platform for Building and Sharing Mining Software Repositories Tools as Apps},
     booktitle = {MSR'17: 14th International Conference on Mining Software Repositories},

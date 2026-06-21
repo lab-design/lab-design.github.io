@@ -4,7 +4,7 @@ permalink: /papers/FOAL-10/
 short_name: FOAL '10
 title: Translucid Contracts for Aspect-oriented Interfaces
 bib: |
-  @inproceedings{bagherzadeh2010translucid,
+  @inproceedings{BagherzadehRajanLeavens2010,
     author = {Mehdi Bagherzadeh and Hridesh Rajan and Gary T. Leavens},
     title = {Translucid Contracts for Aspect-oriented Interfaces},
     booktitle = {FOAL '10: Workshop on Foundations of Aspect-Oriented Languages workshop},

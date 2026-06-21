@@ -4,7 +4,7 @@ permalink: /papers/FSE-18/
 short_name: FSE '18
 title: Large-scale Study of Substitutability in the Presence of Effects
 bib: |
-  @inproceedings{maddox18,
+  @inproceedings{MaddoxLongRajan2018,
     author = {Maddox, Jackson and Long, Yuheng and Rajan, Hridesh},
     title = {Large-scale Study of Substitutability in the Presence of Effects},
     booktitle = {ESEC/FSE'18: The ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE)},

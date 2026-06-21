@@ -4,7 +4,7 @@ permalink: /papers/ICSE-NIER-17a/
 short_name: ICSE '17 (NIER)
 title: On Accelerating Ultra-Large-Scale Mining
 bib: |
-  @inproceedings{upadhyaya2017accelerating,
+  @inproceedings{UpadhyayaRajan2017,
     author = {Ganesha Upadhyaya and Hridesh Rajan},
     title = {On Accelerating Ultra-Large-Scale Mining},
     booktitle = {ICSE'17: The 39th International Conference on Software Engineering: NIER Track},

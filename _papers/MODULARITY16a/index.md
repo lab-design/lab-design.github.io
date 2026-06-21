@@ -4,7 +4,7 @@ permalink: /papers/MODULARITY16a/
 short_name: Modularity '16
 title: On Ordering Problems in Message Passing Software
 bib: |
-  @inproceedings{long2016ordering,
+  @inproceedings{LongETAL2016,
     author = {Yuheng Long and Mehdi Bagherzadeh and Eric Lin and Ganesha Upadhyaya and Hridesh Rajan},
     title = {On Ordering Problems in Message Passing Software},
     booktitle = {Modularity'16: 15th International Conference on Modularity},

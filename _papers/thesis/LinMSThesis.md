@@ -4,7 +4,7 @@ permalink: /papers/thesis/LinMSThesis.html
 short_name: Lin MS Thesis
 title: "PaniniJ: Adding the capsule programming abstraction to Java to provide linguistic support for modular reasoning in concurrent program design"
 bib:  |
-  @mastersthesis{lin2016paninij,
+  @mastersthesis{Lin2016,
     title = {PaniniJ: adding the capsule programming abstraction to Java to provide linguistic support for modular reasoning in concurrent program design},
     author = {Lin, Eric},
     year = {2016},

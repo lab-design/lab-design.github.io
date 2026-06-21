@@ -4,7 +4,7 @@ permalink: /papers/thesis/HosamaniMSThesis.html
 short_name: Hosamani MS Thesis
 title: "Bootstrapping trust in service oriented architecture"
 bib:  |
-  @phdthesis{hosamani2007bootstrapping,
+  @phdthesis{Hosamani2007,
     title = {Bootstrapping trust in service oriented architecture},
     author = {Hosamani, Mahantesh},
     year = {2007},

@@ -4,7 +4,7 @@ permalink: /papers/TOCE-12/
 short_name: TOCE '12
 title: "Frances: A Tool For Understanding Computer Architecture and Assembly Language"
 bib: |
-  @article{sondag2012frances,
+  @article{SondagPokornyRajan2012,
     author = {Tyler Sondag and Kian L. Pokorny and Hridesh Rajan},
     title = {Frances: A Tool For Understanding Computer Architecture and Assembly Language},
     journal = {ACM Transactions on Computing Education (TOCE)},

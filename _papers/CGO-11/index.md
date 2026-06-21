@@ -4,7 +4,7 @@ permalink: /papers/CGO-11/
 short_name: CGO '11
 title: Phase-based Tuning for Better Utilization of Performance-Asymmetric Multicore Processors
 bib: |
-  @inproceedings{sondag2011phase-b,
+  @inproceedings{SondagRajan2011,
     author = {Tyler Sondag and Hridesh Rajan},
     title = {Phase-based Tuning for Better Utilization of Performance-Asymmetric Multicore Processors},
     booktitle = {International Symposium on Code Generation and Optimization (CGO)},

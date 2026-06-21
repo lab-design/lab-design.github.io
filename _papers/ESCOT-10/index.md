@@ -4,7 +4,7 @@ permalink: /papers/ESCOT-10/
 short_name: ESCOT '10
 title: A Preliminary Study of Quantified, Typed Events
 bib: |
-  @inproceedings{dyer2010preliminary,
+  @inproceedings{DyerBagherzadehRajanCai2010,
     author = {Robert Dyer and Mehdi Bagherzadeh and Hridesh Rajan and Yuanfang Cai},
     title = {A Preliminary Study of Quantified, Typed Events},
     booktitle = {ESCOT '10: Workshop on Empirical Evaluation of Software Composition Techniques},

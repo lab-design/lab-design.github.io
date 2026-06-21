@@ -4,7 +4,7 @@ permalink: /papers/ICLR-22/
 short_name: ICLR '22
 title: "A Global Convergence Theory for Deep ReLU Implicit Networks via Over-Parameterization"
 bib: |
-  @inproceedings{gao22global,
+  @inproceedings{GaoETAL2022,
     author = {Tianxiang Gao and Hailiang Liu and Jia Liu and Hridesh Rajan and Hongyang Gao},
     title = {A Global Convergence Theory for Deep ReLU Implicit Networks via Over-Parameterization},
     booktitle = {ICLR'22: The 10th International Conference on Learning Representations},

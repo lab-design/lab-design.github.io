@@ -4,7 +4,7 @@ permalink: /papers/FOAL-11/
 short_name: FOAL '11
 title: Applying Translucid Contracts for Modular Reasoning About Aspect and Object Oriented Events
 bib: |
-  @inproceedings{bagherzadeh2011applying,
+  @inproceedings{BagherzadehLeavensDyer2011,
     author = {Mehdi Bagherzadeh and Gary T. Leavens and Robert Dyer},
     title = {Applying Translucid Contracts for Modular Reasoning About Aspect and Object Oriented Events},
     booktitle = {FOAL '11: Workshop on Foundations of Aspect-Oriented Languages workshop},

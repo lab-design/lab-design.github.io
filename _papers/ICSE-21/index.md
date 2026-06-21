@@ -4,7 +4,7 @@ permalink: /papers/ICSE-21/
 short_name: ICSE '21
 title: "DeepLocalize: Fault Localization for Deep Neural Networks"
 bib: |
-  @inproceedings{wardat21deeplocalize,
+  @inproceedings{WardatLeRajan2021,
     author = {Mohammad Wardat and Wei Le and Hridesh Rajan},
     title = {DeepLocalize: Fault Localization for Deep Neural Networks},
     booktitle = {ICSE'21: The 43nd International Conference on Software Engineering},

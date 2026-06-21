@@ -4,7 +4,7 @@ permalink: /papers/TOSEM-08/
 short_name: TOSEM '08
 title: Unifying Aspect- and Object-Oriented Design
 bib: |
-  @article{rajan2009unifying,
+  @article{RajanSullivan2009,
     author = {Hridesh Rajan and Kevin J. Sullivan},
     title = {Unifying Aspect- and Object-Oriented Design},
     journal = {ACM Transactions on Software Engineering and Methodology (TOSEM)},

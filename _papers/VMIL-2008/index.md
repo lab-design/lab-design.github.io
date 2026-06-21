@@ -4,7 +4,7 @@ permalink: /papers/VMIL-2008/
 short_name: VMIL '08
 title: A decision tree-based approach to dynamic pointcut evaluation
 bib: |
-  @inproceedings{dyer2008decision,
+  @inproceedings{DyerRajan2008b,
     author = {Dyer, Robert and Rajan, Hridesh},
     title = {A Decision Tree-based Approach to Dynamic Pointcut Evaluation},
     booktitle = {Proceedings of the 2nd Workshop on Virtual Machines and Intermediate Languages for Emerging Modularization Mechanisms},

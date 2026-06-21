@@ -5,7 +5,7 @@ short_name: Tiwari MS Thesis
 title: "The design and implementation of Candoia: A platform for building and sharing mining software repositories tools as apps"
 software repositories tools as apps"
 bib:  |
-  @mastersthesis{tiwari2017design,
+  @mastersthesis{Tiwari2017,
     title = {The design and implementation of Candoia: A platform for building and sharing mining software repositories tools as apps},
     author = {Tiwari, Nitin Mukesh},
     year = {2017},

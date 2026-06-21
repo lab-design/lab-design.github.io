@@ -4,7 +4,7 @@ permalink: /papers/ICSE-18a/
 short_name: ICSE '18
 title: Collective Program Analysis
 bib: |
-  @inproceedings{collective2018,
+  @inproceedings{UpadhyayaRajan2018a,
     author = {Ganesha Upadhyaya and Hridesh Rajan},
     title = {Collective Program Analysis},
     booktitle = {ICSE'18: The 40th International Conference on Software Engineering},

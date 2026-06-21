@@ -4,7 +4,7 @@ permalink: /papers/ICSE-22c/
 short_name: ICSE '22
 title: "DeepDiagnosis: Automatically Diagnosing Faults and Recommending Actionable Fixes in Deep Learning Programs"
 bib: |
-  @inproceedings{wardat2021deepdiagnosis,
+  @inproceedings{WardatCruzLeRajan2022,
     author={Mohammad Wardat and Breno Dantas Cruz and Wei Le and Hridesh Rajan},
     title={DeepDiagnosis: Automatically Diagnosing Faults and Recommending Actionable Fixes in Deep Learning Programs}, 
     booktitle = {ICSE'22: The 44th International Conference on Software Engineering},

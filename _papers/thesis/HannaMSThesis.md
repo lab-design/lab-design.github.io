@@ -4,7 +4,7 @@ permalink: /papers/thesis/HannaMSThesis.html
 short_name: Hanna MS Thesis
 title: Verifying sensor network security protocol implementations
 bib:  |
-  @mastersthesis{hanna2008verifying,
+  @mastersthesis{Hanna2008,
     title = {Verifying sensor network security protocol implementations},
     author = {Hanna, Youssef},
     year = {2008},

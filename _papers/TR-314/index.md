@@ -2,9 +2,9 @@
 key: TR-314
 permalink: /papers/TR-314/
 short_name: TR-314
-title: Design Patterns in Eos
+title: "Design Pattern Implementations in Eos"
 bib:  |
-  @techreport{rajan2007design-a,
+  @techreport{Rajan2007b,
      author = {Rajan, Hridesh},
      title = {Design Pattern Implementations in Eos},
      year = {2007},

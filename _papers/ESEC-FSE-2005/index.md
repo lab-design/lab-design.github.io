@@ -4,7 +4,7 @@ permalink: /papers/ESEC-FSE-2005/
 short_name: ESEC/FSE '05
 title: Information Hiding Interfaces for Aspect-Oriented Design
 bib: |
-  @inproceedings{sullivan2005information,
+  @inproceedings{SullivanETAL2005,
     author = {Kevin Sullivan and William G. Griswold and Yuanyuan Song and
               Yuanfang Cai and Macneil Shonle and Nishit Tewari and
               Hridesh Rajan},

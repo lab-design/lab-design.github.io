@@ -4,7 +4,7 @@ permalink: /papers/PASTE-10/
 short_name: PASTE '10
 title: Property-Aware Program Sampling
 bib: |
-  @inproceedings{narayanappa2010property,
+  @inproceedings{NarayanappaBansalRajan2010,
     author = {Harish Narayanappa and Mukul S. Bansal and Hridesh Rajan},
     title = {Property-Aware Program Sampling},
     booktitle = {PASTE '10: 9th ACM SIGPLAN-SIGSOFT Workshop on Program Analysis for Software Tools and Engineering},

@@ -4,7 +4,7 @@ permalink: /papers/ECOOP-15/
 short_name: ECOOP '15
 title: Intensional Effect Polymorphism
 bib: |
-  @inproceedings{long2015intensional,
+  @inproceedings{LongLiuRajan2015,
     author = {Yuheng Long and Yu David Liu and Hridesh Rajan},
     title = {Intensional Effect Polymorphism},
     booktitle = {Proceedings of the 29th European Conference on Object-oriented Programming},

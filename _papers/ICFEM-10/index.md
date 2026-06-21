@@ -4,7 +4,7 @@ permalink: /papers/ICFEM-10/
 short_name: ICFEM '10
 title: Automating Cut-off for Multi-parameterized Systems
 bib: |
-  @inproceedings{hanna2010automating,
+  @inproceedings{HannaSamuelsonBasuRajan2010,
     author = {Youssef Hanna and David Samuelson and Samik Basu and Hridesh Rajan},
     title = {Automating Cut-off for Multi-parameterized Systems},
     booktitle = {The 12th International Conference on Formal Engineering Methods (ICFEM 2010)},

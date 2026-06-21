@@ -4,7 +4,7 @@ permalink: /papers/TR-07-06/
 short_name: TR-07-06
 title: "Nu: Towards a Flexible and Dynamic Aspect-Oriented Intermediate Language Model"
 bib:  |
-  @techreport{dyer2007nu,
+  @techreport{DyerSettyRajan2007,
     title = {Nu: Towards a Flexible and Dynamic Aspect-Oriented Intermediate Language Model},
     author = {Dyer, Robert and Setty, Rakesh Bangalore Shivarudra and Rajan, Hridesh},
     year = {2007},

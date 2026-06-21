@@ -4,7 +4,7 @@ permalink: /papers/Software-2006/
 short_name: IEEE Software '06
 title: Modular Software Design with Crosscutting Interfaces
 bib: |
-  @article{griswold2006modular,
+  @article{GriswoldETAL2006,
     author = {William G. Griswold and Kevin Sullivan and Yuanyuan Song
               and Macneil Shonle and Nishit Tewari and Yuanfang Cai and
               Hridesh Rajan},

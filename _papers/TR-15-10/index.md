@@ -4,7 +4,7 @@ permalink: /papers/TR-15-10/
 short_name: TR-15-10
 title: "Design, Semantics and Implementation of the Ptolemy Programming Language: A Language with Quantified Typed Events"
 bib:  |
-  @techreport{rajan2015design,
+  @techreport{RajanLeavens2015,
     title = {Design, Semantics and Implementation of the Ptolemy Programming Language: A Language with Quantified Typed Events},
     author = {Rajan, Hridesh and Leavens, Gary T},
     year = {2015},

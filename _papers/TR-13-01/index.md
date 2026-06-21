@@ -4,7 +4,7 @@ permalink: /papers/TR-13-01/
 short_name: TR-13-01
 title: Capsule-oriented Programming
 bib: |
-  @techreport{rajan2013capsule,
+  @techreport{RajanETAL2013,
     author = {Hridesh Rajan and Steven M. Kautz and Eric Lin and Sarah Kabala and Ganesha Upadhyaya and Yuheng Long and Rex Fernando, and Lor\'{a}nd Szak\'{a}cs},
     title = {Capsule-oriented Programming},
     institution = {Iowa State University, Dept. of Computer Science},

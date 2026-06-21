@@ -4,7 +4,7 @@ permalink: /papers/thesis/JalanMSThesis.html
 short_name: Jalan MS Thesis
 title: Feature selection, statistical modeling and its applications to universal JPEG steganalyzer
 bib:  |
-  @mastersthesis{jalan2009feature,
+  @mastersthesis{Jalan2009,
     title = {Feature selection, statistical modeling and its applications to universal JPEG steganalyzer},
     author = {Jalan, Jaikishan},
     year = {2009},

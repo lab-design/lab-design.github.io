@@ -4,7 +4,7 @@ permalink: /papers/TR-08-02/
 short_name: TR-08-02
 title: "Weave Now or Weave Later: A Test Driven Development Perspective on Aspect-oriented Deployment Models"
 bib:  |
-  @techreport{setty2008weave,
+  @techreport{SettyDyerRajan2008,
     title = {Weave Now or Weave Later: A Test Driven Development Perspective on Aspect-oriented Deployment Models},
     author = {Setty, Rakesh Bangalore Shivarudra and Dyer, Robert and Rajan, Hridesh},
     year = {2008},

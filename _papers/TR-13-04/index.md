@@ -4,7 +4,7 @@ permalink: /papers/TR-13-04/
 short_name: TR-13-04
 title: "Open Effects: Programmer-guided Effects for Open World Concurrent Programs"
 bib: |
-  @techreport{long2013open,
+  @techreport{LongBagherzadehRajan2013,
     author = {Yuheng Long and Mehdi Bagherzadeh and Hridesh Rajan},
     title = {Open Effects: Programmer-guided Effects for Open World Concurrent Programs},
     institution = {Iowa State University, Dept. of Computer Science},

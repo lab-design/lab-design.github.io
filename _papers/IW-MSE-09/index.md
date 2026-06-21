@@ -4,7 +4,7 @@ permalink: /papers/IW-MSE-09/
 short_name: IW-MSE '09
 title: Phase-guided Thread-to-core Assignment for Improved Utilization of Performance-Asymmetric Multi-Core Processors
 bib: |
-  @inproceedings{sondag2009phase,
+  @inproceedings{SondagRajan2009,
     author = {Tyler Sondag and Hridesh Rajan},
     title = {Phase-guided Thread-to-core Assignment for Improved Utilization of Performance-Asymmetric Multi-Core Processors},
     booktitle = {IWMSE '09: Proceedings of the 2nd International Workshop on Multicore Software Engineering},

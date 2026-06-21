@@ -4,7 +4,7 @@ permalink: /papers/TR-214/
 short_name: TR-214
 title: Preserving Separation of Concerns Through Compilation
 bib:  |
-  @techreport{rajan2006preserving-a,
+  @techreport{RajanDyerHannaNarayanappa2006b,
     title = {Preserving separation of concerns through compilation},
     author = {Rajan, Hridesh and Dyer, Robert and Hanna, Youssef Wasfy and Narayanappa, Harish},
     year = {2006},

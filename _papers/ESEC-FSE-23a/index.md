@@ -4,7 +4,7 @@ permalink: /papers/ESEC-FSE-23a/
 short_name: ESEC-FSE '23
 title: "Design by Contract for Deep Learning APIs"
 bib: |
-  @inproceedings{ahmed23dlcontract,
+  @inproceedings{AhmedETAL2023,
     author = {Shibbir Ahmed and Sayem Mohammad Imtiaz and Samantha Syeda Khairunnesa and Breno Dantas Cruz and Hridesh Rajan},
     title = {Design by Contract for Deep Learning APIs},
     booktitle = {ESEC/FSE'2023: The 31st ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering},

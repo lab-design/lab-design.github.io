@@ -4,7 +4,7 @@ permalink: /papers/TR-10-09/
 short_name: TR-10-09
 title: A Type-and-Effect System for Shared Memory, Concurrent Implicit Invocation Systems
 bib: |
-  @techreport{long2011type,
+  @techreport{YuhengLongRajan2011,
     author = {Yuheng Long, Tyler Sondag, and Hridesh Rajan},
     title = {A Type-and-Effect System for Shared Memory, Concurrent Implicit Invocation Systems},
     institution = {Iowa State University, Department of Computer Science},

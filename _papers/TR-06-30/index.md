@@ -4,7 +4,7 @@ permalink: /papers/TR-06-30/
 short_name: TR-06-30
 title: Modular Compilation Strategies for Aspect-Oriented Constructs
 bib:  |
-  @techreport{dyer2006modular,
+  @techreport{DyerRajan2006,
     title = {Modular compilation strategies for aspect-oriented constructs},
     author = {Dyer, Robert and Rajan, Hridesh},
     year = {2006},

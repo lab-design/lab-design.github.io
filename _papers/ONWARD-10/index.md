@@ -4,7 +4,7 @@ permalink: /papers/ONWARD-10/
 short_name: Onward! '10
 title: "Concurrency by Modularity: Design Patterns, a Case in Point"
 bib: |
-  @inproceedings{rajan2010concurrency,
+  @inproceedings{RajanKautzRowcliffe2010,
     author = {Hridesh Rajan and Steven M. Kautz and Wayne Rowcliffe},
     title = {Concurrency by Modularity: Design Patterns, a Case in Point},
     booktitle = {2010 Onward! Conference},

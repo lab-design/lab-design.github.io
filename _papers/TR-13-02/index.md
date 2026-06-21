@@ -4,7 +4,7 @@ permalink: /papers/TR-13-02/
 short_name: TR-13-02
 title: A Large-scale Empirical Study of Java Language Feature Usage
 bib:  |
-  @techreport{dyer2013large,
+  @techreport{DyerRajanNguyenNguyen2013,
     title = {A large-scale empirical study of Java language feature usage},
     author = {Dyer, Robert and Rajan, Hridesh and Nguyen, Hoan Anh and Nguyen, Tien N},
     year = {2013},

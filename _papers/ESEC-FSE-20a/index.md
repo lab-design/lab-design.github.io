@@ -4,7 +4,7 @@ permalink: /papers/ESEC-FSE-20a/
 short_name: ESEC-FSE '20
 title: Do the Machine Learning Models on a Crowd Sourced Platform Exhibit Bias? An Empirical Study on Model Fairness
 bib: |
-  @inproceedings{biswas20machine,
+  @inproceedings{BiswasRajan2020,
     author = {Sumon Biswas and Hridesh Rajan},
     title = {Do the Machine Learning Models on a Crowd Sourced Platform Exhibit Bias? An Empirical Study on Model Fairness},
     booktitle = {ESEC/FSE'2020: The 28th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering},

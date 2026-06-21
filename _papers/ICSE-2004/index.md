@@ -4,7 +4,7 @@ permalink: /papers/ICSE-2004/
 short_name: ICSE '04 - DS
 title: One More Step in the Direction of Modularized Integration Concerns
 bib: |
-  @inproceedings{rajan2004one,
+  @inproceedings{Rajan2004,
     author = {Hridesh Rajan},
     title = {One More Step in the Direction of Modularized Integration Concerns},
     booktitle = {ICSE '04: Proceedings of the 26th International Conference on Software Engineering},

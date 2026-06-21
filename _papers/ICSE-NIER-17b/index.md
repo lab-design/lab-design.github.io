@@ -4,7 +4,7 @@ permalink: /papers/ICSE-NIER-17b/
 short_name: ICSE '17 (NIER)
 title: Statistical Learning for Inference between Implementations and Documentation
 bib: |
-  @inproceedings{phan2017statistical,
+  @inproceedings{PhanNguyenNguyenRajan2017,
     author = {Phan, Hung and Nguyen, Hoan Anh and Nguyen, Tien N. and Rajan, Hridesh},
     title = {Statistical Learning for Inference Between Implementations and Documentation},
     booktitle = {Proceedings of the 39th International Conference on Software Engineering: New Ideas and Emerging Results Track},

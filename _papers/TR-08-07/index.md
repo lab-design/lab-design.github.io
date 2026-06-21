@@ -4,7 +4,7 @@ permalink: /papers/TR-08-07/
 short_name: TR-08-07
 title: Reconciling Trust and Modularity Goals in Web Services
 bib:  |
-  @techreport{rajan2009reconciling,
+  @techreport{RajanTaoShanerLeavens2009b,
     title = {Reconciling Trust and Modularity Goals in Web Services},
     author = {Rajan, Hridesh and Tao, Jia and Shaner, Steve M and Leavens, Gary T},
     year = {2009},

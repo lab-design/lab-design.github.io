@@ -4,7 +4,7 @@ permalink: /papers/ASE-23/
 short_name: ASE '23
 title: Mutation-based Fault Localization of Deep Neural Networks
 bib: |
-  @inproceedings{ghanbari2023deepmufl,
+  @inproceedings{GhanbariThomasArshadRajan2023,
     author = {Ghanbari, Ali and Thomas, Deepak-George and Arshad, Muhammad Arbab and Rajan, Hridesh},
     title = {Mutation-based Fault Localization of Deep Neural Networks},
     booktitle = {ASE'2023: 38th IEEE/ACM International Conference on Automated Software Engineering},

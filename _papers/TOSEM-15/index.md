@@ -4,7 +4,7 @@ permalink: /papers/TOSEM-15/
 short_name: TOSEM '15
 title: "Boa: Ultra-Large-Scale Software Repository and Source-Code Mining"
 bib: |
-  @article{dyer2015boa-b,
+  @article{DyerNguyenRajanNguyen2015b,
     author = {Dyer, Robert and Nguyen, Hoan Anh and Rajan, Hridesh and Nguyen, Tien N.},
     title = {Boa: Ultra-Large-Scale Software Repository and Source-Code Mining},
     journal = {ACM Trans. Softw. Eng. Methodol.},

@@ -5,7 +5,7 @@ short_name: OOPSLA '16
 title: First-Class Effect Reflection for Effect-Guided Programming
 authors: Yuheng Long and Yu David Liu and Hridesh Rajan
 bib: |
-  @inproceedings{long2016first,
+  @inproceedings{LongLiuRajan2016,
     author = {Yuheng Long and Yu David Liu and Hridesh Rajan},
     title = {First-Class Effect Reflection for Effect-Guided Programming},
     booktitle = {OOPSLA'16: The ACM SIGPLAN conference on Object-Oriented Programming, Systems, Languages, and Applications},

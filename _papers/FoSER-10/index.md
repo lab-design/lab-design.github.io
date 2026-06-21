@@ -4,7 +4,7 @@ permalink: /papers/FoSER-10/
 short_name: FoSER '10
 title: Building Scalable Software Systems in the Multicore Era
 bib: |
-  @inproceedings{rajan2010building,
+  @inproceedings{Rajan2010,
     author = {Hridesh Rajan},
     title = {Building Scalable Software Systems in the Multicore Era},
     booktitle = {2010 FSE/SDP Workshop on the Future of Software Engineering},

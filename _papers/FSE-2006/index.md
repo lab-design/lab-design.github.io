@@ -4,7 +4,7 @@ permalink: /papers/FSE-2006/
 short_name: FSE '06 (Poster)
 title: "Nu: Preserving Design Modularity in Object Code"
 bib: |
-  @article{dyer2006nu,
+  @article{DyerNarayanappaRajan2006,
     author = {Robert Dyer and Harish Narayanappa and Hridesh Rajan},
     title = {Nu: preserving design modularity in object code},
     journal = {SIGSOFT Softw. Eng. Notes},

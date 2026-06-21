@@ -4,7 +4,7 @@ permalink: /papers/TR-07-09/
 short_name: TR-07-09
 title: "SLEDE: A Domain-Specific Verification Framework for Sensor Network Security Protocol Implementations"
 bib:  |
-  @techreport{hanna2008slede-a,
+  @techreport{HannaRajanZhang2008a,
     author = {Hanna, Youssef and Rajan, Hridesh and Zhang, Wensheng},
     title = {Slede: A Domain-specific Verification Framework for Sensor Network Security Protocol Implementations},
     year = {2008},

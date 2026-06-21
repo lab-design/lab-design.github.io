@@ -4,7 +4,7 @@ permalink: /papers/TDS-22e/
 short_name: TDS '22
 title: "Semantics and Anomaly Preserving Sampling Strategy for Large-Scale Time Series Data"
 bib: |
-  @article{Ahmed2022,
+  @article{AhmedIslamRajan2022,
     author = {Shibbir Ahmed and Md Johirul Islam and Hridesh Rajan},
     title = {Semantics and Anomaly Preserving Sampling Strategy for Large-Scale Time Series Data},
     journal = {ACM/IMS Transactions on Data Science},

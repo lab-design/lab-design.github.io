@@ -4,7 +4,7 @@ permalink: /papers/GPCE-10/
 short_name: GPCE '13
 title: Implicit Invocation Meets Safe, Implicit Concurrency
 bib: |
-  @inproceedings{long2010implicit-b,
+  @inproceedings{LongMooneySondagRajan2010a,
     author = {Yuheng Long and Sean L. Mooney and Tyler Sondag and Hridesh Rajan},
     title = {Implicit Invocation Meets Safe, Implicit Concurrency},
     booktitle = {GPCE '10: Ninth International Conference on Generative Programming and Component Engineering},

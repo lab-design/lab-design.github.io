@@ -4,7 +4,7 @@ permalink: /papers/TR-15-06/
 short_name: TR-15-06
 title: "Staged Tuning: A Hybrid (Compile/Install-time) Technique for Improving Utilization of Performance-asymmetric Multicores"
 bib:  |
-  @techreport{sondag2015staged,
+  @techreport{SondagRajan2015,
     title = {Staged Tuning: A Hybrid (Compile/Install-time) Technique for Improving Utilization of Performance-asymmetric Multicores},
     author = {Sondag, Tyler and Rajan, Hridesh},
     year = {2015},

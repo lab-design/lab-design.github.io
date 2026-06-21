@@ -4,7 +4,7 @@ permalink: /papers/thesis/UpadhayayaMSThesis.html
 short_name: Upadhayaya MS Thesis
 title: Abstraction and performance, together at last; Auto-tuning message-passing concurrency on the Java Virtual Machine
 bib:  |
-  @mastersthesis{upadhyaya2015abstraction,
+  @mastersthesis{Upadhyaya2015,
     title = {Abstraction and performance, together at last; Auto-tuning message-passing concurrency on the java virtual machine},
     author = {Upadhyaya, Ganesha},
     year = {2015},

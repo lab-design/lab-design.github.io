@@ -4,7 +4,7 @@ permalink: /papers/ICSE-18b/
 short_name: ICSE '18
 title: Are Code Examples on an Online Q&A Forum Reliable? A Study of API Misuse on Stack Overflow
 bib: |
-  @inproceedings{ReliableQA2018,
+  @inproceedings{ZhangETAL2018,
     author = {Tianyi Zhang and Ganesha Upadhyaya and Anastasia Reinhardt and Hridesh Rajan and Miryung Kim},
     title = {Are Code Examples on an Online Q&A Forum Reliable? A Study of API Misuse on Stack Overflow},
     booktitle = {ICSE'18: The 40th International Conference on Software Engineering},

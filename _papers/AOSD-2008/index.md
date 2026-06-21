@@ -4,7 +4,7 @@ permalink: /papers/AOSD-2008/
 short_name: AOSD '08
 title: "Nu: a Dynamic Aspect-Oriented Intermediate Language Model and Virtual Machine for Flexible Runtime Adaptation"
 bib: |
-  @inproceedings{dyer2008nu,
+  @inproceedings{DyerRajan2008a,
     author = {Robert Dyer and Hridesh Rajan},
     title = {Nu: a Dynamic Aspect-Oriented Intermediate Language Model and Virtual Machine for Flexible Runtime Adaptation},
     booktitle = {AOSD '08: Proceedings of the 7th International Conference on Aspect-oriented Software Development},

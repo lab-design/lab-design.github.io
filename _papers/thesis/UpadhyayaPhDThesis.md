@@ -4,7 +4,7 @@ permalink: /papers/thesis/UpadhayayaPhDThesis.html
 short_name: Upadhayaya PhD Thesis
 title: Collective Program Analysis
 bib:  |
-  @phdthesis{upadhyaya2018collective,
+  @phdthesis{Upadhyaya2018,
     title = {Collective Program Analysis},
     author = {Upadhyaya, Ganesha},
     year = {2018},

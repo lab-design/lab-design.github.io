@@ -4,7 +4,7 @@ permalink: /papers/TR-15-08/
 short_name: TR-15-08
 title: "Boa: Ultra-Large-Scale Software Repository and Source-Code Mining"
 bib:  |
-  @techreport{dyer2015boa-a,
+  @techreport{DyerNguyenRajanNguyen2015c,
      author = {Dyer, Robert and Nguyen, Hoan Anh and Rajan, Hridesh and Nguyen, Tien N.},
      title = {Boa: Ultra-Large-Scale Software Repository and Source-Code Mining},
      number = {15-08},

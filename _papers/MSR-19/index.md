@@ -5,7 +5,7 @@ short_name: MSR '19
 title: "Boa Meets Python: A Boa Dataset of Data Science Software in Python Language"
 abstract: >
 bib: |
-  @inproceedings{sumon2019pydata,
+  @inproceedings{BiswasIslamHuangRajan2019,
     author = {Sumon Biswas and Md Johirul Islam and Yijia Huang and Hridesh Rajan},
     title = {Boa Meets Python: A Boa Dataset of Data Science Software in Python Language},
     booktitle = {MSR'19: 16th International Conference on Mining Software Repositories},

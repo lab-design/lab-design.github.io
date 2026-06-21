@@ -4,7 +4,7 @@ permalink: /papers/thesis/DyerMSThesis.html
 short_name: Dyer MS Thesis
 title: Supporting dynamic aspect-oriented features
 bib:  |
-  @mastersthesis{dyer2008supporting,
+  @mastersthesis{Dyer2008,
     title = {Supporting dynamic aspect-oriented features},
     author = {Dyer, Robert},
     year = {2008},

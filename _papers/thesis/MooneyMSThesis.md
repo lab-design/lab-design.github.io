@@ -4,7 +4,7 @@ permalink: /papers/thesis/MooneyMSThesis.html
 short_name: Mooney MS Thesis
 title: A Unified Design of Capsules
 bib:  |
-  @mastersthesis{mooney2015unified,
+  @mastersthesis{Mooney2015,
     title = {A Unified Design of Capsules},
     author = {Mooney, Sean Lawrence},
     year = {2015},

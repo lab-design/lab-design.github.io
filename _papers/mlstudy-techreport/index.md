@@ -4,7 +4,7 @@ permalink: /papers/mlstudy-techreport/
 short_name: MLTR '18
 title: "What Do Developers Ask About ML Libraries? A Large-scale Study Using Stack Overflow"
 bib: |
-  @inproceedings{Islam18,
+  @inproceedings{MdJohirulNguyenRajan2018,
     author = {Md Johirul, Islam, and Nguyen, Hoan and Rajan, Hridesh},
     title = {What Do Developers Ask About ML Libraries? A Large-scale Study Using Stack Overflow},
     booktitle = {Technical Report},

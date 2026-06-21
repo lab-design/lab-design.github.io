@@ -4,7 +4,7 @@ permalink: /papers/ICSE-14/
 short_name: ICSE '14
 title: Mining Billions of AST Nodes to Study Actual and Potential Usage of Java Language Features
 bib: |
-  @inproceedings{dyer2014mining,
+  @inproceedings{DyerRajanNguyenNguyen2014,
     author = {Dyer, Robert and Rajan, Hridesh and Nguyen, Hoan Anh and Nguyen, Tien N.},
     title = {Mining Billions of {AST} Nodes to Study Actual and Potential Usage of {Java} Language Features},
     booktitle = {36th International Conference on Software Engineering},

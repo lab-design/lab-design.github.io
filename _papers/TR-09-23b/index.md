@@ -4,7 +4,7 @@ permalink: /papers/TR-09-23b/
 short_name: TR-09-23b
 title: Towards Efficient Java Virtual Machine Support for Dynamic Deployment of Inter-type Declarations
 bib:  |
-  @techreport{gharaibeh2010towards,
+  @techreport{GharaibehRajanChang2010,
     title = {Towards Efficient Java Virtual Machine Support for Dynamic Deployment of Inter-type Declarations},
     author = {Gharaibeh, Bashar and Rajan, Hridesh and Chang, J Morris},
     year = {2010},

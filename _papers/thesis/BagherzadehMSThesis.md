@@ -4,7 +4,7 @@ permalink: /papers/thesis/BagherzadehMSThesis.html
 short_name: Bagherzadeh MS Thesis
 title: "Translucid contracts: Expressive specification and modular verification of aspect oriented interfaces"
 bib:  |
-  @mastersthesis{bagherzadeh2011translucid-a,
+  @mastersthesis{Bagherzadeh2011,
     title = {Translucid contracts: Expressive specification and modular verification of aspect oriented interfaces},
     author = {Bagherzadeh, Mehdi},
     year = {2011},

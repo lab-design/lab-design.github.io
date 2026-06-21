@@ -4,7 +4,7 @@ permalink: /papers/OOPSLA-17/
 short_name: OOPSLA '17
 title: Exploiting Implicit Beliefs to Resolve Sparse Usage Problem in Usage-based Specification Mining
 bib: |
-  @inproceedings{khairunnesa2017exploiting,
+  @inproceedings{KhairunnesaNguyenNguyenRajan2017,
     author = {Samantha Syeda Khairunnesa and Hoan Anh Nguyen and Tien N. Nguyen and Hridesh Rajan},
     title = {Exploiting Implicit Beliefs to Resolve Sparse Usage Problem in Usage-based Specification Mining},
     booktitle = {OOPSLA'17: The ACM SIGPLAN conference on Object-Oriented Programming, Systems, Languages, and Applications},

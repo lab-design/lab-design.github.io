@@ -4,7 +4,7 @@ permalink: /papers/SIG-CSE-10/
 short_name: SIGCSE '10
 title: "Frances: A Tool For Understanding Code Generation"
 bib: |
-  @inproceedings{sondag2010frances,
+  @inproceedings{SondagPokornyRajan2010,
     author = {Tyler Sondag and Kian L. Pokorny and Hridesh Rajan},
     title = {Frances: A Tool For Understanding Code Generation},
     booktitle = {SIGCSE '10: The 41st ACM Technical Symposium on Computer Science Education},

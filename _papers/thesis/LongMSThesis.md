@@ -4,7 +4,7 @@ permalink: /papers/thesis/LongMSThesis.html
 short_name: Long MS Thesis
 title: Implicit Invocation Meets Safe, Implicit Concurrency
 bib:  |
-  @mastersthesis{long2010implicit-a,
+  @mastersthesis{Long2010,
     title = {Implicit invocation meets safe, implicit concurrency},
     author = {Long, Yuheng},
     year = {2010},

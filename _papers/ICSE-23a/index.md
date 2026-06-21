@@ -4,7 +4,7 @@ permalink: /papers/ICSE-23a/
 short_name: ICSE '23
 title: "Fairify: Fairness Verification of Neural Networks"
 bib: |
-  @inproceedings{biswas23fairify,
+  @inproceedings{BiswasRajan2023,
     author = {Sumon Biswas and Hridesh Rajan},
     title = {Fairify: Fairness Verification of Neural Networks},
     booktitle = {ICSE'23: The 45th International Conference on Software Engineering},

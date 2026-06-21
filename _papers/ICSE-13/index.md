@@ -4,7 +4,7 @@ permalink: /papers/ICSE-13/
 short_name: ICSE '13
 title: "Boa: A Language and Infrastructure for Analyzing Ultra-Large-Scale Software Repositories"
 bib: |
-  @inproceedings{dyer2013boa,
+  @inproceedings{DyerNguyenRajanNguyen2013,
     author = {Dyer, Robert and Nguyen, Hoan Anh and Rajan, Hridesh and Nguyen, Tien N.},
     title = {Boa: A Language and Infrastructure for Analyzing Ultra-Large-Scale Software Repositories},
     booktitle = {35th International Conference on Software Engineering},

@@ -4,7 +4,7 @@ permalink: /papers/TR-17-01/
 short_name: TR-17-01
 title: "Combining Event-driven and Capsule-oriented Programming to Improve Integrated System Design"
 bib:  |
-  @techreport{maddox2017-a,
+  @techreport{Maddox2017,
      title = {Combining Event-driven and Capsule-oriented Programming to Improve Integrated System Design},
      author = {Maddox, Jackson},
      year = {2017},

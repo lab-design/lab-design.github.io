@@ -4,7 +4,7 @@ permalink: /papers/ESEC-FSE-09/
 short_name: ESEC/FSE '09
 title: Behavioral Automata Composition for Automatic Topology Independent Verification of Parameterized Systems
 bib: |
-  @inproceedings{hanna2009behavioral-b,
+  @inproceedings{HannaBasuRajan2009a,
     author = {Youssef Hanna and Samik Basu and Hridesh Rajan},
     title = {Behavioral Automata Composition for Automatic Topology Independent Verification of Parameterized Systems},
     booktitle = {The 7th joint meeting of the European Software Engineering Conference and the ACM SIGSOFT Symposium on the Foundations of Software Engineering (ESEC/FSE 09)},

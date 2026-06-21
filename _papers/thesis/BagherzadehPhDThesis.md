@@ -4,7 +4,7 @@ permalink: /papers/thesis/BagherzadehPhDThesis.html
 short_name: Bagherzadeh PhD Thesis
 title: Toward a Concurrent Programming Model with Modular Reasoning
 bib:  |
-  @phdthesis{bagherzadeh2016toward,
+  @phdthesis{Bagherzadeh2016,
     title = {Toward a Concurrent Programming Model with Modular Reasoning},
     author = {Bagherzadeh, Mehdi},
     year = {2016},

@@ -4,7 +4,7 @@ permalink: /papers/TOSEM-09-NU/
 short_name: TOSEM '09
 title: Supporting Dynamic Aspect-oriented Features
 bib: |
-  @article{dyer2010supporting,
+  @article{DyerRajan2010,
     author = {Robert Dyer and Hridesh Rajan},
     title = {Supporting Dynamic Aspect-oriented Features},
     journal = {ACM Transactions on Software Engineering and Methodology (TOSEM)},

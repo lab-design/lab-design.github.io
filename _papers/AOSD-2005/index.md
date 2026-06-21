@@ -4,7 +4,7 @@ permalink: /papers/AOSD-2005/
 short_name: AOSD '05
 title: Aspect Language Features for Concern Coverage Profiling
 bib: |
-  @inproceedings{rajan2005aspect,
+  @inproceedings{RajanSullivan2005a,
     author = {Hridesh Rajan and Kevin J. Sullivan},
     title = {Aspect Language Features for Concern Coverage Profiling},
     booktitle = {AOSD '05: Proceedings of the 4th International Conference on Aspect-oriented Software Development},

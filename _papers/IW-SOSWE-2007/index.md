@@ -4,7 +4,7 @@ permalink: /papers/IW-SOSWE-2007/
 short_name: IW-SOSWE '07
 title: "Monitoring the Monitor: An Approach Towards Trustworthiness in Service Oriented Architecture"
 bib: |
-  @inproceedings{hosamani2007monitoring,
+  @inproceedings{HosamaniNarayanappaRajan2007a,
     author = {Mahantesh Hosamani and Harish Narayanappa and Hridesh Rajan},
     title = {Monitoring the Monitor: An Approach Towards Trustworthiness in Service Oriented Architecture},
     booktitle = {2nd International Workshop on Service Oriented Software Engineering (IW-SOSWE 2007)},

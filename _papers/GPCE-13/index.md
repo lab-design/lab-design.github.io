@@ -4,7 +4,7 @@ permalink: /papers/GPCE-13/
 short_name: GPCE '13
 title: Declarative Visitors to Ease Fine-grained Source Code Mining with Full History on Billions of AST Nodes
 bib: |
-  @inproceedings{dyer2013declarative,
+  @inproceedings{DyerRajanNguyen2013,
     author = {Dyer, Robert and Rajan, Hridesh and Nguyen, Tien N.},
     title = {Declarative Visitors to Ease Fine-grained Source Code Mining with Full History on Billions of {AST} Nodes},
     booktitle = {Proceedings of the 12th International Conference on Generative Programming: Concepts & Experiences},

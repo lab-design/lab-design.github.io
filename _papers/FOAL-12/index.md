@@ -4,7 +4,7 @@ permalink: /papers/FOAL-12/
 short_name: FOAL '12
 title: Event Type Polymorphism
 bib: |
-  @inproceedings{fernando2012event,
+  @inproceedings{FernandoDyerRajan2012,
     author = {Rex Fernando and Robert Dyer and Hridesh Rajan},
     title = {Event Type Polymorphism},
     booktitle = {FOAL '12: Workshop on Foundations of Aspect-Oriented Languages workshop},

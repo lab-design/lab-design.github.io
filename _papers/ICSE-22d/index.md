@@ -4,7 +4,7 @@ permalink: /papers/ICSE-22d/
 short_name: ICSE '22
 title: "Manas: Mining Software Repositories to Assist AutoML"
 bib: |
-  @inproceedings{nguyen2021manas,
+  @inproceedings{NguyenIslamPanRajan2022,
     author={Giang Nguyen and Johir Islam and Rangeet Pan and Hridesh Rajan},
     title={Manas: Mining Software Repositories to Assist AutoML}, 
     booktitle = {ICSE'22: The 44th International Conference on Software Engineering},

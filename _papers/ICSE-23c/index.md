@@ -4,7 +4,7 @@ permalink: /papers/ICSE-23c/
 short_name: ICSE '23
 title: "Towards Understanding Fairness and its Composition in Ensemble Machine Learning"
 bib: |
-  @inproceedings{GoharBiswasRajan23,
+  @inproceedings{GoharBiswasRajan2023,
     author = {Usman Gohar and Sumon Biswas and Hridesh Rajan},
     title = {Towards Understanding Fairness and its Composition in Ensemble Machine Learning},
     booktitle = {ICSE'23: The 45th International Conference on Software Engineering},

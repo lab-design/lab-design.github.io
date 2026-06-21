@@ -4,7 +4,7 @@ permalink: /papers/SPLASH-13-src/
 short_name: SPLASH '13 (SRC)
 title: "Task Fusion: Improving Utilization of Multi-User Clusters"
 bib: |
-  @inproceedings{dyer2013task,
+  @inproceedings{Dyer2013a,
     author = {Robert Dyer},
     title = {Task Fusion: Improving Utilization of Multi-user Clusters},
     booktitle = {SPLASH 2013},

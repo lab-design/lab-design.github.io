@@ -4,7 +4,7 @@ permalink: /papers/ESEC-FSE-20b/
 short_name: ESEC-FSE '20
 title: On Decomposing a Deep Neural Network into Modules
 bib: |
-  @inproceedings{pan20decomposing,
+  @inproceedings{PanRajan2020,
     author = {Rangeet Pan and Hridesh Rajan},
     title = {On Decomposing a Deep Neural Network into Modules},
     booktitle = {ESEC/FSE'2020: The 28th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering},

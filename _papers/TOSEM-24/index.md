@@ -4,7 +4,7 @@ permalink: /papers/TOSEM-24/
 short_name: TOSEM '24
 title: "Leveraging Data Characteristics for Bug Localization in Deep Learning Programs"
 bib: |
-  @article{manke2024buglocalization,
+  @article{MankeWardatKhomhRajan2024,
     author = {Manke, Ruchira and Wardat, Mohammad and Khomh, Foutse and Rajan, Hridesh},
     title = {Leveraging Data Characteristics for Bug Localization in Deep Learning Programs},
     journal = {ACM Trans. Softw. Eng. Methodol.},

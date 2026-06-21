@@ -4,7 +4,7 @@ permalink: papers/thesis/NarayanappaMSThesis.html
 short_name: NarayanappaMSThesis
 title: Monitoring software using property-aware program sampling
 bib:  |
-  @mastersthesis{narayanappa2010monitoring,
+  @mastersthesis{Narayanappa2010,
     title={Monitoring software using property-aware program sampling},
     author={Narayanappa, Harish B},
     year={2010},

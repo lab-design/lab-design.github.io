@@ -2,9 +2,9 @@
 key: NWeSP07
 permalink: /papers/NWeSP07/
 short_name: NWeSP '07
-title: How to Trust a Web Service Monitor Deployed in an Untrusted Environment?
+title: "How to Trust Web Services Monitor Executing in an Untrusted Environment?"
 bib: |
-  @inproceedings{hosamani2007trust,
+  @inproceedings{HosamaniNarayanappaRajan2007b,
     author={Mahantesh Hosamani and Harish Narayanappa and Hridesh Rajan},
     title = {How to Trust Web Services Monitor Executing in an Untrusted Environment?},
     booktitle = {3rd International Conference on Next Generation Web Services Practices},

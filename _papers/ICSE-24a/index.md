@@ -4,7 +4,7 @@ permalink: /papers/ICSE-24a/
 short_name: ICSE '24
 title: "Inferring Data Preconditions from Deep Learning Models for Trustworthy Prediction in Deployment"
 bib: |
-  @inproceedings{ahmed24deepinfer,
+  @inproceedings{AhmedGaoRajan2024,
     author = {Shibbir Ahmed and Hongyang Gao and Hridesh Rajan},
     title = {Inferring Data Preconditions from Deep Learning Models for Trustworthy Prediction in Deployment},
     booktitle = {ICSE'2024: The 46th International Conference on Software Engineering},

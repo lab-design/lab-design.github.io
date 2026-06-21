@@ -4,7 +4,7 @@ permalink: /papers/TR-414/
 short_name: TR-414
 title: "Nu: Towards an Aspect-Oriented Invocation Mechanism"
 bib:  |
-  @techreport{rajan2006nu,
+  @techreport{RajanDyerNarayanappaHanna2006,
     title = {Nu: Towards an Aspect-Oriented Invocation Mechanism},
     author = {Rajan, Hridesh and Dyer, Robert and Narayanappa, Harish and Hanna, Youssef},
     year = {2006},

@@ -4,7 +4,7 @@ permalink: /papers/ICSE-24c/
 short_name: ICSE '24
 title: "Data-Driven Evidence-Based Syntactic Sugar Design"
 bib: |
-  @inproceedings{obrien2024sugar,
+  @inproceedings{OBrienDyerNguyenRajan2024,
     author = {David OBrien and Robert Dyer and Tien Nguyen and Hridesh Rajan},
     title = {Data-Driven Evidence-Based Syntactic Sugar Design},
     booktitle = {ICSE'2024: The 46th International Conference on Software Engineering},

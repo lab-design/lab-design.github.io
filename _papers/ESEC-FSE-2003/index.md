@@ -4,7 +4,7 @@ permalink: /papers/ESEC-FSE-2003/
 short_name: ESEC/FSE '03
 title: "Eos: Instance-Level Aspects for Integrated System Design"
 bib: |
-  @inproceedings{rajan2003eos,
+  @inproceedings{RajanSullivan2003,
     author = {Hridesh Rajan and Kevin Sullivan},
     title = {Eos: instance-level aspects for integrated system design},
     booktitle = {ESEC/FSE-11: Proceedings of the 9th European software engineering conference held jointly with 11th ACM SIGSOFT international symposium on Foundations of software engineering},

@@ -4,7 +4,7 @@ permalink: /papers/ICSE-15a/
 short_name: ICSE '15 (NIER)
 title: Capsule-Oriented Programming
 bib: |
-  @inproceedings{rajan2015capsule,
+  @inproceedings{Rajan2015a,
     author = {Hridesh Rajan},
     title = {Capsule-oriented Programming},
     booktitle = {ICSE'15: The 37th International Conference on Software Engineering: NIER Track},

@@ -4,7 +4,7 @@ permalink: /papers/TR-06-32/
 short_name: TR-06-32
 title: Type-based Quantification of Aspect-Oriented Programs
 bib: |
-  @techreport{rajan2006type,
+  @techreport{Rajan2006,
     author = {Rajan, Hridesh},
     title = {Type-based Quantification of Aspect-oriented Programs},
     institution = {Iowa State University, Dept. of Computer Science},

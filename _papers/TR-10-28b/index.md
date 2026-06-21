@@ -4,7 +4,7 @@ permalink: /papers/TR-10-28b/
 short_name: TR-10-28b
 title: "Panini: Reconciling Concurrency and Modularity in Design"
 bib: |
-  @techreport{long2010panini,
+  @techreport{LongMooneySondagRajan2010b,
     author = {Yuheng Long and Sean Mooney and Tyler Sondag and Hridesh Rajan},
     title = {Panini: Reconciling Concurrency and Modularity in Design},
     institution = {Iowa State University, Dept. of Computer Science},

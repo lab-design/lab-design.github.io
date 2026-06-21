@@ -4,7 +4,7 @@ permalink: /papers/ICSE-24b/
 short_name: ICSE '24
 title: "Are Prompt Engineering and TODO Comments Friends or Foes? An Evaluation on GitHub Copilot"
 bib: |
-  @inproceedings{obrien2024prompt,
+  @inproceedings{OBrienETAL2024,
     author = {David OBrien and Sumon Biswas and Sayem Mohammad Imtiaz and Rabe Abdalkareem and Emad Shihab and Hridesh Rajan},
     title = {Are Prompt Engineering and TODO Comments Friends or Foes? An Evaluation on GitHub Copilot},
     booktitle = {ICSE'2024: The 46th International Conference on Software Engineering},

@@ -4,7 +4,7 @@ permalink: /papers/TR-15-05/
 short_name: TR-15-05
 title: "Duck Futures: A Generative Approach to Transparent Futures"
 bib:  |
-  @techreport{lin2015duck,
+  @techreport{LinUpadhyayaMooneyRajan2015,
     title = {Duck futures: A generative approach to transparent futures},
     author = {Lin, Eric and Upadhyaya, Ganesha and Mooney, Sean L and Rajan, Hridesh},
     year = {2015},

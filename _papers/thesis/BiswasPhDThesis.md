@@ -4,7 +4,7 @@ permalink: /papers/thesis/BiswasPhDThesis.html
 short_name: Biswas PhD Thesis
 title: Understanding and reasoning fairness in machine learning pipelines
 bib:  |
-  @phdthesis{biswas2022understanding,
+  @phdthesis{Biswas2022,
     title = {Understanding and reasoning fairness in machine learning pipelines},
     author = {Biswas, Sumon},
     year = {2022},

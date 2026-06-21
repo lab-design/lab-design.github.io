@@ -4,7 +4,7 @@ permalink: /papers/WiSec-2008/
 short_name: WiSec '08
 title: "Slede: A Domain-Specific Verification Framework for Sensor Network Security Protocol Implementations"
 bib: |
-  @inproceedings{hanna2008slede-b,
+  @inproceedings{HannaRajanZhang2008b,
     author = {Youssef Hanna and Hridesh Rajan and Wensheng Zhang},
     title = {Slede: A Domain-Specific Verification Framework for Sensor Network Security Protocol Implementations},
     booktitle = {ACM Conference on Wireless Network Security (WiSec)},

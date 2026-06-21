@@ -4,7 +4,7 @@ permalink: /papers/thesis/DyerPhDThesis.html
 short_name: Dyer PhD Thesis
 title: Bringing ultra-large-scale software repository mining to the masses with Boa
 bib:  |
-  @phdthesis{dyer2013bringing,
+  @phdthesis{Dyer2013b,
     title = {Bringing ultra-large-scale software repository mining to the masses with Boa},
     author = {Dyer, Robert},
     year = {2013},

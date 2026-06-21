@@ -4,7 +4,7 @@ permalink: /papers/ICSE-22a/
 short_name: ICSE '22
 title: "The Art and Practice of Data Science Pipelines: A Comprehensive Study of Data Science Pipelines In Theory, In-The-Small, and In-The-Large"
 bib: |
-  @inproceedings{biswas22art,
+  @inproceedings{BiswasWardatRajan2022,
     author = {Sumon Biswas and Mohammad Wardat and Hridesh Rajan},
     title = {The Art and Practice of Data Science Pipelines: A Comprehensive Study of Data Science Pipelines In Theory, In-The-Small, and In-The-Large},
     booktitle = {ICSE'22: The 44th International Conference on Software Engineering},

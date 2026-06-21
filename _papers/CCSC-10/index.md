@@ -2,9 +2,9 @@
 key: CCSC-10
 permalink: /papers/CCSC-10/
 short_name: CCSC '10
-title: Connecting High-Level Programming Constructs to Assembly Language Using Frances
+title: "Connecting high-level programming constructs to assembly language using Frances: tutorial presentation"
 bib: |
-  @article{pokorny2010connecting,
+  @article{PokornySondagRajan2010,
     author = {Pokorny, Kian L. and Sondag, Tyler and Rajan, Hridesh},
     title = {Connecting high-level programming constructs to assembly language using Frances: tutorial presentation},
     journal = {J. Comput. Small Coll.},

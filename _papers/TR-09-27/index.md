@@ -4,7 +4,7 @@ permalink: /papers/TR-09-27/
 short_name: TR-09-27
 title: A Quantitative Cost/Benefit Analysis for Dynamic Updating
 bib:  |
-  @techreport{gharaibeh2009quantitative,
+  @techreport{GharaibehRajanChang2009,
     title = {A quantitative cost/benefit analysis for dynamic updating},
     author = {Gharaibeh, Bashar and Rajan, Hridesh and Chang, J Morris},
     year = {2009},

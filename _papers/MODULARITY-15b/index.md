@@ -4,7 +4,7 @@ permalink: /papers/MODULARITY-15b/
 short_name: Modularity '15
 title: Modular Reasoning in the Presence of Event Subtyping
 bib: |
-  @inproceedings{bagherzadeh2015modular-b,
+  @inproceedings{BagherzadehETAL2015,
     author = {Mehdi Bagherzadeh and Robert Dyer and Rex D. Fernando and Jose Sanchez and Hridesh Rajan},
     title = {Modular Reasoning in the Presence of Event Subtyping},
     booktitle = {Modularity'15: 14th International Conference on Modularity},

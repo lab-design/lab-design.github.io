@@ -4,7 +4,7 @@ permalink: /papers/ICSE-2005/
 short_name: ICSE '05
 title: "Classpects: Unifying Aspect- and Object-Oriented Language Design"
 bib: |
-  @inproceedings{rajan2005classpects,
+  @inproceedings{RajanSullivan2005b,
     author = {Hridesh Rajan and Kevin J. Sullivan},
     title = {Classpects: Unifying Aspect- and Object-Oriented Language Design},
     booktitle = {ICSE '05: Proceedings of the 27th International Conference on Software Engineering},

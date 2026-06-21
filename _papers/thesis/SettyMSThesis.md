@@ -4,7 +4,7 @@ permalink: /papers/thesis/SettyMSThesis.html
 short_name: Setty MS Thesis
 title: On the test-driven development of emerging modularization mechanisms
 bib:  |
-  @mastersthesis{setty2008test,
+  @mastersthesis{Setty2008,
     title = {On the test-driven development of emerging modularization mechanisms},
     author = {Setty, Rakesh},
     year = {2008},

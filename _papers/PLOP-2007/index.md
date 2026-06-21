@@ -4,7 +4,7 @@ permalink: /papers/PLOP-2007/
 short_name: PLoP '07
 title: Design Pattern Implementations in Eos
 bib: |
-  @inproceedings{rajan2007design-b,
+  @inproceedings{Rajan2007a,
     author = {Hridesh Rajan},
     title = {Design Pattern Implementations in Eos},
     booktitle = {PLoP '07, Conference on Pattern Languages of Programs},

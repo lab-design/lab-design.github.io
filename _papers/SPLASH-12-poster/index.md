@@ -4,7 +4,7 @@ permalink: /papers/SPLASH-12-poster/
 short_name: SPLASH '12 (Poster)
 title: "Boa: Analyzing Ultra-Large-Scale Code Corpus"
 bib: |
-  @inproceedings{dyer2012boa,
+  @inproceedings{DyerNguyenRajanNguyen2012,
     author = {Robert Dyer and Hoan Nguyen and Hridesh Rajan and Tien Nguyen},
     title = {Boa: Analyzing Ultra-Large-Scale Code Corpus},
     booktitle = {SPLASH 2012},

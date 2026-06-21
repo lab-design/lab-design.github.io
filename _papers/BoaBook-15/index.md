@@ -4,7 +4,7 @@ permalink: /papers/BoaBook-15/
 short_name: BoaBook '15
 title: "Boa: an Enabling Language and Infrastructure for Ultra-large Scale MSR Studies"
 bib: |
-  @incollection{Dyer2015boa-c,
+  @incollection{DyerNguyenRajanNguyen2015a,
     author = {Dyer, Robert and Nguyen, Hoan Anh and Rajan, Hridesh and Nguyen, Tien N.},
     title = {Boa: an Enabling Language and Infrastructure for Ultra-large Scale MSR Studies},
     editor = {Bird, Christian and Menzies, Tim and Zimmermann, Thomas},

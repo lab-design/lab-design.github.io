@@ -4,7 +4,7 @@ permalink: /papers/ASE-13/
 short_name: ASE '13
 title: A Study of Repetitiveness of Code Changes in Software Evolution
 bib: |
-  @inproceedings{nguyen2013study,
+  @inproceedings{NguyenETAL2013,
     author = {Hoan Anh Nguyen and Anh Tuan Nguyen and Tung Thanh Nguyen and Tien N. Nguyen and Hridesh Rajan},
     title = {A Study of Repetitiveness of Code Changes in Software Evolution},
     booktitle = {Proceedings of the 28th International Conference on Automated Software Engineering},

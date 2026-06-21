@@ -4,7 +4,7 @@ permalink: /papers/TOMC-16/
 short_name: TOMC '16
 title: Modular Reasoning in the Presence of Event Subtyping
 bib: |
-  @article{bagherzadeh2016modular,
+  @article{BagherzadehDyerFernandoSa2016,
     title = {Modular reasoning in the presence of event subtyping},
     author = {Bagherzadeh, Mehdi and Dyer, Robert and Fernando, Rex D and S{\'a}nchez, Jos{\'e} and Rajan, Hridesh},
     booktitle = {Transactions on Modularity and Composition I},

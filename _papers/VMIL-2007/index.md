@@ -4,7 +4,7 @@ permalink: /papers/VMIL-2007/
 short_name: VMIL '07
 title: A Case for Explicit Join Point Models for Aspect-oriented Intermediate Languages
 bib: |
-  @inproceedings{rajan2007case,
+  @inproceedings{Rajan2007c,
     author = {Hridesh Rajan},
     title = {A case for explicit join point models for aspect-oriented intermediate languages},
     booktitle = {VMIL '07: Proceedings of the 1st workshop on Virtual machines and intermediate languages for emerging modularization mechanisms},

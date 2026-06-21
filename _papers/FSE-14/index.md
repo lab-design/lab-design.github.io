@@ -4,7 +4,7 @@ permalink: /papers/FSE-14/
 short_name: FSE '14
 title: Mining Preconditions of APIs in Large-scale Code Corpus
 bib: |
-  @inproceedings{nguyen2014mining,
+  @inproceedings{NguyenDyerNguyenRajan2014,
     author = {Nguyen, Hoan Anh and Dyer, Robert and Nguyen, Tien N. and Rajan, Hridesh},
     title = {Mining Preconditions of {API}s in Large-scale Code Corpus},
     booktitle = {FSE`14: 22nd International Symposium on Foundations of Software Engineering},

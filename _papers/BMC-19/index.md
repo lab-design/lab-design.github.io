@@ -4,7 +4,7 @@ permalink: /papers/BMC-19/
 short_name: BMC Bioinformatics '19
 title: Shared Data Science Infrastructure for Genomics Data
 bib: |
-  @article{Bagheri2019,
+  @article{BagheriETAL2019,
     author = {Hamid Bagheri and Usha Muppirala and Rick E. Masonbrink and Andrew J. Severin and Hridesh Rajan },
     title = {Shared data science infrastructure for genomics data},
     journal = {BMC Bioinformatics},

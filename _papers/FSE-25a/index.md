@@ -4,7 +4,7 @@ permalink: /papers/FSE-25a/
 short_name: FSE '25
 title: "IRepair: An Intent-Aware Approach to Repair Data-Driven Errors in Large Language Models"
 bib: |
-  @inproceedings{imtiaz2025irepair,
+  @inproceedings{ImtiazSinghBatoleRajan2025,
     author = {Sayem Mohammad Imtiaz and Astha Singh and Fraol Batole and Hridesh Rajan},
     title = {IRepair: An Intent-Aware Approach to Repair Data-Driven Errors in Large Language Models},
     booktitle = {FSE'2025: The ACM International Conference on the Foundations of Software Engineering},

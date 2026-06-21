@@ -4,7 +4,7 @@ permalink: /papers/TR-09-17/
 short_name: TR-09-17
 title: Behavioral Automata Composition for Automatic Topology Independent Verification of Parameterized Systems
 bib:  |
-  @techreport{hanna2009behavioral-a,
+  @techreport{HannaBasuRajan2009b,
     author = {Hanna, Youssef and Basu, Samik and Rajan, Hridesh},
     title = {Behavioral Automata Composition for Automatic Topology Independent Verification of Parameterized Systems},
     year = {2009},
