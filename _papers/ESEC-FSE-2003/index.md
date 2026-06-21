@@ -5,27 +5,23 @@ short_name: ESEC/FSE '03
 title: "Eos: Instance-Level Aspects for Integrated System Design"
 bib: |
   @inproceedings{RajanSullivan2003,
-    author = {Hridesh Rajan and Kevin Sullivan},
-    title = {Eos: instance-level aspects for integrated system design},
-    booktitle = {ESEC/FSE-11: Proceedings of the 9th European software engineering conference held jointly with 11th ACM SIGSOFT international symposium on Foundations of software engineering},
+    author = {Hridesh Rajan and Kevin J. Sullivan},
+    title = {Eos: Instance-Level Aspects for Integrated System Design},
+    booktitle = {Proceedings of the 11th {ACM} {SIGSOFT} Symposium on Foundations of Software Engineering 2003 held jointly with 9th European Software Engineering Conference, {ESEC/FSE} 2003, Helsinki, Finland, September 1-5, 2003},
+    pages = {291--306},
     year = {2003},
-    isbn = {1-58113-743-5},
-    pages = {297--306},
-    location = {Helsinki, Finland},
-    doi = {http://doi.acm.org/10.1145/940071.940111},
-    publisher = {ACM Press},
-    address = {New York, NY, USA},
-    entrysubtype = {conference},
+    publisher = {{ACM}},
+    editor = {Jukka Paakki and Paola Inverardi},
+    doi = {10.1145/940071.940111},
     abstract = {
-      This paper makes two contributions: a generalization of AspectJ-like languages
-      with first-class aspect instances and instance-level advising, and a mapping
-      of the mediator style for integrated system design into this space. We present
-      Eos as a prototype language design and implementation. It extends C# with
-      AspectJ-like constructs, first-class aspect instances and instance-level
-      advising. These features enable a direct mapping of mediators to aspect
-      instances, with modularity improved, insofar as components need not declare,
-      announce, or register for events.
-    }
+    This paper makes two contributions: a generalization of AspectJ-like languages
+    with first-class aspect instances and instance-level advising, and a mapping
+    of the mediator style for integrated system design into this space. We present
+    Eos as a prototype language design and implementation. It extends C# with
+    AspectJ-like constructs, first-class aspect instances and instance-level
+    advising. These features enable a direct mapping of mediators to aspect
+    instances, with modularity improved, insofar as components need not declare,
+    announce, or register for events.},
   }
 kind: conference
 download_link: esecfse.pdf

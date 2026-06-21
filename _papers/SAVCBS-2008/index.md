@@ -1,4 +1,4 @@
-—--
+---
 key: SAVCBS-2008
 permalink: /papers/SAVCBS-2008/
 short_name: SAVCBS '08
