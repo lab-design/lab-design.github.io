@@ -14,6 +14,7 @@ bib: |
     editor = {Goetz Botterweck and Stan Jarzabek and Tomoji Kishi and Jaejoon Lee and Steve Livengood},
   }
 kind: conference
+download_link: https://cse.unl.edu/~rdyer/papers/acom10.pdf
 publication_year: 2010
 tags:
   - spl
