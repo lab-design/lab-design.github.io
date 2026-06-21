@@ -3,7 +3,7 @@
 
 {% assign topvenue = site.papers | where_exp: "p", "p.key contains 'ICSE-' or p.key contains 'FSE-' or p.key contains 'ASE-' or p.key contains 'ISSTA-'" %}
 {% assign recent = topvenue | sort: "publication_year" | reverse %}
-{% for paper in recent limit: 15 %}
+{% for paper in recent limit: 16 %}
   {% include home_page/highlighted_paper_card.html paper=paper %}
 {% endfor %}
 
