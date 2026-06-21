@@ -8,8 +8,8 @@
 {% assign _tag = include.paper.tags | first %}
 {% assign _k = include.paper.key %}
 {% assign _aiboa = "ASE-23,ESEC-FSE-21,ESEC-FSE-22,ICSE-20a,ICSE-21,ICSE-24b,TOSEM-24,TSE-26" | split: "," %}
-{% assign _aikeys = "ICLR-22" | split: "," %}
-{% assign _modkeys = "AOPLE-06,AOSD-14,SAVCBS-2008" | split: "," %}
+{% assign _aikeys = "ICLR-22,ICSME-25" | split: "," %}
+{% assign _modkeys = "AOPLE-06,AOSD-14,SAVCBS-2008,ISoLA-16,SPLC-10" | split: "," %}
 {% assign _modtags = "ptolemy,panini,nu,eos,sapha,tisa,slede,osiris,frances,golok" | split: "," %}
 {% if _aikeys contains _k or _tag == "d4" or _tag == "mdl" %}{% assign thrust_class = "thrust-ai" %}
 {% elsif _tag == "boa" %}{% if _aiboa contains _k %}{% assign thrust_class = "thrust-ai" %}{% else %}{% assign thrust_class = "thrust-scale" %}{% endif %}

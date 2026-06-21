@@ -29,12 +29,14 @@ By: {{ author | strip_html }}
 <br />
 {% endif %}
 
+{% if page.bib contains "abstract =" %}
 <h4>Abstract</h4>
 <p>
   {% bibtex --style /_citation_styles/abstract.csl %}
   {{page.bib}}
   {% endbibtex %}
 </p>
+{% endif %}
 
 {% assign maybe_content = content | strip_newlines %}
 {% if maybe_content != "" %}
