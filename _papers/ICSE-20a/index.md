@@ -11,6 +11,7 @@ bib: |
     location = {Seoul, South Korea},
     month = {May 23-May 29, 2020},
     year = {2020},
+    doi = {10.1145/3377811.3380378},
     entrysubtype = {conference},
     abstract = {
       Significant interest in applying Deep Neural Network (DNN)

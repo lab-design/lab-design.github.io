@@ -11,6 +11,8 @@ bib: |
     series = {ESEC/FSE 2019},
     month = {August},
     year = {2019},
+    pages = {510--520},
+    doi = {10.1145/3338906.3338955},
     entrysubtype = {conference},
     abstract = {
       Deep learning has gained substantial popularity in recent years.

@@ -7,10 +7,12 @@ bib: |
   @inproceedings{WardatLeRajan2021,
     author = {Mohammad Wardat and Wei Le and Hridesh Rajan},
     title = {DeepLocalize: Fault Localization for Deep Neural Networks},
-    booktitle = {ICSE'21: The 43nd International Conference on Software Engineering},
+    booktitle = {ICSE'21: The 43rd International Conference on Software Engineering},
     location = {Virtual Conference},
     month = {May 23-May 29, 2021},
     year = {2021},
+    pages = {251--262},
+    doi = {10.1109/ICSE43902.2021.00034},
     entrysubtype = {conference},
     abstract = {
       Deep neural networks (DNNs) are becoming an integral part of most
