@@ -8,4 +8,4 @@ DeepLocalize, presented at the 43rd International Conference on Software Enginee
 
 On benchmark models seeded with known bugs, DeepLocalize located faults earlier techniques had missed, and it did so with an explanation a developer can act on. By treating a learning model as something a software engineer can inspect, the work opened a line of research in our lab on making deep learning dependable.
 
-This work is part of our research on [Modular and Dependable AI](/research/#modular-and-dependable-ai). The full paper is available [here](https://lab-design.github.io/papers/ICSE-21/).
+This work is part of our research on [Modular and Dependable AI](/research/#modular-and-dependable-ai). For the wider story see [our overview of debugging deep learning](/news/2025/10/15/why-deep-learning-needs-debugging-tools/). The full paper is available [here](https://lab-design.github.io/papers/ICSE-21/).

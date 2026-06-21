@@ -8,4 +8,4 @@ Reinforcement learning trains agents for tasks such as driving a vehicle or cont
 
 The result lets a team judge how well its tests would detect the faults that matter in reinforcement learning, rather than artificial ones. It is part of our lab's work on making AI-enabled systems dependable.
 
-This work is part of [Modular and Dependable AI](/research/#modular-and-dependable-ai). The full paper is available [here](https://lab-design.github.io/papers/ICSE-25a/).
+This work is part of [Modular and Dependable AI](/research/#modular-and-dependable-ai). For the wider story see [our overview of debugging deep learning](/news/2025/10/15/why-deep-learning-needs-debugging-tools/). The full paper is available [here](https://lab-design.github.io/papers/ICSE-25a/).

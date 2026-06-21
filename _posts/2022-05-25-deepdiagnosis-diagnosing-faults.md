@@ -8,4 +8,4 @@ DeepDiagnosis, presented at the 44th International Conference on Software Engine
 
 We evaluated DeepDiagnosis on 444 models, 53 drawn from GitHub and Stack Overflow and 391 from the AUTOTRAINER benchmark. It diagnosed faults more accurately than earlier tools such as UMLAUT and our own DeepLocalize, and it did so for kinds of model those tools could not handle. It also localized faults faster than AUTOTRAINER. DeepDiagnosis is part of a longer effort in our lab to give deep learning the actionable debugging support that ordinary software already has.
 
-This work is part of [Modular and Dependable AI](/research/#modular-and-dependable-ai). The full paper is available [here](https://lab-design.github.io/papers/ICSE-22c/).
+This work is part of [Modular and Dependable AI](/research/#modular-and-dependable-ai). For the wider story see [our overview of debugging deep learning](/news/2025/10/15/why-deep-learning-needs-debugging-tools/). The full paper is available [here](https://lab-design.github.io/papers/ICSE-22c/).

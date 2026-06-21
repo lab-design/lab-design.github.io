@@ -8,4 +8,4 @@ In this paper (ICSE 2020), Md Johirul Islam, Rangeet Pan, Giang Nguyen, and Hrid
 
 The study gives automated repair tools a map of the territory, a catalog of the fixes that matter and a sense of where automation would pay off first. It is part of our lab's work on making deep learning dependable.
 
-This work is part of [Modular and Dependable AI](/research/#modular-and-dependable-ai). The full paper is available [here](https://lab-design.github.io/papers/ICSE-20a/).
+This work is part of [Modular and Dependable AI](/research/#modular-and-dependable-ai). For the wider story see [our overview of debugging deep learning](/news/2025/10/15/why-deep-learning-needs-debugging-tools/). The full paper is available [here](https://lab-design.github.io/papers/ICSE-20a/).

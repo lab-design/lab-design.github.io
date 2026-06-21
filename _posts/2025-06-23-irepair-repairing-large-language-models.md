@@ -8,4 +8,4 @@ IRepair, presented at FSE 2025 by Sayem Mohammad Imtiaz, Astha Singh, Fraol Bato
 
 The work also found that errors concentrate in a small portion of a model, which is why a focused repair does better than adjusting everything at once. It is part of our lab's work on making AI-enabled systems dependable.
 
-This work is part of [Modular and Dependable AI](/research/#modular-and-dependable-ai). The full paper is available [here](https://lab-design.github.io/papers/FSE-25a/).
+This work is part of [Modular and Dependable AI](/research/#modular-and-dependable-ai). For the wider story see [our overview of debugging deep learning](/news/2025/10/15/why-deep-learning-needs-debugging-tools/). The full paper is available [here](https://lab-design.github.io/papers/FSE-25a/).
