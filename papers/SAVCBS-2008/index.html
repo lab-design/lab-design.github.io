@@ -7,15 +7,15 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="The Laboratory for Software Design at Tulane University researches programming languages, compilers, and software engineering for dependable software and AI.">
     <meta name="theme-color" content="#006747">
-    <meta property="og:title" content="On Scheduling Ring-All-Reduce Learning Jobs in Multi-Tenant GPU Clusters with Communication Contention">
+    <meta property="og:title" content="Model Programs for Preserving Composite Invariants">
     <meta property="og:description" content="Laboratory for Software Design at Tulane University, School of Science and Engineering.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://lab-design.github.io/papers/MobiHoc-22/">
+    <meta property="og:url" content="https://lab-design.github.io/papers/SAVCBS-2008/">
     <meta property="og:site_name" content="Laboratory for Software Design">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="On Scheduling Ring-All-Reduce Learning Jobs in Multi-Tenant GPU Clusters with Communication Contention">
+    <meta name="twitter:title" content="Model Programs for Preserving Composite Invariants">
     <meta name="twitter:description" content="Laboratory for Software Design at Tulane University, School of Science and Engineering.">
-    <link rel="canonical" href="https://lab-design.github.io/papers/MobiHoc-22/">
+    <link rel="canonical" href="https://lab-design.github.io/papers/SAVCBS-2008/">
     <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://lab-design.github.io/#hridesh","name":"Hridesh Rajan","jobTitle":"Dean of the School of Science and Engineering and Professor of Computer Science","affiliation":{"@type":"CollegeOrUniversity","name":"Tulane University"},"sameAs":["https://scholar.google.com/citations?user=aiFvpucAAAAJ","https://github.com/hridesh","https://www.linkedin.com/in/hrideshrajan/"]},{"@type":"Organization","@id":"https://lab-design.github.io/#lab","name":"Laboratory for Software Design","url":"https://lab-design.github.io/","parentOrganization":{"@type":"CollegeOrUniversity","name":"Tulane University School of Science and Engineering, Department of Computer Science"},"founder":{"@id":"https://lab-design.github.io/#hridesh"}},{"@type":"WebSite","url":"https://lab-design.github.io/","name":"Laboratory for Software Design","publisher":{"@id":"https://lab-design.github.io/#lab"}}]}</script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +23,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/design.css">
     <link rel="icon" href="/favicon.ico">
-    <title>On Scheduling Ring-All-Reduce Learning Jobs in Multi-Tenant GPU Clusters with Communication Contention | Laboratory for Software Design</title>
+    <title>Model Programs for Preserving Composite Invariants | Laboratory for Software Design</title>
   </head>
 
   <body>
@@ -62,19 +62,19 @@
   <br />
   <div class="row">
   <div class="col-12">
-    <h2 class="page-title">On Scheduling Ring-All-Reduce Learning Jobs in Multi-Tenant GPU Clusters with Communication Contention</h2>
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"ScholarlyArticle","name":"On Scheduling Ring-All-Reduce Learning Jobs in Multi-Tenant GPU Clusters with Communication Contention","headline":"On Scheduling Ring-All-Reduce Learning Jobs in Multi-Tenant GPU Clusters with Communication Contention","datePublished":"2022","author":{"@type":"Person","name":"Hridesh Rajan"},"isPartOf":{"@type":"Periodical","name":"MobiHoc '22"},"url":"https://lab-design.github.io/papers/MobiHoc-22/"}</script>
+    <h2 class="page-title">Model Programs for Preserving Composite Invariants</h2>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"ScholarlyArticle","name":"Model Programs for Preserving Composite Invariants","headline":"Model Programs for Preserving Composite Invariants","datePublished":"2008","author":{"@type":"Person","name":"Hridesh Rajan"},"isPartOf":{"@type":"Periodical","name":"SAVCBS '08"},"url":"https://lab-design.github.io/papers/SAVCBS-2008/"}</script>
 
 
 
 <h4>
 By: 
-Menglu Yu, Bo Ji, Hridesh Rajan, and Jia Liu
+Steve M. Shaner, Hridesh Rajan, and Gary T. Leavens
 
 </h4>
 
 
-<a href="MobiHoc22.pdf" class="icon">
+<a href="savcbs08.pdf" class="icon">
   <img src="/img/pdf_icon.svg"/ alt="PDF Download">
   <span>Download Paper</span>
 </a>
@@ -85,8 +85,14 @@ Menglu Yu, Bo Ji, Hridesh Rajan, and Jia Liu
 
 <h4>Abstract</h4>
 <p>
-  <span id="YuJiRajanLiu2022">
-        Powered by advances in deep learning (DL) techniques, machine learning and artificial intelligence have achieved astonishing successes. However, the rapidly growing needs for DL also led to communication- and resource-intensive distributed training jobs for large-scale DL training, which are typically deployed over GPU clusters. To sustain the ever-increasing demand for DL training, the so-called “ring-all-reduce” (RAR) technologies have recently emerged as a favorable computing architecture to efficiently process network communication and computation load in GPU clusters. The most salient feature of RAR is that it removes the need for dedicated parameter servers, thus alleviating the potential communication bottleneck. However, when multiple RAR-based DL training jobs are deployed over GPU clusters, communication bottlenecks could still occur due to contentions between DL training jobs.  So far, there remains a lack of theoretical understanding on how to design contention-aware resource scheduling algorithms for RAR-based DL training jobs, which motivates us to fill this gap in this work. Our main contributions are three-fold: i) We develop a new analytical model that characterizes both communication overhead related to the worker distribution of the job and communication contention related to the co-location of different jobs; ii) Based on the proposed analytical model, we formulate the problem as a non-convex integer program to minimize the makespan of all RAR-based DL training jobs. To address the unique structure in this problem that is not amenable for optimization algorithm design, we reformulate the problem into an integer linear program that enables provable approximation algorithm design called SJF-BCO (\ulSmallest \ulJob \ulFirst with \ulBalanced \ulContention and \ulOverhead); and iii) We conduct extensive experiments to show the superiority of SJF-BCO over existing schedulers. Collectively, our results contribute to the state-of-the-art of distributed GPU system optimization and algorithm design.</span>
+  <span id="ShanerRajanLeavens2008">
+    We describe a solution for the SAVCBS challenge problem: a technique for
+    specifying and verifying invariants for objects designed using the Composite
+    design pattern. The solution presents a grey-box speciﬁcation technique using
+    JML’s model program feature. We show that model program speciﬁcations function
+    as exemplars for capturing helper method calls in a way that preserves
+    modularity and encapsulation.
+  </span>
 </p>
 
 
@@ -95,20 +101,27 @@ Menglu Yu, Bo Ji, Hridesh Rajan, and Jia Liu
 
 <h4>ACM Reference</h4>
 <p>
-<span id="YuJiRajanLiu2022">Yu, M. et al. 2022. On Scheduling Ring-All-Reduce Learning Jobs in Multi-Tenant GPU Clusters with Communication Contention. <i>MobiHoc ’22: The Twenty-third International Symposium on Theory, Algorithmic Foundations, and Protocol Design for Mobile Networks and Mobile Computing, Seoul, Republic of Korea, October 17 - 20, 2022</i> (2022), 21–30.</span>
+<span id="ShanerRajanLeavens2008">Shaner, S.M. et al. 2008. Model Programs for Preserving Composite Invariants. <i>Seventh International Workshop on Specification and Verification of Component-Based Systems (SAVCBS 2008)</i> (2008), 95–100.</span>
 </p>
 
 <h4>BibTeX Reference</h4>
-<pre><code>@inproceedings{YuJiRajanLiu2022,
-  author = {Menglu Yu and Bo Ji and Hridesh Rajan and Jia Liu},
-  title = {On Scheduling Ring-All-Reduce Learning Jobs in Multi-Tenant GPU Clusters with Communication Contention},
-  booktitle = {MobiHoc '22: The Twenty-third International Symposium on Theory, Algorithmic Foundations, and Protocol Design for Mobile Networks and Mobile Computing, Seoul, Republic of Korea, October 17 - 20, 2022},
-  pages = {21--30},
-  year = {2022},
-  publisher = {{ACM}},
-  doi = {10.1145/3492866.3549716},
+<pre><code>@inproceedings{ShanerRajanLeavens2008,
+  title = {Model Programs for Preserving Composite Invariants},
+  author = {Shaner, Steve M and Rajan, Hridesh and Leavens, Gary T},
+  booktitle = {Seventh International Workshop on Specification and Verification of Component-Based Systems (SAVCBS 2008)},
+  pages = {95-100},
+  year = {2008},
+  numpages = {6},
+  institution = {Iowa State U., U. of Central Fl.},
+  entrysubtype = {workshop},
   abstract = {
-        Powered by advances in deep learning (DL) techniques, machine learning and artificial intelligence have achieved astonishing successes. However, the rapidly growing needs for DL also led to communication- and resource-intensive distributed training jobs for large-scale DL training, which are typically deployed over GPU clusters. To sustain the ever-increasing demand for DL training, the so-called ``ring-all-reduce'' (RAR) technologies have recently emerged as a favorable computing architecture to efficiently process network communication and computation load in GPU clusters. The most salient feature of RAR is that it removes the need for dedicated parameter servers, thus alleviating the potential communication bottleneck. However, when multiple RAR-based DL training jobs are deployed over GPU clusters, communication bottlenecks could still occur due to contentions between DL training jobs.  So far, there remains a lack of theoretical understanding on how to design contention-aware resource scheduling algorithms for RAR-based DL training jobs, which motivates us to fill this gap in this work. Our main contributions are three-fold: i) We develop a new analytical model that characterizes both communication overhead related to the worker distribution of the job and communication contention related to the co-location of different jobs; ii) Based on the proposed analytical model, we formulate the problem as a non-convex integer program to minimize the makespan of all RAR-based DL training jobs. To address the unique structure in this problem that is not amenable for optimization algorithm design, we reformulate the problem into an integer linear program that enables provable approximation algorithm design called SJF-BCO (\ul{S}mallest \ul{J}ob \ul{F}irst with \ul{B}alanced \ul{C}ontention and \ul{O}verhead); and iii) We conduct extensive experiments to show the superiority of SJF-BCO over existing schedulers. Collectively, our results contribute to the state-of-the-art of distributed GPU system optimization and algorithm design.},
+    We describe a solution for the SAVCBS challenge problem: a technique for
+    specifying and verifying invariants for objects designed using the Composite
+    design pattern. The solution presents a grey-box speciﬁcation technique using
+    JML’s model program feature. We show that model program speciﬁcations function
+    as exemplars for capturing helper method calls in a way that preserves
+    modularity and encapsulation.
+  }
 }
 </code></pre>
 

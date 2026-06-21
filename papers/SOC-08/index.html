@@ -7,13 +7,13 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="The Laboratory for Software Design at Tulane University researches programming languages, compilers, and software engineering for dependable software and AI.">
     <meta name="theme-color" content="#006747">
-    <meta property="og:title" content="Tisa: Towards Trustworthy Services in a Service-oriented Architecture">
+    <meta property="og:title" content="Tisa: Toward Trustworthy Services in a Service-Oriented Architecture">
     <meta property="og:description" content="Laboratory for Software Design at Tulane University, School of Science and Engineering.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://lab-design.github.io/papers/SOC-08/">
     <meta property="og:site_name" content="Laboratory for Software Design">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Tisa: Towards Trustworthy Services in a Service-oriented Architecture">
+    <meta name="twitter:title" content="Tisa: Toward Trustworthy Services in a Service-Oriented Architecture">
     <meta name="twitter:description" content="Laboratory for Software Design at Tulane University, School of Science and Engineering.">
     <link rel="canonical" href="https://lab-design.github.io/papers/SOC-08/">
     <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://lab-design.github.io/#hridesh","name":"Hridesh Rajan","jobTitle":"Dean of the School of Science and Engineering and Professor of Computer Science","affiliation":{"@type":"CollegeOrUniversity","name":"Tulane University"},"sameAs":["https://scholar.google.com/citations?user=aiFvpucAAAAJ","https://github.com/hridesh","https://www.linkedin.com/in/hrideshrajan/"]},{"@type":"Organization","@id":"https://lab-design.github.io/#lab","name":"Laboratory for Software Design","url":"https://lab-design.github.io/","parentOrganization":{"@type":"CollegeOrUniversity","name":"Tulane University School of Science and Engineering, Department of Computer Science"},"founder":{"@id":"https://lab-design.github.io/#hridesh"}},{"@type":"WebSite","url":"https://lab-design.github.io/","name":"Laboratory for Software Design","publisher":{"@id":"https://lab-design.github.io/#lab"}}]}</script>
@@ -23,7 +23,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/design.css">
     <link rel="icon" href="/favicon.ico">
-    <title>Tisa: Towards Trustworthy Services in a Service-oriented Architecture | Laboratory for Software Design</title>
+    <title>Tisa: Toward Trustworthy Services in a Service-Oriented Architecture | Laboratory for Software Design</title>
   </head>
 
   <body>
@@ -62,8 +62,8 @@
   <br />
   <div class="row">
   <div class="col-12">
-    <h2 class="page-title">Tisa: Towards Trustworthy Services in a Service-oriented Architecture</h2>
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"ScholarlyArticle","name":"Tisa: Towards Trustworthy Services in a Service-oriented Architecture","headline":"Tisa: Towards Trustworthy Services in a Service-oriented Architecture","datePublished":"2008","author":{"@type":"Person","name":"Hridesh Rajan"},"isPartOf":{"@type":"Periodical","name":"IEEE SOC '08"},"url":"https://lab-design.github.io/papers/SOC-08/"}</script>
+    <h2 class="page-title">Tisa: Toward Trustworthy Services in a Service-Oriented Architecture</h2>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"ScholarlyArticle","name":"Tisa: Toward Trustworthy Services in a Service-Oriented Architecture","headline":"Tisa: Toward Trustworthy Services in a Service-Oriented Architecture","datePublished":"2008","author":{"@type":"Person","name":"Hridesh Rajan"},"isPartOf":{"@type":"Periodical","name":"IEEE SOC '08"},"url":"https://lab-design.github.io/papers/SOC-08/"}</script>
 
 
 
@@ -86,31 +86,30 @@ Hridesh Rajan and Mahantesh Hosamani
 <h4>Abstract</h4>
 <p>
   <span id="RajanHosamani2008">
-    Verifying whether a service implementation is conforming to its service-level
-    agreements is important to inspire confidence in services in a
-    service-oriented architecture. A part of these agreements, in particular those
-    that are functional in nature, can be checked by observing the published
-    interface of the service, but other agreements that are more non-functional in
-    nature, are often verified by deploying a monitor that observes the execution
-    of the service implementation.
+  Verifying whether a service implementation is conforming to its service-level
+  agreements is important to inspire confidence in services in a
+  service-oriented architecture. A part of these agreements, in particular those
+  that are functional in nature, can be checked by observing the published
+  interface of the service, but other agreements that are more non-functional in
+  nature, are often verified by deploying a monitor that observes the execution
+  of the service implementation.
 
-    A key problem is that such a monitor must execute in an untrusted environment
-    (at the service provider’s site). Thus, integrity of the results reported by
-    such a monitor crucially depends on its integrity.
+  A key problem is that such a monitor must execute in an untrusted environment
+  (at the service provider’s site). Thus, integrity of the results reported by
+  such a monitor crucially depends on its integrity.
 
-    The key technical contribution of this article is an extension of the
-    traditional notion of a service-oriented architecture that allows clients,
-    brokers and providers to negotiate and validate the integrity of a
-    requirements monitor. We describe an approach, based on hardware-based root of
-    trust, for verifying the integrity of a requirements monitor executing in an
-    untrusted environment. We make two basic claims: first, that it is feasible to
-    realize our approach using existing hardware and software solutions, and
-    second, that integrity verification can be done at a relatively small
-    overhead. To evaluate our feasibility claim, we present a realization of our
-    approach using a commercial requirements monitor. To measure overhead, we have
-    conducted a case study using a collection of web service implementations
-    available with Apache Axis implementation.
-  </span>
+  The key technical contribution of this article is an extension of the
+  traditional notion of a service-oriented architecture that allows clients,
+  brokers and providers to negotiate and validate the integrity of a
+  requirements monitor. We describe an approach, based on hardware-based root of
+  trust, for verifying the integrity of a requirements monitor executing in an
+  untrusted environment. We make two basic claims: first, that it is feasible to
+  realize our approach using existing hardware and software solutions, and
+  second, that integrity verification can be done at a relatively small
+  overhead. To evaluate our feasibility claim, we present a realization of our
+  approach using a commercial requirements monitor. To measure overhead, we have
+  conducted a case study using a collection of web service implementations
+  available with Apache Axis implementation.</span>
 </p>
 
 
@@ -119,45 +118,44 @@ Hridesh Rajan and Mahantesh Hosamani
 
 <h4>ACM Reference</h4>
 <p>
-<span id="RajanHosamani2008">Rajan, H. and Hosamani, M. 2008. Tisa: Towards Trustworthy Services in a Service-oriented Architecture. <i>IEEE Transactions on Services Computing (SOC)</i>. 1, (2008).</span>
+<span id="RajanHosamani2008">Rajan, H. and Hosamani, M. 2008. Tisa: Toward Trustworthy Services in a Service-Oriented Architecture. <i>IEEE Trans. Serv. Comput.</i> 1, 4 (2008), 201–213. https://doi.org/10.1109/TSC.2008.18.</span>
 </p>
 
 <h4>BibTeX Reference</h4>
 <pre><code>@article{RajanHosamani2008,
   author = {Hridesh Rajan and Mahantesh Hosamani},
-  title = {Tisa: Towards Trustworthy Services in a Service-oriented Architecture},
-  journal = {IEEE Transactions on Services Computing (SOC)},
+  title = {Tisa: Toward Trustworthy Services in a Service-Oriented Architecture},
+  journal = {{IEEE} Trans. Serv. Comput.},
   volume = {1},
-  number = {},
+  number = {4},
+  pages = {201--213},
   year = {2008},
-  publisher = {IEEE Computer Society},
-  address = {Washington, DC, USA},
+  doi = {10.1109/TSC.2008.18},
   abstract = {
-    Verifying whether a service implementation is conforming to its service-level
-    agreements is important to inspire confidence in services in a
-    service-oriented architecture. A part of these agreements, in particular those
-    that are functional in nature, can be checked by observing the published
-    interface of the service, but other agreements that are more non-functional in
-    nature, are often verified by deploying a monitor that observes the execution
-    of the service implementation.
+  Verifying whether a service implementation is conforming to its service-level
+  agreements is important to inspire confidence in services in a
+  service-oriented architecture. A part of these agreements, in particular those
+  that are functional in nature, can be checked by observing the published
+  interface of the service, but other agreements that are more non-functional in
+  nature, are often verified by deploying a monitor that observes the execution
+  of the service implementation.
 
-    A key problem is that such a monitor must execute in an untrusted environment
-    (at the service provider's site). Thus, integrity of the results reported by
-    such a monitor crucially depends on its integrity.
+  A key problem is that such a monitor must execute in an untrusted environment
+  (at the service provider's site). Thus, integrity of the results reported by
+  such a monitor crucially depends on its integrity.
 
-    The key technical contribution of this article is an extension of the
-    traditional notion of a service-oriented architecture that allows clients,
-    brokers and providers to negotiate and validate the integrity of a
-    requirements monitor. We describe an approach, based on hardware-based root of
-    trust, for verifying the integrity of a requirements monitor executing in an
-    untrusted environment. We make two basic claims: first, that it is feasible to
-    realize our approach using existing hardware and software solutions, and
-    second, that integrity verification can be done at a relatively small
-    overhead. To evaluate our feasibility claim, we present a realization of our
-    approach using a commercial requirements monitor. To measure overhead, we have
-    conducted a case study using a collection of web service implementations
-    available with Apache Axis implementation.
-  }
+  The key technical contribution of this article is an extension of the
+  traditional notion of a service-oriented architecture that allows clients,
+  brokers and providers to negotiate and validate the integrity of a
+  requirements monitor. We describe an approach, based on hardware-based root of
+  trust, for verifying the integrity of a requirements monitor executing in an
+  untrusted environment. We make two basic claims: first, that it is feasible to
+  realize our approach using existing hardware and software solutions, and
+  second, that integrity verification can be done at a relatively small
+  overhead. To evaluate our feasibility claim, we present a realization of our
+  approach using a commercial requirements monitor. To measure overhead, we have
+  conducted a case study using a collection of web service implementations
+  available with Apache Axis implementation.},
 }
 </code></pre>
 
