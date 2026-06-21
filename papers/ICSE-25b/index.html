@@ -69,7 +69,7 @@
 
 <h4>
 By: 
-Fraol Batole, David OBrien, Tien N. Nguyen, Robert Dyer, and Hridesh Rajan
+Fraol Batole, David O’Brien, Tien N. Nguyen, Robert Dyer, and Hridesh Rajan
 
 </h4>
 
@@ -85,8 +85,7 @@ Fraol Batole, David OBrien, Tien N. Nguyen, Robert Dyer, and Hridesh Rajan
 
 <h4>Abstract</h4>
 <p>
-  <span id="BatoleETAL2025">Maintaining software design quality is crucial for the long-term maintainability and evolution of systems. However, design issues such as poor modularity and excessive complexity often emerge as codebases grow. Developers rely on external tools, such as program analysis techniques, to identify such issues. This work leverages Large Language Models (LLMs) to develop an automated approach for analyzing and localizing design issues. Large language models have demonstrated significant performance on coding tasks, but directly leveraging them for design issue localization is challenging. Large codebases exceed typical LLM context windows, and program analysis tool outputs in non-textual modalities (e.g., graphs or interactive visualizations) are incompatible with LLMs’ natural language inputs. To address these challenges, we propose LOCALIZEAGENT, a novel multi-agent framework for effective design issue localization. LOCALIZEAGENT integrates the specialized agents that (1) analyze code to identify potential code design issues, (2) transform program analysis outputs into abstraction-aware LLM-friendly natural language summaries, (3) generate context-aware prompts tailored to specific refactoring types, and (4) leverage LLMs to locate and rank the localized issues based on their relevance. Our evaluation using diverse real-world codebases demonstrates significant improvements over the baseline approaches, with LOCALIZEAGENT achieving 138%, 166%, and 206% relative improvements in exact-match accuracy for localizing information hiding, complexity, and modularity issues, respectively.
-  </span>
+  <span id="BatoleETAL2025">Maintaining software design quality is crucial for the long-term maintainability and evolution of systems. However, design issues such as poor modularity and excessive complexity often emerge as codebases grow. Developers rely on external tools, such as program analysis techniques, to identify such issues. This work leverages Large Language Models (LLMs) to develop an automated approach for analyzing and localizing design issues. Large language models have demonstrated significant performance on coding tasks, but directly leveraging them for design issue localization is challenging. Large codebases exceed typical LLM context windows, and program analysis tool outputs in non-textual modalities (e.g., graphs or interactive visualizations) are incompatible with LLMs’ natural language inputs. To address these challenges, we propose LOCALIZEAGENT, a novel multi-agent framework for effective design issue localization. LOCALIZEAGENT integrates the specialized agents that (1) analyze code to identify potential code design issues, (2) transform program analysis outputs into abstraction-aware LLM-friendly natural language summaries, (3) generate context-aware prompts tailored to specific refactoring types, and (4) leverage LLMs to locate and rank the localized issues based on their relevance. Our evaluation using diverse real-world codebases demonstrates significant improvements over the baseline approaches, with LOCALIZEAGENT achieving 138%, 166%, and 206% relative improvements in exact-match accuracy for localizing information hiding, complexity, and modularity issues, respectively.</span>
 </p>
 
 
@@ -95,20 +94,19 @@ Fraol Batole, David OBrien, Tien N. Nguyen, Robert Dyer, and Hridesh Rajan
 
 <h4>ACM Reference</h4>
 <p>
-<span id="BatoleETAL2025">Batole, F. et al. 2025. An LLM-Based Agent-Oriented Approach for Automated Code Design Issue Localization. <i>ICSE’2025: The 47th International Conference on Software Engineering</i> (Apr. 2025).</span>
+<span id="BatoleETAL2025">Batole, F. et al. 2025. An LLM-Based Agent-Oriented Approach for Automated Code Design Issue Localization. <i>47th IEEE/ACM International Conference on Software Engineering, ICSE 2025, Ottawa, ON, Canada, April 26 - May 6, 2025</i> (2025), 1320–1332.</span>
 </p>
 
 <h4>BibTeX Reference</h4>
 <pre><code>@inproceedings{BatoleETAL2025,
-  author = {Fraol Batole and David OBrien and Tien N. Nguyen and Robert Dyer and Hridesh Rajan},
+  author = {Fraol Batole and David O'Brien and Tien N. Nguyen and Robert Dyer and Hridesh Rajan},
   title = {An LLM-Based Agent-Oriented Approach for Automated Code Design Issue Localization},
-  booktitle = {ICSE'2025: The 47th International Conference on Software Engineering},
-  location = {Ottawa, Canada},
-  month = {April 27-May 3},
+  booktitle = {47th {IEEE/ACM} International Conference on Software Engineering, {ICSE} 2025, Ottawa, ON, Canada, April 26 - May 6, 2025},
+  pages = {1320--1332},
   year = {2025},
-  entrysubtype = {conference},
-  abstract = {Maintaining software design quality is crucial for the long-term maintainability and evolution of systems. However, design issues such as poor modularity and excessive complexity often emerge as codebases grow. Developers rely on external tools, such as program analysis techniques, to identify such issues. This work leverages Large Language Models (LLMs) to develop an automated approach for analyzing and localizing design issues. Large language models have demonstrated significant performance on coding tasks, but directly leveraging them for design issue localization is challenging. Large codebases exceed typical LLM context windows, and program analysis tool outputs in non-textual modalities (e.g., graphs or interactive visualizations) are incompatible with LLMs’ natural language inputs. To address these challenges, we propose LOCALIZEAGENT, a novel multi-agent framework for effective design issue localization. LOCALIZEAGENT integrates the specialized agents that (1) analyze code to identify potential code design issues, (2) transform program analysis outputs into abstraction-aware LLM-friendly natural language summaries, (3) generate context-aware prompts tailored to specific refactoring types, and (4) leverage LLMs to locate and rank the localized issues based on their relevance. Our evaluation using diverse real-world codebases demonstrates significant improvements over the baseline approaches, with LOCALIZEAGENT achieving 138%, 166%, and 206% relative improvements in exact-match accuracy for localizing information hiding, complexity, and modularity issues, respectively.
-  }
+  publisher = {{IEEE}},
+  doi = {10.1109/ICSE55347.2025.00100},
+  abstract = {Maintaining software design quality is crucial for the long-term maintainability and evolution of systems. However, design issues such as poor modularity and excessive complexity often emerge as codebases grow. Developers rely on external tools, such as program analysis techniques, to identify such issues. This work leverages Large Language Models (LLMs) to develop an automated approach for analyzing and localizing design issues. Large language models have demonstrated significant performance on coding tasks, but directly leveraging them for design issue localization is challenging. Large codebases exceed typical LLM context windows, and program analysis tool outputs in non-textual modalities (e.g., graphs or interactive visualizations) are incompatible with LLMs’ natural language inputs. To address these challenges, we propose LOCALIZEAGENT, a novel multi-agent framework for effective design issue localization. LOCALIZEAGENT integrates the specialized agents that (1) analyze code to identify potential code design issues, (2) transform program analysis outputs into abstraction-aware LLM-friendly natural language summaries, (3) generate context-aware prompts tailored to specific refactoring types, and (4) leverage LLMs to locate and rank the localized issues based on their relevance. Our evaluation using diverse real-world codebases demonstrates significant improvements over the baseline approaches, with LOCALIZEAGENT achieving 138%, 166%, and 206% relative improvements in exact-match accuracy for localizing information hiding, complexity, and modularity issues, respectively.},
 }
 </code></pre>
 

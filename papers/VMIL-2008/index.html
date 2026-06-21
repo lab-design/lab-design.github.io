@@ -7,13 +7,13 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="The Laboratory for Software Design at Tulane University researches programming languages, compilers, and software engineering for dependable software and AI.">
     <meta name="theme-color" content="#006747">
-    <meta property="og:title" content="A decision tree-based approach to dynamic pointcut evaluation">
+    <meta property="og:title" content="A Decision Tree-based Approach to Dynamic Pointcut Evaluation">
     <meta property="og:description" content="Laboratory for Software Design at Tulane University, School of Science and Engineering.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://lab-design.github.io/papers/VMIL-2008/">
     <meta property="og:site_name" content="Laboratory for Software Design">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="A decision tree-based approach to dynamic pointcut evaluation">
+    <meta name="twitter:title" content="A Decision Tree-based Approach to Dynamic Pointcut Evaluation">
     <meta name="twitter:description" content="Laboratory for Software Design at Tulane University, School of Science and Engineering.">
     <link rel="canonical" href="https://lab-design.github.io/papers/VMIL-2008/">
     <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://lab-design.github.io/#hridesh","name":"Hridesh Rajan","jobTitle":"Dean of the School of Science and Engineering and Professor of Computer Science","affiliation":{"@type":"CollegeOrUniversity","name":"Tulane University"},"sameAs":["https://scholar.google.com/citations?user=aiFvpucAAAAJ","https://github.com/hridesh","https://www.linkedin.com/in/hrideshrajan/"]},{"@type":"Organization","@id":"https://lab-design.github.io/#lab","name":"Laboratory for Software Design","url":"https://lab-design.github.io/","parentOrganization":{"@type":"CollegeOrUniversity","name":"Tulane University School of Science and Engineering, Department of Computer Science"},"founder":{"@id":"https://lab-design.github.io/#hridesh"}},{"@type":"WebSite","url":"https://lab-design.github.io/","name":"Laboratory for Software Design","publisher":{"@id":"https://lab-design.github.io/#lab"}}]}</script>
@@ -23,7 +23,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/design.css">
     <link rel="icon" href="/favicon.ico">
-    <title>A decision tree-based approach to dynamic pointcut evaluation | Laboratory for Software Design</title>
+    <title>A Decision Tree-based Approach to Dynamic Pointcut Evaluation | Laboratory for Software Design</title>
   </head>
 
   <body>
@@ -62,8 +62,8 @@
   <br />
   <div class="row">
   <div class="col-12">
-    <h2 class="page-title">A decision tree-based approach to dynamic pointcut evaluation</h2>
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"ScholarlyArticle","name":"A decision tree-based approach to dynamic pointcut evaluation","headline":"A decision tree-based approach to dynamic pointcut evaluation","datePublished":"2008","author":{"@type":"Person","name":"Hridesh Rajan"},"isPartOf":{"@type":"Periodical","name":"VMIL '08"},"url":"https://lab-design.github.io/papers/VMIL-2008/"}</script>
+    <h2 class="page-title">A Decision Tree-based Approach to Dynamic Pointcut Evaluation</h2>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"ScholarlyArticle","name":"A Decision Tree-based Approach to Dynamic Pointcut Evaluation","headline":"A Decision Tree-based Approach to Dynamic Pointcut Evaluation","datePublished":"2008","author":{"@type":"Person","name":"Hridesh Rajan"},"isPartOf":{"@type":"Periodical","name":"VMIL '08"},"url":"https://lab-design.github.io/papers/VMIL-2008/"}</script>
 
 
 
@@ -86,25 +86,24 @@ Robert Dyer and Hridesh Rajan
 <h4>Abstract</h4>
 <p>
   <span id="DyerRajan2008b">
-    Constructs of dynamic nature, e.g., history-based pointcuts and control-flow
-    based pointcuts, have received significant attention in recent aspect-oriented
-    literature. A variety of compelling use cases are presented that motivate the
-    need for efficiently supporting such constructs in language implementations.
-    The key challenge in implementing dynamic constructs is to efficiently support
-    runtime adaptation of the set of intercepted join points at a fine-grained
-    level. This translates to two high-level requirements. First, since the set of
-    intercepted join points may change, such implementations must provide an
-    efficient method to determine this set membership, i.e., whether the currently
-    executing join point needs to be intercepted. Second, the frequency with which
-    such set membership needs to be determined must be minimized. In previous
-    work, Dyer and Rajan proposed a dedicated caching mechanism to address the
-    second requirement. In this work, we propose a mechanism to address the first
-    requirement. This requirement translates to efficiently evaluating whether a
-    join point is intercepted by a set of pointcut expressions. In the worst case,
-    at every join point there may be the need to determine whether it is
-    intercepted. Therefore, even modest savings in such mechanisms is likely to
-    translate to significant savings in the long run.
-  </span>
+  Constructs of dynamic nature, e.g., history-based pointcuts and control-flow
+  based pointcuts, have received significant attention in recent aspect-oriented
+  literature. A variety of compelling use cases are presented that motivate the
+  need for efficiently supporting such constructs in language implementations.
+  The key challenge in implementing dynamic constructs is to efficiently support
+  runtime adaptation of the set of intercepted join points at a fine-grained
+  level. This translates to two high-level requirements. First, since the set of
+  intercepted join points may change, such implementations must provide an
+  efficient method to determine this set membership, i.e., whether the currently
+  executing join point needs to be intercepted. Second, the frequency with which
+  such set membership needs to be determined must be minimized. In previous
+  work, Dyer and Rajan proposed a dedicated caching mechanism to address the
+  second requirement. In this work, we propose a mechanism to address the first
+  requirement. This requirement translates to efficiently evaluating whether a
+  join point is intercepted by a set of pointcut expressions. In the worst case,
+  at every join point there may be the need to determine whether it is
+  intercepted. Therefore, even modest savings in such mechanisms is likely to
+  translate to significant savings in the long run.</span>
 </p>
 
 
@@ -113,48 +112,38 @@ Robert Dyer and Hridesh Rajan
 
 <h4>ACM Reference</h4>
 <p>
-<span id="DyerRajan2008b">Dyer, R. and Rajan, H. 2008. A Decision Tree-based Approach to Dynamic Pointcut Evaluation. <i>Proceedings of the 2nd Workshop on Virtual Machines and Intermediate Languages for Emerging Modularization Mechanisms</i> (New York, NY, USA, 2008), 4:1–4:10.</span>
+<span id="DyerRajan2008b">Dyer, R. and Rajan, H. 2008. A Decision Tree-based Approach to Dynamic Pointcut Evaluation. <i>VMIL@OOPSLA 2008: Proceedings of the 2nd Workshop on Virtual Machines and Intermediate Languages for emerging modularization mechanisms, Nashville, Tennessee, USA, October 21 - 23, 2008</i> (2008), 4:1–4:10.</span>
 </p>
 
 <h4>BibTeX Reference</h4>
 <pre><code>@inproceedings{DyerRajan2008b,
-  author = {Dyer, Robert and Rajan, Hridesh},
+  author = {Robert Dyer and Hridesh Rajan},
   title = {A Decision Tree-based Approach to Dynamic Pointcut Evaluation},
-  booktitle = {Proceedings of the 2nd Workshop on Virtual Machines and Intermediate Languages for Emerging Modularization Mechanisms},
-  series = {VMIL '08},
-  year = {2008},
-  isbn = {978-1-60558-384-6},
-  location = {Nashville, Tennessee},
+  booktitle = {VMIL@OOPSLA 2008: Proceedings of the 2nd Workshop on Virtual Machines and Intermediate Languages for emerging modularization mechanisms, Nashville, Tennessee, USA, October 21 - 23, 2008},
   pages = {4:1--4:10},
-  articleno = {4},
-  numpages = {10},
-  url = {http://doi.acm.org/10.1145/1507504.1507508},
+  year = {2008},
+  publisher = {{ACM}},
+  editor = {Hridesh Rajan},
   doi = {10.1145/1507504.1507508},
-  acmid = {1507508},
-  publisher = {ACM},
-  address = {New York, NY, USA},
-  keywords = {decision tree, optimization, pointcut evaluation},
-  entrysubtype = {workshop},
   abstract = {
-    Constructs of dynamic nature, e.g., history-based pointcuts and control-flow
-    based pointcuts, have received significant attention in recent aspect-oriented
-    literature. A variety of compelling use cases are presented that motivate the
-    need for efficiently supporting such constructs in language implementations.
-    The key challenge in implementing dynamic constructs is to efficiently support
-    runtime adaptation of the set of intercepted join points at a fine-grained
-    level. This translates to two high-level requirements. First, since the set of
-    intercepted join points may change, such implementations must provide an
-    efficient method to determine this set membership, i.e., whether the currently
-    executing join point needs to be intercepted. Second, the frequency with which
-    such set membership needs to be determined must be minimized. In previous
-    work, Dyer and Rajan proposed a dedicated caching mechanism to address the
-    second requirement. In this work, we propose a mechanism to address the first
-    requirement. This requirement translates to efficiently evaluating whether a
-    join point is intercepted by a set of pointcut expressions. In the worst case,
-    at every join point there may be the need to determine whether it is
-    intercepted. Therefore, even modest savings in such mechanisms is likely to
-    translate to significant savings in the long run.
-  }
+  Constructs of dynamic nature, e.g., history-based pointcuts and control-flow
+  based pointcuts, have received significant attention in recent aspect-oriented
+  literature. A variety of compelling use cases are presented that motivate the
+  need for efficiently supporting such constructs in language implementations.
+  The key challenge in implementing dynamic constructs is to efficiently support
+  runtime adaptation of the set of intercepted join points at a fine-grained
+  level. This translates to two high-level requirements. First, since the set of
+  intercepted join points may change, such implementations must provide an
+  efficient method to determine this set membership, i.e., whether the currently
+  executing join point needs to be intercepted. Second, the frequency with which
+  such set membership needs to be determined must be minimized. In previous
+  work, Dyer and Rajan proposed a dedicated caching mechanism to address the
+  second requirement. In this work, we propose a mechanism to address the first
+  requirement. This requirement translates to efficiently evaluating whether a
+  join point is intercepted by a set of pointcut expressions. In the worst case,
+  at every join point there may be the need to determine whether it is
+  intercepted. Therefore, even modest savings in such mechanisms is likely to
+  translate to significant savings in the long run.},
 }
 </code></pre>
 

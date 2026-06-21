@@ -63,13 +63,13 @@
   <div class="row">
   <div class="col-12">
     <h2 class="page-title">Supporting dynamic aspect-oriented features</h2>
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"ScholarlyArticle","name":"Supporting dynamic aspect-oriented features","headline":"Supporting dynamic aspect-oriented features","datePublished":"2008","author":{"@type":"Person","name":"Hridesh Rajan"},"isPartOf":{"@type":"Periodical","name":"Dyer MS Thesis"},"url":"https://lab-design.github.io/papers/thesis/DyerMSThesis.html"}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"ScholarlyArticle","name":"Supporting dynamic aspect-oriented features","headline":"Supporting dynamic aspect-oriented features","datePublished":"2010","author":{"@type":"Person","name":"Hridesh Rajan"},"isPartOf":{"@type":"Periodical","name":"Dyer MS Thesis"},"url":"https://lab-design.github.io/papers/thesis/DyerMSThesis.html"}</script>
 
 
 
 <h4>
 By: 
-Robert Dyer
+Robert Dyer and Hridesh Rajan
 
 </h4>
 
@@ -86,28 +86,27 @@ Robert Dyer
 <h4>Abstract</h4>
 <p>
   <span id="Dyer2008">
-    Aspect-oriented programming techniques extend object-oriented programming with
-    new methods to modularize concerns that otherwise would be non-modular. For
-    example, logging concerns are typically scattered across a system but using
-    aspect-oriented techniques they can be localized into a single high-level
-    module. These techniques typically take modular high-level code and statically
-    transform it into non-modular intermediate code.
+  Aspect-oriented programming techniques extend object-oriented programming with
+  new methods to modularize concerns that otherwise would be non-modular. For
+  example, logging concerns are typically scattered across a system but using
+  aspect-oriented techniques they can be localized into a single high-level
+  module. These techniques typically take modular high-level code and statically
+  transform it into non-modular intermediate code.
 
-    The contribution of this work is the design and implementation of a flexible and
-    dynamic intermediate-language (IL) model. The main motivation for the design of
-    this IL model is to support a variety of dynamic aspect-oriented language
-    constructs that are proposed in recent literature such as CaeserJ’s deploy,
-    history-based pointcuts, and control flow constructs. Our IL model provides a
-    higher level of abstraction compared to traditional object-oriented ILs as a
-    compilation target for such constructs, which makes it easier to provide
-    efficient implementations of these constructs. We demonstrate these benefits by
-    providing an industrial strength implementation for our IL model, by showing
-    translation strategies from dynamic source-level constructs to our improved IL,
-    and by analyzing the performance of the resulting IL code. Our evaluation using
-    the SPEC JVM98 and Java Grande benchmarks shows that the overhead of supporting
-    a dynamic deployment model can be reduced to as little as  1.5%, when compared
-    to the unmodified VM.
-  </span>
+  The contribution of this work is the design and implementation of a flexible and
+  dynamic intermediate-language (IL) model. The main motivation for the design of
+  this IL model is to support a variety of dynamic aspect-oriented language
+  constructs that are proposed in recent literature such as CaeserJ’s deploy,
+  history-based pointcuts, and control flow constructs. Our IL model provides a
+  higher level of abstraction compared to traditional object-oriented ILs as a
+  compilation target for such constructs, which makes it easier to provide
+  efficient implementations of these constructs. We demonstrate these benefits by
+  providing an industrial strength implementation for our IL model, by showing
+  translation strategies from dynamic source-level constructs to our improved IL,
+  and by analyzing the performance of the resulting IL code. Our evaluation using
+  the SPEC JVM98 and Java Grande benchmarks shows that the overhead of supporting
+  a dynamic deployment model can be reduced to as little as  1.5%, when compared
+  to the unmodified VM.</span>
 </p>
 
 
@@ -116,38 +115,41 @@ Robert Dyer
 
 <h4>ACM Reference</h4>
 <p>
-<span id="Dyer2008">Dyer, R. 2008. <i>Supporting dynamic aspect-oriented features</i>. Iowa State University.</span>
+<span id="Dyer2008">Dyer, R. and Rajan, H. 2010. Supporting dynamic aspect-oriented features. <i>ACM Trans. Softw. Eng. Methodol.</i> 20, 2 (2010), 7:1–7:34. https://doi.org/10.1145/1824760.1824764.</span>
 </p>
 
 <h4>BibTeX Reference</h4>
-<pre><code>@mastersthesis{Dyer2008,
+<pre><code>@article{Dyer2008,
+  author = {Robert Dyer and Hridesh Rajan},
   title = {Supporting dynamic aspect-oriented features},
-  author = {Dyer, Robert},
-  year = {2008},
-  school = {Iowa State University},
+  journal = {{ACM} Trans. Softw. Eng. Methodol.},
+  volume = {20},
+  number = {2},
+  pages = {7:1--7:34},
+  year = {2010},
+  doi = {10.1145/1824760.1824764},
   abstract = {
-    Aspect-oriented programming techniques extend object-oriented programming with
-    new methods to modularize concerns that otherwise would be non-modular. For
-    example, logging concerns are typically scattered across a system but using
-    aspect-oriented techniques they can be localized into a single high-level
-    module. These techniques typically take modular high-level code and statically
-    transform it into non-modular intermediate code.
+  Aspect-oriented programming techniques extend object-oriented programming with
+  new methods to modularize concerns that otherwise would be non-modular. For
+  example, logging concerns are typically scattered across a system but using
+  aspect-oriented techniques they can be localized into a single high-level
+  module. These techniques typically take modular high-level code and statically
+  transform it into non-modular intermediate code.
 
-    The contribution of this work is the design and implementation of a flexible and
-    dynamic intermediate-language (IL) model. The main motivation for the design of
-    this IL model is to support a variety of dynamic aspect-oriented language
-    constructs that are proposed in recent literature such as CaeserJ's deploy,
-    history-based pointcuts, and control flow constructs. Our IL model provides a
-    higher level of abstraction compared to traditional object-oriented ILs as a
-    compilation target for such constructs, which makes it easier to provide
-    efficient implementations of these constructs. We demonstrate these benefits by
-    providing an industrial strength implementation for our IL model, by showing
-    translation strategies from dynamic source-level constructs to our improved IL,
-    and by analyzing the performance of the resulting IL code. Our evaluation using
-    the SPEC JVM98 and Java Grande benchmarks shows that the overhead of supporting
-    a dynamic deployment model can be reduced to as little as ~1.5%, when compared
-    to the unmodified VM.
-  }
+  The contribution of this work is the design and implementation of a flexible and
+  dynamic intermediate-language (IL) model. The main motivation for the design of
+  this IL model is to support a variety of dynamic aspect-oriented language
+  constructs that are proposed in recent literature such as CaeserJ's deploy,
+  history-based pointcuts, and control flow constructs. Our IL model provides a
+  higher level of abstraction compared to traditional object-oriented ILs as a
+  compilation target for such constructs, which makes it easier to provide
+  efficient implementations of these constructs. We demonstrate these benefits by
+  providing an industrial strength implementation for our IL model, by showing
+  translation strategies from dynamic source-level constructs to our improved IL,
+  and by analyzing the performance of the resulting IL code. Our evaluation using
+  the SPEC JVM98 and Java Grande benchmarks shows that the overhead of supporting
+  a dynamic deployment model can be reduced to as little as ~1.5%, when compared
+  to the unmodified VM.},
 }
 </code></pre>
 

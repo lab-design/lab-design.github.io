@@ -86,24 +86,23 @@ Ganesha Upadhyaya and Hridesh Rajan
 <h4>Abstract</h4>
 <p>
   <span id="UpadhyayaRajan2015">
-    Efficient mapping of message passing concurrency (MPC) abstractions to Java
-    Virtual Machine (JVM) threads is critical for performance, scalability, and
-    CPU utilization; but tedious and time consuming to perform manually. In
-    general, this mapping cannot be found in polynomial time, but we show that by
-    exploiting the local characteristics of MPC abstractions and their
-    communication patterns this mapping can be determined effectively. We describe
-    our MPC abstraction to thread mapping technique, its realization in two
-    frameworks (Panini and Akka), and its rigorous evaluation using several
-    benchmarks from representative MPC frameworks. We also compare our technique
-    against four default mapping techniques: thread-all, round-robin-task-all,
-    random-task-all and work-stealing. Our evaluation shows that our mapping
-    technique can improve the performance by 30%-60% over default mapping
-    techniques. These improvements are due to a number of challenges addressed by
-    our technique namely: i) balancing the computations across JVM threads, ii)
-    reducing the communication overheads, iii) utilizing information about cache
-    locality, and iv) mapping MPC abstractions to threads in a way that reduces
-    the contention between JVM threads.
-  </span>
+  Efficient mapping of message passing concurrency (MPC) abstractions to Java
+  Virtual Machine (JVM) threads is critical for performance, scalability, and
+  CPU utilization; but tedious and time consuming to perform manually. In
+  general, this mapping cannot be found in polynomial time, but we show that by
+  exploiting the local characteristics of MPC abstractions and their
+  communication patterns this mapping can be determined effectively. We describe
+  our MPC abstraction to thread mapping technique, its realization in two
+  frameworks (Panini and Akka), and its rigorous evaluation using several
+  benchmarks from representative MPC frameworks. We also compare our technique
+  against four default mapping techniques: thread-all, round-robin-task-all,
+  random-task-all and work-stealing. Our evaluation shows that our mapping
+  technique can improve the performance by 30%-60% over default mapping
+  techniques. These improvements are due to a number of challenges addressed by
+  our technique namely: i) balancing the computations across JVM threads, ii)
+  reducing the communication overheads, iii) utilizing information about cache
+  locality, and iv) mapping MPC abstractions to threads in a way that reduces
+  the contention between JVM threads.</span>
 </p>
 
 
@@ -112,37 +111,37 @@ Ganesha Upadhyaya and Hridesh Rajan
 
 <h4>ACM Reference</h4>
 <p>
-<span id="UpadhyayaRajan2015">Upadhyaya, G. and Rajan, H. 2015. Effectively Mapping Linguistic Abstractions for Message-passing Concurrency to Threads on the Java Virtual Machine. <i>OOPSLA’15: The ACM SIGPLAN conference on Systems, Programming, Languages and Applications: Software for Humanity (SPLASH)</i> (Oct. 2015).</span>
+<span id="UpadhyayaRajan2015">Upadhyaya, G. and Rajan, H. 2015. Effectively Mapping Linguistic Abstractions for Message-passing Concurrency to Threads on the Java Virtual Machine. <i>Proceedings of the 2015 ACM SIGPLAN International Conference on Object-Oriented Programming, Systems, Languages, and Applications, OOPSLA 2015, part of SPLASH 2015, Pittsburgh, PA, USA, October 25-30, 2015</i> (2015), 840–859.</span>
 </p>
 
 <h4>BibTeX Reference</h4>
 <pre><code>@inproceedings{UpadhyayaRajan2015,
   author = {Ganesha Upadhyaya and Hridesh Rajan},
   title = {Effectively Mapping Linguistic Abstractions for Message-passing Concurrency to Threads on the Java Virtual Machine},
-  booktitle = {OOPSLA'15: The ACM SIGPLAN conference on Systems, Programming, Languages and Applications: Software for Humanity (SPLASH)},
-  location = {Pittsburgh, PA, USA},
-  month = {October},
+  booktitle = {Proceedings of the 2015 {ACM} {SIGPLAN} International Conference on Object-Oriented Programming, Systems, Languages, and Applications, {OOPSLA} 2015, part of {SPLASH} 2015, Pittsburgh, PA, USA, October 25-30, 2015},
+  pages = {840--859},
   year = {2015},
-  entrysubtype = {conference},
+  publisher = {{ACM}},
+  editor = {Jonathan Aldrich and Patrick Eugster},
+  doi = {10.1145/2814270.2814289},
   abstract = {
-    Efficient mapping of message passing concurrency (MPC) abstractions to Java
-    Virtual Machine (JVM) threads is critical for performance, scalability, and
-    CPU utilization; but tedious and time consuming to perform manually. In
-    general, this mapping cannot be found in polynomial time, but we show that by
-    exploiting the local characteristics of MPC abstractions and their
-    communication patterns this mapping can be determined effectively. We describe
-    our MPC abstraction to thread mapping technique, its realization in two
-    frameworks (Panini and Akka), and its rigorous evaluation using several
-    benchmarks from representative MPC frameworks. We also compare our technique
-    against four default mapping techniques: thread-all, round-robin-task-all,
-    random-task-all and work-stealing. Our evaluation shows that our mapping
-    technique can improve the performance by 30%-60% over default mapping
-    techniques. These improvements are due to a number of challenges addressed by
-    our technique namely: i) balancing the computations across JVM threads, ii)
-    reducing the communication overheads, iii) utilizing information about cache
-    locality, and iv) mapping MPC abstractions to threads in a way that reduces
-    the contention between JVM threads.
-  }
+  Efficient mapping of message passing concurrency (MPC) abstractions to Java
+  Virtual Machine (JVM) threads is critical for performance, scalability, and
+  CPU utilization; but tedious and time consuming to perform manually. In
+  general, this mapping cannot be found in polynomial time, but we show that by
+  exploiting the local characteristics of MPC abstractions and their
+  communication patterns this mapping can be determined effectively. We describe
+  our MPC abstraction to thread mapping technique, its realization in two
+  frameworks (Panini and Akka), and its rigorous evaluation using several
+  benchmarks from representative MPC frameworks. We also compare our technique
+  against four default mapping techniques: thread-all, round-robin-task-all,
+  random-task-all and work-stealing. Our evaluation shows that our mapping
+  technique can improve the performance by 30%-60% over default mapping
+  techniques. These improvements are due to a number of challenges addressed by
+  our technique namely: i) balancing the computations across JVM threads, ii)
+  reducing the communication overheads, iii) utilizing information about cache
+  locality, and iv) mapping MPC abstractions to threads in a way that reduces
+  the contention between JVM threads.},
 }
 </code></pre>
 

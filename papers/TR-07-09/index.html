@@ -7,13 +7,13 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="The Laboratory for Software Design at Tulane University researches programming languages, compilers, and software engineering for dependable software and AI.">
     <meta name="theme-color" content="#006747">
-    <meta property="og:title" content="SLEDE: A Domain-Specific Verification Framework for Sensor Network Security Protocol Implementations">
+    <meta property="og:title" content="Slede: A Domain-specific Verification Framework for Sensor Network Security Protocol Implementations">
     <meta property="og:description" content="Laboratory for Software Design at Tulane University, School of Science and Engineering.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://lab-design.github.io/papers/TR-07-09/">
     <meta property="og:site_name" content="Laboratory for Software Design">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="SLEDE: A Domain-Specific Verification Framework for Sensor Network Security Protocol Implementations">
+    <meta name="twitter:title" content="Slede: A Domain-specific Verification Framework for Sensor Network Security Protocol Implementations">
     <meta name="twitter:description" content="Laboratory for Software Design at Tulane University, School of Science and Engineering.">
     <link rel="canonical" href="https://lab-design.github.io/papers/TR-07-09/">
     <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://lab-design.github.io/#hridesh","name":"Hridesh Rajan","jobTitle":"Dean of the School of Science and Engineering and Professor of Computer Science","affiliation":{"@type":"CollegeOrUniversity","name":"Tulane University"},"sameAs":["https://scholar.google.com/citations?user=aiFvpucAAAAJ","https://github.com/hridesh","https://www.linkedin.com/in/hrideshrajan/"]},{"@type":"Organization","@id":"https://lab-design.github.io/#lab","name":"Laboratory for Software Design","url":"https://lab-design.github.io/","parentOrganization":{"@type":"CollegeOrUniversity","name":"Tulane University School of Science and Engineering, Department of Computer Science"},"founder":{"@id":"https://lab-design.github.io/#hridesh"}},{"@type":"WebSite","url":"https://lab-design.github.io/","name":"Laboratory for Software Design","publisher":{"@id":"https://lab-design.github.io/#lab"}}]}</script>
@@ -23,7 +23,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/design.css">
     <link rel="icon" href="/favicon.ico">
-    <title>SLEDE: A Domain-Specific Verification Framework for Sensor Network Security Protocol Implementations | Laboratory for Software Design</title>
+    <title>Slede: A Domain-specific Verification Framework for Sensor Network Security Protocol Implementations | Laboratory for Software Design</title>
   </head>
 
   <body>
@@ -62,8 +62,8 @@
   <br />
   <div class="row">
   <div class="col-12">
-    <h2 class="page-title">SLEDE: A Domain-Specific Verification Framework for Sensor Network Security Protocol Implementations</h2>
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"ScholarlyArticle","name":"SLEDE: A Domain-Specific Verification Framework for Sensor Network Security Protocol Implementations","headline":"SLEDE: A Domain-Specific Verification Framework for Sensor Network Security Protocol Implementations","datePublished":"2007","author":{"@type":"Person","name":"Hridesh Rajan"},"isPartOf":{"@type":"Periodical","name":"TR-07-09"},"url":"https://lab-design.github.io/papers/TR-07-09/"}</script>
+    <h2 class="page-title">Slede: A Domain-specific Verification Framework for Sensor Network Security Protocol Implementations</h2>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"ScholarlyArticle","name":"Slede: A Domain-specific Verification Framework for Sensor Network Security Protocol Implementations","headline":"Slede: A Domain-specific Verification Framework for Sensor Network Security Protocol Implementations","datePublished":"2008","author":{"@type":"Person","name":"Hridesh Rajan"},"isPartOf":{"@type":"Periodical","name":"TR-07-09"},"url":"https://lab-design.github.io/papers/TR-07-09/"}</script>
 
 
 
@@ -86,26 +86,25 @@ Youssef Hanna, Hridesh Rajan, and Wensheng Zhang
 <h4>Abstract</h4>
 <p>
   <span id="HannaRajanZhang2008a">
-    Sensor networks are often deployed in hostile situations. A number of
-    protocols are being developed to secure these networks. Current means to
-    verify these protocols include simulation, manual inspection, and running them
-    on sensor network testbeds. These techniques leave room for subtle errors in
-    protocol implementations that can be exploited by adversaries. The
-    contribution of this work is the design, implementation and early evaluation
-    of a domain-specific verification framework for nesC implementations of sensor
-    network security protocols. We call our verification framework Slede.
-    Technical underpinnings of Slede include support for automatic extraction of
-    PROMELA models from nesC source code, an annotation language to guide the
-    verification process, and an automatic intrusion model generator. Preliminary
-    evaluation shows that Slede was able to discover flaws in a canonical
-    cryptographic protocol by Needham and Schroeder and two security protocols
-    specific to sensor networks. We also demonstrate that a protocol aware
-    intrusion model automatically generated by Slede incurs a small extra cost
-    compared to models handwritten by model checking experts. By automating a
-    significant portion of the verification process, Slede promises to make it
-    easier to apply finite-state model checking to verify nesC protocol
-    implementations.
-  </span>
+  Sensor networks are often deployed in hostile situations. A number of
+  protocols are being developed to secure these networks. Current means to
+  verify these protocols include simulation, manual inspection, and running them
+  on sensor network testbeds. These techniques leave room for subtle errors in
+  protocol implementations that can be exploited by adversaries. The
+  contribution of this work is the design, implementation and early evaluation
+  of a domain-specific verification framework for nesC implementations of sensor
+  network security protocols. We call our verification framework Slede.
+  Technical underpinnings of Slede include support for automatic extraction of
+  PROMELA models from nesC source code, an annotation language to guide the
+  verification process, and an automatic intrusion model generator. Preliminary
+  evaluation shows that Slede was able to discover flaws in a canonical
+  cryptographic protocol by Needham and Schroeder and two security protocols
+  specific to sensor networks. We also demonstrate that a protocol aware
+  intrusion model automatically generated by Slede incurs a small extra cost
+  compared to models handwritten by model checking experts. By automating a
+  significant portion of the verification process, Slede promises to make it
+  easier to apply finite-state model checking to verify nesC protocol
+  implementations.</span>
 </p>
 
 
@@ -114,37 +113,39 @@ Youssef Hanna, Hridesh Rajan, and Wensheng Zhang
 
 <h4>ACM Reference</h4>
 <p>
-<span id="HannaRajanZhang2008a">Hanna, Y. et al. 2008. <i>Slede: A Domain-specific Verification Framework for Sensor Network Security Protocol Implementations</i>. Technical Report #07-09. Iowa State University, Dept. of Computer Science.</span>
+<span id="HannaRajanZhang2008a">Hanna, Y. et al. 2008. Slede: A Domain-specific Verification Framework for Sensor Network Security Protocol Implementations. <i>Proceedings of the First ACM Conference on Wireless Network Security, WISEC 2008, Alexandria, VA, USA, March 31 - April 02, 2008</i> (2008), 109–118.</span>
 </p>
 
 <h4>BibTeX Reference</h4>
-<pre><code>@techreport{HannaRajanZhang2008a,
-  author = {Hanna, Youssef and Rajan, Hridesh and Zhang, Wensheng},
+<pre><code>@inproceedings{HannaRajanZhang2008a,
+  author = {Youssef Hanna and Hridesh Rajan and Wensheng Zhang},
   title = {Slede: A Domain-specific Verification Framework for Sensor Network Security Protocol Implementations},
+  booktitle = {Proceedings of the First {ACM} Conference on Wireless Network Security, {WISEC} 2008, Alexandria, VA, USA, March 31 - April 02, 2008},
+  pages = {109--118},
   year = {2008},
-  institution = {Iowa State University, Dept. of Computer Science},
-  number = {07-09},
+  publisher = {{ACM}},
+  editor = {Virgil D. Gligor and Jean{-}Pierre Hubaux and Radha Poovendran},
+  doi = {10.1145/1352533.1352551},
   abstract = {
-    Sensor networks are often deployed in hostile situations. A number of
-    protocols are being developed to secure these networks. Current means to
-    verify these protocols include simulation, manual inspection, and running them
-    on sensor network testbeds. These techniques leave room for subtle errors in
-    protocol implementations that can be exploited by adversaries. The
-    contribution of this work is the design, implementation and early evaluation
-    of a domain-specific verification framework for nesC implementations of sensor
-    network security protocols. We call our verification framework Slede.
-    Technical underpinnings of Slede include support for automatic extraction of
-    PROMELA models from nesC source code, an annotation language to guide the
-    verification process, and an automatic intrusion model generator. Preliminary
-    evaluation shows that Slede was able to discover flaws in a canonical
-    cryptographic protocol by Needham and Schroeder and two security protocols
-    specific to sensor networks. We also demonstrate that a protocol aware
-    intrusion model automatically generated by Slede incurs a small extra cost
-    compared to models handwritten by model checking experts. By automating a
-    significant portion of the verification process, Slede promises to make it
-    easier to apply finite-state model checking to verify nesC protocol
-    implementations.
-  }
+  Sensor networks are often deployed in hostile situations. A number of
+  protocols are being developed to secure these networks. Current means to
+  verify these protocols include simulation, manual inspection, and running them
+  on sensor network testbeds. These techniques leave room for subtle errors in
+  protocol implementations that can be exploited by adversaries. The
+  contribution of this work is the design, implementation and early evaluation
+  of a domain-specific verification framework for nesC implementations of sensor
+  network security protocols. We call our verification framework Slede.
+  Technical underpinnings of Slede include support for automatic extraction of
+  PROMELA models from nesC source code, an annotation language to guide the
+  verification process, and an automatic intrusion model generator. Preliminary
+  evaluation shows that Slede was able to discover flaws in a canonical
+  cryptographic protocol by Needham and Schroeder and two security protocols
+  specific to sensor networks. We also demonstrate that a protocol aware
+  intrusion model automatically generated by Slede incurs a small extra cost
+  compared to models handwritten by model checking experts. By automating a
+  significant portion of the verification process, Slede promises to make it
+  easier to apply finite-state model checking to verify nesC protocol
+  implementations.},
 }
 </code></pre>
 

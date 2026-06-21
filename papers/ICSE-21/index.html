@@ -86,36 +86,35 @@ Mohammad Wardat, Wei Le, and Hridesh Rajan
 <h4>Abstract</h4>
 <p>
   <span id="WardatLeRajan2021">
-    Deep neural networks (DNNs) are becoming an integral part of most
-    software systems. Previous work has shown that DNNs have bugs.
-    Unfortunately, existing debugging techniques don’t support localizing
-    DNN bugs because of the lack of understanding of model behaviors.
-    The entire DNN model appears as a black box. To address these problems,
-    we propose an approach and a tool that automatically determines whether
-    the model is buggy or not, and identifies the root causes for DNN errors.
-    Our key insight is that historic trends in values propagated between
-    layers can be analyzed to identify faults, and also localize faults.
-    To that end, we first enable dynamic analysis of deep learning
-    applications: by converting it into an imperative representation and
-    alternatively using a callback mechanism. Both mechanisms allows us
-    to insert probes that enable dynamic analysis over the traces produced
-    by the DNN while it is being trained on the training data.
-    We then conduct dynamic analysis over the traces to identify the faulty
-    layer or hyperparameter that causes the error. We propose an algorithm
-    for identifying root causes by capturing any numerical error and
-    monitoring the model during training and finding the relevance of every
-    layer/parameter on the DNN outcome. We have collected a benchmark
-    containing 40 buggy models and patches that contain real errors in
-    deep learning applications from Stack Overflow and GitHub. Our benchmark
-    can be used to evaluate automated debugging tools and repair techniques.
-    We have evaluated our approach using this DNN bug-and-patch benchmark,
-    and the results showed that our approach is much more effective than
-    the existing debugging approach used in the state-of-the-practice
-    Keras library. For 34/40 cases, our approach was able to detect faults
-    whereas the best debugging approach provided by Keras detected 32/40
-    faults. Our approach was able to localize 21/40 bugs whereas Keras
-    did not localize any faults.
-  </span>
+  Deep neural networks (DNNs) are becoming an integral part of most
+  software systems. Previous work has shown that DNNs have bugs.
+  Unfortunately, existing debugging techniques don’t support localizing
+  DNN bugs because of the lack of understanding of model behaviors.
+  The entire DNN model appears as a black box. To address these problems,
+  we propose an approach and a tool that automatically determines whether
+  the model is buggy or not, and identifies the root causes for DNN errors.
+  Our key insight is that historic trends in values propagated between
+  layers can be analyzed to identify faults, and also localize faults.
+  To that end, we first enable dynamic analysis of deep learning
+  applications: by converting it into an imperative representation and
+  alternatively using a callback mechanism. Both mechanisms allows us
+  to insert probes that enable dynamic analysis over the traces produced
+  by the DNN while it is being trained on the training data.
+  We then conduct dynamic analysis over the traces to identify the faulty
+  layer or hyperparameter that causes the error. We propose an algorithm
+  for identifying root causes by capturing any numerical error and
+  monitoring the model during training and finding the relevance of every
+  layer/parameter on the DNN outcome. We have collected a benchmark
+  containing 40 buggy models and patches that contain real errors in
+  deep learning applications from Stack Overflow and GitHub. Our benchmark
+  can be used to evaluate automated debugging tools and repair techniques.
+  We have evaluated our approach using this DNN bug-and-patch benchmark,
+  and the results showed that our approach is much more effective than
+  the existing debugging approach used in the state-of-the-practice
+  Keras library. For 34/40 cases, our approach was able to detect faults
+  whereas the best debugging approach provided by Keras detected 32/40
+  faults. Our approach was able to localize 21/40 bugs whereas Keras
+  did not localize any faults.</span>
 </p>
 
 
@@ -124,51 +123,48 @@ Mohammad Wardat, Wei Le, and Hridesh Rajan
 
 <h4>ACM Reference</h4>
 <p>
-<span id="WardatLeRajan2021">Wardat, M. et al. 2021. DeepLocalize: Fault Localization for Deep Neural Networks. <i>ICSE’21: The 43rd International Conference on Software Engineering</i> (May 2021), 251–262.</span>
+<span id="WardatLeRajan2021">Wardat, M. et al. 2021. DeepLocalize: Fault Localization for Deep Neural Networks. <i>43rd IEEE/ACM International Conference on Software Engineering, ICSE 2021, Madrid, Spain, 22-30 May 2021</i> (2021), 251–262.</span>
 </p>
 
 <h4>BibTeX Reference</h4>
 <pre><code>@inproceedings{WardatLeRajan2021,
   author = {Mohammad Wardat and Wei Le and Hridesh Rajan},
   title = {DeepLocalize: Fault Localization for Deep Neural Networks},
-  booktitle = {ICSE'21: The 43rd International Conference on Software Engineering},
-  location = {Virtual Conference},
-  month = {May 23-May 29, 2021},
-  year = {2021},
+  booktitle = {43rd {IEEE/ACM} International Conference on Software Engineering, {ICSE} 2021, Madrid, Spain, 22-30 May 2021},
   pages = {251--262},
+  year = {2021},
+  publisher = {{IEEE}},
   doi = {10.1109/ICSE43902.2021.00034},
-  entrysubtype = {conference},
   abstract = {
-    Deep neural networks (DNNs) are becoming an integral part of most
-    software systems. Previous work has shown that DNNs have bugs.
-    Unfortunately, existing debugging techniques don’t support localizing
-    DNN bugs because of the lack of understanding of model behaviors.
-    The entire DNN model appears as a black box. To address these problems,
-    we propose an approach and a tool that automatically determines whether
-    the model is buggy or not, and identifies the root causes for DNN errors.
-    Our key insight is that historic trends in values propagated between
-    layers can be analyzed to identify faults, and also localize faults.
-    To that end, we first enable dynamic analysis of deep learning
-    applications: by converting it into an imperative representation and
-    alternatively using a callback mechanism. Both mechanisms allows us
-    to insert probes that enable dynamic analysis over the traces produced
-    by the DNN while it is being trained on the training data.
-    We then conduct dynamic analysis over the traces to identify the faulty
-    layer or hyperparameter that causes the error. We propose an algorithm
-    for identifying root causes by capturing any numerical error and
-    monitoring the model during training and finding the relevance of every
-    layer/parameter on the DNN outcome. We have collected a benchmark
-    containing 40 buggy models and patches that contain real errors in
-    deep learning applications from Stack Overflow and GitHub. Our benchmark
-    can be used to evaluate automated debugging tools and repair techniques.
-    We have evaluated our approach using this DNN bug-and-patch benchmark,
-    and the results showed that our approach is much more effective than
-    the existing debugging approach used in the state-of-the-practice
-    Keras library. For 34/40 cases, our approach was able to detect faults
-    whereas the best debugging approach provided by Keras detected 32/40
-    faults. Our approach was able to localize 21/40 bugs whereas Keras
-    did not localize any faults.
-  }
+  Deep neural networks (DNNs) are becoming an integral part of most
+  software systems. Previous work has shown that DNNs have bugs.
+  Unfortunately, existing debugging techniques don’t support localizing
+  DNN bugs because of the lack of understanding of model behaviors.
+  The entire DNN model appears as a black box. To address these problems,
+  we propose an approach and a tool that automatically determines whether
+  the model is buggy or not, and identifies the root causes for DNN errors.
+  Our key insight is that historic trends in values propagated between
+  layers can be analyzed to identify faults, and also localize faults.
+  To that end, we first enable dynamic analysis of deep learning
+  applications: by converting it into an imperative representation and
+  alternatively using a callback mechanism. Both mechanisms allows us
+  to insert probes that enable dynamic analysis over the traces produced
+  by the DNN while it is being trained on the training data.
+  We then conduct dynamic analysis over the traces to identify the faulty
+  layer or hyperparameter that causes the error. We propose an algorithm
+  for identifying root causes by capturing any numerical error and
+  monitoring the model during training and finding the relevance of every
+  layer/parameter on the DNN outcome. We have collected a benchmark
+  containing 40 buggy models and patches that contain real errors in
+  deep learning applications from Stack Overflow and GitHub. Our benchmark
+  can be used to evaluate automated debugging tools and repair techniques.
+  We have evaluated our approach using this DNN bug-and-patch benchmark,
+  and the results showed that our approach is much more effective than
+  the existing debugging approach used in the state-of-the-practice
+  Keras library. For 34/40 cases, our approach was able to detect faults
+  whereas the best debugging approach provided by Keras detected 32/40
+  faults. Our approach was able to localize 21/40 bugs whereas Keras
+  did not localize any faults.},
 }
 </code></pre>
 

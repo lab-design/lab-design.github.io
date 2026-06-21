@@ -7,13 +7,13 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="The Laboratory for Software Design at Tulane University researches programming languages, compilers, and software engineering for dependable software and AI.">
     <meta name="theme-color" content="#006747">
-    <meta property="og:title" content="Information Hiding Interfaces for Aspect-Oriented Design">
+    <meta property="og:title" content="Information hiding interfaces for aspect-oriented design">
     <meta property="og:description" content="Laboratory for Software Design at Tulane University, School of Science and Engineering.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://lab-design.github.io/papers/ESEC-FSE-2005/">
     <meta property="og:site_name" content="Laboratory for Software Design">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Information Hiding Interfaces for Aspect-Oriented Design">
+    <meta name="twitter:title" content="Information hiding interfaces for aspect-oriented design">
     <meta name="twitter:description" content="Laboratory for Software Design at Tulane University, School of Science and Engineering.">
     <link rel="canonical" href="https://lab-design.github.io/papers/ESEC-FSE-2005/">
     <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://lab-design.github.io/#hridesh","name":"Hridesh Rajan","jobTitle":"Dean of the School of Science and Engineering and Professor of Computer Science","affiliation":{"@type":"CollegeOrUniversity","name":"Tulane University"},"sameAs":["https://scholar.google.com/citations?user=aiFvpucAAAAJ","https://github.com/hridesh","https://www.linkedin.com/in/hrideshrajan/"]},{"@type":"Organization","@id":"https://lab-design.github.io/#lab","name":"Laboratory for Software Design","url":"https://lab-design.github.io/","parentOrganization":{"@type":"CollegeOrUniversity","name":"Tulane University School of Science and Engineering, Department of Computer Science"},"founder":{"@id":"https://lab-design.github.io/#hridesh"}},{"@type":"WebSite","url":"https://lab-design.github.io/","name":"Laboratory for Software Design","publisher":{"@id":"https://lab-design.github.io/#lab"}}]}</script>
@@ -23,7 +23,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/design.css">
     <link rel="icon" href="/favicon.ico">
-    <title>Information Hiding Interfaces for Aspect-Oriented Design | Laboratory for Software Design</title>
+    <title>Information hiding interfaces for aspect-oriented design | Laboratory for Software Design</title>
   </head>
 
   <body>
@@ -62,14 +62,14 @@
   <br />
   <div class="row">
   <div class="col-12">
-    <h2 class="page-title">Information Hiding Interfaces for Aspect-Oriented Design</h2>
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"ScholarlyArticle","name":"Information Hiding Interfaces for Aspect-Oriented Design","headline":"Information Hiding Interfaces for Aspect-Oriented Design","datePublished":"2005","author":{"@type":"Person","name":"Hridesh Rajan"},"isPartOf":{"@type":"Periodical","name":"ESEC/FSE '05"},"url":"https://lab-design.github.io/papers/ESEC-FSE-2005/"}</script>
+    <h2 class="page-title">Information hiding interfaces for aspect-oriented design</h2>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"ScholarlyArticle","name":"Information hiding interfaces for aspect-oriented design","headline":"Information hiding interfaces for aspect-oriented design","datePublished":"2005","author":{"@type":"Person","name":"Hridesh Rajan"},"isPartOf":{"@type":"Periodical","name":"ESEC/FSE '05"},"url":"https://lab-design.github.io/papers/ESEC-FSE-2005/"}</script>
 
 
 
 <h4>
 By: 
-Kevin Sullivan, William G. Griswold, Yuanyuan Song, Yuanfang Cai, Macneil Shonle, Nishit Tewari, and Hridesh Rajan
+Kevin J. Sullivan, William G. Griswold, Yuanyuan Song, Yuanfang Cai, Macneil Shonle, Nishit Tewari, and Hridesh Rajan
 
 </h4>
 
@@ -86,21 +86,20 @@ Kevin Sullivan, William G. Griswold, Yuanyuan Song, Yuanfang Cai, Macneil Shonle
 <h4>Abstract</h4>
 <p>
   <span id="SullivanETAL2005">
-    The growing popularity of aspect-oriented languages, such as AspectJ, and of
-    corresponding design approaches, makes it important to learn how best to
-    modularize programs in which aspect-oriented composition mechanisms are used.
-    We contribute an approach to information hiding modularity in programs that
-    use quantified advising as a module composition mechanism. Our approach rests
-    on a new kind of interface: one that abstracts a crosscutting behavior,
-    decouples the design of code that advises such a behavior from the design of
-    the code to be advised, and that can stipulate behavioral contracts. Our
-    interfaces establish design rules that govern how specific points in program
-    execution are exposed through a given join point model and how conforming code
-    on either side should behave. In a case study of the HyperCast overlay network
-    middleware system, including a real options analysis, we compare the widely
-    cited oblivious design approach with our own, showing significant weaknesses
-    in the former and benefits in the latter.
-  </span>
+  The growing popularity of aspect-oriented languages, such as AspectJ, and of
+  corresponding design approaches, makes it important to learn how best to
+  modularize programs in which aspect-oriented composition mechanisms are used.
+  We contribute an approach to information hiding modularity in programs that
+  use quantified advising as a module composition mechanism. Our approach rests
+  on a new kind of interface: one that abstracts a crosscutting behavior,
+  decouples the design of code that advises such a behavior from the design of
+  the code to be advised, and that can stipulate behavioral contracts. Our
+  interfaces establish design rules that govern how specific points in program
+  execution are exposed through a given join point model and how conforming code
+  on either side should behave. In a case study of the HyperCast overlay network
+  middleware system, including a real options analysis, we compare the widely
+  cited oblivious design approach with our own, showing significant weaknesses
+  in the former and benefits in the latter.</span>
 </p>
 
 
@@ -109,42 +108,34 @@ Kevin Sullivan, William G. Griswold, Yuanyuan Song, Yuanfang Cai, Macneil Shonle
 
 <h4>ACM Reference</h4>
 <p>
-<span id="SullivanETAL2005">Sullivan, K. et al. 2005. Information hiding interfaces for aspect-oriented design. <i>ESEC/FSE-13: Proceedings of the 10th European software
-    engineering conference held jointly with 13th ACM SIGSOFT
-    international symposium on Foundations of software engineering</i> (New York, NY, USA, 2005), 166–175.</span>
+<span id="SullivanETAL2005">Sullivan, K.J. et al. 2005. Information hiding interfaces for aspect-oriented design. <i>Proceedings of the 10th European Software Engineering Conference held jointly with 13th ACM SIGSOFT International Symposium on Foundations of Software Engineering, 2005, Lisbon, Portugal, September 5-9, 2005</i> (2005), 166–175.</span>
 </p>
 
 <h4>BibTeX Reference</h4>
 <pre><code>@inproceedings{SullivanETAL2005,
-  author = {Kevin Sullivan and William G. Griswold and Yuanyuan Song and
-            Yuanfang Cai and Macneil Shonle and Nishit Tewari and
-            Hridesh Rajan},
+  author = {Kevin J. Sullivan and William G. Griswold and Yuanyuan Song and Yuanfang Cai and Macneil Shonle and Nishit Tewari and Hridesh Rajan},
   title = {Information hiding interfaces for aspect-oriented design},
-  booktitle = {ESEC/FSE-13: Proceedings of the 10th European software
-    engineering conference held jointly with 13th ACM SIGSOFT
-    international symposium on Foundations of software engineering},
-  year = {2005},
+  booktitle = {Proceedings of the 10th European Software Engineering Conference held jointly with 13th {ACM} {SIGSOFT} International Symposium on Foundations of Software Engineering, 2005, Lisbon, Portugal, September 5-9, 2005},
   pages = {166--175},
-  location = {Lisbon, Portugal},
-  publisher = {ACM},
-  address = {New York, NY, USA},
-  entrysubtype = {conference},
+  year = {2005},
+  publisher = {{ACM}},
+  editor = {Michel Wermelinger and Harald C. Gall},
+  doi = {10.1145/1081706.1081734},
   abstract = {
-    The growing popularity of aspect-oriented languages, such as AspectJ, and of
-    corresponding design approaches, makes it important to learn how best to
-    modularize programs in which aspect-oriented composition mechanisms are used.
-    We contribute an approach to information hiding modularity in programs that
-    use quantified advising as a module composition mechanism. Our approach rests
-    on a new kind of interface: one that abstracts a crosscutting behavior,
-    decouples the design of code that advises such a behavior from the design of
-    the code to be advised, and that can stipulate behavioral contracts. Our
-    interfaces establish design rules that govern how specific points in program
-    execution are exposed through a given join point model and how conforming code
-    on either side should behave. In a case study of the HyperCast overlay network
-    middleware system, including a real options analysis, we compare the widely
-    cited oblivious design approach with our own, showing significant weaknesses
-    in the former and benefits in the latter.
-  }
+  The growing popularity of aspect-oriented languages, such as AspectJ, and of
+  corresponding design approaches, makes it important to learn how best to
+  modularize programs in which aspect-oriented composition mechanisms are used.
+  We contribute an approach to information hiding modularity in programs that
+  use quantified advising as a module composition mechanism. Our approach rests
+  on a new kind of interface: one that abstracts a crosscutting behavior,
+  decouples the design of code that advises such a behavior from the design of
+  the code to be advised, and that can stipulate behavioral contracts. Our
+  interfaces establish design rules that govern how specific points in program
+  execution are exposed through a given join point model and how conforming code
+  on either side should behave. In a case study of the HyperCast overlay network
+  middleware system, including a real options analysis, we compare the widely
+  cited oblivious design approach with our own, showing significant weaknesses
+  in the former and benefits in the latter.},
 }
 </code></pre>
 

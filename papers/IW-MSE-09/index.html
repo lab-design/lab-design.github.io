@@ -86,27 +86,26 @@ Tyler Sondag and Hridesh Rajan
 <h4>Abstract</h4>
 <p>
   <span id="SondagRajan2009">
-    CPU vendors are starting to explore trade offs between die size, number of
-    cores on a die, and power consump- tion leading to performance asymmetry among
-    cores on a single chip. For efficient utilization of these performance-
-    asymmetric multi-core processors, application threads must be assigned to
-    cores such that the resource needs of a thread closely matches resource
-    availability at the assigned core. This significantly complicates the task of
-    an average pro- grammer. The contribution of this work is a technique for
-    automatically determining the mapping between threads and
-    performance-asymmetric cores of a processor. Our ap- proach, which we call
-    phase-guided thread-to-core assign- ment, builds on a well-known insight that
-    programs exhibit phase behavior. We first take code sections and group them
-    into clusters such that each section in a cluster is likely to exhibit similar
-    runtime characteristics. The key idea is that with this clustering,
-    characteristics of a small number of representative sections in a cluster give
-    insight into the be- havior of the entire cluster. Thus the exhibited
-    characteris- tics of the representative sections on different types of cores
-    can be used for automating thread-to-core assignment at a lower runtime cost.
-    Variations of our technique show up to an average 150% improvement in
-    throughput over the stock Linux scheduler for systems with a constant feed of
-    jobs, while maintaining comparable fairness and efficiency.
-  </span>
+  CPU vendors are starting to explore trade offs between die size, number of
+  cores on a die, and power consump- tion leading to performance asymmetry among
+  cores on a single chip. For efficient utilization of these performance-
+  asymmetric multi-core processors, application threads must be assigned to
+  cores such that the resource needs of a thread closely matches resource
+  availability at the assigned core. This significantly complicates the task of
+  an average pro- grammer. The contribution of this work is a technique for
+  automatically determining the mapping between threads and
+  performance-asymmetric cores of a processor. Our ap- proach, which we call
+  phase-guided thread-to-core assign- ment, builds on a well-known insight that
+  programs exhibit phase behavior. We first take code sections and group them
+  into clusters such that each section in a cluster is likely to exhibit similar
+  runtime characteristics. The key idea is that with this clustering,
+  characteristics of a small number of representative sections in a cluster give
+  insight into the be- havior of the entire cluster. Thus the exhibited
+  characteris- tics of the representative sections on different types of cores
+  can be used for automating thread-to-core assignment at a lower runtime cost.
+  Variations of our technique show up to an average 150% improvement in
+  throughput over the stock Linux scheduler for systems with a constant feed of
+  jobs, while maintaining comparable fairness and efficiency.</span>
 </p>
 
 
@@ -115,40 +114,39 @@ Tyler Sondag and Hridesh Rajan
 
 <h4>ACM Reference</h4>
 <p>
-<span id="SondagRajan2009">Sondag, T. and Rajan, H. 2009. Phase-guided Thread-to-core Assignment for Improved Utilization of Performance-Asymmetric Multi-Core Processors. <i>IWMSE ’09: Proceedings of the 2nd International Workshop on Multicore Software Engineering</i> (May 2009).</span>
+<span id="SondagRajan2009">Sondag, T. and Rajan, H. 2009. Phase-guided Thread-to-core Assignment for Improved Utilization of Performance-Asymmetric Multi-Core Processors. <i>Proceedings of the 2009 ICSE Workshop on Multicore Software Engineering, IWMSE ’09, Vancouver, BC, Canada, May 18, 2009</i> (2009), 73–80.</span>
 </p>
 
 <h4>BibTeX Reference</h4>
 <pre><code>@inproceedings{SondagRajan2009,
   author = {Tyler Sondag and Hridesh Rajan},
   title = {Phase-guided Thread-to-core Assignment for Improved Utilization of Performance-Asymmetric Multi-Core Processors},
-  booktitle = {IWMSE '09: Proceedings of the 2nd International Workshop on Multicore Software Engineering},
-  location = {Vancouver, Canada},
-  month = {May},
+  booktitle = {Proceedings of the 2009 {ICSE} Workshop on Multicore Software Engineering, {IWMSE} '09, Vancouver, BC, Canada, May 18, 2009},
+  pages = {73--80},
   year = {2009},
-  entrysubtype = {workshop},
+  publisher = {{IEEE} Computer Society},
+  doi = {10.1109/IWMSE.2009.5071386},
   abstract = {
-    CPU vendors are starting to explore trade offs between die size, number of
-    cores on a die, and power consump- tion leading to performance asymmetry among
-    cores on a single chip. For efficient utilization of these performance-
-    asymmetric multi-core processors, application threads must be assigned to
-    cores such that the resource needs of a thread closely matches resource
-    availability at the assigned core. This significantly complicates the task of
-    an average pro- grammer. The contribution of this work is a technique for
-    automatically determining the mapping between threads and
-    performance-asymmetric cores of a processor. Our ap- proach, which we call
-    phase-guided thread-to-core assign- ment, builds on a well-known insight that
-    programs exhibit phase behavior. We first take code sections and group them
-    into clusters such that each section in a cluster is likely to exhibit similar
-    runtime characteristics. The key idea is that with this clustering,
-    characteristics of a small number of representative sections in a cluster give
-    insight into the be- havior of the entire cluster. Thus the exhibited
-    characteris- tics of the representative sections on different types of cores
-    can be used for automating thread-to-core assignment at a lower runtime cost.
-    Variations of our technique show up to an average 150% improvement in
-    throughput over the stock Linux scheduler for systems with a constant feed of
-    jobs, while maintaining comparable fairness and efficiency.
-  }
+  CPU vendors are starting to explore trade offs between die size, number of
+  cores on a die, and power consump- tion leading to performance asymmetry among
+  cores on a single chip. For efficient utilization of these performance-
+  asymmetric multi-core processors, application threads must be assigned to
+  cores such that the resource needs of a thread closely matches resource
+  availability at the assigned core. This significantly complicates the task of
+  an average pro- grammer. The contribution of this work is a technique for
+  automatically determining the mapping between threads and
+  performance-asymmetric cores of a processor. Our ap- proach, which we call
+  phase-guided thread-to-core assign- ment, builds on a well-known insight that
+  programs exhibit phase behavior. We first take code sections and group them
+  into clusters such that each section in a cluster is likely to exhibit similar
+  runtime characteristics. The key idea is that with this clustering,
+  characteristics of a small number of representative sections in a cluster give
+  insight into the be- havior of the entire cluster. Thus the exhibited
+  characteris- tics of the representative sections on different types of cores
+  can be used for automating thread-to-core assignment at a lower runtime cost.
+  Variations of our technique show up to an average 150% improvement in
+  throughput over the stock Linux scheduler for systems with a constant feed of
+  jobs, while maintaining comparable fairness and efficiency.},
 }
 </code></pre>
 

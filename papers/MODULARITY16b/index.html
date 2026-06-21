@@ -86,25 +86,24 @@ Yuheng Long and Hridesh Rajan
 <h4>Abstract</h4>
 <p>
   <span id="LongRajan2016">
-    Implicit concurrency between handlers is important for event driven systems
-    because it helps simultaneously promote modularity and scalability. Knowing
-    the side-effect of the handlers is critical in these systems to avoid
-    concurrency hazards such as data races. As event systems are dynamic, because
-    statically known and unknown handlers can register almost at anytime during
-    program execution, static effect analyses have to reconcile over competing
-    goals such as precision, soundness and modularity. We recently developed
-    asynchronous, typed events, a system that can analyze the effects of the
-    handlers at runtime. This mechanism utilizes runtime information to enable
-    precise effect computation and greatly improves concurrency between handlers.
+  Implicit concurrency between handlers is important for event driven systems
+  because it helps simultaneously promote modularity and scalability. Knowing
+  the side-effect of the handlers is critical in these systems to avoid
+  concurrency hazards such as data races. As event systems are dynamic, because
+  statically known and unknown handlers can register almost at anytime during
+  program execution, static effect analyses have to reconcile over competing
+  goals such as precision, soundness and modularity. We recently developed
+  asynchronous, typed events, a system that can analyze the effects of the
+  handlers at runtime. This mechanism utilizes runtime information to enable
+  precise effect computation and greatly improves concurrency between handlers.
 
-    In this paper, we present the formal underpinnings of asynchronous, typed
-    events, and examine the concurrency safety properties it provides. The
-    technical innovations of our system include a novel effect system to soundly
-    approximate the dynamism introduced by runtime handlers registration, a static
-    analysis to precompute the effects and a dynamic analysis that uses the
-    precomputed effects to improve concurrency. Our design simplifies modular
-    concurrency reasoning and avoids concurrency hazards.
-  </span>
+  In this paper, we present the formal underpinnings of asynchronous, typed
+  events, and examine the concurrency safety properties it provides. The
+  technical innovations of our system include a novel effect system to soundly
+  approximate the dynamism introduced by runtime handlers registration, a static
+  analysis to precompute the effects and a dynamic analysis that uses the
+  precomputed effects to improve concurrency. Our design simplifies modular
+  concurrency reasoning and avoids concurrency hazards.</span>
 </p>
 
 
@@ -113,39 +112,38 @@ Yuheng Long and Hridesh Rajan
 
 <h4>ACM Reference</h4>
 <p>
-<span id="LongRajan2016">Long, Y. and Rajan, H. 2016. A Type-and-Effect System for Asynchronous, Typed Events. <i>Modularity’16: 15th International Conference on Modularity</i> (Mar. 2016).</span>
+<span id="LongRajan2016">Long, Y. and Rajan, H. 2016. A Type-and-Effect System for Asynchronous, Typed Events. <i>Proceedings of the 15th International Conference on Modularity, MODULARITY 2016, Málaga, Spain, March 14 - 18, 2016</i> (2016), 42–53.</span>
 </p>
 
 <h4>BibTeX Reference</h4>
 <pre><code>@inproceedings{LongRajan2016,
   author = {Yuheng Long and Hridesh Rajan},
   title = {A Type-and-Effect System for Asynchronous, Typed Events},
-  booktitle = {Modularity'16: 15th International Conference on Modularity},
-  series = {Modularity'16},
-  location = {Malaga, Spain},
-  month = {March},
+  booktitle = {Proceedings of the 15th International Conference on Modularity, {MODULARITY} 2016, M{\'{a}}laga, Spain, March 14 - 18, 2016},
+  pages = {42--53},
   year = {2016},
-  entrysubtype = {conference},
+  publisher = {{ACM}},
+  editor = {Lidia Fuentes and Don S. Batory and Krzysztof Czarnecki},
+  doi = {10.1145/2889443.2889446},
   abstract = {
-    Implicit concurrency between handlers is important for event driven systems
-    because it helps simultaneously promote modularity and scalability. Knowing
-    the side-effect of the handlers is critical in these systems to avoid
-    concurrency hazards such as data races. As event systems are dynamic, because
-    statically known and unknown handlers can register almost at anytime during
-    program execution, static effect analyses have to reconcile over competing
-    goals such as precision, soundness and modularity. We recently developed
-    asynchronous, typed events, a system that can analyze the effects of the
-    handlers at runtime. This mechanism utilizes runtime information to enable
-    precise effect computation and greatly improves concurrency between handlers.
+  Implicit concurrency between handlers is important for event driven systems
+  because it helps simultaneously promote modularity and scalability. Knowing
+  the side-effect of the handlers is critical in these systems to avoid
+  concurrency hazards such as data races. As event systems are dynamic, because
+  statically known and unknown handlers can register almost at anytime during
+  program execution, static effect analyses have to reconcile over competing
+  goals such as precision, soundness and modularity. We recently developed
+  asynchronous, typed events, a system that can analyze the effects of the
+  handlers at runtime. This mechanism utilizes runtime information to enable
+  precise effect computation and greatly improves concurrency between handlers.
 
-    In this paper, we present the formal underpinnings of asynchronous, typed
-    events, and examine the concurrency safety properties it provides. The
-    technical innovations of our system include a novel effect system to soundly
-    approximate the dynamism introduced by runtime handlers registration, a static
-    analysis to precompute the effects and a dynamic analysis that uses the
-    precomputed effects to improve concurrency. Our design simplifies modular
-    concurrency reasoning and avoids concurrency hazards.
-  }
+  In this paper, we present the formal underpinnings of asynchronous, typed
+  events, and examine the concurrency safety properties it provides. The
+  technical innovations of our system include a novel effect system to soundly
+  approximate the dynamism introduced by runtime handlers registration, a static
+  analysis to precompute the effects and a dynamic analysis that uses the
+  precomputed effects to improve concurrency. Our design simplifies modular
+  concurrency reasoning and avoids concurrency hazards.},
 }
 </code></pre>
 
