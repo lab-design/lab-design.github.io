@@ -4,7 +4,7 @@ permalink: /papers/AOPLE-06/
 short_name: AOPLE '06
 title: The Role of Aspects in Modeling Product Line Variabilities
 bib:  |
-  @inproceedings{liu2006role,
+  @inproceedings{LiuLutzRajan2006,
     author = {Jing (Janet) Liu and Robyn R. Lutz and Hridesh Rajan},
     title = {The Role of Aspects in Modeling Product Line Variabilities},
     booktitle = {Proceedings for First Workshop on Aspect-oriented Product Line Engineering (AOPLE-1)},

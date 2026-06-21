@@ -4,7 +4,7 @@ permalink: /papers/AOSD-14/
 short_name: AOSD '14
 title: "AspectJML: Modular Specfication and Runtime Checking for Crosscutting Contracts"
 bib: |
-  @inproceedings{rebelo2014aspectjml,
+  @inproceedings{RebeloETAL2014,
     author = {Henrique Rebelo and Gary T. Leavens and Mehdi Bagherzadeh and Hridesh Rajan and Ricardo Massa Lima and Daniel Zimmerman and Marcio Cornelio and Thumas Thum},
     title = {AspectJML: Modular Specfication and Runtime Checking for Crosscutting Contracts},
     booktitle = {Proceedings of the 13th International Conference on Aspect-Oriented Software Development},

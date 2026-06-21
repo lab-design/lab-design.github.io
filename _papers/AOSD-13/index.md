@@ -6,7 +6,7 @@ permalink: /papers/AOSD-13/
 short_name: Modularity '13
 title: On Exceptions, Events and Observer Chains
 bib: |
-  @inproceedings{bagherzadeh2013exceptions,
+  @inproceedings{BagherzadehRajanDarvish2013,
     author = {Mehdi Bagherzadeh and Hridesh Rajan and Ali Darvish},
     title = {On Exceptions, Events and Observer Chains},
     booktitle = {AOSD '13: 12th International Conference on Aspect-Oriented Software Development},

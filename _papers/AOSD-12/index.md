@@ -4,7 +4,7 @@ permalink: /papers/AOSD-12/
 short_name: AOSD '12
 title: An Exploratory Study of the Design Impact of Language Features for Aspect-oriented Interfaces
 bib: |
-  @inproceedings{dyer2012exploratory,
+  @inproceedings{DyerRajanCai2012,
     author = {Robert Dyer and Hridesh Rajan and Yuanfang Cai},
     title = {An Exploratory Study of the Design Impact of Language Features for Aspect-oriented Interfaces},
     booktitle = {AOSD '12: 11th International Conference on Aspect-Oriented Software Development},

@@ -4,7 +4,7 @@ permalink: /papers/AGERE-14/
 short_name: AGERE '14
 title: An Automatic Actors to Threads Mapping Technique for JVM-Based Actor Frameworks
 bib: |
-  @inproceedings{upadhyaya2014automatic,
+  @inproceedings{UpadhyayaRajan2014,
     author = {Ganesha Upadhyaya and Hridesh Rajan},
     title = {An Automatic Actors to Threads Mapping Technique for JVM-Based Actor Frameworks},
     booktitle = {AGERE!'14: Proceedings of the 4th International Workshop on Programming based on Actors Agents & Decentralized Control},

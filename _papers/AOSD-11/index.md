@@ -4,7 +4,7 @@ permalink: /papers/AOSD-11/
 short_name: AOSD '11
 title: "Translucid Contracts: Expressive Specification and Modular Verification for Aspect-Oriented Interfaces"
 bib: |
-  @inproceedings{bagherzadeh2011translucid-b,
+  @inproceedings{BagherzadehRajanLeavensMooney2011,
     author = {Mehdi Bagherzadeh and Hridesh Rajan and Gary T. Leavens and Sean Mooney},
     title = {Translucid Contracts: Expressive Specification and Modular Verification for Aspect-Oriented Interfaces},
     booktitle = {AOSD '11: 10th International Conference on Aspect-Oriented Software Development},

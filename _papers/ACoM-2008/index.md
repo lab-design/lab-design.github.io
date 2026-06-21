@@ -4,7 +4,7 @@ permalink: /papers/ACoM-2008/
 short_name: ACoM '08
 title: Mining Software Repositories for Evaluating Software Engineering Properties of Language Designs
 bib: |
-  @inproceedings{rajan2008mining,
+  @inproceedings{Rajan2008,
     author = {Hridesh Rajan},
     title = {Mining Software Repositories for Evaluating Software Engineering Properties of Language Designs},
     booktitle = {2nd Workshop on Assessment of Contemporary Modularization Techniques (ACoM.08)},
