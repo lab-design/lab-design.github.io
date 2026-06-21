@@ -7,15 +7,15 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="The Laboratory for Software Design at Tulane University researches programming languages, compilers, and software engineering for dependable software and AI.">
     <meta name="theme-color" content="#006747">
-    <meta property="og:title" content="Our paper on Data Science Pipeline is selected for ICSE'22 Research Track">
+    <meta property="og:title" content="What does a real data-science pipeline actually look like? Our ICSE 2022 paper maps them.">
     <meta property="og:description" content="Laboratory for Software Design at Tulane University, School of Science and Engineering.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://lab-design.github.io/news/2021/12/03/biswas-icse/">
+    <meta property="og:url" content="https://lab-design.github.io/news/2022/05/23/art-and-practice-of-data-science-pipelines/">
     <meta property="og:site_name" content="Laboratory for Software Design">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Our paper on Data Science Pipeline is selected for ICSE'22 Research Track">
+    <meta name="twitter:title" content="What does a real data-science pipeline actually look like? Our ICSE 2022 paper maps them.">
     <meta name="twitter:description" content="Laboratory for Software Design at Tulane University, School of Science and Engineering.">
-    <link rel="canonical" href="https://lab-design.github.io/news/2021/12/03/biswas-icse/">
+    <link rel="canonical" href="https://lab-design.github.io/news/2022/05/23/art-and-practice-of-data-science-pipelines/">
     <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://lab-design.github.io/#hridesh","name":"Hridesh Rajan","jobTitle":"Dean of the School of Science and Engineering and Professor of Computer Science","affiliation":{"@type":"CollegeOrUniversity","name":"Tulane University"},"sameAs":["https://scholar.google.com/citations?user=aiFvpucAAAAJ","https://github.com/hridesh","https://www.linkedin.com/in/hrideshrajan/"]},{"@type":"Organization","@id":"https://lab-design.github.io/#lab","name":"Laboratory for Software Design","url":"https://lab-design.github.io/","parentOrganization":{"@type":"CollegeOrUniversity","name":"Tulane University School of Science and Engineering, Department of Computer Science"},"founder":{"@id":"https://lab-design.github.io/#hridesh"}},{"@type":"WebSite","url":"https://lab-design.github.io/","name":"Laboratory for Software Design","publisher":{"@id":"https://lab-design.github.io/#lab"}}]}</script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +23,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/design.css">
     <link rel="icon" href="/favicon.ico">
-    <title>Our paper on Data Science Pipeline is selected for ICSE'22 Research Track | Laboratory for Software Design</title>
+    <title>What does a real data-science pipeline actually look like? Our ICSE 2022 paper maps them. | Laboratory for Software Design</title>
   </head>
 
   <body>
@@ -62,21 +62,14 @@
   <br />
   <div class="row">
   <div class="col-12">
-    <h2 class="page-title">Our paper on Data Science Pipeline is selected for ICSE'22 Research Track</h2>
-    <p class="mb-2 text-muted">December 03, 2021</p>
+    <h2 class="page-title">What does a real data-science pipeline actually look like? Our ICSE 2022 paper maps them.</h2>
+    <p class="mb-2 text-muted">May 23, 2022</p>
 
-  <span class="news-link">Links: </span>
-  
-    <a href="https://lab-design.github.io/papers/ICSE-22a/ds-pipeline-icse22.pdf" class="news-link">Papers</a>
-    
-  
+<p>A data-science system is more than its model. Data is acquired, cleaned, transformed, modeled, and served, and this sequence of stages, the data-science pipeline, is where much of the real engineering happens. Yet the pipeline as a whole had not been studied carefully.</p>
 
-<p>This work attempts to inform the art and practice of designing data science (DS) pipeline. Our investigation suggest that DS pipeline is a well used software architecture but often built in an ad hoc manner. We demonstrated the importance of standardization and analysis framework for DS pipeline following the traditional software engineering research on software architecture and design patterns. We contributed three representations of DS pipelines that capture the essence of our subjects in theory, in-the-small, and in-the-large that would facilitate building new DS pipelines.</p>
+<p>In this paper (ICSE 2022), Sumon Biswas, Mohammad Wardat, and Hridesh Rajan present a comprehensive study of data-science pipelines, examining them in theory, in small hand-written examples, and in large real-world projects. The result is a clearer account of how these pipelines are built and where their difficulties lie, which gives tool builders and researchers a foundation to work from.</p>
 
-<p>The paper’s abstract:</p>
-
-<p><em>
-``Increasingly larger number of software systems today are including data science components for descriptive, predictive, and prescriptive analytics. The collection of data science stages from acquisition, to cleaning/curation, to modeling, and so on are referred to as data science pipelines. To facilitate research and practice on data science pipelines, it is essential to understand their nature. What are the typical stages of a data science pipeline? How are they connected? Do the pipelines differ in the theoretical representations and that in the practice? Today we do not fully understand these architectural characteristics of data science pipelines. In this work, we present a three-pronged comprehensive study to answer this for the state-of-the-art, data science in-the-small, and data science in-the-large. Our study analyzes three datasets: a collection of 71 proposals for data science pipelines and related concepts in theory, a collection of over 105 implementations of curated data science pipelines from Kaggle competitions to understand data science in-the-small, and a collection of 21 mature data science projects from GitHub to understand data science in-the-large. Our study has led to three representations of data science pipelines that capture the essence of our subjects in theory, in-the-small, and in-the-large.’’</em></p>
+<p>This work is part of <a href="/research/#modular-and-dependable-ai">Modular and Dependable AI</a>; see our related work on <a href="/news/2022/05/26/manas-mining-repositories-to-assist-automl/">mining repositories to assist AutoML</a>. The full paper is available <a href="https://lab-design.github.io/papers/ICSE-22a/">here</a>.</p>
 
 
 
