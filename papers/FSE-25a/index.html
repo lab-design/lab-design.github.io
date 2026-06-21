@@ -85,7 +85,7 @@ Sayem Mohammad Imtiaz, Astha Singh, Fraol Batole, and Hridesh Rajan
 
 <h4>Abstract</h4>
 <p>
-  <span id="imtiaz2025irepair">
+  <span id="ImtiazSinghBatoleRajan2025">
     Not a day goes by without hearing about the impressive feats of large language models (LLMs), and equally, not a day passes without hearing about their challenges. LLMs are notoriously vulnerable to biases in their dataset, leading to issues such as toxicity, harmful responses, and factual inaccuracies. While domain-adaptive training has been employed to mitigate these issues, these techniques often address all model parameters indiscriminately during the repair process, resulting in poor repair quality and reduced model versatility. In this paper, drawing inspiration from fault localization via program slicing, we introduce a novel dynamic slicing-based intent-aware LLM repair strategy, IRepair. This approach selectively targets the most error-prone sections of the model for repair. Specifically, we propose dynamically slicing the model’s most sensitive layers that require immediate attention, concentrating repair efforts on those areas. This method enables more effective repairs with potentially less impact on the model’s overall versatility by altering a smaller portion of the model. Furthermore, dynamic selection allows for a more nuanced and precise model repair compared to a fixed selection strategy. We evaluated our technique on three models from the GPT2 and GPT-Neo families, with parameters ranging from 800M to 1.6B, in a toxicity mitigation setup. Our results show that IRepair repairs errors 43.6% more effectively while causing 46% less disruption to general performance compared to the closest baseline, direct preference optimization. Our empirical analysis also reveals that errors are more concentrated in a smaller section of the model, with the top 20% of layers exhibiting 773% more error density than the remaining 80%. This highlights the need for selective repair. Additionally, we demonstrate that a dynamic selection approach is essential for addressing errors dispersed throughout the model, ensuring a robust and efficient repair.
   </span>
 </p>
@@ -96,11 +96,11 @@ Sayem Mohammad Imtiaz, Astha Singh, Fraol Batole, and Hridesh Rajan
 
 <h4>ACM Reference</h4>
 <p>
-<span id="imtiaz2025irepair">Imtiaz, S.M. et al. 2025. IRepair: An Intent-Aware Approach to Repair Data-Driven Errors in Large Language Models. <i>FSE’2025: The ACM International Conference on the Foundations of Software Engineering</i> (June 2025).</span>
+<span id="ImtiazSinghBatoleRajan2025">Imtiaz, S.M. et al. 2025. IRepair: An Intent-Aware Approach to Repair Data-Driven Errors in Large Language Models. <i>FSE’2025: The ACM International Conference on the Foundations of Software Engineering</i> (June 2025).</span>
 </p>
 
 <h4>BibTeX Reference</h4>
-<pre><code>@inproceedings{imtiaz2025irepair,
+<pre><code>@inproceedings{ImtiazSinghBatoleRajan2025,
   author = {Sayem Mohammad Imtiaz and Astha Singh and Fraol Batole and Hridesh Rajan},
   title = {IRepair: An Intent-Aware Approach to Repair Data-Driven Errors in Large Language Models},
   booktitle = {FSE'2025: The ACM International Conference on the Foundations of Software Engineering},
