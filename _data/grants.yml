@@ -305,9 +305,11 @@
   agency: NSF
   primary: true
   title: "SHF: Small: Collaborative Research: Balancing Expressiveness and Modular Reasoning for Aspect-oriented Programming"
+  credit: "Hridesh Rajan (ISU PI) and Gary T. Leavens (UCF PI)"
   start_date: 2010-08-15
   url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1017334"
-  amount: $273,729
+  amount: $514,758
+  share: "ISU share: $273,729"
   PI: Hridesh Rajan
   coPIs:
   end_date: 2013-07-31
@@ -705,3 +707,14 @@
     debugging deep learning becomes faster and more accessible. The work builds on
     DeepLocalize, the team's first approach for bug localization in deep neural
     networks.
+
+- key: grant-nsf-1017262
+  agency: NSF
+  primary: false
+  title: "SHF: Small: Collaborative Research: Balancing Expressiveness and Modular Reasoning for Aspect-Oriented Programming"
+  start_date: 2010-08-15
+  url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1017262"
+  amount: $241,029
+  PI: Gary T. Leavens
+  coPIs:
+  end_date: 2015-07-31
