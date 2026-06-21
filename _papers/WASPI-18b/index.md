@@ -5,7 +5,7 @@ short_name: WASPI '18
 title: "On the Significance of Contract-Based Typestate Specification"
 bib: |
   @inproceedings{KhairunnesaNguyenRajan2018,
-    author = {Syeda Khairunnesa Samantha and Hoan Anh Nguyen and Hridesh Rajan},
+    author = {Khairunnesa, Samantha Syeda and Hoan Anh Nguyen and Hridesh Rajan},
     title = {On the Significance of Contract-Based Typestate Specification},
     booktitle = {Proceedings of the 1st {ACM} {SIGSOFT} International Workshop on Automated Specification Inference, WASPI@ESEC/SIGSOFT FSE, Lake Buena Vista, FL, USA, November 9, 2018},
     pages = {13--14},

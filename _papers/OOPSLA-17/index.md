@@ -5,7 +5,7 @@ short_name: OOPSLA '17
 title: "Exploiting Implicit Beliefs to Resolve Sparse Usage Problem in Usage-based Specification Mining"
 bib: |
   @article{KhairunnesaNguyenNguyenRajan2017,
-    author = {Syeda Khairunnesa Samantha and Hoan Anh Nguyen and Tien N. Nguyen and Hridesh Rajan},
+    author = {Khairunnesa, Samantha Syeda and Hoan Anh Nguyen and Tien N. Nguyen and Hridesh Rajan},
     title = {Exploiting Implicit Beliefs to Resolve Sparse Usage Problem in Usage-based Specification Mining},
     journal = {Proc. {ACM} Program. Lang.},
     volume = {1},
