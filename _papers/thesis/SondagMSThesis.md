@@ -4,7 +4,7 @@ permalink: /papers/thesis/SondagMSThesis.html
 short_name: Sondag MS Thesis
 title: "Phase-based tuning for better utilized performance-asymmetric multicores"
 bib:  |
-  @mastersthesis{sondag2009phase,
+  @mastersthesis{sondag2009phaseb,
     title = {Phase-based tuning for better utilized performance-asymmetric multicores},
     author = {Sondag, Tyler},
     year = {2009},

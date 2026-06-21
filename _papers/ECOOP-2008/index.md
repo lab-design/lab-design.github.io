@@ -2,7 +2,7 @@
 key: ECOOP-2008
 permalink: /papers/ECOOP-2008/
 short_name: ECOOP '08
-title: "Ptolemy: A Language with Quantified Typed, Events"
+title: "Ptolemy: A Language with Quantified, Typed Events"
 bib: |
   @inproceedings{rajan2008ptolemy,
     author = {Hridesh Rajan and Gary T. Leavens},

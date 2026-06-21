@@ -5,7 +5,7 @@ short_name: TR-414
 title: "Nu: Towards an Aspect-Oriented Invocation Mechanism"
 bib:  |
   @techreport{rajan2006nu,
-    title = {Nu: Towards an AspectOriented Invocation Mechanism},
+    title = {Nu: Towards an Aspect-Oriented Invocation Mechanism},
     author = {Rajan, Hridesh and Dyer, Robert and Narayanappa, Harish and Hanna, Youssef},
     year = {2006},
     institution = {Iowa State University, Dept. of Computer Science},

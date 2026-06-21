@@ -2,7 +2,7 @@
 key: mlstudy-techreport
 permalink: /papers/mlstudy-techreport/
 short_name: MLTR '18
-title: "Large-scale Study of Substitutability in the Presence of Effects"
+title: "What Do Developers Ask About ML Libraries? A Large-scale Study Using Stack Overflow"
 bib: |
   @inproceedings{Islam18,
     author = {Md Johirul, Islam, and Nguyen, Hoan and Rajan, Hridesh},
