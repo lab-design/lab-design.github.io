@@ -8,4 +8,4 @@ Fairify, presented at ICSE 2023 by Sumon Biswas and Hridesh Rajan, verifies indi
 
 Fairify moves fairness from something teams test for to something they can verify, which matters most where the cost of a biased decision is high. It is part of our lab's work on the fairness and dependability of machine learning.
 
-This work is part of [Modular and Dependable AI](/research/#modular-and-dependable-ai). The full paper is available [here](https://lab-design.github.io/papers/ICSE-23a/).
+This work is part of [Modular and Dependable AI](/research/#modular-and-dependable-ai); for the wider story see [our fairness overview](/news/2026/02/11/fairness-in-machine-learning/). The full paper is available [here](https://lab-design.github.io/papers/ICSE-23a/).

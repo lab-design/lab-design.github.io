@@ -8,4 +8,4 @@ Fair Preprocessing, presented at ESEC/FSE 2021 by Sumon Biswas and Hridesh Rajan
 
 By locating where unfairness enters, the approach lets developers address it at the source instead of only adjusting the final model. It is part of our lab's work on the fairness and dependability of machine learning.
 
-This work is part of [Modular and Dependable AI](/research/#modular-and-dependable-ai). The full paper is available [here](https://lab-design.github.io/papers/ESEC-FSE-21/).
+This work is part of [Modular and Dependable AI](/research/#modular-and-dependable-ai); for the wider story see [our fairness overview](/news/2026/02/11/fairness-in-machine-learning/). The full paper is available [here](https://lab-design.github.io/papers/ESEC-FSE-21/).
