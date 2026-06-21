@@ -1,5 +1,5 @@
 ---
-title: "Where does unfairness enter a machine-learning pipeline? We traced it at ESEC/FSE 2021."
+title: "Where does unfairness enter a machine-learning pipeline? Our ESEC/FSE 2021 paper pinpoints the stage."
 ---
 
 A machine-learning system is usually a pipeline: data passes through a sequence of preprocessing steps before a classifier ever sees it. Most fairness research has focused on the classifier, yet the root of unfairness often lies earlier, in how the data was transformed. Until this work there was no way to measure the unfairness introduced by a specific preprocessing step.

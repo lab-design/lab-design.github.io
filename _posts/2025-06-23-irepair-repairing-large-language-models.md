@@ -1,5 +1,5 @@
 ---
-title: "Can you fix a large language model without breaking everything else it does? Our FSE 2025 paper shows how."
+title: "Can you fix a large language model without breaking everything else it does? Our FSE 2025 paper fixes it precisely."
 ---
 
 Large language models absorb the biases in their training data, which surfaces as toxic or inaccurate output. The usual remedy, further training, adjusts the whole model at once. That tends to repair poorly and can degrade abilities that were working fine.
