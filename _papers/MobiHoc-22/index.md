@@ -7,7 +7,7 @@ bib: |
   @inproceedings{YuJiRajanLiu2022,
     author = {Menglu Yu and Bo Ji and Hridesh Rajan and Jia Liu},
     title = {On Scheduling Ring-All-Reduce Learning Jobs in Multi-Tenant GPU Clusters with Communication Contention},
-    booktitle = {MobiHoc '22: The Twenty-third International Symposium on Theory, Algorithmic Foundations, and Protocol Design for Mobile Networks and Mobile Computing, Seoul, Republic of Korea, October 17 - 20, 2022},
+    booktitle = {MobiHoc: The Twenty-third International Symposium on Theory, Algorithmic Foundations, and Protocol Design for Mobile Networks and Mobile Computing, Seoul, Republic of Korea},
     pages = {21--30},
     year = {2022},
     publisher = {{ACM}},

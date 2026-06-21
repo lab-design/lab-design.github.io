@@ -7,7 +7,7 @@ bib: |
   @inproceedings{OBrienETAL2024,
     author = {David O'Brien and Sumon Biswas and Sayem Mohammad Imtiaz and Rabe Abdalkareem and Emad Shihab and Hridesh Rajan},
     title = {Are Prompt Engineering and TODO Comments Friends or Foes? An Evaluation on GitHub Copilot},
-    booktitle = {Proceedings of the 46th {IEEE/ACM} International Conference on Software Engineering, {ICSE} 2024, Lisbon, Portugal, April 14-20, 2024},
+    booktitle = {Proceedings of the 46th IEEE/ACM International Conference on Software Engineering, ICSE, Lisbon, Portugal},
     pages = {219:1--219:13},
     year = {2024},
     publisher = {{ACM}},

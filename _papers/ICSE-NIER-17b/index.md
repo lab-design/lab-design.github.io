@@ -7,7 +7,7 @@ bib: |
   @inproceedings{PhanNguyenNguyenRajan2017,
     author = {Hung Phan and Hoan Anh Nguyen and Tien N. Nguyen and Hridesh Rajan},
     title = {Statistical Learning for Inference Between Implementations and Documentation},
-    booktitle = {39th {IEEE/ACM} International Conference on Software Engineering: New Ideas and Emerging Technologies Results Track, {ICSE-NIER} 2017, Buenos Aires, Argentina, May 20-28, 2017},
+    booktitle = {39th IEEE/ACM International Conference on Software Engineering: New Ideas and Emerging Technologies Results Track, ICSE-NIER, Buenos Aires, Argentina},
     pages = {27--30},
     year = {2017},
     publisher = {{IEEE} Computer Society},

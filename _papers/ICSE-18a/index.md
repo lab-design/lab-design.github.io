@@ -7,7 +7,7 @@ bib: |
   @inproceedings{UpadhyayaRajan2018a,
     author = {Ganesha Upadhyaya and Hridesh Rajan},
     title = {Collective Program Analysis},
-    booktitle = {Proceedings of the 40th International Conference on Software Engineering, {ICSE} 2018, Gothenburg, Sweden, May 27 - June 03, 2018},
+    booktitle = {Proceedings of the 40th International Conference on Software Engineering, ICSE, Gothenburg, Sweden},
     pages = {620--631},
     year = {2018},
     publisher = {{ACM}},

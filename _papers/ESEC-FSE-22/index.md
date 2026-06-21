@@ -7,7 +7,7 @@ bib: |
   @inproceedings{OBrienETAL2022,
     author = {David O'Brien and Sumon Biswas and Sayem Imtiaz and Rabe Abdalkareem and Emad Shihab and Hridesh Rajan},
     title = {23 Shades of Self-Admitted Technical Debt: An Empirical Study on Machine Learning Software},
-    booktitle = {Proceedings of the 30th {ACM} Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering, {ESEC/FSE} 2022, Singapore, Singapore, November 14-18, 2022},
+    booktitle = {Proceedings of the 30th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering, ESEC/FSE, Singapore, Singapore},
     pages = {734--746},
     year = {2022},
     publisher = {{ACM}},

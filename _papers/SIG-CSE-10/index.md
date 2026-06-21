@@ -7,7 +7,7 @@ bib: |
   @inproceedings{SondagPokornyRajan2010,
     author = {Tyler Sondag and Kian L. Pokorny and Hridesh Rajan},
     title = {Frances: A Tool For Understanding Code Generation},
-    booktitle = {Proceedings of the 41st {ACM} technical symposium on Computer science education, {SIGCSE} 2010, Milwaukee, Wisconsin, USA, March 10-13, 2010},
+    booktitle = {Proceedings of the 41st ACM technical symposium on Computer science education, SIGCSE, Milwaukee, Wisconsin, USA},
     pages = {12--16},
     year = {2010},
     publisher = {{ACM}},

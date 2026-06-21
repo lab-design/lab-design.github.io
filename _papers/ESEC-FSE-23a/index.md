@@ -7,7 +7,7 @@ bib: |
   @inproceedings{AhmedETAL2023,
     author = {Shibbir Ahmed and Sayem Mohammad Imtiaz and Khairunnesa, Samantha Syeda and Breno Dantas Cruz and Hridesh Rajan},
     title = {Design by Contract for Deep Learning APIs},
-    booktitle = {Proceedings of the 31st {ACM} Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering, {ESEC/FSE} 2023, San Francisco, CA, USA, December 3-9, 2023},
+    booktitle = {Proceedings of the 31st ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering, ESEC/FSE, San Francisco, USA},
     pages = {94--106},
     year = {2023},
     publisher = {{ACM}},

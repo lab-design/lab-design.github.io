@@ -7,7 +7,7 @@ bib: |
   @inproceedings{HannaSamuelsonBasuRajan2010,
     author = {Youssef Hanna and David Samuelson and Samik Basu and Hridesh Rajan},
     title = {Automating Cut-off for Multi-parameterized Systems},
-    booktitle = {Formal Methods and Software Engineering - 12th International Conference on Formal Engineering Methods, {ICFEM} 2010, Shanghai, China, November 17-19, 2010. Proceedings},
+    booktitle = {Formal Methods and Software Engineering - 12th International Conference on Formal Engineering Methods, ICFEM, Shanghai, China},
     volume = {6447},
     series = {Lecture Notes in Computer Science},
     pages = {338--354},

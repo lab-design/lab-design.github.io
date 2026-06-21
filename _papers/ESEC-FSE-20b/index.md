@@ -7,7 +7,7 @@ bib: |
   @inproceedings{PanRajan2020,
     author = {Rangeet Pan and Hridesh Rajan},
     title = {On Decomposing a Deep Neural Network into Modules},
-    booktitle = {{ESEC/FSE} '20: 28th {ACM} Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering, Virtual Event, USA, November 8-13, 2020},
+    booktitle = {ESEC/FSE: 28th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering, Virtual Event, USA},
     pages = {889--900},
     year = {2020},
     publisher = {{ACM}},

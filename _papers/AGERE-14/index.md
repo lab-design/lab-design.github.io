@@ -7,7 +7,7 @@ bib: |
   @inproceedings{UpadhyayaRajan2014,
     author = {Ganesha Upadhyaya and Hridesh Rajan},
     title = {An Automatic Actors to Threads Mapping Technique for JVM-Based Actor Frameworks},
-    booktitle = {Proceedings of the 4th International Workshop on Programming based on Actors Agents {\&} Decentralized Control, AGERE! 2014, Portland, OR, USA, October 20, 2014},
+    booktitle = {Proceedings of the 4th International Workshop on Programming based on Actors Agents \& Decentralized Control, AGERE!, Portland, USA},
     pages = {29--41},
     year = {2014},
     publisher = {{ACM}},

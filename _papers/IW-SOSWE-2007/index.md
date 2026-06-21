@@ -7,7 +7,7 @@ bib: |
   @inproceedings{HosamaniNarayanappaRajan2007a,
     author = {Mahantesh Hosamani and Harish Narayanappa and Hridesh Rajan},
     title = {Monitoring the Monitor: An Approach Towards Trustworthiness in Service Oriented Architecture},
-    booktitle = {Proceedings of the 2nd International Workshop on Service Oriented Software Engineering: in conjunction with the 6th {ESEC/FSE} joint meeting, {IW-SOSWE} 2007, Dubrovnik, Croatia, September 3, 2007},
+    booktitle = {Proceedings of the 2nd International Workshop on Service Oriented Software Engineering: in conjunction with the 6th ESEC/FSE joint meeting, IW-SOSWE, Dubrovnik, Croatia},
     pages = {42--46},
     year = {2007},
     publisher = {{ACM}},

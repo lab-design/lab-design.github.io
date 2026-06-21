@@ -7,7 +7,7 @@ bib: |
   @inproceedings{FernandoDyerRajan2012,
     author = {Rex D. Fernando and Robert Dyer and Hridesh Rajan},
     title = {Event Type Polymorphism},
-    booktitle = {Proceedings of the eleventh workshop on Foundations of Aspect-Oriented Languages, {FOAL} 2012, Potsdam, Germany, March 25-30, 2012},
+    booktitle = {Proceedings of the eleventh workshop on Foundations of Aspect-Oriented Languages, FOAL, Potsdam, Germany},
     pages = {33--38},
     year = {2012},
     publisher = {{ACM}},

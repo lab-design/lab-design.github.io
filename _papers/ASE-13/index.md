@@ -7,7 +7,7 @@ bib: |
   @inproceedings{NguyenETAL2013,
     author = {Hoan Anh Nguyen and Anh Tuan Nguyen and Tung Thanh Nguyen and Tien N. Nguyen and Hridesh Rajan},
     title = {A Study of Repetitiveness of Code Changes in Software Evolution},
-    booktitle = {2013 28th {IEEE/ACM} International Conference on Automated Software Engineering, {ASE} 2013, Silicon Valley, CA, USA, November 11-15, 2013},
+    booktitle = {28th IEEE/ACM International Conference on Automated Software Engineering, ASE, Silicon Valley, USA},
     pages = {180--190},
     year = {2013},
     publisher = {{IEEE}},

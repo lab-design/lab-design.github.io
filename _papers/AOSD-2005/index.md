@@ -7,7 +7,7 @@ bib: |
   @inproceedings{RajanSullivan2005a,
     author = {Hridesh Rajan and Kevin J. Sullivan},
     title = {Aspect Language Features for Concern Coverage Profiling},
-    booktitle = {Proceedings of the 4th International Conference on Aspect-Oriented Software Development, {AOSD} 2005, Chicago, Illinois, USA, March 14-18, 2005},
+    booktitle = {Proceedings of the 4th International Conference on Aspect-Oriented Software Development, AOSD, Chicago, Illinois, USA},
     pages = {181--191},
     year = {2005},
     publisher = {{ACM}},

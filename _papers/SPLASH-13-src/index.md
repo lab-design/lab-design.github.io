@@ -7,7 +7,7 @@ bib: |
   @inproceedings{Dyer2013a,
     author = {Robert Dyer},
     title = {Task Fusion: Improving Utilization of Multi-user Clusters},
-    booktitle = {SPLASH 2013},
+    booktitle = {SPLASH},
     location = {Indianapolis, IN, USA},
     month = {October},
     year = {2013},

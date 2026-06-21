@@ -7,7 +7,7 @@ bib: |
   @inproceedings{DyerRajan2008b,
     author = {Robert Dyer and Hridesh Rajan},
     title = {A Decision Tree-based Approach to Dynamic Pointcut Evaluation},
-    booktitle = {VMIL@OOPSLA 2008: Proceedings of the 2nd Workshop on Virtual Machines and Intermediate Languages for emerging modularization mechanisms, Nashville, Tennessee, USA, October 21 - 23, 2008},
+    booktitle = {VMIL@OOPSLA: Proceedings of the 2nd Workshop on Virtual Machines and Intermediate Languages for emerging modularization mechanisms, Nashville, Tennessee, USA},
     pages = {4:1--4:10},
     year = {2008},
     publisher = {{ACM}},

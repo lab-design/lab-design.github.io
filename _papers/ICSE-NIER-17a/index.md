@@ -7,7 +7,7 @@ bib: |
   @inproceedings{UpadhyayaRajan2017,
     author = {Ganesha Upadhyaya and Hridesh Rajan},
     title = {On Accelerating Ultra-Large-Scale Mining},
-    booktitle = {39th {IEEE/ACM} International Conference on Software Engineering: New Ideas and Emerging Technologies Results Track, {ICSE-NIER} 2017, Buenos Aires, Argentina, May 20-28, 2017},
+    booktitle = {39th IEEE/ACM International Conference on Software Engineering: New Ideas and Emerging Technologies Results Track, ICSE-NIER, Buenos Aires, Argentina},
     pages = {39--42},
     year = {2017},
     publisher = {{IEEE} Computer Society},

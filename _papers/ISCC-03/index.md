@@ -7,7 +7,7 @@ bib: |
   @inproceedings{Rajan2003,
     author = {Hridesh Rajan},
     title = {Effects of Applying Mobility Localization on Source Routing Algorithms for Mobile Ad Hoc Network},
-    booktitle = {Proceedings of the Eighth {IEEE} Symposium on Computers and Communications {(ISCC} 2003), 30 June - 3 July 2003, Kiris-Kemer, Turkey},
+    booktitle = {Proceedings of the Eighth IEEE Symposium on Computers and Communications (ISCC), Kiris-Kemer, Turkey},
     pages = {39--44},
     year = {2003},
     publisher = {{IEEE} Computer Society},

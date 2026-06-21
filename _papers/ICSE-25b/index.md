@@ -7,7 +7,7 @@ bib: |
   @inproceedings{BatoleETAL2025,
     author = {Fraol Batole and David O'Brien and Tien N. Nguyen and Robert Dyer and Hridesh Rajan},
     title = {An LLM-Based Agent-Oriented Approach for Automated Code Design Issue Localization},
-    booktitle = {47th {IEEE/ACM} International Conference on Software Engineering, {ICSE} 2025, Ottawa, ON, Canada, April 26 - May 6, 2025},
+    booktitle = {47th IEEE/ACM International Conference on Software Engineering, ICSE, Ottawa, Canada},
     pages = {1320--1332},
     year = {2025},
     publisher = {{IEEE}},

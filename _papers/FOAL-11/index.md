@@ -7,7 +7,7 @@ bib: |
   @inproceedings{BagherzadehLeavensDyer2011,
     author = {Mehdi Bagherzadeh and Gary T. Leavens and Robert Dyer},
     title = {Applying Translucid Contracts for Modular Reasoning About Aspect and Object Oriented Events},
-    booktitle = {FOAL '11: Workshop on Foundations of Aspect-Oriented Languages workshop},
+    booktitle = {FOAL: Workshop on Foundations of Aspect-Oriented Languages workshop},
     location = {Porto de Galinhas, Pernambuco, Brazil},
     month = {March},
     year = {2011},

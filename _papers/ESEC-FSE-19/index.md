@@ -7,7 +7,7 @@ bib: |
   @inproceedings{IslamNguyenPanRajan2019,
     author = {Md Johirul Islam and Giang Nguyen and Rangeet Pan and Hridesh Rajan},
     title = {A Comprehensive Study on Deep Learning Bug Characteristics},
-    booktitle = {Proceedings of the {ACM} Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering, {ESEC/SIGSOFT} {FSE} 2019, Tallinn, Estonia, August 26-30, 2019},
+    booktitle = {Proceedings of the ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering, ESEC/SIGSOFT FSE, Tallinn, Estonia},
     pages = {510--520},
     year = {2019},
     publisher = {{ACM}},

@@ -7,7 +7,7 @@ bib: |
   @inproceedings{DyerRajanNguyen2013,
     author = {Robert Dyer and Hridesh Rajan and Tien N. Nguyen},
     title = {Declarative Visitors to Ease Fine-grained Source Code Mining with Full History on Billions of {AST} Nodes},
-    booktitle = {Generative Programming: Concepts and Experiences, GPCE'13, Indianapolis, IN, {USA} - October 27 - 28, 2013},
+    booktitle = {Generative Programming: Concepts and Experiences, GPCE, Indianapolis, USA - October 27 - 28},
     pages = {23--32},
     year = {2013},
     publisher = {{ACM}},

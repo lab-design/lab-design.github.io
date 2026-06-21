@@ -7,7 +7,7 @@ bib: |
   @inproceedings{HannaBasuRajan2009b,
     author = {Youssef Hanna and Samik Basu and Hridesh Rajan},
     title = {Behavioral Automata Composition for Automatic Topology Independent Verification of Parameterized Systems},
-    booktitle = {Proceedings of the 7th joint meeting of the European Software Engineering Conference and the {ACM} {SIGSOFT} International Symposium on Foundations of Software Engineering, 2009, Amsterdam, The Netherlands, August 24-28, 2009},
+    booktitle = {Proceedings of the 7th joint meeting of the European Software Engineering Conference and the ACM SIGSOFT International Symposium on Foundations of Software Engineering, Amsterdam, The Netherlands},
     pages = {325--334},
     year = {2009},
     publisher = {{ACM}},

@@ -7,7 +7,7 @@ bib: |
   @inproceedings{IslamPanNguyenRajan2020,
     author = {Md Johirul Islam and Rangeet Pan and Giang Nguyen and Hridesh Rajan},
     title = {Repairing Deep Neural Networks: Fix Patterns and Challenges},
-    booktitle = {{ICSE} '20: 42nd International Conference on Software Engineering, Seoul, South Korea, 27 June - 19 July, 2020},
+    booktitle = {ICSE: 42nd International Conference on Software Engineering, Seoul, South Korea},
     pages = {1135--1146},
     year = {2020},
     publisher = {{ACM}},

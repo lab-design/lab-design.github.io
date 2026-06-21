@@ -7,7 +7,7 @@ bib: |
   @inproceedings{DyerRajanCai2012,
     author = {Robert Dyer and Hridesh Rajan and Yuanfang Cai},
     title = {An Exploratory Study of the Design Impact of Language Features for Aspect-oriented Interfaces},
-    booktitle = {Proceedings of the 11th International Conference on Aspect-oriented Software Development, {AOSD} 2012, Potsdam, Germany, March 25-30, 2012},
+    booktitle = {Proceedings of the 11th International Conference on Aspect-oriented Software Development, AOSD, Potsdam, Germany},
     pages = {143--154},
     year = {2012},
     publisher = {{ACM}},

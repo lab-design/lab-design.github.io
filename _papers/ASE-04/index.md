@@ -7,7 +7,7 @@ bib: |
   @inproceedings{XuRajanSullivan2004,
     author = {Jia Xu and Hridesh Rajan and Kevin J. Sullivan},
     title = {Understanding Aspects via Implicit Invocation},
-    booktitle = {19th {IEEE} International Conference on Automated Software Engineering {(ASE} 2004), 20-25 September 2004, Linz, Austria},
+    booktitle = {19th IEEE International Conference on Automated Software Engineering (ASE), Linz, Austria},
     pages = {332--335},
     year = {2004},
     publisher = {{IEEE} Computer Society},

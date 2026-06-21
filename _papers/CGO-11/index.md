@@ -7,7 +7,7 @@ bib: |
   @inproceedings{SondagRajan2011,
     author = {Tyler Sondag and Hridesh Rajan},
     title = {Phase-based Tuning for Better Utilization of Performance-Asymmetric Multicore Processors},
-    booktitle = {Proceedings of the {CGO} 2011, The 9th International Symposium on Code Generation and Optimization, Chamonix, France, April 2-6, 2011},
+    booktitle = {Proceedings of the CGO, The 9th International Symposium on Code Generation and Optimization, Chamonix, France},
     pages = {11--20},
     year = {2011},
     publisher = {{IEEE} Computer Society},

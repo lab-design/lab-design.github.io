@@ -7,7 +7,7 @@ bib: |
   @inproceedings{TylerSondag2007,
     author = {Tyler Sondag and Viswanath Krishnamurthy and Hridesh Rajan},
     title = {Predictive Thread-to-Core Assignment on a Heterogeneous Multi-core Processor},
-    booktitle = {Proceedings of the 4th workshop on Programming languages and operating systems, PLOS@SOSP 2007, Stevenson, Washington, USA, October 18, 2007},
+    booktitle = {Proceedings of the 4th workshop on Programming languages and operating systems, PLOS@SOSP, Stevenson, Washington, USA},
     pages = {7:1--7:5},
     year = {2007},
     publisher = {{ACM}},

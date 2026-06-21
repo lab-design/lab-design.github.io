@@ -7,7 +7,7 @@ bib: |
   @inproceedings{Rajan2004,
     author = {Hridesh Rajan},
     title = {One More Step in the Direction of Modularized Integration Concerns},
-    booktitle = {26th International Conference on Software Engineering {(ICSE} 2004), 23-28 May 2004, Edinburgh, United Kingdom},
+    booktitle = {26th International Conference on Software Engineering (ICSE), Edinburgh, United Kingdom},
     pages = {36--38},
     year = {2004},
     publisher = {{IEEE} Computer Society},

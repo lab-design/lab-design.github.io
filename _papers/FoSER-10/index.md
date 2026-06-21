@@ -7,7 +7,7 @@ bib: |
   @inproceedings{Rajan2010,
     author = {Hridesh Rajan},
     title = {Building Scalable Software Systems in the Multicore Era},
-    booktitle = {Proceedings of the Workshop on Future of Software Engineering Research, FoSER 2010, at the 18th {ACM} {SIGSOFT} International Symposium on Foundations of Software Engineering, 2010, Santa Fe, NM, USA, November 7-11, 2010},
+    booktitle = {Proceedings of the Workshop on Future of Software Engineering Research, FoSER, at the 18th ACM SIGSOFT International Symposium on Foundations of Software Engineering, Santa Fe, USA},
     pages = {293--298},
     year = {2010},
     publisher = {{ACM}},

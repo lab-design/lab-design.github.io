@@ -7,7 +7,7 @@ bib: |
   @inproceedings{ThomasETAL2025,
     author = {Deepak-George Thomas and Matteo Biagiola and Nargiz Humbatova and Mohammad Wardat and Gunel Jahangirova and Hridesh Rajan and Paolo Tonella},
     title = {µPRL: A Mutation Testing Pipeline for Deep Reinforcement Learning based on Real Faults},
-    booktitle = {ICSE'2025: The 47th International Conference on Software Engineering},
+    booktitle = {ICSE: The 47th International Conference on Software Engineering},
     location = {Ottawa, Canada},
     month = {April 27-May 3},
     year = {2025},

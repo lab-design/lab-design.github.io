@@ -7,7 +7,7 @@ bib: |
   @inproceedings{SullivanETAL2005,
     author = {Kevin J. Sullivan and William G. Griswold and Yuanyuan Song and Yuanfang Cai and Macneil Shonle and Nishit Tewari and Hridesh Rajan},
     title = {Information hiding interfaces for aspect-oriented design},
-    booktitle = {Proceedings of the 10th European Software Engineering Conference held jointly with 13th {ACM} {SIGSOFT} International Symposium on Foundations of Software Engineering, 2005, Lisbon, Portugal, September 5-9, 2005},
+    booktitle = {Proceedings of the 10th European Software Engineering Conference held jointly with 13th ACM SIGSOFT International Symposium on Foundations of Software Engineering, Lisbon, Portugal},
     pages = {166--175},
     year = {2005},
     publisher = {{ACM}},

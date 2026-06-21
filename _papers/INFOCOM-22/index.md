@@ -7,7 +7,7 @@ bib: |
   @inproceedings{YuETAL2022,
     author = {Menglu Yu and Ye Tian and Bo Ji and Chuan Wu and Hridesh Rajan and Jia Liu},
     title = {GADGET: Online Resource Optimization for Scheduling Ring-All-Reduce Learning Jobs},
-    booktitle = {{IEEE} {INFOCOM} 2022 - {IEEE} Conference on Computer Communications, London, United Kingdom, May 2-5, 2022},
+    booktitle = {IEEE INFOCOM - IEEE Conference on Computer Communications, London, United Kingdom},
     pages = {1569--1578},
     year = {2022},
     publisher = {{IEEE}},

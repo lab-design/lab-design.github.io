@@ -7,7 +7,7 @@ bib: |
   @inproceedings{BiswasRajan2020,
     author = {Sumon Biswas and Hridesh Rajan},
     title = {Do the Machine Learning Models on a Crowd Sourced Platform Exhibit Bias? An Empirical Study on Model Fairness},
-    booktitle = {{ESEC/FSE} '20: 28th {ACM} Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering, Virtual Event, USA, November 8-13, 2020},
+    booktitle = {ESEC/FSE: 28th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering, Virtual Event, USA},
     pages = {642--653},
     year = {2020},
     publisher = {{ACM}},

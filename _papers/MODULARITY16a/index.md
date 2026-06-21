@@ -7,7 +7,7 @@ bib: |
   @inproceedings{LongETAL2016,
     author = {Yuheng Long and Mehdi Bagherzadeh and Eric Lin and Ganesha Upadhyaya and Hridesh Rajan},
     title = {On Ordering Problems in Message Passing Software},
-    booktitle = {Proceedings of the 15th International Conference on Modularity, {MODULARITY} 2016, M{\'{a}}laga, Spain, March 14 - 18, 2016},
+    booktitle = {Proceedings of the 15th International Conference on Modularity, MODULARITY, M\'alaga, Spain},
     pages = {54--65},
     year = {2016},
     publisher = {{ACM}},

@@ -8,7 +8,7 @@ bib: |
   @inproceedings{TiwariUpadhyayaNguyenRajan2017,
     author = {Nitin M. Tiwari and Ganesha Upadhyaya and Hoan Anh Nguyen and Hridesh Rajan},
     title = {Candoia: A Platform for Building and Sharing Mining Software Repositories Tools as Apps},
-    booktitle = {Proceedings of the 14th International Conference on Mining Software Repositories, {MSR} 2017, Buenos Aires, Argentina, May 20-28, 2017},
+    booktitle = {Proceedings of the 14th International Conference on Mining Software Repositories, MSR, Buenos Aires, Argentina},
     pages = {53--63},
     year = {2017},
     publisher = {{IEEE} Computer Society},

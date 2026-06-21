@@ -7,7 +7,7 @@ bib: |
   @inproceedings{GoharBiswasRajan2023,
     author = {Usman Gohar and Sumon Biswas and Hridesh Rajan},
     title = {Towards Understanding Fairness and its Composition in Ensemble Machine Learning},
-    booktitle = {45th {IEEE/ACM} International Conference on Software Engineering, {ICSE} 2023, Melbourne, Australia, May 14-20, 2023},
+    booktitle = {45th IEEE/ACM International Conference on Software Engineering, ICSE, Melbourne, Australia},
     pages = {1533--1545},
     year = {2023},
     publisher = {{IEEE}},

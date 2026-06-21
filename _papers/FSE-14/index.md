@@ -7,7 +7,7 @@ bib: |
   @inproceedings{NguyenDyerNguyenRajan2014,
     author = {Hoan Anh Nguyen and Robert Dyer and Tien N. Nguyen and Hridesh Rajan},
     title = {Mining Preconditions of {API}s in Large-scale Code Corpus},
-    booktitle = {Proceedings of the 22nd {ACM} {SIGSOFT} International Symposium on Foundations of Software Engineering, (FSE-22), Hong Kong, China, November 16 - 22, 2014},
+    booktitle = {Proceedings of the 22nd ACM SIGSOFT International Symposium on Foundations of Software Engineering, (FSE-22), Hong Kong, China},
     pages = {166--177},
     year = {2014},
     publisher = {{ACM}},

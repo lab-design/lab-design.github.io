@@ -7,7 +7,7 @@ bib: |
   @inproceedings{NguyenETAL2022,
     author = {Hoan Anh Nguyen and Hung Dang Phan and Khairunnesa, Samantha Syeda and Son Nguyen and Aashish Yadavally and Shaohua Wang and Hridesh Rajan and Tien N. Nguyen},
     title = {A Hybrid Approach for Inference Between Behavioral Exception API Documentation and Implementations, and Its Applications},
-    booktitle = {37th {IEEE/ACM} International Conference on Automated Software Engineering, {ASE} 2022, Rochester, MI, USA, October 10-14, 2022},
+    booktitle = {37th IEEE/ACM International Conference on Automated Software Engineering, ASE, Rochester, USA},
     pages = {2:1--2:13},
     year = {2022},
     publisher = {{ACM}},

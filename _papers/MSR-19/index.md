@@ -8,7 +8,7 @@ bib: |
   @inproceedings{BiswasIslamHuangRajan2019,
     author = {Sumon Biswas and Md Johirul Islam and Yijia Huang and Hridesh Rajan},
     title = {Boa Meets Python: A Boa Dataset of Data Science Software in Python Language},
-    booktitle = {Proceedings of the 16th International Conference on Mining Software Repositories, {MSR} 2019, 26-27 May 2019, Montreal, Canada},
+    booktitle = {Proceedings of the 16th International Conference on Mining Software Repositories, MSR, Montreal, Canada},
     pages = {577--581},
     year = {2019},
     publisher = {{IEEE} / {ACM}},

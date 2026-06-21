@@ -7,7 +7,7 @@ bib: |
   @inproceedings{GhanbariThomasArshadRajan2023,
     author = {Ali Ghanbari and Deepak{-}George Thomas and Muhammad Arbab Arshad and Hridesh Rajan},
     title = {Mutation-based Fault Localization of Deep Neural Networks},
-    booktitle = {38th {IEEE/ACM} International Conference on Automated Software Engineering, {ASE} 2023, Luxembourg, September 11-15, 2023},
+    booktitle = {38th IEEE/ACM International Conference on Automated Software Engineering, ASE, Luxembourg},
     pages = {1301--1313},
     year = {2023},
     publisher = {{IEEE}},

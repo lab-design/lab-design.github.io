@@ -7,7 +7,7 @@ bib:  |
   @inproceedings{ShanerRajanLeavens2008,
     title = {Model Programs for Preserving Composite Invariants},
     author = {Shaner, Steve M and Rajan, Hridesh and Leavens, Gary T},
-    booktitle = {Seventh International Workshop on Specification and Verification of Component-Based Systems (SAVCBS 2008)},
+    booktitle = {Seventh International Workshop on Specification and Verification of Component-Based Systems (SAVCBS)},
     pages = {95-100},
     year = {2008},
     numpages = {6},

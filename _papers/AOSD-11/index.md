@@ -7,7 +7,7 @@ bib: |
   @inproceedings{BagherzadehRajanLeavensMooney2011,
     author = {Mehdi Bagherzadeh and Hridesh Rajan and Gary T. Leavens and Sean L. Mooney},
     title = {Translucid Contracts: Expressive Specification and Modular Verification for Aspect-Oriented Interfaces},
-    booktitle = {Proceedings of the 10th International Conference on Aspect-Oriented Software Development, {AOSD} 2011, Porto de Galinhas, Brazil, March 21-25, 2011},
+    booktitle = {Proceedings of the 10th International Conference on Aspect-Oriented Software Development, AOSD, Porto de Galinhas, Brazil},
     pages = {141--152},
     year = {2011},
     publisher = {{ACM}},

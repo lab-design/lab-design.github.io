@@ -7,7 +7,7 @@ bib: |
   @inproceedings{LeavensNaumannRajanAotani2016,
     author = {Gary T. Leavens and David A. Naumann and Hridesh Rajan and Tomoyuki Aotani},
     title = {Specifying and Verifying Advanced Control Features},
-    booktitle = {Leveraging Applications of Formal Methods, Verification and Validation: Discussion, Dissemination, Applications - 7th International Symposium, ISoLA 2016, Imperial, Corfu, Greece, October 10-14, 2016, Proceedings, Part {II}},
+    booktitle = {Leveraging Applications of Formal Methods, Verification and Validation: Discussion, Dissemination, Applications - 7th International Symposium, ISoLA, Imperial, Corfu, Greece},
     volume = {9953},
     series = {Lecture Notes in Computer Science},
     pages = {80--96},

@@ -7,7 +7,7 @@ bib: |
   @inproceedings{KhairunnesaNguyenRajan2018,
     author = {Khairunnesa, Samantha Syeda and Hoan Anh Nguyen and Hridesh Rajan},
     title = {On the Significance of Contract-Based Typestate Specification},
-    booktitle = {Proceedings of the 1st {ACM} {SIGSOFT} International Workshop on Automated Specification Inference, WASPI@ESEC/SIGSOFT FSE, Lake Buena Vista, FL, USA, November 9, 2018},
+    booktitle = {Proceedings of the 1st ACM SIGSOFT International Workshop on Automated Specification Inference, WASPI@ESEC/SIGSOFT FSE, Lake Buena Vista, USA},
     pages = {13--14},
     year = {2018},
     publisher = {{ACM}},

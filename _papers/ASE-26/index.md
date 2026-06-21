@@ -7,7 +7,7 @@ bib: |
   @inproceedings{BatoleKhomhRajan2026,
     author = {Batole, Fraol and Khomh, Foutse and Rajan, Hridesh},
     title = {RefineAct: Automatic Runtime Verification of LLM Agent Actions},
-    booktitle = {ASE'2026: the 41st IEEE/ACM International Conference on Automated Software Engineering},
+    booktitle = {ASE: the 41st IEEE/ACM International Conference on Automated Software Engineering},
     location = {Munich, Germany},
     month = {October 12--16},
     year = {2026},

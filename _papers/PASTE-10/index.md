@@ -7,7 +7,7 @@ bib: |
   @inproceedings{NarayanappaBansalRajan2010,
     author = {Harish Narayanappa and Mukul S. Bansal and Hridesh Rajan},
     title = {Property-Aware Program Sampling},
-    booktitle = {Proceedings of the 9th {ACM} {SIGPLAN-SIGSOFT} Workshop on Program Analysis for Software Tools and Engineering, PASTE'10, Toronto, Ontario, Canada, June 5-6, 2010},
+    booktitle = {Proceedings of the 9th ACM SIGPLAN-SIGSOFT Workshop on Program Analysis for Software Tools and Engineering, PASTE, Toronto, Ontario, Canada},
     pages = {45--52},
     year = {2010},
     publisher = {{ACM}},

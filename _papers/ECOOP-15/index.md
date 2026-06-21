@@ -7,7 +7,7 @@ bib: |
   @inproceedings{LongLiuRajan2015,
     author = {Yuheng Long and Yu David Liu and Hridesh Rajan},
     title = {Intensional Effect Polymorphism},
-    booktitle = {29th European Conference on Object-Oriented Programming, {ECOOP} 2015, Prague, Czech Republic, July 5-10, 2015},
+    booktitle = {29th European Conference on Object-Oriented Programming, ECOOP, Prague, Czech Republic},
     volume = {37},
     series = {LIPIcs},
     pages = {346--370},

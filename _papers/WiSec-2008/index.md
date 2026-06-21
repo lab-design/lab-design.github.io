@@ -7,7 +7,7 @@ bib: |
   @inproceedings{HannaRajanZhang2008b,
     author = {Youssef Hanna and Hridesh Rajan and Wensheng Zhang},
     title = {Slede: A Domain-Specific Verification Framework for Sensor Network Security Protocol Implementations},
-    booktitle = {Proceedings of the First {ACM} Conference on Wireless Network Security, {WISEC} 2008, Alexandria, VA, USA, March 31 - April 02, 2008},
+    booktitle = {Proceedings of the First ACM Conference on Wireless Network Security, WISEC, Alexandria, USA},
     pages = {109--118},
     year = {2008},
     publisher = {{ACM}},

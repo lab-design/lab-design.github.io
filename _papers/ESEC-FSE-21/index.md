@@ -7,7 +7,7 @@ bib: |
   @inproceedings{BiswasRajan2021,
     author = {Sumon Biswas and Hridesh Rajan},
     title = {Fair Preprocessing: Towards Understanding Compositional Fairness of Data Transformers in Machine Learning Pipeline},
-    booktitle = {{ESEC/FSE} '21: 29th {ACM} Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering, Athens, Greece, August 23-28, 2021},
+    booktitle = {ESEC/FSE: 29th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering, Athens, Greece},
     pages = {981--993},
     year = {2021},
     publisher = {{ACM}},

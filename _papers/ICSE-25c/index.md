@@ -7,7 +7,7 @@ bib: |
   @inproceedings{MankeWardatKhomhRajan2025,
     author = {Ruchira Manke and Mohammad Wardat and Foutse Khomh and Hridesh Rajan},
     title = {Mock Deep Testing: Toward Separate Development of Data and Models for Deep Learning},
-    booktitle = {47th {IEEE/ACM} International Conference on Software Engineering, {ICSE} 2025, Ottawa, ON, Canada, April 26 - May 6, 2025},
+    booktitle = {47th IEEE/ACM International Conference on Software Engineering, ICSE, Ottawa, Canada},
     pages = {2970--2982},
     year = {2025},
     publisher = {{IEEE}},

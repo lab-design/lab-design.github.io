@@ -7,7 +7,7 @@ bib: |
   @inproceedings{DyerRajan2008a,
     author = {Robert Dyer and Hridesh Rajan},
     title = {Nu: a Dynamic Aspect-Oriented Intermediate Language Model and Virtual Machine for Flexible Runtime Adaptation},
-    booktitle = {Proceedings of the 7th International Conference on Aspect-Oriented Software Development, {AOSD} 2008, Brussels, Belgium, March 31 - April 4, 2008},
+    booktitle = {Proceedings of the 7th International Conference on Aspect-Oriented Software Development, AOSD, Brussels, Belgium},
     pages = {191--202},
     year = {2008},
     publisher = {{ACM}},

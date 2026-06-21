@@ -7,7 +7,7 @@ bib: |
   @inproceedings{RajanLeavens2008a,
     author = {Hridesh Rajan and Gary T. Leavens},
     title = {Ptolemy: A Language with Quantified, Typed Events},
-    booktitle = {{ECOOP} 2008 - Object-Oriented Programming, 22nd European Conference, Paphos, Cyprus, July 7-11, 2008, Proceedings},
+    booktitle = {ECOOP - Object-Oriented Programming, 22nd European Conference, Paphos, Cyprus},
     volume = {5142},
     series = {Lecture Notes in Computer Science},
     pages = {155--179},

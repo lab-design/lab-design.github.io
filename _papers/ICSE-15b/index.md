@@ -7,7 +7,7 @@ bib: |
   @inproceedings{RajanNguyenLeavensDyer2015,
     author = {Hridesh Rajan and Tien N. Nguyen and Gary T. Leavens and Robert Dyer},
     title = {Inferring Behavioral Specifications from Large-scale Repositories by Leveraging Collective Intelligence},
-    booktitle = {37th {IEEE/ACM} International Conference on Software Engineering, {ICSE} 2015, Florence, Italy, May 16-24, 2015, Volume 2},
+    booktitle = {37th IEEE/ACM International Conference on Software Engineering, ICSE, Florence, Italy},
     pages = {579--582},
     year = {2015},
     publisher = {{IEEE} Computer Society},

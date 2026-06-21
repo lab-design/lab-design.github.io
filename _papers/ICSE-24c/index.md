@@ -7,7 +7,7 @@ bib: |
   @inproceedings{OBrienDyerNguyenRajan2024,
     author = {David O'Brien and Robert Dyer and Tien N. Nguyen and Hridesh Rajan},
     title = {Data-Driven Evidence-Based Syntactic Sugar Design},
-    booktitle = {Proceedings of the 46th {IEEE/ACM} International Conference on Software Engineering, {ICSE} 2024, Lisbon, Portugal, April 14-20, 2024},
+    booktitle = {Proceedings of the 46th IEEE/ACM International Conference on Software Engineering, ICSE, Lisbon, Portugal},
     pages = {203:1--203:12},
     year = {2024},
     publisher = {{ACM}},

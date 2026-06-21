@@ -7,7 +7,7 @@ bib: |
   @inproceedings{UpadhyayaRajan2015,
     author = {Ganesha Upadhyaya and Hridesh Rajan},
     title = {Effectively Mapping Linguistic Abstractions for Message-passing Concurrency to Threads on the Java Virtual Machine},
-    booktitle = {Proceedings of the 2015 {ACM} {SIGPLAN} International Conference on Object-Oriented Programming, Systems, Languages, and Applications, {OOPSLA} 2015, part of {SPLASH} 2015, Pittsburgh, PA, USA, October 25-30, 2015},
+    booktitle = {Proceedings of the ACM SIGPLAN International Conference on Object-Oriented Programming, Systems, Languages, and Applications, OOPSLA, part of SPLASH, Pittsburgh, USA},
     pages = {840--859},
     year = {2015},
     publisher = {{ACM}},

@@ -7,7 +7,7 @@ bib: |
   @inproceedings{LongMooneySondagRajan2010a,
     author = {Yuheng Long and Sean L. Mooney and Tyler Sondag and Hridesh Rajan},
     title = {Implicit Invocation Meets Safe, Implicit Concurrency},
-    booktitle = {Generative Programming And Component Engineering, Proceedings of the Ninth International Conference on Generative Programming and Component Engineering, {GPCE} 2010, Eindhoven, The Netherlands, October 10-13, 2010},
+    booktitle = {Generative Programming And Component Engineering, Proceedings of the Ninth International Conference on Generative Programming and Component Engineering, GPCE, Eindhoven, The Netherlands},
     pages = {63--72},
     year = {2010},
     publisher = {{ACM}},

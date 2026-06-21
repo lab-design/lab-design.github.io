@@ -7,7 +7,7 @@ bib: |
   @inproceedings{Rajan2007c,
     author = {Hridesh Rajan},
     title = {A case for explicit join point models for aspect-oriented intermediate languages},
-    booktitle = {Proceedings of the 1st Workshop on Virtual Machines and Intermediate Languages for Emerging Modularization Mechanisms, {VMIL} 2007, Vancouver, British Columbia, Canada, March 12-16, 2007},
+    booktitle = {Proceedings of the 1st Workshop on Virtual Machines and Intermediate Languages for Emerging Modularization Mechanisms, VMIL, Vancouver, British Columbia, Canada},
     volume = {212},
     series = {{ACM} International Conference Proceeding Series},
     pages = {4},

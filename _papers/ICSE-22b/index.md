@@ -7,7 +7,7 @@ bib: |
   @inproceedings{PanRajan2022,
     author = {Rangeet Pan and Hridesh Rajan},
     title = {Decomposing Convolutional Neural Networks into Reusable and Replaceable Modules},
-    booktitle = {44th {IEEE/ACM} 44th International Conference on Software Engineering, {ICSE} 2022, Pittsburgh, PA, USA, May 25-27, 2022},
+    booktitle = {44th IEEE/ACM 44th International Conference on Software Engineering, ICSE, Pittsburgh, USA},
     pages = {524--535},
     year = {2022},
     publisher = {{ACM}},

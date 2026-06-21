@@ -7,7 +7,7 @@ bib: |
   @inproceedings{DyerNguyenRajanNguyen2012,
     author = {Robert Dyer and Hoan Nguyen and Hridesh Rajan and Tien N. Nguyen},
     title = {Boa: Analyzing Ultra-Large-Scale Code Corpus},
-    booktitle = {SPLASH'12 - Proceedings of the 2012 {ACM} Conference on Systems, Programming, and Applications: Software for Humanity, Tucson, AZ, USA, October 21-25, 2012},
+    booktitle = {SPLASH - Proceedings of the ACM Conference on Systems, Programming, and Applications: Software for Humanity, Tucson, USA},
     pages = {87--88},
     year = {2012},
     publisher = {{ACM}},

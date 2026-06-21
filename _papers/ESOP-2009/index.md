@@ -7,7 +7,7 @@ bib: |
   @inproceedings{RajanTaoShanerLeavens2009a,
     author = {Hridesh Rajan and Jia Tao and Steve M. Shaner and Gary T. Leavens},
     title = {Tisa: A Language Design and Modular Verification Technique for Temporal Policies in Web Services},
-    booktitle = {Programming Languages and Systems, 18th European Symposium on Programming, {ESOP} 2009, Held as Part of the Joint European Conferences on Theory and Practice of Software, {ETAPS} 2009, York, UK, March 22-29, 2009. Proceedings},
+    booktitle = {Programming Languages and Systems, 18th European Symposium on Programming, ESOP, Held as Part of the Joint European Conferences on Theory and Practice of Software, ETAPS, York},
     volume = {5502},
     series = {Lecture Notes in Computer Science},
     pages = {333--347},

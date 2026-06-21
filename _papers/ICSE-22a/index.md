@@ -7,7 +7,7 @@ bib: |
   @inproceedings{BiswasWardatRajan2022,
     author = {Sumon Biswas and Mohammad Wardat and Hridesh Rajan},
     title = {The Art and Practice of Data Science Pipelines: A Comprehensive Study of Data Science Pipelines In Theory, In-The-Small, and In-The-Large},
-    booktitle = {44th {IEEE/ACM} 44th International Conference on Software Engineering, {ICSE} 2022, Pittsburgh, PA, USA, May 25-27, 2022},
+    booktitle = {44th IEEE/ACM 44th International Conference on Software Engineering, ICSE, Pittsburgh, USA},
     pages = {2091--2103},
     year = {2022},
     publisher = {{ACM}},

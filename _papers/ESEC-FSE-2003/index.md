@@ -7,7 +7,7 @@ bib: |
   @inproceedings{RajanSullivan2003,
     author = {Hridesh Rajan and Kevin J. Sullivan},
     title = {Eos: Instance-Level Aspects for Integrated System Design},
-    booktitle = {Proceedings of the 11th {ACM} {SIGSOFT} Symposium on Foundations of Software Engineering 2003 held jointly with 9th European Software Engineering Conference, {ESEC/FSE} 2003, Helsinki, Finland, September 1-5, 2003},
+    booktitle = {Proceedings of the 11th ACM SIGSOFT Symposium on Foundations of Software Engineering held jointly with 9th European Software Engineering Conference, ESEC/FSE, Helsinki, Finland},
     pages = {291--306},
     year = {2003},
     publisher = {{ACM}},

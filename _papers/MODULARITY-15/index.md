@@ -7,7 +7,7 @@ bib: |
   @inproceedings{BagherzadehRajan2015,
     author = {Mehdi Bagherzadeh and Hridesh Rajan},
     title = {Panini: A Concurrent Programming Model for Solving Pervasive and Oblivious Interference},
-    booktitle = {Proceedings of the 14th International Conference on Modularity, {MODULARITY} 2015, Fort Collins, CO, USA, March 16 - 19, 2015},
+    booktitle = {Proceedings of the 14th International Conference on Modularity, MODULARITY, Fort Collins, USA},
     pages = {93--108},
     year = {2015},
     publisher = {{ACM}},

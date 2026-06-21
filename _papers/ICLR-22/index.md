@@ -7,7 +7,7 @@ bib: |
   @inproceedings{GaoETAL2022,
     author = {Tianxiang Gao and Hailiang Liu and Jia Liu and Hridesh Rajan and Hongyang Gao},
     title = {A Global Convergence Theory for Deep ReLU Implicit Networks via Over-Parameterization},
-    booktitle = {The Tenth International Conference on Learning Representations, {ICLR} 2022, Virtual Event, April 25-29, 2022},
+    booktitle = {The Tenth International Conference on Learning Representations, ICLR, Virtual Event},
     year = {2022},
     publisher = {OpenReview.net},
     abstract = {

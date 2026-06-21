@@ -7,7 +7,7 @@ bib: |
   @inproceedings{WardatCruzLeRajan2022,
     author = {Mohammad Wardat and Breno Dantas Cruz and Wei Le and Hridesh Rajan},
     title = {DeepDiagnosis: Automatically Diagnosing Faults and Recommending Actionable Fixes in Deep Learning Programs},
-    booktitle = {44th {IEEE/ACM} 44th International Conference on Software Engineering, {ICSE} 2022, Pittsburgh, PA, USA, May 25-27, 2022},
+    booktitle = {44th IEEE/ACM 44th International Conference on Software Engineering, ICSE, Pittsburgh, USA},
     pages = {561--572},
     year = {2022},
     publisher = {{ACM}},

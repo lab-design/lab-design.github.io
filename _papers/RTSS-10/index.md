@@ -7,7 +7,7 @@ bib: |
   @inproceedings{SondagRajan2010,
     author = {Tyler Sondag and Hridesh Rajan},
     title = {A More Precise Abstract Domain For Multi-level Caches for Tighter {WCET} Analysis},
-    booktitle = {Proceedings of the 31st {IEEE} Real-Time Systems Symposium, {RTSS} 2010, San Diego, California, USA, November 30 - December 3, 2010},
+    booktitle = {Proceedings of the 31st IEEE Real-Time Systems Symposium, RTSS, San Diego, California, USA},
     pages = {395--404},
     year = {2010},
     publisher = {{IEEE} Computer Society},

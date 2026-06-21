@@ -7,7 +7,7 @@ bib: |
   @inproceedings{DyerRajanNguyenNguyen2014,
     author = {Robert Dyer and Hridesh Rajan and Hoan Anh Nguyen and Tien N. Nguyen},
     title = {Mining Billions of {AST} Nodes to Study Actual and Potential Usage of {Java} Language Features},
-    booktitle = {36th International Conference on Software Engineering, {ICSE} '14, Hyderabad, India - May 31 - June 07, 2014},
+    booktitle = {36th International Conference on Software Engineering, ICSE, Hyderabad, India - May 31 - June 07},
     pages = {779--790},
     year = {2014},
     publisher = {{ACM}},

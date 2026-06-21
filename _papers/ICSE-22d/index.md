@@ -7,7 +7,7 @@ bib: |
   @inproceedings{NguyenIslamPanRajan2022,
     author = {Giang Nguyen and Md Johirul Islam and Rangeet Pan and Hridesh Rajan},
     title = {Manas: Mining Software Repositories to Assist AutoML},
-    booktitle = {44th {IEEE/ACM} 44th International Conference on Software Engineering, {ICSE} 2022, Pittsburgh, PA, USA, May 25-27, 2022},
+    booktitle = {44th IEEE/ACM 44th International Conference on Software Engineering, ICSE, Pittsburgh, USA},
     pages = {1368--1380},
     year = {2022},
     publisher = {{ACM}},

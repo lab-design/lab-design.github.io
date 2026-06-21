@@ -7,7 +7,7 @@ bib: |
   @inproceedings{DyerBagherzadehRajanCai2010,
     author = {Robert Dyer and Mehdi Bagherzadeh and Hridesh Rajan and Yuanfang Cai},
     title = {A Preliminary Study of Quantified, Typed Events},
-    booktitle = {ESCOT '10: Workshop on Empirical Evaluation of Software Composition Techniques},
+    booktitle = {ESCOT: Workshop on Empirical Evaluation of Software Composition Techniques},
     location = {Rennes and St. Malo, Franc},
     month = {March},
     year = {2010},

@@ -7,7 +7,7 @@ bib: |
   @inproceedings{RebeloETAL2014,
     author = {Henrique Reb{\^{e}}lo and Gary T. Leavens and Mehdi Bagherzadeh and Hridesh Rajan and Ricardo Massa Ferreira Lima and Daniel M. Zimmerman and M{\'{a}}rcio Corn{\'{e}}lio and Thomas Th{\"{u}}m},
     title = {AspectJML: Modular Specification and Runtime Checking for Crosscutting Contracts},
-    booktitle = {13th International Conference on Modularity, {MODULARITY} '14, Lugano, Switzerland, April 22-26, 2014},
+    booktitle = {13th International Conference on Modularity, MODULARITY, Lugano, Switzerland},
     pages = {157--168},
     year = {2014},
     publisher = {{ACM}},

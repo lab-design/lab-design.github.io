@@ -7,7 +7,7 @@ bib: |
   @inproceedings{BiswasRajan2023,
     author = {Sumon Biswas and Hridesh Rajan},
     title = {Fairify: Fairness Verification of Neural Networks},
-    booktitle = {45th {IEEE/ACM} International Conference on Software Engineering, {ICSE} 2023, Melbourne, Australia, May 14-20, 2023},
+    booktitle = {45th IEEE/ACM International Conference on Software Engineering, ICSE, Melbourne, Australia},
     pages = {1546--1558},
     year = {2023},
     publisher = {{IEEE}},

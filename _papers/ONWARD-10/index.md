@@ -7,7 +7,7 @@ bib: |
   @inproceedings{RajanKautzRowcliffe2010,
     author = {Hridesh Rajan and Steven M. Kautz and Wayne Rowcliffe},
     title = {Concurrency by Modularity: Design Patterns, a Case in Point},
-    booktitle = {Proceedings of the 25th Annual {ACM} {SIGPLAN} Conference on Object-Oriented Programming, Systems, Languages, and Applications, {OOPSLA} 2010, October 17-21, 2010, Reno/Tahoe, Nevada, {USA}},
+    booktitle = {Proceedings of the 25th Annual ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications, OOPSLA, Reno/Tahoe, Nevada, USA},
     pages = {790--805},
     year = {2010},
     publisher = {{ACM}},

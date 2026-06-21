@@ -8,7 +8,7 @@ bib: |
   @inproceedings{LongRajan2016,
     author = {Yuheng Long and Hridesh Rajan},
     title = {A Type-and-Effect System for Asynchronous, Typed Events},
-    booktitle = {Proceedings of the 15th International Conference on Modularity, {MODULARITY} 2016, M{\'{a}}laga, Spain, March 14 - 18, 2016},
+    booktitle = {Proceedings of the 15th International Conference on Modularity, MODULARITY, M\'alaga, Spain},
     pages = {42--53},
     year = {2016},
     publisher = {{ACM}},

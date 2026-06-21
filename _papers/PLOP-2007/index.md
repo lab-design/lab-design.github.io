@@ -7,7 +7,7 @@ bib: |
   @inproceedings{Rajan2007a,
     author = {Hridesh Rajan},
     title = {Design Pattern Implementations in Eos},
-    booktitle = {PLoP '07, Conference on Pattern Languages of Programs},
+    booktitle = {PLoP, Conference on Pattern Languages of Programs},
     location = {Monticello, IL},
     month = {September},
     year = {2007},

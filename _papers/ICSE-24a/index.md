@@ -7,7 +7,7 @@ bib: |
   @inproceedings{AhmedGaoRajan2024,
     author = {Shibbir Ahmed and Hongyang Gao and Hridesh Rajan},
     title = {Inferring Data Preconditions from Deep Learning Models for Trustworthy Prediction in Deployment},
-    booktitle = {Proceedings of the 46th {IEEE/ACM} International Conference on Software Engineering, {ICSE} 2024, Lisbon, Portugal, April 14-20, 2024},
+    booktitle = {Proceedings of the 46th IEEE/ACM International Conference on Software Engineering, ICSE, Lisbon, Portugal},
     pages = {38:1--38:13},
     year = {2024},
     publisher = {{ACM}},

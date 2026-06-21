@@ -7,7 +7,7 @@ bib: |
   @inproceedings{BagherzadehRajanLeavens2010,
     author = {Mehdi Bagherzadeh and Hridesh Rajan and Gary T. Leavens},
     title = {Translucid Contracts for Aspect-oriented Interfaces},
-    booktitle = {FOAL '10: Workshop on Foundations of Aspect-Oriented Languages workshop},
+    booktitle = {FOAL: Workshop on Foundations of Aspect-Oriented Languages workshop},
     location = {Rennes and St. Malo, France},
     month = {March},
     year = {2010},

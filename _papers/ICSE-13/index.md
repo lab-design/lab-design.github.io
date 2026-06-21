@@ -7,7 +7,7 @@ bib: |
   @inproceedings{DyerNguyenRajanNguyen2013,
     author = {Robert Dyer and Hoan Anh Nguyen and Hridesh Rajan and Tien N. Nguyen},
     title = {Boa: A Language and Infrastructure for Analyzing Ultra-Large-Scale Software Repositories},
-    booktitle = {35th International Conference on Software Engineering, {ICSE} '13, San Francisco, CA, USA, May 18-26, 2013},
+    booktitle = {35th International Conference on Software Engineering, ICSE, San Francisco, USA},
     pages = {422--431},
     year = {2013},
     publisher = {{IEEE} Computer Society},

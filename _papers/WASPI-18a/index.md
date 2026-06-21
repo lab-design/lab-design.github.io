@@ -7,7 +7,7 @@ bib: |
   @inproceedings{NguyenNguyenRajanDyer2018,
     author = {Hoan Anh Nguyen and Tien N. Nguyen and Hridesh Rajan and Robert Dyer},
     title = {Towards Combining Usage Mining and Implementation Analysis to Infer API Preconditions},
-    booktitle = {Proceedings of the 1st {ACM} {SIGSOFT} International Workshop on Automated Specification Inference, WASPI@ESEC/SIGSOFT FSE, Lake Buena Vista, FL, USA, November 9, 2018},
+    booktitle = {Proceedings of the 1st ACM SIGSOFT International Workshop on Automated Specification Inference, WASPI@ESEC/SIGSOFT FSE, Lake Buena Vista, USA},
     pages = {15--16},
     year = {2018},
     publisher = {{ACM}},

@@ -7,7 +7,7 @@ bib: |
   @inproceedings{RamuUpadhyayaNguyenRajan2020,
     author = {Ramanathan Ramu and Ganesha B. Upadhyaya and Hoan Anh Nguyen and Hridesh Rajan},
     title = {BCFA: Bespoke Control Flow Analysis for CFA at Scale},
-    booktitle = {{ICSE} '20: 42nd International Conference on Software Engineering, Seoul, South Korea, 27 June - 19 July, 2020},
+    booktitle = {ICSE: 42nd International Conference on Software Engineering, Seoul, South Korea},
     pages = {1037--1048},
     year = {2020},
     publisher = {{ACM}},

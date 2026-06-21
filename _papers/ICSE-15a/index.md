@@ -7,7 +7,7 @@ bib: |
   @inproceedings{Rajan2015a,
     author = {Hridesh Rajan},
     title = {Capsule-oriented Programming},
-    booktitle = {37th {IEEE/ACM} International Conference on Software Engineering, {ICSE} 2015, Florence, Italy, May 16-24, 2015, Volume 2},
+    booktitle = {37th IEEE/ACM International Conference on Software Engineering, ICSE, Florence, Italy},
     pages = {611--614},
     year = {2015},
     publisher = {{IEEE} Computer Society},

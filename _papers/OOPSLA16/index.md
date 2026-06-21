@@ -8,7 +8,7 @@ bib: |
   @inproceedings{LongLiuRajan2016,
     author = {Yuheng Long and Yu David Liu and Hridesh Rajan},
     title = {First-Class Effect Reflection for Effect-Guided Programming},
-    booktitle = {Proceedings of the 2016 {ACM} {SIGPLAN} International Conference on Object-Oriented Programming, Systems, Languages, and Applications, {OOPSLA} 2016, part of {SPLASH} 2016, Amsterdam, The Netherlands, October 30 - November 4, 2016},
+    booktitle = {Proceedings of the ACM SIGPLAN International Conference on Object-Oriented Programming, Systems, Languages, and Applications, OOPSLA, part of SPLASH, Amsterdam, The Netherlands},
     pages = {820--837},
     year = {2016},
     publisher = {{ACM}},

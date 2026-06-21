@@ -7,7 +7,7 @@ bib: |
   @inproceedings{SondagRajan2009,
     author = {Tyler Sondag and Hridesh Rajan},
     title = {Phase-guided Thread-to-core Assignment for Improved Utilization of Performance-Asymmetric Multi-Core Processors},
-    booktitle = {Proceedings of the 2009 {ICSE} Workshop on Multicore Software Engineering, {IWMSE} '09, Vancouver, BC, Canada, May 18, 2009},
+    booktitle = {Proceedings of the ICSE Workshop on Multicore Software Engineering, IWMSE, Vancouver, Canada},
     pages = {73--80},
     year = {2009},
     publisher = {{IEEE} Computer Society},

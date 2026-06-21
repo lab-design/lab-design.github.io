@@ -7,7 +7,7 @@ bib: |
   @inproceedings{ImtiazETAL2023,
     author = {Sayem Mohammad Imtiaz and Fraol Batole and Astha Singh and Rangeet Pan and Breno Dantas Cruz and Hridesh Rajan},
     title = {Decomposing a Recurrent Neural Network into Modules for Enabling Reusability and Replacement},
-    booktitle = {45th {IEEE/ACM} International Conference on Software Engineering, {ICSE} 2023, Melbourne, Australia, May 14-20, 2023},
+    booktitle = {45th IEEE/ACM International Conference on Software Engineering, ICSE, Melbourne, Australia},
     pages = {1020--1032},
     year = {2023},
     publisher = {{IEEE}},

@@ -9,7 +9,7 @@ bib: |
   @inproceedings{BagherzadehRajanDarvish2013,
     author = {Mehdi Bagherzadeh and Hridesh Rajan and Mohammad Ali Darvish Darab},
     title = {On Exceptions, Events and Observer Chains},
-    booktitle = {Aspect-Oriented Software Development, {AOSD} '13, Fukuoka, Japan, March 24-29, 2013},
+    booktitle = {Aspect-Oriented Software Development, AOSD, Fukuoka, Japan},
     pages = {185--196},
     year = {2013},
     publisher = {{ACM}},

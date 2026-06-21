@@ -7,7 +7,7 @@ bib: |
   @inproceedings{GharaibehRajanChang2011,
     author = {Bashar Gharaibeh and Hridesh Rajan and J. Morris Chang},
     title = {Analyzing Software Updates: Should You Build a Dynamic Updating Infrastructure?},
-    booktitle = {Fundamental Approaches to Software Engineering - 14th International Conference, {FASE} 2011, Held as Part of the Joint European Conferences on Theory and Practice of Software, {ETAPS} 2011, Saarbr{\"{u}}cken, Germany, March 26-April 3, 2011. Proceedings},
+    booktitle = {Fundamental Approaches to Software Engineering - 14th International Conference, FASE, Held as Part of the Joint European Conferences on Theory and Practice of Software, ETAPS, Saarbr\"ucken, Germany},
     volume = {6603},
     series = {Lecture Notes in Computer Science},
     pages = {371--385},

@@ -7,7 +7,7 @@ bib: |
   @inproceedings{RajanSullivan2005b,
     author = {Hridesh Rajan and Kevin J. Sullivan},
     title = {Classpects: Unifying Aspect- and Object-Oriented Language Design},
-    booktitle = {27th International Conference on Software Engineering {(ICSE} 2005), 15-21 May 2005, St. Louis, Missouri, {USA}},
+    booktitle = {27th International Conference on Software Engineering (ICSE), St. Louis, Missouri, USA},
     pages = {59--68},
     year = {2005},
     publisher = {{ACM}},
