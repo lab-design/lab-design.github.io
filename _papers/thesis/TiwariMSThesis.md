@@ -3,7 +3,6 @@ key: TiwariMSThesis
 permalink: /papers/thesis/TiwariMSThesis.html
 short_name: Tiwari MS Thesis
 title: "The design and implementation of Candoia: A platform for building and sharing mining software repositories tools as apps"
-software repositories tools as apps"
 bib:  |
   @mastersthesis{Tiwari2017,
     title = {The design and implementation of Candoia: A platform for building and sharing mining software repositories tools as apps},
