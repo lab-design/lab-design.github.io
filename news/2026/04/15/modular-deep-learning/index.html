@@ -7,15 +7,15 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="The Laboratory for Software Design at Tulane University researches programming languages, compilers, and software engineering for dependable software and AI.">
     <meta name="theme-color" content="#006747">
-    <meta property="og:title" content="Our work on Decomposing Convolutional Neural Networks into Reusable and Replaceable Modules selected for ICSE'22">
+    <meta property="og:title" content="What if a neural network were built from parts you could reuse and replace?">
     <meta property="og:description" content="Laboratory for Software Design at Tulane University, School of Science and Engineering.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://lab-design.github.io/news/2021/12/10/pan-icse/">
+    <meta property="og:url" content="https://lab-design.github.io/news/2026/04/15/modular-deep-learning/">
     <meta property="og:site_name" content="Laboratory for Software Design">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Our work on Decomposing Convolutional Neural Networks into Reusable and Replaceable Modules selected for ICSE'22">
+    <meta name="twitter:title" content="What if a neural network were built from parts you could reuse and replace?">
     <meta name="twitter:description" content="Laboratory for Software Design at Tulane University, School of Science and Engineering.">
-    <link rel="canonical" href="https://lab-design.github.io/news/2021/12/10/pan-icse/">
+    <link rel="canonical" href="https://lab-design.github.io/news/2026/04/15/modular-deep-learning/">
     <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://lab-design.github.io/#hridesh","name":"Hridesh Rajan","jobTitle":"Dean of the School of Science and Engineering and Professor of Computer Science","affiliation":{"@type":"CollegeOrUniversity","name":"Tulane University"},"sameAs":["https://scholar.google.com/citations?user=aiFvpucAAAAJ","https://github.com/hridesh","https://www.linkedin.com/in/hrideshrajan/"]},{"@type":"Organization","@id":"https://lab-design.github.io/#lab","name":"Laboratory for Software Design","url":"https://lab-design.github.io/","parentOrganization":{"@type":"CollegeOrUniversity","name":"Tulane University School of Science and Engineering, Department of Computer Science"},"founder":{"@id":"https://lab-design.github.io/#hridesh"}},{"@type":"WebSite","url":"https://lab-design.github.io/","name":"Laboratory for Software Design","publisher":{"@id":"https://lab-design.github.io/#lab"}}]}</script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +23,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/design.css">
     <link rel="icon" href="/favicon.ico">
-    <title>Our work on Decomposing Convolutional Neural Networks into Reusable and Replaceable Modules selected for ICSE'22 | Laboratory for Software Design</title>
+    <title>What if a neural network were built from parts you could reuse and replace? | Laboratory for Software Design</title>
   </head>
 
   <body>
@@ -62,23 +62,16 @@
   <br />
   <div class="row">
   <div class="col-12">
-    <h2 class="page-title">Our work on Decomposing Convolutional Neural Networks into Reusable and Replaceable Modules selected for ICSE'22</h2>
-    <p class="mb-2 text-muted">December 10, 2021</p>
+    <h2 class="page-title">What if a neural network were built from parts you could reuse and replace?</h2>
+    <p class="mb-2 text-muted">April 15, 2026</p>
 
-  <span class="news-link">Links: </span>
-  
-    <a href="" class="news-link">Papers</a>
-    
-  
+<p>Software engineering learned long ago that large systems are easier to build, understand, and maintain when they are made of modules: parts with clear roles that can be reused, replaced, and reasoned about on their own. A trained neural network has none of that. It is one dense block of weights, and changing any piece of its behavior usually means retraining the whole thing on new data. Over the past several years our lab has asked what it would take to bring modularity to deep learning, and this page collects that work.</p>
 
-<p>In this paper, we propose an approach to decompose a convolutional neural network (CNN) model used for image classification into modules, in which each
-module can classify a single output class. Furthermore, these modules can be reused or replaced in different scenarios. Also, we evaluate our approach against the 𝐶𝑂2𝑒 consumption of models created from scratch and reusing or replacing
-decomposed modules.</p>
+<p>The first result was that decomposition is possible at all. <a href="/news/2020/11/11/decomposing-a-deep-neural-network-into-modules/">On Decomposing a Deep Neural Network into Modules</a> (ESEC/FSE 2020), which received an ACM SIGSOFT Distinguished Paper Award, splits a trained network for a multi-class problem into one module per class, and shows those modules can be reused and swapped without retraining while matching the original’s accuracy. <a href="/news/2022/05/24/decomposing-convolutional-neural-networks-into-modules/">Decomposing Convolutional Neural Networks into Modules</a> (ICSE 2022) carried the idea to the convolutional networks used in vision, and <a href="/news/2023/05/17/decomposing-a-recurrent-neural-network-into-modules/">Decomposing a Recurrent Neural Network into Modules</a> (ICSE 2023) extended it to the recurrent networks used for language, where a translation model can gain a new language by adding a module instead of retraining.</p>
 
-<p>The paper’s abstract:</p>
+<p>Modularity pays off in two ways that matter for dependable AI. It lowers the cost and energy of building and updating models, because parts can be reused rather than retrained, and it makes repair possible, because a faulty behavior can be traced to a module and that module replaced. This direction is supported by our NSF project on <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2223812">More Modular Deep Learning</a>.</p>
 
-<p><em>
-``Training from scratch is the most common way to build a Convolutional Neural Network (CNN) based model. What if we can build new CNN models by reusing parts from previously build CNN models? What if we can improve a CNN model by replacing (possibly faulty) parts with other parts? In both cases, instead of training, can we identify the part responsible for each output class (module) in the model(s) and reuse or replace only the desired output classes to build a model? Prior work has proposed decomposing dense-based networks into modules (one for each output class) to enable reusability and replaceability in various scenarios. However, this work is limited to the dense layers and based on the one-to-one relationship between the nodes in consecutive layers. Due to the shared architecture in the CNN model, prior work cannot be adapted directly. In this paper, we propose to decompose a CNN model used for image classification problems into modules for each output class. These modules can further be reused or replaced to build a new model. We have evaluated our approach with CIFAR-10, CIFAR-100, and ImageNet tiny datasets with three variations of ResNet models and found that enabling decomposition comes with a small cost (1.77% and 0.85% for top-1 and top-5 accuracy, respectively). Also, building a model by reusing or replacing modules can be done with a 2.3% and 0.5% average loss of accuracy. Furthermore, reusing and replacing these modules reduces CO2e emission by ∼37 times compared to training the model from scratch.’’</em></p>
+<p>This work is part of <a href="/research/#modular-and-dependable-ai">Modular and Dependable AI</a>. For the complete record, see our <a href="https://lab-design.github.io/papers/">list of papers</a>.</p>
 
 
 

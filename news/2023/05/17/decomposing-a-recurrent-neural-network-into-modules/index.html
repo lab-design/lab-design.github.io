@@ -7,15 +7,15 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="The Laboratory for Software Design at Tulane University researches programming languages, compilers, and software engineering for dependable software and AI.">
     <meta name="theme-color" content="#006747">
-    <meta property="og:title" content="Our paper on Fair Preprocessing is selected for ESEC/FSE'21 Research Track">
+    <meta property="og:title" content="Can you teach a translation model a new language without retraining it? Our ICSE 2023 paper decomposes the RNN.">
     <meta property="og:description" content="Laboratory for Software Design at Tulane University, School of Science and Engineering.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://lab-design.github.io/news/2021/05/20/biswas-esecfse/">
+    <meta property="og:url" content="https://lab-design.github.io/news/2023/05/17/decomposing-a-recurrent-neural-network-into-modules/">
     <meta property="og:site_name" content="Laboratory for Software Design">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Our paper on Fair Preprocessing is selected for ESEC/FSE'21 Research Track">
+    <meta name="twitter:title" content="Can you teach a translation model a new language without retraining it? Our ICSE 2023 paper decomposes the RNN.">
     <meta name="twitter:description" content="Laboratory for Software Design at Tulane University, School of Science and Engineering.">
-    <link rel="canonical" href="https://lab-design.github.io/news/2021/05/20/biswas-esecfse/">
+    <link rel="canonical" href="https://lab-design.github.io/news/2023/05/17/decomposing-a-recurrent-neural-network-into-modules/">
     <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://lab-design.github.io/#hridesh","name":"Hridesh Rajan","jobTitle":"Dean of the School of Science and Engineering and Professor of Computer Science","affiliation":{"@type":"CollegeOrUniversity","name":"Tulane University"},"sameAs":["https://scholar.google.com/citations?user=aiFvpucAAAAJ","https://github.com/hridesh","https://www.linkedin.com/in/hrideshrajan/"]},{"@type":"Organization","@id":"https://lab-design.github.io/#lab","name":"Laboratory for Software Design","url":"https://lab-design.github.io/","parentOrganization":{"@type":"CollegeOrUniversity","name":"Tulane University School of Science and Engineering, Department of Computer Science"},"founder":{"@id":"https://lab-design.github.io/#hridesh"}},{"@type":"WebSite","url":"https://lab-design.github.io/","name":"Laboratory for Software Design","publisher":{"@id":"https://lab-design.github.io/#lab"}}]}</script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +23,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/design.css">
     <link rel="icon" href="/favicon.ico">
-    <title>Our paper on Fair Preprocessing is selected for ESEC/FSE'21 Research Track | Laboratory for Software Design</title>
+    <title>Can you teach a translation model a new language without retraining it? Our ICSE 2023 paper decomposes the RNN. | Laboratory for Software Design</title>
   </head>
 
   <body>
@@ -62,21 +62,14 @@
   <br />
   <div class="row">
   <div class="col-12">
-    <h2 class="page-title">Our paper on Fair Preprocessing is selected for ESEC/FSE'21 Research Track</h2>
-    <p class="mb-2 text-muted">May 20, 2021</p>
+    <h2 class="page-title">Can you teach a translation model a new language without retraining it? Our ICSE 2023 paper decomposes the RNN.</h2>
+    <p class="mb-2 text-muted">May 17, 2023</p>
 
-  <span class="news-link">Links: </span>
-  
-    <a href="https://lab-design.github.io/papers/ESEC-FSE-21/fair-preprocessing-fse21.pdf" class="news-link">Papers</a>
-    
-  
+<p>Recurrent neural networks power tasks like translating between languages, and changing what such a model does usually means retraining it from scratch. Our earlier work showed that <a href="/news/2020/11/11/decomposing-a-deep-neural-network-into-modules/">fully connected</a> and <a href="/news/2022/05/24/decomposing-convolutional-neural-networks-into-modules/">convolutional</a> networks can be decomposed into modules; recurrent networks, with their internal state and feedback, are harder.</p>
 
-<p>This work proposed a causal method to measure fairness of components in machine learning pipeline. Specifically, it evaluates many preprocessing stages in the pipeline and shows that those stages can be root cause of societal bias.</p>
+<p>In this paper (ICSE 2023), Sayem Mohammad Imtiaz, Fraol Batole, Astha Singh, Rangeet Pan, Breno Dantas Cruz, and Hridesh Rajan decompose a trained recurrent neural network into modules that can be reused and replaced. With it, a model trained to translate between some languages can be extended to a new one by adding a module rather than retraining, and faulty behavior can be corrected by replacing the part responsible for it.</p>
 
-<p>The paper’s abstract:</p>
-
-<p><em>
-``In recent years, many incidents have been reported where machine learning models exhibited discrimination among people based on race, sex, age, etc. Research has been conducted to measure and mitigate unfairness in machine learning models. For a machine learning task, it is a common practice to build a pipeline that includes an ordered set of data preprocessing stages followed by a classifier. However, most of the research on fairness has considered a single classifier based prediction task. What are the fairness impacts of the preprocessing stages in machine learning pipeline? Furthermore, studies showed that often the root cause of unfairness is ingrained in the data itself, rather than the model. But no research has been conducted to measure the unfairness caused by a specific transformation made in the data preprocessing stage. In this paper, we introduced the causal method of fairness to reason about the fairness impact of data preprocessing stages in ML pipeline. We leveraged existing metrics to define the fairness measures of the stages. Then we conducted a detailed fairness evaluation of the preprocessing stages in 37 pipelines collected from three different sources. Our results show that certain data transformers are causing the model to exhibit unfairness. We identified a number of fairness patterns in several categories of data transformers. Finally, we showed how the local fairness of a preprocessing stage composes in the global fairness of the pipeline. We used the fairness composition to choose appropriate downstream transformer that mitigates unfairness in the machine learning pipeline.’’</em></p>
+<p>This work is part of <a href="/research/#modular-and-dependable-ai">Modular and Dependable AI</a>; for the wider story see <a href="/news/2026/04/15/modular-deep-learning/">our modular deep learning overview</a>. The full paper is available <a href="https://lab-design.github.io/papers/ICSE-23b/">here</a>.</p>
 
 
 

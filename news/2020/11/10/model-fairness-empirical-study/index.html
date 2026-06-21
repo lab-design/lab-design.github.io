@@ -7,15 +7,15 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="The Laboratory for Software Design at Tulane University researches programming languages, compilers, and software engineering for dependable software and AI.">
     <meta name="theme-color" content="#006747">
-    <meta property="og:title" content="Our paper on decomposing a Deep Neural Network into Modules is selected for ESEC/FSE'20">
+    <meta property="og:title" content="Do machine-learning models quietly discriminate, and how would you know? Our ESEC/FSE 2020 study measures it.">
     <meta property="og:description" content="Laboratory for Software Design at Tulane University, School of Science and Engineering.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://lab-design.github.io/news/2020/05/19/pan-esecfse/">
+    <meta property="og:url" content="https://lab-design.github.io/news/2020/11/10/model-fairness-empirical-study/">
     <meta property="og:site_name" content="Laboratory for Software Design">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Our paper on decomposing a Deep Neural Network into Modules is selected for ESEC/FSE'20">
+    <meta name="twitter:title" content="Do machine-learning models quietly discriminate, and how would you know? Our ESEC/FSE 2020 study measures it.">
     <meta name="twitter:description" content="Laboratory for Software Design at Tulane University, School of Science and Engineering.">
-    <link rel="canonical" href="https://lab-design.github.io/news/2020/05/19/pan-esecfse/">
+    <link rel="canonical" href="https://lab-design.github.io/news/2020/11/10/model-fairness-empirical-study/">
     <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://lab-design.github.io/#hridesh","name":"Hridesh Rajan","jobTitle":"Dean of the School of Science and Engineering and Professor of Computer Science","affiliation":{"@type":"CollegeOrUniversity","name":"Tulane University"},"sameAs":["https://scholar.google.com/citations?user=aiFvpucAAAAJ","https://github.com/hridesh","https://www.linkedin.com/in/hrideshrajan/"]},{"@type":"Organization","@id":"https://lab-design.github.io/#lab","name":"Laboratory for Software Design","url":"https://lab-design.github.io/","parentOrganization":{"@type":"CollegeOrUniversity","name":"Tulane University School of Science and Engineering, Department of Computer Science"},"founder":{"@id":"https://lab-design.github.io/#hridesh"}},{"@type":"WebSite","url":"https://lab-design.github.io/","name":"Laboratory for Software Design","publisher":{"@id":"https://lab-design.github.io/#lab"}}]}</script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +23,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/design.css">
     <link rel="icon" href="/favicon.ico">
-    <title>Our paper on decomposing a Deep Neural Network into Modules is selected for ESEC/FSE'20 | Laboratory for Software Design</title>
+    <title>Do machine-learning models quietly discriminate, and how would you know? Our ESEC/FSE 2020 study measures it. | Laboratory for Software Design</title>
   </head>
 
   <body>
@@ -62,24 +62,14 @@
   <br />
   <div class="row">
   <div class="col-12">
-    <h2 class="page-title">Our paper on decomposing a Deep Neural Network into Modules is selected for ESEC/FSE'20</h2>
-    <p class="mb-2 text-muted">May 19, 2020</p>
+    <h2 class="page-title">Do machine-learning models quietly discriminate, and how would you know? Our ESEC/FSE 2020 study measures it.</h2>
+    <p class="mb-2 text-muted">November 10, 2020</p>
 
-  <span class="news-link">Links: </span>
-  
-    <a href="https://lab-design.github.io/papers/ESEC-FSE-20b/modularity.pdf" class="news-link">Papers</a>
-    
-  
+<p>Machine-learning models increasingly make or shape consequential decisions, from approving a loan to screening a job applicant. When they do, it matters whether the model treats people differently based on a protected attribute such as race, sex, or age, and that kind of bias is easy to miss because it sits in learned parameters rather than in anything written down.</p>
 
-<p>This work presents takes the first step toward decomposing a monolithic deep neural network (DNN)
-into modules so that components of the deep neural network can be reused to create another
-network. The approach also takes the first step towards enabling replacement of features/concerns
-within the DNN.</p>
+<p>In this paper (ESEC/FSE 2020), Sumon Biswas and Hridesh Rajan carried out an empirical study of fairness in real models built on a popular crowd-sourced platform. By measuring bias across many models and examining how common mitigation techniques change it, the study gives a grounded picture of how often unfairness appears in practice and what actually helps.</p>
 
-<p>The paper’s abstract:</p>
-
-<p><em>
-``Deep learning is being incorporated in many modern software systems. Deep learning approaches train a deep neural network (DNN) model using training examples, and then use the DNN model for prediction. While the structure of a DNN model as layers is observable, the model is treated in its entirety as a monolithic component. To change the logic implemented by the model, e.g. to add/remove logic that recognizes inputs belonging to a certain class, or to replace the logic with an alternative, the training examples need to be changed and the DNN needs to be retrained using the new set of examples. We argue that decomposing a DNN into DNN modules-akin to decomposing a monolithic software code into modules-can bring the benefits of modularity to deep learning. In this work, we develop a methodology for decomposing DNNs for multi-class problems into DNN modules. For four canonical problems, namely MNIST, EMNIST, FMNIST, and KMNIST, we demonstrate that such decomposition enables reuse of DNN modules to create different DNNs, enables replacement of one DNN module in a DNN with another without needing to retrain. The DNN models formed by composing DNN modules are at least as good as traditional monolithic DNNs in terms of test accuracy for our problems.’’</em></p>
+<p>This work is part of our research on fairness in machine learning, within <a href="/research/#modular-and-dependable-ai">Modular and Dependable AI</a>; for the wider story see <a href="/news/2026/02/11/fairness-in-machine-learning/">our fairness overview</a>. The full paper is available <a href="https://lab-design.github.io/papers/ESEC-FSE-20a/">here</a>.</p>
 
 
 

@@ -7,15 +7,15 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="The Laboratory for Software Design at Tulane University researches programming languages, compilers, and software engineering for dependable software and AI.">
     <meta name="theme-color" content="#006747">
-    <meta property="og:title" content="Our paper on Empirical Study on Model Fairness is selected for ESEC/FSE'20">
+    <meta property="og:title" content="Making machine learning fair, from the data to the guarantee">
     <meta property="og:description" content="Laboratory for Software Design at Tulane University, School of Science and Engineering.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://lab-design.github.io/news/2020/05/19/biswas-esecfse/">
+    <meta property="og:url" content="https://lab-design.github.io/news/2026/02/11/fairness-in-machine-learning/">
     <meta property="og:site_name" content="Laboratory for Software Design">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Our paper on Empirical Study on Model Fairness is selected for ESEC/FSE'20">
+    <meta name="twitter:title" content="Making machine learning fair, from the data to the guarantee">
     <meta name="twitter:description" content="Laboratory for Software Design at Tulane University, School of Science and Engineering.">
-    <link rel="canonical" href="https://lab-design.github.io/news/2020/05/19/biswas-esecfse/">
+    <link rel="canonical" href="https://lab-design.github.io/news/2026/02/11/fairness-in-machine-learning/">
     <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://lab-design.github.io/#hridesh","name":"Hridesh Rajan","jobTitle":"Dean of the School of Science and Engineering and Professor of Computer Science","affiliation":{"@type":"CollegeOrUniversity","name":"Tulane University"},"sameAs":["https://scholar.google.com/citations?user=aiFvpucAAAAJ","https://github.com/hridesh","https://www.linkedin.com/in/hrideshrajan/"]},{"@type":"Organization","@id":"https://lab-design.github.io/#lab","name":"Laboratory for Software Design","url":"https://lab-design.github.io/","parentOrganization":{"@type":"CollegeOrUniversity","name":"Tulane University School of Science and Engineering, Department of Computer Science"},"founder":{"@id":"https://lab-design.github.io/#hridesh"}},{"@type":"WebSite","url":"https://lab-design.github.io/","name":"Laboratory for Software Design","publisher":{"@id":"https://lab-design.github.io/#lab"}}]}</script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +23,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/design.css">
     <link rel="icon" href="/favicon.ico">
-    <title>Our paper on Empirical Study on Model Fairness is selected for ESEC/FSE'20 | Laboratory for Software Design</title>
+    <title>Making machine learning fair, from the data to the guarantee | Laboratory for Software Design</title>
   </head>
 
   <body>
@@ -62,22 +62,16 @@
   <br />
   <div class="row">
   <div class="col-12">
-    <h2 class="page-title">Our paper on Empirical Study on Model Fairness is selected for ESEC/FSE'20</h2>
-    <p class="mb-2 text-muted">May 19, 2020</p>
+    <h2 class="page-title">Making machine learning fair, from the data to the guarantee</h2>
+    <p class="mb-2 text-muted">February 11, 2026</p>
 
-  <span class="news-link">Links: </span>
-  
-    <a href="https://lab-design.github.io/papers/ESEC-FSE-20a/ml-fairness.pdf" class="news-link">Papers</a>
-    
-  
+<p>As machine learning moves into decisions about loans, hiring, and more, whether a model treats people fairly has become a software-engineering problem and not only an ethical one. A team needs to know where unfairness comes from, how to measure it, how to reduce it without wrecking accuracy, and in the highest-stakes cases how to guarantee it. Over the past several years our lab has worked on each of these, and this page collects that work.</p>
 
-<p>This work presents a comprehensive study of machine learning models to understand
-whether they exhibit bias.</p>
+<p>Unfairness often enters before the model is even trained. <a href="/news/2021/08/23/fair-preprocessing-machine-learning-pipelines/">Fair Preprocessing</a> (ESEC/FSE 2021) traces fairness through the data-preparation stages of a pipeline and pins down which transformation introduced a problem. Measuring bias in practice matters too: <a href="/news/2020/11/10/model-fairness-empirical-study/">a study of models on a crowd-sourced platform</a> (ESEC/FSE 2020) showed how often real models discriminate and what mitigation actually helps, and <a href="/news/2023/05/16/fairness-in-ensemble-machine-learning/">fairness in ensemble machine learning</a> (ICSE 2023) extended the question from a single classifier to the combined systems teams really deploy.</p>
 
-<p>The paper’s abstract:</p>
+<p>Reducing bias should not mean giving up accuracy. <a href="/news/2023/12/05/fix-fairness-without-ruining-accuracy/">Fix Fairness, Don’t Ruin Accuracy</a> (ESEC/FSE 2023) uses automated machine learning to repair fairness while preserving performance. And for cases where testing is not enough, <a href="/news/2023/05/14/fairify-verifying-fairness-neural-networks/">Fairify</a> (ICSE 2023) verifies individual fairness in a neural network, turning fairness from something a team checks for into something it can prove.</p>
 
-<p><em>
-``Machine learning models are increasingly being used in important decision-making software such as approving bank loans, recommending criminal sentencing, hiring employees, and so on. It is important to ensure the fairness of these models so that no discrimination is made between different groups in a protected attribute (e.g., race, sex, age) while decision making. Algorithms have been developed to measure unfairness and mitigate them to a certain extent. In this paper, we have focused on the empirical evaluation of fairness and mitigations on real-world machine learning models. We have created a benchmark of 40 top-rated models from Kaggle used for 5 different tasks, and then using a comprehensive set of fairness metrics evaluated their fairness. Then, we have applied 7 mitigation techniques on these models and analyzed the fairness, mitigation results, and impacts on performance. We have found that some model optimization techniques result in inducing unfairness in the models. On the other hand, although there are some fairness control mechanisms in machine learning libraries, they are not documented. The mitigation algorithm also exhibit common patterns such as mitigation in the post-processing is often costly (in terms of performance) and mitigation in the pre-processing stage is preferred in most cases. We have also presented different trade-off choices of fairness mitigation decisions. Our study suggests future research directions to reduce the gap between theoretical fairness aware algorithms and the software engineering methods to leverage them in practice.’’</em></p>
+<p>This work is part of <a href="/research/#modular-and-dependable-ai">Modular and Dependable AI</a>. For the complete record, see our <a href="https://lab-design.github.io/papers/">list of papers</a>.</p>
 
 
 
