@@ -36,6 +36,7 @@
   <url><loc>https://lab-design.github.io/news/2026/06/19/refineact-ase-2026/</loc><lastmod>2026-06-19T00:00:00+00:00</lastmod></url>
   <url><loc>https://lab-design.github.io/news/2026/06/16/postdoc-opening/</loc><lastmod>2026-06-16T00:00:00+00:00</lastmod></url>
   <url><loc>https://lab-design.github.io/news/2026/06/02/nsf-shf-fault-localization/</loc><lastmod>2026-06-02T00:00:00+00:00</lastmod></url>
+  <url><loc>https://lab-design.github.io/news/2025/12/10/analyzing-software-at-scale-with-boa/</loc><lastmod>2025-12-10T00:00:00+00:00</lastmod></url>
   <url><loc>https://lab-design.github.io/news/2025/09/12/new-postdoc-sayma/</loc><lastmod>2025-09-12T00:00:00+00:00</lastmod></url>
   <url><loc>https://lab-design.github.io/news/2025/06/23/irepair-repairing-large-language-models/</loc><lastmod>2025-06-23T00:00:00+00:00</lastmod></url>
   <url><loc>https://lab-design.github.io/news/2025/04/27/uprl-mutation-testing-reinforcement-learning/</loc><lastmod>2025-04-27T00:00:00+00:00</lastmod></url>
@@ -45,6 +46,7 @@
   <url><loc>https://lab-design.github.io/news/2024/08/15/biswas-cwru/</loc><lastmod>2024-08-15T00:00:00+00:00</lastmod></url>
   <url><loc>https://lab-design.github.io/news/2024/07/01/tulane-move/</loc><lastmod>2024-07-01T00:00:00+00:00</lastmod></url>
   <url><loc>https://lab-design.github.io/news/2024/06/03/moving-to-tulane/</loc><lastmod>2024-06-03T00:00:00+00:00</lastmod></url>
+  <url><loc>https://lab-design.github.io/news/2024/04/16/data-driven-syntactic-sugar-design/</loc><lastmod>2024-04-16T00:00:00+00:00</lastmod></url>
   <url><loc>https://lab-design.github.io/news/2024/04/02/design-postdoc/</loc><lastmod>2024-04-02T00:00:00+00:00</lastmod></url>
   <url><loc>https://lab-design.github.io/news/2023/09/01/ase-award/</loc><lastmod>2023-09-01T00:00:00+00:00</lastmod></url>
   <url><loc>https://lab-design.github.io/news/2023/05/31/wardat-ghanbari/</loc><lastmod>2023-05-31T00:00:00+00:00</lastmod></url>
@@ -69,11 +71,11 @@
   <url><loc>https://lab-design.github.io/news/2020/07/29/bagherzadeh-eapls/</loc><lastmod>2020-07-29T00:00:00+00:00</lastmod></url>
   <url><loc>https://lab-design.github.io/news/2020/07/15/islam-defense/</loc><lastmod>2020-07-15T00:00:00+00:00</lastmod></url>
   <url><loc>https://lab-design.github.io/news/2020/06/27/repairing-deep-neural-networks/</loc><lastmod>2020-06-27T00:00:00+00:00</lastmod></url>
+  <url><loc>https://lab-design.github.io/news/2020/06/27/bcfa-control-flow-analysis-at-scale/</loc><lastmod>2020-06-27T00:00:00+00:00</lastmod></url>
   <url><loc>https://lab-design.github.io/news/2020/06/01/facebook-probability-programming-award/</loc><lastmod>2020-06-01T00:00:00+00:00</lastmod></url>
   <url><loc>https://lab-design.github.io/news/2020/05/19/pan-esecfse/</loc><lastmod>2020-05-19T00:00:00+00:00</lastmod></url>
   <url><loc>https://lab-design.github.io/news/2020/05/19/biswas-esecfse/</loc><lastmod>2020-05-19T00:00:00+00:00</lastmod></url>
   <url><loc>https://lab-design.github.io/news/2020/03/30/boac/</loc><lastmod>2020-03-30T00:00:00+00:00</lastmod></url>
-  <url><loc>https://lab-design.github.io/news/2019/12/08/ramu-icse/</loc><lastmod>2019-12-08T00:00:00+00:00</lastmod></url>
   <url><loc>https://lab-design.github.io/news/2019/12/08/islam-icse/</loc><lastmod>2019-12-08T00:00:00+00:00</lastmod></url>
   <url><loc>https://lab-design.github.io/news/2019/12/06/samantha-passes-phd-prelim/</loc><lastmod>2019-12-06T00:00:00+00:00</lastmod></url>
   <url><loc>https://lab-design.github.io/news/2019/10/01/tripods/</loc><lastmod>2019-10-01T00:00:00+00:00</lastmod></url>
@@ -84,13 +86,17 @@
   <url><loc>https://lab-design.github.io/news/2019/05/25/biswas-msr/</loc><lastmod>2019-05-25T00:00:00+00:00</lastmod></url>
   <url><loc>https://lab-design.github.io/news/2019/05/20/midwest-bigdata-summer-school/</loc><lastmod>2019-05-20T00:00:00+00:00</lastmod></url>
   <url><loc>https://lab-design.github.io/news/2018/12/17/workshop-on-large-scale-empirical-research-software-security/</loc><lastmod>2018-12-17T00:00:00+00:00</lastmod></url>
+  <url><loc>https://lab-design.github.io/news/2018/11/06/substitutability-in-the-presence-of-effects/</loc><lastmod>2018-11-06T00:00:00+00:00</lastmod></url>
+  <url><loc>https://lab-design.github.io/news/2018/05/31/api-misuse-on-stack-overflow/</loc><lastmod>2018-05-31T00:00:00+00:00</lastmod></url>
+  <url><loc>https://lab-design.github.io/news/2018/05/30/collective-program-analysis/</loc><lastmod>2018-05-30T00:00:00+00:00</lastmod></url>
   <url><loc>https://lab-design.github.io/news/2018/03/07/hridesh-rajan-fulbright/</loc><lastmod>2018-03-07T00:00:00+00:00</lastmod></url>
   <url><loc>https://lab-design.github.io/news/2018/02/19/midwest-summer-school/</loc><lastmod>2018-02-19T00:00:00+00:00</lastmod></url>
-  <url><loc>https://lab-design.github.io/news/2017/12/15/icse-papers/</loc><lastmod>2017-12-15T00:00:00+00:00</lastmod></url>
   <url><loc>https://lab-design.github.io/news/2017/11/17/ganesha-upadhyaya-graduation/</loc><lastmod>2017-11-17T00:00:00+00:00</lastmod></url>
   <url><loc>https://lab-design.github.io/news/2017/11/08/hridesh-rajan-distinguished/</loc><lastmod>2017-11-08T00:00:00+00:00</lastmod></url>
   <url><loc>https://lab-design.github.io/news/2017/07/10/success-midwest-summer-school/</loc><lastmod>2017-07-10T00:00:00+00:00</lastmod></url>
   <url><loc>https://lab-design.github.io/news/2017/06/29/zhen-yu/</loc><lastmod>2017-06-29T00:00:00+00:00</lastmod></url>
+  <url><loc>https://lab-design.github.io/news/2017/05/24/inferring-behavioral-exception-documentation/</loc><lastmod>2017-05-24T00:00:00+00:00</lastmod></url>
+  <url><loc>https://lab-design.github.io/news/2017/05/23/accelerating-ultra-large-scale-mining/</loc><lastmod>2017-05-23T00:00:00+00:00</lastmod></url>
   <url><loc>https://lab-design.github.io/news/2017/05/23/Data-Science-Minor/</loc><lastmod>2017-05-23T00:00:00+00:00</lastmod></url>
   <url><loc>https://lab-design.github.io/news/2017/05/12/midwest-summer-school/</loc><lastmod>2017-05-12T00:00:00+00:00</lastmod></url>
   <url><loc>https://lab-design.github.io/news/2017/05/02/hridesh-rajan-kingland-professor/</loc><lastmod>2017-05-02T00:00:00+00:00</lastmod></url>
