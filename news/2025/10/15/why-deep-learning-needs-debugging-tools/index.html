@@ -7,15 +7,15 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="The Laboratory for Software Design at Tulane University researches programming languages, compilers, and software engineering for dependable software and AI.">
     <meta name="theme-color" content="#006747">
-    <meta property="og:title" content="Our paper on Repairing Deep Neural Networks is selected for ICSE'20">
+    <meta property="og:title" content="Why deep learning needs its own debugging tools">
     <meta property="og:description" content="Laboratory for Software Design at Tulane University, School of Science and Engineering.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://lab-design.github.io/news/2019/12/08/islam-icse/">
+    <meta property="og:url" content="https://lab-design.github.io/news/2025/10/15/why-deep-learning-needs-debugging-tools/">
     <meta property="og:site_name" content="Laboratory for Software Design">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Our paper on Repairing Deep Neural Networks is selected for ICSE'20">
+    <meta name="twitter:title" content="Why deep learning needs its own debugging tools">
     <meta name="twitter:description" content="Laboratory for Software Design at Tulane University, School of Science and Engineering.">
-    <link rel="canonical" href="https://lab-design.github.io/news/2019/12/08/islam-icse/">
+    <link rel="canonical" href="https://lab-design.github.io/news/2025/10/15/why-deep-learning-needs-debugging-tools/">
     <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://lab-design.github.io/#hridesh","name":"Hridesh Rajan","jobTitle":"Dean of the School of Science and Engineering and Professor of Computer Science","affiliation":{"@type":"CollegeOrUniversity","name":"Tulane University"},"sameAs":["https://scholar.google.com/citations?user=aiFvpucAAAAJ","https://github.com/hridesh","https://www.linkedin.com/in/hrideshrajan/"]},{"@type":"Organization","@id":"https://lab-design.github.io/#lab","name":"Laboratory for Software Design","url":"https://lab-design.github.io/","parentOrganization":{"@type":"CollegeOrUniversity","name":"Tulane University School of Science and Engineering, Department of Computer Science"},"founder":{"@id":"https://lab-design.github.io/#hridesh"}},{"@type":"WebSite","url":"https://lab-design.github.io/","name":"Laboratory for Software Design","publisher":{"@id":"https://lab-design.github.io/#lab"}}]}</script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +23,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/design.css">
     <link rel="icon" href="/favicon.ico">
-    <title>Our paper on Repairing Deep Neural Networks is selected for ICSE'20 | Laboratory for Software Design</title>
+    <title>Why deep learning needs its own debugging tools | Laboratory for Software Design</title>
   </head>
 
   <body>
@@ -62,22 +62,24 @@
   <br />
   <div class="row">
   <div class="col-12">
-    <h2 class="page-title">Our paper on Repairing Deep Neural Networks is selected for ICSE'20</h2>
-    <p class="mb-2 text-muted">December 08, 2019</p>
+    <h2 class="page-title">Why deep learning needs its own debugging tools</h2>
+    <p class="mb-2 text-muted">October 15, 2025</p>
 
-  <span class="news-link">Links: </span>
-  
-    <a href="http://lab-design.github.io/papers/ICSE-20a/" class="news-link">Papers</a>
-    
-  
+<p>Deep learning now sits inside many software systems, from the apps on a phone to systems that drive cars and read medical scans. These systems are software, and like any other software they contain faults. What makes them different is that a trained model gives almost no help in finding those faults. A conventional program fails at a line you can point to, and a debugger can stop there and show you the state. A deep neural network has no such line. It is a large collection of weights, organized into layers, that together encode behavior learned from data, and when it behaves wrongly the cause is spread across that structure where the usual tools of debugging have nothing to grip.</p>
 
-<p>This work presents a comprehensive study of bug repair patterns for five DNN libraries</p>
+<p>The trouble starts with the symptoms. A model that has a bug often looks, from the outside, like a model that is simply training slowly or learning a hard task. The loss may fail to fall, the accuracy may stall, or the predictions may be confidently wrong. None of these tells a developer what to change, and a single symptom can have many causes: a mis-set learning rate, a layer that has stopped passing signal, data that was scaled the wrong way, or a loss function that does not match the task. Over the past decade our lab has built a body of work that treats a trained model as an artifact a software engineer can inspect, and that turns these vague symptoms into located faults with concrete repairs. This page collects that work.</p>
 
-<p>The paper’s abstract:</p>
+<p>The first step was to make a fault visible at all. Knowing what tends to break helps: <a href="/news/2019/08/26/deep-learning-bug-characteristics-fse/">our study of deep learning bug characteristics</a> (ESEC/FSE 2019) mapped the kinds of bugs that occur. <a href="/news/2021/05/25/deeplocalize-fault-localization/">DeepLocalize</a> (ICSE 2021) observes a model while it trains rather than after it fails. It records the values that pass between layers, learns what healthy training looks like, and uses the history of those values to report both that a model is faulty and which layer or hyperparameter is responsible. In effect it brings dynamic program analysis, a long-standing software engineering technique, to the inside of a learning model.</p>
 
-<p><em>
-``Significant interest in applying Deep Neural Network (DNN) has fueled the need to support engineering of software that uses DNNs. Repairing software that uses DNNs is one such unmistakable SE need where automated tools could be very helpful; however, we do not fully understand challenges to repairing and patterns that are utilized when manually repairing them. What challenges should automated repair tools address? What are the repair patterns whose automation could help developers? Which repair patterns should be assigned a higher priority for automation? This work presents a comprehensive study of bug fix patterns to address these questions. We have studied 415 repairs from Stack Overflow and 555 repairs from Github for five popular deep learning libraries Caffe, Keras, Tensorflow, Theano, and Torch to understand challenges in repairs and bug repair patterns. Our key findings reveal that DNN bug fix patterns are distinctive compared to traditional bug fix patterns; the most common bug fix patterns are fixing data dimension and neural network connectivity; DNN bug fixes have the potential to introduce adversarial vulnerabilities; DNN bug fixes frequently introduce new bugs; and DNN bug localization, reuse of trained model, and coping with frequent releases are major challenges faced by developers when fixing bugs. We also contribute a benchmark of 667 DNN (bug, repair) instances.’’</em></p>
+<p>Locating a fault is useful, but a developer still has to decide what to do about it. <a href="/news/2022/05/25/deepdiagnosis-diagnosing-faults/">DeepDiagnosis</a> (ICSE 2022) carries the idea further. As the model trains it watches for eight distinct kinds of error condition, and when one appears it reports the symptom together with a message describing a concrete repair. Across a large benchmark of buggy models it diagnosed faults more accurately than earlier tools, and it did so for kinds of model those tools could not handle.</p>
 
+<p>Tools like these are only as good as the repairs they know to suggest, so part of the work was to study how developers fix these models by hand. <a href="/news/2020/06/27/repairing-deep-neural-networks/">Repairing Deep Neural Networks</a> (ICSE 2020) examined more than 400 real fixes that developers had posted publicly, organized them into patterns, and set out which patterns are hardest to automate and which would help the most. That map of real repairs is what lets an automated tool aim at the fixes that matter.</p>
+
+<p>The same way of thinking extends to models that work very differently from a standard classifier. <a href="/news/2025/04/27/uprl-mutation-testing-reinforcement-learning/">µPRL</a> (ICSE 2025) turns to reinforcement-learning agents, the kind used to control a robot or a vehicle, and asks a testing question: would a team’s tests actually catch a real bug? It mines real faults from reinforcement-learning code, turns them into mutation operators, and lets a test suite be measured against faults that resemble the genuine ones. <a href="/news/2025/06/23/irepair-repairing-large-language-models/">IRepair</a> (FSE 2025) turns to large language models, where retraining the whole model to fix one problem tends to damage abilities that were working. Borrowing the idea of program slicing, IRepair concentrates a repair on the small part of a model most responsible for an error, and in a toxicity-reduction setting it repaired errors more effectively than the standard approach while disturbing the rest of the model far less.</p>
+
+<p>This research is supported by our NSF project on <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2419882">Fault Localization for Deep Learning</a>, carried out with Mohammad Wardat at Oakland University, which continues the work of locating and explaining faults in deep learning systems. The thread running through all of it is a single goal: to give the people who build deep learning the same kind of dependable tools for finding faults, understanding them, and repairing them that software engineers have long had for ordinary code.</p>
+
+<p>This work is part of our research on <a href="/research/#modular-and-dependable-ai">Modular and Dependable AI</a>. For the complete record, see our <a href="https://lab-design.github.io/papers/">list of papers</a>.</p>
 
 
 

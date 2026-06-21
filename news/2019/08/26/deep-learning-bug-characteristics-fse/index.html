@@ -7,13 +7,13 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="The Laboratory for Software Design at Tulane University researches programming languages, compilers, and software engineering for dependable software and AI.">
     <meta name="theme-color" content="#006747">
-    <meta property="og:title" content="Our study of deep-learning bug characteristics appears at ESEC/FSE 2019">
+    <meta property="og:title" content="What actually goes wrong in deep learning code? Our ESEC/FSE 2019 study catalogs the bugs.">
     <meta property="og:description" content="Laboratory for Software Design at Tulane University, School of Science and Engineering.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://lab-design.github.io/news/2019/08/26/deep-learning-bug-characteristics-fse/">
     <meta property="og:site_name" content="Laboratory for Software Design">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Our study of deep-learning bug characteristics appears at ESEC/FSE 2019">
+    <meta name="twitter:title" content="What actually goes wrong in deep learning code? Our ESEC/FSE 2019 study catalogs the bugs.">
     <meta name="twitter:description" content="Laboratory for Software Design at Tulane University, School of Science and Engineering.">
     <link rel="canonical" href="https://lab-design.github.io/news/2019/08/26/deep-learning-bug-characteristics-fse/">
     <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://lab-design.github.io/#hridesh","name":"Hridesh Rajan","jobTitle":"Dean of the School of Science and Engineering and Professor of Computer Science","affiliation":{"@type":"CollegeOrUniversity","name":"Tulane University"},"sameAs":["https://scholar.google.com/citations?user=aiFvpucAAAAJ","https://github.com/hridesh","https://www.linkedin.com/in/hrideshrajan/"]},{"@type":"Organization","@id":"https://lab-design.github.io/#lab","name":"Laboratory for Software Design","url":"https://lab-design.github.io/","parentOrganization":{"@type":"CollegeOrUniversity","name":"Tulane University School of Science and Engineering, Department of Computer Science"},"founder":{"@id":"https://lab-design.github.io/#hridesh"}},{"@type":"WebSite","url":"https://lab-design.github.io/","name":"Laboratory for Software Design","publisher":{"@id":"https://lab-design.github.io/#lab"}}]}</script>
@@ -23,7 +23,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/design.css">
     <link rel="icon" href="/favicon.ico">
-    <title>Our study of deep-learning bug characteristics appears at ESEC/FSE 2019 | Laboratory for Software Design</title>
+    <title>What actually goes wrong in deep learning code? Our ESEC/FSE 2019 study catalogs the bugs. | Laboratory for Software Design</title>
   </head>
 
   <body>
@@ -62,18 +62,16 @@
   <br />
   <div class="row">
   <div class="col-12">
-    <h2 class="page-title">Our study of deep-learning bug characteristics appears at ESEC/FSE 2019</h2>
+    <h2 class="page-title">What actually goes wrong in deep learning code? Our ESEC/FSE 2019 study catalogs the bugs.</h2>
     <p class="mb-2 text-muted">August 26, 2019</p>
 
-  <span class="news-link">Links: </span>
-  
-    <a href="https://lab-design.github.io/papers/ESEC-FSE-19/" class="news-link">Read the paper</a>
-    
-  
+<p>Before you can locate or repair a bug in a deep learning system, it helps to know what kinds of bugs occur, where they come from, and what they break. When this study began, the community lacked that picture.</p>
 
-<h3 id="deep-learning-bug-characteristics-at-esecfse-2019">Deep-learning bug characteristics at ESEC/FSE 2019</h3>
+<p>In this paper (ESEC/FSE 2019), Md Johirul Islam, Giang Nguyen, Rangeet Pan, and Hridesh Rajan carried out a comprehensive study of deep learning bug characteristics. Drawing on real bug reports from Stack Overflow and GitHub across widely used deep learning libraries, they categorized the types of bugs, their root causes, and their effects, and surfaced common antipatterns that lead to them. The result is a map of how deep learning software actually fails.</p>
 
-<p>Our paper, A Comprehensive Study on Deep Learning Bug Characteristics, was presented at ESEC/FSE 2019. It examines the kinds of faults that arise in deep learning software and how they differ from faults in traditional programs, and it has helped shape how the community studies reliability in deep learning.</p>
+<p>That map shaped much of our later work on dependable AI, which moved from understanding bugs to locating and repairing them.</p>
+
+<p>This work is part of <a href="/research/#modular-and-dependable-ai">Modular and Dependable AI</a>; for the wider story see <a href="/news/2025/10/15/why-deep-learning-needs-debugging-tools/">our overview of debugging deep learning</a>. The full paper is available <a href="https://lab-design.github.io/papers/ESEC-FSE-19/">here</a>.</p>
 
 
 
