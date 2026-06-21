@@ -40,7 +40,6 @@
   <url><loc>https://lab-design.github.io/news/2025/12/10/analyzing-software-at-scale-with-boa/</loc><lastmod>2025-12-10T00:00:00+00:00</lastmod></url>
   <url><loc>https://lab-design.github.io/news/2025/10/15/why-deep-learning-needs-debugging-tools/</loc><lastmod>2025-10-15T00:00:00+00:00</lastmod></url>
   <url><loc>https://lab-design.github.io/news/2025/09/12/new-postdoc-sayma/</loc><lastmod>2025-09-12T00:00:00+00:00</lastmod></url>
-  <url><loc>https://lab-design.github.io/news/2025/09/01/nsf-fault-localization-for-deep-learning/</loc><lastmod>2025-09-01T00:00:00+00:00</lastmod></url>
   <url><loc>https://lab-design.github.io/news/2025/06/23/irepair-repairing-large-language-models/</loc><lastmod>2025-06-23T00:00:00+00:00</lastmod></url>
   <url><loc>https://lab-design.github.io/news/2025/04/29/mock-deep-testing/</loc><lastmod>2025-04-29T00:00:00+00:00</lastmod></url>
   <url><loc>https://lab-design.github.io/news/2025/04/28/llm-agent-for-design-issue-localization/</loc><lastmod>2025-04-28T00:00:00+00:00</lastmod></url>
@@ -91,7 +90,6 @@
   <url><loc>https://lab-design.github.io/news/2020/03/30/boac/</loc><lastmod>2020-03-30T00:00:00+00:00</lastmod></url>
   <url><loc>https://lab-design.github.io/news/2019/12/06/samantha-passes-phd-prelim/</loc><lastmod>2019-12-06T00:00:00+00:00</lastmod></url>
   <url><loc>https://lab-design.github.io/news/2019/10/01/tripods/</loc><lastmod>2019-10-01T00:00:00+00:00</lastmod></url>
-  <url><loc>https://lab-design.github.io/news/2019/10/01/nsf-d4-tripods-institute/</loc><lastmod>2019-10-01T00:00:00+00:00</lastmod></url>
   <url><loc>https://lab-design.github.io/news/2019/09/30/islam-defense-ms/</loc><lastmod>2019-09-30T00:00:00+00:00</lastmod></url>
   <url><loc>https://lab-design.github.io/news/2019/09/25/hamid-passes-phd-prelim/</loc><lastmod>2019-09-25T00:00:00+00:00</lastmod></url>
   <url><loc>https://lab-design.github.io/news/2019/09/25/hamid-defense-ms/</loc><lastmod>2019-09-25T00:00:00+00:00</lastmod></url>
@@ -129,12 +127,29 @@
   <url><loc>https://lab-design.github.io/news/2016/07/20/midwest-big-data-summer-school/</loc><lastmod>2016-07-20T00:00:00+00:00</lastmod></url>
   <url><loc>https://lab-design.github.io/news/2016/07/20/News-Big-Data/</loc><lastmod>2016-07-20T00:00:00+00:00</lastmod></url>
   <url><loc>https://lab-design.github.io/news/2016/07/14/Mehdi-Bagherzadeh/</loc><lastmod>2016-07-14T00:00:00+00:00</lastmod></url>
+  <url><loc>https://lab-design.github.io/news/2016/05/15/long-phd/</loc><lastmod>2016-05-15T00:00:00+00:00</lastmod></url>
+  <url><loc>https://lab-design.github.io/news/2016/05/15/lin-ms/</loc><lastmod>2016-05-15T00:00:00+00:00</lastmod></url>
   <url><loc>https://lab-design.github.io/news/2016/04/25/Big-Data-Summer-School/</loc><lastmod>2016-04-25T00:00:00+00:00</lastmod></url>
   <url><loc>https://lab-design.github.io/news/2016/01/22/leverage-big-data-for-software-quality/</loc><lastmod>2016-01-22T00:00:00+00:00</lastmod></url>
+  <url><loc>https://lab-design.github.io/news/2015/07/01/nsf-inferring-software-specifications/</loc><lastmod>2015-07-01T00:00:00+00:00</lastmod></url>
   <url><loc>https://lab-design.github.io/news/2015/06/01/nsf-boa-infrastructure/</loc><lastmod>2015-06-01T00:00:00+00:00</lastmod></url>
+  <url><loc>https://lab-design.github.io/news/2015/05/15/mooney-ms/</loc><lastmod>2015-05-15T00:00:00+00:00</lastmod></url>
+  <url><loc>https://lab-design.github.io/news/2014/08/01/nsf-capsule-oriented-programming/</loc><lastmod>2014-08-01T00:00:00+00:00</lastmod></url>
+  <url><loc>https://lab-design.github.io/news/2013/09/01/nsf-eager-boa/</loc><lastmod>2013-09-01T00:00:00+00:00</lastmod></url>
   <url><loc>https://lab-design.github.io/news/2013/05/20/boa-icse/</loc><lastmod>2013-05-20T00:00:00+00:00</lastmod></url>
+  <url><loc>https://lab-design.github.io/news/2013/05/15/dyer-phd/</loc><lastmod>2013-05-15T00:00:00+00:00</lastmod></url>
+  <url><loc>https://lab-design.github.io/news/2011/08/01/nsf-phase-based-tuning/</loc><lastmod>2011-08-01T00:00:00+00:00</lastmod></url>
+  <url><loc>https://lab-design.github.io/news/2011/05/15/sondag-phd/</loc><lastmod>2011-05-15T00:00:00+00:00</lastmod></url>
+  <url><loc>https://lab-design.github.io/news/2010/08/15/nsf-balancing-expressiveness-modular-reasoning/</loc><lastmod>2010-08-15T00:00:00+00:00</lastmod></url>
+  <url><loc>https://lab-design.github.io/news/2010/05/15/narayanappa-ms/</loc><lastmod>2010-05-15T00:00:00+00:00</lastmod></url>
   <url><loc>https://lab-design.github.io/news/2009/07/01/nsf-career-modularity-concurrency/</loc><lastmod>2009-07-01T00:00:00+00:00</lastmod></url>
+  <url><loc>https://lab-design.github.io/news/2009/05/15/jalan-ms/</loc><lastmod>2009-05-15T00:00:00+00:00</lastmod></url>
   <url><loc>https://lab-design.github.io/news/2008/07/08/ptolemy-ecoop/</loc><lastmod>2008-07-08T00:00:00+00:00</lastmod></url>
+  <url><loc>https://lab-design.github.io/news/2008/05/15/setty-ms/</loc><lastmod>2008-05-15T00:00:00+00:00</lastmod></url>
+  <url><loc>https://lab-design.github.io/news/2008/05/15/hanna-ms/</loc><lastmod>2008-05-15T00:00:00+00:00</lastmod></url>
+  <url><loc>https://lab-design.github.io/news/2007/07/15/nsf-jml-community-infrastructure/</loc><lastmod>2007-07-15T00:00:00+00:00</lastmod></url>
+  <url><loc>https://lab-design.github.io/news/2007/05/15/hosamani-ms/</loc><lastmod>2007-05-15T00:00:00+00:00</lastmod></url>
+  <url><loc>https://lab-design.github.io/news/2006/09/01/nsf-sensor-network-security-verification/</loc><lastmod>2006-09-01T00:00:00+00:00</lastmod></url>
   <url><loc>https://lab-design.github.io/news/2006/01/15/crosscutting-interfaces-ieee-software/</loc><lastmod>2006-01-15T00:00:00+00:00</lastmod></url>
   <url><loc>https://lab-design.github.io/news/2005/09/05/information-hiding-interfaces-fse/</loc><lastmod>2005-09-05T00:00:00+00:00</lastmod></url>
   <url><loc>https://lab-design.github.io/news/2005/05/16/classpects-icse/</loc><lastmod>2005-05-16T00:00:00+00:00</lastmod></url>
