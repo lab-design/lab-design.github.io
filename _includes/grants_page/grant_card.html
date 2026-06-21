@@ -22,6 +22,7 @@
       {% assign output = output | append: end_date %}
       {% assign output = output | append: ", " %}
       {% assign output = output | append: grant.amount %}
+      {% if grant.share %}{% assign output = output | append: " (" | append: grant.share | append: ")" %}{% endif %}
       {{ output }}
     </a>
   </div>

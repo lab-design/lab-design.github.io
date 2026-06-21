@@ -116,7 +116,8 @@
   title: "CI-EN: Boa: Enhancing Infrastructure for Studying Software and its Evolution at a Large Scale"
   start_date: 2015-06-01
   url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1513263"
-  amount: $1,426,917
+  amount: $1,559,806
+  share: "ISU share: $1,426,917"
   PI: Hridesh Rajan
   coPIs:
     - Tien Nguyen
@@ -353,7 +354,8 @@
   title: "SHF: Large:Collaborative Research: Inferring Software Specifications from Open Source Repositories by Leveraging Data and Collective Community Expertise"
   start_date: 2015-07-01
   url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1518897"
-  amount: $750,125
+  amount: $1,604,479
+  share: "ISU share: $750,125"
   PI: Hridesh Rajan
   coPIs:
     - Tien Nguyen
@@ -603,6 +605,7 @@
   start_date: 2021-10-01 #Roughly
   url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2120448&HistoricalAwards=false"
   amount: $1,499,999
+  share: "ISU/PI share: $824,474"
   PI: Hridesh Rajan
   coPIs:
   end_date: 2024-09-30 #Roughly
@@ -681,7 +684,8 @@
   title: "Collaborative Research: SHF: Small: Fault Localization for Deep Learning"
   start_date: 2025-09-01
   url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2419882"
-  amount: $376,008
+  amount: $600,000
+  share: "Tulane share: $376,008"
   credit: "Hridesh Rajan (Lead PI) and Mohammad Wardat (Oakland PI)"
   PI: Hridesh Rajan
   coPIs:
