@@ -20,9 +20,10 @@ Our aim is to make software, including AI-enabled systems, easier to build and m
 {%- assign flag = 0 -%}{%- for p in pubs -%}{%- if p.key contains "ICSE-" or p.key contains "FSE-" or p.key contains "ASE-" or p.key contains "ISSTA-" -%}{%- assign flag = flag | plus: 1 -%}{%- endif -%}{%- endfor -%}
 {%- assign awardpapers = site.papers | where_exp:"p","p.award" -%}
 {%- assign gt = 0 -%}{%- assign gc = 0 -%}{%- for g in site.data.grants -%}{%- if g.primary -%}{%- assign gc = gc | plus: 1 -%}{%- assign a = g.amount | remove:"$" | remove:"," | plus: 0 -%}{%- assign gt = gt | plus: a -%}{%- endif -%}{%- endfor -%}
+{%- assign ct = 0 -%}{%- for g in site.data.grants -%}{%- if g.copi -%}{%- assign ca = g.amount | remove:"$" | remove:"," | plus: 0 -%}{%- assign ct = ct | plus: ca -%}{%- endif -%}{%- endfor -%}
 <div class="stats">
 <div class="stat"><div class="num">{{ pubs | size }}</div><div class="lbl">papers and articles, {{ flag }} at ICSE, FSE, ASE, and ISSTA</div></div>
-<div class="stat"><div class="num">${{ gt | divided_by: 1000000.0 | round: 1 }}M</div><div class="lbl">in research grants, across {{ gc }} awards</div></div>
+<div class="stat"><div class="num">${{ gt | divided_by: 1000000.0 | round: 1 }}M</div><div class="lbl">research grants as PI across {{ gc }}, plus ${{ ct | divided_by: 1000000.0 | round: 1 }}M as co-PI</div></div>
 <div class="stat"><div class="num">8</div><div class="lbl">software systems, used by researchers worldwide</div></div>
 <div class="stat"><div class="num">{{ awardpapers | size }}</div><div class="lbl">paper and poster awards, two ACM SIGSOFT Distinguished</div></div>
 </div>

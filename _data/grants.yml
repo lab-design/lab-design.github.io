@@ -473,11 +473,14 @@
     and most importantly enhanced computer security.
 - key: grant-nsf-0709217
   agency: NSF
-  primary: true
+  primary: false
+  copi: true
   title: "Collaborative Research: CRI: CRD: A JML Community Infrastructure -- Revitalizing Tools and Documentation to Aid Formal Methods Research"
+  credit: "Gary T. Leavens (UCF PI), Hridesh Rajan (ISU Co-PI), and Samik Basu (ISU Co-PI)"
   start_date: 2007-07-15
   url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=0709217"
-  amount: $75,000
+  amount: $650,000
+  share: "ISU share: $75,000"
   PI: Gary Leavens
   coPIs:
     - Samik Basu
@@ -720,3 +723,29 @@
   PI: Gary T. Leavens
   coPIs:
   end_date: 2015-07-31
+
+- key: grant-nsf-2152117
+  agency: NSF
+  primary: false
+  copi: true
+  title: "NRT: Dependable Data Driven Discovery"
+  credit: "Wallapak Tavanapong (PI), Hridesh Rajan (Co-PI)"
+  start_date: 2022-09-01
+  url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2152117"
+  amount: $2,998,973
+  PI: Wallapak Tavanapong
+  coPIs:
+  end_date: 2027-08-31
+
+- key: grant-nsf-somani-mri
+  agency: NSF
+  primary: false
+  copi: true
+  title: "MRI: Acquisition of a HPC System: Computing for Sustainability"
+  credit: "Arun Somani (PI), Hridesh Rajan (Co-PI)"
+  start_date: 2017-09-01
+  url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1726447"
+  amount: $678,214
+  PI: Arun Somani
+  coPIs:
+  end_date: 2019-08-31
