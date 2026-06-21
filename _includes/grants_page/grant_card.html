@@ -10,10 +10,14 @@
     <a class="grant_card_header_name" href="{{ include.grant.url }}">
       {% if grant.credit %}{% assign output = grant.credit | append: ", " %}{% else %}{% assign output = grant.PI %}{% assign output = output | append: " (PI)" %}{% if grant.coPIs.size == 1 %}{% assign output = output | append: " " %}{% else %}{% assign output = output | append: ", " %}{% endif %}{% if grant.coPIs %}{% for coPI in grant.coPIs %}{% if forloop.last == true %}{% assign output = output | append: "and " %}{% endif %}{% assign output = output | append: coPI %}{% assign output = output | append: " (Co-PI), " %}{% endfor %}{% endif %}{% endif %}
       {% assign output = output | append: grant.title %}
-      {% if grant.agency contains "NSF" %}
+            {% if grant.agency contains "NSF" %}
         {% assign output = output | append: ", US National Science Foundation (NSF) " %}
-      {% else if grant.agency contains "VPR" %}
+      {% elsif grant.agency contains "USDA" %}
+        {% assign output = output | append: ", US Department of Agriculture (" | append: grant.agency | append: ") " %}
+      {% elsif grant.agency contains "VPR" %}
         {% assign output = output | append: ", the ISU Office of the Vice President for Research (VPR) " %}
+      {% else %}
+        {% assign output = output | append: ", " | append: grant.agency | append: " " %}
       {% endif %}
       {% assign start_date = grant.start_date | date: '%Y' %}
       {% assign output = output | append: start_date %}

@@ -6,6 +6,7 @@
   agency: NSF
   primary: true
   title: "CAREER: On Mutualism of Modularity and Concurrency Goals"
+  credit: "Hridesh Rajan (PI)"
   start_date: 2009-07-01
   url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=0846059"
   amount: $565,935
@@ -114,7 +115,7 @@
   agency: NSF
   primary: true
   title: "CI-EN: Boa: Enhancing Infrastructure for Studying Software and its Evolution at a Large Scale"
-  credit: "Hridesh Rajan (ISU PI) and Robert Dyer (BGSU PI)"
+  credit: "Hridesh Rajan (ISU PI), Tien N. Nguyen (ISU Co-PI), and Robert Dyer (BGSU PI)"
   start_date: 2015-06-01
   url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1513263"
   amount: $1,559,806
@@ -193,6 +194,7 @@
   agency: NSF
   primary: true
   title: "SHF: Small: Capsule-oriented Programming"
+  credit: "Hridesh Rajan (PI)"
   start_date: 2014-08-01
   url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1423370"
   amount: $450,098
@@ -232,6 +234,7 @@
   agency: NSF
   primary: true
   title: "EAGER: Boa: A Community Research Infrastructure for Mining Software Repositories"
+  credit: "Hridesh Rajan (PI) and Tien N. Nguyen (Co-PI)"
   start_date: 2013-09-01
   url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1349153"
   amount: $96,408
@@ -270,6 +273,7 @@
   agency: NSF
   primary: true
   title: "SHF: Small: Phase-Based Tuning for Better Utilization of Performance-Asymmetric Multicores"
+  credit: "Hridesh Rajan (PI)"
   start_date: 2011-08-01
   url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1117937"
   amount: $416,000
@@ -355,7 +359,7 @@
   agency: NSF
   primary: true
   title: "SHF: Large:Collaborative Research: Inferring Software Specifications from Open Source Repositories by Leveraging Data and Collective Community Expertise"
-  credit: "Hridesh Rajan (ISU PI), Gary T. Leavens (UCF PI), Vasant Honavar (Penn State PI), and Robert Dyer (BGSU PI)"
+  credit: "Hridesh Rajan (ISU PI), Tien N. Nguyen (ISU Co-PI), Gary T. Leavens (UCF PI), Vasant Honavar (Penn State PI), and Robert Dyer (BGSU PI)"
   start_date: 2015-07-01
   url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1518897"
   amount: $1,604,479
@@ -440,6 +444,7 @@
   agency: NSF
   primary: true
   title: "CT-ISG: Specification and Verification Challenges for Security Protocols in Sensor Networks"
+  credit: "Hridesh Rajan (PI) and Wensheng Zhang (Co-PI)"
   start_date: 2006-09-01
   url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=0627354&HistoricalAwards=false"
   amount: $366,000
@@ -527,6 +532,7 @@
   agency: VPR
   primary: true
   title: "Bridging the Digital Divide in Data Science: Invention and Refinement of Shared Data Science Infrastructures"
+  credit: "Hridesh Rajan (PI), Jan Lauren Boyles, Gianfranco Ciardo, Heike Hofmann, Stephen D. Holland, Matthew Hufford, Glenn R. Luecke, Tien N. Nguyen, James M. Reecy, Andrew Severin, Anuj Sharma, Jin Tian, and Christopher K. Tuggle (Co-PIs)"
   start_date: 2016-09-20 #Roughly
   url: "http://lab-design.github.io/sdsi/"
   amount: $450,000
@@ -586,6 +592,7 @@
   agency: NSF
   primary: true
   title: "HDR: TRIPODS: D4 (Dependable Data Driven Discovery) Institute"
+  credit: "Hridesh Rajan (PI), Pavan Aduri, Chinmay Hegde, Daniel Nettleton, and Eric Weber (Co-PIs)"
   start_date: 2019-10-01 #Roughly
   url: "http://tads.research.iastate.edu/"
   amount: $1,499,994
@@ -609,6 +616,7 @@
   agency: NSF
   primary: true
   title: "Collaborative Research: CCRI: ENS: Boa 2.0: Enhancing Infrastructure for Studying Software and its Evolution at a Large Scale"
+  credit: "Hridesh Rajan (ISU PI), Brian Nosek (Co-PI), and Tien N. Nguyen (Co-PI)"
   start_date: 2021-10-01 #Roughly
   url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2120448&HistoricalAwards=false"
   amount: $1,499,999
@@ -624,6 +632,7 @@
   agency: NSF
   primary: true
   title: "SHF:Small: More Modular Deep Learning"
+  credit: "Hridesh Rajan (PI)"
   start_date: 2022-10-01 #Roughly
   url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2223812&HistoricalAwards=false"
   amount: $580,000
@@ -729,7 +738,7 @@
   primary: false
   copi: true
   title: "NRT: Dependable Data Driven Discovery"
-  credit: "Wallapak Tavanapong (PI), Hridesh Rajan (Co-PI)"
+  credit: "Wallapak Tavanapong (PI), Surya K. Mallapragada, Daniel S. Nettleton, Eric Weber, and Hridesh Rajan (Co-PIs)"
   start_date: 2022-09-01
   url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2152117"
   amount: $2,998,973
@@ -742,10 +751,21 @@
   primary: false
   copi: true
   title: "MRI: Acquisition of a HPC System: Computing for Sustainability"
-  credit: "Arun Somani (PI), Hridesh Rajan (Co-PI)"
+  credit: "Arun Somani (PI), Carolyn Lawrence-Dill, Hridesh Rajan, Baskar Ganapathysubramanian, and Alberto Passalacqua (Co-PIs)"
   start_date: 2017-09-01
   url: "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1726447"
   amount: $678,214
   PI: Arun Somani
   coPIs:
   end_date: 2019-08-31
+- key: grant-usda-linhares
+  agency: USDA NIFA
+  primary: false
+  copi: true
+  title: "Integrating Data Streams for Causal Inference and Forecasting to Foster Precision Swine Health and Production Management"
+  credit: "Daniel Linhares (PI), Edison Magalhaes, Giovani Trevisan, Gustavo De-Sousa-E-Silva, Chong Wang, Derald J. Hiltkamp, Jason W. Ross, and Hridesh Rajan (Co-PIs)"
+  start_date: 2022-09-01
+  amount: $998,162
+  PI: Daniel Linhares
+  coPIs:
+  end_date: 2025-08-31
