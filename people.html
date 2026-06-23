@@ -35,6 +35,13 @@ a {
   border-radius: 10px;
 }
 
+.alum-placement {
+  display: block;
+  font-size: 13px;
+  font-style: italic;
+  color: #5a6b62;
+  margin-top: 2px;
+}
 </style>
 
 <h2>Current Lab Members</h2>
@@ -81,6 +88,9 @@ a {
           {{alumni.name}}
           {% if alumni.status %}
             [{{ alumni.status }}]
+          {% endif %}
+          {% if alumni.placement %}
+            <span class="alum-placement">{{ alumni.placement }}</span>
           {% endif %}
         </figcaption>
       </figure>

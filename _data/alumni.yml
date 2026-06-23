@@ -51,6 +51,7 @@
 
 - name: Dr. Sumon Biswas
   status: PhD Spring'22, MS Spring'21
+  placement: "Assistant Professor, Case Western Reserve University"
   email: sumon@iastate.edu
   site: https://sumonbis.github.io/
   img: sbiswas.jpg
@@ -63,6 +64,7 @@
 
 - name: Dr. Samantha Khairunnesa
   status: PhD Summer'21, MS Fall'17
+  placement: "Assistant Professor, Bradley University"
   email: sammy@iastate.edu
   site: https://www.linkedin.com/in/samantha-syeda
   img: skhairunnesa.jpg
@@ -87,6 +89,7 @@
 
 - name: Dr. Yuheng Long
   status: PhD Spring'16, MS Spring'10
+  placement: "Machine Learning Engineer, Meta"
   netid: csgzlong
   site: http://web.cs.iastate.edu/~csgzlong/
   img: ylong.jpg
@@ -113,6 +116,7 @@
 
 - name: Dr. Tyler Sondag
   status: PhD Fall'11, MS Fall'09
+  placement: "Principal Architect, NVIDIA"
   netid: sondag
   img: tsondag.jpg
 
