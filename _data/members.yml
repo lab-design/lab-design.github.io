@@ -16,12 +16,6 @@
   site: https://brenodan.github.io/
   img: breno.jpg
 
-- name: Dr. Sayma Sultana
-  status: Postdoctoral Fellow
-  email: Ssultana1@tulane.edu
-  site: https://sayma23.github.io/
-  img: sayma.png
-
 # PhD Candidates:
 
 - name: Fraol Batole
@@ -42,6 +36,11 @@
   site: https://deepakgthomas.github.io/
   img: deepak.jpg
 
+- name: Heitor Barbosa
+  status: PhD
+  email: hbarbosa@tulane.edu
+  site: https://heitorbarbosa.github.io/
+  img: heitor.jpg
 # Master's Students:
 
 # Bachelor's Students:
