@@ -39,8 +39,14 @@
 - name: Heitor Barbosa
   status: PhD
   email: hbarbosa@tulane.edu
-  site: https://heitorbarbosa.github.io/
+  site: https://www.linkedin.com/in/heitormsb/
   img: heitor.jpg
+
+- name: Abdulmajid Seid
+  status: PhD
+  email: aseid@tulane.edu
+  site: https://abdulmajid-awol.vercel.app/
+  img: abdu.jpg
 # Master's Students:
 
 # Bachelor's Students:
